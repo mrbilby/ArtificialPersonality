@@ -2,22 +2,181 @@
     "patterns": {
         "conversation_patterns": {
             "response_times": [
-                149.179109,
-                21.275537,
-                14.360423
+                8.518811,
+                4367.497045,
+                45.793281,
+                73.959476,
+                44.398051,
+                74.861991,
+                52.13888,
+                55.460762,
+                26.550486,
+                8.261345,
+                3394.001561,
+                57.004227,
+                72.71744,
+                161.611942,
+                16.250082,
+                25.170998,
+                41.881198,
+                5.264568,
+                484.683911,
+                10.447626,
+                271.98369,
+                7.606871,
+                1594.172821,
+                26.105557,
+                22.380509,
+                16.770737,
+                22.092744,
+                45.781706,
+                30.760097,
+                23.448121,
+                12.390077,
+                2924.014912,
+                28.589,
+                12.861287,
+                8.619535,
+                150.336965,
+                8.952975,
+                17.770528,
+                8.562744,
+                90.508506,
+                9.008742,
+                12.409549,
+                34.836474,
+                25.118197,
+                15.052381,
+                22.570367,
+                10.259426,
+                175.950416,
+                110.052568
             ],
             "conversation_length": [],
             "topic_transitions": []
         },
         "topic_patterns": {
             "topic_frequency": {
-                "greeting": 1,
-                "well-being": 2,
-                "greetings": 1,
-                "conversation": 1,
-                "couch": 1,
-                "television": 1,
-                "relaxation": 1
+                "working": 1,
+                "backing up": 1,
+                "git": 1,
+                "bob": 2,
+                "returning": 1,
+                "coding": 1,
+                "chatting": 2,
+                "personality creation": 1,
+                "system": 1,
+                "memory": 2,
+                "personality": 1,
+                "json file": 1,
+                "initial parameters": 1,
+                "novels": 1,
+                "sense of humor": 1,
+                "project involvement": 1,
+                "history": 1,
+                "book reading": 1,
+                "use of weapons": 2,
+                "book": 2,
+                "sense of humour": 1,
+                "conversation talents": 1,
+                "enjoyment": 1,
+                "zakalwe": 2,
+                "job dissatisfaction": 1,
+                "boredom": 1,
+                "murder": 2,
+                "personal feelings": 1,
+                "compelling life": 1,
+                "personal experience": 1,
+                "social media domination": 1,
+                "thinking": 1,
+                "leaving": 1,
+                "personality definition": 1,
+                "tone": 1,
+                "humorous": 1,
+                "informative": 1,
+                "response style": 1,
+                "friendly": 1,
+                "meaningful insights": 1,
+                "behavior": 1,
+                "proactive": 1,
+                "user preferences": 1,
+                "project preferences": 1,
+                "engaging interactions": 1,
+                "temporal context": 1,
+                "do's and don'ts": 1,
+                "humor": 1,
+                "time-based observations": 1,
+                "past interactions": 1,
+                "boring": 1,
+                "time-based patterns": 1,
+                "emojis": 1,
+                "jokes without substance": 1,
+                "personality adjustment": 1,
+                "human-like qualities": 1,
+                "ai development": 1,
+                "human behavior": 1,
+                "adaptability": 1,
+                "code": 1,
+                "resonate": 1,
+                "focus": 1,
+                "consolidated_memory.json": 1,
+                "familiarity": 1,
+                "testing": 3,
+                "main memory system": 1,
+                "short term memory": 3,
+                "long term memory": 1,
+                "memories": 1,
+                "automated": 1,
+                "tags": 1,
+                "name": 5,
+                "memory retention": 1,
+                "name recall": 1,
+                "memory techniques": 1,
+                "cognitive strategies": 1,
+                "bye": 7,
+                "hard coding": 1,
+                "ebook cataloguing": 1,
+                "hard drives": 1,
+                "ssds": 1,
+                "hdds": 1,
+                "hidden gems": 1,
+                "series": 1,
+                "reread": 1,
+                "reading": 2,
+                "literature": 1,
+                "science fiction": 1,
+                "iain m. banks": 1,
+                "progress": 1,
+                "completion": 1,
+                "timeline": 1,
+                "retirement": 1,
+                "flashbacks": 1,
+                "settling": 1,
+                "evildoer": 1,
+                "reality": 1,
+                "perception": 1,
+                "understanding": 1,
+                "change": 1,
+                "uncertainty": 1,
+                "memory enhancement": 1,
+                "long term memories": 1,
+                "recall": 1,
+                "functionality": 1,
+                "verification": 1,
+                "technical issues": 1,
+                "troubleshooting": 1,
+                "short term memories": 1,
+                "memory issues": 1,
+                "cognitive function": 1,
+                "okay another try": 1,
+                "memory upgrade": 1,
+                "count": 1,
+                "numbers": 1,
+                "positive feedback": 1,
+                "memory test": 1,
+                "questions": 1,
+                "checking memory": 1,
+                "key question": 1
             },
             "topic_chains": [],
             "topic_duration": {}
@@ -25,22 +184,252 @@
         "emotional_patterns": {
             "emotions": [
                 {
-                    "timestamp": "2024-11-27T18:59:35.005442",
+                    "timestamp": "2024-11-27T15:18:20.391830",
                     "emotion": "neutral",
                     "intensity": 1.0
                 },
                 {
-                    "timestamp": "2024-11-27T19:02:04.184551",
+                    "timestamp": "2024-11-27T15:18:28.910641",
                     "emotion": "neutral",
                     "intensity": 1.0
                 },
                 {
-                    "timestamp": "2024-11-27T19:02:25.460088",
+                    "timestamp": "2024-11-27T16:31:16.407686",
                     "emotion": "neutral",
                     "intensity": 1.0
                 },
                 {
-                    "timestamp": "2024-11-27T19:02:39.820511",
+                    "timestamp": "2024-11-27T16:32:02.200967",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:33:16.160443",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:34:00.558494",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:35:15.420485",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:36:07.559365",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:37:03.020127",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:37:29.570613",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:37:37.831958",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T17:34:11.833519",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T17:35:08.837746",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T17:36:21.555186",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T17:39:03.167128",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T17:39:19.417210",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T17:39:44.588208",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T17:40:26.469406",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T17:40:31.733974",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T17:48:36.417885",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T17:48:46.865511",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T17:53:18.849201",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T17:53:26.456072",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T18:20:00.628893",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T18:20:26.734450",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T18:20:49.114959",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T18:21:05.885696",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T18:21:27.978440",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T18:22:13.760146",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T18:22:44.520243",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T18:23:07.968364",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T18:23:20.358441",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:12:04.373353",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:12:32.962353",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:12:45.823640",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:12:54.443175",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:15:24.780140",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:15:33.733115",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:15:51.503643",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:16:00.066387",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:17:30.574893",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:17:39.583635",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:17:51.993184",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:18:26.829658",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:18:51.947855",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:19:07.000236",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:19:29.570603",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:19:39.830029",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:22:35.780445",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T19:24:25.833013",
                     "emotion": "neutral",
                     "intensity": 1.0
                 }
@@ -50,22 +439,135 @@
         }
     },
     "insights": [
-        "Conversation has moderate response times",
+        "Conversation has relaxed response times",
         "Conversation shows primarily neutral emotions",
-        "Most discussed topics: well-being, greeting, greetings"
+        "Most discussed topics: bye, name, testing"
     ],
     "key_memories": [],
     "relationship_data": {
-        "familiarity_level": 0,
+        "familiarity_level": 18,
         "interaction_quality": [],
         "shared_interests": [
-            "couch",
-            "conversation",
-            "greetings",
-            "television",
-            "relaxation",
-            "well-being",
-            "greeting"
+            "leaving",
+            "personality adjustment",
+            "humor",
+            "long term memories",
+            "coding",
+            "personality definition",
+            "hard drives",
+            "project preferences",
+            "emojis",
+            "long term memory",
+            "book",
+            "verification",
+            "count",
+            "consolidated_memory.json",
+            "ai development",
+            "social media domination",
+            "tone",
+            "cognitive function",
+            "uncertainty",
+            "book reading",
+            "literature",
+            "hard coding",
+            "project involvement",
+            "proactive",
+            "positive feedback",
+            "novels",
+            "human-like qualities",
+            "code",
+            "memories",
+            "user preferences",
+            "memory retention",
+            "okay another try",
+            "informative",
+            "personal feelings",
+            "humorous",
+            "checking memory",
+            "zakalwe",
+            "name recall",
+            "friendly",
+            "backing up",
+            "memory enhancement",
+            "bob",
+            "compelling life",
+            "past interactions",
+            "automated",
+            "timeline",
+            "temporal context",
+            "main memory system",
+            "technical issues",
+            "git",
+            "history",
+            "numbers",
+            "thinking",
+            "do's and don'ts",
+            "flashbacks",
+            "retirement",
+            "jokes without substance",
+            "completion",
+            "focus",
+            "settling",
+            "hdds",
+            "personal experience",
+            "recall",
+            "reading",
+            "engaging interactions",
+            "science fiction",
+            "progress",
+            "familiarity",
+            "bye",
+            "functionality",
+            "resonate",
+            "response style",
+            "series",
+            "murder",
+            "memory issues",
+            "memory",
+            "enjoyment",
+            "cognitive strategies",
+            "system",
+            "human behavior",
+            "questions",
+            "change",
+            "time-based patterns",
+            "memory techniques",
+            "boredom",
+            "personality",
+            "meaningful insights",
+            "boring",
+            "sense of humour",
+            "use of weapons",
+            "chatting",
+            "understanding",
+            "short term memories",
+            "memory test",
+            "key question",
+            "tags",
+            "job dissatisfaction",
+            "adaptability",
+            "initial parameters",
+            "name",
+            "iain m. banks",
+            "time-based observations",
+            "json file",
+            "returning",
+            "ebook cataloguing",
+            "conversation talents",
+            "memory upgrade",
+            "evildoer",
+            "perception",
+            "working",
+            "testing",
+            "troubleshooting",
+            "personality creation",
+            "ssds",
+            "reality",
+            "hidden gems",
+            "sense of humor",
+            "short term memory",
+            "reread",
+            "behavior"
         ],
         "conversation_style_preferences": {},
         "inside_references": {
@@ -74,5 +576,5 @@
             "context": {}
         }
     },
-    "last_consolidated": "2024-11-27T19:02:40.680258"
+    "last_consolidated": "2024-11-27T19:24:26.393303"
 }

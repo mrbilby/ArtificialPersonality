@@ -484,16 +484,15 @@ class Memory:
         return [interaction.to_dict() for interaction in self.interactions]
     
     def load_from_list(self, data: List[Dict]):
+        """Load consolidated memory from file with proper max_interactions"""
         print("[Debug] Starting to load memory with timestamps:")
         self.interactions = []
         loaded_count = 0
-        max_to_load = self.max_interactions  # Get the actual limit we want
-        print(f"[Debug] Attempting to load up to {max_to_load} interactions...")
+        print(f"[Debug] Attempting to load up to {self.max_interactions} interactions...")
         
-        # Remove any accidental limiting of the data
-        for entry in data:  # Remove the slice operation
+        for entry in data:
             try:
-                if loaded_count >= max_to_load:
+                if loaded_count >= self.max_interactions:
                     break
                     
                 interaction = Interaction.from_dict(entry)
@@ -513,32 +512,129 @@ class Memory:
 
 
 class ShortTermMemory(Memory):
-    def __init__(self, max_interactions: int = 10):
-        super().__init__(max_interactions)
+    def retrieve_relevant_interactions(self, query: str, top_n=None) -> List[Interaction]:
+        """Modified to use class max_interactions if top_n not specified"""
+        if top_n is None:
+            top_n = self.max_interactions
 
+        # Get all interactions, sorted by timestamp (most recent first)
+        all_interactions = sorted(self.interactions, key=lambda x: x.timestamp, reverse=True)
+        
+        # Return up to max_interactions most recent ones
+        return all_interactions[:top_n]
+
+    def _enforce_limit(self):
+        """Ensure we keep the most recent interactions up to max_interactions"""
+        if len(self.interactions) > self.max_interactions:
+            # Sort by timestamp and keep most recent
+            self.interactions.sort(key=lambda x: x.timestamp, reverse=True)
+            self.interactions = self.interactions[:self.max_interactions]
 
 class LongTermMemory(Memory):
     def __init__(self, max_interactions: int = 1000):
         super().__init__(max_interactions)
     
-    def retrieve_relevant_interactions_by_tags(self, tags: List[str], top_n=5) -> List[Interaction]:
-        # Add fuzzy matching for tags
-        relevant_scores = []
-        for interaction in self.interactions:
-            score = 0
-            for tag in tags:
-                # Check for partial matches
-                for interaction_tag in interaction.tags:
-                    if (tag in interaction_tag or interaction_tag in tag):
-                        score += 1
-            if score > 0:
-                relevant_scores.append((interaction, score))
-        
-        # Sort by relevance score
-        relevant_scores.sort(key=lambda x: x[1], reverse=True)
-        relevant = [interaction for interaction, score in relevant_scores[:top_n]]
-        print(f"[Debug] Retrieved {len(relevant)} interactions from Long-Term Memory with scores: {[score for _, score in relevant_scores[:top_n]]}")
-        return relevant
+    def retrieve_relevant_interactions_by_tags(self, tags: List[str], top_n=10):  # Increased from 5
+        """Enhanced tag-based retrieval with broader matching while preserving existing functionality"""
+        try:
+            relevant_scores = []
+            search_tags = [tag.lower() for tag in tags]
+            
+            for interaction in self.interactions:
+                score = 0
+                interaction_text = f"{interaction.user_message} {interaction.bot_response}".lower()
+                
+                # Original exact tag matching
+                for tag in search_tags:
+                    if tag in interaction.tags:
+                        score += 2  # Higher weight for exact matches
+                
+                # New: Partial tag matches
+                for tag in search_tags:
+                    for interaction_tag in interaction.tags:
+                        if (tag in interaction_tag or interaction_tag in tag) and tag != interaction_tag:
+                            score += 1  # Lower weight for partial matches
+                
+                # New: Content-based matching
+                for tag in search_tags:
+                    if tag in interaction_text:
+                        score += 0.5  # Lowest weight for content matches
+                
+                # New: Time decay factor (preserve more recent matches)
+                time_diff = (datetime.now() - interaction.timestamp).total_seconds() / (24 * 3600)  # Days
+                time_factor = 1 / (1 + time_diff)  # Decay factor
+                
+                # Calculate final score while preserving original priority if it exists
+                final_score = score * (0.7 + 0.3 * time_factor)
+                if hasattr(interaction, 'priority_score'):
+                    final_score *= (1 + interaction.priority_score)  # Boost by priority if it exists
+                
+                if final_score > 0:
+                    relevant_scores.append((interaction, final_score))
+            
+            # Sort by relevance score
+            relevant_scores.sort(key=lambda x: x[1], reverse=True)
+            
+            # Get top N relevant interactions
+            relevant = [interaction for interaction, score in relevant_scores[:top_n]]
+            
+            print(f"[Debug] Retrieved {len(relevant)} interactions from Long-Term Memory with scores: {[score for _, score in relevant_scores[:top_n]]}")
+            return relevant
+            
+        except Exception as e:
+            print(f"[Error] Failed to retrieve interactions by tags: {e}")
+            return []  # Return empty list on error to maintain stability
+    
+    def retrieve_relevant_interactions(self, query: str, top_n=10) -> List[Interaction]:
+        """Enhanced query-based retrieval while preserving existing functionality"""
+        try:
+            relevant_scores = []
+            query_words = set(query.lower().split())
+            
+            for interaction in self.interactions:
+                score = 0
+                interaction_text = f"{interaction.user_message} {interaction.bot_response}".lower()
+                interaction_words = set(interaction_text.split())
+                
+                # Word overlap score
+                common_words = query_words & interaction_words
+                if common_words:
+                    score += len(common_words) / len(query_words)
+                
+                # Phrase matching score
+                for i in range(len(list(query_words)) - 1):
+                    phrase = ' '.join(list(query_words)[i:i+2])
+                    if phrase in interaction_text:
+                        score += 0.5
+                
+                # Tag relevance score
+                for tag in interaction.tags:
+                    if any(word in tag for word in query_words):
+                        score += 0.3
+                
+                # Preserve priority scoring if it exists
+                if hasattr(interaction, 'priority_score'):
+                    score *= (1 + interaction.priority_score)
+                
+                # Time decay factor
+                time_diff = (datetime.now() - interaction.timestamp).total_seconds() / (24 * 3600)
+                time_factor = 1 / (1 + time_diff)
+                
+                final_score = score * (0.7 + 0.3 * time_factor)
+                
+                if final_score > 0:
+                    relevant_scores.append((interaction, final_score))
+            
+            relevant_scores.sort(key=lambda x: x[1], reverse=True)
+            relevant = [interaction for interaction, score in relevant_scores[:top_n]]
+            
+            print(f"[Debug] Retrieved {len(relevant)} interactions with query matching")
+            return relevant
+            
+        except Exception as e:
+            print(f"[Error] Failed to retrieve interactions by query: {e}")
+            return []  # Return empty list on error to maintain stability
+
 
 class ConsolidatedMemory:
     def __init__(self):
@@ -836,7 +932,7 @@ class PersonalityManager:
             print(f"[Info] Created new personality: {name}")
         
         # Initialize memories
-        short_memory = ShortTermMemory(max_interactions=10)
+        short_memory = ShortTermMemory(max_interactions=25)
         long_memory = LongTermMemory(max_interactions=1000)
         
         # Try to load existing memories
@@ -992,10 +1088,10 @@ class ChatBot:
             f"Response Style: {self.personality.response_style}\n"
             f"Behavior: {self.personality.behavior}\n\n"
             f"Current time: {datetime.now()}\n" 
-            "Time Context (BE PRECISE WITH THESE TIMES):\n"  # Added emphasis on precision
+            "Time Context (BE PRECISE WITH THESE TIMES):\n"
         )
         
-        # Add other context information
+        # Add pattern-based context information
         system_content += f"- Interaction frequency: {patterns.get('interaction_frequency', 'first_time')}\n"
         system_content += f"- Familiarity level: {patterns.get('familiarity_level', 'new')}\n"
         system_content += f"- Total interactions: {patterns.get('total_interactions', 0)}\n"
@@ -1019,14 +1115,30 @@ class ChatBot:
             )
             system_content += f"\n{user_prefs}\n"
         
-        # Add context with timestamps
-        context = "\n".join(
-            [f"[{inter.timestamp}]\nUser: {inter.user_message}\nBot: {inter.bot_response}" 
-            for inter in short_context + long_context]
-        )
+        # Combine and deduplicate context while preserving order
+        all_context = []
+        seen = set()
+        for interaction in short_context + long_context:
+            if interaction.timestamp not in seen:
+                all_context.append(interaction)
+                seen.add(interaction.timestamp)
         
-        if context:
-            system_content += f"\nContext:\n{context}\n"
+        # Sort by timestamp
+        all_context.sort(key=lambda x: x.timestamp)
+        
+        # Format context with clearer temporal markers
+        context_strings = []
+        for inter in all_context:
+            time_ago = (datetime.now() - inter.timestamp).total_seconds()
+            time_str = self._format_time(time_ago)
+            context_strings.append(
+                f"[{time_str} ago]\n"
+                f"User: {inter.user_message}\n"
+                f"Bot: {inter.bot_response}"
+            )
+        
+        if context_strings:
+            system_content += f"\nContext:\n{chr(10).join(context_strings)}\n"
         
         messages = [
             {"role": "system", "content": system_content},
