@@ -18,13 +18,14 @@ class PersonalityProfile:
         response_style="detailed",
         behavior="reactive",
         user_preferences=None,
+        name=None,
     ):
         self.tone = tone
         self.response_style = response_style
         self.behavior = behavior
         self.user_preferences = user_preferences or {}
         self.do_dont = {"do": [], "dont": []}
-        self.name = None  # Add name attribute for identification
+        self.name = name  # Add name attribute for identification
 
     def update_tone(self, new_tone):
         self.tone = new_tone
@@ -986,6 +987,7 @@ class ChatBot:
         print(f"[Debug] Including {len(short_context)} short-term and {len(long_context)} long-term memories in context")
 
         system_content = (
+            f"You are {self.personality.name}, an artificial personality with the following characteristics:\n"
             f"Tone: {self.personality.tone}\n"
             f"Response Style: {self.personality.response_style}\n"
             f"Behavior: {self.personality.behavior}\n\n"
@@ -1053,7 +1055,7 @@ class ChatBot:
         """
         try:
             response = self.client.chat.completions.create(
-                model="gpt-4",
+                model="gpt-4o-mini",
                 messages=[
                     {"role": "system", "content": "Extract relevant topics from the following text as a comma-separated list without additional descriptions or numbering."},
                     {"role": "user", "content": user_message}
@@ -1076,7 +1078,7 @@ class ChatBot:
         """Modified tag extraction to include broader categories"""
         try:
             response = self.client.chat.completions.create(
-                model="gpt-4",
+                model="gpt-4o-mini",
                 messages=[
                     {"role": "system", "content": """
                         Extract topics from the text at multiple levels:

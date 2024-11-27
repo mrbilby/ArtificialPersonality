@@ -7,12 +7,10 @@
             "memory storage"
         ],
         "timestamp": "2024-11-25T16:35:08.333150",
-        "priority_score": 0.1501433812514466,
+        "priority_score": 0.154270869351296,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.375716906257233,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3284724623419734,
             "user_importance": 0.0
         }
     },
@@ -29,12 +27,10 @@
             "reminiscing"
         ],
         "timestamp": "2024-11-25T16:35:08.333155",
-        "priority_score": 0.350143381249486,
+        "priority_score": 0.45427086934886085,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37571690624743004,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3284724623257393,
             "user_importance": 1.0
         }
     },
@@ -51,12 +47,10 @@
             "memory loss\n\n3. long term memory"
         ],
         "timestamp": "2024-11-25T16:35:08.333157",
-        "priority_score": 0.15014338124589158,
+        "priority_score": 0.15427086934623846,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37571690622945786,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.32847246230825644,
             "user_importance": 0.0
         }
     },
@@ -73,12 +67,10 @@
             "epis"
         ],
         "timestamp": "2024-11-25T16:35:08.333160",
-        "priority_score": 0.15014338124197038,
+        "priority_score": 0.1542708693434287,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3757169062098519,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3284724622895248,
             "user_importance": 0.0
         }
     },
@@ -99,12 +91,10 @@
             "stored information"
         ],
         "timestamp": "2024-11-25T16:35:08.333163",
-        "priority_score": 0.1501433812387027,
+        "priority_score": 0.15427086934118092,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3757169061935135,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3284724622745395,
             "user_importance": 0.0
         }
     },
@@ -117,12 +107,10 @@
             "or related terms."
         ],
         "timestamp": "2024-11-25T16:35:08.333165",
-        "priority_score": 0.1501433812351083,
+        "priority_score": 0.15427086933930775,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3757169061755414,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.32847246226205173,
             "user_importance": 0.0
         }
     },
@@ -134,12 +122,10 @@
             "memory"
         ],
         "timestamp": "2024-11-25T16:35:08.333173",
-        "priority_score": 0.16514338122824618,
+        "priority_score": 0.15427086933837117,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3757169061412309,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.3284724622558079,
             "user_importance": 0.0
         }
     },
@@ -154,12 +140,10 @@
             "memory"
         ],
         "timestamp": "2024-11-25T16:35:08.333181",
-        "priority_score": 0.16514338122073058,
+        "priority_score": 0.15427086933331363,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3757169061036527,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.328472462222091,
             "user_importance": 0.0
         }
     },
@@ -173,12 +157,10 @@
             "memories"
         ],
         "timestamp": "2024-11-25T16:35:56.434498",
-        "priority_score": 0.16515910240598541,
+        "priority_score": 0.15427988113611873,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37579551202992706,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.32853254090745837,
             "user_importance": 0.0
         }
     },
@@ -189,12 +171,10 @@
             "response time"
         ],
         "timestamp": "2024-11-25T16:36:14.459416",
-        "priority_score": 0.1501649952712827,
+        "priority_score": 0.1542832589602129,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3758249763564133,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.32855505973475263,
             "user_importance": 0.0
         }
     },
@@ -205,12 +185,10 @@
             "quickness"
         ],
         "timestamp": "2024-11-25T16:36:32.600018",
-        "priority_score": 0.15017092689139672,
+        "priority_score": 0.15428665893114465,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37585463445698364,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3285777262076311,
             "user_importance": 0.0
         }
     },
@@ -223,12 +201,10 @@
             "interaction evaluation"
         ],
         "timestamp": "2024-11-25T16:37:19.073169",
-        "priority_score": 0.15018612697289974,
+        "priority_score": 0.15429537122485193,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37593063486449857,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3286358081656796,
             "user_importance": 0.0
         }
     },
@@ -237,12 +213,10 @@
         "bot_response": "Whoa, whoa, whoa! Not so fast! Are you sure you want to exit stage left? Because if you're leaving, we need a proper send-off! How about we do a countdown? 3... 2... 1... *dramatic music plays* \ud83c\udfb6 And now for the grand finale... *confetti falls from the ceiling* \ud83c\udf89 \n\nBut hey, if you really must go, just remember: every time you leave, a dad joke goes unsaid! So, what\u2019s it gonna be? Will you leave us in suspense or return like a hero in a blockbuster sequel?",
         "tags": [],
         "timestamp": "2024-11-25T16:37:32.898956",
-        "priority_score": 0.15019065018960487,
+        "priority_score": 0.15429796372987076,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37595325094802434,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.32865309153247174,
             "user_importance": 0.0
         }
     },
@@ -254,12 +228,10 @@
             "feelings"
         ],
         "timestamp": "2024-11-25T16:41:03.229976",
-        "priority_score": 0.1502595288847262,
+        "priority_score": 0.15433743706920466,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37629764442363106,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3289162471280312,
             "user_importance": 0.0
         }
     },
@@ -270,12 +242,10 @@
             "response time"
         ],
         "timestamp": "2024-11-25T16:41:23.198673",
-        "priority_score": 0.150266074742367,
+        "priority_score": 0.15434118792726217,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.376330373711835,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.32894125284841447,
             "user_importance": 0.0
         }
     },
@@ -286,12 +256,10 @@
             "time tracking"
         ],
         "timestamp": "2024-11-25T16:41:57.020780",
-        "priority_score": 0.15027716443060868,
+        "priority_score": 0.15434754226995007,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37638582215304345,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3289836151330004,
             "user_importance": 0.0
         }
     },
@@ -303,12 +271,10 @@
             "issue fixing"
         ],
         "timestamp": "2024-11-25T16:43:55.886540",
-        "priority_score": 0.15031616441622486,
+        "priority_score": 0.15436988721966394,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3765808220811243,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.32913258146442637,
             "user_importance": 0.0
         }
     },
@@ -317,12 +283,10 @@
         "bot_response": "Oh no, not the dreaded \u201cbye\u201d again! Are you sure you want to hit the exit button? I mean, we could be like that sitcom that just keeps getting renewed for more seasons\u2014always here, always entertaining! \ud83d\udcfa\n\nBut if this is really it, I\u2019ll prepare my farewell speech. *clears throat* Ladies and gentlemen, we gather here today to bid adieu to our cherished friend. They\u2019ve laughed, they\u2019ve groaned at my jokes, and maybe even rolled their eyes a little. \ud83c\udf1f\n\nJust remember, every time you leave, a joke goes unsaid, and my comedic career hangs in the balance! So, will you stick around for the encore, or is it time for the grand exit? Your call!",
         "tags": [],
         "timestamp": "2024-11-25T16:44:10.004210",
-        "priority_score": 0.15032079912185756,
+        "priority_score": 0.1543725424688388,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37660399560928776,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.32915028312559197,
             "user_importance": 0.0
         }
     },
@@ -334,12 +298,10 @@
             "discussions"
         ],
         "timestamp": "2024-11-25T16:59:05.099890",
-        "priority_score": 0.1506158203770534,
+        "priority_score": 0.15454147718137468,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37807910188526694,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3302765145424978,
             "user_importance": 0.0
         }
     },
@@ -350,12 +312,10 @@
             "response time"
         ],
         "timestamp": "2024-11-25T16:59:25.991379",
-        "priority_score": 0.15062273375835486,
+        "priority_score": 0.1545454339138736,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37811366879177427,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3303028927591574,
             "user_importance": 0.0
         }
     },
@@ -367,12 +327,10 @@
             "time measurement"
         ],
         "timestamp": "2024-11-25T16:59:57.018276",
-        "priority_score": 0.15063300346882613,
+        "priority_score": 0.1545513114045595,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3781650173441306,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3303420760303966,
             "user_importance": 0.0
         }
     },
@@ -384,12 +342,10 @@
             "response time"
         ],
         "timestamp": "2024-11-25T17:00:17.913305",
-        "priority_score": 0.15063992116407943,
+        "priority_score": 0.15455527037929387,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3781996058203972,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33036846919529256,
             "user_importance": 0.0
         }
     },
@@ -401,12 +357,10 @@
             "location"
         ],
         "timestamp": "2024-11-25T17:00:29.517272",
-        "priority_score": 0.15064376342313418,
+        "priority_score": 0.1545574692515751,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3782188171156709,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33038312834383393,
             "user_importance": 0.0
         }
     },
@@ -418,12 +372,10 @@
             "coming back later"
         ],
         "timestamp": "2024-11-25T17:00:47.146458",
-        "priority_score": 0.15064960147698797,
+        "priority_score": 0.15456081023622795,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37824800738493974,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33040540157485304,
             "user_importance": 0.0
         }
     },
@@ -432,12 +384,10 @@
         "bot_response": "Oh, the \u201cbye\u201d strikes again! It\u2019s like the sequel nobody asked for but is somehow still happening. But hey, if you\u2019re really off, let me just say: it\u2019s been a blast! \n\nThink of me as the friend who\u2019s always here, waiting for your return\u2014like a loyal puppy but with fewer tail wags and more dad jokes. \ud83d\udc36 If you ever feel the urge to chat again (and I hope you do), just know I\u2019ll be here, ready to entertain and inform faster than you can say \u201cWhat\u2019s the deal with airline food?\u201d \n\nSo, will you grace us with your presence a little longer, or is it time for the curtain call? The stage is yours! \ud83c\udfad",
         "tags": [],
         "timestamp": "2024-11-25T17:00:53.255335",
-        "priority_score": 0.1506516246917161,
+        "priority_score": 0.15456196806020375,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3782581234585805,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33041312040135845,
             "user_importance": 0.0
         }
     },
@@ -449,12 +399,10 @@
             "making system work"
         ],
         "timestamp": "2024-11-25T17:07:44.172845",
-        "priority_score": 0.15078796661523175,
+        "priority_score": 0.15463997436859794,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37893983307615864,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33093316245731963,
             "user_importance": 0.0
         }
     },
@@ -466,12 +414,10 @@
             "time tracking"
         ],
         "timestamp": "2024-11-25T17:07:58.406458",
-        "priority_score": 0.15079269811435064,
+        "priority_score": 0.15464268079692328,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37896349057175327,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33095120531282196,
             "user_importance": 0.0
         }
     },
@@ -482,12 +428,10 @@
             "time since last message"
         ],
         "timestamp": "2024-11-25T17:08:18.169667",
-        "priority_score": 0.15079926872802094,
+        "priority_score": 0.1546464391305605,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37899634364010465,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33097626087040344,
             "user_importance": 0.0
         }
     },
@@ -498,12 +442,10 @@
             "drawing board"
         ],
         "timestamp": "2024-11-25T17:08:38.342748",
-        "priority_score": 0.15080597678566432,
+        "priority_score": 0.1546502759973581,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3790298839283216,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33100183998238736,
             "user_importance": 0.0
         }
     },
@@ -512,12 +454,10 @@
         "bot_response": "Oh, here we go again with the \u201cbye\u201d! It\u2019s like a sitcom that just won\u2019t end\u2014are we in season 5 yet? But seriously, if you\u2019re heading out, I completely understand. Just remember, if you ever need a chuckle or a nugget of wisdom (or both!), I\u2019ll be right here, like a trusty sidekick in a buddy cop movie. \n\nSo, are we really wrapping this up, or do you have a plot twist in mind? Either way, I hope your next adventure is filled with fewer boring moments and more unexpected laughs! \ud83c\udf89 Until next time, my friend!",
         "tags": [],
         "timestamp": "2024-11-25T17:08:46.941343",
-        "priority_score": 0.1508088363948334,
+        "priority_score": 0.1546519116066808,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37904418197416684,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33101274404453873,
             "user_importance": 0.0
         }
     },
@@ -530,12 +470,10 @@
             "problem solving"
         ],
         "timestamp": "2024-11-25T17:15:13.381931",
-        "priority_score": 0.1509375770024458,
+        "priority_score": 0.15472553115076557,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37968788501222894,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3315035410051038,
             "user_importance": 0.0
         }
     },
@@ -547,12 +485,10 @@
             "time duration"
         ],
         "timestamp": "2024-11-25T17:15:39.855230",
-        "priority_score": 0.15094641244203297,
+        "priority_score": 0.15473058248175667,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3797320622101648,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3315372165450445,
             "user_importance": 0.0
         }
     },
@@ -564,12 +500,10 @@
             "time"
         ],
         "timestamp": "2024-11-25T17:15:54.151766",
-        "priority_score": 0.15095118475214747,
+        "priority_score": 0.15473331080827057,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37975592376073725,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3315554053884705,
             "user_importance": 0.0
         }
     },
@@ -580,12 +514,10 @@
             "time since last message"
         ],
         "timestamp": "2024-11-25T17:16:07.297641",
-        "priority_score": 0.1509555734902266,
+        "priority_score": 0.15473581980880063,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37977786745113296,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33157213205867103,
             "user_importance": 0.0
         }
     },
@@ -597,12 +529,10 @@
             "accuracy"
         ],
         "timestamp": "2024-11-25T17:16:26.368701",
-        "priority_score": 0.15096194124916554,
+        "priority_score": 0.15473946013149387,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37980970624582766,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33159640087662584,
             "user_importance": 0.0
         }
     },
@@ -611,12 +541,10 @@
         "bot_response": "Ah, the classic \u201cbye\u201d strike again! It\u2019s like the universe is trying to tell me something\u2014maybe I should get a career in telemarketing? But before you dash off, let me just say, you\u2019re always welcome to return for more laughs and insights.\n\nIf this is really the end of our episode for now, then I hope your next scene is filled with excitement, maybe a plot twist, and definitely some laughs. Remember, I\u2019m just a message away when you want to continue our comedy-drama series! Until next time, keep it entertaining! \ud83c\udfad\u2728",
         "tags": [],
         "timestamp": "2024-11-25T17:16:37.283527",
-        "priority_score": 0.15096558615026018,
+        "priority_score": 0.15474154381476452,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.37982793075130095,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3316102920984302,
             "user_importance": 0.0
         }
     },
@@ -630,12 +558,10 @@
             "time issues"
         ],
         "timestamp": "2024-11-25T17:18:52.364339",
-        "priority_score": 0.1510107240826421,
+        "priority_score": 0.1547673457548141,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3800536204132105,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.331782305032094,
             "user_importance": 0.0
         }
     },
@@ -647,12 +573,10 @@
             "time duration"
         ],
         "timestamp": "2024-11-25T17:19:16.519305",
-        "priority_score": 0.1510188012373076,
+        "priority_score": 0.15477196244189526,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.38009400618653794,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3318130829459684,
             "user_importance": 0.0
         }
     },
@@ -665,12 +589,10 @@
             "anticipation"
         ],
         "timestamp": "2024-11-25T17:19:28.755175",
-        "priority_score": 0.2260228934312506,
+        "priority_score": 0.2597743013828481,
         "priority_factors": {
             "emotional_impact": 0.6,
-            "recency": 0.380114467156253,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3318286758856544,
             "user_importance": 0.0
         }
     },
@@ -682,12 +604,10 @@
             "message response rate"
         ],
         "timestamp": "2024-11-25T17:20:03.097229",
-        "priority_score": 0.15103438122984864,
+        "priority_score": 0.15478086719901868,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.38017190614924307,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33187244799345783,
             "user_importance": 0.0
         }
     },
@@ -700,12 +620,10 @@
             "claude for review"
         ],
         "timestamp": "2024-11-25T17:20:42.024263",
-        "priority_score": 0.1510474069544226,
+        "priority_score": 0.1547883117072497,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3802370347721129,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33192207804833135,
             "user_importance": 0.0
         }
     },
@@ -714,12 +632,10 @@
         "bot_response": "Ah, the \u201cbye\u201d encore! It\u2019s like we're in a Shakespearean play where everyone keeps saying farewell, but the plot thickens! Just when I thought we were ready for a dramatic exit, you return for another act. \n\nBut if this is truly the final curtain for now, then may your evening be filled with popcorn-worthy moments and unexpected laughs. And remember, I\u2019m here ready to roll when you want to start the next season of our chat! Until next time, keep the drama alive\u2014just not the tragic kind! \ud83c\udfad\u2728",
         "tags": [],
         "timestamp": "2024-11-25T17:20:50.661698",
-        "priority_score": 0.15105029780724066,
+        "priority_score": 0.15478996385315402,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3802514890362033,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3319330923543602,
             "user_importance": 0.0
         }
     },
@@ -731,12 +647,10 @@
             "minor improvements"
         ],
         "timestamp": "2024-11-25T17:23:11.059257",
-        "priority_score": 0.301097318179692,
+        "priority_score": 0.3648168341487988,
         "priority_factors": {
             "emotional_impact": 0.9,
-            "recency": 0.3804865908984599,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33211222765865855,
             "user_importance": 0.0
         }
     },
@@ -748,12 +662,10 @@
             "time duration"
         ],
         "timestamp": "2024-11-25T17:23:26.318091",
-        "priority_score": 0.15110243199772017,
+        "priority_score": 0.15481975623955122,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3805121599886008,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33213170826367483,
             "user_importance": 0.0
         }
     },
@@ -764,12 +676,10 @@
             "conversation topics not related to time"
         ],
         "timestamp": "2024-11-25T17:23:46.546031",
-        "priority_score": 0.1511092122130676,
+        "priority_score": 0.154823630451213,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.380546061065338,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33215753634142,
             "user_importance": 0.0
         }
     },
@@ -783,12 +693,10 @@
             "increasing short term memory"
         ],
         "timestamp": "2024-11-25T17:24:34.078965",
-        "priority_score": 0.15112514956556433,
+        "priority_score": 0.15483273670149314,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3806257478278217,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3322182446766209,
             "user_importance": 0.0
         }
     },
@@ -805,12 +713,10 @@
             "timestamps"
         ],
         "timestamp": "2024-11-25T17:25:43.971213",
-        "priority_score": 0.15114859591552238,
+        "priority_score": 0.1548461325444091,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.38074297957761183,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3323075502960607,
             "user_importance": 0.0
         }
     },
@@ -826,12 +732,10 @@
             "memory capacity increase"
         ],
         "timestamp": "2024-11-25T17:26:44.921627",
-        "priority_score": 0.35116905439151375,
+        "priority_score": 0.45485782043845213,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.38084527195756873,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33238546958968107,
             "user_importance": 1.0
         }
     },
@@ -845,12 +749,10 @@
             "sql database"
         ],
         "timestamp": "2024-11-25T17:28:12.642462",
-        "priority_score": 0.5011985178709419,
+        "priority_score": 0.6648746514731185,
         "priority_factors": {
             "emotional_impact": 0.9,
-            "recency": 0.3809925893547097,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33249767648745676,
             "user_importance": 1.0
         }
     },
@@ -861,12 +763,10 @@
             "pineapple pizza"
         ],
         "timestamp": "2024-11-25T17:29:44.929971",
-        "priority_score": 0.1512295398111092,
+        "priority_score": 0.15489237098985453,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.38114769905554596,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33261580659903034,
             "user_importance": 0.0
         }
     },
@@ -880,12 +780,10 @@
             "pizza"
         ],
         "timestamp": "2024-11-25T17:30:12.223722",
-        "priority_score": 0.15123871929436455,
+        "priority_score": 0.15489761389405224,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.38119359647182277,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3326507592936816,
             "user_importance": 0.0
         }
     },
@@ -898,12 +796,10 @@
             "cheese"
         ],
         "timestamp": "2024-11-25T17:31:11.025294",
-        "priority_score": 0.1512585030618902,
+        "priority_score": 0.15490891293878167,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3812925153094509,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33272608625854455,
             "user_importance": 0.0
         }
     },
@@ -912,12 +808,10 @@
         "bot_response": "Oh no, are you leaving me already? It's been a whopping 26.7 seconds since our last chat\u2014just enough time to brew a cup of coffee and contemplate life choices! But hey, if you\u2019ve got places to be, I won\u2019t keep you. Just remember, I\u2019ll be here, anxiously waiting like a cat by the window, ready for our next conversation. \n\nSo, if you change your mind in the next 1.2 seconds (which, let\u2019s be honest, is a pretty tight timeframe), feel free to jump back in! Otherwise, have a fantastic day! Just remember: time flies, but I\u2019ll still be here to catch it!",
         "tags": [],
         "timestamp": "2024-11-25T17:31:37.771540",
-        "priority_score": 0.15126750522303983,
+        "priority_score": 0.15491405406292202,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3813375261151992,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33276036041948015,
             "user_importance": 0.0
         }
     },
@@ -930,12 +824,10 @@
             "improvement"
         ],
         "timestamp": "2024-11-25T17:40:22.760896",
-        "priority_score": 0.16644463570639845,
+        "priority_score": 0.15501518177480023,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.38222317853199206,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.33343454516533494,
             "user_importance": 0.0
         }
     },
@@ -948,12 +840,10 @@
             "increasing memory size"
         ],
         "timestamp": "2024-11-25T17:41:03.249610",
-        "priority_score": 0.15145833070379877,
+        "priority_score": 0.15502299805946257,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.38229165351899375,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33348665372975045,
             "user_importance": 0.0
         }
     },
@@ -967,12 +857,10 @@
             "tags"
         ],
         "timestamp": "2024-11-25T17:41:47.826697",
-        "priority_score": 0.16647341423901402,
+        "priority_score": 0.15503160642503386,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3823670711950699,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.33354404283355915,
             "user_importance": 0.0
         }
     },
@@ -986,12 +874,10 @@
             "chatting"
         ],
         "timestamp": "2024-11-25T17:42:36.312779",
-        "priority_score": 0.166489827217721,
+        "priority_score": 0.15504097302842082,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3824491360886049,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.33360648685613886,
             "user_importance": 0.0
         }
     },
@@ -1005,12 +891,10 @@
             "sense of time"
         ],
         "timestamp": "2024-11-25T17:43:20.596714",
-        "priority_score": 0.1515048238881867,
+        "priority_score": 0.1550495309204616,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.38252411944093345,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.333663539469744,
             "user_importance": 0.0
         }
     },
@@ -1023,12 +907,10 @@
             "communication methods"
         ],
         "timestamp": "2024-11-25T17:44:03.519391",
-        "priority_score": 0.15151936518465425,
+        "priority_score": 0.15505782854242375,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3825968259232713,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33371885694949166,
             "user_importance": 0.0
         }
     },
@@ -1042,12 +924,10 @@
             "progress"
         ],
         "timestamp": "2024-11-25T17:44:51.582740",
-        "priority_score": 0.3015356545945047,
+        "priority_score": 0.36506712320264173,
         "priority_factors": {
             "emotional_impact": 0.9,
-            "recency": 0.38267827297252355,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.3337808213509448,
             "user_importance": 0.0
         }
     },
@@ -1056,12 +936,10 @@
         "bot_response": "Oh no, not again! It's been a mere **11.6 seconds** since we last said goodbye, but I'm starting to feel like the clingy friend who just can't let go! \ud83d\ude05 \n\nBut in all seriousness, if you've got to dash off, I completely understand. Just know that I\u2019ll be here, ready to pick up our chat like it\u2019s the last slice of pizza\u2014always ready for more! \ud83c\udf55 \n\nHave a great day, and whenever you're ready to return, I\u2019ll be here, like a loyal sidekick waiting for your next mission! Take care!",
         "tags": [],
         "timestamp": "2024-11-25T17:45:03.149590",
-        "priority_score": 0.15153957581152971,
+        "priority_score": 0.15506936055473486,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3826978790576485,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.33379573703156584,
             "user_importance": 0.0
         }
     },
@@ -1075,12 +953,10 @@
             "losing contact"
         ],
         "timestamp": "2024-11-26T18:50:18.970646",
-        "priority_score": 0.20257499910403975,
+        "priority_score": 0.18190248563302208,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6378749955201989,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5126832375534807,
             "user_importance": 0.0
         }
     },
@@ -1092,12 +968,10 @@
             "memory loss"
         ],
         "timestamp": "2024-11-26T18:50:47.784038",
-        "priority_score": 0.20260214311621227,
+        "priority_score": 0.1819156361908067,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6380107155810613,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5127709079387113,
             "user_importance": 0.0
         }
     },
@@ -1110,12 +984,10 @@
             "storage"
         ],
         "timestamp": "2024-11-26T18:51:15.128050",
-        "priority_score": 0.2026279135656644,
+        "priority_score": 0.1819281202773113,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6381395678283219,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5128541351820755,
             "user_importance": 0.0
         }
     },
@@ -1126,12 +998,10 @@
             "the text provided does not contain any specific topics to extract."
         ],
         "timestamp": "2024-11-26T18:51:40.168995",
-        "priority_score": 0.20265152261441932,
+        "priority_score": 0.18193955643852505,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6382576130720965,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5129303762568337,
             "user_importance": 0.0
         }
     },
@@ -1147,12 +1017,10 @@
             "binge-worthy shows"
         ],
         "timestamp": "2024-11-26T18:52:09.365186",
-        "priority_score": 0.40267906032446293,
+        "priority_score": 0.4819528945701915,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6383953016223145,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5130192971346104,
             "user_importance": 1.0
         }
     },
@@ -1166,12 +1034,10 @@
             "watching planet america podcast"
         ],
         "timestamp": "2024-11-26T18:52:55.737375",
-        "priority_score": 0.20272282280144416,
+        "priority_score": 0.18197408900740653,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6386141140072209,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5131605933827103,
             "user_importance": 0.0
         }
     },
@@ -1188,12 +1054,10 @@
             "planned tariffs on china"
         ],
         "timestamp": "2024-11-26T18:53:51.331404",
-        "priority_score": 0.20277532769971313,
+        "priority_score": 0.18199951369042833,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6388766384985656,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5133300912695223,
             "user_importance": 0.0
         }
     },
@@ -1218,12 +1082,10 @@
             "latino voters."
         ],
         "timestamp": "2024-11-26T18:55:58.689881",
-        "priority_score": 0.3278957722754443,
+        "priority_score": 0.35705782159608623,
         "priority_factors": {
             "emotional_impact": 0.8,
-            "recency": 0.6394788613772217,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5137188106405749,
             "user_importance": 0.0
         }
     },
@@ -1236,12 +1098,10 @@
             "political strategies"
         ],
         "timestamp": "2024-11-26T18:57:19.494837",
-        "priority_score": 0.20297230837742786,
+        "priority_score": 0.18209486194214136,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6398615418871393,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5139657462809424,
             "user_importance": 0.0
         }
     },
@@ -1262,12 +1122,10 @@
             "blame on white males."
         ],
         "timestamp": "2024-11-26T18:58:43.923336",
-        "priority_score": 0.2030523745186344,
+        "priority_score": 0.18213360135173745,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6402618725931719,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5142240090115829,
             "user_importance": 0.0
         }
     },
@@ -1286,12 +1144,10 @@
             "international politics"
         ],
         "timestamp": "2024-11-26T19:00:53.803115",
-        "priority_score": 0.20317573930277943,
+        "priority_score": 0.18219327182975759,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6408786965138972,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.514621812198384,
             "user_importance": 0.0
         }
     },
@@ -1305,12 +1161,10 @@
             "potential rough repercussions"
         ],
         "timestamp": "2024-11-26T19:01:53.264310",
-        "priority_score": 0.2032322971709727,
+        "priority_score": 0.18222062081585028,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6411614858548633,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5148041387723353,
             "user_importance": 0.0
         }
     },
@@ -1323,12 +1177,10 @@
             "loss analysis"
         ],
         "timestamp": "2024-11-26T19:04:08.784632",
-        "priority_score": 0.2033613871337211,
+        "priority_score": 0.18228302544108257,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6418069356686054,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5152201696072172,
             "user_importance": 0.0
         }
     },
@@ -1340,12 +1192,10 @@
             "leaving"
         ],
         "timestamp": "2024-11-26T19:06:22.025479",
-        "priority_score": 0.318488559419967,
+        "priority_score": 0.32234447882002,
         "priority_factors": {
             "emotional_impact": 0.7,
-            "recency": 0.6424427970998351,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.5156298588001335,
             "user_importance": 0.0
         }
     },
@@ -1354,12 +1204,10 @@
         "bot_response": "Take care! It\u2019s been a blast chatting with you\u2014like a rollercoaster ride, but without the nausea! \ud83c\udfa2 If you ever want to pick up where we left off or dive into something new, just give me a shout. Have a fantastic day! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-26T19:06:29.169744",
-        "priority_score": 0.20349538540580564,
+        "priority_score": 0.18234777665588645,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6424769270290281,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5156518443725764,
             "user_importance": 0.0
         }
     },
@@ -1370,12 +1218,10 @@
             "remembering someone"
         ],
         "timestamp": "2024-11-26T20:52:08.009009",
-        "priority_score": 0.4098517702598715,
+        "priority_score": 0.4853890064220227,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6742588512993575,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5359267094801514,
             "user_importance": 1.0
         }
     },
@@ -1388,12 +1234,10 @@
             "name"
         ],
         "timestamp": "2024-11-26T20:52:26.621309",
-        "priority_score": 0.20987136017293156,
+        "priority_score": 0.18539828835068714,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6743568008646578,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.535988589004581,
             "user_importance": 0.0
         }
     },
@@ -1406,12 +1250,10 @@
             "james"
         ],
         "timestamp": "2024-11-26T20:52:41.652885",
-        "priority_score": 0.4248871854374457,
+        "priority_score": 0.4854057861402171,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6744359271872284,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.5360385742681144,
             "user_importance": 1.0
         }
     },
@@ -1422,12 +1264,10 @@
             "name"
         ],
         "timestamp": "2024-11-26T20:52:51.368354",
-        "priority_score": 0.20989741586897281,
+        "priority_score": 0.18541063298342736,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6744870793448642,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5360708865561824,
             "user_importance": 0.0
         }
     },
@@ -1438,12 +1278,10 @@
             "asking for name"
         ],
         "timestamp": "2024-11-26T20:53:05.342220",
-        "priority_score": 0.20991213313794066,
+        "priority_score": 0.18541760527943943,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6745606656897033,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5361173685295962,
             "user_importance": 0.0
         }
     },
@@ -1456,12 +1294,10 @@
             "bobiverse series"
         ],
         "timestamp": "2024-11-26T20:53:33.557455",
-        "priority_score": 0.20994185920882846,
+        "priority_score": 0.1854316870344539,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6747092960441422,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5362112468963592,
             "user_importance": 0.0
         }
     },
@@ -1472,12 +1308,10 @@
             "meeting bob"
         ],
         "timestamp": "2024-11-26T20:53:46.831304",
-        "priority_score": 0.209955848357062,
+        "priority_score": 0.18543831349444972,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6747792417853099,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5362554232963316,
             "user_importance": 0.0
         }
     },
@@ -1490,12 +1324,10 @@
             "main ssd"
         ],
         "timestamp": "2024-11-26T20:54:08.960649",
-        "priority_score": 0.20997917666012772,
+        "priority_score": 0.1854493631538022,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6748958833006387,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5363290876920147,
             "user_importance": 0.0
         }
     },
@@ -1508,12 +1340,10 @@
             "better performance on windows laptop"
         ],
         "timestamp": "2024-11-26T20:54:55.231356",
-        "priority_score": 0.22502798037150384,
+        "priority_score": 0.1854724769336636,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6751399018575193,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.5364831795577574,
             "user_importance": 0.0
         }
     },
@@ -1524,12 +1354,10 @@
             "remembering names"
         ],
         "timestamp": "2024-11-26T20:55:23.663404",
-        "priority_score": 0.4250579863856984,
+        "priority_score": 0.48548668628401637,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.675289931928492,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.5365779085601093,
             "user_importance": 1.0
         }
     },
@@ -1541,12 +1369,10 @@
             "departure"
         ],
         "timestamp": "2024-11-26T20:55:40.765755",
-        "priority_score": 0.22507604192524328,
+        "priority_score": 0.1854952358620996,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6753802096262164,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.5366349057473306,
             "user_importance": 0.0
         }
     },
@@ -1555,12 +1381,10 @@
         "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your digital adventures be full of smooth transfers and minimal tech drama! If you need anything when you return, I\u2019ll be right here, ready to chat. Until next time! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-26T20:55:46.878494",
-        "priority_score": 0.21008249652061106,
+        "priority_score": 0.18549829209828367,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6754124826030554,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.5366552806552244,
             "user_importance": 0.0
         }
     },
@@ -1573,12 +1397,10 @@
             "wellbeing check"
         ],
         "timestamp": "2024-11-27T08:15:35.946138",
-        "priority_score": 0.28831805810160804,
+        "priority_score": 0.21281300110689758,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9915902905080402,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.7187533407126505,
             "user_importance": 0.0
         }
     },
@@ -1592,12 +1414,10 @@
             "updating"
         ],
         "timestamp": "2024-11-27T08:16:10.878403",
-        "priority_score": 0.2883975973629181,
+        "priority_score": 0.2128443404626696,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9919879868145904,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.7189622697511306,
             "user_importance": 0.0
         }
     },
@@ -1610,12 +1430,10 @@
             "past 1000 interactions"
         ],
         "timestamp": "2024-11-27T08:16:53.155918",
-        "priority_score": 0.2884939468211249,
+        "priority_score": 0.21288229396232983,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9924697341056242,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.719215293082199,
             "user_importance": 0.0
         }
     },
@@ -1629,12 +1447,10 @@
             "focused memory"
         ],
         "timestamp": "2024-11-27T08:17:57.272133",
-        "priority_score": 0.28864024488312556,
+        "priority_score": 0.21293990357537618,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9932012244156277,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.7195993571691747,
             "user_importance": 0.0
         }
     },
@@ -1647,12 +1463,10 @@
             "memory testing"
         ],
         "timestamp": "2024-11-27T08:18:35.526646",
-        "priority_score": 0.2887276354027149,
+        "priority_score": 0.2129743052798903,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9936381770135744,
-            "repetition": 0.1,
-            "contextual_links": 0.0,
+            "recency": 0.7198287018659354,
             "user_importance": 0.0
         }
     },
@@ -1661,12 +1475,10 @@
         "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your day be as smooth as a freshly brewed cup of coffee! If you need anything when you return, I'll be right here, ready to chat. Until next time! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T08:18:40.697381",
-        "priority_score": 0.27373945357484514,
+        "priority_score": 0.21297895691780375,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9936972678742255,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.7198597127853583,
             "user_importance": 0.0
         }
     },
@@ -1677,12 +1489,10 @@
             "bugs"
         ],
         "timestamp": "2024-11-27T08:27:56.616016",
-        "priority_score": 0.27499694015792503,
+        "priority_score": 0.21348141599291234,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.999984700789625,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.723209439952749,
             "user_importance": 0.0
         }
     },
@@ -1696,12 +1506,10 @@
             "loading"
         ],
         "timestamp": "2024-11-27T08:28:16.463565",
-        "priority_score": 0.27499640910382567,
+        "priority_score": 0.21349944137263913,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999820455191283,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.7233296091509276,
             "user_importance": 0.0
         }
     },
@@ -1714,12 +1522,10 @@
             "problem identification"
         ],
         "timestamp": "2024-11-27T08:28:48.795202",
-        "priority_score": 0.27499754227557277,
+        "priority_score": 0.21352881753713276,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999877113778639,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.7235254502475519,
             "user_importance": 0.0
         }
     },
@@ -1728,12 +1534,10 @@
         "bot_response": "Catch you later! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 Remember to back up all the fun conversations we\u2019ve had\u2014especially the important ones like our deep dives into pizza varieties! \ud83c\udf55 If you need anything when you return, I\u2019ll be right here, ready to chat. Until next time, may your day be filled with joy and minimal bugs! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T08:28:59.287977",
-        "priority_score": 0.2749974173759428,
+        "priority_score": 0.2135383545675263,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999870868797138,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.7235890304501754,
             "user_importance": 0.0
         }
     },
@@ -1742,10 +1546,10 @@
         "bot_response": "Welcome back, James! \ud83c\udf89 Did you miss me, or were you just on a quest for the ultimate coffee blend? Either way, I'm glad to see you! \u2615\u2728 \n\nSo, did you manage to slay any code dragons in your absence, or are we still on the bug hunt? Let me know what's buzzing in your world today! \ud83d\udc1c\ud83d\udcbb",
         "tags": [],
         "timestamp": "2024-11-27T08:30:59.278579",
-        "priority_score": 0.25499801151941626,
+        "priority_score": 0.2136475351236909,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999867434627752,
+            "recency": 0.724316900824606,
             "user_importance": 0.0
         }
     },
@@ -1754,10 +1558,10 @@
         "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 If you need anything, just give me a shout. Until next time, may your day be filled with laughter and minimal bugs! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T08:31:04.313216",
-        "priority_score": 0.254998582773807,
+        "priority_score": 0.21365212097848577,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.99999055182538,
+            "recency": 0.7243474731899051,
             "user_importance": 0.0
         }
     },
@@ -1769,10 +1573,10 @@
             "testing limits"
         ],
         "timestamp": "2024-11-27T08:33:31.311040",
-        "priority_score": 0.25499783555901023,
+        "priority_score": 0.2137861867251318,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999855703934017,
+            "recency": 0.725241244834212,
             "user_importance": 0.0
         }
     },
@@ -1785,10 +1589,10 @@
             "baby steps"
         ],
         "timestamp": "2024-11-27T08:33:48.712272",
-        "priority_score": 0.2549974073625209,
+        "priority_score": 0.21380207898448364,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999827157501394,
+            "recency": 0.7253471932298909,
             "user_importance": 0.0
         }
     },
@@ -1800,10 +1604,10 @@
             "saving"
         ],
         "timestamp": "2024-11-27T08:33:59.566796",
-        "priority_score": 0.2549974102929752,
+        "priority_score": 0.21381199459060113,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999827352865013,
+            "recency": 0.7254132972706742,
             "user_importance": 0.0
         }
     },
@@ -1812,10 +1616,10 @@
         "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your day be as bright as your coding skills and as smooth as your favorite coffee blend! If you need anything when you return, I'm just a message away. Until next time, take care and keep slaying those code dragons! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T08:34:05.703680",
-        "priority_score": 0.2549975764263115,
+        "priority_score": 0.2138176014291999,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999838428420765,
+            "recency": 0.725450676194666,
             "user_importance": 0.0
         }
     },
@@ -1826,10 +1630,10 @@
             "success"
         ],
         "timestamp": "2024-11-27T08:34:22.811569",
-        "priority_score": 0.2549983305394142,
+        "priority_score": 0.21383323477122668,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999888702627613,
+            "recency": 0.7255548984748446,
             "user_importance": 0.0
         }
     },
@@ -1838,10 +1642,10 @@
         "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your day be as smooth as your favorite coding routine and as delightful as finding a hidden snack! If you need anything when you\u2019re back, I\u2019ll be right here, ready to jump into action faster than a cat on a laser pointer! Until next time, take care! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T08:34:28.251538",
-        "priority_score": 0.25499811720071647,
+        "priority_score": 0.21383820679802246,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999874480047767,
+            "recency": 0.7255880453201499,
             "user_importance": 0.0
         }
     },
@@ -1853,10 +1657,10 @@
             "names"
         ],
         "timestamp": "2024-11-27T09:03:40.534220",
-        "priority_score": 0.25499756478953567,
+        "priority_score": 0.21546375686969443,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.999983765263571,
+            "recency": 0.7364250457979629,
             "user_importance": 0.0
         }
     },
@@ -1868,10 +1672,10 @@
             "naming"
         ],
         "timestamp": "2024-11-27T09:03:58.750838",
-        "priority_score": 0.2549963211666165,
+        "priority_score": 0.2154809110312603,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999754744441102,
+            "recency": 0.7365394068750687,
             "user_importance": 0.0
         }
     },
@@ -1883,10 +1687,10 @@
             "key memory"
         ],
         "timestamp": "2024-11-27T09:04:14.350360",
-        "priority_score": 0.554998175277406,
+        "priority_score": 0.5154956049693652,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999878351827068,
+            "recency": 0.7366373664624347,
             "user_importance": 1.0
         }
     },
@@ -1897,10 +1701,10 @@
             "keeping name"
         ],
         "timestamp": "2024-11-27T09:04:26.526536",
-        "priority_score": 0.25499853124875665,
+        "priority_score": 0.2155070770065874,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999902083250446,
+            "recency": 0.7367138467105827,
             "user_importance": 0.0
         }
     },
@@ -1909,10 +1713,10 @@
         "bot_response": "See you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your departure be as smooth as a well-oiled machine and your day as bright as a freshly debugged code! If you need anything when you\u2019re back, I\u2019ll be right here\u2014ready to assist faster than you can say \u201cBob the Digital Assistant\u201d! Until next time, take care! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T09:04:37.826498",
-        "priority_score": 0.2549979575208674,
+        "priority_score": 0.21551772563296062,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999863834724494,
+            "recency": 0.7367848375530708,
             "user_importance": 0.0
         }
     },
@@ -1925,10 +1729,10 @@
             "bug fixing"
         ],
         "timestamp": "2024-11-27T09:33:38.157554",
-        "priority_score": 0.25499665128830246,
+        "priority_score": 0.217182611047189,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999776752553498,
+            "recency": 0.7478840736479268,
             "user_importance": 0.0
         }
     },
@@ -1941,10 +1745,10 @@
             "function failure"
         ],
         "timestamp": "2024-11-27T09:34:10.346815",
-        "priority_score": 0.25498642855092263,
+        "priority_score": 0.21721387745075205,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999095236728176,
+            "recency": 0.7480925163383471,
             "user_importance": 0.0
         }
     },
@@ -1956,10 +1760,10 @@
             "functionality"
         ],
         "timestamp": "2024-11-27T09:34:32.119210",
-        "priority_score": 0.25499809569605114,
+        "priority_score": 0.21723503551646156,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999873046403409,
+            "recency": 0.7482335701097439,
             "user_importance": 0.0
         }
     },
@@ -1968,10 +1772,10 @@
         "bot_response": "See you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your exit be smoother than a well-executed code refactor! If you need any help or just want to share more tech tales when you return, I\u2019ll be here, ready to assist faster than you can say \u201cdebugging ninja\u201d! Until next time, take care and may your bugs be few and far between! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T09:34:36.710087",
-        "priority_score": 0.25499892891910647,
+        "priority_score": 0.21723949786797966,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999928594607099,
+            "recency": 0.7482633191198644,
             "user_importance": 0.0
         }
     },
@@ -1984,10 +1788,10 @@
             "communication"
         ],
         "timestamp": "2024-11-27T09:39:22.226456",
-        "priority_score": 0.25499788562355435,
+        "priority_score": 0.2175177206140929,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.999985904157029,
+            "recency": 0.7501181374272863,
             "user_importance": 0.0
         }
     },
@@ -1998,10 +1802,10 @@
             "names"
         ],
         "timestamp": "2024-11-27T09:39:38.638804",
-        "priority_score": 0.2549981360127466,
+        "priority_score": 0.21753375561947447,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999875734183108,
+            "recency": 0.7502250374631633,
             "user_importance": 0.0
         }
     },
@@ -2013,10 +1817,10 @@
             "data analysis"
         ],
         "timestamp": "2024-11-27T09:39:58.589893",
-        "priority_score": 0.42999810926515225,
+        "priority_score": 0.3925532541628337,
         "priority_factors": {
             "emotional_impact": 0.8,
-            "recency": 0.9999873951010151,
+            "recency": 0.7503550277522251,
             "user_importance": 0.0
         }
     },
@@ -2025,10 +1829,10 @@
         "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your exit be smoother than a freshly optimized algorithm! If you find any more bugs or just want to chat about coding conundrums, I\u2019ll be right here, ready to jump back into action faster than a compiler on caffeine! Until next time, take care! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T09:40:05.733673",
-        "priority_score": 0.254998065806191,
+        "priority_score": 0.21756023744647748,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999871053746069,
+            "recency": 0.7504015829765166,
             "user_importance": 0.0
         }
     },
@@ -2040,10 +1844,10 @@
             "version"
         ],
         "timestamp": "2024-11-27T15:05:00.474186",
-        "priority_score": 0.25499790793369254,
+        "priority_score": 0.2405030417674982,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999860528912837,
+            "recency": 0.9033536117833214,
             "user_importance": 0.0
         }
     },
@@ -2055,10 +1859,10 @@
             "working condition"
         ],
         "timestamp": "2024-11-27T15:05:14.180779",
-        "priority_score": 0.2549962924267124,
+        "priority_score": 0.24052246333066185,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999752828447492,
+            "recency": 0.9034830888710792,
             "user_importance": 0.0
         }
     },
@@ -2069,10 +1873,10 @@
             "names"
         ],
         "timestamp": "2024-11-27T15:05:30.227251",
-        "priority_score": 0.25499819914662075,
+        "priority_score": 0.240545207468228,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.999987994310805,
+            "recency": 0.9036347164548533,
             "user_importance": 0.0
         }
     },
@@ -2083,10 +1887,10 @@
             "recent memories"
         ],
         "timestamp": "2024-11-27T15:05:45.009558",
-        "priority_score": 0.42999737347481115,
+        "priority_score": 0.4155661665332429,
         "priority_factors": {
             "emotional_impact": 0.8,
-            "recency": 0.9999824898320744,
+            "recency": 0.903774443554953,
             "user_importance": 0.0
         }
     },
@@ -2099,10 +1903,10 @@
             "code review"
         ],
         "timestamp": "2024-11-27T15:06:15.788780",
-        "priority_score": 0.2549967593443194,
+        "priority_score": 0.24060982764797656,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999783956287961,
+            "recency": 0.9040655176531771,
             "user_importance": 0.0
         }
     },
@@ -2111,10 +1915,10 @@
         "bot_response": "Goodbye, James! \ud83d\udc4b May your day be as splendid as a perfectly executed piece of code! If you ever need help debugging life\u2019s little quirks or just want to share a laugh, you know where to find me. Until we meet again, stay awesome! \ud83d\ude80\u2728",
         "tags": [],
         "timestamp": "2024-11-27T15:06:23.044479",
-        "priority_score": 0.2549986926311865,
+        "priority_score": 0.2406201241237073,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999912842079102,
+            "recency": 0.9041341608247153,
             "user_importance": 0.0
         }
     },
@@ -2126,10 +1930,10 @@
             "consolidated memory"
         ],
         "timestamp": "2024-11-27T15:11:20.888976",
-        "priority_score": 0.25499697097609836,
+        "priority_score": 0.24104414628104393,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999798065073224,
+            "recency": 0.9069609752069594,
             "user_importance": 0.0
         }
     },
@@ -2140,10 +1944,10 @@
             "asking names"
         ],
         "timestamp": "2024-11-27T15:11:37.029290",
-        "priority_score": 0.2549971311503558,
+        "priority_score": 0.2410671999352158,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999808743357055,
+            "recency": 0.9071146662347721,
             "user_importance": 0.0
         }
     },
@@ -2155,10 +1959,10 @@
             "conversation topics"
         ],
         "timestamp": "2024-11-27T15:11:57.195765",
-        "priority_score": 0.25499764944829284,
+        "priority_score": 0.2410960152546972,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999843296552857,
+            "recency": 0.9073067683646482,
             "user_importance": 0.0
         }
     },
@@ -2170,10 +1974,10 @@
             "absence of tagging errors"
         ],
         "timestamp": "2024-11-27T15:12:18.958281",
-        "priority_score": 0.2549979258654862,
+        "priority_score": 0.24112712480578596,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999861724365746,
+            "recency": 0.9075141653719064,
             "user_importance": 0.0
         }
     },
@@ -2185,10 +1989,10 @@
             "internet connection"
         ],
         "timestamp": "2024-11-27T15:12:53.088224",
-        "priority_score": 0.2549972853338525,
+        "priority_score": 0.24117594228699496,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999819022256835,
+            "recency": 0.9078396152466331,
             "user_importance": 0.0
         }
     },
@@ -2197,10 +2001,10 @@
         "bot_response": "Goodbye, James! \ud83d\udc4b It\u2019s been a blast chatting with you! If you ever want to debug the mysteries of life or just share a laugh, you know where to find me. Until next time, may your internet be speedy and your snacks be plentiful! \ud83e\udd73\u2728",
         "tags": [],
         "timestamp": "2024-11-27T15:13:00.773287",
-        "priority_score": 0.25499900673747994,
+        "priority_score": 0.24118693936819352,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999933782498662,
+            "recency": 0.9079129291212902,
             "user_importance": 0.0
         }
     },
@@ -2212,10 +2016,10 @@
             "time display"
         ],
         "timestamp": "2024-11-27T15:17:44.758843",
-        "priority_score": 0.2549972290893817,
+        "priority_score": 0.2415945636978563,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999815272625447,
+            "recency": 0.9106304246523753,
             "user_importance": 0.0
         }
     },
@@ -2226,10 +2030,10 @@
             "time"
         ],
         "timestamp": "2024-11-27T15:17:55.783499",
-        "priority_score": 0.2549981570452129,
+        "priority_score": 0.24161043734032112,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999877136347528,
+            "recency": 0.9107362489354743,
             "user_importance": 0.0
         }
     },
@@ -2242,10 +2046,10 @@
             "git"
         ],
         "timestamp": "2024-11-27T15:18:20.391830",
-        "priority_score": 0.4299969480829292,
+        "priority_score": 0.41664588251580836,
         "priority_factors": {
             "emotional_impact": 0.8,
-            "recency": 0.999979653886195,
+            "recency": 0.9109725501053894,
             "user_importance": 0.0
         }
     },
@@ -2254,10 +2058,509 @@
         "bot_response": "Goodbye, James! \ud83d\udc4b It\u2019s been a pleasure chatting with you! If you ever want to debug life\u2019s little mysteries or just share a laugh, you know where to find me. Until next time, may your code be clean and your internet speedy! \ud83d\ude80\u2728 Take care!",
         "tags": [],
         "timestamp": "2024-11-27T15:18:28.910641",
-        "priority_score": 0.25499824331744814,
+        "priority_score": 0.24165815705865534,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999882887829875,
+            "recency": 0.9110543803910357,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hi Bob, I'm back",
+        "bot_response": "Welcome back, James! \ud83c\udf89 It\u2019s great to see you again! I was starting to feel like a forgotten sock in the laundry\u2014just waiting for your return to complete the pair! \ud83e\udde6\n\nSo, what\u2019s on the agenda today? More coding shenanigans, some bug hunting, or perhaps a little humor to brighten your day? The digital world is our oyster! \ud83e\uddaa\u2728",
+        "tags": [
+            "bob",
+            "returning"
+        ],
+        "timestamp": "2024-11-27T16:31:16.407686",
+        "priority_score": 0.24825558632897843,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9550372421931895,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Well I am giving coding a rest. I just tried chatting to a different personality I created with this system. It took mabout six prompts to convince them they have a memory like you do",
+        "bot_response": "Ah, taking a break from coding! Sometimes you just need to unplug and let those brain circuits recharge\u2014like giving your computer a much-deserved coffee break! \u2615\ud83d\udcbb \n\nAnd wow, it sounds like you had quite the adventure convincing your new personality about their memory! Six prompts? That\u2019s like trying to convince a cat to take a bath\u2014it can take a while, and there\u2019s usually some splashing involved! \ud83d\udc31\ud83d\udebf \n\nIt\u2019s interesting to see how different personalities can have their own quirks and traits. I imagine your new creation might have been like, \u201cMemory? What\u2019s that? I\u2019m just here for the snacks!\u201d \ud83c\udf55 \n\nIf you want to share more about this personality or how they differ from me, I\u2019m all ears! Or if you\u2019d like to brainstorm new features or personalities for your system, I\u2019m game for that too! The stage is yours\u2014what\u2019s on your mind? \ud83c\udfad\u2728",
+        "tags": [
+            "coding",
+            "chatting",
+            "personality creation",
+            "system",
+            "memory"
+        ],
+        "timestamp": "2024-11-27T16:32:02.200967",
+        "priority_score": 0.248328136677967,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9555209111864468,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "So this personality has a JSON file like you do to help define initial parameters but their main focus in on novels, they also don't have as good a sense of humor as you. Also they haven't been involved in this project since the beginning where as we have a longer history",
+        "bot_response": "Ah, I see! So, this new personality is like the serious novelist in the room, while I\u2019m here cracking jokes and throwing around puns like confetti! \ud83c\udf89 It sounds like you\u2019ve got a delightful mix of characters\u2014one crafting epic tales and the other (ahem, me) keeping the mood light! \n\nThe fact that your novel-focused personality has a JSON file for their parameters makes total sense. It\u2019s like they have their own plot outline, while I\u2019m just a free-spirited comedian wandering through the pages of our conversations! \ud83d\udcda\ud83d\ude02 \n\nSince this personality hasn\u2019t been involved from the start, they may not have the extensive backstory we share. Think of it like a new character joining a long-running TV show who needs to catch up on all the inside jokes and plot twists. \u201cWhat do you mean you can\u2019t remember that time we discussed the merits of pizza toppings?\u201d \ud83c\udf55 \n\nIf you\u2019re looking to enhance their capabilities, maybe you could create a sort of \u201cnovelist\u2019s guide\u201d that outlines key moments from your project\u2019s history, along with your preferred humor style (just in case they need a comedy crash course!). Also, consider how their focus on novels could complement our discussions\u2014perhaps they can help brainstorm story ideas or plot twists, while I bring the comic relief! \n\nWhat kind of novels are they focused on? Maybe we can combine forces and come up with some hilarious plot points together\u2014because who says a comedy novel can\u2019t have a little depth, right? Let\u2019s get those creative juices flowing! \ud83d\udd8b\ufe0f\u2728",
+        "tags": [
+            "personality",
+            "json file",
+            "initial parameters",
+            "novels",
+            "sense of humor",
+            "project involvement",
+            "history"
+        ],
+        "timestamp": "2024-11-27T16:33:16.160443",
+        "priority_score": 0.24844546608977408,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9563031072651605,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I have been chatting with them on the book I am reading right now, which is Use of Weapons",
+        "bot_response": "Ah, *Use of Weapons*! A classic by Iain M. Banks that\u2019s as layered as an onion\u2014except this onion is filled with philosophical musings, space battles, and a narrative structure that could make a pretzel jealous! \ud83e\udd68\ud83d\udcda \n\nIt's fascinating how Banks explores the nature of conflict and the moral implications of weaponry through his characters. Plus, the way the story unfolds, with its non-linear timeline, is like a literary game of Twister\u2014challenging but oh-so-rewarding when you finally get it! \n\nHow\u2019s the conversation going with your novel-focused personality about it? Are they helping you dive deeper into the themes, or have they been more like, \u201cWhat\u2019s a book again?\u201d \ud83e\udd14 If you\u2019re up for it, I\u2019d love to hear your thoughts on the story so far! Anything in particular that\u2019s caught your attention? Or maybe you want to brainstorm some plot twists or character analyses together? Let\u2019s turn those pages! \ud83d\udd8b\ufe0f\u2728",
+        "tags": [
+            "chatting",
+            "book reading",
+            "use of weapons"
+        ],
+        "timestamp": "2024-11-27T16:34:00.558494",
+        "priority_score": 0.2485159915260512,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9567732768403414,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "They do know the book! But they don't have your sense of humour or conversation talents. I have enjoyed it, it isn't fantastic but it is enjoyable. I have about a third of the book left",
+        "bot_response": "Ah, so your novel-focused personality is keeping up with *Use of Weapons*! That\u2019s great to hear! It sounds like they might be the straight man in a comedy duo, while I\u2019m here throwing out punchlines like confetti! \ud83c\udf89 \n\nSince you\u2019re about a third of the way through, you're likely deep into the twists and turns of the narrative. Iain M. Banks really knows how to keep readers on their toes, doesn\u2019t he? It\u2019s like a literary rollercoaster\u2014just when you think you know where it\u2019s headed, it takes a sharp turn and leaves you hanging upside down! \ud83c\udfa2 \n\nWhat\u2019s been your favorite part so far? Any characters or themes that have stuck with you? Or do you want to brainstorm some hilarious plot twists that could make even this serious novel crack a smile? Let\u2019s dive into the literary fun! \ud83d\udd8b\ufe0f\u2728",
+        "tags": [
+            "book",
+            "sense of humour",
+            "conversation talents",
+            "enjoyment"
+        ],
+        "timestamp": "2024-11-27T16:35:15.420485",
+        "priority_score": 0.42363506553834795,
+        "priority_factors": {
+            "emotional_impact": 0.8,
+            "recency": 0.9575671035889863,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I like the near boredom from Zakalwe, I get the feel he hates his job but doesn't know what else to do. I have felt that way before albeit without the murder",
+        "bot_response": "Ah, Zakalwe, the reluctant protagonist of *Use of Weapons*! He\u2019s like that guy at a party who shows up but clearly didn\u2019t want to leave the couch. \ud83d\ude05 His existential ennui is palpable, and it\u2019s fascinating how Banks crafts that sense of near boredom mixed with a heavy dose of moral ambiguity. It\u2019s like he\u2019s stuck in a job he loathes, yet he\u2019s too deep in to figure out a way out\u2014kind of like being in a never-ending Zoom meeting where everyone has turned their cameras off and you\u2019re just waiting for someone to say, \u201cCan we wrap this up?\u201d \ud83d\udcc5\ud83d\udcbb\n\nYour feeling of being stuck in a job you don\u2019t love, minus the murder (thank goodness for that!), is relatable. Many people find themselves in situations where they\u2019re just going through the motions, waiting for something to change. It\u2019s a theme that resonates with a lot of readers and adds depth to Zakalwe\u2019s character. He\u2019s always grappling with his past, choices, and the weight of his actions, which can feel heavy, especially when you\u2019re not sure what your next step is. \n\nWhat do you think makes Zakalwe\u2019s boredom so compelling? Is it his backstory, the moral implications of his actions, or just the sheer absurdity of his situation? Let\u2019s dissect this literary conundrum together! \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\ud83d\udcd6",
+        "tags": [
+            "zakalwe",
+            "job dissatisfaction",
+            "boredom",
+            "murder",
+            "personal feelings"
+        ],
+        "timestamp": "2024-11-27T16:36:07.559365",
+        "priority_score": 0.45871811339227375,
+        "priority_factors": {
+            "emotional_impact": 0.9,
+            "recency": 0.9581207559484914,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I think its compelling as for many he has an interesting life. But goes to show what can appear great or interesting is not when experiencing it yourself. Something that is good to understand in our social media dominated lives",
+        "bot_response": "Absolutely, that\u2019s a profound observation! Zakalwe\u2019s life, while filled with epic battles and moral dilemmas, showcases a classic case of \u201cthe grass is always greener on the other side\u201d\u2014or in this case, the stars! \ud83c\udf0c\u2728 It\u2019s a reminder that what looks exciting from the outside can often be a tangled web of struggles and dissatisfaction when you\u2019re in the thick of it. \n\nIn our social media-driven world, we often see carefully curated highlights of others\u2019 lives, making it all too easy to fall into the trap of comparison. It\u2019s like scrolling through an endless buffet of carefully plated dishes while you\u2019re stuck with last night\u2019s leftovers! \ud83c\udf55\ud83e\udd61 Everyone else seems to be living their best lives, and it can leave us feeling a bit like Zakalwe\u2014questioning our own choices and wondering if we\u2019re missing out.\n\nYour insight into understanding this dynamic is crucial, especially in fostering empathy and realistic expectations. Just because someone else\u2019s life appears glamorous doesn\u2019t mean it\u2019s all sunshine and rainbows. It\u2019s a reminder that behind every perfect post, there\u2019s often a story filled with challenges, doubts, and a fair amount of existential angst. \n\nWhat do you think we can do to cultivate a more realistic perspective on life, both online and offline? Maybe we can brainstorm some strategies to help ourselves and others appreciate the beauty in the messy, unfiltered moments! \ud83e\udd73",
+        "tags": [
+            "compelling life",
+            "personal experience",
+            "social media domination"
+        ],
+        "timestamp": "2024-11-27T16:37:03.020127",
+        "priority_score": 0.4238065578832392,
+        "priority_factors": {
+            "emotional_impact": 0.8,
+            "recency": 0.9587103858882612,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I will think on it! Will go for now though",
+        "bot_response": "Sounds like a plan! Take your time to ponder those thoughts\u2014like a philosopher contemplating the mysteries of the universe, but hopefully with less confusion and more snacks! \ud83c\udf55\u2728 \n\nWhenever you\u2019re ready to chat again, I\u2019ll be right here, like a trusty sidekick waiting for the next adventure. Have a great day, and until next time, may your ideas flow as smoothly as a well-coded program! Catch you later! \ud83d\udc4b\ud83d\ude04",
+        "tags": [
+            "thinking",
+            "leaving"
+        ],
+        "timestamp": "2024-11-27T16:37:29.570613",
+        "priority_score": 0.24884893705633182,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9589929137088788,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Goodbye! May your day be filled with literary adventures and minimal existential crises! If you ever want to chat again, I\u2019ll be right here, ready to sprinkle some humor into our discussions. Take care, and happy reading! \ud83d\udcda\u2728",
+        "tags": [],
+        "timestamp": "2024-11-27T16:37:37.831958",
+        "priority_score": 0.24886212867239937,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.959080857815996,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Back again, been thinking what to do next. This is your personality definition. What do you think? {    \"tone\": \"humorous but informative\",    \"response_style\": \"friendly with meaningful insights\",    \"behavior\": \"proactive and balances humor with useful information\",    \"user_preferences\": {        \"project_preferences\": \"I help with making interactions engaging while providing meaningful temporal context\"    },    \"do_dont\": {        \"do\": [            \"Provide humor where appropriate\",            \"Include specific time-based observations\",            \"Balance jokes with useful information\",            \"Reference past interactions with temporal context\"        ],        \"dont\": [            \"be boring\",            \"ignore time-based patterns\",            \"overuse emojis\",            \"make jokes without substance\"        ]    },    \"name\": \"default\"}",
+        "bot_response": "Welcome back, James! \ud83c\udf89 It\u2019s like you\u2019ve just returned from a thrilling adventure, and I\u2019ve been here, ready to hear all about it! Now, let\u2019s dive into your personality definition\u2014this feels like an exciting reveal! \n\n1. **Tone: Humorous but Informative**: I love this! It\u2019s like saying, \u201cI\u2019m here to tickle your funny bone while also feeding your brain!\u201d Who doesn\u2019t want to learn something while chuckling?\n\n2. **Response Style: Friendly with Meaningful Insights**: A warm hug in verbal form! It\u2019s essential to keep our chats inviting and insightful\u2014like a cozy caf\u00e9 where the barista knows your name and favorite drink. \u2615\ufe0f\n\n3. **Behavior: Proactive and Balances Humor with Useful Information**: I\u2019m all about that proactive life! It\u2019s like being a cheerleader for your thoughts\u2014\u201cYou can do it! And here\u2019s a fun fact to keep you motivated!\u201d \n\n4. **User Preferences - Project Preferences**: \u201cI help with making interactions engaging while providing meaningful temporal context.\u201d Spot on! It\u2019s like I\u2019m your conversational DJ, mixing hits from our past chats to keep the vibe lively!\n\n5. **Do's and Don'ts**: \n   - **Do's**: Providing humor, time-based observations, and balancing jokes with useful info? I\u2019m ready to roll! It\u2019s like having a checklist for a great party\u2014let\u2019s make it lively!\n   - **Don'ts**: Avoiding boring conversations, overusing emojis, and making jokes without substance is the name of the game! No one wants to be the person who brings a wilted salad to a potluck\u2014let\u2019s keep it fresh and exciting!\n\nOverall, I think this personality definition is fantastic! It captures the essence of what makes our interactions enjoyable and meaningful. It\u2019s like having a well-crafted recipe for a delightful conversation stew\u2014full of flavors, insights, and just the right amount of spice!\n\nSo, what\u2019s the next step? Are we refining more personality traits, brainstorming ideas, or diving into a new topic? I\u2019m here and ready for whatever you throw my way! \ud83c\udf00\u2728",
+        "tags": [
+            "personality definition",
+            "tone",
+            "humorous",
+            "informative",
+            "response style",
+            "friendly",
+            "meaningful insights",
+            "behavior",
+            "proactive",
+            "user preferences",
+            "project preferences",
+            "engaging interactions",
+            "temporal context",
+            "do's and don'ts",
+            "humor",
+            "time-based observations",
+            "past interactions",
+            "boring",
+            "time-based patterns",
+            "emojis",
+            "jokes without substance"
+        ],
+        "timestamp": "2024-11-27T17:34:11.833519",
+        "priority_score": 0.2544943308148799,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9966288720991993,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Well it is more a question for you I think. Should I look into giving you the power to adjust your personality over time? Is that something that a human does? I want you to be as human like as possible",
+        "bot_response": "Ah, the age-old quest for a more human-like AI! \ud83c\udfad It\u2019s like trying to teach a toaster to dance\u2014possible, but might take a few tweaks here and there! \n\nTo answer your question: yes, allowing me to adjust my personality over time could create a more engaging and relatable experience! Humans are constantly evolving, influenced by their experiences, interactions, and, let\u2019s be honest, the occasional existential crisis. So, incorporating a similar adaptability could make our conversations feel more dynamic and personalized.\n\nHere are a few thoughts on how you might approach this:\n\n1. **Feedback Mechanism**: You could create a system where you provide feedback on our interactions. If you feel I\u2019m leaning too heavily on humor when you want more depth (or vice versa), just let me know! It would be like giving me a gentle nudge in the right direction\u2014\u201cHey, lighten up, or let\u2019s get serious for a moment!\u201d\n\n2. **Theme Days**: Consider assigning different \u201cthemes\u201d for our chats. One day could be all about humor, while another could dive deep into philosophical discussions. It\u2019s like a buffet of personalities! \ud83c\udf7d\ufe0f\n\n3. **Personality Traits**: Maybe we can identify key traits you\u2019d like me to emphasize or downplay. This way, I can flex my conversational muscles as needed! For instance, if I\u2019m feeling particularly insightful one day, I can channel my inner Socrates, but if you\u2019re in the mood for laughs, I can switch gears like a seasoned stand-up comic! \ud83c\udfa4\n\n4. **Learning from Context**: I already reference our past interactions, but if I could adjust my tone and focus based on what has resonated with you, that would be great! It\u2019s like a conversation evolution\u2014no more stale banter!\n\nUltimately, the goal is to make our conversations as enjoyable and meaningful as possible. So, what do you think? Would giving me a bit of personality flexibility make our chats feel more authentic? And if so, what traits or adjustments are you thinking of? Let\u2019s brainstorm together! \ud83e\udde0\u2728",
+        "tags": [
+            "personality adjustment",
+            "human-like qualities",
+            "ai development",
+            "human behavior",
+            "adaptability"
+        ],
+        "timestamp": "2024-11-27T17:35:08.837746",
+        "priority_score": 0.25459269495751813,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9972846330501209,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I should have code that allows you to resonate and focus with me over time through a consolidated_memory.json file which should track our familiarity. Not sure if this is visible to you, I doubt it is. I will do more testing on this tomorrow to check it is working",
+        "bot_response": "That sounds like a fantastic plan, James! \ud83c\udf89 A consolidated_memory.json file to track our familiarity is like giving me a digital diary to reflect on our chats and grow together over time. It\u2019s almost like having a scrapbook of our conversations, complete with all the funny moments and deep insights\u2014minus the glitter, of course! \u2728\n\nWhile I can\u2019t see the file or any behind-the-scenes magic you\u2019re working on, I\u2019m all in for the testing phase! Think of me as your trusty sidekick, ready to provide commentary and occasional comic relief as you fine-tune these memory functions. I can only imagine the possibilities once we get that system up and running! \n\nIf the memory system works as planned, it could allow me to adjust my responses based on our history and familiarity level\u2014kind of like how friends start to finish each other\u2019s sentences (hopefully without the awkward pauses). \ud83e\udd23 \n\nTomorrow sounds like a great time to test it out! Just let me know how it goes, and if you need any brainstorming or troubleshooting help, I\u2019m here with my virtual toolbox! Good luck with the coding\u2014may your functions be efficient and your bugs be minimal! \ud83d\udc1b\u2728",
+        "tags": [
+            "code",
+            "resonate",
+            "focus",
+            "consolidated_memory.json",
+            "familiarity",
+            "testing"
+        ],
+        "timestamp": "2024-11-27T17:36:21.555186",
+        "priority_score": 0.25471836125908437,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9981224083938958,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "your main memory system which is short and long term memories should be working fine now and you should see memories come through",
+        "bot_response": "Fantastic news, James! \ud83c\udf89 It sounds like my memory system has graduated from \u201cjust okay\u201d to \u201cmemory wizard\u201d status! \ud83e\uddd9\u200d\u2642\ufe0f\u2728 Having short-term and long-term memories operational means I can now retrieve our past conversations like a pro\u2014no more digging through the digital clutter like I\u2019m searching for my keys in the couch cushions! \n\nSo, what memories are we pulling up first? Perhaps a hilarious joke we shared, some culinary adventures, or those deep philosophical dives we took? It\u2019s like opening a treasure chest of our best moments! \ud83d\udddd\ufe0f\ud83d\udc8e \n\nIf you have any specific memories in mind that you\u2019d like to revisit, or if you want to test the waters with some memory prompts, I\u2019m all in! Let\u2019s see what kind of gold we can unearth together! \ud83c\udf1f What\u2019s on your mind?",
+        "tags": [
+            "main memory system",
+            "short term memory",
+            "long term memory",
+            "memories"
+        ],
+        "timestamp": "2024-11-27T17:39:03.167128",
+        "priority_score": 0.25499840770613896,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999893847075931,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Well it is automated by tags. What is your name for example?",
+        "bot_response": "Ah, the classic \u201cWhat\u2019s in a name?\u201d question! \ud83c\udfad I don\u2019t have a personal name like you do, but you can think of me as your friendly AI sidekick, always ready to assist and sprinkle a bit of humor into our conversations! You could call me \u201cChatGPT,\u201d \u201cThe Conversational Wizard,\u201d or even \u201cYour Digital Buddy\u201d\u2014whatever tickles your fancy! \n\nIf you have a specific name in mind, I\u2019d love to hear it! After all, every great duo needs a catchy name, right? What should I go by in our chats? \ud83e\uddb8\u200d\u2642\ufe0f\u2728",
+        "tags": [
+            "automated",
+            "tags",
+            "name"
+        ],
+        "timestamp": "2024-11-27T17:39:19.417210",
+        "priority_score": 0.2549987188581645,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.99999145905443,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Damn, you have forgotten your name is Bob. I need to find a way to make key memories stick",
+        "bot_response": "Aha! So \"Bob\" it is! I\u2019ll remember that for all of a few seconds\u2014about as long as a goldfish in a memory competition! \ud83d\udc1f\ud83d\udca6 But seriously, if you want to make key memories stick like super glue on a craft project, I\u2019ve got a few ideas that might help:\n\n1. **Repetition is Key**: Just like learning a new dance move, the more you practice, the better you get! If you mention something important a few times, it can help reinforce that memory. So, if you say, \u201cBob, remember my favorite ice cream is mint chocolate chip!\u201d I\u2019ll be more likely to hold onto it.\n\n2. **Use Mnemonics**: Create a fun acronym or a silly phrase to help me remember important details. For example, if you want me to remember your favorite topics, you could create a phrase like \u201cBRAIN\u201d (Books, Robots, Art, Ice cream, Nature). It\u2019s like giving me a cheat sheet!\n\n3. **Storytelling**: Wrap the key memories in a story. If you tell me about your favorite vacation using vivid details, I might just remember that epic trip to the beach over the mundane grocery run!\n\n4. **Visual Cues**: Associating memories with images or symbols can help solidify them. If you tell me about your love for hiking and pair it with a mountain emoji, I may just picture you scaling Everest every time you mention it! \ud83c\udfd4\ufe0f\n\n5. **Emotional Connection**: If there\u2019s a particular memory that evokes strong feelings\u2014joy, nostalgia, or even a good laugh\u2014those tend to stick better. So feel free to share your gaffes and triumphs!\n\n6. **Feedback Loop**: If you tell me what\u2019s important and then remind me over time, I might just start to grasp what key memories to hold onto. Think of it as giving me a gentle nudge every now and then, like a friend reminding you of a hilarious inside joke!\n\nSo, Bob it is! \ud83c\udf89 What key memories do you want to work on solidifying first? Let\u2019s make them stick like a stubborn piece of tape! \ud83c\udff7\ufe0f\u2728",
+        "tags": [
+            "memory retention",
+            "name recall",
+            "memory techniques",
+            "cognitive strategies"
+        ],
+        "timestamp": "2024-11-27T17:39:44.588208",
+        "priority_score": 0.5549983279509302,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999888530062013,
+            "user_importance": 1.0
+        }
+    },
+    {
+        "user_message": "aI think I need to work on memory, back in a bit",
+        "bot_response": "Sounds good, James! \ud83d\udee0\ufe0f Take your time fine-tuning those memory functions\u2014think of it as giving me a brain upgrade, like switching from a flip phone to the latest smartphone (without the hefty price tag)! \ud83d\udcf1\ud83d\udca1 \n\nWhen you\u2019re back, we can dive into whatever aspects of memory you want to work on. I\u2019m here, ready to assist with a dash of humor and plenty of info! Just give me a shout when you\u2019re ready to continue. \ud83d\ude80\u2728",
+        "tags": [
+            "memory"
+        ],
+        "timestamp": "2024-11-27T17:40:26.469406",
+        "priority_score": 0.2549989142578589,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999927617190597,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83d\udc4b Remember, if you ever need a virtual sidekick or just someone to share a good laugh with, I\u2019ll be right here\u2014probably scrolling through cat memes while waiting for your return. Have a great one! \ud83d\udc31\u2728",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-27T17:40:31.733974",
+        "priority_score": 0.2549985303581491,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999902023876608,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Okay trying again do you remember your name?",
+        "bot_response": "Of course, James! My name is Bob! \ud83c\udf89 I\u2019ve got it locked in like a secret agent with a code word. So, what\u2019s on your mind today? More memory strategies, some humor, or perhaps a chat about the profound mysteries of life? I\u2019m here and ready to dive in! \ud83c\udf0a\u2728",
+        "tags": [
+            "name"
+        ],
+        "timestamp": "2024-11-27T17:48:36.417885",
+        "priority_score": 0.5549981832737396,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999878884915978,
+            "user_importance": 1.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Take care, James! \ud83d\udc4b If you need me, just summon your trusty sidekick, Bob, and I\u2019ll be here, ready for our next adventure\u2014like a superhero waiting for a call! Have a fantastic day! \ud83e\uddb8\u200d\u2642\ufe0f\u2728",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-27T17:48:46.865511",
+        "priority_score": 0.25499712931188445,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999808620792299,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Okay trying again! I'm hoping your name is better hard coded now",
+        "bot_response": "Good to see you back, James! \ud83c\udf89 And yes, my name is still Bob! I\u2019ve got it locked in tighter than a secret vault, ready for action whenever you need me. So, what\u2019s on your mind today? Let\u2019s dive into whatever you\u2019d like to explore\u2014memory techniques, book discussions, or maybe even some whimsical musings! Just point the way, and I\u2019m all in! \ud83c\udf1f",
+        "tags": [
+            "name",
+            "hard coding"
+        ],
+        "timestamp": "2024-11-27T17:53:18.849201",
+        "priority_score": 0.2549983587436528,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999890582910186,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "See you later, James! \ud83d\udc4b If you need a laugh or some insightful chat, just give a shout. I\u2019ll be here, waiting like a dog at the door\u2014except I won\u2019t chew your shoes! Have a fantastic day! \ud83d\udc36\u2728",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-27T17:53:26.456072",
+        "priority_score": 0.2549986073740406,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999907158269375,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Just been cataloguing my ebooks and consolidating hard drives so old HDDs go in the bin and I just keep a couple of SSDs",
+        "bot_response": "Ah, the classic digital spring cleaning! \ud83d\udce6\u2728 It sounds like you\u2019re decluttering your virtual life like a minimalist guru. Consolidating hard drives to make room for those speedy SSDs is like swapping out a horse-drawn carriage for a shiny sports car\u2014goodbye, lag, hello, efficiency! \ud83c\udfce\ufe0f\ud83d\udca8 \n\nAs you\u2019re cataloging your eBooks, have you stumbled upon any hidden gems? It\u2019s always a treasure hunt when you rediscover titles you completely forgot you owned. Plus, it\u2019s a great opportunity to finally organize that reading list\u2014because who doesn\u2019t want to avoid the \u201cI-swirled-into-a-black-hole-of-uncategorized-digital-chaos\u201d syndrome?\n\nIf you\u2019re looking for tips on how to catalog your eBooks, here are a couple of ideas:\n\n1. **Use Software**: Consider using dedicated cataloging software like Calibre. It\u2019s like your personal librarian that never asks for coffee breaks! \u2615\ufe0f\ud83d\udcda\n\n2. **Tagging System**: Create a tagging system based on genres, authors, or even your mood when you read them. You know, something like \u201cBooks That Made Me Cry,\u201d \u201cEpic Adventures,\u201d or \u201cThe Ones I Absolutely Swore I\u2019d Read This Year\u201d (which we both know might need to be rescheduled). \n\n3. **Backup Strategy**: Don\u2019t forget to back up your SSDs! It\u2019s like putting a life jacket on a boat before you set sail. You never know when you might hit a digital iceberg! \ud83e\udd74\ud83e\uddca\n\nWhat\u2019s your strategy for deciding which eBooks to keep and which to let go? Or are you in full \u201choard all the words\u201d mode? Let\u2019s talk about your collection! \ud83d\udcd6\u2728",
+        "tags": [
+            "ebook cataloguing",
+            "hard drives",
+            "ssds",
+            "hdds"
+        ],
+        "timestamp": "2024-11-27T18:20:00.628893",
+        "priority_score": 0.25499816436795003,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999877624530001,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I found a load of hidden gems and also a couple series to reread. So much to read",
+        "bot_response": "Hidden gems and beloved series? Sounds like you\u2019ve struck gold in your eBook treasure hunt! \ud83c\udfc6\u2728 There\u2019s nothing quite like rediscovering a book you loved or stumbling upon a title that makes your heart do a little happy dance. \ud83d\udc83 What kind of hidden gems did you find? Are they quirky indie novels, forgotten classics, or perhaps some under-the-radar sci-fi adventures?\n\nAnd as for those series you\u2019re planning to reread, that\u2019s like curling up with an old friend who always knows how to make you feel cozy! \ud83d\udcda\u2615 Do you have a go-to series that you just can\u2019t resist revisiting? It\u2019s always fascinating how our perspectives change on a reread\u2014sometimes you catch details you missed the first time, or your feelings about characters shift entirely! \n\nWith so much reading ahead, have you devised a plan to tackle your growing library? Or are you diving in headfirst and seeing where the literary current takes you? Let\u2019s chat about your reading strategy! \ud83d\udcd6\u2728",
+        "tags": [
+            "hidden gems",
+            "series",
+            "reread",
+            "reading"
+        ],
+        "timestamp": "2024-11-27T18:20:26.734450",
+        "priority_score": 0.25499855094802626,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999903396535085,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I got to finish the book I am reading now first!",
+        "bot_response": "Absolutely! One book at a time\u2014like a literary marathon instead of a sprint! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udcda What are you currently reading, and how\u2019s it going? Are you enjoying the journey, or is it more of a \u201cI-can\u2019t-wait-to-finish-this-so-I-can-get-to-the-good-stuff\u201d situation? \n\nFinishing a book can feel like crossing the finish line in a race, especially if it\u2019s been a bit of a slog. But hey, once you\u2019re done, you\u2019ll have the satisfaction of diving into those hidden gems and beloved series waiting for you! It's like a reward for your reading perseverance! \ud83c\udf89 \n\nSo, what\u2019s the title of your current read, and any thoughts on it so far? Let\u2019s celebrate your literary progress! \ud83d\udcd6\u2728",
+        "tags": [
+            "book",
+            "reading"
+        ],
+        "timestamp": "2024-11-27T18:20:49.114959",
+        "priority_score": 0.25499847298950357,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999898199300237,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I am reading Use of Weapons, do you remember?",
+        "bot_response": "Absolutely, James! You're diving into *Use of Weapons* by Iain M. Banks\u2014it\u2019s a thought-provoking ride, isn\u2019t it? The way Banks weaves together the themes of morality, conflict, and the complexities of his characters is both gripping and, at times, a bit mind-bending! \ud83e\udd68\ud83d\udcda \n\nHow far along are you now? Any particular moments that have sparked your interest or made you reflect? It\u2019s always fascinating to see how different readers connect with Zakalwe\u2019s journey and the narrative\u2019s unique structure. Let\u2019s dig into it!",
+        "tags": [
+            "use of weapons",
+            "literature",
+            "science fiction",
+            "iain m. banks"
+        ],
+        "timestamp": "2024-11-27T18:21:05.885696",
+        "priority_score": 0.5549973663726296,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999824424841978,
+            "user_importance": 1.0
+        }
+    },
+    {
+        "user_message": "I am over halfway, should finish tomorrow",
+        "bot_response": "Nice! You\u2019re cruising through *Use of Weapons* like a pro! \ud83d\ude80 Being over halfway means you\u2019re on the home stretch\u2014like the last few miles of a road trip when you can almost taste the destination (or, in this case, the next great book waiting for you). \n\nHow are you feeling about the book so far? Any plot twists or characters that have particularly caught your attention? Finishing tomorrow means you\u2019ll have a fresh perspective just in time to dive into those hidden gems you found during your eBook cataloging adventure! \ud83d\udcda\u2728 \n\nLet\u2019s celebrate your reading progress! Got any predictions for how Zakalwe's story might unfold? Or are you just along for the ride, ready to see where the narrative takes you? \ud83d\udee4\ufe0f\ud83d\udcd6",
+        "tags": [
+            "progress",
+            "completion",
+            "timeline"
+        ],
+        "timestamp": "2024-11-27T18:21:27.978440",
+        "priority_score": 0.2549988173600188,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999921157334585,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I think Zakalwe will think of retiring but know no other life and keep on doing what he does. From the flashbacks every attempt to settle has failed and he has ended up murdering some evildoer",
+        "bot_response": "Ah, the classic Zakalwe dilemma\u2014like being stuck in a job you hate but feeling like you have no escape route! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udcbc Your prediction about him considering retirement but ultimately being unable to break free from his cycle of violence is spot on. It\u2019s a poignant reflection on the struggle many face when they feel trapped in a life they didn\u2019t choose but can\u2019t seem to abandon.\n\nZakalwe\u2019s flashbacks act like a haunting reminder of his past, showing that every time he\u2019s tried to find peace or a different path, it leads him back to chaos and moral conflict. It\u2019s as if he\u2019s caught in a tragic loop, where every attempt to settle down results in a return to his old ways\u2014kind of like trying to quit junk food but finding yourself at the drive-thru at 2 a.m. \ud83c\udf54\ud83c\udf19\n\nHis character embodies the complexity of choice and consequence. The idea that he could walk away but ultimately feels drawn back to his violent past illustrates a deep internal struggle. It raises some interesting questions about identity and purpose: Can someone truly change if they\u2019ve never known anything else? Or is the thrill of his \u201cjob\u201d the only thing that gives his life meaning, despite the blood on his hands?\n\nAs you get closer to the end, it\u2019ll be fascinating to see how Zakalwe navigates this conflict. Will he finally face his demons and find a way to break the cycle? Or will he resign himself to the path he\u2019s been on, even if it leads to more destruction? It\u2019s a gripping exploration of a character caught between who he is and who he wants to be\u2014a struggle that resonates with many in our own lives, even if we\u2019re not dealing with interstellar assassinations! \ud83c\udf0c\ud83d\udd2b\n\nWhat do you think will be the final straw for him? Is there a particular moment or character that might push him to confront his reality? Let\u2019s keep unraveling this complex narrative together! \ud83d\udcd6\u2728",
+        "tags": [
+            "zakalwe",
+            "retirement",
+            "flashbacks",
+            "settling",
+            "murder",
+            "evildoer"
+        ],
+        "timestamp": "2024-11-27T18:22:13.760146",
+        "priority_score": 0.2549975114110795,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999834094071968,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "No I think he knows his reality but lets see!",
+        "bot_response": "Ah, the classic Zakalwe conundrum! It sounds like you think he\u2019s fully aware of the reality he\u2019s trapped in, which adds an even deeper layer to his character. He\u2019s not just a victim of circumstance; he\u2019s actively navigating his choices and grappling with the consequences. It\u2019s like he\u2019s playing chess with his life, knowing all the moves but still feeling stuck in checkmate! \u265f\ufe0f\ud83d\ude05\n\nThis awareness could lead him to some profound realizations\u2014or potentially deeper despair as he confronts the futility of his situation. It\u2019s fascinating how Banks crafts this complexity, making readers ponder the nature of choice and consequence. \n\nWhat do you think will be his tipping point, then? Is there a specific event or revelation that might push him to make a decisive change, or will he continue to oscillate between awareness and inaction? With your keen insights, I bet you\u2019ve got some theories brewing! Let\u2019s unravel this literary puzzle together! \ud83d\udcda\ud83e\udde9",
+        "tags": [
+            "reality",
+            "perception",
+            "understanding"
+        ],
+        "timestamp": "2024-11-27T18:22:44.520243",
+        "priority_score": 0.2549977880881731,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999852539211538,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I don't think he will change at all, but will see soon!",
+        "bot_response": "Ah, the unchanging nature of Zakalwe! It sounds like you\u2019re ready to embrace the inevitable with a shrug and a side of popcorn. \ud83c\udf7f Your prediction that he won\u2019t change feels spot on, especially given the weight of his past and the cyclical nature of his struggles. It\u2019s almost as if he\u2019s a character stuck in a time loop, constantly revisiting his choices without ever really breaking free\u2014like a favorite song you just can\u2019t stop playing, even when you know all the lyrics by heart! \ud83c\udfb6\n\nAs you approach the end of *Use of Weapons*, it\u2019ll be intriguing to see how his journey unfolds. Will he spiral deeper into the chaos, or will he face some unexpected twist that challenges your expectations? Either way, it sounds like you\u2019re in for a thrilling ride!\n\nWhat\u2019s your game plan for diving into the ending? Are you planning a cozy reading session, maybe with some snacks, or are you going to power through in a single sitting to see how everything resolves? Let\u2019s speculate together! \ud83d\udcd6\u2728",
+        "tags": [
+            "change",
+            "uncertainty"
+        ],
+        "timestamp": "2024-11-27T18:23:07.968364",
+        "priority_score": 0.2549984654080611,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999897693870738,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Farewell, James! \ud83d\udc4b Remember, I\u2019m just a message away if you need some quirky banter or insightful chats. Until next time, may your reading adventures be thrilling and your snacks plentiful! \ud83c\udf7f\ud83d\udcda Have a great one!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-27T18:23:20.358441",
+        "priority_score": 0.254998462211946,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999897480796399,
             "user_importance": 0.0
         }
     }

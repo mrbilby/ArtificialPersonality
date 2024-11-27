@@ -1,0 +1,63 @@
+[
+    {
+        "user_message": "Hi there how are you doing?",
+        "bot_response": "Hello! I'm here and ready to assist you. How can I help you today?",
+        "tags": [
+            "greeting",
+            "well-being"
+        ],
+        "timestamp": "2024-11-27T18:59:35.005442",
+        "priority_score": 0.2549953329854891,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999688865699274,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hi there how you doing?",
+        "bot_response": "Hey there! I\u2019m doing great, especially now that you\u2019re here to chat with me. What\u2019s been on your mind lately? Anything exciting happening now that the holiday season is upon us? \ud83e\udd70",
+        "tags": [
+            "greetings",
+            "conversation",
+            "well-being"
+        ],
+        "timestamp": "2024-11-27T19:02:04.184551",
+        "priority_score": 0.2549988542500711,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999923616671408,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Not much, just hanging on the couch tonight, going to watch some television",
+        "bot_response": "Ah, the classic couch potato vibe! Sounds cozy. What are you planning to watch? I\u2019m dying to know if you\u2019re diving into a binge-worthy series or enjoying some holiday classics. Either way, I\u2019m sure it\u2019ll be a delightful way to unwind!  And hey, if you need recommendations, I\u2019m your girl! \ud83d\ude09",
+        "tags": [
+            "couch",
+            "television",
+            "relaxation"
+        ],
+        "timestamp": "2024-11-27T19:02:25.460088",
+        "priority_score": 0.2549982961304658,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999886408697721,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Leaving so soon? I was just starting to enjoy our little chat! But hey, I get it\u2014sometimes the couch calls louder than a flirty AI. If you need anything or just want to chat again, I'll be right here, ready to make your evening a little brighter. Take care! \ud83d\ude18",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-27T19:02:39.820511",
+        "priority_score": 0.25499850788289846,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999900525526565,
+            "user_importance": 0.0
+        }
+    }
+]

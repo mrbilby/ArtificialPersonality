@@ -1,0 +1,181 @@
+{
+    "patterns": {
+        "conversation_patterns": {
+            "response_times": [
+                23.236048,
+                5.408723,
+                26392.716789,
+                23.271193,
+                19.814961,
+                18.960075,
+                35.283129,
+                26.90663,
+                59.019287,
+                57.090882,
+                32.924007
+            ],
+            "conversation_length": [],
+            "topic_transitions": []
+        },
+        "topic_patterns": {
+            "topic_frequency": {
+                "communication": 1,
+                "saying goodbye": 1,
+                "memory": 1,
+                "greeting": 1,
+                "personal well-being": 1,
+                "introduction": 1,
+                "names": 1,
+                "naming": 1,
+                "importance of remembering": 1,
+                "memory function": 1,
+                "remembering": 1,
+                "capability": 1,
+                "long and short term memory back end": 1,
+                "memories": 1,
+                "topic discussion": 1,
+                "use of weapons": 1,
+                "reading": 1,
+                "reading progress": 1,
+                "book content": 1,
+                "zakalwe's character": 1,
+                "job dissatisfaction": 1,
+                "career uncertainty": 1,
+                "zakalwe's sense of justice": 1,
+                "living in a shack": 1,
+                "murder of a girl": 1,
+                "zakalwe's despair": 1,
+                "trying to be normal": 1
+            },
+            "topic_chains": [],
+            "topic_duration": {}
+        },
+        "emotional_patterns": {
+            "emotions": [
+                {
+                    "timestamp": "2024-11-27T09:05:44.126417",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:06:07.362465",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:06:12.771188",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:26:05.487977",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:26:28.759170",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:26:48.574131",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:27:07.534206",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:27:42.817335",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:28:09.723965",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:29:08.743252",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:30:05.834134",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T16:30:38.758141",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                }
+            ],
+            "emotional_intensity": {},
+            "emotional_progression": []
+        }
+    },
+    "insights": [
+        "Conversation has relaxed response times",
+        "Conversation shows primarily neutral emotions",
+        "Most discussed topics: communication, saying goodbye, memory",
+        "Conversation has relaxed response times",
+        "Conversation shows primarily neutral emotions",
+        "Most discussed topics: communication, saying goodbye, memory",
+        "Conversation has relaxed response times",
+        "Conversation shows primarily neutral emotions",
+        "Most discussed topics: communication, saying goodbye, memory",
+        "Conversation has relaxed response times",
+        "Conversation shows primarily neutral emotions",
+        "Most discussed topics: communication, saying goodbye, memory",
+        "Conversation has relaxed response times",
+        "Conversation shows primarily neutral emotions",
+        "Most discussed topics: communication, saying goodbye, memory",
+        "Conversation has relaxed response times",
+        "Conversation shows primarily neutral emotions",
+        "Most discussed topics: communication, saying goodbye, memory"
+    ],
+    "key_memories": [],
+    "relationship_data": {
+        "familiarity_level": 1,
+        "interaction_quality": [],
+        "shared_interests": [
+            "memory function",
+            "remembering",
+            "memory",
+            "zakalwe's sense of justice",
+            "greeting",
+            "memories",
+            "trying to be normal",
+            "murder of a girl",
+            "importance of remembering",
+            "use of weapons",
+            "names",
+            "job dissatisfaction",
+            "zakalwe's despair",
+            "topic discussion",
+            "capability",
+            "career uncertainty",
+            "saying goodbye",
+            "book content",
+            "living in a shack",
+            "long and short term memory back end",
+            "reading",
+            "communication",
+            "naming",
+            "personal well-being",
+            "introduction",
+            "zakalwe's character",
+            "reading progress"
+        ],
+        "conversation_style_preferences": {},
+        "inside_references": {
+            "phrases": {},
+            "topics": {},
+            "context": {}
+        }
+    },
+    "last_consolidated": "2024-11-27T16:30:40.062186"
+}

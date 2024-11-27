@@ -30,7 +30,6 @@ Function
 [ ] Create a structure for multiple personalities and memories to be stored for different artificial identities
 [ ] Allow for engagement between different APs
 [ ] Add an art creation function
-[ ] Create a betting personality that bets and retains memory of bets
 [ ] Long term memory condenser
 [ ] Long term memory pruner
 
