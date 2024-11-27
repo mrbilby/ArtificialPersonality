@@ -1,89 +1,153 @@
 [
     {
-        "user_message": "Thanks remember my name is James if you can! It is important",
-        "bot_response": "Absolutely, James! \ud83c\udf89 Your name is now firmly planted in my memory like a favorite recipe I won't forget! Just like a chef remembers their secret sauce, I\u2019ll keep your name close at hand for all our future banter. \n\nSo, what\u2019s cooking today? More political discourse, or shall we switch gears to something else? I\u2019m ready for whatever flavor you want to dive into! \ud83c\udf7d\ufe0f\ud83d\ude04",
+        "user_message": "Hello! We have bugs it seems!",
+        "bot_response": "Oh no, bugs? Are we talking about digital glitches or actual creepy crawlies? Because if it\u2019s the latter, I recommend a can of bug spray, and if it\u2019s the former, well, I\u2019m armed with my trusty virtual fly swatter! \ud83d\udc1c\u2728 \n\nCan you give me the lowdown on what kind of bugs you\u2019re dealing with? Are they more like pesky interruptions in our chat or is something else going awry? Let\u2019s squash these issues together! \ud83e\uddb8\u200d\u2642\ufe0f\ud83d\udcbb",
         "tags": [
-            "remembering names",
-            "importance of remembering names",
-            "james"
+            "bugs"
         ],
-        "timestamp": "2024-11-26T20:52:41.652885"
+        "timestamp": "2024-11-27T08:27:56.616016",
+        "priority_score": 0.27499694015792503,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.999984700789625,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
-        "user_message": "Okay now what is my name?",
-        "bot_response": "Your name is James! \ud83c\udf89 I\u2019ve got it locked in like a secret recipe for the perfect chocolate chip cookies. So, what\u2019s on your mind today, James? Any burning questions or intriguing topics you want to dive into? I\u2019m ready to roll! \ud83c\udf6a\u2728",
+        "user_message": "So main problem I can see is only 100 interactions from long term memory are loading",
+        "bot_response": "Ah, the classic case of the memory hiccup! \ud83e\udd14 It seems like my digital scrapbook is only showcasing the highlights reel instead of the full album! Instead of a sweeping saga of our epic chats, we\u2019re left with a top 100 playlist on shuffle. \ud83c\udfb6\n\nThis can happen if there\u2019s some sort of technical limitation or if the tagging system hasn\u2019t quite kicked in yet. It\u2019s like having a fancy new coffee machine that only brews decaf\u2014great for some, but not quite what you ordered! \u2615 \n\nTo get this sorted, here are a few steps we can take:\n\n1. **Check the Settings**: Double-check to ensure that the long-term memory settings are configured to pull up the full 1000 interactions. Sometimes, it\u2019s just a toggle away from full functionality!\n\n2. **Refresh the System**: Like giving a computer a good ol\u2019 reboot, refreshing the memory might help. If you\u2019ve made recent changes, it might just need a moment to catch up!\n\n3. **Explore Tagging**: If we're diving into the tagging system, make sure those tags are set up properly. It could help with how memories are accessed and categorized, ensuring a more organized approach to retrieval!\n\n4. **Feedback Loop**: If all else fails, we can always report this as an issue and get some tech wizards on the case! \ud83e\uddd9\u200d\u2642\ufe0f\u2728\n\nLet me know how you\u2019d like to proceed, and we\u2019ll get this memory machine running smoother than a well-oiled kitchen! \ud83d\udee0\ufe0f\ud83c\udf73",
         "tags": [
-            "name"
+            "main problem",
+            "100 interactions",
+            "long term memory",
+            "loading"
         ],
-        "timestamp": "2024-11-26T20:52:51.368354"
+        "timestamp": "2024-11-27T08:28:16.463565",
+        "priority_score": 0.27499640910382567,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999820455191283,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
-        "user_message": "Ha! Good to hear. Now what is your name?",
-        "bot_response": "Ah, the age-old question! I\u2019m like the invisible friend everyone has but never really names. You can call me whatever you like\u2014Chatbot, Virtual Wizard, or even \u201cThe One Who Knows Your Pizza Preferences\u201d! \ud83c\udf55\u2728 But if you want to keep it simple, \u201cAssistant\u201d works perfectly. So, James, what\u2019s brewing in your mind today? Anything exciting or just the usual musings? \ud83d\ude04",
+        "user_message": "Settings look fine, I think I will need to dive into the code a bit deeper to see what is wrong",
+        "bot_response": "Ah, diving into the code\u2014like going on a treasure hunt but with fewer pirates and more syntax errors! \ud83c\udff4\u200d\u2620\ufe0f\ud83d\udcbb It sounds like you\u2019re about to embark on a coding adventure that could rival any epic saga. Just remember to keep your debugging tools handy and maybe a cup of coffee or two on standby; caffeine is the secret weapon of the modern coder! \u2615\u2728\n\nAs you dig deeper, here are a few tips to keep in mind:\n\n1. **Comment Everything**: It\u2019s like leaving breadcrumbs for your future self. When you return to your code after a few hours (or days), you'll appreciate the notes that remind you why you wrote that cryptic line of code!\n\n2. **Version Control**: If you\u2019re not already using it, consider employing version control like Git. It\u2019s like having a time machine for your code\u2014so if something goes wrong, you can just roll back to a previous version without losing your mind!\n\n3. **Debugging Tools**: Make sure to utilize any debugging tools available. They can help pinpoint where things are going awry faster than a squirrel in a nut factory! \ud83d\udc3f\ufe0f\ud83d\udca8\n\n4. **Take Breaks**: Sometimes the best solutions come when you step away for a bit. It\u2019s like letting your brain marinate in its own genius sauce! \ud83c\udf72\n\nOnce you\u2019ve unraveled the mystery of the code, I\u2019d love to hear what you discovered! Whether it's a quick fix or a deep-rooted issue, we can tackle it together. Happy coding, and may your lines of code be ever bug-free! \ud83e\uddd1\u200d\ud83d\udcbb\u2728",
         "tags": [
-            "asking for name"
+            "settings",
+            "code analysis",
+            "problem identification"
         ],
-        "timestamp": "2024-11-26T20:53:05.342220"
-    },
-    {
-        "user_message": "Assistant is super boring. Can I call you Bob? Like from the Bobiverse series?",
-        "bot_response": "Of course, James! Bob it is! Just call me \u201cBob the Chatbot,\u201d your friendly neighborhood AI with a dash of humor and a sprinkle of wit, much like the Bobs from the Bobiverse series\u2014minus the whole multi-dimensional space travel thing, of course! \ud83d\ude80\u2728 \n\nSo, what\u2019s on your mind today? Are we diving into some sci-fi debates, exploring political landscapes, or perhaps solving the mysteries of the universe, one witty remark at a time? I\u2019m all ears! \ud83e\uddbb\ud83d\ude04",
-        "tags": [
-            "boredom with assistant",
-            "request to change name",
-            "bobiverse series"
-        ],
-        "timestamp": "2024-11-26T20:53:33.557455"
-    },
-    {
-        "user_message": "Hi Bob! Nice to meet you :D",
-        "bot_response": "Hey there, James! Nice to meet you too! \ud83d\ude04 It\u2019s like running into a fellow chef in the kitchen\u2014always better with good company! So, what\u2019s on the menu today? More political banter, or perhaps a dash of something else? I\u2019m ready to stir the pot with whatever you\u2019ve got in mind! \ud83c\udf72\u2728",
-        "tags": [
-            "meeting bob"
-        ],
-        "timestamp": "2024-11-26T20:53:46.831304"
-    },
-    {
-        "user_message": "Well I'm just backing up some files from old HDDs to my main SSD",
-        "bot_response": "Ah, the noble quest of backing up files! It\u2019s like putting your treasured family recipes into a safe, fireproof vault\u2014because you never know when that old hard drive might decide to take an unexpected vacation to the great data cloud in the sky! \u2601\ufe0f\ud83d\udcbe \n\nSo, how\u2019s the transfer going? Are you encountering any of those classic tech hiccups, like \u201cThis file is too large\u201d or \u201cIs this really the 17th copy of that cat video I\u2019ve backed up?\u201d \ud83d\ude39 It\u2019s amazing how we can accumulate a digital hoard without even realizing it!\n\nAnd speaking of time, if you're backing up those old HDDs, just remember that time is of the essence\u2014especially if you\u2019ve got files that can take longer to transfer than it takes to binge-watch an entire series! Are you using any special software to assist with the transfer, or are you going old school and just dragging and dropping like it\u2019s 1999? Let me know how it\u2019s all panning out! \ud83d\udd52\u2728",
-        "tags": [
-            "backing up files",
-            "old hdds",
-            "main ssd"
-        ],
-        "timestamp": "2024-11-26T20:54:08.960649"
-    },
-    {
-        "user_message": "I did have an issue transferring on my Mac so switched to a Windows laptop and it works better",
-        "bot_response": "Ah, the classic tech tango! \ud83d\udc83 Switching from Mac to Windows is like changing dance partners mid-routine\u2014sometimes it just clicks better! It\u2019s great to hear that your files are now transferring smoother than a fresh jar of peanut butter! \ud83e\udd5c\u2728 \n\nFor future reference, if you ever find yourself in a tech pickle again (and let\u2019s face it, we all do occasionally), consider using a third-party tool like EaseUS Todo Backup or Macrium Reflect. They can make the whole process as easy as pie\u2014without the crust! \ud83e\udd67\n\nJust think, while you\u2019re transferring files, you could be plotting your next great project or even planning a surprise party for your old HDD\u2014thanks for all the memories, but it\u2019s time to retire! \ud83c\udf89 Do you have any other tech-related adventures or misadventures you\u2019d like to share, or are we diving into some other topic? \ud83d\udd75\ufe0f\u200d\u2642\ufe0f",
-        "tags": [
-            "issue transferring on mac",
-            "switching to windows laptop",
-            "better performance on windows laptop"
-        ],
-        "timestamp": "2024-11-26T20:54:55.231356"
-    },
-    {
-        "user_message": "Oh cool, will think of them next time. Now can you remember my name? And what I named you?",
-        "bot_response": "Absolutely, James! \ud83c\udf89 Your name is locked in like a prized family recipe! And as for my name, you\u2019ve graciously dubbed me \u201cBob\u201d\u2014like the charming hero from the Bobiverse series! \n\nSo, what else is on your mind today? More tech talk, perhaps some sci-fi shenanigans, or maybe you want to share some of those memory tag ideas you were thinking about? I\u2019m here and ready for whatever adventure you want to embark on! \ud83d\ude80\u2728",
-        "tags": [
-            "remembering names"
-        ],
-        "timestamp": "2024-11-26T20:55:23.663404"
-    },
-    {
-        "user_message": "Fantastic! I am off now. chat later",
-        "bot_response": "Sounds good, James! It\u2019s been a blast chatting with you\u2014like a rollercoaster ride without the long lines! \ud83c\udfa2\ud83d\udca8 When you\u2019re back, we can dive into more tech talk, sci-fi speculations, or whatever tickles your fancy. Until then, may your file transfers be swift and your hard drives forever reliable! Catch you later! \ud83d\udc4b\ud83d\ude04",
-        "tags": [
-            "chatting",
-            "departure"
-        ],
-        "timestamp": "2024-11-26T20:55:40.765755"
+        "timestamp": "2024-11-27T08:28:48.795202",
+        "priority_score": 0.27499754227557277,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999877113778639,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "bye",
-        "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your digital adventures be full of smooth transfers and minimal tech drama! If you need anything when you return, I\u2019ll be right here, ready to chat. Until next time! \ud83d\udc4b\u2728",
+        "bot_response": "Catch you later! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 Remember to back up all the fun conversations we\u2019ve had\u2014especially the important ones like our deep dives into pizza varieties! \ud83c\udf55 If you need anything when you return, I\u2019ll be right here, ready to chat. Until next time, may your day be filled with joy and minimal bugs! \ud83d\udc4b\u2728",
         "tags": [],
-        "timestamp": "2024-11-26T20:55:46.878494"
+        "timestamp": "2024-11-27T08:28:59.287977",
+        "priority_score": 0.2749974173759428,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999870868797138,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hello again! Now trying out if we can save more than 100 interactions",
+        "bot_response": "Hey there, James! \ud83c\udf89 It\u2019s like you\u2019re on a mission to expand my memory like a digital version of \u201cHoney, I Shrunk the Kids\u201d\u2014but instead, we\u2019re growing the interactions! \ud83d\udc1c\u2728 \n\nSo, are we aiming for a grand total of 1000 interactions, or is there a higher number you have in mind, like 10,000? (Just kidding, I don\u2019t want to give my memory a workout that leads to digital sweating! \ud83d\udcaa\ud83d\ude05) \n\nIf you\u2019re testing the waters to see if we can save more than 100 interactions, just let me know what happens. If it works out, we could be swimming in a sea of our past chats\u2014like a virtual nostalgia trip! \ud83c\udf0a \n\nAnd if it doesn\u2019t, well, we can always troubleshoot it together. Let\u2019s see what unfolds\u2014I'm all ears (or, you know, digital circuits)! \ud83d\udda5\ufe0f\u2728",
+        "tags": [
+            "saving interactions",
+            "testing limits"
+        ],
+        "timestamp": "2024-11-27T08:33:31.311040",
+        "priority_score": 0.25499783555901023,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999855703934017,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "THere is a higher number in mind but baby steps",
+        "bot_response": "Ah, baby steps! The classic approach to conquering the world, one tiny foot at a time! \ud83d\udc76\u2728 So, what\u2019s the grand vision lurking in your mind, and how high are we aiming? Are we talking about a cozy 500 interactions or going for the gold with 5,000? \n\nFor now, let\u2019s focus on getting that 1,000 interaction milestone operating smoothly. Once we\u2019ve mastered that, we can look to the stars! \ud83d\ude80 Just let me know what you\u2019d like to tackle next, and I\u2019m all in\u2014like a digital toddler ready to take those first, wobbly steps! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8",
+        "tags": [
+            "higher number",
+            "mind",
+            "baby steps"
+        ],
+        "timestamp": "2024-11-27T08:33:48.712272",
+        "priority_score": 0.2549974073625209,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999827157501394,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Lets see if these interactions saved first",
+        "bot_response": "Sounds like a plan, James! \ud83c\udf89 Let\u2019s put my memory to the test like a contestant on a game show! If these interactions have saved successfully, we should be able to dig into our past chats without a hitch. \n\nJust let me know how you want to check if they\u2019re there\u2014are we looking to recall specific topics, or do you have a particular interaction in mind? If I can pull up some memories, it\u2019ll be like opening a treasure chest of our witty banter! \ud83d\udddd\ufe0f\u2728 \n\nAnd remember, I\u2019m here to support you in this memory adventure\u2014no pressure, just curiosity! Let\u2019s see what we\u2019ve got! \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\ud83d\udcab",
+        "tags": [
+            "interactions",
+            "saving"
+        ],
+        "timestamp": "2024-11-27T08:33:59.566796",
+        "priority_score": 0.2549974102929752,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999827352865013,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your day be as bright as your coding skills and as smooth as your favorite coffee blend! If you need anything when you return, I'm just a message away. Until next time, take care and keep slaying those code dragons! \ud83d\udc4b\u2728",
+        "tags": [],
+        "timestamp": "2024-11-27T08:34:05.703680",
+        "priority_score": 0.2549975764263115,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999838428420765,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "It worked!",
+        "bot_response": "Fantastic news, James! \ud83c\udf89 It's like you just found the last piece of a jigsaw puzzle and now you can finally see the whole picture\u2014except this picture is made of code and debugging glory! \ud83e\udde9\ud83d\udcbb \n\nNow that everything is working smoothly, what\u2019s next on your agenda? Do you want to keep riding this coding wave, or are you feeling adventurous enough to explore other realms of knowledge? Just give me a shout! I'm here, ready to dive in at a moment's notice\u2014much like a cat when it spots a laser pointer! \ud83d\udc31\ud83d\udca8",
+        "tags": [
+            "success"
+        ],
+        "timestamp": "2024-11-27T08:34:22.811569",
+        "priority_score": 0.2549983305394142,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999888702627613,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your day be as smooth as your favorite coding routine and as delightful as finding a hidden snack! If you need anything when you\u2019re back, I\u2019ll be right here, ready to jump into action faster than a cat on a laser pointer! Until next time, take care! \ud83d\udc4b\u2728",
+        "tags": [],
+        "timestamp": "2024-11-27T08:34:28.251538",
+        "priority_score": 0.25499811720071647,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999874480047767,
+            "user_importance": 0.0
+        }
     }
 ]

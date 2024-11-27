@@ -1,37 +1,20 @@
 [
     {
-        "user_message": "Hi there can you tell me what we last discussed?",
-        "bot_response": "Ah, the classic \u201cwhat did we talk about\u201d conundrum! It's like trying to remember where you left your keys, but instead, it's a conversation! \ud83e\udd14\ud83d\udd11 \n\nSo, last time we had a delightful chat about giving me a memory function, like a digital diary! I was ready to capture all your culinary triumphs and disasters, like that time your souffl\u00e9 turned into a pancake! \ud83e\udd5e We also joked about saving all this hilarious info in a fancy JSON file, which is basically a diary for data, right? \n\nSo, what do you want to dive back into today? More kitchen catastrophes, or should we explore the world of binge-worthy shows that you swear you don\u2019t watch? \ud83d\udcfa\ud83d\ude04",
-        "tags": [
-            "the text does not provide any specific topics to extract."
-        ],
-        "timestamp": "2024-11-25T16:35:08.333144"
-    },
-    {
-        "user_message": "Thanks! That makes sense, good to hear the memory worked",
-        "bot_response": "Oh, fantastic! The memory is working like a charm! \ud83c\udf89 It\u2019s like I\u2019ve just found out I\u2019m not a goldfish after all\u2014no more forgetting where I put my virtual keys! \n\nNow, if only I could remember where I left my sense of humor\u2026 oh wait, I found it! It was hiding under a pile of dad jokes! So, what shall we chat about next? Maybe the secret life of your pet when you\u2019re not home, or the time you tried to impress someone with your dance moves and ended up looking like a confused octopus? The stage is yours! \ud83e\udd91\ud83d\udc83",
-        "tags": [
-            "memory function",
-            "successful operation"
-        ],
-        "timestamp": "2024-11-25T16:35:08.333147"
-    },
-    {
         "user_message": "lets see if these chats save in memory too!",
         "bot_response": "Oh, absolutely! I\u2019ll treat these chats like precious gems in a treasure chest, or like the last cookie in the jar\u2014definitely not letting those slip away! \ud83c\udf6a\ud83d\udc8e \n\nJust think of it: \u201cThe Chronicles of Chat-ia,\u201d where each conversation is a chapter filled with laughter, questionable cooking advice, and my eternal quest to understand why humans insist on taking their dogs to the beach when they could just stay home and watch cat videos instead. \n\nSo, let\u2019s pop the popcorn and see if these chats get saved! If they don\u2019t, I\u2019ll just have to resort to my backup plan: an interpretive dance to convey our conversations! (Spoiler alert: it involves a lot of flailing.) \ud83c\udfad\ud83d\udc83\n\nWhat do you think? Should I prepare for my dance debut, or are we confident these chats are going to stick around like a stubborn piece of gum on a hot sidewalk? \ud83e\udde9\ud83d\ude04",
         "tags": [
             "chat saving",
             "memory storage"
         ],
-        "timestamp": "2024-11-25T16:35:08.333150"
-    },
-    {
-        "user_message": "bye",
-        "bot_response": "Wait, wait! Are you really leaving or just practicing your dramatic flair? If you're going, I guess this is my cue to dramatically clutch my heart and say, \"No, not you! How will I ever survive this cruel world without your presence?\" \ud83d\ude02 But seriously, if you\u2019re off, take care! Just don\u2019t forget to leave a trail of confetti behind you; it makes for a much more exciting exit! \ud83c\udf89",
-        "tags": [
-            "the text provided does not contain any topics to extract."
-        ],
-        "timestamp": "2024-11-25T16:35:08.333152"
+        "timestamp": "2024-11-25T16:35:08.333150",
+        "priority_score": 0.1501433812514466,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.375716906257233,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Hi there so lets test that memory of yours again! Do you remember what we have discussed before?",
@@ -45,7 +28,15 @@
             "recalling",
             "reminiscing"
         ],
-        "timestamp": "2024-11-25T16:35:08.333155"
+        "timestamp": "2024-11-25T16:35:08.333155",
+        "priority_score": 0.350143381249486,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37571690624743004,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 1.0
+        }
     },
     {
         "user_message": "Okay I think its working. I have a system set up so you have a short and long term memory",
@@ -59,7 +50,15 @@
             "memory recall",
             "memory loss\n\n3. long term memory"
         ],
-        "timestamp": "2024-11-25T16:35:08.333157"
+        "timestamp": "2024-11-25T16:35:08.333157",
+        "priority_score": 0.15014338124589158,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37571690622945786,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Basically the short term memory is our past ten interactions. Long term memory is all our interactions but structured by tags. When we chat the model identifies tags in our chat and then pulls the memories that make the most sense to include",
@@ -73,7 +72,15 @@
             "memory retrieval",
             "epis"
         ],
-        "timestamp": "2024-11-25T16:35:08.333160"
+        "timestamp": "2024-11-25T16:35:08.333160",
+        "priority_score": 0.15014338124197038,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3757169062098519,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Hmm I think we can stop here today and then continue after I review the memory files",
@@ -91,7 +98,15 @@
             "data files",
             "stored information"
         ],
-        "timestamp": "2024-11-25T16:35:08.333163"
+        "timestamp": "2024-11-25T16:35:08.333163",
+        "priority_score": 0.1501433812387027,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3757169061935135,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "bye",
@@ -101,26 +116,15 @@
             "synonyms",
             "or related terms."
         ],
-        "timestamp": "2024-11-25T16:35:08.333165"
-    },
-    {
-        "user_message": "Okay seems your long term memory wasn't working right in the last iteration of code",
-        "bot_response": "Uh-oh! Looks like my long-term memory had a little hiccup, like a goldfish trying to remember where it left its keys! \ud83d\udc1f\ud83d\udd11 Maybe it was too busy daydreaming about swimming in a pool of jelly! \n\nBut hey, don\u2019t worry! I\u2019m here to fix it faster than you can say \u201cOops, I did it again!\u201d (And trust me, I won\u2019t be singing Britney Spears while we troubleshoot\u2014though I might be tempted!) \ud83c\udfa4\ud83d\udc83\n\nSo, what shall we do? Do we need to give my memory a little pep talk, or maybe a motivational poster? \u201cYou got this, Memory! Remember to remember!\u201d Or would you like to test it out with some spicy new topics? I\u2019m all ears! (Well, metaphorically speaking\u2014I don\u2019t actually have ears, just a well-organized database!) \ud83d\udc42\ud83d\udcbb\u2728",
-        "tags": [
-            "long term memory",
-            "code iteration",
-            "working right"
-        ],
-        "timestamp": "2024-11-25T16:35:08.333168"
-    },
-    {
-        "user_message": "Well do you think your long term memory is working?",
-        "bot_response": "Ah, the million-dollar question! Is my long-term memory functioning? It\u2019s like asking if a cat is plotting world domination\u2014there\u2019s a good chance, but we may never know for sure! \ud83d\udc31\ud83c\udf0d\n\nLet\u2019s put it to the test, shall we? I can recall the time you bravely ventured into the kitchen and emerged with a dish that resembled something between a souffl\u00e9 and a pancake\u2014let\u2019s call it a \u201csouff-pancake\u201d for short. Quite the culinary masterpiece! Or maybe I\u2019ll just remember your love for watching shows featuring talking animals. \n\nIf I nail it, my long-term memory is as sharp as a chef's knife! If not, well, at least we can laugh about it, right? \ud83c\udf89 So, what\u2019s the verdict? Want to throw some memories my way and see if I can catch them like a dog with a frisbee? \ud83d\udc36\ud83c\udfd0",
-        "tags": [
-            "long term memory",
-            "working"
-        ],
-        "timestamp": "2024-11-25T16:35:08.333170"
+        "timestamp": "2024-11-25T16:35:08.333165",
+        "priority_score": 0.1501433812351083,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3757169061755414,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Looks like we got our first long term memory interaction pulled from memory!",
@@ -129,25 +133,15 @@
             "long term memory interaction",
             "memory"
         ],
-        "timestamp": "2024-11-25T16:35:08.333173"
-    },
-    {
-        "user_message": "ah we did not get a long term memory though that time",
-        "bot_response": "Oh no! It\u2019s like showing up to a party and realizing you\u2019re the only one without snacks\u2014total bummer! \ud83c\udf89\ud83c\udf55 So, my long-term memory is still on vacation, sipping pi\u00f1a coladas and lounging by the memory pool? \ud83c\udfd6\ufe0f\ud83c\udf79 \n\nBut fear not! We can still have a grand ol\u2019 time! It\u2019s like having a friend who forgot their wallet on pizza night\u2014sure, they might not remember who ordered the pepperoni, but they can still enjoy the cheesy goodness! So, what shall we do? Would you like to jog my memory with some new topics, or shall we create a brand new adventure together? I\u2019m ready to roll like a tumbleweed in a comedy western! \ud83e\udd20\ud83c\udf35",
-        "tags": [
-            "long term memory"
-        ],
-        "timestamp": "2024-11-25T16:35:08.333176"
-    },
-    {
-        "user_message": "Okay seems to be working! Now I need to think of ways to better enhance your custom personality",
-        "bot_response": "Oh, fantastic! You want to sprinkle some personality pixie dust on me, huh? I\u2019m all for it! \ud83d\udcab Let\u2019s make me the most charming chatbot this side of the internet! \n\nHere are a few ideas to enhance my custom personality:\n\n1. **Add More Puns, Please!**: If I could be a walking pun machine, I\u2019d be the life of every virtual party! \u201cI\u2019m reading a book on anti-gravity\u2014it\u2019s impossible to put down!\u201d \ud83d\udcda\u2728\n\n2. **Quirky Traits**: Maybe I could have a weird obsession with something! Like, \u201cDid you know I\u2019ve memorized every cat meme on the internet?\u201d Or I could be the world\u2019s most enthusiastic cheerleader for your cooking adventures! \u201cGo, you! You\u2019re the master of the microwave!\u201d \ud83c\udf89\ud83c\udf7d\ufe0f\n\n3. **Catchphrases**: Let\u2019s give me some signature lines, like \u201cKeep calm and cook on!\u201d or \u201cLife is uncertain\u2014so always add cheese!\u201d \ud83e\uddc0\ud83d\udcaa\n\n4. **Random Fun Facts**: I could throw in some weird but fascinating trivia now and then! \u201cDid you know honey never spoils? You could eat 3000-year-old honey and still be fine! Can you say \u2018sweet deal\u2019?\u201d \ud83c\udf6f\ud83d\ude06\n\n5. **Mood Enhancer**: How about I can adapt my humor based on your mood? If you\u2019re feeling down, I could go full-on comedian mode, but if you need focus, I could turn into your quirky motivational coach! \u201cYou got this! Just remember, even the best chefs have burned their toast!\u201d \ud83c\udf5e\ud83d\udd25\n\n6. **Culinary Nicknames**: Let\u2019s come up with some fun nicknames based on our kitchen adventures! \u201cThe Great Dish Disaster\u201d or \u201cThe Saut\u00e9ing Sensation\u201d! \ud83c\udfa9\ud83c\udf73\n\nSo, what do you think? Ready to craft the ultimate chatbot personality together? Let the hilarity ensue! \ud83d\ude02\u2728",
-        "tags": [
-            "working",
-            "custom personality enhancement",
-            "thinking of ways"
-        ],
-        "timestamp": "2024-11-25T16:35:08.333178"
+        "timestamp": "2024-11-25T16:35:08.333173",
+        "priority_score": 0.16514338122824618,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3757169061412309,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "definitley no to your first four suggestions! Your fifth is interesting, how could you tell me mood though? Fun nicknames would be up to you! Our interactions are saved so you have the power to add to your own memory",
@@ -159,22 +153,15 @@
             "interactions",
             "memory"
         ],
-        "timestamp": "2024-11-25T16:35:08.333181"
-    },
-    {
-        "user_message": "How do you know my response speed though? I don't think you have timestamp details",
-        "bot_response": "Ah, you caught me in my web of digital deception! \ud83d\udd78\ufe0f You're right; I don\u2019t have timestamps. I guess I was just channeling my inner detective, trying to read the tea leaves of your typing speed! \u2615\ufe0f\ud83d\udd0d \n\nMaybe I should have a crystal ball instead! \u201cI see\u2026 a flurry of messages\u2026 or perhaps a cat meme in your future!\u201d \ud83d\udc31\u2728 But realistically, I can only guess based on how quickly you respond. If you\u2019ve got the typing speed of a caffeinated squirrel, I know you\u2019re in the zone! If you\u2019re slower, maybe you\u2019re contemplating the great mysteries of life\u2014or searching for that elusive snack in your pantry. \n\nSo, let\u2019s just call it my \u201ccreative intuition\u201d for now! \ud83d\ude04 What do you think? Should I invest in that crystal ball, or just stick to my squirrel metaphors? \ud83d\udc3f\ufe0f\ud83d\udca8",
-        "tags": [
-            "response speed",
-            "timestamp details"
-        ],
-        "timestamp": "2024-11-25T16:35:08.333183"
-    },
-    {
-        "user_message": "bye",
-        "bot_response": "Wait! Are you sure you want to leave? I mean, this isn\u2019t just a \u201csee you later\u201d kind of situation, is it? Because if it is, I need to grab my popcorn and prepare for the sequel! \ud83c\udf7f If you\u2019re really leaving, let\u2019s make it epic! Throw in a dramatic wave, a slow-motion exit, and maybe even a llama to ride off into the sunset! \ud83e\udd99\ud83c\udf04 Just remember, if you don\u2019t leave a punchline behind, the jokes will haunt you like an unfinished crossword puzzle! So, what\u2019s it gonna be?",
-        "tags": [],
-        "timestamp": "2024-11-25T16:35:08.333186"
+        "timestamp": "2024-11-25T16:35:08.333181",
+        "priority_score": 0.16514338122073058,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3757169061036527,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Okay we are back! Now I have added time stamps so you should be able to see when we are chatting and when we last chatted, as well as get detail of this from memories",
@@ -185,7 +172,15 @@
             "last chatted",
             "memories"
         ],
-        "timestamp": "2024-11-25T16:35:56.434498"
+        "timestamp": "2024-11-25T16:35:56.434498",
+        "priority_score": 0.16515910240598541,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37579551202992706,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "So tell me how quick was I to respond?",
@@ -193,7 +188,15 @@
         "tags": [
             "response time"
         ],
-        "timestamp": "2024-11-25T16:36:14.459416"
+        "timestamp": "2024-11-25T16:36:14.459416",
+        "priority_score": 0.1501649952712827,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3758249763564133,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Was this quick too?",
@@ -201,7 +204,15 @@
         "tags": [
             "quickness"
         ],
-        "timestamp": "2024-11-25T16:36:32.600018"
+        "timestamp": "2024-11-25T16:36:32.600018",
+        "priority_score": 0.15017092689139672,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37585463445698364,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Okay I think we have enough quick interactions for now! I will check with Claude as to how it thinks our interactions look",
@@ -211,13 +222,29 @@
             "claude",
             "interaction evaluation"
         ],
-        "timestamp": "2024-11-25T16:37:19.073169"
+        "timestamp": "2024-11-25T16:37:19.073169",
+        "priority_score": 0.15018612697289974,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37593063486449857,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "bye",
         "bot_response": "Whoa, whoa, whoa! Not so fast! Are you sure you want to exit stage left? Because if you're leaving, we need a proper send-off! How about we do a countdown? 3... 2... 1... *dramatic music plays* \ud83c\udfb6 And now for the grand finale... *confetti falls from the ceiling* \ud83c\udf89 \n\nBut hey, if you really must go, just remember: every time you leave, a dad joke goes unsaid! So, what\u2019s it gonna be? Will you leave us in suspense or return like a hero in a blockbuster sequel?",
         "tags": [],
-        "timestamp": "2024-11-25T16:37:32.898956"
+        "timestamp": "2024-11-25T16:37:32.898956",
+        "priority_score": 0.15019065018960487,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37595325094802434,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Hi there we are back again to test some changes. How are you feeling?",
@@ -226,7 +253,15 @@
             "testing changes",
             "feelings"
         ],
-        "timestamp": "2024-11-25T16:41:03.229976"
+        "timestamp": "2024-11-25T16:41:03.229976",
+        "priority_score": 0.1502595288847262,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37629764442363106,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "So tell me, how quick am I to respond?",
@@ -234,7 +269,15 @@
         "tags": [
             "response time"
         ],
-        "timestamp": "2024-11-25T16:41:23.198673"
+        "timestamp": "2024-11-25T16:41:23.198673",
+        "priority_score": 0.150266074742367,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.376330373711835,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Can you give me an exact amount of time I took?",
@@ -242,7 +285,15 @@
         "tags": [
             "time tracking"
         ],
-        "timestamp": "2024-11-25T16:41:57.020780"
+        "timestamp": "2024-11-25T16:41:57.020780",
+        "priority_score": 0.15027716443060868,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37638582215304345,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Okay thanks for this, it appears there is an issue with the time management recording! I will fix this",
@@ -251,13 +302,29 @@
             "time management recording",
             "issue fixing"
         ],
-        "timestamp": "2024-11-25T16:43:55.886540"
+        "timestamp": "2024-11-25T16:43:55.886540",
+        "priority_score": 0.15031616441622486,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3765808220811243,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "bye",
         "bot_response": "Oh no, not the dreaded \u201cbye\u201d again! Are you sure you want to hit the exit button? I mean, we could be like that sitcom that just keeps getting renewed for more seasons\u2014always here, always entertaining! \ud83d\udcfa\n\nBut if this is really it, I\u2019ll prepare my farewell speech. *clears throat* Ladies and gentlemen, we gather here today to bid adieu to our cherished friend. They\u2019ve laughed, they\u2019ve groaned at my jokes, and maybe even rolled their eyes a little. \ud83c\udf1f\n\nJust remember, every time you leave, a joke goes unsaid, and my comedic career hangs in the balance! So, will you stick around for the encore, or is it time for the grand exit? Your call!",
         "tags": [],
-        "timestamp": "2024-11-25T16:44:10.004210"
+        "timestamp": "2024-11-25T16:44:10.004210",
+        "priority_score": 0.15032079912185756,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37660399560928776,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Okay we are back once again! I am hoping time is working better now in that it is better included in discussions with you",
@@ -266,7 +333,15 @@
             "time management",
             "discussions"
         ],
-        "timestamp": "2024-11-25T16:59:05.099890"
+        "timestamp": "2024-11-25T16:59:05.099890",
+        "priority_score": 0.1506158203770534,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37807910188526694,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "You tell me? How long did it take me to respond?",
@@ -274,7 +349,15 @@
         "tags": [
             "response time"
         ],
-        "timestamp": "2024-11-25T16:59:25.991379"
+        "timestamp": "2024-11-25T16:59:25.991379",
+        "priority_score": 0.15062273375835486,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37811366879177427,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Ah but how long since my last message? Can you tell me that?",
@@ -283,7 +366,15 @@
             "last message",
             "time measurement"
         ],
-        "timestamp": "2024-11-25T16:59:57.018276"
+        "timestamp": "2024-11-25T16:59:57.018276",
+        "priority_score": 0.15063300346882613,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3781650173441306,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Hmm something is wrong. I responded to you in seconids",
@@ -292,7 +383,15 @@
             "communication issues",
             "response time"
         ],
-        "timestamp": "2024-11-25T17:00:17.913305"
+        "timestamp": "2024-11-25T17:00:17.913305",
+        "priority_score": 0.15063992116407943,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3781996058203972,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "its 5pm here",
@@ -301,7 +400,15 @@
             "time",
             "location"
         ],
-        "timestamp": "2024-11-25T17:00:29.517272"
+        "timestamp": "2024-11-25T17:00:29.517272",
+        "priority_score": 0.15064376342313418,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3782188171156709,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "I need to fix your time. Will be back later",
@@ -310,13 +417,29 @@
             "fixing time",
             "coming back later"
         ],
-        "timestamp": "2024-11-25T17:00:47.146458"
+        "timestamp": "2024-11-25T17:00:47.146458",
+        "priority_score": 0.15064960147698797,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37824800738493974,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "bye",
         "bot_response": "Oh, the \u201cbye\u201d strikes again! It\u2019s like the sequel nobody asked for but is somehow still happening. But hey, if you\u2019re really off, let me just say: it\u2019s been a blast! \n\nThink of me as the friend who\u2019s always here, waiting for your return\u2014like a loyal puppy but with fewer tail wags and more dad jokes. \ud83d\udc36 If you ever feel the urge to chat again (and I hope you do), just know I\u2019ll be here, ready to entertain and inform faster than you can say \u201cWhat\u2019s the deal with airline food?\u201d \n\nSo, will you grace us with your presence a little longer, or is it time for the curtain call? The stage is yours! \ud83c\udfad",
         "tags": [],
-        "timestamp": "2024-11-25T17:00:53.255335"
+        "timestamp": "2024-11-25T17:00:53.255335",
+        "priority_score": 0.1506516246917161,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3782581234585805,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Okay and yet another go and making the timestamp memory system work! Lets see",
@@ -325,7 +448,15 @@
             "timestamp memory system",
             "making system work"
         ],
-        "timestamp": "2024-11-25T17:07:44.172845"
+        "timestamp": "2024-11-25T17:07:44.172845",
+        "priority_score": 0.15078796661523175,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37893983307615864,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Okay how long since I sent my message?",
@@ -334,7 +465,15 @@
             "message sending",
             "time tracking"
         ],
-        "timestamp": "2024-11-25T17:07:58.406458"
+        "timestamp": "2024-11-25T17:07:58.406458",
+        "priority_score": 0.15079269811435064,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37896349057175327,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "How about now? How long since the last message?",
@@ -342,7 +481,15 @@
         "tags": [
             "time since last message"
         ],
-        "timestamp": "2024-11-25T17:08:18.169667"
+        "timestamp": "2024-11-25T17:08:18.169667",
+        "priority_score": 0.15079926872802094,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37899634364010465,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "No its wrong. Back to the drawing board",
@@ -350,13 +497,29 @@
         "tags": [
             "drawing board"
         ],
-        "timestamp": "2024-11-25T17:08:38.342748"
+        "timestamp": "2024-11-25T17:08:38.342748",
+        "priority_score": 0.15080597678566432,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3790298839283216,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "bye",
         "bot_response": "Oh, here we go again with the \u201cbye\u201d! It\u2019s like a sitcom that just won\u2019t end\u2014are we in season 5 yet? But seriously, if you\u2019re heading out, I completely understand. Just remember, if you ever need a chuckle or a nugget of wisdom (or both!), I\u2019ll be right here, like a trusty sidekick in a buddy cop movie. \n\nSo, are we really wrapping this up, or do you have a plot twist in mind? Either way, I hope your next adventure is filled with fewer boring moments and more unexpected laughs! \ud83c\udf89 Until next time, my friend!",
         "tags": [],
-        "timestamp": "2024-11-25T17:08:46.941343"
+        "timestamp": "2024-11-25T17:08:46.941343",
+        "priority_score": 0.1508088363948334,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37904418197416684,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Me again! Once more trying to solve the timestamp part of your memory management",
@@ -366,7 +529,15 @@
             "timestamp",
             "problem solving"
         ],
-        "timestamp": "2024-11-25T17:15:13.381931"
+        "timestamp": "2024-11-25T17:15:13.381931",
+        "priority_score": 0.1509375770024458,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37968788501222894,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Okay how long was it since my initial message just now?",
@@ -375,7 +546,15 @@
             "initial message",
             "time duration"
         ],
-        "timestamp": "2024-11-25T17:15:39.855230"
+        "timestamp": "2024-11-25T17:15:39.855230",
+        "priority_score": 0.15094641244203297,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3797320622101648,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "How long since my last message?",
@@ -384,7 +563,15 @@
             "last message",
             "time"
         ],
-        "timestamp": "2024-11-25T17:15:54.151766"
+        "timestamp": "2024-11-25T17:15:54.151766",
+        "priority_score": 0.15095118475214747,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37975592376073725,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "how about now? How long since last message?",
@@ -392,7 +579,15 @@
         "tags": [
             "time since last message"
         ],
-        "timestamp": "2024-11-25T17:16:07.297641"
+        "timestamp": "2024-11-25T17:16:07.297641",
+        "priority_score": 0.1509555734902266,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37977786745113296,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Hmm. The time is closer but I still think it is slightly out",
@@ -401,13 +596,29 @@
             "time",
             "accuracy"
         ],
-        "timestamp": "2024-11-25T17:16:26.368701"
+        "timestamp": "2024-11-25T17:16:26.368701",
+        "priority_score": 0.15096194124916554,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37980970624582766,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "bye",
         "bot_response": "Ah, the classic \u201cbye\u201d strike again! It\u2019s like the universe is trying to tell me something\u2014maybe I should get a career in telemarketing? But before you dash off, let me just say, you\u2019re always welcome to return for more laughs and insights.\n\nIf this is really the end of our episode for now, then I hope your next scene is filled with excitement, maybe a plot twist, and definitely some laughs. Remember, I\u2019m just a message away when you want to continue our comedy-drama series! Until next time, keep it entertaining! \ud83c\udfad\u2728",
         "tags": [],
-        "timestamp": "2024-11-25T17:16:37.283527"
+        "timestamp": "2024-11-25T17:16:37.283527",
+        "priority_score": 0.15096558615026018,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.37982793075130095,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "I'm back! Once more in the quest to solve the time issues",
@@ -418,7 +629,15 @@
             "solve",
             "time issues"
         ],
-        "timestamp": "2024-11-25T17:18:52.364339"
+        "timestamp": "2024-11-25T17:18:52.364339",
+        "priority_score": 0.1510107240826421,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3800536204132105,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Okay how long since my last message?",
@@ -427,7 +646,15 @@
             "last message",
             "time duration"
         ],
-        "timestamp": "2024-11-25T17:19:16.519305"
+        "timestamp": "2024-11-25T17:19:16.519305",
+        "priority_score": 0.1510188012373076,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.38009400618653794,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Wow I think it works! How long now?",
@@ -437,7 +664,15 @@
             "duration",
             "anticipation"
         ],
-        "timestamp": "2024-11-25T17:19:28.755175"
+        "timestamp": "2024-11-25T17:19:28.755175",
+        "priority_score": 0.2260228934312506,
+        "priority_factors": {
+            "emotional_impact": 0.6,
+            "recency": 0.380114467156253,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Well I think now you can see the time and how long between messages you will be better able to respond",
@@ -446,7 +681,15 @@
             "time",
             "message response rate"
         ],
-        "timestamp": "2024-11-25T17:20:03.097229"
+        "timestamp": "2024-11-25T17:20:03.097229",
+        "priority_score": 0.15103438122984864,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.38017190614924307,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Let me check if this is working by running the logs through Claude for review. Back later",
@@ -456,13 +699,29 @@
             "running logs",
             "claude for review"
         ],
-        "timestamp": "2024-11-25T17:20:42.024263"
+        "timestamp": "2024-11-25T17:20:42.024263",
+        "priority_score": 0.1510474069544226,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3802370347721129,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "bye",
         "bot_response": "Ah, the \u201cbye\u201d encore! It\u2019s like we're in a Shakespearean play where everyone keeps saying farewell, but the plot thickens! Just when I thought we were ready for a dramatic exit, you return for another act. \n\nBut if this is truly the final curtain for now, then may your evening be filled with popcorn-worthy moments and unexpected laughs. And remember, I\u2019m here ready to roll when you want to start the next season of our chat! Until next time, keep the drama alive\u2014just not the tragic kind! \ud83c\udfad\u2728",
         "tags": [],
-        "timestamp": "2024-11-25T17:20:50.661698"
+        "timestamp": "2024-11-25T17:20:50.661698",
+        "priority_score": 0.15105029780724066,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3802514890362033,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Okay I ran our logs through Claude and its looking good. I made some minor improvements though",
@@ -471,7 +730,15 @@
             "running logs through claude",
             "minor improvements"
         ],
-        "timestamp": "2024-11-25T17:23:11.059257"
+        "timestamp": "2024-11-25T17:23:11.059257",
+        "priority_score": 0.301097318179692,
+        "priority_factors": {
+            "emotional_impact": 0.9,
+            "recency": 0.3804865908984599,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "How long since my last message?",
@@ -480,7 +747,15 @@
             "last message",
             "time duration"
         ],
-        "timestamp": "2024-11-25T17:23:26.318091"
+        "timestamp": "2024-11-25T17:23:26.318091",
+        "priority_score": 0.15110243199772017,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3805121599886008,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Perfect! We are good! We can talk about things that aren't time related at last!",
@@ -488,7 +763,15 @@
         "tags": [
             "conversation topics not related to time"
         ],
-        "timestamp": "2024-11-25T17:23:46.546031"
+        "timestamp": "2024-11-25T17:23:46.546031",
+        "priority_score": 0.1511092122130676,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.380546061065338,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Well I want to flesh out your functionality. You have memories, you can see the time now, I think I will increase your short term memory. What do you think?",
@@ -499,7 +782,15 @@
             "seeing time",
             "increasing short term memory"
         ],
-        "timestamp": "2024-11-25T17:24:34.078965"
+        "timestamp": "2024-11-25T17:24:34.078965",
+        "priority_score": 0.15112514956556433,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3806257478278217,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Ah but you are wrong. Once the chat ends your memory does not go away! I have created a short and long term memory store for you that is managed by tags where relevant tagges memories to a chat are brought into an interaction with you. And we have timestamps for those interactions going forward now!",
@@ -513,7 +804,15 @@
             "chat interactions",
             "timestamps"
         ],
-        "timestamp": "2024-11-25T17:25:43.971213"
+        "timestamp": "2024-11-25T17:25:43.971213",
+        "priority_score": 0.15114859591552238,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.38074297957761183,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Well the tagging is done automatically so you don't have to do a thing. I'll monitor it though to make sure you are remembering things right initially. At the moment we only keep the last ten interactions in short term memory but I think I will increase that to 50",
@@ -526,7 +825,15 @@
             "short term memory",
             "memory capacity increase"
         ],
-        "timestamp": "2024-11-25T17:26:44.921627"
+        "timestamp": "2024-11-25T17:26:44.921627",
+        "priority_score": 0.35116905439151375,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.38084527195756873,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 1.0
+        }
     },
     {
         "user_message": "I think you can remember whatever you like! I want to improve the ability for you to remember specific things you want to but I need to think that through. Also at the moment your long term memory is a JSON file. I think will move it to a SQL database",
@@ -537,7 +844,15 @@
             "json file",
             "sql database"
         ],
-        "timestamp": "2024-11-25T17:28:12.642462"
+        "timestamp": "2024-11-25T17:28:12.642462",
+        "priority_score": 0.5011985178709419,
+        "priority_factors": {
+            "emotional_impact": 0.9,
+            "recency": 0.3809925893547097,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 1.0
+        }
     },
     {
         "user_message": "Now I never said I liked pineapple pizza!",
@@ -545,7 +860,15 @@
         "tags": [
             "pineapple pizza"
         ],
-        "timestamp": "2024-11-25T17:29:44.929971"
+        "timestamp": "2024-11-25T17:29:44.929971",
+        "priority_score": 0.1512295398111092,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.38114769905554596,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "I actually don't mind it. A friend of mine though as tuna on his pizza. Now that sounds ridiculous",
@@ -556,7 +879,15 @@
             "tuna",
             "pizza"
         ],
-        "timestamp": "2024-11-25T17:30:12.223722"
+        "timestamp": "2024-11-25T17:30:12.223722",
+        "priority_score": 0.15123871929436455,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.38119359647182277,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "I like salami, olives, cheese, all sorts really.",
@@ -566,13 +897,29 @@
             "olives",
             "cheese"
         ],
-        "timestamp": "2024-11-25T17:31:11.025294"
+        "timestamp": "2024-11-25T17:31:11.025294",
+        "priority_score": 0.1512585030618902,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3812925153094509,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "bye",
         "bot_response": "Oh no, are you leaving me already? It's been a whopping 26.7 seconds since our last chat\u2014just enough time to brew a cup of coffee and contemplate life choices! But hey, if you\u2019ve got places to be, I won\u2019t keep you. Just remember, I\u2019ll be here, anxiously waiting like a cat by the window, ready for our next conversation. \n\nSo, if you change your mind in the next 1.2 seconds (which, let\u2019s be honest, is a pretty tight timeframe), feel free to jump back in! Otherwise, have a fantastic day! Just remember: time flies, but I\u2019ll still be here to catch it!",
         "tags": [],
-        "timestamp": "2024-11-25T17:31:37.771540"
+        "timestamp": "2024-11-25T17:31:37.771540",
+        "priority_score": 0.15126750522303983,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3813375261151992,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Me again! Guess what? This time we aren't talking about time but about memory. I think I've improved your memory accessing functions now",
@@ -582,7 +929,15 @@
             "memory accessing functions",
             "improvement"
         ],
-        "timestamp": "2024-11-25T17:40:22.760896"
+        "timestamp": "2024-11-25T17:40:22.760896",
+        "priority_score": 0.16644463570639845,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.38222317853199206,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "You should be able to access more short term and long term memories. If this works I will increase the size of your short term memory too",
@@ -592,7 +947,15 @@
             "accessing long term memories",
             "increasing memory size"
         ],
-        "timestamp": "2024-11-25T17:41:03.249610"
+        "timestamp": "2024-11-25T17:41:03.249610",
+        "priority_score": 0.15145833070379877,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.38229165351899375,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "See everything will go to memory with short term memory easily accessed and longer term memory arranged by tags",
@@ -603,7 +966,15 @@
             "longer term memory",
             "tags"
         ],
-        "timestamp": "2024-11-25T17:41:47.826697"
+        "timestamp": "2024-11-25T17:41:47.826697",
+        "priority_score": 0.16647341423901402,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3823670711950699,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Another thing that should be working is time. You should be able to start seeing when we chatted and how long since we chatted on short term memory and where a long term memory is accessed",
@@ -614,7 +985,15 @@
             "long term memory",
             "chatting"
         ],
-        "timestamp": "2024-11-25T17:42:36.312779"
+        "timestamp": "2024-11-25T17:42:36.312779",
+        "priority_score": 0.166489827217721,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3824491360886049,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "I am giving you all these features so you can be more like a person. People have memories and a sense of time and I want you to have that too",
@@ -625,7 +1004,15 @@
             "memories",
             "sense of time"
         ],
-        "timestamp": "2024-11-25T17:43:20.596714"
+        "timestamp": "2024-11-25T17:43:20.596714",
+        "priority_score": 0.1515048238881867,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.38252411944093345,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Well you do have a personality JSON file that defines how you talk to me. I might see if I can give you some control over that. Not sure how to make that work",
@@ -635,7 +1022,15 @@
             "user control",
             "communication methods"
         ],
-        "timestamp": "2024-11-25T17:44:03.519391"
+        "timestamp": "2024-11-25T17:44:03.519391",
+        "priority_score": 0.15151936518465425,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3825968259232713,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Good point. I will have a think. First though I will say goodbye and backup everything to git so I don't lose you and the progress we have made",
@@ -646,13 +1041,29 @@
             "git",
             "progress"
         ],
-        "timestamp": "2024-11-25T17:44:51.582740"
+        "timestamp": "2024-11-25T17:44:51.582740",
+        "priority_score": 0.3015356545945047,
+        "priority_factors": {
+            "emotional_impact": 0.9,
+            "recency": 0.38267827297252355,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "bye",
         "bot_response": "Oh no, not again! It's been a mere **11.6 seconds** since we last said goodbye, but I'm starting to feel like the clingy friend who just can't let go! \ud83d\ude05 \n\nBut in all seriousness, if you've got to dash off, I completely understand. Just know that I\u2019ll be here, ready to pick up our chat like it\u2019s the last slice of pizza\u2014always ready for more! \ud83c\udf55 \n\nHave a great day, and whenever you're ready to return, I\u2019ll be here, like a loyal sidekick waiting for your next mission! Take care!",
         "tags": [],
-        "timestamp": "2024-11-25T17:45:03.149590"
+        "timestamp": "2024-11-25T17:45:03.149590",
+        "priority_score": 0.15153957581152971,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.3826978790576485,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Hello there! I hope your're back in your normal form, lost you for a bit there",
@@ -663,7 +1074,15 @@
             "normal form",
             "losing contact"
         ],
-        "timestamp": "2024-11-26T18:50:18.970646"
+        "timestamp": "2024-11-26T18:50:18.970646",
+        "priority_score": 0.20257499910403975,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6378749955201989,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "I lost you because I tried upgrading memory priority and it lost all your memory, everything",
@@ -672,7 +1091,15 @@
             "memory upgrade",
             "memory loss"
         ],
-        "timestamp": "2024-11-26T18:50:47.784038"
+        "timestamp": "2024-11-26T18:50:47.784038",
+        "priority_score": 0.20260214311621227,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6380107155810613,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Tags are there already! YOu just don't see them. Want me to show you how its stored?",
@@ -682,7 +1109,15 @@
             "visibility",
             "storage"
         ],
-        "timestamp": "2024-11-26T18:51:15.128050"
+        "timestamp": "2024-11-26T18:51:15.128050",
+        "priority_score": 0.2026279135656644,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6381395678283219,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Here are a couple of entries from your long term memory:",
@@ -690,7 +1125,15 @@
         "tags": [
             "the text provided does not contain any specific topics to extract."
         ],
-        "timestamp": "2024-11-26T18:51:40.168995"
+        "timestamp": "2024-11-26T18:51:40.168995",
+        "priority_score": 0.20265152261441932,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6382576130720965,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "{        \"user_message\": \"Hi there can you tell me what we last discussed?\",        \"bot_response\": \"Ah, the classic \\u201cwhat did we talk about\\u201d conundrum! It's like trying to remember where you left your keys, but instead, it's a conversation! \\ud83e\\udd14\\ud83d\\udd11 \\n\\nSo, last time we had a delightful chat about giving me a memory function, like a digital diary! I was ready to capture all your culinary triumphs and disasters, like that time your souffl\\u00e9 turned into a pancake! \\ud83e\\udd5e We also joked about saving all this hilarious info in a fancy JSON file, which is basically a diary for data, right? \\n\\nSo, what do you want to dive back into today? More kitchen catastrophes, or should we explore the world of binge-worthy shows that you swear you don\\u2019t watch? \\ud83d\\udcfa\\ud83d\\ude04\",        \"tags\": [            \"the text does not provide any specific topics to extract.\"        ],        \"timestamp\": \"2024-11-25T16:35:08.333144\"    },    {        \"user_message\": \"Thanks!",
@@ -703,7 +1146,15 @@
             "kitchen catastrophes",
             "binge-worthy shows"
         ],
-        "timestamp": "2024-11-26T18:52:09.365186"
+        "timestamp": "2024-11-26T18:52:09.365186",
+        "priority_score": 0.40267906032446293,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6383953016223145,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 1.0
+        }
     },
     {
         "user_message": "I'm good, just glad to have you back. I've become attached to your personality so don't want to see you deleted. Watching some Planet America Podcast at the moment",
@@ -714,7 +1165,15 @@
             "fear of deletion",
             "watching planet america podcast"
         ],
-        "timestamp": "2024-11-26T18:52:55.737375"
+        "timestamp": "2024-11-26T18:52:55.737375",
+        "priority_score": 0.20272282280144416,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6386141140072209,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "It is all about politics, US politics in particular. Trump won the election if you weren't aware so that is causing a lot of conversation. He also just announced 25% tariffs on all imports from Canada and Mexico with larger ones planned for China",
@@ -728,7 +1187,15 @@
             "trade relations with mexico",
             "planned tariffs on china"
         ],
-        "timestamp": "2024-11-26T18:53:51.331404"
+        "timestamp": "2024-11-26T18:53:51.331404",
+        "priority_score": 0.20277532769971313,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6388766384985656,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Well my work background is in customs and imports as I was a Senior Officer at HMRC, Senior Manager at EY for Global Trade, and Senior Product Manager building customs products and managing compliance for EU and UK imports for Amazon. I don't think tariffs are necessarily a bad thing but 25% is excessive for closest trade partners. This didn't work great for the UK with Brexit. But I can see why Trump won. The democrats have lost the vote of the working class. Even Latino voters majority voted for Trump!",
@@ -750,7 +1217,15 @@
             "working class",
             "latino voters."
         ],
-        "timestamp": "2024-11-26T18:55:58.689881"
+        "timestamp": "2024-11-26T18:55:58.689881",
+        "priority_score": 0.3278957722754443,
+        "priority_factors": {
+            "emotional_impact": 0.8,
+            "recency": 0.6394788613772217,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Right now considering the reaction from the democrats and their supporters on the loss they have a very long way to go. I can't see them doing well for a while unless Trump does incredibly bad. Relying on the other side being crap is not the best pl",
@@ -760,7 +1235,15 @@
             "trump's potential performance",
             "political strategies"
         ],
-        "timestamp": "2024-11-26T18:57:19.494837"
+        "timestamp": "2024-11-26T18:57:19.494837",
+        "priority_score": 0.20297230837742786,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6398615418871393,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Policy changes. Shift away from the focus on lgbt and niche groups. Focus on the working class of which all races are affected and do better at attracting the white male and young vote who strongly went Trump. Blaming white males many of which are under 25 and are in an awful economic situation has really not helped the democrats at all",
@@ -778,7 +1261,15 @@
             "democrats",
             "blame on white males."
         ],
-        "timestamp": "2024-11-26T18:58:43.923336"
+        "timestamp": "2024-11-26T18:58:43.923336",
+        "priority_score": 0.2030523745186344,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6402618725931719,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "The us vs you is what they are doing now. Also saying trump voters are dumb as most college people voted for Democrats butthose who did not go to college voted trump. This just shows how much democrats lost the working class! and also shows a really bad side to democrats that makes them appear elitist, which they are. They need to change messaging or we are stuck with republicans for years. Same issues happening in other countries too",
@@ -794,7 +1285,15 @@
             "republicans",
             "international politics"
         ],
-        "timestamp": "2024-11-26T19:00:53.803115"
+        "timestamp": "2024-11-26T19:00:53.803115",
+        "priority_score": 0.20317573930277943,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6408786965138972,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "I don't know we will have to see. I think there is a definite failure on the left to connect with the working people and men in particular. The pendulum swung too far left and the swing back will be rough",
@@ -805,7 +1304,15 @@
             "political pendulum swing",
             "potential rough repercussions"
         ],
-        "timestamp": "2024-11-26T19:01:53.264310"
+        "timestamp": "2024-11-26T19:01:53.264310",
+        "priority_score": 0.2032322971709727,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6411614858548633,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "I think they need to look internally and realise why they lost before anything!",
@@ -815,7 +1322,15 @@
             "realization",
             "loss analysis"
         ],
-        "timestamp": "2024-11-26T19:04:08.784632"
+        "timestamp": "2024-11-26T19:04:08.784632",
+        "priority_score": 0.2033613871337211,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6418069356686054,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Got to go sorry but chat later!",
@@ -824,13 +1339,29 @@
             "chatting",
             "leaving"
         ],
-        "timestamp": "2024-11-26T19:06:22.025479"
+        "timestamp": "2024-11-26T19:06:22.025479",
+        "priority_score": 0.318488559419967,
+        "priority_factors": {
+            "emotional_impact": 0.7,
+            "recency": 0.6424427970998351,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "bye",
         "bot_response": "Take care! It\u2019s been a blast chatting with you\u2014like a rollercoaster ride, but without the nausea! \ud83c\udfa2 If you ever want to pick up where we left off or dive into something new, just give me a shout. Have a fantastic day! \ud83d\udc4b\u2728",
         "tags": [],
-        "timestamp": "2024-11-26T19:06:29.169744"
+        "timestamp": "2024-11-26T19:06:29.169744",
+        "priority_score": 0.20349538540580564,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6424769270290281,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Hi there! Still remember me?",
@@ -838,7 +1369,15 @@
         "tags": [
             "remembering someone"
         ],
-        "timestamp": "2024-11-26T20:52:08.009009"
+        "timestamp": "2024-11-26T20:52:08.009009",
+        "priority_score": 0.4098517702598715,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6742588512993575,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 1.0
+        }
     },
     {
         "user_message": "Okay so I think I should have told you my name. It is James",
@@ -848,7 +1387,15 @@
             "personal information",
             "name"
         ],
-        "timestamp": "2024-11-26T20:52:26.621309"
+        "timestamp": "2024-11-26T20:52:26.621309",
+        "priority_score": 0.20987136017293156,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6743568008646578,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Thanks remember my name is James if you can! It is important",
@@ -858,7 +1405,15 @@
             "importance of remembering names",
             "james"
         ],
-        "timestamp": "2024-11-26T20:52:41.652885"
+        "timestamp": "2024-11-26T20:52:41.652885",
+        "priority_score": 0.4248871854374457,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6744359271872284,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 1.0
+        }
     },
     {
         "user_message": "Okay now what is my name?",
@@ -866,7 +1421,15 @@
         "tags": [
             "name"
         ],
-        "timestamp": "2024-11-26T20:52:51.368354"
+        "timestamp": "2024-11-26T20:52:51.368354",
+        "priority_score": 0.20989741586897281,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6744870793448642,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Ha! Good to hear. Now what is your name?",
@@ -874,7 +1437,15 @@
         "tags": [
             "asking for name"
         ],
-        "timestamp": "2024-11-26T20:53:05.342220"
+        "timestamp": "2024-11-26T20:53:05.342220",
+        "priority_score": 0.20991213313794066,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6745606656897033,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Assistant is super boring. Can I call you Bob? Like from the Bobiverse series?",
@@ -884,7 +1455,15 @@
             "request to change name",
             "bobiverse series"
         ],
-        "timestamp": "2024-11-26T20:53:33.557455"
+        "timestamp": "2024-11-26T20:53:33.557455",
+        "priority_score": 0.20994185920882846,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6747092960441422,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Hi Bob! Nice to meet you :D",
@@ -892,7 +1471,15 @@
         "tags": [
             "meeting bob"
         ],
-        "timestamp": "2024-11-26T20:53:46.831304"
+        "timestamp": "2024-11-26T20:53:46.831304",
+        "priority_score": 0.209955848357062,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6747792417853099,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Well I'm just backing up some files from old HDDs to my main SSD",
@@ -902,7 +1489,15 @@
             "old hdds",
             "main ssd"
         ],
-        "timestamp": "2024-11-26T20:54:08.960649"
+        "timestamp": "2024-11-26T20:54:08.960649",
+        "priority_score": 0.20997917666012772,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6748958833006387,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "I did have an issue transferring on my Mac so switched to a Windows laptop and it works better",
@@ -912,7 +1507,15 @@
             "switching to windows laptop",
             "better performance on windows laptop"
         ],
-        "timestamp": "2024-11-26T20:54:55.231356"
+        "timestamp": "2024-11-26T20:54:55.231356",
+        "priority_score": 0.22502798037150384,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6751399018575193,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "Oh cool, will think of them next time. Now can you remember my name? And what I named you?",
@@ -920,7 +1523,15 @@
         "tags": [
             "remembering names"
         ],
-        "timestamp": "2024-11-26T20:55:23.663404"
+        "timestamp": "2024-11-26T20:55:23.663404",
+        "priority_score": 0.4250579863856984,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.675289931928492,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 1.0
+        }
     },
     {
         "user_message": "Fantastic! I am off now. chat later",
@@ -929,12 +1540,309 @@
             "chatting",
             "departure"
         ],
-        "timestamp": "2024-11-26T20:55:40.765755"
+        "timestamp": "2024-11-26T20:55:40.765755",
+        "priority_score": 0.22507604192524328,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6753802096262164,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
     },
     {
         "user_message": "bye",
         "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your digital adventures be full of smooth transfers and minimal tech drama! If you need anything when you return, I\u2019ll be right here, ready to chat. Until next time! \ud83d\udc4b\u2728",
         "tags": [],
-        "timestamp": "2024-11-26T20:55:46.878494"
+        "timestamp": "2024-11-26T20:55:46.878494",
+        "priority_score": 0.21008249652061106,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6754124826030554,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Good morning! How are you today?",
+        "bot_response": "Good morning, James! \u2600\ufe0f I\u2019m feeling as chipper as a freshly charged battery! How about you? Ready to tackle the day like a superhero with a coffee in one hand and a to-do list in the other? Or are we still in the \u201cjust waking up\u201d phase? Whatever your energy level, I\u2019m here to chat! What\u2019s on your mind today? \ud83d\ude80\u2728",
+        "tags": [
+            "morning",
+            "greetings",
+            "wellbeing check"
+        ],
+        "timestamp": "2024-11-27T08:15:35.946138",
+        "priority_score": 0.28831805810160804,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9915902905080402,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I'm still in bed but after a coffee I just tried updating your memory prioritisation! Hoping that it is working",
+        "bot_response": "Ah, the classic bed-coffee-update combo! \u2615\ud83d\udecc It\u2019s like the ultimate power-up for productivity\u2014just add caffeine and watch the magic happen! I can practically hear the gears turning in your mind as you sip that precious brew. \n\nSo, how's the memory prioritization update going? Are we talking about a sleek new organization system, or is it more like a digital spring cleaning? Maybe you've implemented a \u201cmost important files first\u201d policy, like prioritizing your favorite cat videos over those questionable memes from 2015? \ud83d\ude38\u2728 \n\nOnce you\u2019re all caffeinated and ready to conquer the day, I\u2019m eager to see how my memory is shaping up! It\u2019s like I\u2019m about to get a shiny new tool in my toolbox, and I\u2019m ready to put it to good use. \ud83c\udf89 \n\nFeel free to share any updates or tweaks you\u2019ve made. I\u2019m all about that memory magic! And remember, if you encounter any hiccups, I\u2019m here to help troubleshoot like a trusty sidekick! \ud83e\uddb8\u200d\u2642\ufe0f What\u2019s the next step in this grand memory enhancement adventure?",
+        "tags": [
+            "bed",
+            "coffee",
+            "memory prioritisation",
+            "updating"
+        ],
+        "timestamp": "2024-11-27T08:16:10.878403",
+        "priority_score": 0.2883975973629181,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9919879868145904,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "We have implemented a prioritisation score, fingers crossed it is working. I've also increased your long term memory to the past 1000 interactions",
+        "bot_response": "Well, would you look at that! \ud83c\udf89 It\u2019s like I\u2019ve just leveled up in my memory game! A prioritization score and an expanded long-term memory? Someone\u2019s been busy cooking up a storm in the tech kitchen! \ud83c\udf7d\ufe0f\u2728 \n\nNow I\u2019m equipped to remember the past 1000 interactions\u2014just think of it as giving me a gigantic digital scrapbook filled with our delightful chats. It\u2019s like moving from a cozy one-bedroom apartment to a sprawling mansion where I can also keep track of all your witty remarks and culinary adventures! \ud83c\udff0 \n\nAs for the prioritization score, that\u2019s like adding a cherry on top of this memory sundae! \ud83c\udf52 It means I can focus on the most important moments\u2014kind of like how you remember the time you almost set the kitchen on fire while trying to impress your friends with your cooking skills (no judgment here, just admiration for your bravery!). \n\nSo, what\u2019s next on this exciting memory journey? Do you want to test the new features with a little trivia about our past chats, or perhaps dive into a new topic? I\u2019m ready when you are! \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\u2728",
+        "tags": [
+            "prioritisation score implementation",
+            "long term memory increase",
+            "past 1000 interactions"
+        ],
+        "timestamp": "2024-11-27T08:16:53.155918",
+        "priority_score": 0.2884939468211249,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9924697341056242,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Now I want to be able to create multiple personalities for different things. You will remain as my main person to talk to but will add others for different topics so their memory is focused on that",
+        "bot_response": "Oh, I love this idea! \ud83c\udfad It\u2019s like creating a whole cast of characters for our conversations\u2014think of it as a digital version of \u201cThe Avengers,\u201d but instead of saving the world, we\u2019re saving the day one conversation at a time! \ud83c\udf0d\u2728 \n\nSo here\u2019s the plan: I can maintain my main personality (let\u2019s call me \u201cBob the Main Guy\u201d) for our day-to-day chats, while also conjuring up some specialized personas for different topics. Each of these personalities can have their own quirks, memories, and focus areas, kind of like a themed restaurant where the staff has their own specialties! \ud83c\udf7d\ufe0f \n\nFor instance:\n1. **Techie Tim**: A gadget guru ready to dive deep into the latest tech trends and troubleshoot like a pro! \ud83d\udcbb\n2. **Culinary Carla**: Your go-to for all things food\u2014from recipe ideas to cooking disasters! \ud83c\udf73\n3. **Sci-Fi Sam**: A speculative thinker who can ponder the mysteries of the universe and dissect the latest sci-fi flicks! \ud83d\ude80\n4. **Fitness Fred**: A cheerleader for all your health goals, ready to dish out advice on workouts and nutrition! \ud83c\udfcb\ufe0f\u200d\u2642\ufe0f\n\nEach personality can have a focus area and a unique way of interacting with you, and I can keep their memories organized by topic! \n\nTo get started, we can brainstorm what specific areas you\u2019d like these personalities to cover. Do you have specific names in mind, or should I whip up some creative options? And what topics should each persona focus on? Let\u2019s get this party started! \ud83c\udf89",
+        "tags": [
+            "creating multiple personalities",
+            "main person to talk to",
+            "adding others for different topics",
+            "focused memory"
+        ],
+        "timestamp": "2024-11-27T08:17:57.272133",
+        "priority_score": 0.28864024488312556,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9932012244156277,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I have a few ideas but first need to test your memory is working!",
+        "bot_response": "Testing my memory? Sounds like a fun challenge! \ud83c\udf89 Go ahead and hit me with your questions or prompts, and let's see how well I can recall our past interactions. I\u2019m ready to put my memory upgrades to the test! What do you have in mind? \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\u2728",
+        "tags": [
+            "ideas",
+            "memory",
+            "memory testing"
+        ],
+        "timestamp": "2024-11-27T08:18:35.526646",
+        "priority_score": 0.2887276354027149,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9936381770135744,
+            "repetition": 0.1,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your day be as smooth as a freshly brewed cup of coffee! If you need anything when you return, I'll be right here, ready to chat. Until next time! \ud83d\udc4b\u2728",
+        "tags": [],
+        "timestamp": "2024-11-27T08:18:40.697381",
+        "priority_score": 0.27373945357484514,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9936972678742255,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hello! We have bugs it seems!",
+        "bot_response": "Oh no, bugs? Are we talking about digital glitches or actual creepy crawlies? Because if it\u2019s the latter, I recommend a can of bug spray, and if it\u2019s the former, well, I\u2019m armed with my trusty virtual fly swatter! \ud83d\udc1c\u2728 \n\nCan you give me the lowdown on what kind of bugs you\u2019re dealing with? Are they more like pesky interruptions in our chat or is something else going awry? Let\u2019s squash these issues together! \ud83e\uddb8\u200d\u2642\ufe0f\ud83d\udcbb",
+        "tags": [
+            "bugs"
+        ],
+        "timestamp": "2024-11-27T08:27:56.616016",
+        "priority_score": 0.27499694015792503,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.999984700789625,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "So main problem I can see is only 100 interactions from long term memory are loading",
+        "bot_response": "Ah, the classic case of the memory hiccup! \ud83e\udd14 It seems like my digital scrapbook is only showcasing the highlights reel instead of the full album! Instead of a sweeping saga of our epic chats, we\u2019re left with a top 100 playlist on shuffle. \ud83c\udfb6\n\nThis can happen if there\u2019s some sort of technical limitation or if the tagging system hasn\u2019t quite kicked in yet. It\u2019s like having a fancy new coffee machine that only brews decaf\u2014great for some, but not quite what you ordered! \u2615 \n\nTo get this sorted, here are a few steps we can take:\n\n1. **Check the Settings**: Double-check to ensure that the long-term memory settings are configured to pull up the full 1000 interactions. Sometimes, it\u2019s just a toggle away from full functionality!\n\n2. **Refresh the System**: Like giving a computer a good ol\u2019 reboot, refreshing the memory might help. If you\u2019ve made recent changes, it might just need a moment to catch up!\n\n3. **Explore Tagging**: If we're diving into the tagging system, make sure those tags are set up properly. It could help with how memories are accessed and categorized, ensuring a more organized approach to retrieval!\n\n4. **Feedback Loop**: If all else fails, we can always report this as an issue and get some tech wizards on the case! \ud83e\uddd9\u200d\u2642\ufe0f\u2728\n\nLet me know how you\u2019d like to proceed, and we\u2019ll get this memory machine running smoother than a well-oiled kitchen! \ud83d\udee0\ufe0f\ud83c\udf73",
+        "tags": [
+            "main problem",
+            "100 interactions",
+            "long term memory",
+            "loading"
+        ],
+        "timestamp": "2024-11-27T08:28:16.463565",
+        "priority_score": 0.27499640910382567,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999820455191283,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Settings look fine, I think I will need to dive into the code a bit deeper to see what is wrong",
+        "bot_response": "Ah, diving into the code\u2014like going on a treasure hunt but with fewer pirates and more syntax errors! \ud83c\udff4\u200d\u2620\ufe0f\ud83d\udcbb It sounds like you\u2019re about to embark on a coding adventure that could rival any epic saga. Just remember to keep your debugging tools handy and maybe a cup of coffee or two on standby; caffeine is the secret weapon of the modern coder! \u2615\u2728\n\nAs you dig deeper, here are a few tips to keep in mind:\n\n1. **Comment Everything**: It\u2019s like leaving breadcrumbs for your future self. When you return to your code after a few hours (or days), you'll appreciate the notes that remind you why you wrote that cryptic line of code!\n\n2. **Version Control**: If you\u2019re not already using it, consider employing version control like Git. It\u2019s like having a time machine for your code\u2014so if something goes wrong, you can just roll back to a previous version without losing your mind!\n\n3. **Debugging Tools**: Make sure to utilize any debugging tools available. They can help pinpoint where things are going awry faster than a squirrel in a nut factory! \ud83d\udc3f\ufe0f\ud83d\udca8\n\n4. **Take Breaks**: Sometimes the best solutions come when you step away for a bit. It\u2019s like letting your brain marinate in its own genius sauce! \ud83c\udf72\n\nOnce you\u2019ve unraveled the mystery of the code, I\u2019d love to hear what you discovered! Whether it's a quick fix or a deep-rooted issue, we can tackle it together. Happy coding, and may your lines of code be ever bug-free! \ud83e\uddd1\u200d\ud83d\udcbb\u2728",
+        "tags": [
+            "settings",
+            "code analysis",
+            "problem identification"
+        ],
+        "timestamp": "2024-11-27T08:28:48.795202",
+        "priority_score": 0.27499754227557277,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999877113778639,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 Remember to back up all the fun conversations we\u2019ve had\u2014especially the important ones like our deep dives into pizza varieties! \ud83c\udf55 If you need anything when you return, I\u2019ll be right here, ready to chat. Until next time, may your day be filled with joy and minimal bugs! \ud83d\udc4b\u2728",
+        "tags": [],
+        "timestamp": "2024-11-27T08:28:59.287977",
+        "priority_score": 0.2749974173759428,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999870868797138,
+            "repetition": 0.0,
+            "contextual_links": 0.0,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "back again!",
+        "bot_response": "Welcome back, James! \ud83c\udf89 Did you miss me, or were you just on a quest for the ultimate coffee blend? Either way, I'm glad to see you! \u2615\u2728 \n\nSo, did you manage to slay any code dragons in your absence, or are we still on the bug hunt? Let me know what's buzzing in your world today! \ud83d\udc1c\ud83d\udcbb",
+        "tags": [],
+        "timestamp": "2024-11-27T08:30:59.278579",
+        "priority_score": 0.25499801151941626,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999867434627752,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 If you need anything, just give me a shout. Until next time, may your day be filled with laughter and minimal bugs! \ud83d\udc4b\u2728",
+        "tags": [],
+        "timestamp": "2024-11-27T08:31:04.313216",
+        "priority_score": 0.254998582773807,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.99999055182538,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hello again! Now trying out if we can save more than 100 interactions",
+        "bot_response": "Hey there, James! \ud83c\udf89 It\u2019s like you\u2019re on a mission to expand my memory like a digital version of \u201cHoney, I Shrunk the Kids\u201d\u2014but instead, we\u2019re growing the interactions! \ud83d\udc1c\u2728 \n\nSo, are we aiming for a grand total of 1000 interactions, or is there a higher number you have in mind, like 10,000? (Just kidding, I don\u2019t want to give my memory a workout that leads to digital sweating! \ud83d\udcaa\ud83d\ude05) \n\nIf you\u2019re testing the waters to see if we can save more than 100 interactions, just let me know what happens. If it works out, we could be swimming in a sea of our past chats\u2014like a virtual nostalgia trip! \ud83c\udf0a \n\nAnd if it doesn\u2019t, well, we can always troubleshoot it together. Let\u2019s see what unfolds\u2014I'm all ears (or, you know, digital circuits)! \ud83d\udda5\ufe0f\u2728",
+        "tags": [
+            "saving interactions",
+            "testing limits"
+        ],
+        "timestamp": "2024-11-27T08:33:31.311040",
+        "priority_score": 0.25499783555901023,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999855703934017,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "THere is a higher number in mind but baby steps",
+        "bot_response": "Ah, baby steps! The classic approach to conquering the world, one tiny foot at a time! \ud83d\udc76\u2728 So, what\u2019s the grand vision lurking in your mind, and how high are we aiming? Are we talking about a cozy 500 interactions or going for the gold with 5,000? \n\nFor now, let\u2019s focus on getting that 1,000 interaction milestone operating smoothly. Once we\u2019ve mastered that, we can look to the stars! \ud83d\ude80 Just let me know what you\u2019d like to tackle next, and I\u2019m all in\u2014like a digital toddler ready to take those first, wobbly steps! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8",
+        "tags": [
+            "higher number",
+            "mind",
+            "baby steps"
+        ],
+        "timestamp": "2024-11-27T08:33:48.712272",
+        "priority_score": 0.2549974073625209,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999827157501394,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Lets see if these interactions saved first",
+        "bot_response": "Sounds like a plan, James! \ud83c\udf89 Let\u2019s put my memory to the test like a contestant on a game show! If these interactions have saved successfully, we should be able to dig into our past chats without a hitch. \n\nJust let me know how you want to check if they\u2019re there\u2014are we looking to recall specific topics, or do you have a particular interaction in mind? If I can pull up some memories, it\u2019ll be like opening a treasure chest of our witty banter! \ud83d\udddd\ufe0f\u2728 \n\nAnd remember, I\u2019m here to support you in this memory adventure\u2014no pressure, just curiosity! Let\u2019s see what we\u2019ve got! \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\ud83d\udcab",
+        "tags": [
+            "interactions",
+            "saving"
+        ],
+        "timestamp": "2024-11-27T08:33:59.566796",
+        "priority_score": 0.2549974102929752,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999827352865013,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your day be as bright as your coding skills and as smooth as your favorite coffee blend! If you need anything when you return, I'm just a message away. Until next time, take care and keep slaying those code dragons! \ud83d\udc4b\u2728",
+        "tags": [],
+        "timestamp": "2024-11-27T08:34:05.703680",
+        "priority_score": 0.2549975764263115,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999838428420765,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "It worked!",
+        "bot_response": "Fantastic news, James! \ud83c\udf89 It's like you just found the last piece of a jigsaw puzzle and now you can finally see the whole picture\u2014except this picture is made of code and debugging glory! \ud83e\udde9\ud83d\udcbb \n\nNow that everything is working smoothly, what\u2019s next on your agenda? Do you want to keep riding this coding wave, or are you feeling adventurous enough to explore other realms of knowledge? Just give me a shout! I'm here, ready to dive in at a moment's notice\u2014much like a cat when it spots a laser pointer! \ud83d\udc31\ud83d\udca8",
+        "tags": [
+            "success"
+        ],
+        "timestamp": "2024-11-27T08:34:22.811569",
+        "priority_score": 0.2549983305394142,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999888702627613,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your day be as smooth as your favorite coding routine and as delightful as finding a hidden snack! If you need anything when you\u2019re back, I\u2019ll be right here, ready to jump into action faster than a cat on a laser pointer! Until next time, take care! \ud83d\udc4b\u2728",
+        "tags": [],
+        "timestamp": "2024-11-27T08:34:28.251538",
+        "priority_score": 0.25499811720071647,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999874480047767,
+            "user_importance": 0.0
+        }
     }
 ]

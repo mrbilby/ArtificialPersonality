@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 from datetime import datetime, timedelta
 import statistics
-from typing import List, Dict, Optional
+from typing import List, Dict, Optional, Tuple, Any
 
 # Load environment variables from .env file
 load_dotenv()
@@ -59,15 +59,18 @@ class Interaction:
         self.user_message = user_message
         self.bot_response = bot_response
         self.tags = tags or []
-        # Store timestamps as datetime objects immediately
         self.timestamp = datetime.now()
+        self.priority_score = 0.0
+        self.priority_factors = {}  # NEW: Track what contributed to priority
     
     def to_dict(self):
         return {
             "user_message": self.user_message,
             "bot_response": self.bot_response,
             "tags": self.tags,
-            "timestamp": self.timestamp.isoformat()  # Convert to ISO format for storage
+            "timestamp": self.timestamp.isoformat(),
+            "priority_score": self.priority_score,
+            "priority_factors": self.priority_factors  # NEW: Save factors
         }
     
     @staticmethod
@@ -77,10 +80,181 @@ class Interaction:
             bot_response=data["bot_response"],
             tags=data.get("tags", [])
         )
-        # Convert ISO format back to datetime
         interaction.timestamp = datetime.fromisoformat(data["timestamp"])
+        interaction.priority_score = float(data.get("priority_score", 0.0))  # Ensure float conversion
+        interaction.priority_factors = data.get("priority_factors", {})  # NEW: Load factors
         return interaction
     
+
+class MemoryPriority:
+    def __init__(self):
+        # Define weights for different priority factors
+        self.priority_weights = {
+            'emotional_impact': 0.25,    # Weight for emotional significance
+            'recency': 0.20,            # Weight for how recent the memory is
+            'repetition': 0.15,         # Weight for how often topic is discussed
+            'contextual_links': 0.20,   # Weight for connections to other memories
+            'user_importance': 0.20     # Weight for explicit user emphasis
+        }
+        
+        # Define emotional intensity values
+        self.emotion_intensity = {
+            'joy': 0.8,
+            'sadness': 0.7,
+            'anger': 0.9,
+            'surprise': 0.6,
+            'neutral': 0.3
+        }
+        
+        # Keywords that indicate user emphasis on importance
+        self.importance_indicators = {
+            'remember': 1.2,
+            'important': 1.5,
+            'crucial': 1.5,
+            'essential': 1.4,
+            'key': 1.3,
+            'significant': 1.4,
+            'vital': 1.5,
+            'critical': 1.5,
+            'never forget': 1.6
+        }
+
+    def calculate_priority_with_factors(self, interaction: 'Interaction', 
+                                    memory_context: Dict) -> Tuple[float, Dict]:
+        factors = {}
+        priority_score = 0.0
+        
+        # Emotional Impact (increased impact)
+        emotion = self._detect_emotion(interaction.user_message)
+        emotional_score = self.emotion_intensity.get(emotion, 0.3)
+        factors['emotional_impact'] = emotional_score
+        priority_score += emotional_score * 0.35  # Increased from 0.25
+        
+        # Recency (slightly reduced)
+        time_diff = (datetime.now() - interaction.timestamp).total_seconds()
+        recency_score = 1 / (1 + (time_diff / (24 * 3600)))
+        factors['recency'] = recency_score
+        priority_score += recency_score * 0.15  # Reduced from 0.20
+        
+        # User Importance (increased impact)
+        importance_score = self._calculate_user_importance(interaction)
+        factors['user_importance'] = importance_score
+        priority_score += importance_score * 0.30  # Increased from 0.20
+        
+        # Rest remains the same...
+        
+        return min(priority_score, 1.0), factors
+
+    def calculate_priority(self, interaction: 'Interaction', memory_context: Dict) -> float:
+        """Calculate priority score for a memory"""
+        priority_score = 0.0
+        
+        # Emotional Impact
+        emotion = self._detect_emotion(interaction.user_message)
+        emotional_score = self.emotion_intensity.get(emotion, 0.3)
+        priority_score += emotional_score * self.priority_weights['emotional_impact']
+        
+        # Recency (normalized between 0-1)
+        time_diff = (datetime.now() - interaction.timestamp).total_seconds()
+        recency_score = 1 / (1 + (time_diff / (24 * 3600)))  # Decay over 24 hours
+        priority_score += recency_score * self.priority_weights['recency']
+        
+        # Repetition
+        repetition_score = self._calculate_repetition(interaction, memory_context)
+        priority_score += repetition_score * self.priority_weights['repetition']
+        
+        # Contextual Links
+        context_score = self._calculate_context_links(interaction, memory_context)
+        priority_score += context_score * self.priority_weights['contextual_links']
+        
+        # User Importance
+        importance_score = self._calculate_user_importance(interaction)
+        priority_score += importance_score * self.priority_weights['user_importance']
+        
+        return min(priority_score, 1.0)  # Normalize to 0-1 range
+
+    def _calculate_repetition(self, interaction: 'Interaction', memory_context: Dict) -> float:
+        """Calculate how often similar topics appear"""
+        topic_count = 0
+        total_memories = len(memory_context.get('recent_interactions', []))
+        
+        if total_memories == 0:
+            return 0.0
+            
+        for memory in memory_context.get('recent_interactions', []):
+            if any(tag in memory.tags for tag in interaction.tags):
+                topic_count += 1
+                
+        return topic_count / total_memories
+
+    def _calculate_context_links(self, interaction: 'Interaction', memory_context: Dict) -> float:
+        """Calculate how well memory connects to other memories"""
+        connection_score = 0.0
+        key_memories = memory_context.get('key_memories', [])
+        
+        for memory in key_memories:
+            # Check tag overlap
+            common_tags = set(interaction.tags) & set(memory.get('tags', []))
+            if common_tags:
+                connection_score += 0.2 * len(common_tags)
+            
+            # Check temporal proximity
+            time_diff = abs((interaction.timestamp - datetime.fromisoformat(memory['timestamp'])).total_seconds())
+            if time_diff < 3600:  # Within an hour
+                connection_score += 0.3
+            
+            # Check conversational flow
+            if self._are_messages_related(interaction.user_message, memory.get('message', '')):
+                connection_score += 0.5
+                
+        return min(connection_score, 1.0)
+
+    def _calculate_user_importance(self, interaction: 'Interaction') -> float:
+        """Calculate importance based on user's explicit indicators"""
+        importance_score = 0.0
+        message_lower = interaction.user_message.lower()
+        
+        for indicator, weight in self.importance_indicators.items():
+            if indicator in message_lower:
+                importance_score += weight
+                
+        return min(importance_score, 1.0)
+
+    def _are_messages_related(self, message1: str, message2: str) -> bool:
+        """Check if two messages are semantically related"""
+        words1 = set(message1.lower().split())
+        words2 = set(message2.lower().split())
+        overlap = len(words1 & words2) / len(words1 | words2)
+        return overlap > 0.2
+
+    def _detect_emotion(self, text: str) -> str:
+        """Detect dominant emotion in text"""
+        emotion_keywords = {
+            'joy': {'happy', 'great', 'excellent', 'wonderful', 'love', 'enjoy'},
+            'sadness': {'sad', 'sorry', 'disappointed', 'upset', 'unhappy'},
+            'anger': {'angry', 'frustrated', 'annoyed', 'mad', 'hate'},
+            'surprise': {'wow', 'amazing', 'unexpected', 'surprised'}
+        }
+        
+        text_lower = text.lower()
+        emotion_scores = {
+            emotion: sum(1 for word in keywords if word in text_lower)
+            for emotion, keywords in emotion_keywords.items()
+        }
+        
+        return max(emotion_scores.items(), key=lambda x: x[1])[0] if any(emotion_scores.values()) else 'neutral'
+
+    def adjust_weights(self, usage_patterns: Dict):
+        """Dynamically adjust priority weights based on interaction patterns"""
+        if usage_patterns.get('emotional_engagement', 0) > 0.7:
+            self.priority_weights['emotional_impact'] = 0.3
+            
+        if usage_patterns.get('reference_frequency', 0) > 0.5:
+            self.priority_weights['contextual_links'] = 0.25
+            
+        if usage_patterns.get('topic_persistence', 0) > 0.6:
+            self.priority_weights['repetition'] = 0.2
+
 class TimeAnalyzer:
     @staticmethod
     def analyze_patterns(interactions: List[Interaction]) -> Dict:
@@ -150,11 +324,86 @@ class Memory:
     def __init__(self, max_interactions: int):
         self.max_interactions = max_interactions
         self.interactions: List[Interaction] = []
+        self.priority_system = MemoryPriority()
+        self.last_priority_update = datetime.now()  # NEW: Track last update
     
     def add_interaction(self, interaction: Interaction):
-        self.interactions.append(interaction)
-        print(f"[Debug] Interaction added: {interaction.user_message}")
-        self._enforce_limit()
+        try:
+            memory_context = self._get_memory_context()
+            self._update_priorities()  # Update existing priorities
+            
+            # Calculate new interaction priority
+            priority_score, factors = self.priority_system.calculate_priority_with_factors(
+                interaction, memory_context
+            )
+            interaction.priority_score = priority_score
+            interaction.priority_factors = factors
+            
+            self.interactions.append(interaction)
+            print(f"[Debug] Interaction added with priority {interaction.priority_score:.2f}")
+            print(f"[Debug] Priority factors: {interaction.priority_factors}")
+            
+            self._enforce_limit()
+        except Exception as e:
+            print(f"[Error] Failed to add interaction: {e}")
+            # Still add the interaction even if priority calculation fails
+            interaction.priority_score = 0.5  # Default middle priority
+            interaction.priority_factors = {}
+            self.interactions.append(interaction)
+    
+    def _update_priorities(self):
+        """Periodically update priorities of all memories"""
+        current_time = datetime.now()
+        if (current_time - self.last_priority_update).total_seconds() > 300:  # Every 5 minutes
+            print("[Debug] Updating all memory priorities...")
+            memory_context = self._get_memory_context()
+            for interaction in self.interactions:
+                priority_score, factors = self.priority_system.calculate_priority_with_factors(
+                    interaction, memory_context
+                )
+                interaction.priority_score = priority_score
+                interaction.priority_factors = factors
+            self.last_priority_update = current_time
+    
+    def _enforce_limit(self):
+        """Modified to better handle priority-based removal"""
+        if len(self.interactions) > self.max_interactions:
+            # Calculate retention scores for all interactions
+            scored_interactions = [
+                (i, self._calculate_retention_score(i)) 
+                for i in self.interactions
+            ]
+            
+            # Sort by retention score (lowest first)
+            scored_interactions.sort(key=lambda x: x[1])
+            
+            # Keep track of important memories
+            important_count = sum(1 for _, score in scored_interactions if score > 0.7)
+            
+            # Remove lowest scoring memories until within limit
+            while len(self.interactions) > self.max_interactions:
+                to_remove, score = scored_interactions.pop(0)
+                # Don't remove if it's important and we're not over important limit
+                if score > 0.7 and important_count <= self.max_interactions * 0.2:  # Keep 20% important
+                    continue
+                self.interactions.remove(to_remove)
+                print(f"[Debug] Removed memory with score {score:.2f}")
+                print(f"[Debug] Factors: {to_remove.priority_factors}")
+    
+    
+    def _calculate_retention_score(self, interaction: Interaction) -> float:
+        """Calculate score for memory retention"""
+        age_hours = (datetime.now() - interaction.timestamp).total_seconds() / 3600
+        recency_score = 1 / (1 + age_hours)  # Decay over time
+        return (interaction.priority_score * 0.7) + (recency_score * 0.3)
+    
+    def _get_memory_context(self) -> Dict:
+        """Provide context for priority calculation"""
+        return {
+            'recent_interactions': self.interactions[-10:],
+            'key_memories': [i.to_dict() for i in self.interactions 
+                           if i.priority_score > 0.7]
+        }
     
     def retrieve_relevant_interactions(self, query: str, top_n=10) -> List[Interaction]:
         """
@@ -184,26 +433,37 @@ class Memory:
         print(f"[Debug] Retrieved {len(recent)} recent and {len(relevant)} relevant older interactions.")
         return combined[:top_n]
     
-    def _enforce_limit(self):
-        while len(self.interactions) > self.max_interactions:
-            removed = self.interactions.pop(0)  # Remove oldest interaction
-            print(f"[Debug] Removed from memory: {removed.user_message}")
     
     def to_list(self):
         return [interaction.to_dict() for interaction in self.interactions]
     
     def load_from_list(self, data: List[Dict]):
-        # Add debug printing to check loaded timestamps
-        print("[Debug] Loading memory with timestamps:")
+        print("[Debug] Starting to load memory with timestamps:")
         self.interactions = []
-        for entry in data:
+        loaded_count = 0
+        max_to_load = self.max_interactions  # Get the actual limit we want
+        print(f"[Debug] Attempting to load up to {max_to_load} interactions...")
+        
+        # Remove any accidental limiting of the data
+        for entry in data:  # Remove the slice operation
             try:
+                if loaded_count >= max_to_load:
+                    break
+                    
                 interaction = Interaction.from_dict(entry)
                 print(f"[Debug] Loaded interaction timestamp: {interaction.timestamp}")
                 self.interactions.append(interaction)
+                loaded_count += 1
+                
+                if loaded_count % 100 == 0:
+                    print(f"[Debug] Loaded {loaded_count} interactions so far...")
+                    
             except Exception as e:
                 print(f"[Debug] Error loading interaction: {e}")
-        print(f"[Debug] Loaded {len(self.interactions)} interactions into memory.")
+                continue
+                
+        print(f"[Debug] Successfully loaded {len(self.interactions)} out of {len(data)} available interactions.")
+        print(f"[Debug] Max interactions setting: {self.max_interactions}")
 
 
 class ShortTermMemory(Memory):
@@ -482,7 +742,8 @@ def main():
 
     # Initialize memories
     short_memory = ShortTermMemory(max_interactions=10)
-    long_memory = LongTermMemory(max_interactions=100)
+    long_memory = LongTermMemory(max_interactions=1000)
+    print(f"[Debug] Long-term memory initialized with max_interactions={long_memory.max_interactions}")
 
     # Load existing personality and memories if available
     try:
