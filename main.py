@@ -613,7 +613,7 @@ class MemoryConsolidator:
         self.short_memory = short_memory
         self.long_memory = long_memory
         self.consolidated_memory = ConsolidatedMemory()
-        self.consolidation_interval = timedelta(minutes=5)
+        self.consolidation_interval = timedelta(seconds=30)
         self.emotion_weights = {
             'joy': 1.5,
             'sadness': 1.3,
@@ -626,44 +626,6 @@ class MemoryConsolidator:
         """Check if enough time has passed for consolidation"""
         time_since_last = datetime.now() - self.consolidated_memory.last_consolidated
         return time_since_last >= self.consolidation_interval
-
-    def consolidate_memories(self) -> ConsolidatedMemory:
-        """Main consolidation process"""
-        if not self.should_consolidate():
-            return self.consolidated_memory
-
-        recent_interactions = self.long_memory.interactions[-50:]
-
-        # Analyze patterns
-        conversation_patterns = self._analyze_conversation_patterns(recent_interactions)
-        emotional_patterns = self._analyze_emotional_patterns(recent_interactions)
-        topic_patterns = self._analyze_topic_patterns(recent_interactions)
-        
-        # Generate insights
-        new_insights = self._generate_insights(
-            conversation_patterns, 
-            emotional_patterns,
-            topic_patterns
-        )
-        
-        # Update consolidated memory
-        self.consolidated_memory.patterns.update({
-            'conversation': conversation_patterns,
-            'emotional': emotional_patterns,
-            'topics': topic_patterns
-        })
-        
-        self.consolidated_memory.insights.extend(new_insights)
-        if len(self.consolidated_memory.insights) > 20:
-            self.consolidated_memory.insights = self.consolidated_memory.insights[-20:]
-        
-        # Update relationship data
-        self._update_relationship_data(recent_interactions)
-        
-        # Update last consolidated timestamp
-        self.consolidated_memory.last_consolidated = datetime.now()
-        
-        return self.consolidated_memory
 
     def save_consolidated_memory(self, file_path: str = "consolidated_memory.json"):
         """Save consolidated memory to file"""
@@ -717,7 +679,7 @@ class MemoryConsolidator:
     def _analyze_topic_patterns(self, interactions: List[Interaction]) -> Dict:
         """Analyze patterns in conversation topics"""
         patterns = {
-            'topic_frequency': {},
+            'topic_frequency': defaultdict(int),  # Use defaultdict to avoid KeyError
             'topic_chains': [],
             'topic_duration': {}
         }
@@ -727,6 +689,42 @@ class MemoryConsolidator:
                 patterns['topic_frequency'][tag] += 1
                 
         return dict(patterns)
+
+    def consolidate_memories(self) -> ConsolidatedMemory:
+        """Main consolidation process"""
+        if not self.should_consolidate():
+            return self.consolidated_memory
+
+        print("[Debug] Starting memory consolidation...")
+        recent_interactions = self.long_memory.interactions[-50:]
+
+        # Analyze patterns
+        conversation_patterns = self._analyze_conversation_patterns(recent_interactions)
+        emotional_patterns = self._analyze_emotional_patterns(recent_interactions)
+        topic_patterns = self._analyze_topic_patterns(recent_interactions)
+        
+        # Update consolidated memory
+        self.consolidated_memory.patterns.update({
+            'conversation_patterns': conversation_patterns,
+            'emotional_patterns': emotional_patterns,
+            'topic_patterns': topic_patterns
+        })
+        
+        # Generate and update insights
+        new_insights = self._generate_insights(conversation_patterns, emotional_patterns, topic_patterns)
+        self.consolidated_memory.insights.extend(new_insights)
+        if len(self.consolidated_memory.insights) > 20:
+            self.consolidated_memory.insights = self.consolidated_memory.insights[-20:]
+        
+        # Update relationship data
+        self._update_relationship_data(recent_interactions)
+        
+        # Update timestamp and save
+        self.consolidated_memory.last_consolidated = datetime.now()
+        self.save_consolidated_memory()
+        
+        print("[Debug] Memory consolidation complete and saved")
+        return self.consolidated_memory
 
     def _generate_insights(self, conversation_patterns: Dict,
                         emotional_patterns: Dict,
@@ -991,26 +989,9 @@ class ChatBot:
             f"Tone: {self.personality.tone}\n"
             f"Response Style: {self.personality.response_style}\n"
             f"Behavior: {self.personality.behavior}\n\n"
+            f"Current time: {datetime.now()}\n" 
             "Time Context (BE PRECISE WITH THESE TIMES):\n"  # Added emphasis on precision
         )
-        
-        if patterns.get('current_response_time') is not None:
-            system_content += (
-                f"- Exact time between the previous two messages: "
-                f"{self._format_time(patterns['current_response_time'])}\n"
-            )
-        
-        if patterns.get('last_message_age') is not None:
-            system_content += (
-                f"- Exact time since the most recent message: "
-                f"{self._format_time(patterns['last_message_age'])}\n"
-            )
-        
-        if patterns.get('average_response_time') is not None:
-            system_content += (
-                f"- Average response time (last 5 messages): "
-                f"{self._format_time(patterns['average_response_time'])}\n"
-            )
         
         # Add other context information
         system_content += f"- Interaction frequency: {patterns.get('interaction_frequency', 'first_time')}\n"

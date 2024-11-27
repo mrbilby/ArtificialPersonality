@@ -1,15 +1,497 @@
 {
     "patterns": {
-        "conversation_patterns": {},
-        "topic_patterns": {},
-        "emotional_patterns": {}
+        "conversation_patterns": {
+            "response_times": [
+                17.102351,
+                6.112739,
+                40789.067644,
+                34.932265,
+                42.277515,
+                64.116215,
+                38.254513,
+                5.170735,
+                555.918635,
+                19.847549,
+                32.331637,
+                10.492775,
+                119.990602,
+                5.034637,
+                146.997824,
+                17.401232,
+                10.854524,
+                6.136884,
+                17.107889,
+                5.439969,
+                1752.282682,
+                18.216618,
+                15.599522,
+                12.176176,
+                11.299962,
+                1740.331056,
+                32.189261,
+                21.772395,
+                4.590877,
+                285.516369,
+                16.412348,
+                19.951089,
+                7.14378,
+                19494.740513,
+                13.706593,
+                16.046472,
+                14.782307,
+                30.779222,
+                7.255699,
+                297.844497,
+                16.140314,
+                20.166475,
+                21.762516,
+                34.129943,
+                7.685063,
+                283.985556,
+                11.024656,
+                24.608331,
+                8.518811
+            ],
+            "conversation_length": [],
+            "topic_transitions": []
+        },
+        "topic_patterns": {
+            "topic_frequency": {
+                "remembering names": 1,
+                "chatting": 1,
+                "departure": 1,
+                "morning": 1,
+                "greetings": 1,
+                "wellbeing check": 1,
+                "bed": 1,
+                "coffee": 1,
+                "memory prioritisation": 1,
+                "updating": 1,
+                "prioritisation score implementation": 1,
+                "long term memory increase": 1,
+                "past 1000 interactions": 1,
+                "creating multiple personalities": 1,
+                "main person to talk to": 1,
+                "adding others for different topics": 1,
+                "focused memory": 1,
+                "ideas": 1,
+                "memory": 2,
+                "memory testing": 1,
+                "bugs": 1,
+                "main problem": 1,
+                "100 interactions": 1,
+                "long term memory": 1,
+                "loading": 1,
+                "settings": 1,
+                "code analysis": 1,
+                "problem identification": 1,
+                "saving interactions": 1,
+                "testing limits": 1,
+                "higher number": 1,
+                "mind": 1,
+                "baby steps": 1,
+                "interactions": 1,
+                "saving": 1,
+                "success": 1,
+                "returning": 1,
+                "names": 3,
+                "losing name": 1,
+                "naming": 1,
+                "bob": 1,
+                "key memory": 1,
+                "keeping name": 1,
+                "quitting out": 1,
+                "new bug": 1,
+                "bug fixing": 2,
+                "initialisation of function": 1,
+                "incorporation of memories": 1,
+                "function failure": 1,
+                "testing": 1,
+                "functionality": 1,
+                "finding new bugs": 1,
+                "communication": 1,
+                "coding": 1,
+                "data analysis": 1,
+                "reset": 1,
+                "version": 1,
+                "tagging system": 1,
+                "working condition": 1,
+                "recent memories": 1,
+                "running code": 1,
+                "claude": 1,
+                "code review": 1,
+                "back testing": 1,
+                "consolidated memory": 1,
+                "asking names": 1,
+                "conversation topics": 1,
+                "memory working": 1,
+                "absence of tagging errors": 1,
+                "response time": 1,
+                "internet connection": 1,
+                "code trimming": 1,
+                "time display": 1,
+                "time": 1,
+                "working": 1,
+                "backing up": 1,
+                "git": 1
+            },
+            "topic_chains": [],
+            "topic_duration": {}
+        },
+        "emotional_patterns": {
+            "emotions": [
+                {
+                    "timestamp": "2024-11-26T20:55:23.663404",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-26T20:55:40.765755",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-26T20:55:46.878494",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:15:35.946138",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:16:10.878403",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:16:53.155918",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:17:57.272133",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:18:35.526646",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:18:40.697381",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:27:56.616016",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:28:16.463565",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:28:48.795202",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:28:59.287977",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:30:59.278579",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:31:04.313216",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:33:31.311040",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:33:48.712272",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:33:59.566796",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:34:05.703680",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:34:22.811569",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T08:34:28.251538",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:03:40.534220",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:03:58.750838",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:04:14.350360",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:04:26.526536",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:04:37.826498",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:33:38.157554",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:34:10.346815",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:34:32.119210",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:34:36.710087",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:39:22.226456",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:39:38.638804",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:39:58.589893",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T09:40:05.733673",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:05:00.474186",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:05:14.180779",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:05:30.227251",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:05:45.009558",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:06:15.788780",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:06:23.044479",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:11:20.888976",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:11:37.029290",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:11:57.195765",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:12:18.958281",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:12:53.088224",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:13:00.773287",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:17:44.758843",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:17:55.783499",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:18:20.391830",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-27T15:18:28.910641",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                }
+            ],
+            "emotional_intensity": {},
+            "emotional_progression": []
+        }
     },
-    "insights": [],
+    "insights": [
+        "Conversation has relaxed response times",
+        "Conversation shows primarily neutral emotions",
+        "Most discussed topics: names, memory, bug fixing",
+        "Conversation has relaxed response times",
+        "Conversation shows primarily neutral emotions",
+        "Most discussed topics: names, memory, bug fixing"
+    ],
     "key_memories": [],
     "relationship_data": {
-        "familiarity_level": 0,
+        "familiarity_level": 13,
         "interaction_quality": [],
-        "shared_interests": [],
+        "shared_interests": [
+            "memory prioritisation",
+            "saving interactions",
+            "back testing",
+            "keeping name",
+            "higher number",
+            "finding new bugs",
+            "loading",
+            "better performance on windows laptop",
+            "interactions",
+            "function failure",
+            "bed",
+            "claude",
+            "chatting",
+            "git",
+            "prioritisation score implementation",
+            "updating",
+            "main problem",
+            "wellbeing check",
+            "asking names",
+            "code trimming",
+            "focused memory",
+            "working",
+            "backing up",
+            "returning",
+            "internet connection",
+            "baby steps",
+            "old hdds",
+            "long term memory",
+            "long term memory increase",
+            "settings",
+            "naming",
+            "greetings",
+            "bugs",
+            "time display",
+            "code review",
+            "consolidated memory",
+            "incorporation of memories",
+            "ideas",
+            "morning",
+            "losing name",
+            "working condition",
+            "remembering names",
+            "initialisation of function",
+            "response time",
+            "backing up files",
+            "version",
+            "coffee",
+            "tagging system",
+            "conversation topics",
+            "testing limits",
+            "quitting out",
+            "key memory",
+            "mind",
+            "switching to windows laptop",
+            "time",
+            "past 1000 interactions",
+            "running code",
+            "saving",
+            "bug fixing",
+            "issue transferring on mac",
+            "data analysis",
+            "reset",
+            "communication",
+            "creating multiple personalities",
+            "functionality",
+            "new bug",
+            "testing",
+            "100 interactions",
+            "code analysis",
+            "names",
+            "main person to talk to",
+            "success",
+            "absence of tagging errors",
+            "memory",
+            "departure",
+            "bob",
+            "memory working",
+            "memory testing",
+            "recent memories",
+            "problem identification",
+            "main ssd",
+            "adding others for different topics",
+            "coding"
+        ],
         "conversation_style_preferences": {},
         "inside_references": {
             "phrases": {},
@@ -17,5 +499,5 @@
             "context": {}
         }
     },
-    "last_consolidated": "2024-11-27T09:39:05.582896"
+    "last_consolidated": "2024-11-27T15:18:29.923132"
 }
