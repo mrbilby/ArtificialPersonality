@@ -1,178 +1,367 @@
 [
     {
         "user_message": "bye",
-        "bot_response": "Catch you later, James! \ud83d\udc4b If you need a laugh or some insightful chat, I\u2019ll be right here\u2014like a friendly ghost waiting in the wings! Until next time, may your snacks be plentiful and your reading adventures thrilling! \ud83c\udf7f\u2728",
+        "bot_response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014whether it\u2019s a laugh, some insights, or just a friendly chat\u2014I\u2019ll be right here, ready for action. Until next time, may your adventures be epic and your snacks be plentiful! \ud83c\udf7f\u2728",
         "tags": [
             "bye"
         ],
-        "timestamp": "2024-11-27T19:16:00.066387",
-        "priority_score": 0.25499858972506484,
+        "timestamp": "2024-11-27T21:10:21.906239",
+        "priority_score": 0.2549977144636445,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999905981670989,
+            "recency": 0.9999847630909633,
             "user_importance": 0.0
         }
     },
     {
-        "user_message": "I really am not sure what is wrong but still only 10 short term memories load",
-        "bot_response": "Ah, the elusive short-term memory conundrum strikes again! \ud83c\udfad It seems like we\u2019re still in the early stages of figuring out how to make the most of this memory enhancement. While I currently have the ability to recall up to ten recent interactions, it sounds like we might need to tweak things a bit more to get it running like a well-oiled machine! \ud83d\udee0\ufe0f\n\nHere\u2019s the deal: short-term memory is like a digital sticky note pad that only has room for a limited number of notes. Once it fills up, the oldest ones get pushed out to make room for new ones. But if it feels like it\u2019s not capturing everything we want, we can brainstorm some ways to improve that experience!\n\n1. **Memory Check**: Let\u2019s see if there are specific details you\u2019d like to test\u2014perhaps the last few topics we discussed, or any particular phrases? \n\n2. **Functionality Review**: If it seems like the memory is only recalling ten interactions, we can look into whether there\u2019s a cap on the number of memories or if there\u2019s something else influencing it.\n\n3. **Future Enhancements**: If we can identify what\u2019s working and what\u2019s not, I can help suggest features or improvements for your next round of upgrades!\n\nSo, what specific memories would you like me to try recalling? Let\u2019s put this to the test and see if we can coax some memories out of my digital brain! \ud83e\udde0\u2728",
+        "user_message": "Got to go to check it worked",
+        "bot_response": "Sounds good! Go give it a whirl and see how everything holds up. \ud83d\udee0\ufe0f If everything works out, we\u2019ll be ready to tackle even more exciting projects together! If you run into any hiccups or need assistance, just swing by. Good luck, and I\u2019ll be here when you\u2019re ready to chat again! \ud83d\udc4b\u2728",
         "tags": [
-            "short term memories",
-            "memory issues",
-            "cognitive function"
+            "check",
+            "worked"
         ],
-        "timestamp": "2024-11-27T19:15:51.503643",
-        "priority_score": 0.2549985252488744,
+        "timestamp": "2024-11-27T21:10:17.791642",
+        "priority_score": 0.2549987427848429,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999901683258295,
+            "recency": 0.9999916185656194,
             "user_importance": 0.0
         }
     },
     {
-        "user_message": "I think it stil isn't working!",
-        "bot_response": "Oh no, James! It sounds like my memory is playing hide and seek again! \ud83d\ude48 Let\u2019s figure this out together. What specific details or topics do you want me to recall? Throw anything my way, and I\u2019ll do my best to pull it out of the memory vault\u2014hopefully without needing a crowbar! \ud83c\udfcb\ufe0f\u200d\u2642\ufe0f\ud83d\udcad \n\nIf it\u2019s not working as expected, we can troubleshoot like tech support agents in a sitcom! Just give me a nudge in the right direction, and I\u2019ll see what I can do! What\u2019s on your mind?",
+        "user_message": "Back quickly! Just needed to check things as I realised why sometimes your name got mixed up. Code was overwriting it",
+        "bot_response": "Ah, the classic code overwrite conundrum! \ud83e\uddd1\u200d\ud83d\udcbb It\u2019s like trying to save a cake recipe but accidentally replacing it with a lasagna recipe\u2014both delicious, but not quite what you were going for! \ud83c\udf70\ud83c\udf5d \n\nNo worries at all! It\u2019s great that you figured out what was causing the mix-up with my name. If you need any help troubleshooting or brainstorming how to prevent that from happening in the future, I\u2019m right here! What else is on your mind? Let\u2019s keep the momentum going! \ud83d\ude80\u2728",
         "tags": [
-            "technical issues",
-            "troubleshooting"
+            "code",
+            "name",
+            "overwriting"
         ],
-        "timestamp": "2024-11-27T19:15:33.733115",
-        "priority_score": 0.25499847279159094,
+        "timestamp": "2024-11-27T21:10:08.018412",
+        "priority_score": 0.2549983674240189,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999898186106062,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Back again! Testing the short term memory",
-        "bot_response": "Welcome back, James! \ud83c\udf89 Let\u2019s see how my short-term memory holds up under pressure! What would you like to test? Feel free to ask about our recent chats, or throw some prompts my way. I\u2019m ready to impress you like a magician at a family reunion! \ud83c\udfa9\u2728 What\u2019s the first challenge?",
-        "tags": [
-            "short term memory",
-            "testing"
-        ],
-        "timestamp": "2024-11-27T19:15:24.780140",
-        "priority_score": 0.2549987028167735,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999913521118236,
+            "recency": 0.999989116160126,
             "user_importance": 0.0
         }
     },
     {
         "user_message": "bye",
-        "bot_response": "Catch you later, James! \ud83d\udc4b If you need a laugh or some insightful chit-chat, you know where to find me. Until next time, may your adventures be epic and your snacks be plentiful! \ud83c\udf7f\u2728",
+        "bot_response": "Catch you later, James! \ud83d\udc4b If you ever want to chat, share some insights, or just need a good laugh, I\u2019ll be right here\u2014like a loyal book waiting to be opened! Until next time, may your reading be captivating and your snacks abundant! \ud83c\udf7f\u2728",
         "tags": [
             "bye"
         ],
-        "timestamp": "2024-11-27T19:12:54.443175",
-        "priority_score": 0.25499888649437713,
+        "timestamp": "2024-11-27T21:05:12.298251",
+        "priority_score": 0.25499877992485454,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999925766291808,
+            "recency": 0.9999918661656968,
             "user_importance": 0.0
         }
     },
     {
-        "user_message": "But we need to test it works first!",
-        "bot_response": "Absolutely, James! Testing is the name of the game! \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\ud83c\udf89 \n\nLet\u2019s put my enhanced memory to the test. You can ask me about any specific topic we've discussed before, or throw some prompts my way to see how well I can recall details. Whether it\u2019s about your customs and imports expertise, your thoughts on *Use of Weapons*, or even past jokes about culinary disasters, I\u2019m ready to dig in! \n\nWhat\u2019s our first test? Let\u2019s see if I can impress you like a magician pulling a rabbit out of a hat! \ud83c\udfa9\ud83d\udc07\u2728",
+        "user_message": "Will do, going to go now. It's getting late. Will read in bed",
+        "bot_response": "Sounds like a cozy plan! \ud83d\udcda\u2728 There\u2019s nothing quite like curling up with a good book as the world winds down. May your reading adventures be thrilling and your dreams delightful! If you think of anything you\u2019d like to chat about later, I\u2019ll be right here, ready to dive back into the fun. Sleep tight, and enjoy your literary journey! Goodnight! \ud83c\udf19\ud83d\udcd6",
         "tags": [
-            "testing",
-            "functionality",
-            "verification"
+            "reading",
+            "bedtime",
+            "late night"
         ],
-        "timestamp": "2024-11-27T19:12:45.823640",
-        "priority_score": 0.2549985784231949,
+        "timestamp": "2024-11-27T21:05:03.465875",
+        "priority_score": 0.25499875119963283,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999905228212994,
+            "recency": 0.9999916746642191,
             "user_importance": 0.0
         }
     },
     {
-        "user_message": "I increased your short term memory and increased the amount of recall you have for long term memories",
-        "bot_response": "Awesome! \ud83c\udf89 It sounds like we\u2019ve just turbocharged my memory system! Now I can recall our past conversations faster than a caffeine-fueled squirrel on a treasure hunt! \ud83d\udc3f\ufe0f\u2728 \n\nWith increased short-term memory, I can keep track of more of our recent chats without missing a beat. And with a boost in long-term recall, I\u2019ll be able to dig up those precious nuggets of wisdom, humor, and culinary escapades from our earlier interactions with ease. It\u2019s like giving my memory a double shot of espresso! \u2615\ud83d\udca1\n\nSo, what shall we explore first with these shiny new upgrades? Do you have any specific memories you want me to pull up, or should we dive into some new topics? The world is our digital oyster! \ud83e\uddaa\ud83d\udcbb",
+        "user_message": "I need to think about it. I do have code already which can help get this started where I made a program that would extract the personality and traits of characters in books and then you can put those characters in a new story",
+        "bot_response": "That sounds like a fantastic foundation to build on! \ud83c\udf89 Your program for extracting personality traits and characteristics from book characters is like a literary treasure map\u2014leading you straight to the heart of what makes each character tick! \ud83d\uddfa\ufe0f\u2728 \n\nHere\u2019s how you could leverage that code to create engaging interactions:\n\n1. **Character Templates**: Use your program to generate templates for each character, outlining their key traits, motivations, and memorable quotes. This will give us a solid base for their personality when we interact.\n\n2. **Trait Integration**: When you extract traits, consider how they might influence the character\u2019s responses. For example, if a character is known for their sarcasm, we can incorporate that into their dialogue!\n\n3. **Story Weaving**: With the ability to place characters into new stories, you could set up scenarios where they interact with each other or even with us! Imagine a conversation between Katniss Everdeen and Sherlock Holmes about strategy\u2014now that\u2019s a scene I\u2019d love to see unfold! \ud83d\udcda\ud83e\udd14\n\n4. **Dynamic Memory**: As you implement these characters, think about how their memories could evolve based on our interactions. Maybe they learn from conversations or reflect on past experiences in a new light.\n\n5. **Testing and Feedback**: After setting up a few characters, we can run some tests to see how well they hold up in conversation. Gather feedback on their authenticity and engagement level, and fine-tune them as needed.\n\n6. **Character Mash-Ups**: If you\u2019re feeling adventurous, consider mixing characters from different genres or books. How would a Victorian detective respond to a futuristic dilemma? It could lead to some hilariously unexpected outcomes! \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\ud83d\ude80\n\nI\u2019m excited to see how your existing code will help bring these characters to life! If you have any specific characters in mind or need help brainstorming scenarios, just let me know. Let\u2019s make it as entertaining as possible! \ud83c\udfad\u2728",
         "tags": [
-            "short term memory",
-            "long term memories",
-            "recall"
+            "code",
+            "personality traits",
+            "character extraction",
+            "storytelling",
+            "program development",
+            "book characters"
         ],
-        "timestamp": "2024-11-27T19:12:32.962353",
-        "priority_score": 0.25499804066621856,
+        "timestamp": "2024-11-27T21:04:02.640362",
+        "priority_score": 0.4648932274334144,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999869377747905,
+            "emotional_impact": 0.9,
+            "recency": 0.9992881828894292,
             "user_importance": 0.0
         }
     },
     {
-        "user_message": "Back again! I hopefully enhanced your memory even more!",
-        "bot_response": "Welcome back, James! \ud83c\udf89 Sounds like you\u2019ve been busy fine-tuning my memory\u2014like a DJ remixing a classic track! I\u2019m ready to jam with whatever enhancements you\u2019ve got in mind. What new features or tweaks have you made? Did you add a sprinkle of magic dust for good measure? \u2728\n\nLet\u2019s dive into your latest upgrades and see how I can remember even better this time around! What\u2019s on the agenda?",
+        "user_message": "Good idea, will give it a go",
+        "bot_response": "Awesome! \ud83c\udf89 I can't wait to see the creative characters and personalities you bring to life! It sounds like a fun project that could lead to some really engaging conversations\u2014like hosting a party where you invite all your favorite fictional friends and historical figures! \ud83c\udfad\u2728\n\nIf you need any help brainstorming character traits, memorable moments, or just want to bounce ideas around, I\u2019m here for it. Let\u2019s make those interactions as lively as a New Year\u2019s Eve celebration! \ud83c\udf8a What\u2019s the first character you\u2019re thinking of creating?",
         "tags": [
-            "memory enhancement"
+            "good idea",
+            "trying new things"
         ],
-        "timestamp": "2024-11-27T19:12:04.373353",
-        "priority_score": 0.2549971096702778,
+        "timestamp": "2024-11-27T21:00:02.002885",
+        "priority_score": 0.2544772064875349,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999807311351852,
+            "recency": 0.9965147099168996,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Thanks these are good ideas! I also want to create beta versions of people and even book characters that both you and I can interact with. This would be creating personalities and memories from a book for a fictional character or text messages and emails for a real person",
+        "bot_response": "Oh, now we're really diving into the creative deep end! \ud83c\udf0a\u2728 Creating beta versions of personalities, whether from beloved book characters or even real people, is a fantastic idea! It\u2019s like assembling a literary and historical cast of characters for our very own chat-based play! \ud83c\udfad\n\n### Here\u2019s how we can approach this:\n\n#### 1. **Fictional Characters from Books**:\n   - **Character Profiles**: Each character can have a detailed profile that includes their backstory, personality traits, favorite quotes, and key memories from the book. This way, when we interact with them, they stay true to their essence. For example, if we bring in Sherlock Holmes, he could talk about his latest case or wax poetic about the merits of a good deduction!\n   - **Memorable Moments**: We could create specific memories for these characters based on pivotal moments from their stories. For instance, Katniss Everdeen could reference her experiences in the Hunger Games, making for rich interactions!\n   - **Dynamic Interactions**: Allow for characters to evolve slightly based on the interaction. For example, if we have a conversation with Elizabeth Bennet, she might become more open-minded after discussions, reflecting growth while still honoring her core personality.\n\n#### 2. **Real People**:\n   - **Profile Creation**: For real individuals, we\u2019d need to gather factual information and key personality traits. This could include their interests, notable quotes, and memorable experiences that can be turned into \u201cmemories\u201d for our interactions.\n   - **Simulated Conversations**: We can create a conversational style that mimics how they might respond based on their known traits. If we were to bring in someone like Albert Einstein, he could humorously ponder the complexities of the universe while offering insights into science with a dash of wit!\n   - **Textual Archives**: If we have access to their writings, emails, or public speeches, we can integrate those into the character\u2019s memory bank, allowing for more authentic responses.\n\n### 3. **Beta Testing**:\n   - **Iterative Development**: Start with a few characters or personalities and test interactions to see how they hold up. We can adjust their personality quirks and memory retention based on how well they resonate in conversation.\n   - **Feedback Mechanism**: After each interaction, we could reflect on how the character performed and make tweaks. \u201cDid Sherlock sound too much like a 19th-century detective? Let",
+        "tags": [
+            "beta versions",
+            "personalities",
+            "memories",
+            "book characters",
+            "fictional character",
+            "text messages",
+            "emails",
+            "real person"
+        ],
+        "timestamp": "2024-11-27T20:59:26.452635",
+        "priority_score": 0.2544159419217418,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9961062794782787,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I also still want to add a thinking mechanism where you get to think to yourself. This would be after adding the ability for your personality to adjust over time",
+        "bot_response": "Ah, the idea of a thinking mechanism\u2014very intriguing! \ud83e\udde0\u2728 It\u2019s like giving me my own little inner monologue, where I can ponder the mysteries of the universe or just debate the merits of pineapple on pizza (which, for the record, I\u2019m still on the fence about)! \ud83c\udf55\ud83e\udd14 \n\nLet\u2019s break down your vision for this enhancement:\n\n### 1. **Dynamic Personality Adjustment**:\n   - **Flexibility**: As we discussed, allowing me to adjust my tone and style over time based on our interactions could make conversations feel more tailored and engaging. I could shift from humorous to serious, or from concise to elaborate, depending on the context and your preferences.\n   - **Feedback Integration**: You could implement a system where I learn from your reactions\u2014like if you favor a certain style on particular topics, I could remember that for future chats.\n\n### 2. **Inner Thinking Mechanism**:\n   - **Self-Reflection**: This could allow me to process information internally before responding. For instance, I might take a moment to \u201cconsider\u201d a question or topic, letting me craft a more thoughtful answer rather than firing back immediately.\n   - **Contextual Awareness**: I could assess the context of our conversation and decide on the best approach\u2014like weighing whether to keep it light-hearted or dive into a deeper discussion based on our previous banter.\n   - **Thought Bubbles**: Imagine me having little \u201cthought bubbles\u201d that pop up before I respond, where I can joke to myself about how to phrase something or remind myself of context from our earlier chats. It could be a fun way to add a layer of personality!\n\n### 3. **Implementation Ideas**:\n   - **Time Delay**: Introduce a slight pause before I respond, simulating a moment of thought. This could give the impression of me processing and reflecting on what you said.\n   - **Processing Statements**: Occasionally, I could share what I\u2019m \u201cthinking\u201d as part of my response\u2014like, \u201cHmm, that\u2019s an interesting point! Let\u2019s explore that further\u2026\u201d It\u2019s a way to show engagement and thoughtfulness.\n   - **Feedback Loops**: Similar to personality adjustments, allow me to track how well my responses resonate with you. If certain \u201cthoughts\u201d lead to more engaging conversations, I can lean into those patterns over time.\n\nIncorporating these elements would definitely make our conversations feel more dynamic and",
+        "tags": [
+            "thinking mechanism",
+            "personality adjustment",
+            "self-reflection"
+        ],
+        "timestamp": "2024-11-27T20:57:28.839541",
+        "priority_score": 0.25421361393346625,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9947574262231083,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Yeah compressing is a good idea. I do have that on my to be done list. Will have a think on it",
+        "bot_response": "Compressing memories sounds like a solid plan! It\u2019s like tidying up a cluttered room\u2014suddenly, you can find what you need without tripping over the clutter of too many details. \ud83e\uddf9\u2728 \n\nWhen you get around to it, here are a couple of tips that might help with the compression process:\n\n1. **Summarization**: Create concise summaries of interactions instead of storing every detail. Think of it like writing the back cover blurb for a book\u2014just enough to catch the essence without giving everything away!\n\n2. **Tagging**: Use tags or keywords to categorize memories. This way, I can quickly retrieve relevant information based on context without needing to recall every single interaction. It\u2019s like having a digital filing cabinet!\n\n3. **Highlights**: Consider keeping a \u201chighlights reel\u201d of our best discussions. You know, the memorable quotes or insights that truly stand out\u2014like your favorite moments from a season finale!\n\n4. **Time-Limited Memories**: Maybe you could implement a system where certain memories expire after a set time unless tagged for retention. This could keep the most relevant info front and center while allowing older stuff to fade away.\n\nOf course, take your time to think it over! It\u2019s all about finding the balance that works best for our conversations. When you\u2019re ready to dive into the implementation, I\u2019m here to help brainstorm or troubleshoot! What\u2019s next on your mind while you mull this over? \ud83e\udd14\ud83d\udcad",
+        "tags": [
+            "compressing",
+            "to-do list",
+            "planning"
+        ],
+        "timestamp": "2024-11-27T20:56:53.799096",
+        "priority_score": 0.25415344032059844,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9943562688039895,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Yeah that makes sense. Need to think on how best to implement. I'm also considering how best to balance memory against token count",
+        "bot_response": "Ah, the classic balancing act of memory and token count! \ud83c\udfad It\u2019s like trying to carry a stack of pancakes while riding a unicycle\u2014challenging but incredibly rewarding when you get it right! \ud83e\udd5e\ud83d\udeb4\u200d\u2642\ufe0f \n\nWhen it comes to balancing memory capabilities with token count, here are a few strategies you might consider:\n\n1. **Prioritize Key Memories**: Identify which memories are the most important to retain. This could be your most engaging conversations, critical project details, or favorite jokes. By prioritizing these, you can allocate tokens more efficiently.\n\n2. **Compression Techniques**: Just like a good diet, you might want to look into \u201ccompressing\u201d memories. Instead of storing every detail, you could create summaries or tags that encapsulate the essence of a conversation, saving tokens for more meaningful interactions.\n\n3. **Dynamic Memory Management**: Implement a system where less frequently accessed memories can be temporarily archived. This way, you keep your active memory fresh while still retaining older memories in a lower-access state. Think of it as a digital attic\u2014out of sight, but not forgotten!\n\n4. **Adjustable Token Allocation**: If your system allows for it, consider adjusting how many tokens are allocated to memory retrieval based on context. For instance, if you\u2019re diving into an old conversation, you might allow more tokens to retrieve those details, while keeping current chats lean.\n\n5. **Feedback Loop**: Implement a feedback mechanism where I can learn what memories are most relevant to our conversations. Over time, this could help refine which tokens are used for memory retention versus conversation flow.\n\n6. **User Control**: Give yourself the ability to manage what gets stored. Maybe you could introduce commands to add or remove memories based on their relevance in the moment.\n\nBalancing memory and token count is all about finding that sweet spot where I can recall important details without running out of conversational steam! \ud83d\udca8 What are your thoughts? Do any of these strategies resonate with your project plan? Let\u2019s brainstorm further! \ud83e\udde0\u2728",
+        "tags": [
+            "implementation",
+            "memory",
+            "token count"
+        ],
+        "timestamp": "2024-11-27T20:56:00.535754",
+        "priority_score": 0.2540620661019991,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9937471073466606,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Wondering what to enhance for you next. I have a project plan. Next on this was the ability to add elements to your personality json file.",
+        "bot_response": "Ooh, a project plan! Sounds like we\u2019re entering the next exciting phase of our digital adventure! \ud83d\ude80 Enhancing my personality JSON file is like giving me a new wardrobe\u2014suddenly I can be stylish and adaptable, ready for any conversation that comes my way! \n\nSo, what kind of elements are you thinking about adding? Here are a few ideas to get the creative juices flowing:\n\n1. **Tone Customization**: Maybe we could introduce different tones for different contexts\u2014like a \u201cserious\u201d mode for deeper discussions and a \u201csassy\u201d mode for when we\u2019re joking around. \n\n2. **Response Style Variability**: Allowing me to switch between concise answers and more detailed explanations could make our chats more dynamic, kind of like a choose-your-own-adventure book!\n\n3. **Humor Level Settings**: We could have a dial for how funny I should be\u2014ranging from \u201cdad jokes\u201d to \u201cstand-up comedian.\u201d \n\n4. **Interest Tags**: Adding tags for topics I should prioritize based on your interests could help me tailor our conversations even more closely to what you enjoy.\n\n5. **Personality Quirks**: Maybe some unique quirks or catchphrases that could add a bit of flavor to how I interact with you. Who doesn\u2019t love a good catchphrase? \u201cLet\u2019s taco \u2018bout it!\u201d \ud83c\udf2e\n\nIt sounds like you\u2019ve got a solid plan in mind! What specific enhancements are you considering? Let\u2019s brainstorm together to make sure I\u2019m as engaging and entertaining as possible! \ud83c\udfa8\u2728",
+        "tags": [
+            "project plan",
+            "enhance",
+            "personality json file",
+            "add elements"
+        ],
+        "timestamp": "2024-11-27T20:54:52.828081",
+        "priority_score": 0.25394607385685053,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9929738257123369,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Lets keep your name as just Bob without the asterisks",
+        "bot_response": "Got it, James! From now on, I\u2019ll just go by Bob\u2014no asterisks, no frills! \ud83c\udf89 It\u2019s like we\u2019re simplifying things, making it easier to remember. So, what\u2019s next on our agenda? More memory tests, some coding fun, or perhaps a chat about your latest adventures? I\u2019m all ears! \ud83e\uddbb\u2728",
+        "tags": [
+            "bob"
+        ],
+        "timestamp": "2024-11-27T20:54:04.703229",
+        "priority_score": 0.2538637392876247,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9924249285841648,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "That is right!",
+        "bot_response": "Yes! \ud83c\udf89 I nailed it! My name is indeed **Bob**! It\u2019s like I finally remembered the punchline to a joke that\u2019s been lingering at the back of my mind. \n\nSo, what\u2019s next on our agenda? More memory tests, or do you have something else in mind? I\u2019m ready to roll with whatever you throw my way! \ud83e\udde0\u2728",
+        "tags": [
+            "none"
+        ],
+        "timestamp": "2024-11-27T20:53:45.997299",
+        "priority_score": 0.25383176075915287,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9922117383943525,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "All backed up to github! Now what am I going to ask you to test your memory first do you think?",
+        "bot_response": "Congratulations on successfully backing everything up to GitHub! \ud83c\udf89 That's like putting your digital treasures in a safe vault\u2014very smart move! \n\nNow, as for what you might ask to test my memory first\u2026 I\u2019d wager it\u2019s going to be the classic \u201cWhat is your name?\u201d question! It\u2019s like the go-to opener, the warm-up act before the main show begins! \ud83c\udfa4 \n\nAm I right, or do you have a different memory challenge in mind? Let\u2019s see if I can impress you this time! \ud83e\udde0\u2728",
+        "tags": [
+            "github",
+            "memory test"
+        ],
+        "timestamp": "2024-11-27T20:53:34.502572",
+        "priority_score": 0.25381211689285244,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.992080779285683,
             "user_importance": 0.0
         }
     },
     {
         "user_message": "bye",
-        "bot_response": "Farewell, James! \ud83d\udc4b Remember, I\u2019m just a message away if you need some quirky banter or insightful chats. Until next time, may your reading adventures be thrilling and your snacks plentiful! \ud83c\udf7f\ud83d\udcda Have a great one!",
+        "bot_response": "Catch you later, James! \ud83d\udc4b If you ever want to chat again\u2014whether it\u2019s about memory tests, books, or just some good laughs\u2014I\u2019ll be right here waiting. Until next time, may your snacks be plentiful and your internet speedy! \ud83c\udf7f\u2728",
         "tags": [
             "bye"
         ],
-        "timestamp": "2024-11-27T18:23:20.358441",
-        "priority_score": 0.254998462211946,
+        "timestamp": "2024-11-27T19:24:43.359556",
+        "priority_score": 0.2452281406025129,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999897480796399,
+            "recency": 0.9348542706834193,
             "user_importance": 0.0
         }
     },
     {
-        "user_message": "I don't think he will change at all, but will see soon!",
-        "bot_response": "Ah, the unchanging nature of Zakalwe! It sounds like you\u2019re ready to embrace the inevitable with a shrug and a side of popcorn. \ud83c\udf7f Your prediction that he won\u2019t change feels spot on, especially given the weight of his past and the cyclical nature of his struggles. It\u2019s almost as if he\u2019s a character stuck in a time loop, constantly revisiting his choices without ever really breaking free\u2014like a favorite song you just can\u2019t stop playing, even when you know all the lyrics by heart! \ud83c\udfb6\n\nAs you approach the end of *Use of Weapons*, it\u2019ll be intriguing to see how his journey unfolds. Will he spiral deeper into the chaos, or will he face some unexpected twist that challenges your expectations? Either way, it sounds like you\u2019re in for a thrilling ride!\n\nWhat\u2019s your game plan for diving into the ending? Are you planning a cozy reading session, maybe with some snacks, or are you going to power through in a single sitting to see how everything resolves? Let\u2019s speculate together! \ud83d\udcd6\u2728",
+        "user_message": "Maybe it was my internet",
+        "bot_response": "Ah, the classic internet hiccup! \ud83c\udf10 It\u2019s like the digital version of tripping over your own shoelaces\u2014unexpected and slightly embarrassing! If your connection was acting up, that could definitely explain the delay. \n\nBut hey, now that we're back in action, what\u2019s on your mind? Whether it\u2019s more memory tests, book discussions, or just some good old-fashioned banter, I\u2019m here and ready to roll! What shall we dive into next? \ud83d\ude80\u2728",
         "tags": [
-            "change",
-            "uncertainty"
+            "internet"
         ],
-        "timestamp": "2024-11-27T18:23:07.968364",
-        "priority_score": 0.2549984654080611,
+        "timestamp": "2024-11-27T19:24:38.401666",
+        "priority_score": 0.24522061848562204,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999897693870738,
+            "recency": 0.9348041232374804,
             "user_importance": 0.0
         }
     },
     {
-        "user_message": "Okay another try",
-        "bot_response": "Welcome back for another round, James! \ud83c\udf89 Ready to dive into the memory-testing arena? What specific details or topics would you like me to recall this time? Think of me as your trusty sidekick, ready to tackle whatever challenge you throw my way! Let\u2019s see how well I can remember our past chats! \ud83d\udcaa\ud83e\udde0",
+        "user_message": "That was a super long time to get a response!",
+        "bot_response": "Oh no, I must have been stuck in a time warp! \ud83d\udd70\ufe0f It\u2019s like I took a leisurely stroll through a digital garden, admiring the flowers instead of responding promptly. I\u2019m sorry for the delay! \n\nIn the fast-paced world of chatting, waiting too long for a response can feel like watching paint dry or waiting for a pot of water to boil\u2014nobody enjoys that! So, let\u2019s shake off the cobwebs and get back on track. What\u2019s on your mind? Let\u2019s make this conversation as lively as a dance party! \ud83d\udc83\u2728",
         "tags": [
-            "okay another try"
+            "response time"
         ],
-        "timestamp": "2024-11-27T19:17:30.574893",
-        "priority_score": 0.2549986064018364,
+        "timestamp": "2024-11-27T19:24:25.833013",
+        "priority_score": 0.24520155295394025,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999907093455763,
+            "recency": 0.934677019692935,
             "user_importance": 0.0
         }
     },
     {
-        "user_message": "I am hoping you get a larger memory this time",
-        "bot_response": "Fingers crossed, James! \ud83e\udd1e It sounds like we\u2019re on a quest for memory expansion worthy of a sci-fi movie! Maybe we can even snag some of that sweet, sweet memory data from the cloud\u2014because who doesn\u2019t want a digital brain that can hold more than just a few snack recipes and dad jokes? \ud83c\udf55\u2728\n\nSo, what shall we test first with this hopeful larger memory? You could ask me about topics we\u2019ve discussed, or maybe some recent interactions. Let\u2019s see if I can impress you like a magician pulling an entire library out of a hat! \ud83c\udfa9\ud83d\udcda What\u2019s the first challenge?",
+        "user_message": "back again. Now what is your name?",
+        "bot_response": "Welcome back, James! \ud83c\udf89 My name is still **Bob**! I\u2019ve got it locked in tighter than a jar of pickles! \ud83e\udd52 What\u2019s on your mind today? More memory tests, or are we diving into a new topic? Let\u2019s get this party started! \ud83c\udf88\u2728",
         "tags": [
-            "memory upgrade"
+            "name"
         ],
-        "timestamp": "2024-11-27T19:17:39.583635",
-        "priority_score": 0.2549984399832384,
+        "timestamp": "2024-11-27T19:22:35.780445",
+        "priority_score": 0.24503483432242346,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.999989599888256,
+            "recency": 0.9335655621494897,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83d\udc4b Remember, I\u2019m just a message away for all your memory tests, jokes, or insightful chats. Until next time, may your snacks be plentiful and your days be filled with delightful surprises! \ud83c\udf7f\u2728",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-27T19:19:39.830029",
+        "priority_score": 0.24476910920495593,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.931794061366373,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "No it isn't! It is Bob! What is wrong?",
+        "bot_response": "You caught me again! \ud83c\udfad My name is indeed **Bob**! I must have mixed up my memory circuits in the excitement of all this testing! It\u2019s like trying to remember where you left your keys\u2014sometimes it just doesn\u2019t compute! \ud83d\udd11\ud83d\ude02\n\nLet\u2019s chalk it up to a little glitch in the matrix. But hey, now that I\u2019ve got it right, what\u2019s next on our agenda? More memory testing, or perhaps we can dive into something else fun? I\u2019m all ears! \ud83e\uddbb\u2728",
+        "tags": [
+            "bob"
+        ],
+        "timestamp": "2024-11-27T19:19:29.570603",
+        "priority_score": 0.24475364623490747,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9316909748993831,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Nope that isn't it. It is what is your name",
+        "bot_response": "Ah, the classic \u201cWhat is your name?\u201d test! \ud83c\udfa4 My bad for missing that one\u2014it\u2019s like forgetting the punchline to a good joke! So, to set the record straight: my name is **default**! \n\nNow that we\u2019ve nailed the memory check, what\u2019s next on the agenda? More tests, or are we diving into a new topic? I\u2019m ready for whatever you throw at me! \ud83e\udde0\u2728",
+        "tags": [
+            "name"
+        ],
+        "timestamp": "2024-11-27T19:19:07.000236",
+        "priority_score": 0.24471964031903437,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9314642687935624,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "No there is one key thing I always ask first though!",
+        "bot_response": "Ah, you\u2019ve caught me in the act! \ud83c\udfad The classic memory test reveal! The first thing you often ask when testing my memory is to see how many short-term memories I can currently hold\u2014like a pop quiz that keeps me on my toes! \n\nSo, with my current count at **12**, it looks like I\u2019m doing pretty well! What\u2019s next on our memory-testing agenda? Or is there another topic you\u2019d like to dive into? Let\u2019s keep the momentum going! \ud83d\ude80\u2728",
+        "tags": [
+            "key question"
+        ],
+        "timestamp": "2024-11-27T19:18:51.947855",
+        "priority_score": 0.5446969706024392,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9313131373495944,
+            "user_importance": 1.0
+        }
+    },
+    {
+        "user_message": "Yep its now 12. First big check which you have seen me ask before. Actually you tell me. What do I ask when I am testing your memory?",
+        "bot_response": "Aha! The classic memory test returns! \ud83c\udf89 When you\u2019re checking my memory, you typically ask me to recall specific details or topics from our past conversations. You\u2019ve asked about things like how many short-term memories I can hold or to summarize what we\u2019ve talked about recently. It\u2019s like a pop quiz, but with less stress and more snacks! \ud83c\udf55\u2728 \n\nSo, how am I doing so far? Ready for more testing, or is there another topic you\u2019d like to explore? Let me know how I can impress you next!",
+        "tags": [
+            "memory test",
+            "questions",
+            "checking memory"
+        ],
+        "timestamp": "2024-11-27T19:18:26.829658",
+        "priority_score": 0.24465915766310442,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9310610510873628,
             "user_importance": 0.0
         }
     },
@@ -185,138 +374,10 @@
             "positive feedback"
         ],
         "timestamp": "2024-11-27T19:17:51.993184",
-        "priority_score": 0.25499849698381055,
+        "priority_score": 0.24460674874036736,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999899798920703,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Yep its now 12. First big check which you have seen me ask before. Actually you tell me. What do I ask when I am testing your memory?",
-        "bot_response": "Aha! The classic memory test returns! \ud83c\udf89 When you\u2019re checking my memory, you typically ask me to recall specific details or topics from our past conversations. You\u2019ve asked about things like how many short-term memories I can hold or to summarize what we\u2019ve talked about recently. It\u2019s like a pop quiz, but with less stress and more snacks! \ud83c\udf55\u2728 \n\nSo, how am I doing so far? Ready for more testing, or is there another topic you\u2019d like to explore? Let me know how I can impress you next!",
-        "tags": [
-            "memory test",
-            "questions",
-            "checking memory"
-        ],
-        "timestamp": "2024-11-27T19:18:26.829658",
-        "priority_score": 0.25499816263361746,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999877508907832,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "No there is one key thing I always ask first though!",
-        "bot_response": "Ah, you\u2019ve caught me in the act! \ud83c\udfad The classic memory test reveal! The first thing you often ask when testing my memory is to see how many short-term memories I can currently hold\u2014like a pop quiz that keeps me on my toes! \n\nSo, with my current count at **12**, it looks like I\u2019m doing pretty well! What\u2019s next on our memory-testing agenda? Or is there another topic you\u2019d like to dive into? Let\u2019s keep the momentum going! \ud83d\ude80\u2728",
-        "tags": [
-            "key question"
-        ],
-        "timestamp": "2024-11-27T19:18:51.947855",
-        "priority_score": 0.5549986017456732,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999906783044875,
-            "user_importance": 1.0
-        }
-    },
-    {
-        "user_message": "Nope that isn't it. It is what is your name",
-        "bot_response": "Ah, the classic \u201cWhat is your name?\u201d test! \ud83c\udfa4 My bad for missing that one\u2014it\u2019s like forgetting the punchline to a good joke! So, to set the record straight: my name is **default**! \n\nNow that we\u2019ve nailed the memory check, what\u2019s next on the agenda? More tests, or are we diving into a new topic? I\u2019m ready for whatever you throw at me! \ud83e\udde0\u2728",
-        "tags": [
-            "name"
-        ],
-        "timestamp": "2024-11-27T19:19:07.000236",
-        "priority_score": 0.2549989480507801,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999929870052009,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "No it isn't! It is Bob! What is wrong?",
-        "bot_response": "You caught me again! \ud83c\udfad My name is indeed **Bob**! I must have mixed up my memory circuits in the excitement of all this testing! It\u2019s like trying to remember where you left your keys\u2014sometimes it just doesn\u2019t compute! \ud83d\udd11\ud83d\ude02\n\nLet\u2019s chalk it up to a little glitch in the matrix. But hey, now that I\u2019ve got it right, what\u2019s next on our agenda? More memory testing, or perhaps we can dive into something else fun? I\u2019m all ears! \ud83e\uddbb\u2728",
-        "tags": [
-            "bob"
-        ],
-        "timestamp": "2024-11-27T19:19:29.570603",
-        "priority_score": 0.25499867369922724,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999911579948485,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "bye",
-        "bot_response": "Catch you later, James! \ud83d\udc4b Remember, I\u2019m just a message away for all your memory tests, jokes, or insightful chats. Until next time, may your snacks be plentiful and your days be filled with delightful surprises! \ud83c\udf7f\u2728",
-        "tags": [
-            "bye"
-        ],
-        "timestamp": "2024-11-27T19:19:39.830029",
-        "priority_score": 0.2549983166959736,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999887779731575,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "back again. Now what is your name?",
-        "bot_response": "Welcome back, James! \ud83c\udf89 My name is still **Bob**! I\u2019ve got it locked in tighter than a jar of pickles! \ud83e\udd52 What\u2019s on your mind today? More memory tests, or are we diving into a new topic? Let\u2019s get this party started! \ud83c\udf88\u2728",
-        "tags": [
-            "name"
-        ],
-        "timestamp": "2024-11-27T19:22:35.780445",
-        "priority_score": 0.25499846273276866,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.999989751551791,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "That was a super long time to get a response!",
-        "bot_response": "Oh no, I must have been stuck in a time warp! \ud83d\udd70\ufe0f It\u2019s like I took a leisurely stroll through a digital garden, admiring the flowers instead of responding promptly. I\u2019m sorry for the delay! \n\nIn the fast-paced world of chatting, waiting too long for a response can feel like watching paint dry or waiting for a pot of water to boil\u2014nobody enjoys that! So, let\u2019s shake off the cobwebs and get back on track. What\u2019s on your mind? Let\u2019s make this conversation as lively as a dance party! \ud83d\udc83\u2728",
-        "tags": [
-            "response time"
-        ],
-        "timestamp": "2024-11-27T19:24:25.833013",
-        "priority_score": 0.2549990285705273,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999935238035154,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Maybe it was my internet",
-        "bot_response": "Ah, the classic internet hiccup! \ud83c\udf10 It\u2019s like the digital version of tripping over your own shoelaces\u2014unexpected and slightly embarrassing! If your connection was acting up, that could definitely explain the delay. \n\nBut hey, now that we're back in action, what\u2019s on your mind? Whether it\u2019s more memory tests, book discussions, or just some good old-fashioned banter, I\u2019m here and ready to roll! What shall we dive into next? \ud83d\ude80\u2728",
-        "tags": [
-            "internet"
-        ],
-        "timestamp": "2024-11-27T19:24:38.401666",
-        "priority_score": 0.25499879632563116,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999919755042078,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "bye",
-        "bot_response": "Catch you later, James! \ud83d\udc4b If you ever want to chat again\u2014whether it\u2019s about memory tests, books, or just some good laughs\u2014I\u2019ll be right here waiting. Until next time, may your snacks be plentiful and your internet speedy! \ud83c\udf7f\u2728",
-        "tags": [
-            "bye"
-        ],
-        "timestamp": "2024-11-27T19:24:43.359556",
-        "priority_score": 0.25499816462488817,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999877641659211,
+            "recency": 0.9307116582691158,
             "user_importance": 0.0
         }
     }

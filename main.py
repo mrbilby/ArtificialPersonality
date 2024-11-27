@@ -54,17 +54,28 @@ class PersonalityProfile:
     def save_to_file(self, file_path=None):
         """Save personality to file using either provided path or generated name-based path"""
         save_path = file_path or self.get_file_path()
+        
+        # First try to load existing data
+        existing_data = {}
+        try:
+            with open(save_path, 'r') as file:
+                existing_data = json.load(file)
+        except FileNotFoundError:
+            pass  # No existing file, will create new one
+            
+        # Update with new data, preserving existing values if not changed
         data = {
             "tone": self.tone,
             "response_style": self.response_style,
             "behavior": self.behavior,
             "user_preferences": self.user_preferences,
             "do_dont": self.do_dont,
-            "name": self.name
+            "name": existing_data.get("name", self.name)  # Preserve existing name if present
         }
+        
         with open(save_path, "w") as file:
             json.dump(data, file, indent=4)
-        print(f"[Debug] Personality profile saved to {save_path}")
+        print(f"[Debug] Personality profile updated in {save_path}")
 
     @staticmethod
     def load_from_file(file_path: str):
@@ -957,8 +968,10 @@ class PersonalityManager:
         files = self.get_personality_files(name)
         
         try:
-            personality.save_to_file(files["personality"])
-            
+            # Don't save personality.json for default name if it's not the default file
+            if name != "default" or files["personality"] != "personality.json":
+                personality.save_to_file(files["personality"])
+                
             with open(files["short_memory"], "w") as f:
                 json.dump(short_memory.to_list(), f, indent=4)
                 
