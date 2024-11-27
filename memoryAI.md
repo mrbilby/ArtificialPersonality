@@ -15,11 +15,12 @@ Be able to create the initial personality. Be able to define how memories are sa
 [x] Time awareness in memories and interactions
 [x] Memory consolidation and reflection
 [x] Environmental awareness
+[x] Memory Prioritisation
+[x] LTM increased to 1000
 
 # Features to be built
 
 Function
-[ ] Memory Prioritisation
 [ ] Personality adjuster over time
 [ ] Personality creator from a given text
 [ ] Memory creator to integrate with Personality Creator to create a well rounded AP
@@ -42,3 +43,5 @@ Form
 # Glossary
 
 AP = Artificial Personality which is a combination of three JSON files to create an AP construct that uses a LLM to activate
+LTM = Long Term Memory
+STM = Short Term Memory

@@ -1,0 +1,43 @@
+[
+    {
+        "user_message": "Hi there, you getting this?",
+        "bot_response": "Yes, I\u2019m receiving your message. How can I assist you today?",
+        "tags": [
+            "communication"
+        ],
+        "timestamp": "2024-11-27T09:05:44.126417",
+        "priority_score": 0.25499842463807304,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999894975871538,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Okay lets see how this goes, I'm going to say goodbye soon and see if you have a memory",
+        "bot_response": "I understand. Feel free to say goodbye whenever you're ready, and I will respond accordingly. Just to clarify, I don\u2019t have memory in the way humans do; I can process our current conversation but won\u2019t remember it in future interactions.",
+        "tags": [
+            "saying goodbye",
+            "memory"
+        ],
+        "timestamp": "2024-11-27T09:06:07.362465",
+        "priority_score": 0.25499738284774737,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999825523183159,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Goodbye! If you have any more questions in the future, feel free to reach out. Take care!",
+        "tags": [],
+        "timestamp": "2024-11-27T09:06:12.771188",
+        "priority_score": 0.2549987727270553,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999918181803686,
+            "user_importance": 0.0
+        }
+    }
+]

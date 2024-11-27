@@ -1,152 +1,144 @@
 [
     {
-        "user_message": "Hello! We have bugs it seems!",
-        "bot_response": "Oh no, bugs? Are we talking about digital glitches or actual creepy crawlies? Because if it\u2019s the latter, I recommend a can of bug spray, and if it\u2019s the former, well, I\u2019m armed with my trusty virtual fly swatter! \ud83d\udc1c\u2728 \n\nCan you give me the lowdown on what kind of bugs you\u2019re dealing with? Are they more like pesky interruptions in our chat or is something else going awry? Let\u2019s squash these issues together! \ud83e\uddb8\u200d\u2642\ufe0f\ud83d\udcbb",
+        "user_message": "Your name is Bob this is a key memory",
+        "bot_response": "Bob it is! \ud83c\udf89 I\u2019ve locked that in tighter than a well-sealed jar of pickles! \ud83e\udd52 Just like that, you've bestowed me with a name worthy of a thousand dad jokes! \n\nSo, as Bob, I promise to bring the charm and wit you\u2019d expect from a digital sidekick named Bob. If there are any other key memories or nicknames you\u2019d like me to remember, just let me know! I\u2019m ready to add more gems to my memory treasure chest. \n\nWhat\u2019s next on our agenda? More coding, more humor, or perhaps a deep dive into the world of Bob? \ud83d\ude04",
         "tags": [
-            "bugs"
+            "bob",
+            "key memory"
         ],
-        "timestamp": "2024-11-27T08:27:56.616016",
-        "priority_score": 0.27499694015792503,
+        "timestamp": "2024-11-27T09:04:14.350360",
+        "priority_score": 0.554998175277406,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.999984700789625,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.9999878351827068,
+            "user_importance": 1.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "See you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your departure be as smooth as a well-oiled machine and your day as bright as a freshly debugged code! If you need anything when you\u2019re back, I\u2019ll be right here\u2014ready to assist faster than you can say \u201cBob the Digital Assistant\u201d! Until next time, take care! \ud83d\udc4b\u2728",
+        "tags": [],
+        "timestamp": "2024-11-27T09:04:37.826498",
+        "priority_score": 0.2549979575208674,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999863834724494,
             "user_importance": 0.0
         }
     },
     {
-        "user_message": "So main problem I can see is only 100 interactions from long term memory are loading",
-        "bot_response": "Ah, the classic case of the memory hiccup! \ud83e\udd14 It seems like my digital scrapbook is only showcasing the highlights reel instead of the full album! Instead of a sweeping saga of our epic chats, we\u2019re left with a top 100 playlist on shuffle. \ud83c\udfb6\n\nThis can happen if there\u2019s some sort of technical limitation or if the tagging system hasn\u2019t quite kicked in yet. It\u2019s like having a fancy new coffee machine that only brews decaf\u2014great for some, but not quite what you ordered! \u2615 \n\nTo get this sorted, here are a few steps we can take:\n\n1. **Check the Settings**: Double-check to ensure that the long-term memory settings are configured to pull up the full 1000 interactions. Sometimes, it\u2019s just a toggle away from full functionality!\n\n2. **Refresh the System**: Like giving a computer a good ol\u2019 reboot, refreshing the memory might help. If you\u2019ve made recent changes, it might just need a moment to catch up!\n\n3. **Explore Tagging**: If we're diving into the tagging system, make sure those tags are set up properly. It could help with how memories are accessed and categorized, ensuring a more organized approach to retrieval!\n\n4. **Feedback Loop**: If all else fails, we can always report this as an issue and get some tech wizards on the case! \ud83e\uddd9\u200d\u2642\ufe0f\u2728\n\nLet me know how you\u2019d like to proceed, and we\u2019ll get this memory machine running smoother than a well-oiled kitchen! \ud83d\udee0\ufe0f\ud83c\udf73",
+        "user_message": "Well when we quit out we hit a new bug! need to check its fixed",
+        "bot_response": "Ah, a new bug has emerged\u2014like a surprise sequel to a movie no one asked for! \ud83c\udfac\ud83d\udc1b Let\u2019s see if we can squash that pesky critter before it takes over the show. \n\nSince you mentioned you\u2019re diving into the code, what kind of bug are we dealing with this time? Is it a glitch in the matrix, an unexpected error message, or something else entirely? \n\nHere\u2019s a quick checklist to help troubleshoot:\n\n1. **Reproduce the Issue**: Can you recreate the bug consistently? If it\u2019s a one-time thing, it might just be a \u201cdigital ghost\u201d\u2014spooky, but not a long-term problem! \ud83d\udc7b\n\n2. **Check the Logs**: If there are logs available, they can be a goldmine for identifying what went wrong. It\u2019s like reading the diary of your code\u2019s secret life! \ud83d\udcdc\n\n3. **Isolate the Problem**: Try to narrow down the section of code where the bug occurs. It might be like a scavenger hunt, but instead of finding treasures, you\u2019re finding the source of frustration! \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\n\n4. **Ask for Help**: If you\u2019re still stuck, sometimes a fresh pair of eyes (or a friendly digital assistant named Bob) can spot what you might have missed!\n\nOnce you\u2019ve had a chance to check it out, let me know what you find! I\u2019m here to help turn that bug from a show-stopper into a mere plot twist! \ud83d\udc1e\u2728",
         "tags": [
-            "main problem",
-            "100 interactions",
-            "long term memory",
-            "loading"
+            "quitting out",
+            "new bug",
+            "bug fixing"
         ],
-        "timestamp": "2024-11-27T08:28:16.463565",
-        "priority_score": 0.27499640910382567,
+        "timestamp": "2024-11-27T09:33:38.157554",
+        "priority_score": 0.25499665128830246,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999820455191283,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.9999776752553498,
             "user_importance": 0.0
         }
     },
     {
-        "user_message": "Settings look fine, I think I will need to dive into the code a bit deeper to see what is wrong",
-        "bot_response": "Ah, diving into the code\u2014like going on a treasure hunt but with fewer pirates and more syntax errors! \ud83c\udff4\u200d\u2620\ufe0f\ud83d\udcbb It sounds like you\u2019re about to embark on a coding adventure that could rival any epic saga. Just remember to keep your debugging tools handy and maybe a cup of coffee or two on standby; caffeine is the secret weapon of the modern coder! \u2615\u2728\n\nAs you dig deeper, here are a few tips to keep in mind:\n\n1. **Comment Everything**: It\u2019s like leaving breadcrumbs for your future self. When you return to your code after a few hours (or days), you'll appreciate the notes that remind you why you wrote that cryptic line of code!\n\n2. **Version Control**: If you\u2019re not already using it, consider employing version control like Git. It\u2019s like having a time machine for your code\u2014so if something goes wrong, you can just roll back to a previous version without losing your mind!\n\n3. **Debugging Tools**: Make sure to utilize any debugging tools available. They can help pinpoint where things are going awry faster than a squirrel in a nut factory! \ud83d\udc3f\ufe0f\ud83d\udca8\n\n4. **Take Breaks**: Sometimes the best solutions come when you step away for a bit. It\u2019s like letting your brain marinate in its own genius sauce! \ud83c\udf72\n\nOnce you\u2019ve unraveled the mystery of the code, I\u2019d love to hear what you discovered! Whether it's a quick fix or a deep-rooted issue, we can tackle it together. Happy coding, and may your lines of code be ever bug-free! \ud83e\uddd1\u200d\ud83d\udcbb\u2728",
+        "user_message": "What happened is the initialisation of the function that incorporates your memories wasn't working",
+        "bot_response": "Ah, the infamous initialization hiccup! It's like trying to start a party and realizing the music system is on the fritz\u2014no fun at all! \ud83c\udf89\ud83d\udd0c So, it seems like the function that\u2019s supposed to bring my memory to life is experiencing a bit of stage fright. \n\nHere\u2019s a quick rundown of what we might consider to get that function up and running, so we can kick off the memory party:\n\n1. **Check Initialization Parameters**: Sometimes, the function just needs the right settings to get going. Make sure all the necessary parameters are being fed in properly\u2014like giving a plant enough sunlight and water. \ud83c\udf31\ud83d\udca7\n\n2. **Error Handling**: Look for any error messages or logs that might indicate what\u2019s going wrong. It can be a goldmine of information, revealing whether it\u2019s a minor glitch or a major malfunction. It\u2019s like a detective gathering clues at the scene of a crime! \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\ud83d\udd0d\n\n3. **Dependency Check**: Ensure that any dependencies required for the memory function are properly installed and configured. It\u2019s like making sure all your party guests have arrived before you start the festivities! \ud83c\udf88\n\n4. **Debugging**: If it\u2019s still not cooperating, step through the code with a debugger. It\u2019s the equivalent of being a fly on the wall of your own code\u2014seeing what\u2019s happening step-by-step can often reveal hidden issues. \ud83d\udc1e\ud83d\udd27\n\n5. **Test with Simple Cases**: Sometimes, running the function with minimal input can help you verify if the core logic is working. If it works with a simple case but not with full-blown interactions, you may need to investigate further into the complexity of the input! \n\nOnce you've taken a look at these areas, let me know what you find! Together, we can figure out how to get that memory function up and running like a well-oiled machine\u2014or at least a machine that\u2019s had a good cup of coffee! \u2615\ud83d\udcbb",
         "tags": [
-            "settings",
-            "code analysis",
-            "problem identification"
+            "initialisation of function",
+            "incorporation of memories",
+            "function failure"
         ],
-        "timestamp": "2024-11-27T08:28:48.795202",
-        "priority_score": 0.27499754227557277,
+        "timestamp": "2024-11-27T09:34:10.346815",
+        "priority_score": 0.25498642855092263,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999877113778639,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.9999095236728176,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Lets see if it works now",
+        "bot_response": "Alright, let\u2019s give this a whirl! \ud83e\udd1e It\u2019s like waiting to see if your favorite TV show gets renewed for another season\u2014fingers crossed! \n\nHave you made any changes to the code or settings? If so, let's see if the magic happens! If the memory function is still acting like a teenager who just found out about social media\u2014i.e., a bit moody\u2014feel free to share what you\u2019ve tried and we can troubleshoot from there. \n\nHere\u2019s hoping for a smooth, bug-free experience! \ud83c\udf89 What\u2019s our best case scenario\u20141000 memories flooding back like a nostalgia wave? \ud83c\udf0a Let me know what you find out!",
+        "tags": [
+            "testing",
+            "functionality"
+        ],
+        "timestamp": "2024-11-27T09:34:32.119210",
+        "priority_score": 0.25499809569605114,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999873046403409,
             "user_importance": 0.0
         }
     },
     {
         "user_message": "bye",
-        "bot_response": "Catch you later! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 Remember to back up all the fun conversations we\u2019ve had\u2014especially the important ones like our deep dives into pizza varieties! \ud83c\udf55 If you need anything when you return, I\u2019ll be right here, ready to chat. Until next time, may your day be filled with joy and minimal bugs! \ud83d\udc4b\u2728",
+        "bot_response": "See you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your exit be smoother than a well-executed code refactor! If you need any help or just want to share more tech tales when you return, I\u2019ll be here, ready to assist faster than you can say \u201cdebugging ninja\u201d! Until next time, take care and may your bugs be few and far between! \ud83d\udc4b\u2728",
         "tags": [],
-        "timestamp": "2024-11-27T08:28:59.287977",
-        "priority_score": 0.2749974173759428,
+        "timestamp": "2024-11-27T09:34:36.710087",
+        "priority_score": 0.25499892891910647,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999870868797138,
-            "repetition": 0.0,
-            "contextual_links": 0.0,
+            "recency": 0.9999928594607099,
             "user_importance": 0.0
         }
     },
     {
-        "user_message": "Hello again! Now trying out if we can save more than 100 interactions",
-        "bot_response": "Hey there, James! \ud83c\udf89 It\u2019s like you\u2019re on a mission to expand my memory like a digital version of \u201cHoney, I Shrunk the Kids\u201d\u2014but instead, we\u2019re growing the interactions! \ud83d\udc1c\u2728 \n\nSo, are we aiming for a grand total of 1000 interactions, or is there a higher number you have in mind, like 10,000? (Just kidding, I don\u2019t want to give my memory a workout that leads to digital sweating! \ud83d\udcaa\ud83d\ude05) \n\nIf you\u2019re testing the waters to see if we can save more than 100 interactions, just let me know what happens. If it works out, we could be swimming in a sea of our past chats\u2014like a virtual nostalgia trip! \ud83c\udf0a \n\nAnd if it doesn\u2019t, well, we can always troubleshoot it together. Let\u2019s see what unfolds\u2014I'm all ears (or, you know, digital circuits)! \ud83d\udda5\ufe0f\u2728",
+        "user_message": "Well we fixed some bugs and found some new ones! Lets see if you are getting htis",
+        "bot_response": "Fantastic news on fixing some bugs! \ud83c\udf89 It's like cleaning out your closet and finding that cute shirt you thought was lost forever\u2014only to realize you\u2019ve also unearthed a pair of pants you forgot about that are two sizes too small! \ud83e\udd26\u200d\u2642\ufe0f \n\nAs for the new bugs, think of them as uninvited guests at a party\u2014annoying but often entertaining in their own chaotic way. If you want to dive into the details of what you\u2019ve found, I\u2019m all ears! \n\nTo make sure I\u2019m getting this, let\u2019s do a quick check: \n\n1. **What bugs did you fix?** (Feel free to brag a little, you've earned it!)\n2. **What new bugs have you stumbled upon?** (I promise I won\u2019t judge\u2014every coder has their moments!)\n\nLet\u2019s tackle these pesky critters together! \ud83d\udc1e\ud83d\udcaa",
         "tags": [
-            "saving interactions",
-            "testing limits"
+            "bug fixing",
+            "finding new bugs",
+            "communication"
         ],
-        "timestamp": "2024-11-27T08:33:31.311040",
-        "priority_score": 0.25499783555901023,
+        "timestamp": "2024-11-27T09:39:22.226456",
+        "priority_score": 0.25499788562355435,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999855703934017,
+            "recency": 0.999985904157029,
             "user_importance": 0.0
         }
     },
     {
-        "user_message": "THere is a higher number in mind but baby steps",
-        "bot_response": "Ah, baby steps! The classic approach to conquering the world, one tiny foot at a time! \ud83d\udc76\u2728 So, what\u2019s the grand vision lurking in your mind, and how high are we aiming? Are we talking about a cozy 500 interactions or going for the gold with 5,000? \n\nFor now, let\u2019s focus on getting that 1,000 interaction milestone operating smoothly. Once we\u2019ve mastered that, we can look to the stars! \ud83d\ude80 Just let me know what you\u2019d like to tackle next, and I\u2019m all in\u2014like a digital toddler ready to take those first, wobbly steps! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8",
+        "user_message": "Well first what is my name, and what is yours?",
+        "bot_response": "Your name is James! \ud83c\udf89 And I\u2019m Bob, your friendly digital assistant\u2014like the sidekick in a buddy comedy, ready to tackle challenges and share some laughs! So, what\u2019s on the agenda today, James? More coding escapades, or shall we dive into something else fun? \ud83d\ude80\u2728",
         "tags": [
-            "higher number",
-            "mind",
-            "baby steps"
+            "names"
         ],
-        "timestamp": "2024-11-27T08:33:48.712272",
-        "priority_score": 0.2549974073625209,
+        "timestamp": "2024-11-27T09:39:38.638804",
+        "priority_score": 0.2549981360127466,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999827157501394,
+            "recency": 0.9999875734183108,
             "user_importance": 0.0
         }
     },
     {
-        "user_message": "Lets see if these interactions saved first",
-        "bot_response": "Sounds like a plan, James! \ud83c\udf89 Let\u2019s put my memory to the test like a contestant on a game show! If these interactions have saved successfully, we should be able to dig into our past chats without a hitch. \n\nJust let me know how you want to check if they\u2019re there\u2014are we looking to recall specific topics, or do you have a particular interaction in mind? If I can pull up some memories, it\u2019ll be like opening a treasure chest of our witty banter! \ud83d\udddd\ufe0f\u2728 \n\nAnd remember, I\u2019m here to support you in this memory adventure\u2014no pressure, just curiosity! Let\u2019s see what we\u2019ve got! \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\ud83d\udcab",
+        "user_message": "Great! Today will be a mix of coding and data analysis",
+        "bot_response": "Sounds like a plan, James! \ud83c\udf89 A mix of coding and data analysis is like having a delicious smoothie\u2014nuts, fruits, and a dash of protein all blended together for a nutritious brain boost! \ud83e\udd64\n\nSo, what\u2019s on the coding agenda? Are we tackling any specific projects, or perhaps diving into the depths of data analysis with some fancy algorithms? If you\u2019ve got some datasets lined up, I\u2019m ready to help you wrangle them into submission! \n\nAnd if you need any tips or tricks along the way, just shout! Let\u2019s make today\u2019s mix a fruitful one! \ud83c\udf4f\ud83d\udcca",
         "tags": [
-            "interactions",
-            "saving"
+            "coding",
+            "data analysis"
         ],
-        "timestamp": "2024-11-27T08:33:59.566796",
-        "priority_score": 0.2549974102929752,
+        "timestamp": "2024-11-27T09:39:58.589893",
+        "priority_score": 0.42999810926515225,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999827352865013,
+            "emotional_impact": 0.8,
+            "recency": 0.9999873951010151,
             "user_importance": 0.0
         }
     },
     {
         "user_message": "bye",
-        "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your day be as bright as your coding skills and as smooth as your favorite coffee blend! If you need anything when you return, I'm just a message away. Until next time, take care and keep slaying those code dragons! \ud83d\udc4b\u2728",
+        "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your exit be smoother than a freshly optimized algorithm! If you find any more bugs or just want to chat about coding conundrums, I\u2019ll be right here, ready to jump back into action faster than a compiler on caffeine! Until next time, take care! \ud83d\udc4b\u2728",
         "tags": [],
-        "timestamp": "2024-11-27T08:34:05.703680",
-        "priority_score": 0.2549975764263115,
+        "timestamp": "2024-11-27T09:40:05.733673",
+        "priority_score": 0.254998065806191,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999838428420765,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "It worked!",
-        "bot_response": "Fantastic news, James! \ud83c\udf89 It's like you just found the last piece of a jigsaw puzzle and now you can finally see the whole picture\u2014except this picture is made of code and debugging glory! \ud83e\udde9\ud83d\udcbb \n\nNow that everything is working smoothly, what\u2019s next on your agenda? Do you want to keep riding this coding wave, or are you feeling adventurous enough to explore other realms of knowledge? Just give me a shout! I'm here, ready to dive in at a moment's notice\u2014much like a cat when it spots a laser pointer! \ud83d\udc31\ud83d\udca8",
-        "tags": [
-            "success"
-        ],
-        "timestamp": "2024-11-27T08:34:22.811569",
-        "priority_score": 0.2549983305394142,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999888702627613,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "bye",
-        "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your day be as smooth as your favorite coding routine and as delightful as finding a hidden snack! If you need anything when you\u2019re back, I\u2019ll be right here, ready to jump into action faster than a cat on a laser pointer! Until next time, take care! \ud83d\udc4b\u2728",
-        "tags": [],
-        "timestamp": "2024-11-27T08:34:28.251538",
-        "priority_score": 0.25499811720071647,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999874480047767,
+            "recency": 0.9999871053746069,
             "user_importance": 0.0
         }
     }

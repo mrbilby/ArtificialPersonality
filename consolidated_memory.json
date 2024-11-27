@@ -1,0 +1,21 @@
+{
+    "patterns": {
+        "conversation_patterns": {},
+        "topic_patterns": {},
+        "emotional_patterns": {}
+    },
+    "insights": [],
+    "key_memories": [],
+    "relationship_data": {
+        "familiarity_level": 0,
+        "interaction_quality": [],
+        "shared_interests": [],
+        "conversation_style_preferences": {},
+        "inside_references": {
+            "phrases": {},
+            "topics": {},
+            "context": {}
+        }
+    },
+    "last_consolidated": "2024-11-27T09:39:05.582896"
+}

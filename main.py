@@ -5,6 +5,7 @@ import os
 from datetime import datetime, timedelta
 import statistics
 from typing import List, Dict, Optional, Tuple, Any
+from collections import defaultdict
 
 # Load environment variables from .env file
 load_dotenv()
@@ -23,6 +24,7 @@ class PersonalityProfile:
         self.behavior = behavior
         self.user_preferences = user_preferences or {}
         self.do_dont = {"do": [], "dont": []}
+        self.name = None  # Add name attribute for identification
 
     def update_tone(self, new_tone):
         self.tone = new_tone
@@ -39,19 +41,62 @@ class PersonalityProfile:
     def add_dont_rule(self, rule: str):
         self.do_dont["dont"].append(rule)
 
-    def save_to_file(self, file_path="personality.json"):
-        with open(file_path, "w") as file:
-            json.dump(self.__dict__, file, indent=4)
-        print("[Debug] Personality profile saved.")
+    def set_name(self, name: str):
+        """Set the personality name"""
+        self.name = name
+
+    def get_file_path(self, name: str = None) -> str:
+        """Get the appropriate file path for this personality"""
+        personality_name = name or self.name or "default"
+        return f"{personality_name}_personality.json"
+
+    def save_to_file(self, file_path=None):
+        """Save personality to file using either provided path or generated name-based path"""
+        save_path = file_path or self.get_file_path()
+        data = {
+            "tone": self.tone,
+            "response_style": self.response_style,
+            "behavior": self.behavior,
+            "user_preferences": self.user_preferences,
+            "do_dont": self.do_dont,
+            "name": self.name
+        }
+        with open(save_path, "w") as file:
+            json.dump(data, file, indent=4)
+        print(f"[Debug] Personality profile saved to {save_path}")
 
     @staticmethod
-    def load_from_file(file_path="personality.json"):
-        with open(file_path, "r") as file:
-            data = json.load(file)
-        profile = PersonalityProfile()
-        profile.__dict__.update(data)
-        print("[Debug] Personality profile loaded.")
-        return profile
+    def load_from_file(file_path: str):
+        """Load personality from file with better error handling"""
+        try:
+            with open(file_path, "r") as file:
+                data = json.load(file)
+            
+            profile = PersonalityProfile(
+                tone=data.get("tone", "neutral"),
+                response_style=data.get("response_style", "detailed"),
+                behavior=data.get("behavior", "reactive"),
+                user_preferences=data.get("user_preferences", {})
+            )
+            
+            # Load do/don't rules
+            profile.do_dont = data.get("do_dont", {"do": [], "dont": []})
+            
+            # Set name if it exists in the file
+            profile.name = data.get("name")
+            
+            print(f"[Debug] Personality profile loaded from {file_path}")
+            return profile
+            
+        except FileNotFoundError:
+            print(f"[Debug] No existing personality file found at {file_path}")
+            raise
+        except json.JSONDecodeError:
+            print(f"[Error] Invalid JSON in personality file: {file_path}")
+            raise
+        except Exception as e:
+            print(f"[Error] Failed to load personality file: {e}")
+            raise
 
 
 class Interaction:
@@ -494,6 +539,359 @@ class LongTermMemory(Memory):
         print(f"[Debug] Retrieved {len(relevant)} interactions from Long-Term Memory with scores: {[score for _, score in relevant_scores[:top_n]]}")
         return relevant
 
+class ConsolidatedMemory:
+    def __init__(self):
+        self.patterns = {
+            'conversation_patterns': {},  # Time patterns, style preferences
+            'topic_patterns': {},        # Recurring topics and associations
+            'emotional_patterns': {}     # Emotional response history
+        }
+        self.insights = []  # Generated insights about interactions
+        self.key_memories = []  # Important memorable moments
+        self.relationship_data = {
+            'familiarity_level': 0,     # 0-100 scale
+            'interaction_quality': [],   # List of scores
+            'shared_interests': set(),   # Topics frequently discussed
+            'conversation_style_preferences': {},
+            'inside_references': {       # Track shared context and references
+                'phrases': {},           # Memorable phrases or jokes
+                'topics': {},            # Topic-specific shared understanding
+                'context': {}            # Shared background knowledge
+            }
+        }
+        self.last_consolidated = datetime.now()
+    
+    def to_dict(self):
+        """Enhanced serialization for all memory aspects"""
+        def convert_datetime(obj):
+            if isinstance(obj, datetime):
+                return obj.isoformat()
+            elif isinstance(obj, dict):
+                return {k: convert_datetime(v) for k, v in obj.items()}
+            elif isinstance(obj, list):
+                return [convert_datetime(i) for i in list(obj)]
+            elif isinstance(obj, set):
+                return list(obj)
+            return obj
+
+        return {
+            'patterns': convert_datetime(self.patterns),
+            'insights': self.insights,
+            'key_memories': convert_datetime(self.key_memories),
+            'relationship_data': {
+                'familiarity_level': self.relationship_data['familiarity_level'],
+                'interaction_quality': self.relationship_data['interaction_quality'],
+                'shared_interests': list(self.relationship_data['shared_interests']),
+                'conversation_style_preferences': self.relationship_data['conversation_style_preferences'],
+                'inside_references': convert_datetime(self.relationship_data['inside_references'])
+            },
+            'last_consolidated': self.last_consolidated.isoformat()
+        }
+
+    @staticmethod
+    def from_dict(data: Dict):
+        memory = ConsolidatedMemory()
+        memory.patterns = data.get('patterns', {})
+        memory.insights = data.get('insights', [])
+        memory.key_memories = data.get('key_memories', [])
+        memory.relationship_data = {
+            'familiarity_level': data['relationship_data'].get('familiarity_level', 0),
+            'interaction_quality': data['relationship_data'].get('interaction_quality', []),
+            'shared_interests': set(data['relationship_data'].get('shared_interests', [])),
+            'conversation_style_preferences': data['relationship_data'].get('conversation_style_preferences', {}),
+            'inside_references': data['relationship_data'].get('inside_references', {
+                'phrases': {},
+                'topics': {},
+                'context': {}
+            })
+        }
+        memory.last_consolidated = datetime.fromisoformat(data.get('last_consolidated', datetime.now().isoformat()))
+        return memory
+
+class MemoryConsolidator:
+    def __init__(self, short_memory: ShortTermMemory, long_memory: LongTermMemory):
+        self.short_memory = short_memory
+        self.long_memory = long_memory
+        self.consolidated_memory = ConsolidatedMemory()
+        self.consolidation_interval = timedelta(minutes=5)
+        self.emotion_weights = {
+            'joy': 1.5,
+            'sadness': 1.3,
+            'anger': 1.4,
+            'surprise': 1.2,
+            'neutral': 1.0
+        }
+
+    def should_consolidate(self) -> bool:
+        """Check if enough time has passed for consolidation"""
+        time_since_last = datetime.now() - self.consolidated_memory.last_consolidated
+        return time_since_last >= self.consolidation_interval
+
+    def consolidate_memories(self) -> ConsolidatedMemory:
+        """Main consolidation process"""
+        if not self.should_consolidate():
+            return self.consolidated_memory
+
+        recent_interactions = self.long_memory.interactions[-50:]
+
+        # Analyze patterns
+        conversation_patterns = self._analyze_conversation_patterns(recent_interactions)
+        emotional_patterns = self._analyze_emotional_patterns(recent_interactions)
+        topic_patterns = self._analyze_topic_patterns(recent_interactions)
+        
+        # Generate insights
+        new_insights = self._generate_insights(
+            conversation_patterns, 
+            emotional_patterns,
+            topic_patterns
+        )
+        
+        # Update consolidated memory
+        self.consolidated_memory.patterns.update({
+            'conversation': conversation_patterns,
+            'emotional': emotional_patterns,
+            'topics': topic_patterns
+        })
+        
+        self.consolidated_memory.insights.extend(new_insights)
+        if len(self.consolidated_memory.insights) > 20:
+            self.consolidated_memory.insights = self.consolidated_memory.insights[-20:]
+        
+        # Update relationship data
+        self._update_relationship_data(recent_interactions)
+        
+        # Update last consolidated timestamp
+        self.consolidated_memory.last_consolidated = datetime.now()
+        
+        return self.consolidated_memory
+
+    def save_consolidated_memory(self, file_path: str = "consolidated_memory.json"):
+        """Save consolidated memory to file"""
+        with open(file_path, 'w') as f:
+            json.dump(self.consolidated_memory.to_dict(), f, indent=4)
+
+    def load_consolidated_memory(self, file_path: str = "consolidated_memory.json"):
+        """Load consolidated memory from file"""
+        try:
+            with open(file_path, 'r') as f:
+                data = json.load(f)
+                self.consolidated_memory = ConsolidatedMemory.from_dict(data)
+        except FileNotFoundError:
+            self.consolidated_memory = ConsolidatedMemory()
+
+    def _analyze_conversation_patterns(self, interactions: List[Interaction]) -> Dict:
+        """Analyze patterns in conversation flow and timing"""
+        patterns = {
+            'response_times': [],
+            'conversation_length': [],
+            'topic_transitions': []
+        }
+        
+        for i in range(1, len(interactions)):
+            time_diff = (interactions[i].timestamp - 
+                        interactions[i-1].timestamp).total_seconds()
+            patterns['response_times'].append(time_diff)
+            
+            # Add more pattern analysis as needed
+            
+        return dict(patterns)
+
+    def _analyze_emotional_patterns(self, interactions: List[Interaction]) -> Dict:
+        """Analyze emotional content and progression"""
+        patterns = {
+            'emotions': [],
+            'emotional_intensity': {},
+            'emotional_progression': []
+        }
+        
+        for interaction in interactions:
+            emotion = self._detect_emotion(interaction.user_message)
+            patterns['emotions'].append({
+                'timestamp': interaction.timestamp.isoformat(),
+                'emotion': emotion,
+                'intensity': self.emotion_weights.get(emotion, 1.0)
+            })
+            
+        return dict(patterns)
+
+    def _analyze_topic_patterns(self, interactions: List[Interaction]) -> Dict:
+        """Analyze patterns in conversation topics"""
+        patterns = {
+            'topic_frequency': {},
+            'topic_chains': [],
+            'topic_duration': {}
+        }
+        
+        for interaction in interactions:
+            for tag in interaction.tags:
+                patterns['topic_frequency'][tag] += 1
+                
+        return dict(patterns)
+
+    def _generate_insights(self, conversation_patterns: Dict,
+                        emotional_patterns: Dict,
+                        topic_patterns: Dict) -> List[str]:
+        """Generate insights based on analyzed patterns"""
+        insights = []
+        
+        # Analyze conversation patterns
+        if 'response_times' in conversation_patterns and conversation_patterns['response_times']:
+            avg_time = statistics.mean(conversation_patterns['response_times'])
+            if avg_time < 30:
+                insights.append("Conversation has quick response times")
+            elif avg_time < 120:
+                insights.append("Conversation has moderate response times")
+            else:
+                insights.append("Conversation has relaxed response times")
+        
+        # Analyze emotional patterns
+        if 'emotions' in emotional_patterns:
+            emotions = [e['emotion'] for e in emotional_patterns['emotions']]
+            if emotions:
+                dominant = max(set(emotions), key=emotions.count)
+                insights.append(f"Conversation shows primarily {dominant} emotions")
+        
+        # Analyze topic patterns
+        if 'topic_frequency' in topic_patterns:
+            frequent_topics = sorted(
+                topic_patterns['topic_frequency'].items(),
+                key=lambda x: x[1],
+                reverse=True
+            )[:3]
+            if frequent_topics:
+                topics = ", ".join(topic for topic, _ in frequent_topics)
+                insights.append(f"Most discussed topics: {topics}")
+        
+        return insights
+
+    def _update_relationship_data(self, interactions: List[Interaction]):
+        """Update relationship metrics"""
+        if not interactions:
+            return
+            
+        # Update familiarity level
+        interaction_count = len(self.long_memory.interactions)
+        self.consolidated_memory.relationship_data['familiarity_level'] = min(
+            100, int(interaction_count / 10)
+        )
+        
+        # Update shared interests
+        for interaction in interactions:
+            self.consolidated_memory.relationship_data['shared_interests'].update(
+                interaction.tags
+            )
+
+    def _detect_emotion(self, text: str) -> str:
+        """Reuse emotion detection from MemoryPriority"""
+        # Implementation similar to MemoryPriority._detect_emotion
+        return 'neutral'  # Default fallback
+
+class PersonalityManager:
+    def __init__(self):
+        self.default_personality_name = "default"
+        
+    def get_personality_files(self, name: str) -> Dict[str, str]:
+        """Get file paths for a given personality name"""
+        if name == self.default_personality_name:
+            # Use existing default file names
+            return {
+                "personality": "personality.json",
+                "short_memory": "short_memory.json",
+                "long_memory": "long_memory.json",
+                "consolidated_memory": "consolidated_memory.json"
+            }
+        else:
+            # Use name-specific files
+            base_name = name.lower()
+            return {
+                "personality": f"{base_name}_personality.json",
+                "short_memory": f"{base_name}_short_term_memory.json",
+                "long_memory": f"{base_name}_long_term_memory.json",
+                "consolidated_memory": f"{base_name}_consolidated_memory.json"
+            }
+    
+    def create_default_personality(self, name: str) -> PersonalityProfile:
+        """Create default personality settings with specified name"""
+        profile = PersonalityProfile(
+            tone="neutral",
+            response_style="balanced",
+            behavior="reactive",
+            user_preferences={}
+        )
+        profile.set_name(name)
+        return profile
+    
+    def load_or_create_personality(self, name: str) -> Tuple[PersonalityProfile, ShortTermMemory, LongTermMemory]:
+        """Load existing personality or create new one"""
+        files = self.get_personality_files(name)
+        
+        # Try to load existing personality
+        try:
+            personality = PersonalityProfile.load_from_file(files["personality"])
+            personality.set_name(name)  # Ensure name is set
+            print(f"[Info] Loaded existing personality: {name}")
+        except FileNotFoundError:
+            # Create new personality
+            personality = self.create_default_personality(name)
+            personality.save_to_file(files["personality"])
+            print(f"[Info] Created new personality: {name}")
+        
+        # Initialize memories
+        short_memory = ShortTermMemory(max_interactions=10)
+        long_memory = LongTermMemory(max_interactions=1000)
+        
+        # Try to load existing memories
+        try:
+            with open(files["short_memory"], "r") as f:
+                short_memory.load_from_list(json.load(f))
+        except FileNotFoundError:
+            print(f"[Info] No existing short-term memory for {name}. Starting fresh.")
+        
+        try:
+            with open(files["long_memory"], "r") as f:
+                long_memory.load_from_list(json.load(f))
+        except FileNotFoundError:
+            print(f"[Info] No existing long-term memory for {name}. Starting fresh.")
+        
+        return personality, short_memory, long_memory
+    
+    def save_personality_state(self, name: str, personality: PersonalityProfile, 
+                            short_memory: ShortTermMemory, long_memory: LongTermMemory,
+                            consolidated_memory: ConsolidatedMemory):
+        """Save all personality-related files"""
+        files = self.get_personality_files(name)
+        
+        try:
+            personality.save_to_file(files["personality"])
+            
+            with open(files["short_memory"], "w") as f:
+                json.dump(short_memory.to_list(), f, indent=4)
+                
+            with open(files["long_memory"], "w") as f:
+                json.dump(long_memory.to_list(), f, indent=4)
+                
+            with open(files["consolidated_memory"], "w") as f:
+                json.dump(consolidated_memory.to_dict(), f, indent=4)
+            
+            print(f"[Debug] Saved all state files for personality: {name}")
+        except Exception as e:
+            print(f"[Error] Failed to save personality state: {e}")
+    
+    def list_available_personalities(self) -> List[str]:
+        """List all available personalities including default"""
+        personalities = set()
+        
+        # Check for default personality
+        if os.path.exists("personality.json"):
+            personalities.add("default")
+            
+        # Check for other personalities
+        for file in os.listdir():
+            if file.endswith("_personality.json"):
+                name = file.replace("_personality.json", "")
+                personalities.add(name)
+                
+        return sorted(list(personalities))
 
 class ChatBot:
     def __init__(
@@ -505,6 +903,7 @@ class ChatBot:
         self.personality = personality
         self.short_memory = short_memory
         self.long_memory = long_memory
+        self.memory_consolidator = MemoryConsolidator(short_memory, long_memory)  # Add this line
         self.api_key = os.getenv("API_KEY")
         self.time_analyzer = TimeAnalyzer() 
         if not self.api_key:
@@ -541,6 +940,9 @@ class ChatBot:
         # Add the new interaction to memories before generating response
         self.short_memory.add_interaction(interaction)
         self.long_memory.add_interaction(interaction)
+
+        # Add this line to trigger memory consolidation
+        self.memory_consolidator.consolidate_memories()
         
         # Generate response
         messages = self._build_messages(query, short_term_context, long_term_context)
@@ -728,56 +1130,62 @@ class ChatBot:
 
 def main():
     print("Initializing ChatBot...")
-
-    # Initialize personality
-    personality = PersonalityProfile(
-        tone="casual",
-        response_style="detailed",
-        behavior="proactive",
-        user_preferences={"project_preferences": "I prefer working on AI and machine learning projects."},
-    )
-    # Add do/don't rules
-    personality.add_do_rule("Provide detailed explanations.")
-    personality.add_dont_rule("Use overly technical jargon without explanation.")
-
-    # Initialize memories
-    short_memory = ShortTermMemory(max_interactions=10)
-    long_memory = LongTermMemory(max_interactions=1000)
-    print(f"[Debug] Long-term memory initialized with max_interactions={long_memory.max_interactions}")
-
-    # Load existing personality and memories if available
-    try:
-        personality = PersonalityProfile.load_from_file()
-    except FileNotFoundError:
-        print("[Info] No existing personality profile found. Using default settings.")
-
-    try:
-        with open("short_memory.json", "r") as f:
-            short_memory.load_from_list(json.load(f))
-    except FileNotFoundError:
-        print("[Info] No existing short-term memory found. Starting fresh.")
-
-    try:
-        with open("long_memory.json", "r") as f:
-            long_memory.load_from_list(json.load(f))
-    except FileNotFoundError:
-        print("[Info] No existing long-term memory found. Starting fresh.")
-
-    # Initialize chatbot
+    
+    # Initialize personality manager
+    personality_manager = PersonalityManager()
+    
+    # Check available personalities
+    available_personalities = personality_manager.list_available_personalities()
+    
+    # Display prompt
+    print("\nWelcome! Please choose a personality to interact with.")
+    print("Press Enter to use the default personality, or type a name to use/create a new personality.")
+    
+    if available_personalities:
+        print("\nAvailable personalities:")
+        for name in available_personalities:
+            if name == "default":
+                print(f"- default (press Enter to select)")
+            else:
+                print(f"- {name}")
+    
+    # Prompt for personality selection
+    while True:
+        personality_name = input("\nEnter personality name: ").strip().lower()
+        if not personality_name:
+            personality_name = "default"
+            print("Using default personality...")
+        else:
+            print(f"Using/creating personality: {personality_name}")
+        
+        if personality_name.lower() == "exit":
+            print("Goodbye!")
+            return
+            
+        # Load or create personality and memories
+        try:
+            personality, short_memory, long_memory = personality_manager.load_or_create_personality(personality_name)
+            break
+        except Exception as e:
+            print(f"Error loading personality: {e}")
+            print("Please try again or type 'exit' to quit.")
+    
+    # Initialize chatbot with selected personality
     try:
         chatbot = ChatBot(personality, short_memory, long_memory)
     except ValueError as e:
         print(f"[Error] {e}")
         print("Please ensure that the API_KEY is set in the .env file.")
         return
-
-    print("ChatBot is ready! Type your messages below. Type 'exit' or 'bye' to end the conversation.\n")
-
+    
+    print(f"\nChatBot is ready with personality: {personality_name}")
+    print("Type your messages below. Type 'exit' or 'bye' to end the conversation.")
+    print("Type 'debug' to see memory status.\n")
+    
     while True:
         try:
             user_input = input("You: ").strip()
             
-            # Add this new condition before the exit check
             if user_input.lower() == "debug":
                 chatbot.print_memory_status()
                 continue
@@ -786,43 +1194,28 @@ def main():
                 response = chatbot.process_query(user_input)
                 print(f"Bot: {response}")
                 break
-
+            
             if not user_input:
                 print("Bot: Please enter a message.")
                 continue
-
+            
             response = chatbot.process_query(user_input)
             print(f"Bot: {response}")
-
+            
         except (KeyboardInterrupt, EOFError):
             print("\nBot: Goodbye! Have a great day!")
             break
         except Exception as e:
             print(f"An error occurred: {e}")
-
-    # Save personality and memories before exiting
-    try:
-        personality.save_to_file()
-    except Exception as e:
-        print(f"Failed to save personality profile: {e}")
-
-    try:
-        with open("short_memory.json", "w") as f:
-            json.dump(short_memory.to_list(), f, indent=4)
-        print("[Debug] Short-term memory saved.")
-    except Exception as e:
-        print(f"Failed to save short-term memory: {e}")
-
-    try:
-        with open("long_memory.json", "w") as f:
-            json.dump(long_memory.to_list(), f, indent=4)
-        print("[Debug] Long-term memory saved.")
-    except Exception as e:
-        print(f"Failed to save long-term memory: {e}")
-
-    print("Session saved. Goodbye!")
-
-
+    
+    # Save personality state before exiting
+    personality_manager.save_personality_state(
+    personality_name, 
+    personality, 
+    short_memory, 
+    long_memory,
+    chatbot.memory_consolidator.consolidated_memory)
+    print(f"Session saved for personality: {personality_name}. Goodbye!")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,43 @@
+[
+    {
+        "user_message": "hello there",
+        "bot_response": "Hello! How can I assist you today?",
+        "tags": [
+            "greeting"
+        ],
+        "timestamp": "2024-11-27T09:40:48.261769",
+        "priority_score": 0.25499896231447033,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999930820964689,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I am testing your usage",
+        "bot_response": "I understand! Feel free to test anything you like or ask questions. I'm here to help.",
+        "tags": [
+            "testing",
+            "usage"
+        ],
+        "timestamp": "2024-11-27T09:40:57.596112",
+        "priority_score": 0.2549974286482464,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999828576549762,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Goodbye! If you have more questions in the future, feel free to reach out. Have a great day!",
+        "tags": [],
+        "timestamp": "2024-11-27T09:41:02.677084",
+        "priority_score": 0.2549988392589822,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999922617265481,
+            "user_importance": 0.0
+        }
+    }
+]
