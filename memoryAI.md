@@ -17,12 +17,11 @@ Be able to create the initial personality. Be able to define how memories are sa
 [x] Environmental awareness
 [x] Memory Prioritisation
 [x] LTM increased to 1000
+[x] Add graph based memory interaction
 
 # Features to be built
 
 Function
-[ ] Personality adjuster over time
-[ ] Add graph based memory interaction
 [ ] Personality creator from a given text
 [ ] Memory creator to integrate with Personality Creator to create a well rounded AP
 [ ] Integrate tiktoken to better token count
@@ -33,6 +32,7 @@ Function
 [ ] Add an art creation function
 [ ] Long term memory condenser
 [ ] Long term memory pruner
+[ ] Personality adjuster over time
 
 Form
 [ ] Web interface for engagement

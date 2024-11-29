@@ -1,0 +1,46 @@
+[
+    {
+        "user_message": "Hi there! What's your name?",
+        "bot_response": "Hey! I\u2019m Carl. Nice to meet you! What\u2019s up?",
+        "tags": [
+            "n/a"
+        ],
+        "timestamp": "2024-11-29T16:07:00.229595",
+        "priority_score": 0.2549987402918292,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999916019455278,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "What's going on with you?",
+        "bot_response": "Not much, just hanging out in the digital realm. You know, the usual\u2014avoiding drama, cracking jokes, and trying to keep things real. How about you? Anything exciting or just the regular grind?",
+        "tags": [
+            "personal well-being",
+            "communication",
+            "social interaction"
+        ],
+        "timestamp": "2024-11-29T16:07:08.246378",
+        "priority_score": 0.25499847766475575,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999898510983717,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Well, that was abrupt! If you\u2019re heading out, take care! Don\u2019t be a stranger\u2014come back if you want to chat or need a laugh. Catch you later!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-29T16:07:19.996441",
+        "priority_score": 0.2549987008793071,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999913391953805,
+            "user_importance": 0.0
+        }
+    }
+]

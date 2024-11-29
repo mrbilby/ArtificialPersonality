@@ -1,0 +1,116 @@
+{
+    "nodes": [
+        [
+            0,
+            {
+                "description": "Carl realizes the catastrophic transformation of the world and his apartment building collapses.",
+                "characters": [
+                    "Carl",
+                    "Mrs. Parsons"
+                ],
+                "emotional_impact": "Shock and disbelief as Carl witnesses the destruction and realizes the gravity of the situation.",
+                "tags": [
+                    "catastrophe",
+                    "survival",
+                    "loss"
+                ],
+                "timing": "early"
+            }
+        ],
+        [
+            1,
+            {
+                "description": "Carl tries to coax Donut the cat back into the apartment while dealing with the cold and chaos.",
+                "characters": [
+                    "Carl",
+                    "Donut",
+                    "Mrs. Parsons"
+                ],
+                "emotional_impact": "Frustration and concern for Donut's safety amidst the overwhelming situation.",
+                "tags": [
+                    "urgency",
+                    "responsibility",
+                    "cat"
+                ],
+                "timing": "early"
+            }
+        ],
+        [
+            2,
+            {
+                "description": "Carl's relationship with Beatrice is revealed, highlighting the emotional strain from their breakup.",
+                "characters": [
+                    "Carl",
+                    "Beatrice"
+                ],
+                "emotional_impact": "Feelings of betrayal and sadness as Carl reflects on his recent breakup.",
+                "tags": [
+                    "relationship",
+                    "betrayal",
+                    "heartbreak"
+                ],
+                "timing": "early"
+            }
+        ],
+        [
+            3,
+            {
+                "description": "Carl understands the implications of the voice announcing the transformation and the World Dungeon.",
+                "characters": [
+                    "Carl"
+                ],
+                "emotional_impact": "Confusion mixed with a sense of responsibility as he learns about the World Dungeon and its rules.",
+                "tags": [
+                    "survival",
+                    "mystery",
+                    "new reality"
+                ],
+                "timing": "early"
+            }
+        ]
+    ],
+    "edges": [
+        [
+            0,
+            1,
+            {
+                "weight": 0.8
+            }
+        ],
+        [
+            0,
+            2,
+            {
+                "weight": 0.4
+            }
+        ],
+        [
+            0,
+            3,
+            {
+                "weight": 1.0
+            }
+        ],
+        [
+            1,
+            2,
+            {
+                "weight": 0.4
+            }
+        ],
+        [
+            1,
+            3,
+            {
+                "weight": 0.4
+            }
+        ],
+        [
+            2,
+            3,
+            {
+                "weight": 0.4
+            }
+        ]
+    ]
+}
