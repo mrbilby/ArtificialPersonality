@@ -6,6 +6,7 @@ from datetime import datetime, timedelta
 import statistics
 from typing import List, Dict, Optional, Tuple, Any
 from collections import defaultdict
+import networkx as nx
 
 # Load environment variables from .env file
 load_dotenv()
@@ -376,6 +377,106 @@ class TimeAnalyzer:
 
         return patterns
 
+class GraphMemoryManager:
+    def __init__(self, graph_file='memory_graph.json'):
+        self.graph_file = graph_file
+        self.G = self._load_or_create_graph()
+    
+    def _load_or_create_graph(self):
+        """Load existing graph or create new one."""
+        try:
+            with open(self.graph_file, 'r') as f:
+                data = json.load(f)
+                G = nx.Graph()
+                
+                # Reconstruct nodes
+                for node_id, node_data in data['nodes']:
+                    G.add_node(node_id, **node_data)
+                
+                # Reconstruct edges
+                for u, v, data in data['edges']:
+                    G.add_edge(u, v, **data)
+                
+                return G
+        except (FileNotFoundError, json.JSONDecodeError):
+            return nx.Graph()
+
+    def calculate_tag_similarity(self, tags1, tags2):
+        """Calculate Jaccard similarity between two sets of tags."""
+        if not tags1 or not tags2:
+            return 0
+        set1 = set(tags1)
+        set2 = set(tags2)
+        intersection = len(set1.intersection(set2))
+        union = len(set1.union(set2))
+        return intersection / union if union > 0 else 0
+
+    def calculate_temporal_proximity(self, time1, time2, max_time_diff=86400):
+        """Calculate temporal proximity between two timestamps."""
+        t1 = datetime.fromisoformat(time1)
+        t2 = datetime.fromisoformat(time2)
+        time_diff = abs((t1 - t2).total_seconds())
+        return max(0, 1 - (time_diff / max_time_diff))
+
+    def add_memory(self, memory):
+        """Add new memory to graph."""
+        # Get next node ID
+        node_id = max(self.G.nodes(), default=-1) + 1
+        
+        # Add new node
+        self.G.add_node(node_id,
+                       message=memory['user_message'],
+                       response=memory['bot_response'],
+                       timestamp=memory['timestamp'],
+                       tags=memory['tags'],
+                       priority=memory.get('priority_score', 0.5))
+        
+        # Create edges with existing nodes
+        for existing_id in list(self.G.nodes()):
+            if existing_id != node_id:
+                # Calculate similarities
+                tag_sim = self.calculate_tag_similarity(
+                    memory['tags'],
+                    self.G.nodes[existing_id]['tags']
+                )
+                temp_prox = self.calculate_temporal_proximity(
+                    memory['timestamp'],
+                    self.G.nodes[existing_id]['timestamp']
+                )
+                
+                # Combine scores
+                edge_weight = (0.7 * tag_sim) + (0.3 * temp_prox)
+                
+                # Add edge if significant
+                if edge_weight > 0.1:
+                    self.G.add_edge(node_id, existing_id, weight=edge_weight)
+        
+        # Save updated graph
+        self.save_graph()
+        return node_id
+
+    def find_similar_memories(self, query_tags, top_n=5):
+        """Find most similar memories to query tags."""
+        similarities = []
+        
+        for node in self.G.nodes():
+            node_tags = self.G.nodes[node]['tags']
+            sim = self.calculate_tag_similarity(query_tags, node_tags)
+            # Add node centrality to boost important memories
+            centrality = nx.degree_centrality(self.G)[node]
+            combined_score = (0.8 * sim) + (0.2 * centrality)
+            similarities.append((node, combined_score))
+        
+        return sorted(similarities, key=lambda x: x[1], reverse=True)[:top_n]
+
+    def save_graph(self):
+        """Save graph to file."""
+        graph_data = {
+            'nodes': [[n, data] for n, data in self.G.nodes(data=True)],
+            'edges': [[u, v, data] for u, v, data in self.G.edges(data=True)]
+        }
+        with open(self.graph_file, 'w') as f:
+            json.dump(graph_data, f, indent=4)
 
 class Memory:
     def __init__(self, max_interactions: int):
@@ -462,7 +563,7 @@ class Memory:
                            if i.priority_score > 0.7]
         }
     
-    def retrieve_relevant_interactions(self, query: str, top_n=10) -> List[Interaction]:
+    def retrieve_relevant_interactions(self, query: str, top_n=15) -> List[Interaction]:
         """
         Returns the last 5 interactions and any additional interactions with matching words
         """
@@ -544,108 +645,144 @@ class ShortTermMemory(Memory):
 class LongTermMemory(Memory):
     def __init__(self, max_interactions: int = 1000):
         super().__init__(max_interactions)
-    
-    def retrieve_relevant_interactions_by_tags(self, tags: List[str], top_n=10):  # Increased from 5
-        """Enhanced tag-based retrieval with broader matching while preserving existing functionality"""
+        self.graph_manager = GraphMemoryManager()
+
+    def add_interaction(self, interaction: Interaction):
+        # Call parent class add_interaction to maintain core functionality
+        super().add_interaction(interaction)
+        
+        # Add to graph after successful addition to main memory
         try:
-            relevant_scores = []
-            search_tags = [tag.lower() for tag in tags]
+            memory_dict = interaction.to_dict()
+            self.graph_manager.add_memory(memory_dict)
+            print("[Debug] Interaction added to memory graph")
+        except Exception as e:
+            print(f"[Error] Failed to add interaction to graph: {e}")
+
+    def retrieve_relevant_interactions(self, query: str, top_n=15) -> List[Interaction]:
+        """Enhanced retrieval combining graph search with traditional method"""
+        try:
+            # Extract tags from query
+            query_tags = self._extract_query_tags(query)
             
-            for interaction in self.interactions:
-                score = 0
-                interaction_text = f"{interaction.user_message} {interaction.bot_response}".lower()
-                
-                # Original exact tag matching
-                for tag in search_tags:
-                    if tag in interaction.tags:
-                        score += 2  # Higher weight for exact matches
-                
-                # New: Partial tag matches
-                for tag in search_tags:
-                    for interaction_tag in interaction.tags:
-                        if (tag in interaction_tag or interaction_tag in tag) and tag != interaction_tag:
-                            score += 1  # Lower weight for partial matches
-                
-                # New: Content-based matching
-                for tag in search_tags:
-                    if tag in interaction_text:
-                        score += 0.5  # Lowest weight for content matches
-                
-                # New: Time decay factor (preserve more recent matches)
-                time_diff = (datetime.now() - interaction.timestamp).total_seconds() / (24 * 3600)  # Days
-                time_factor = 1 / (1 + time_diff)  # Decay factor
-                
-                # Calculate final score while preserving original priority if it exists
-                final_score = score * (0.7 + 0.3 * time_factor)
-                if hasattr(interaction, 'priority_score'):
-                    final_score *= (1 + interaction.priority_score)  # Boost by priority if it exists
-                
-                if final_score > 0:
-                    relevant_scores.append((interaction, final_score))
+            # Get similar memories from graph
+            similar_nodes = self.graph_manager.find_similar_memories(query_tags, top_n)
             
-            # Sort by relevance score
-            relevant_scores.sort(key=lambda x: x[1], reverse=True)
+            # Get corresponding interactions from graph matches
+            graph_relevant = []
+            for node_id, score in similar_nodes:
+                node_data = self.graph_manager.G.nodes[node_id]
+                # Find matching interaction
+                for interaction in self.interactions:
+                    if (interaction.user_message == node_data['message'] and 
+                        interaction.timestamp == node_data['timestamp']):
+                        graph_relevant.append(interaction)
+                        break
+
+            # Get traditional matches using parent class method
+            traditional_relevant = super().retrieve_relevant_interactions(query, top_n)
             
-            # Get top N relevant interactions
-            relevant = [interaction for interaction, score in relevant_scores[:top_n]]
+            # Combine results while maintaining uniqueness
+            combined = []
+            seen = set()
             
-            print(f"[Debug] Retrieved {len(relevant)} interactions from Long-Term Memory with scores: {[score for _, score in relevant_scores[:top_n]]}")
-            return relevant
+            # Prioritize graph matches
+            for interaction in graph_relevant:
+                if interaction not in seen:
+                    combined.append(interaction)
+                    seen.add(interaction)
+            
+            # Add traditional matches
+            for interaction in traditional_relevant:
+                if interaction not in seen:
+                    combined.append(interaction)
+                    seen.add(interaction)
+            
+            print(f"[Debug] Retrieved {len(combined)} total interactions "
+                  f"({len(graph_relevant)} from graph, {len(traditional_relevant)} from traditional)")
+            
+            return combined[:top_n]
+            
+        except Exception as e:
+            print(f"[Error] Failed to retrieve interactions using graph: {e}")
+            # Fallback to traditional method
+            return super().retrieve_relevant_interactions(query, top_n)
+
+    def _extract_query_tags(self, query: str) -> List[str]:
+        """Extract tags from query text for similarity matching"""
+        words = query.lower().split()
+        stop_words = {'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'is', 'are'}
+        return [word for word in words if word not in stop_words and len(word) > 3]
+
+
+    def retrieve_relevant_interactions_by_tags(self, tags: List[str], top_n=15):
+        """Enhanced tag-based retrieval using graph similarity"""
+        try:
+            # Get similar memories from graph
+            similar_nodes = self.graph_manager.find_similar_memories(tags, top_n)
+            
+            # Get corresponding interactions from graph matches
+            graph_relevant = []
+            for node_id, score in similar_nodes:
+                node_data = self.graph_manager.G.nodes[node_id]
+                # Find matching interaction
+                for interaction in self.interactions:
+                    if (interaction.user_message == node_data['message'] and 
+                        interaction.timestamp == node_data['timestamp']):
+                        graph_relevant.append(interaction)
+                        break
+            
+            # If graph search didn't yield enough results, use traditional search
+            if len(graph_relevant) < top_n:
+                relevant_scores = []
+                search_tags = [tag.lower() for tag in tags]
+                
+                for interaction in self.interactions:
+                    score = 0
+                    interaction_text = f"{interaction.user_message} {interaction.bot_response}".lower()
+                    
+                    # Original exact tag matching
+                    for tag in search_tags:
+                        if tag in interaction.tags:
+                            score += 2  # Higher weight for exact matches
+                    
+                    # Partial tag matches
+                    for tag in search_tags:
+                        for interaction_tag in interaction.tags:
+                            if (tag in interaction_tag or interaction_tag in tag) and tag != interaction_tag:
+                                score += 1  # Lower weight for partial matches
+                    
+                    # Content-based matching
+                    for tag in search_tags:
+                        if tag in interaction_text:
+                            score += 0.5  # Lowest weight for content matches
+                    
+                    # Time decay factor
+                    time_diff = (datetime.now() - interaction.timestamp).total_seconds() / (24 * 3600)
+                    time_factor = 1 / (1 + time_diff)
+                    
+                    final_score = score * (0.7 + 0.3 * time_factor)
+                    if hasattr(interaction, 'priority_score'):
+                        final_score *= (1 + interaction.priority_score)
+                    
+                    if final_score > 0:
+                        relevant_scores.append((interaction, final_score))
+                
+                # Sort by relevance score
+                relevant_scores.sort(key=lambda x: x[1], reverse=True)
+                
+                # Add additional relevant interactions if needed
+                additional_interactions = [interaction for interaction, score 
+                                        in relevant_scores[:top_n - len(graph_relevant)]
+                                        if interaction not in graph_relevant]
+                graph_relevant.extend(additional_interactions)
+            
+            print(f"[Debug] Retrieved {len(graph_relevant)} interactions from Long-Term Memory")
+            return graph_relevant
             
         except Exception as e:
             print(f"[Error] Failed to retrieve interactions by tags: {e}")
-            return []  # Return empty list on error to maintain stability
-    
-    def retrieve_relevant_interactions(self, query: str, top_n=10) -> List[Interaction]:
-        """Enhanced query-based retrieval while preserving existing functionality"""
-        try:
-            relevant_scores = []
-            query_words = set(query.lower().split())
-            
-            for interaction in self.interactions:
-                score = 0
-                interaction_text = f"{interaction.user_message} {interaction.bot_response}".lower()
-                interaction_words = set(interaction_text.split())
-                
-                # Word overlap score
-                common_words = query_words & interaction_words
-                if common_words:
-                    score += len(common_words) / len(query_words)
-                
-                # Phrase matching score
-                for i in range(len(list(query_words)) - 1):
-                    phrase = ' '.join(list(query_words)[i:i+2])
-                    if phrase in interaction_text:
-                        score += 0.5
-                
-                # Tag relevance score
-                for tag in interaction.tags:
-                    if any(word in tag for word in query_words):
-                        score += 0.3
-                
-                # Preserve priority scoring if it exists
-                if hasattr(interaction, 'priority_score'):
-                    score *= (1 + interaction.priority_score)
-                
-                # Time decay factor
-                time_diff = (datetime.now() - interaction.timestamp).total_seconds() / (24 * 3600)
-                time_factor = 1 / (1 + time_diff)
-                
-                final_score = score * (0.7 + 0.3 * time_factor)
-                
-                if final_score > 0:
-                    relevant_scores.append((interaction, final_score))
-            
-            relevant_scores.sort(key=lambda x: x[1], reverse=True)
-            relevant = [interaction for interaction, score in relevant_scores[:top_n]]
-            
-            print(f"[Debug] Retrieved {len(relevant)} interactions with query matching")
-            return relevant
-            
-        except Exception as e:
-            print(f"[Error] Failed to retrieve interactions by query: {e}")
-            return []  # Return empty list on error to maintain stability
-
+            return []
 
 class ConsolidatedMemory:
     def __init__(self):
@@ -1205,20 +1342,18 @@ class ChatBot:
             response = self.client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
-                    {"role": "system", "content": """
-                        Extract topics from the text at multiple levels:
-                        1. Specific topics (e.g., 'pineapple pizza')
-                        2. General categories (e.g., 'food preferences')
-                        3. Emotional context (e.g., 'likes', 'dislikes')
-                        Return as comma-separated list.
-                    """},
+                    {"role": "system", "content": "Extract relevant topics from the text as a comma-separated list. Include both specific topics and general categories. Do not include numbers or explanations."},
                     {"role": "user", "content": query}
                 ],
                 max_tokens=60,
                 temperature=0.3,
             )
-            tags = [tag.strip().lower() for tag in response.choices[0].message.content.split(',')]
-            print(f"[Debug] Extracted hierarchical tags: {tags}")
+            # Clean and process the response
+            tags_text = response.choices[0].message.content.strip()
+            # Split by comma and clean each tag
+            tags = [tag.strip().lower() for tag in tags_text.split(',') 
+                if tag.strip() and not tag.startswith(('1.', '2.', '3.'))]
+            print(f"[Debug] Extracted tags: {tags}")
             return tags
         except Exception as e:
             print(f"[Error] Failed to extract tags: {e}")
