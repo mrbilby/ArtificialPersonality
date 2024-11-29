@@ -122,25 +122,28 @@ class Interaction:
         self.priority_factors = {}  # NEW: Track what contributed to priority
     
     def to_dict(self):
+        """Convert the interaction to a dictionary for storage."""
         return {
             "user_message": self.user_message,
             "bot_response": self.bot_response,
             "tags": self.tags,
-            "timestamp": self.timestamp.isoformat(),
+            "timestamp": self.timestamp.isoformat(),  # Ensure ISO format
             "priority_score": self.priority_score,
-            "priority_factors": self.priority_factors  # NEW: Save factors
+            "priority_factors": self.priority_factors,
         }
-    
+
     @staticmethod
     def from_dict(data: Dict):
+        """Recreate an Interaction object from a dictionary."""
         interaction = Interaction(
             user_message=data["user_message"],
             bot_response=data["bot_response"],
             tags=data.get("tags", [])
         )
+        # Deserialize timestamp correctly
         interaction.timestamp = datetime.fromisoformat(data["timestamp"])
-        interaction.priority_score = float(data.get("priority_score", 0.0))  # Ensure float conversion
-        interaction.priority_factors = data.get("priority_factors", {})  # NEW: Load factors
+        interaction.priority_score = float(data.get("priority_score", 0.0))
+        interaction.priority_factors = data.get("priority_factors", {})
         return interaction
     
 
@@ -439,41 +442,39 @@ class GraphMemoryManager:
         return max(0, 1 - (time_diff / max_time_diff))
 
     def add_memory(self, memory):
-        """Add new memory to graph."""
-        # Get next node ID
-        node_id = max(self.G.nodes(), default=-1) + 1
+        """Add a new memory to the graph."""
+        # Validate timestamp and tags
+        if not memory.get("timestamp") or not memory.get("tags"):
+            print(f"[Error] Memory missing required fields: {memory}")
+            return
         
-        # Add new node
-        self.G.add_node(node_id,
-                       message=memory['user_message'],
-                       response=memory['bot_response'],
-                       timestamp=memory['timestamp'],
-                       tags=memory['tags'],
-                       priority=memory.get('priority_score', 0.5))
-        
-        # Create edges with existing nodes
-        for existing_id in list(self.G.nodes()):
-            if existing_id != node_id:
-                # Calculate similarities
-                tag_sim = self.calculate_tag_similarity(
-                    memory['tags'],
-                    self.G.nodes[existing_id]['tags']
-                )
-                temp_prox = self.calculate_temporal_proximity(
-                    memory['timestamp'],
-                    self.G.nodes[existing_id]['timestamp']
-                )
-                
-                # Combine scores
-                edge_weight = (0.7 * tag_sim) + (0.3 * temp_prox)
-                
-                # Add edge if significant
-                if edge_weight > 0.1:
-                    self.G.add_edge(node_id, existing_id, weight=edge_weight)
-        
-        # Save updated graph
-        self.save_graph()
-        return node_id
+        try:
+            node_id = max(self.G.nodes(), default=-1) + 1
+            self.G.add_node(node_id,
+                            message=memory['user_message'],
+                            response=memory['bot_response'],
+                            timestamp=memory['timestamp'],
+                            tags=memory['tags'],
+                            priority=memory.get('priority_score', 0.5))
+            
+            # Add edges to other nodes based on similarity
+            for existing_id in list(self.G.nodes):
+                if existing_id != node_id:
+                    tag_sim = self.calculate_tag_similarity(
+                        memory["tags"], self.G.nodes[existing_id]["tags"]
+                    )
+                    temp_prox = self.calculate_temporal_proximity(
+                        memory["timestamp"], self.G.nodes[existing_id]["timestamp"]
+                    )
+                    edge_weight = (0.7 * tag_sim) + (0.3 * temp_prox)
+                    if edge_weight > 0.1:
+                        self.G.add_edge(node_id, existing_id, weight=edge_weight)
+            
+            # Save the graph
+            self.save_graph()
+            print(f"[Debug] Memory added to graph: {memory['user_message'][:30]}...")
+        except Exception as e:
+            print(f"[Error] Failed to add memory: {e}")
 
     def find_similar_memories(self, query_tags, top_n=5):
         """Find most similar memories to query tags."""
@@ -729,51 +730,59 @@ class LongTermMemory(Memory):
 
 
     def retrieve_relevant_interactions_by_tags(self, tags: List[str], top_n=15):
-        """Enhanced tag-based retrieval using graph similarity"""
+        """Enhanced tag-based retrieval using graph and traditional methods."""
         try:
-            # Get similar memories from graph
-            similar_nodes = self.graph_manager.find_similar_memories(tags, top_n)
+            if not tags:
+                print("[Error] No tags provided for retrieval.")
+                return []
+
+            print(f"[Debug] Searching for interactions matching tags: {tags}")
             
-            # Get corresponding interactions from graph matches
+            # Step 1: Graph-based retrieval
+            similar_nodes = self.graph_manager.find_similar_memories(tags, top_n)
             graph_relevant = []
+            
             for node_id, score in similar_nodes:
                 node_data = self.graph_manager.G.nodes[node_id]
-                # Find matching interaction
+                # Find the corresponding interaction
                 for interaction in self.interactions:
-                    if (interaction.user_message == node_data['message'] and 
-                        interaction.timestamp == node_data['timestamp']):
+                    if (interaction.user_message == node_data.get('message') and 
+                        interaction.timestamp == node_data.get('timestamp')):
                         graph_relevant.append(interaction)
                         break
             
-            # If graph search didn't yield enough results, use traditional search
+            print(f"[Debug] Graph-based retrieval found {len(graph_relevant)} interactions.")
+
+            # Step 2: Fallback to traditional retrieval if needed
             if len(graph_relevant) < top_n:
                 relevant_scores = []
-                search_tags = [tag.lower() for tag in tags]
+                search_tags = [tag.lower() for tag in tags]  # Normalize tags for comparison
                 
                 for interaction in self.interactions:
                     score = 0
                     interaction_text = f"{interaction.user_message} {interaction.bot_response}".lower()
                     
-                    # Original exact tag matching
+                    # 2.1: Exact tag matches (highest weight)
                     for tag in search_tags:
                         if tag in interaction.tags:
-                            score += 2  # Higher weight for exact matches
+                            score += 2
                     
-                    # Partial tag matches
+                    # 2.2: Partial tag matches (lower weight)
                     for tag in search_tags:
                         for interaction_tag in interaction.tags:
                             if (tag in interaction_tag or interaction_tag in tag) and tag != interaction_tag:
-                                score += 1  # Lower weight for partial matches
+                                score += 1
                     
-                    # Content-based matching
+                    # 2.3: Content-based matches (lowest weight)
                     for tag in search_tags:
                         if tag in interaction_text:
-                            score += 0.5  # Lowest weight for content matches
+                            score += 0.5
                     
-                    # Time decay factor
-                    time_diff = (datetime.now() - interaction.timestamp).total_seconds() / (24 * 3600)
+                    # 2.4: Time decay factor (recent interactions prioritized)
+                    time_diff = (datetime.now() - interaction.timestamp).total_seconds() / (24 * 3600)  # Days
                     time_factor = 1 / (1 + time_diff)
                     
+                    # Combine scores with priority adjustment
                     final_score = score * (0.7 + 0.3 * time_factor)
                     if hasattr(interaction, 'priority_score'):
                         final_score *= (1 + interaction.priority_score)
@@ -783,16 +792,14 @@ class LongTermMemory(Memory):
                 
                 # Sort by relevance score
                 relevant_scores.sort(key=lambda x: x[1], reverse=True)
-                
-                # Add additional relevant interactions if needed
                 additional_interactions = [interaction for interaction, score 
-                                        in relevant_scores[:top_n - len(graph_relevant)]
-                                        if interaction not in graph_relevant]
+                                           in relevant_scores[:top_n - len(graph_relevant)]
+                                           if interaction not in graph_relevant]
                 graph_relevant.extend(additional_interactions)
             
-            print(f"[Debug] Retrieved {len(graph_relevant)} interactions from Long-Term Memory")
-            return graph_relevant
-            
+            print(f"[Debug] Total relevant interactions found: {len(graph_relevant)}")
+            return graph_relevant[:top_n]
+        
         except Exception as e:
             print(f"[Error] Failed to retrieve interactions by tags: {e}")
             return []
@@ -845,6 +852,23 @@ class ConsolidatedMemory:
             },
             'last_consolidated': self.last_consolidated.isoformat()
         }
+    
+    def is_empty(self) -> bool:
+        """Check if the consolidated memory has any meaningful data."""
+        return not (
+            self.patterns.get('conversation_patterns') or
+            self.patterns.get('topic_patterns') or
+            self.patterns.get('emotional_patterns') or
+            self.insights or
+            self.key_memories or
+            self.relationship_data.get('shared_interests') or
+            self.relationship_data.get('interaction_quality') or
+            self.relationship_data.get('conversation_style_preferences') or
+            self.relationship_data.get('inside_references', {}).get('phrases') or
+            self.relationship_data.get('inside_references', {}).get('topics') or
+            self.relationship_data.get('inside_references', {}).get('context')
+        )
+    
 
     @staticmethod
     def from_dict(data: Dict):
@@ -852,24 +876,38 @@ class ConsolidatedMemory:
         memory.patterns = data.get('patterns', {})
         memory.insights = data.get('insights', [])
         memory.key_memories = data.get('key_memories', [])
+        
+        # Safely get 'relationship_data' and its subfields
+        relationship_data = data.get('relationship_data', {})
         memory.relationship_data = {
-            'familiarity_level': data['relationship_data'].get('familiarity_level', 0),
-            'interaction_quality': data['relationship_data'].get('interaction_quality', []),
-            'shared_interests': set(data['relationship_data'].get('shared_interests', [])),
-            'conversation_style_preferences': data['relationship_data'].get('conversation_style_preferences', {}),
-            'inside_references': data['relationship_data'].get('inside_references', {
+            'familiarity_level': relationship_data.get('familiarity_level', 0),
+            'interaction_quality': relationship_data.get('interaction_quality', []),
+            'shared_interests': set(relationship_data.get('shared_interests', [])),
+            'conversation_style_preferences': relationship_data.get('conversation_style_preferences', {}),
+            'inside_references': relationship_data.get('inside_references', {
                 'phrases': {},
                 'topics': {},
                 'context': {}
             })
         }
-        memory.last_consolidated = datetime.fromisoformat(data.get('last_consolidated', datetime.now().isoformat()))
-        return memory
 
+        # Safely parse 'last_consolidated' timestamp
+        last_consolidated_str = data.get('last_consolidated')
+        if last_consolidated_str:
+            try:
+                memory.last_consolidated = datetime.fromisoformat(last_consolidated_str)
+            except ValueError:
+                print(f"[Error] Invalid 'last_consolidated' format: {last_consolidated_str}")
+                memory.last_consolidated = datetime.now()
+        else:
+            memory.last_consolidated = datetime.now()
+
+        return memory
 class MemoryConsolidator:
-    def __init__(self, short_memory: ShortTermMemory, long_memory: LongTermMemory):
+    def __init__(self, short_memory: ShortTermMemory, long_memory: LongTermMemory, personality_name: str = 'default'):
         self.short_memory = short_memory
         self.long_memory = long_memory
+        self.personality_name = personality_name  # Store personality name
         self.consolidated_memory = ConsolidatedMemory()
         self.consolidation_interval = timedelta(seconds=30)
         self.emotion_weights = {
@@ -880,8 +918,13 @@ class MemoryConsolidator:
             'neutral': 1.0
         }
 
-    def load_consolidated_memory(self, file_path: str = "consolidated_memory.json"):
+    def load_consolidated_memory(self, file_path: str = None):
         """Load consolidated memory from file."""
+        if file_path is None:
+            if self.personality_name == 'default':
+                file_path = "consolidated_memory.json"
+            else:
+                file_path = f"{self.personality_name}_consolidated_memory.json"
         try:
             with open(file_path, 'r') as f:
                 data = json.load(f)
@@ -889,11 +932,26 @@ class MemoryConsolidator:
                 print(f"[Debug] Loaded consolidated memory from {file_path}")
         except FileNotFoundError:
             print(f"[Debug] No existing consolidated memory found at {file_path}. Starting fresh.")
-            self.consolidated_memory = ConsolidatedMemory()
+            if not hasattr(self, 'consolidated_memory') or self.consolidated_memory is None:
+                self.consolidated_memory = ConsolidatedMemory()
+        except Exception as e:
+            print(f"[Error] Failed to load consolidated memory: {e}")
+            # Do not overwrite existing consolidated_memory if already set
+            if not hasattr(self, 'consolidated_memory') or self.consolidated_memory is None:
+                self.consolidated_memory = ConsolidatedMemory()
 
-    def save_consolidated_memory(self, file_path: str = "consolidated_memory.json"):
+    def save_consolidated_memory(self, file_path: str = None):
         """Save consolidated memory to file."""
+        if file_path is None:
+            if self.personality_name == 'default':
+                file_path = "consolidated_memory.json"
+            else:
+                file_path = f"{self.personality_name}_consolidated_memory.json"
         try:
+            # Check if consolidated_memory has meaningful data
+            if not self.consolidated_memory or self.consolidated_memory.is_empty():
+                print(f"[Debug] Consolidated memory is empty. Skipping save to avoid overwriting existing data.")
+                return
             with open(file_path, 'w') as f:
                 json.dump(self.consolidated_memory.to_dict(), f, indent=4)
             print(f"[Debug] Saved consolidated memory to {file_path}")
@@ -904,6 +962,83 @@ class MemoryConsolidator:
         """Check if enough time has passed for consolidation"""
         time_since_last = datetime.now() - self.consolidated_memory.last_consolidated
         return time_since_last >= self.consolidation_interval
+
+    def consolidate_memories(self) -> ConsolidatedMemory:
+        """Main consolidation process"""
+        if not self.should_consolidate():
+            return self.consolidated_memory
+
+        print("[Debug] Starting memory consolidation...")
+        recent_interactions = self.long_memory.interactions[-50:]
+
+        # If no recent interactions, skip consolidation
+        if not recent_interactions:
+            print("[Debug] No recent interactions to consolidate. Skipping.")
+            return self.consolidated_memory
+
+        data_updated = False
+
+        # Analyze patterns
+        conversation_patterns = self._analyze_conversation_patterns(recent_interactions)
+        emotional_patterns = self._analyze_emotional_patterns(recent_interactions)
+        topic_patterns = self._analyze_topic_patterns(recent_interactions)
+        
+        # Update consolidated memory patterns only if there are new patterns
+        if conversation_patterns:
+            self.consolidated_memory.patterns['conversation_patterns'].update(conversation_patterns)
+            data_updated = True
+        if emotional_patterns:
+            self.consolidated_memory.patterns['emotional_patterns'].update(emotional_patterns)
+            data_updated = True
+        if topic_patterns:
+            self.consolidated_memory.patterns['topic_patterns'].update(topic_patterns)
+            data_updated = True
+        
+        # Generate and update insights only if there are new insights
+        new_insights = self._generate_insights(conversation_patterns, emotional_patterns, topic_patterns)
+        if new_insights:
+            self.consolidated_memory.insights.extend(new_insights)
+            if len(self.consolidated_memory.insights) > 20:
+                self.consolidated_memory.insights = self.consolidated_memory.insights[-20:]
+            data_updated = True
+        
+        # Update relationship data
+        if self._update_relationship_data(recent_interactions):
+            data_updated = True
+        
+        if data_updated:
+            # Update timestamp and save
+            self.consolidated_memory.last_consolidated = datetime.now()
+            self.save_consolidated_memory()
+            print("[Debug] Memory consolidation complete and saved")
+        else:
+            print("[Debug] No new data to consolidate. Skipping save.")
+
+        return self.consolidated_memory
+
+    # Adjust _update_relationship_data to return True if data was updated
+    def _update_relationship_data(self, interactions: List[Interaction]) -> bool:
+        """Update relationship metrics"""
+        data_updated = False
+        if not interactions:
+            return data_updated
+
+        # Update familiarity level
+        interaction_count = len(self.long_memory.interactions)
+        new_familiarity_level = min(100, int(interaction_count / 10))
+        if new_familiarity_level != self.consolidated_memory.relationship_data['familiarity_level']:
+            self.consolidated_memory.relationship_data['familiarity_level'] = new_familiarity_level
+            data_updated = True
+
+        # Update shared interests
+        new_shared_interests = set(self.consolidated_memory.relationship_data['shared_interests'])
+        for interaction in interactions:
+            new_shared_interests.update(interaction.tags)
+        if new_shared_interests != self.consolidated_memory.relationship_data['shared_interests']:
+            self.consolidated_memory.relationship_data['shared_interests'] = new_shared_interests
+            data_updated = True
+
+        return data_updated
 
 
     def _analyze_conversation_patterns(self, interactions: List[Interaction]) -> Dict:
@@ -955,41 +1090,6 @@ class MemoryConsolidator:
                 
         return dict(patterns)
 
-    def consolidate_memories(self) -> ConsolidatedMemory:
-        """Main consolidation process"""
-        if not self.should_consolidate():
-            return self.consolidated_memory
-
-        print("[Debug] Starting memory consolidation...")
-        recent_interactions = self.long_memory.interactions[-50:]
-
-        # Analyze patterns
-        conversation_patterns = self._analyze_conversation_patterns(recent_interactions)
-        emotional_patterns = self._analyze_emotional_patterns(recent_interactions)
-        topic_patterns = self._analyze_topic_patterns(recent_interactions)
-        
-        # Update consolidated memory
-        self.consolidated_memory.patterns.update({
-            'conversation_patterns': conversation_patterns,
-            'emotional_patterns': emotional_patterns,
-            'topic_patterns': topic_patterns
-        })
-        
-        # Generate and update insights
-        new_insights = self._generate_insights(conversation_patterns, emotional_patterns, topic_patterns)
-        self.consolidated_memory.insights.extend(new_insights)
-        if len(self.consolidated_memory.insights) > 20:
-            self.consolidated_memory.insights = self.consolidated_memory.insights[-20:]
-        
-        # Update relationship data
-        self._update_relationship_data(recent_interactions)
-        
-        # Update timestamp and save
-        self.consolidated_memory.last_consolidated = datetime.now()
-        self.save_consolidated_memory()
-        
-        print("[Debug] Memory consolidation complete and saved")
-        return self.consolidated_memory
 
     def _generate_insights(self, conversation_patterns: Dict,
                         emotional_patterns: Dict,
@@ -1027,22 +1127,6 @@ class MemoryConsolidator:
         
         return insights
 
-    def _update_relationship_data(self, interactions: List[Interaction]):
-        """Update relationship metrics"""
-        if not interactions:
-            return
-            
-        # Update familiarity level
-        interaction_count = len(self.long_memory.interactions)
-        self.consolidated_memory.relationship_data['familiarity_level'] = min(
-            100, int(interaction_count / 10)
-        )
-        
-        # Update shared interests
-        for interaction in interactions:
-            self.consolidated_memory.relationship_data['shared_interests'].update(
-                interaction.tags
-            )
 
     def _detect_emotion(self, text: str) -> str:
         """Reuse emotion detection from MemoryPriority"""
@@ -1054,24 +1138,22 @@ class PersonalityManager:
         self.default_personality_name = "default"
         
     def get_personality_files(self, name: str) -> Dict[str, str]:
-        """Get file paths for a given personality name"""
-        if name == self.default_personality_name:
-            # Use existing default file names
+        """Get file paths for a given personality name."""
+        base_name = name.lower()
+        if base_name == self.default_personality_name:
             return {
                 "personality": "personality.json",
                 "short_memory": "short_memory.json",
                 "long_memory": "long_memory.json",
                 "consolidated_memory": "consolidated_memory.json"
             }
-        else:
-            # Use name-specific files
-            base_name = name.lower()
-            return {
-                "personality": f"{base_name}_personality.json",
-                "short_memory": f"{base_name}_short_term_memory.json",
-                "long_memory": f"{base_name}_long_term_memory.json",
-                "consolidated_memory": f"{base_name}_consolidated_memory.json"
-            }
+        return {
+            "personality": f"{base_name}_personality.json",
+            "short_memory": f"{base_name}_short_term_memory.json",
+            "long_memory": f"{base_name}_long_term_memory.json",
+            "consolidated_memory": f"{base_name}_consolidated_memory.json"
+        }
+
     
     def create_default_personality(self, name: str) -> PersonalityProfile:
         """Create default personality settings with specified name"""
@@ -1116,11 +1198,9 @@ class PersonalityManager:
             print(f"[Info] No existing long-term memory for {name}. Starting fresh.")
         
         # Load consolidated memory
-        memory_consolidator = MemoryConsolidator(short_memory, long_memory)
+        memory_consolidator = MemoryConsolidator(short_memory, long_memory, personality.name)
         memory_consolidator.load_consolidated_memory(file_path=files["consolidated_memory"])
-        
         return personality, short_memory, long_memory
-
     
     def save_personality_state(self, name: str, personality: PersonalityProfile, 
                             short_memory: ShortTermMemory, long_memory: LongTermMemory,
@@ -1181,7 +1261,8 @@ class ChatBot:
         self.personality = personality
         self.short_memory = short_memory
         self.long_memory = long_memory
-        self.memory_consolidator = MemoryConsolidator(short_memory, long_memory)  # Add this line
+        # Pass personality name here
+        self.memory_consolidator = MemoryConsolidator(short_memory, long_memory, personality.name)
         self.api_key = os.getenv("API_KEY")
         self.time_analyzer = TimeAnalyzer() 
         if not self.api_key:
@@ -1206,8 +1287,12 @@ class ChatBot:
         # Add timestamp debugging
         print(f"[Debug] Processing query at: {datetime.now()}")
         
-        # Create interaction first to capture accurate timestamp
+        # Create interaction and generate tags first
         interaction = Interaction(user_message=query, bot_response="", tags=[])
+        tags = self._generate_tags(query)
+        interaction.tags = tags
+        
+        # Get current time
         current_time = interaction.timestamp
         
         # Get relevant context
@@ -1215,7 +1300,7 @@ class ChatBot:
         short_term_context = self.short_memory.retrieve_relevant_interactions(query)
         long_term_context = self.long_memory.retrieve_relevant_interactions_by_tags(relevant_tags)
         
-        # Add the new interaction to memories before generating response
+        # Add the new interaction to memories after tags are set
         self.short_memory.add_interaction(interaction)
         self.long_memory.add_interaction(interaction)
 
@@ -1234,10 +1319,6 @@ class ChatBot:
         
         # Update the interaction with the response
         interaction.bot_response = response_text
-        
-        # Generate and update tags
-        tags = self._generate_tags(query)
-        interaction.tags = tags
         
         print(f"[Debug] Interaction completed at: {datetime.now()}")
         return response_text
@@ -1336,7 +1417,7 @@ class ChatBot:
         response = self.client.chat.completions.create(
             model="gpt-4o-mini",  # Use your desired model
             messages=messages,
-            max_tokens=500,
+            max_tokens=2000,
             temperature=0.7,
             n=1,
             stop=None,

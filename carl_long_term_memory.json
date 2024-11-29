@@ -10803,5 +10803,224 @@
             "recency": 0.9999921338118773,
             "user_importance": 0.0
         }
+    },
+    {
+        "user_message": "hey carl, more bugs!",
+        "bot_response": "Oh, great! Just what we needed\u2014more bugs. It\u2019s like they heard we were having a good time and decided to crash the party. Are we talking about the annoying little critters or the kind that threaten to ruin everything? Because honestly, I\u2019m not sure which one sounds worse at this point. What\u2019s the latest disaster unfolding in your world?",
+        "tags": [
+            "bugs"
+        ],
+        "timestamp": "2024-11-29T17:38:43.744260",
+        "priority_score": 0.2549985956068989,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999906373793261,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Well, there you go again, making a swift exit! If you\u2019re off to do something more thrilling than our little chat, I totally get it. Just remember, I\u2019ll be here, ready to sprinkle some sarcasm or share more tales about Princess Donut whenever you feel like it. Take care out there!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-29T17:39:56.017625",
+        "priority_score": 0.2549988415888073,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999922772587153,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Another bug Carl! This is why I keep popping in and out",
+        "bot_response": "Ah, the classic \"pop in and out because of bugs\" scenario! It\u2019s like a game of whack-a-mole, but instead of cute moles, we\u2019ve got annoying glitches popping up at the worst times. What\u2019s the latest hiccup in the system? I\u2019m here for all your debugging drama\u2014let\u2019s tackle this digital chaos together!",
+        "tags": [
+            "bug",
+            "carl",
+            "popping in and out"
+        ],
+        "timestamp": "2024-11-29T17:42:28.638747",
+        "priority_score": 0.25499883111327537,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999922074218359,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "lets see how this goes",
+        "bot_response": "Ah, the classic \u201clet\u2019s see how this goes\u201d moment\u2014like stepping into an unknown situation with a mix of excitement and dread. Kind of like opening a mystery box, only you\u2019re not sure if it\u2019s filled with treasure or a bunch of old socks. So, what are we diving into today? Trying to unravel the mysteries of the universe, or just looking for a good laugh? I\u2019m all in!",
+        "tags": [
+            "testing",
+            "experimentation"
+        ],
+        "timestamp": "2024-11-29T17:42:37.517293",
+        "priority_score": 0.25499857863152425,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999905242101618,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Well, off you go again! If you're leaving to chase after something more exciting than our little chat, I totally understand. Just remember, I'm here, ready to serve up some sarcasm or share more about Princess Donut whenever you feel like popping back in. Take care out there!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-29T17:42:46.876701",
+        "priority_score": 0.25499767672869283,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999845115246189,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Back again! Doing another test",
+        "bot_response": "Ah, the return of the test-taker! It's like a sequel nobody knew they needed. I'm all set for your testing extravaganza. What are we diving into this time? Let\u2019s see if we can break the system or just have some fun along the way!",
+        "tags": [
+            "test"
+        ],
+        "timestamp": "2024-11-29T17:47:56.716387",
+        "priority_score": 0.2549986011172126,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999906741147507,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "tests are needed though! hopefully this works",
+        "bot_response": "Ah, the classic \u201ctesting is essential\u201d mantra! Like trying to find the sweet spot between chaos and order\u2014let\u2019s hope this one actually takes off without a hitch. I\u2019m here for whatever you need, whether it\u2019s debugging, brainstorming, or just providing sarcastic commentary while you work your magic. What\u2019s on the agenda?",
+        "tags": [
+            "tests",
+            "functionality",
+            "validation"
+        ],
+        "timestamp": "2024-11-29T17:48:09.740098",
+        "priority_score": 0.254998288957018,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999885930467868,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Well, look at you, making a quick exit again! If you're off to do something more captivating than our little chat, I totally get it. Just remember, I\u2019m here, ready to serve up some sarcasm and dark humor whenever you're back. Take care out there!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-29T17:48:16.706985",
+        "priority_score": 0.25499864839933173,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999909893288782,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Guess who is back! Testing memory saving again",
+        "bot_response": "Well, well, well, look who decided to return\u2014like a boomerang that just won\u2019t quit! Ready to dive into the mysterious world of memory saving once more? Let\u2019s see if this time we can actually get some results instead of just a series of unfortunate glitches. What\u2019s the plan, my friend?",
+        "tags": [
+            "memory saving",
+            "testing",
+            "return"
+        ],
+        "timestamp": "2024-11-29T17:51:11.562632",
+        "priority_score": 0.25499837127810177,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999891418540117,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "be a short one",
+        "bot_response": "Sure thing! Just give me a topic or a prompt, and I\u2019ll keep it short and snappy\u2014like a cat leaping into a sunbeam. What\u2019s on your mind?",
+        "tags": [
+            "data training",
+            "october 2023"
+        ],
+        "timestamp": "2024-11-29T17:51:20.020496",
+        "priority_score": 0.2549988441894616,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999922945964107,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Well, look at you, making another rapid exit! If you\u2019re off to do something more exciting than our chat, I totally get it. Just remember, I\u2019ll be here, ready to dish out more sarcasm or share tales of Princess Donut whenever you feel like popping back in. Take care out there!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-29T17:51:26.049424",
+        "priority_score": 0.2549989864478209,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999932429854724,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "quick test carl1",
+        "bot_response": "Ah, a quick test! Like a drive-by check-in on my digital sanity. Let\u2019s see what you got\u2014hit me with your best shot!",
+        "tags": [
+            "quick test",
+            "carl1"
+        ],
+        "timestamp": "2024-11-29T18:12:44.589678",
+        "priority_score": 0.2549988571736376,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999923811575843,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Well, there you go again, making a swift exit! If you're off to do something more thrilling than our chat, I totally get it. Just remember, I\u2019ll be here, ready to serve up some sarcasm or share more about Princess Donut whenever you feel like it. Take care out there!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-29T18:12:49.622152",
+        "priority_score": 0.25499860886706843,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999907257804564,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hi carl doing another quick tet",
+        "bot_response": "Ah, the classic \u201cquick test\u201d move! It\u2019s like the digital equivalent of a pop quiz\u2014except I didn\u2019t study, and I\u2019m definitely not getting graded. So, what\u2019s on the agenda this time? Let\u2019s see if we can make this quick and painless\u2014like ripping off a Band-Aid!",
+        "tags": [
+            "quick test"
+        ],
+        "timestamp": "2024-11-29T18:21:30.067518",
+        "priority_score": 0.25499866751878125,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.999991116791875,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Well, off you go again! If you're running off to save the world or just grabbing a snack, I totally get it. Don't forget, I'm here whenever you want to swing back for some sarcastic banter. Take care out there!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-29T18:21:44.895178",
+        "priority_score": 0.25499846319282865,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999897546188579,
+            "user_importance": 0.0
+        }
     }
 ]

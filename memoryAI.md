@@ -22,6 +22,8 @@ Be able to create the initial personality. Be able to define how memories are sa
 # Features to be built
 
 Function
+[ ] Fix the graphing
+[ ] Test the consolidated memory
 [ ] Personality creator from a given text
 [ ] Memory creator to integrate with Personality Creator to create a well rounded AP
 [ ] Integrate tiktoken to better token count
