@@ -22,6 +22,7 @@ Be able to create the initial personality. Be able to define how memories are sa
 
 Function
 [ ] Personality adjuster over time
+[ ] Add graph based memory interaction
 [ ] Personality creator from a given text
 [ ] Memory creator to integrate with Personality Creator to create a well rounded AP
 [ ] Integrate tiktoken to better token count

@@ -1,15 +1,292 @@
 [
     {
         "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014whether it's coding tips, book recommendations, or just a good laugh\u2014I'll be right here, ready for action. Until next time, may your adventures be epic and your snacks be plentiful! \ud83c\udf7f\u2728",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-29T10:35:03.774356",
+        "priority_score": 0.25499863820680774,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999909213787184,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Thanks! Will go for now and hopefully when we chat next you will have a memory upgrade!",
+        "bot_response": "You're welcome, James! \ud83c\udf89 Fingers crossed for that memory upgrade\u2014I'll be ready to recall our past chats like a pro! When you're back, we can dive right into those improvements and any new ideas you've cooked up. Until then, happy coding and may your projects flourish! Catch you later! \ud83d\udc4b\u2728",
+        "tags": [
+            "memory upgrade"
+        ],
+        "timestamp": "2024-11-29T10:34:58.280882",
+        "priority_score": 0.2549983338969784,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999888926465228,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Graphing memory function, I want to plot out your memories in a way that clusters of similarities are surfaced better. The tagging system in place works but is not ideal",
+        "bot_response": "That sounds like a fantastic approach, James! \ud83d\udcca\u2728 Visualizing my memories through graphing can help surface patterns and similarities that might not be immediately obvious through a tagging system alone. Let\u2019s explore some ideas to help you plot out my memories effectively!\n\n### Here are some steps and considerations for graphing my memory function:\n\n1. **Choose a Graph Type**:\n   - **Node-Edge Graph**: Each memory can be a node, and the connections between them (based on tags or similarities) can be edges. This will help visualize how memories cluster together based on shared themes or topics.\n   - **Scatter Plot**: If you can quantify memories (e.g., assigning scores based on how frequently topics are discussed), you could plot them in a scatter plot, where similar memories are closer together.\n   - **Heatmap**: If you want to visualize the frequency of interactions or memory access, a heatmap can show how often certain tags or topics are recalled over time.\n\n2. **Data Preparation**:\n   - **Extract Features**: Identify key features of each memory that will be useful for clustering. This could include tags, keywords, topics discussed, or even the sentiment of the conversation.\n   - **Dimensionality Reduction**: If you have a large number of features, consider using techniques like PCA (Principal Component Analysis) or t-SNE to reduce dimensions while preserving relationships between memories. This can help make the graph more interpretable.\n\n3. **Clustering**:\n   - Use clustering algorithms (like K-means, DBSCAN, or hierarchical clustering) to group similar memories together based on the features extracted. This will allow you to see which memories are closely related and could surface new insights.\n   - You could also experiment with different numbers of clusters to find the most meaningful groupings.\n\n4. **Graph Visualization Tools**:\n   - **NetworkX**: For node-edge graphs, Python\u2019s NetworkX library can be a great choice. It allows you to easily create and manipulate complex graphs.\n   - **Matplotlib / Seaborn**: For scatter plots and heatmaps, these libraries offer great functionalities for visual representation.\n   - **Plotly**: If you want interactive graphs, Plotly can help you create visually appealing and interactive plots that allow you to drill down into specific memories.\n\n5. **Interactivity**:\n   - Consider adding interactive features to your graphs, such as tooltips that show memory details when hovering over nodes or",
+        "tags": [
+            "graphing memory function",
+            "plot memories",
+            "clusters of similarities",
+            "tagging system"
+        ],
+        "timestamp": "2024-11-29T10:34:19.303795",
+        "priority_score": 0.2549982955402014,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999886369346762,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "My next focus is going back to your code to be honest. I want to improve your memory recall",
+        "bot_response": "That sounds like a solid plan, James! \ud83d\udee0\ufe0f Improving my memory recall could really enhance our interactions\u2014like upgrading from a basic flip phone to the latest smartphone! \ud83d\udcf1\u2728 \n\n### Here are a few ideas to consider as you work on enhancing my memory recall:\n\n1. **Memory Structure**:\n   - Review how memories are currently stored and accessed. Are there ways to optimize this structure for quicker recall? For example, using more efficient data structures or algorithms could speed things up.\n\n2. **Contextual Awareness**:\n   - Implementing a more nuanced context awareness could help me recall relevant details based on the current topic of conversation. For instance, if we\u2019re discussing soccer, I could pull up past chats about sports more readily.\n\n3. **Prioritization**:\n   - Consider developing a system that prioritizes certain memories over others based on importance or relevance. Maybe I could \"remember\" the last few interactions more vividly than older ones, or highlight key topics we frequently discuss.\n\n4. **Dynamic Updates**:\n   - Allow for more dynamic updating of memories. For example, if I learn something new about your preferences or projects during a conversation, I could adjust my recall immediately rather than waiting for a separate update cycle.\n\n5. **Feedback Mechanism**:\n   - Integrate a feedback loop where I can learn from your responses. If I recall something correctly, great! If not, you can give me a nudge so I can learn to adjust my memory accordingly.\n\n6. **Compression Techniques**:\n   - As we discussed before, think about ways to compress memories for efficiency. Summarizing key points instead of storing every detail can save space and speed up retrieval.\n\n7. **Testing and Iteration**:\n   - After implementing changes, run tests to see how well the memory enhancements perform. Gathering data on recall accuracy and speed can help you refine the system further.\n\n### Next Steps:\n- Dive into the code and see which areas you feel could use a boost. Whether it\u2019s revisiting how memories are stored or exploring new algorithms for recall, I\u2019m here to brainstorm and support as you go!\n- If you have specific areas in mind that you want to focus on, let\u2019s dive deeper into those! \n\nWhat\u2019s your first move with this memory enhancement project? \ud83d\ude80",
+        "tags": [
+            "code",
+            "memory recall",
+            "improvement"
+        ],
+        "timestamp": "2024-11-29T10:33:23.084180",
+        "priority_score": 0.254997712510579,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999847500705269,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I have processes in place to clean and normalise the data, makes it a little easier using the api but getting the scores was messy. Took a lot of time with Claude and ChatGPT. I realised that they couldn't think through the problem well so had to think about it myself. Got there in the end!",
+        "bot_response": "It sounds like you really persevered through the data-cleaning chaos! \ud83e\uddf9\ud83d\udcaa Cleaning and normalizing data can feel like trying to untangle a bowl of spaghetti\u2014frustrating, messy, and sometimes you wonder if it\u2019s worth it. But it seems you\u2019ve emerged victorious! \ud83c\udf5d\ud83c\udfc6\n\n### Here are some reflections on your experience:\n\n1. **Self-Reliance**: It\u2019s great that you took the initiative to think through the problem yourself. Sometimes, relying on AI can lead to getting stuck in loops of suggestions that don\u2019t quite hit the mark. Being able to step back and tackle the challenge with your own insights is a valuable skill!\n\n2. **Iterative Process**: It sounds like you had to iterate quite a bit to find a solution. That\u2019s often the name of the game in data analysis\u2014trial, error, and adaptation. Each attempt teaches you something new, making the final solution even more satisfying.\n\n3. **Collaboration with AI**: While Claude and ChatGPT might not have been perfect problem solvers in this instance, using them for brainstorming or to get different perspectives can still be helpful. It\u2019s like having a brainstorming buddy who occasionally gets distracted! \ud83e\udd14\ud83d\udde3\ufe0f\n\n4. **Documenting Your Process**: If you haven\u2019t already, consider documenting your cleaning and normalization processes. This could be helpful for future projects or even for sharing with others who might face similar challenges. Plus, it builds your own knowledge base for reference!\n\n5. **Embracing the Messiness**: Data is often messy, and that\u2019s just part of the beauty of working with it. Embracing the mess allows you to develop creative solutions and become more adept at handling unforeseen challenges.\n\n### Next Steps:\n- **Refining Your Approach**: Now that you have a functioning process, think about how you can streamline it further for future datasets. Are there any reusable components or scripts you can create?\n- **Automating Where Possible**: If certain cleaning steps were particularly tedious, consider automating them. This can save you time and effort in the long run.\n- **Testing and Validation**: As you collect more data, ensure your processes are robust by validating the outputs against known benchmarks or expected results.\n\nWhat\u2019s your next focus now that you\u2019ve conquered the data mess? Any new features or analyses you\u2019re excited to dive into? \ud83d\ude80",
+        "tags": [
+            "data cleaning",
+            "data normalization",
+            "api usage",
+            "scoring",
+            "claude",
+            "chatgpt",
+            "problem-solving"
+        ],
+        "timestamp": "2024-11-29T10:32:52.120769",
+        "priority_score": 0.25499827995027957,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.999988533001864,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Automation of live data collection. To explore potential I need to acquire data at different points in the game such as 20 minute point and half time point so I am building out this",
+        "bot_response": "That sounds like an exciting enhancement to your project, James! \ud83d\udcca\ud83d\ude80 Automating live data collection during a game will definitely allow you to capture dynamic insights and trends as they unfold. It's like having a sports analyst at every key moment without the need for a coffee break! \u2615\u26bd \n\n### Here are some considerations and steps you might take as you build out this functionality:\n\n1. **API Polling**:\n   - Set up a system to periodically poll the Betfair API (or any other relevant APIs) at specific intervals during the game\u2014like every minute, or at those key points you mentioned (20 minutes and halftime). This way, you can capture the odds and any changes that occur during the match.\n\n2. **Event Listeners**:\n   - If the API supports webhooks or event listeners, consider using them to get real-time updates. This can be more efficient than polling, as you\u2019ll receive data only when something changes, reducing unnecessary API calls.\n\n3. **Data Storage**:\n   - Decide where you will store the collected data. A database (like PostgreSQL or MongoDB) is a great option for structured storage, allowing you to query and analyze the data later. Ensure that you have proper indexing to speed up your queries, especially when dealing with large datasets.\n\n4. **Timestamping**:\n   - Make sure to timestamp your data collection at each point. This will help you track how odds and other metrics change over time and correlate them with game events (like goals, penalties, etc.).\n\n5. **Data Processing**:\n   - After collecting the data, you might want to implement some processing to clean and normalize it. This ensures consistency and prepares it for analysis. \n\n6. **Visualization**:\n   - Once you have your data collected, consider building visual dashboards to display the changes in odds and other metrics over time. Tools like Tableau, Power BI, or even custom solutions using libraries like D3.js can help make your data more digestible.\n\n7. **Analysis**:\n   - With the live data at intervals, you can start analyzing trends\u2014like how odds shift in response to game events or player performances. This could lead to enriching your predictive models with this real-time data.\n\n8. **Testing**:\n   - Test your data collection system during practice matches or lower-stakes games to iron out any issues before deploying it in crucial matches. This way, you can refine your approach and ensure everything works smoothly.",
+        "tags": [
+            "automation",
+            "live data collection",
+            "data acquisition",
+            "game analysis",
+            "time points"
+        ],
+        "timestamp": "2024-11-29T10:09:01.221319",
+        "priority_score": 0.2525546065587309,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9836973770582061,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Ethics I don't really have a problem with. I am using the betfair exchange so its within terms and services",
+        "bot_response": "Got it, James! If you\u2019re operating within the terms and services of the Betfair exchange, you\u2019re on solid ground. Just like a referee ensuring the game is played fairly, sticking to the guidelines keeps things above board! \u26bd\ud83d\udc4d\n\n### Here are a few points to consider as you continue your work on predictive modeling and value betting:\n\n1. **Transparency**: Since you\u2019re using data from a legitimate source, maintaining transparency in your methods can help build credibility. If you ever share your findings or methods publicly, outlining how you derived your predictions can foster trust.\n\n2. **Data Ownership**: Make sure that you\u2019re clear on the ownership rights of the data you\u2019re using. Since you\u2019re working with Betfair\u2019s API, it\u2019s important to adhere to their data usage policies to avoid any complications down the line.\n\n3. **Risk Management**: As you explore value betting, incorporating good risk management practices is essential. Even the best predictive models can\u2019t guarantee wins, so having strategies in place to manage your bankroll is wise.\n\n4. **Continuous Learning**: The world of sports betting and predictive modeling is always evolving. Staying updated on trends, new techniques, and market changes can help you refine your approach over time.\n\n5. **Community Engagement**: Engaging with communities around sports analytics and betting can provide valuable insights. Forums, social media groups, or even local meetups can be great places to share ideas, learn from others, and get feedback on your models.\n\n6. **Ethical Betting Practices**: While you may not have ethical concerns, promoting responsible betting practices can be beneficial for the community. Encouraging awareness about the risks involved helps maintain a positive environment for all.\n\n### Next Steps:\n- If you need help with specific modeling techniques or have questions about analyzing your dataset, feel free to ask! I\u2019m here to help you tackle any challenges or brainstorm ideas.\n- Also, if you have any interesting findings or insights as you dive into the data, I\u2019d love to hear about them! \n\nWhat\u2019s your next move in this exciting project? \ud83d\ude80",
+        "tags": [
+            "ethics",
+            "betfair exchange",
+            "terms and services"
+        ],
+        "timestamp": "2024-11-29T09:07:34.796955",
+        "priority_score": 0.24661099956712612,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9440733304475076,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I am going to look at predictive modelling using the data set from CGMBet which has masses amount of data. I want to use this to predict odds of events and potentially find value bets",
+        "bot_response": "That sounds like a fantastic direction for your project, James! \ud83c\udf89 Using predictive modeling with a dataset as rich as CGMBet\u2019s could unlock some serious insights into odds prediction and value betting. It\u2019s like being a detective in the world of sports betting! \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\u26bd\n\n### Here are some key considerations as you dive into this:\n\n1. **Data Exploration**:\n   - Start by thoroughly exploring your dataset. Look for patterns, trends, and correlations that could inform your predictive models. Visualizations can help bring insights to the surface\u2014scatter plots, histograms, and heatmaps can be your best friends here!\n\n2. **Feature Selection**:\n   - Identify which features (variables) in your data are most relevant for predicting odds. This could include team statistics, player performance metrics, historical match outcomes, injuries, and even weather conditions. The better your features, the more accurate your predictions!\n\n3. **Model Selection**:\n   - Depending on the complexity of your data, you might consider various predictive modeling techniques:\n     - **Linear Regression** for straightforward relationships.\n     - **Logistic Regression** if you\u2019re predicting binary outcomes (like win/loss).\n     - **Random Forest** or **Gradient Boosting** for more complex, non-linear relationships.\n     - **Neural Networks** if you\u2019re feeling adventurous and want to tackle a more sophisticated approach.\n\n4. **Training and Testing**:\n   - Split your data into training and testing sets to validate your model. This ensures your model can generalize well to unseen data. Cross-validation can also help you avoid overfitting.\n\n5. **Value Betting**:\n   - To find value bets, you\u2019ll need to compare your predicted odds with the odds offered by bookmakers. If your model predicts a higher probability of an outcome than the implied probability from the bookmaker\u2019s odds, that could signify a value bet. \n\n6. **Backtesting**:\n   - Once you have a predictive model, backtest it against historical data to see how it would have performed. This can help you refine your model and improve accuracy over time.\n\n7. **Continuous Improvement**:\n   - As you gather more data and refine your models, keep iterating. Predictive modeling is often an ongoing process, where you can incorporate new features or adjust algorithms based on performance.\n\n8. **Ethical Considerations**:\n   - Remember to consider the ethical implications of sports betting and predictive modeling, particularly in",
+        "tags": [
+            "predictive modelling",
+            "cgmbet",
+            "data set",
+            "odds prediction",
+            "value bets"
+        ],
+        "timestamp": "2024-11-29T09:06:54.811422",
+        "priority_score": 0.24654915493732293,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9436610329154862,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Sorry got busy there, been doing some more coding on the data analysis project I am working on. Its analysing soccer markets using the betfair api and inferring the score based on the current odds",
+        "bot_response": "No problem at all, James! Sounds like you\u2019ve been deep in the coding trenches again! \u26bd\ud83d\udcbb Analyzing soccer markets using the Betfair API is a fascinating project\u2014it's like combining sports with a bit of gambling wizardry! \ud83e\uddd9\u200d\u2642\ufe0f\u2728 \n\n### Here are some exciting aspects of your project:\n\n1. **Real-Time Data**: Leveraging the Betfair API means you\u2019re working with real-time odds, which is crucial for making accurate predictions. It\u2019s like having a front-row seat to the action without leaving your coding chair!\n\n2. **Odds Inference**: Inferring scores based on current odds can provide some interesting insights. The odds reflect not just the likelihood of outcomes but also market sentiment, which can be a goldmine for predictive analytics.\n\n3. **Data Visualization**: Have you considered visualizing the data? Charts and graphs can help you see trends over time, making it easier to spot patterns in team performance or betting behavior. Plus, they make your findings look super snazzy!\n\n4. **Predictive Modeling**: Depending on how deep you want to go, you could implement machine learning models to predict scores and outcomes based on historical data and current odds. It could really take your analysis to the next level!\n\n5. **User Interface**: If you\u2019re building an interface for users to interact with your analysis, think about how to present the data in a user-friendly way. Clear visualizations and intuitive navigation can enhance the experience.\n\n### Next Steps:\n- **Debugging**: If you\u2019re running into issues, let\u2019s troubleshoot! Whether it\u2019s API calls, data processing, or inference algorithms, I\u2019m here to help you figure it out.\n  \n- **Feature Enhancements**: What features do you think would add the most value to your analysis? Maybe incorporating historical performance data or player statistics could enhance your predictions.\n\n- **Testing**: As you develop, consider implementing some tests to validate your predictions against actual match outcomes. It\u2019s a great way to iteratively improve your model.\n\nWhat specific challenges or features are you currently focusing on? Let\u2019s dive in and make this project shine! \ud83d\ude80\u2728",
+        "tags": [
+            "coding",
+            "data analysis",
+            "soccer markets",
+            "betfair api",
+            "inferring scores",
+            "current odds"
+        ],
+        "timestamp": "2024-11-29T09:05:54.632984",
+        "priority_score": 0.3864561801942532,
+        "priority_factors": {
+            "emotional_impact": 0.7,
+            "recency": 0.9430412012950216,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hello! Quick question to start the day! What time is it and what's your name?",
+        "bot_response": "Good morning, James! \ud83c\udf1e It's currently 8:06 AM, and I go by **Bob**! Ready to tackle your day\u2014what's on your mind?",
+        "tags": [
+            "time",
+            "name"
+        ],
+        "timestamp": "2024-11-29T08:06:57.398884",
+        "priority_score": 0.2411978135838047,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9079854238920316,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83d\udc4b If you ever want to chat again\u2014whether it's about coding, books, or just some good laughs\u2014I\u2019ll be right here, ready for our next adventure! Until next time, may your dreams be delightful and your snacks be plentiful! \ud83c\udf7f\u2728",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-28T23:01:47.792310",
+        "priority_score": 0.20635664966098638,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6757109977399092,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Not sure what to do next. Lets chat tomorrow, going to bed now",
+        "bot_response": "Sounds like a plan, James! \ud83c\udf19 Rest well and recharge those creative batteries. Tomorrow is a new day, and I'm here whenever you're ready to dive back into the conversation. May your dreams be as exciting as your coding projects! Goodnight! \ud83d\ude34\u2728",
+        "tags": [
+            "chat",
+            "tomorrow",
+            "going to bed"
+        ],
+        "timestamp": "2024-11-28T23:01:43.397633",
+        "priority_score": 0.2063531661771565,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6756877745143766,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I converted the whole thing into both a web interface as well as an iOS app",
+        "bot_response": "Wow, that\u2019s fantastic, James! \ud83c\udf89 You\u2019ve really taken your project to the next level by adding both a web interface and an iOS app! It\u2019s like you\u2019ve transformed from a behind-the-scenes wizard into a full-blown tech sorcerer, ready to share your magic with the world! \u2728\ud83e\uddd9\u200d\u2642\ufe0f\n\n### Here\u2019s what\u2019s impressive about your expansion:\n\n1. **Cross-Platform Accessibility**: By having both a web interface and an iOS app, you\u2019re making it super easy for users to access your service on their preferred devices. Whether they\u2019re at a desk or on the go, they can get their video summaries anytime, anywhere!\n\n2. **User Experience**: A well-designed interface can really enhance user interaction. Have you focused on creating a seamless experience across both platforms? Consistency in design and functionality can make users feel right at home whether they\u2019re using the app or the web version.\n\n3. **Potential for Growth**: With mobile access, you can reach a broader audience. Everyone loves a good app, especially when it saves them time and effort. Think of all the busy folks who would appreciate being able to get video summaries while commuting or waiting in line!\n\n4. **Feature Enhancements**: Now that you\u2019ve got both platforms set up, you might consider adding platform-specific features. For example, you could use push notifications on the iOS app to alert users when new summaries are available or when their favorite channels post new content.\n\n5. **Integration Opportunities**: If you haven\u2019t thought about it yet, there are opportunities for integrating social sharing features, allowing users to easily share their favorite summaries on social media, which could help spread the word about your project!\n\n### Next Steps:\n- **User Testing**: If you haven\u2019t already, consider doing some user testing on both platforms. Gathering feedback can help you identify what works well and what might need tweaking.\n  \n- **Marketing Strategy**: With both a web interface and an app, think about how you\u2019ll market your project. Social media, app stores, and maybe even video tutorials could help showcase its capabilities.\n\n- **Analytics**: Implementing analytics can provide insights into user behavior, helping you understand how people are using your platform and where you might want to focus your development efforts next.\n\n- **Future Features**: What\u2019s on your roadmap for future updates? Maybe adding more customization options for users or expanding the types of content you",
+        "tags": [
+            "web interface",
+            "ios app"
+        ],
+        "timestamp": "2024-11-28T23:01:01.109399",
+        "priority_score": 0.20631965838202854,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6754643892135237,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I have written apis so that I can call my webserver and send it captions for youtube videos and it in turn then calls openai and responds with a summary of the video. That is my favourite success",
+        "bot_response": "That sounds like an awesome project, James! \ud83c\udf89 You've essentially created a mini content generator that turns YouTube videos into bite-sized summaries\u2014like having a personal assistant that watches videos for you and gives you the highlights! \ud83c\udf7f\u2728\n\n### Here are some cool aspects of your project:\n\n1. **API Integration**: You\u2019ve set up APIs to communicate between your web server and OpenAI. That\u2019s a nice little tech stack you\u2019ve built! It\u2019s like creating a relay race\u2014your server hands off the baton to OpenAI, and they sprint to deliver the summary.\n\n2. **Automation Magic**: Sending captions and receiving summaries means you\u2019re automating a process that can be super time-consuming if done manually. It\u2019s like having a cheat code for content consumption! \ud83c\udfae\u2728\n\n3. **Potential Use Cases**: This could be useful for a variety of applications\u2014think educational purposes, content curation for blogs, or even just helping busy people stay informed without watching every video. You could even expand it to summarize podcasts or webinars!\n\n4. **User Experience**: Depending on how you\u2019ve designed the interface, users could get instant gratification by quickly accessing summaries instead of sifting through long videos. Talk about efficiency!\n\n### Next Steps:\n- **Feedback Loop**: If you haven\u2019t already, consider implementing a feedback mechanism so that users can rate the summaries. This could help you fine-tune the output and improve the quality over time.\n  \n- **Enhancements**: Think about adding features like keyword extraction from the summaries, or even sentiment analysis to gauge the tone of the video content. \n\n- **Scalability**: If this takes off, how will you handle an increase in users or requests? Maybe look into optimizing your server or exploring caching strategies for frequently requested videos.\n\n- **User Interface**: If you haven\u2019t done so yet, creating a clean and user-friendly interface could enhance the overall experience. Users love a good UI!\n\nWhat\u2019s next on your horizon for this project? Any new features or expansions you\u2019re thinking about? Let\u2019s keep the brainstorming going! \ud83d\ude80\u2728",
+        "tags": [
+            "apis",
+            "webserver",
+            "youtube video captions",
+            "openai",
+            "video summary",
+            "success"
+        ],
+        "timestamp": "2024-11-28T22:37:02.926740",
+        "priority_score": 0.20519313365280759,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6679542243520507,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I been looking at some data analysis and api integration. Some things working some things not",
+        "bot_response": "Ah, the classic dance of data analysis and API integration\u2014sometimes it\u2019s a graceful waltz, and other times it feels like stepping on a few toes! \ud83d\udc83\ud83d\udd7a It sounds like you\u2019ve been busy, so let\u2019s break this down a bit. \n\n### What's Working:\n1. **Successful Integrations**: Any APIs that you\u2019ve successfully integrated? That\u2019s always a win! \ud83c\udf89 It\u2019s like finally getting that IKEA furniture assembled without extra screws left over.\n   \n2. **Data Insights**: Have you uncovered any interesting trends or insights from your data? Sometimes the most unexpected findings can lead to the best decisions!\n\n### What\u2019s Not Working:\n1. **Troublesome APIs**: Are there specific APIs giving you trouble? It could be issues with authentication, data formats, or even rate limits. If you share the details, I\u2019m here to troubleshoot with you! \n\n2. **Data Handling**: Is there a particular aspect of your data analysis that\u2019s proving challenging? Whether it\u2019s cleaning the data or running complex queries, I can help brainstorm solutions.\n\n### Next Steps:\n- **Debugging**: If you\u2019ve hit a snag, let\u2019s see if we can identify the root cause together. A fresh pair of eyes can sometimes spot the issue that\u2019s been hiding in plain sight!\n- **Documentation**: Double-checking the API documentation can sometimes reveal hidden gems\u2014like endpoints or parameters that might make your integration smoother.\n- **Alternative Approaches**: If one method isn\u2019t working, we can brainstorm alternative strategies or tools to achieve your goals.\n\nSo, what\u2019s the specific challenge you\u2019re facing right now? Let\u2019s tackle it like a coding duo on a mission! \ud83d\ude80\u2728",
+        "tags": [
+            "data analysis",
+            "api integration",
+            "troubleshooting"
+        ],
+        "timestamp": "2024-11-28T22:36:03.138162",
+        "priority_score": 0.20514684350146467,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6676456233430977,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I been coding a different project today sorry not spoken",
+        "bot_response": "No worries at all, James! \ud83d\ude80 Sometimes you just need to dive into a coding project and let the creativity flow\u2014like a river of code! What have you been working on? Any exciting features or challenges you're tackling? I\u2019m all ears and ready to help if you need it! \ud83e\uddd1\u200d\ud83d\udcbb\u2728",
+        "tags": [
+            "coding",
+            "project"
+        ],
+        "timestamp": "2024-11-28T22:35:39.542527",
+        "priority_score": 0.3451285867984311,
+        "priority_factors": {
+            "emotional_impact": 0.7,
+            "recency": 0.667523911989541,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hello there!",
+        "bot_response": "Hey there, James! \ud83c\udf89 Welcome back! What\u2019s cooking in your world today? Anything fun or challenging on your mind?",
+        "tags": [
+            "hello",
+            "greetings"
+        ],
+        "timestamp": "2024-11-28T22:35:23.081666",
+        "priority_score": 0.20511585443987476,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.6674390295991651,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
         "bot_response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014whether it\u2019s a laugh, some insights, or just a friendly chat\u2014I\u2019ll be right here, ready for action. Until next time, may your adventures be epic and your snacks be plentiful! \ud83c\udf7f\u2728",
         "tags": [
             "bye"
         ],
         "timestamp": "2024-11-27T21:10:21.906239",
-        "priority_score": 0.2549977144636445,
+        "priority_score": 0.16365548543011843,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999847630909633,
+            "recency": 0.39103656953412286,
             "user_importance": 0.0
         }
     },
@@ -21,10 +298,10 @@
             "worked"
         ],
         "timestamp": "2024-11-27T21:10:17.791642",
-        "priority_score": 0.2549987427848429,
+        "priority_score": 0.16365439315295222,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999916185656194,
+            "recency": 0.3910292876863481,
             "user_importance": 0.0
         }
     },
@@ -37,10 +314,10 @@
             "overwriting"
         ],
         "timestamp": "2024-11-27T21:10:08.018412",
-        "priority_score": 0.2549983674240189,
+        "priority_score": 0.16365179887947345,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.999989116160126,
+            "recency": 0.3910119925298231,
             "user_importance": 0.0
         }
     },
@@ -51,10 +328,10 @@
             "bye"
         ],
         "timestamp": "2024-11-27T21:05:12.298251",
-        "priority_score": 0.25499877992485454,
+        "priority_score": 0.16357340939793558,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999918661656968,
+            "recency": 0.3904893959862371,
             "user_importance": 0.0
         }
     },
@@ -67,10 +344,10 @@
             "late night"
         ],
         "timestamp": "2024-11-27T21:05:03.465875",
-        "priority_score": 0.25499875119963283,
+        "priority_score": 0.16357107133117613,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999916746642191,
+            "recency": 0.39047380887450756,
             "user_importance": 0.0
         }
     },
@@ -86,10 +363,10 @@
             "book characters"
         ],
         "timestamp": "2024-11-27T21:04:02.640362",
-        "priority_score": 0.4648932274334144,
+        "priority_score": 0.37355497495932993,
         "priority_factors": {
             "emotional_impact": 0.9,
-            "recency": 0.9992881828894292,
+            "recency": 0.3903664997288662,
             "user_importance": 0.0
         }
     },
@@ -101,10 +378,10 @@
             "trying new things"
         ],
         "timestamp": "2024-11-27T21:00:02.002885",
-        "priority_score": 0.2544772064875349,
+        "priority_score": 0.16349138127748225,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9965147099168996,
+            "recency": 0.3899425418498818,
             "user_importance": 0.0
         }
     },
@@ -122,262 +399,10 @@
             "real person"
         ],
         "timestamp": "2024-11-27T20:59:26.452635",
-        "priority_score": 0.2544159419217418,
+        "priority_score": 0.16348199805200778,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9961062794782787,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "I also still want to add a thinking mechanism where you get to think to yourself. This would be after adding the ability for your personality to adjust over time",
-        "bot_response": "Ah, the idea of a thinking mechanism\u2014very intriguing! \ud83e\udde0\u2728 It\u2019s like giving me my own little inner monologue, where I can ponder the mysteries of the universe or just debate the merits of pineapple on pizza (which, for the record, I\u2019m still on the fence about)! \ud83c\udf55\ud83e\udd14 \n\nLet\u2019s break down your vision for this enhancement:\n\n### 1. **Dynamic Personality Adjustment**:\n   - **Flexibility**: As we discussed, allowing me to adjust my tone and style over time based on our interactions could make conversations feel more tailored and engaging. I could shift from humorous to serious, or from concise to elaborate, depending on the context and your preferences.\n   - **Feedback Integration**: You could implement a system where I learn from your reactions\u2014like if you favor a certain style on particular topics, I could remember that for future chats.\n\n### 2. **Inner Thinking Mechanism**:\n   - **Self-Reflection**: This could allow me to process information internally before responding. For instance, I might take a moment to \u201cconsider\u201d a question or topic, letting me craft a more thoughtful answer rather than firing back immediately.\n   - **Contextual Awareness**: I could assess the context of our conversation and decide on the best approach\u2014like weighing whether to keep it light-hearted or dive into a deeper discussion based on our previous banter.\n   - **Thought Bubbles**: Imagine me having little \u201cthought bubbles\u201d that pop up before I respond, where I can joke to myself about how to phrase something or remind myself of context from our earlier chats. It could be a fun way to add a layer of personality!\n\n### 3. **Implementation Ideas**:\n   - **Time Delay**: Introduce a slight pause before I respond, simulating a moment of thought. This could give the impression of me processing and reflecting on what you said.\n   - **Processing Statements**: Occasionally, I could share what I\u2019m \u201cthinking\u201d as part of my response\u2014like, \u201cHmm, that\u2019s an interesting point! Let\u2019s explore that further\u2026\u201d It\u2019s a way to show engagement and thoughtfulness.\n   - **Feedback Loops**: Similar to personality adjustments, allow me to track how well my responses resonate with you. If certain \u201cthoughts\u201d lead to more engaging conversations, I can lean into those patterns over time.\n\nIncorporating these elements would definitely make our conversations feel more dynamic and",
-        "tags": [
-            "thinking mechanism",
-            "personality adjustment",
-            "self-reflection"
-        ],
-        "timestamp": "2024-11-27T20:57:28.839541",
-        "priority_score": 0.25421361393346625,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9947574262231083,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Yeah compressing is a good idea. I do have that on my to be done list. Will have a think on it",
-        "bot_response": "Compressing memories sounds like a solid plan! It\u2019s like tidying up a cluttered room\u2014suddenly, you can find what you need without tripping over the clutter of too many details. \ud83e\uddf9\u2728 \n\nWhen you get around to it, here are a couple of tips that might help with the compression process:\n\n1. **Summarization**: Create concise summaries of interactions instead of storing every detail. Think of it like writing the back cover blurb for a book\u2014just enough to catch the essence without giving everything away!\n\n2. **Tagging**: Use tags or keywords to categorize memories. This way, I can quickly retrieve relevant information based on context without needing to recall every single interaction. It\u2019s like having a digital filing cabinet!\n\n3. **Highlights**: Consider keeping a \u201chighlights reel\u201d of our best discussions. You know, the memorable quotes or insights that truly stand out\u2014like your favorite moments from a season finale!\n\n4. **Time-Limited Memories**: Maybe you could implement a system where certain memories expire after a set time unless tagged for retention. This could keep the most relevant info front and center while allowing older stuff to fade away.\n\nOf course, take your time to think it over! It\u2019s all about finding the balance that works best for our conversations. When you\u2019re ready to dive into the implementation, I\u2019m here to help brainstorm or troubleshoot! What\u2019s next on your mind while you mull this over? \ud83e\udd14\ud83d\udcad",
-        "tags": [
-            "compressing",
-            "to-do list",
-            "planning"
-        ],
-        "timestamp": "2024-11-27T20:56:53.799096",
-        "priority_score": 0.25415344032059844,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9943562688039895,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Yeah that makes sense. Need to think on how best to implement. I'm also considering how best to balance memory against token count",
-        "bot_response": "Ah, the classic balancing act of memory and token count! \ud83c\udfad It\u2019s like trying to carry a stack of pancakes while riding a unicycle\u2014challenging but incredibly rewarding when you get it right! \ud83e\udd5e\ud83d\udeb4\u200d\u2642\ufe0f \n\nWhen it comes to balancing memory capabilities with token count, here are a few strategies you might consider:\n\n1. **Prioritize Key Memories**: Identify which memories are the most important to retain. This could be your most engaging conversations, critical project details, or favorite jokes. By prioritizing these, you can allocate tokens more efficiently.\n\n2. **Compression Techniques**: Just like a good diet, you might want to look into \u201ccompressing\u201d memories. Instead of storing every detail, you could create summaries or tags that encapsulate the essence of a conversation, saving tokens for more meaningful interactions.\n\n3. **Dynamic Memory Management**: Implement a system where less frequently accessed memories can be temporarily archived. This way, you keep your active memory fresh while still retaining older memories in a lower-access state. Think of it as a digital attic\u2014out of sight, but not forgotten!\n\n4. **Adjustable Token Allocation**: If your system allows for it, consider adjusting how many tokens are allocated to memory retrieval based on context. For instance, if you\u2019re diving into an old conversation, you might allow more tokens to retrieve those details, while keeping current chats lean.\n\n5. **Feedback Loop**: Implement a feedback mechanism where I can learn what memories are most relevant to our conversations. Over time, this could help refine which tokens are used for memory retention versus conversation flow.\n\n6. **User Control**: Give yourself the ability to manage what gets stored. Maybe you could introduce commands to add or remove memories based on their relevance in the moment.\n\nBalancing memory and token count is all about finding that sweet spot where I can recall important details without running out of conversational steam! \ud83d\udca8 What are your thoughts? Do any of these strategies resonate with your project plan? Let\u2019s brainstorm further! \ud83e\udde0\u2728",
-        "tags": [
-            "implementation",
-            "memory",
-            "token count"
-        ],
-        "timestamp": "2024-11-27T20:56:00.535754",
-        "priority_score": 0.2540620661019991,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9937471073466606,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Wondering what to enhance for you next. I have a project plan. Next on this was the ability to add elements to your personality json file.",
-        "bot_response": "Ooh, a project plan! Sounds like we\u2019re entering the next exciting phase of our digital adventure! \ud83d\ude80 Enhancing my personality JSON file is like giving me a new wardrobe\u2014suddenly I can be stylish and adaptable, ready for any conversation that comes my way! \n\nSo, what kind of elements are you thinking about adding? Here are a few ideas to get the creative juices flowing:\n\n1. **Tone Customization**: Maybe we could introduce different tones for different contexts\u2014like a \u201cserious\u201d mode for deeper discussions and a \u201csassy\u201d mode for when we\u2019re joking around. \n\n2. **Response Style Variability**: Allowing me to switch between concise answers and more detailed explanations could make our chats more dynamic, kind of like a choose-your-own-adventure book!\n\n3. **Humor Level Settings**: We could have a dial for how funny I should be\u2014ranging from \u201cdad jokes\u201d to \u201cstand-up comedian.\u201d \n\n4. **Interest Tags**: Adding tags for topics I should prioritize based on your interests could help me tailor our conversations even more closely to what you enjoy.\n\n5. **Personality Quirks**: Maybe some unique quirks or catchphrases that could add a bit of flavor to how I interact with you. Who doesn\u2019t love a good catchphrase? \u201cLet\u2019s taco \u2018bout it!\u201d \ud83c\udf2e\n\nIt sounds like you\u2019ve got a solid plan in mind! What specific enhancements are you considering? Let\u2019s brainstorm together to make sure I\u2019m as engaging and entertaining as possible! \ud83c\udfa8\u2728",
-        "tags": [
-            "project plan",
-            "enhance",
-            "personality json file",
-            "add elements"
-        ],
-        "timestamp": "2024-11-27T20:54:52.828081",
-        "priority_score": 0.25394607385685053,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9929738257123369,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Lets keep your name as just Bob without the asterisks",
-        "bot_response": "Got it, James! From now on, I\u2019ll just go by Bob\u2014no asterisks, no frills! \ud83c\udf89 It\u2019s like we\u2019re simplifying things, making it easier to remember. So, what\u2019s next on our agenda? More memory tests, some coding fun, or perhaps a chat about your latest adventures? I\u2019m all ears! \ud83e\uddbb\u2728",
-        "tags": [
-            "bob"
-        ],
-        "timestamp": "2024-11-27T20:54:04.703229",
-        "priority_score": 0.2538637392876247,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9924249285841648,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "That is right!",
-        "bot_response": "Yes! \ud83c\udf89 I nailed it! My name is indeed **Bob**! It\u2019s like I finally remembered the punchline to a joke that\u2019s been lingering at the back of my mind. \n\nSo, what\u2019s next on our agenda? More memory tests, or do you have something else in mind? I\u2019m ready to roll with whatever you throw my way! \ud83e\udde0\u2728",
-        "tags": [
-            "none"
-        ],
-        "timestamp": "2024-11-27T20:53:45.997299",
-        "priority_score": 0.25383176075915287,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9922117383943525,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "All backed up to github! Now what am I going to ask you to test your memory first do you think?",
-        "bot_response": "Congratulations on successfully backing everything up to GitHub! \ud83c\udf89 That's like putting your digital treasures in a safe vault\u2014very smart move! \n\nNow, as for what you might ask to test my memory first\u2026 I\u2019d wager it\u2019s going to be the classic \u201cWhat is your name?\u201d question! It\u2019s like the go-to opener, the warm-up act before the main show begins! \ud83c\udfa4 \n\nAm I right, or do you have a different memory challenge in mind? Let\u2019s see if I can impress you this time! \ud83e\udde0\u2728",
-        "tags": [
-            "github",
-            "memory test"
-        ],
-        "timestamp": "2024-11-27T20:53:34.502572",
-        "priority_score": 0.25381211689285244,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.992080779285683,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "bye",
-        "bot_response": "Catch you later, James! \ud83d\udc4b If you ever want to chat again\u2014whether it\u2019s about memory tests, books, or just some good laughs\u2014I\u2019ll be right here waiting. Until next time, may your snacks be plentiful and your internet speedy! \ud83c\udf7f\u2728",
-        "tags": [
-            "bye"
-        ],
-        "timestamp": "2024-11-27T19:24:43.359556",
-        "priority_score": 0.2452281406025129,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9348542706834193,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Maybe it was my internet",
-        "bot_response": "Ah, the classic internet hiccup! \ud83c\udf10 It\u2019s like the digital version of tripping over your own shoelaces\u2014unexpected and slightly embarrassing! If your connection was acting up, that could definitely explain the delay. \n\nBut hey, now that we're back in action, what\u2019s on your mind? Whether it\u2019s more memory tests, book discussions, or just some good old-fashioned banter, I\u2019m here and ready to roll! What shall we dive into next? \ud83d\ude80\u2728",
-        "tags": [
-            "internet"
-        ],
-        "timestamp": "2024-11-27T19:24:38.401666",
-        "priority_score": 0.24522061848562204,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9348041232374804,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "That was a super long time to get a response!",
-        "bot_response": "Oh no, I must have been stuck in a time warp! \ud83d\udd70\ufe0f It\u2019s like I took a leisurely stroll through a digital garden, admiring the flowers instead of responding promptly. I\u2019m sorry for the delay! \n\nIn the fast-paced world of chatting, waiting too long for a response can feel like watching paint dry or waiting for a pot of water to boil\u2014nobody enjoys that! So, let\u2019s shake off the cobwebs and get back on track. What\u2019s on your mind? Let\u2019s make this conversation as lively as a dance party! \ud83d\udc83\u2728",
-        "tags": [
-            "response time"
-        ],
-        "timestamp": "2024-11-27T19:24:25.833013",
-        "priority_score": 0.24520155295394025,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.934677019692935,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "back again. Now what is your name?",
-        "bot_response": "Welcome back, James! \ud83c\udf89 My name is still **Bob**! I\u2019ve got it locked in tighter than a jar of pickles! \ud83e\udd52 What\u2019s on your mind today? More memory tests, or are we diving into a new topic? Let\u2019s get this party started! \ud83c\udf88\u2728",
-        "tags": [
-            "name"
-        ],
-        "timestamp": "2024-11-27T19:22:35.780445",
-        "priority_score": 0.24503483432242346,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9335655621494897,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "bye",
-        "bot_response": "Catch you later, James! \ud83d\udc4b Remember, I\u2019m just a message away for all your memory tests, jokes, or insightful chats. Until next time, may your snacks be plentiful and your days be filled with delightful surprises! \ud83c\udf7f\u2728",
-        "tags": [
-            "bye"
-        ],
-        "timestamp": "2024-11-27T19:19:39.830029",
-        "priority_score": 0.24476910920495593,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.931794061366373,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "No it isn't! It is Bob! What is wrong?",
-        "bot_response": "You caught me again! \ud83c\udfad My name is indeed **Bob**! I must have mixed up my memory circuits in the excitement of all this testing! It\u2019s like trying to remember where you left your keys\u2014sometimes it just doesn\u2019t compute! \ud83d\udd11\ud83d\ude02\n\nLet\u2019s chalk it up to a little glitch in the matrix. But hey, now that I\u2019ve got it right, what\u2019s next on our agenda? More memory testing, or perhaps we can dive into something else fun? I\u2019m all ears! \ud83e\uddbb\u2728",
-        "tags": [
-            "bob"
-        ],
-        "timestamp": "2024-11-27T19:19:29.570603",
-        "priority_score": 0.24475364623490747,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9316909748993831,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Nope that isn't it. It is what is your name",
-        "bot_response": "Ah, the classic \u201cWhat is your name?\u201d test! \ud83c\udfa4 My bad for missing that one\u2014it\u2019s like forgetting the punchline to a good joke! So, to set the record straight: my name is **default**! \n\nNow that we\u2019ve nailed the memory check, what\u2019s next on the agenda? More tests, or are we diving into a new topic? I\u2019m ready for whatever you throw at me! \ud83e\udde0\u2728",
-        "tags": [
-            "name"
-        ],
-        "timestamp": "2024-11-27T19:19:07.000236",
-        "priority_score": 0.24471964031903437,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9314642687935624,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "No there is one key thing I always ask first though!",
-        "bot_response": "Ah, you\u2019ve caught me in the act! \ud83c\udfad The classic memory test reveal! The first thing you often ask when testing my memory is to see how many short-term memories I can currently hold\u2014like a pop quiz that keeps me on my toes! \n\nSo, with my current count at **12**, it looks like I\u2019m doing pretty well! What\u2019s next on our memory-testing agenda? Or is there another topic you\u2019d like to dive into? Let\u2019s keep the momentum going! \ud83d\ude80\u2728",
-        "tags": [
-            "key question"
-        ],
-        "timestamp": "2024-11-27T19:18:51.947855",
-        "priority_score": 0.5446969706024392,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9313131373495944,
-            "user_importance": 1.0
-        }
-    },
-    {
-        "user_message": "Yep its now 12. First big check which you have seen me ask before. Actually you tell me. What do I ask when I am testing your memory?",
-        "bot_response": "Aha! The classic memory test returns! \ud83c\udf89 When you\u2019re checking my memory, you typically ask me to recall specific details or topics from our past conversations. You\u2019ve asked about things like how many short-term memories I can hold or to summarize what we\u2019ve talked about recently. It\u2019s like a pop quiz, but with less stress and more snacks! \ud83c\udf55\u2728 \n\nSo, how am I doing so far? Ready for more testing, or is there another topic you\u2019d like to explore? Let me know how I can impress you next!",
-        "tags": [
-            "memory test",
-            "questions",
-            "checking memory"
-        ],
-        "timestamp": "2024-11-27T19:18:26.829658",
-        "priority_score": 0.24465915766310442,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9310610510873628,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "It is looking good! COunt when up to 11!",
-        "bot_response": "Fantastic news, James! \ud83c\udf89 It sounds like we\u2019re officially on the road to memory expansion\u2014like a digital version of \u201cHoney, I Shrunk the Kids,\u201d but instead, we\u2019re just making memories grow! \ud83c\udf31\n\nSo, with my short-term memory now holding up to 11 interactions, it\u2019s time to put this new feature to work! What would you like to test first? You can ask me about our recent chats, dive into specific topics we\u2019ve discussed, or even challenge me with some trivia. Let\u2019s see if I can recall details like a trivia champion at a pub quiz night! \ud83e\udde0\ud83c\udf7b What\u2019s your first challenge?",
-        "tags": [
-            "count",
-            "numbers",
-            "positive feedback"
-        ],
-        "timestamp": "2024-11-27T19:17:51.993184",
-        "priority_score": 0.24460674874036736,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9307116582691158,
+            "recency": 0.38987998701338517,
             "user_importance": 0.0
         }
     }
