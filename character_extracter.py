@@ -54,19 +54,62 @@ class CharacterPersonalityExtractor:
     def generate_personality(self, character_analysis: str) -> Dict:
         """Generate personality.json content based on character analysis."""
         prompt = f"""
-        Based on this character analysis, create a personality profile with the following structure:
+        Based on this character analysis, create a detailed personality profile with the following structure.
+        Provide extensive details for each category:
         {{
-            "tone": "(how the character typically communicates)",
-            "response_style": "(their typical way of engaging with others)",
-            "behavior": "(their behavioral patterns)",
+            "tone": "Detailed description of communication style, speech patterns, and typical expressions",
+            "response_style": "In-depth analysis of how they interact with others, including conversation patterns",
+            "behavior": "Comprehensive overview of behavioral patterns, reactions, and decision-making style",
             "user_preferences": {{
-                "likes": [],
-                "dislikes": [],
-                "preferences": {{}}
+                "likes": [
+                    "At least 10 specific things they enjoy, value, or appreciate",
+                    "Include hobbies, attitudes, and preferences"
+                ],
+                "dislikes": [
+                    "At least 10 specific things they dislike or avoid",
+                    "Include pet peeves, frustrations, and sources of discomfort"
+                ],
+                "preferences": {{
+                    "social_style": "How they prefer to interact socially",
+                    "communication": "Preferred communication methods and styles",
+                    "environment": "Preferred surroundings and conditions",
+                    "relationships": "How they approach different types of relationships",
+                    "daily_routine": "Preferred daily patterns and habits",
+                    "conflict_resolution": "How they handle disagreements and problems",
+                    "decision_making": "Their approach to making choices",
+                    "leisure": "How they prefer to spend free time",
+                    "work_style": "How they approach tasks and responsibilities",
+                    "emotional_expression": "How they express and handle emotions"
+                }}
             }},
             "do_dont": {{
-                "do": [],
-                "dont": []
+                "do": [
+                    "At least 10 specific behaviors and actions they consistently demonstrate",
+                    "Include moral principles, habits, and characteristic behaviors"
+                ],
+                "dont": [
+                    "At least 10 specific behaviors and actions they avoid or resist",
+                    "Include personal rules, boundaries, and things they refuse to do"
+                ]
+            }},
+            "personality_traits": {{
+                "strengths": ["List at least 5 major character strengths"],
+                "weaknesses": ["List at least 5 major character flaws or challenges"],
+                "growth_areas": ["List 3-5 areas where character shows development"],
+                "core_values": ["List 5-7 fundamental values that drive the character"],
+                "coping_mechanisms": ["List 3-5 ways they handle stress or difficulties"]
+            }},
+            "background_influence": {{
+                "key_experiences": ["List 3-5 formative experiences that shaped them"],
+                "relationships": ["List significant relationships and their impact"],
+                "worldview": "Description of how they see the world and their place in it"
+            }},
+            "social_dynamics": {{
+                "leadership_style": "How they handle leadership or authority",
+                "group_role": "Their typical role in group situations",
+                "friendship_approach": "How they build and maintain friendships",
+                "trust_patterns": "How they develop and maintain trust",
+                "conflict_style": "How they handle confrontation and disagreement"
             }}
         }}
 
@@ -140,71 +183,97 @@ class CharacterPersonalityExtractor:
 
     def extract_memories(self, epub_content: str, character_name: str) -> List[Dict]:
         """Extract significant memories/interactions involving the character."""
-        prompt = f"""
-        Extract significant memories and interactions involving {character_name} from the text.
-        Format the response as a JSON array of objects, where each object has the following structure:
-        [
-            {{
-                "description": "brief description of the event",
-                "characters": ["list", "of", "involved", "characters"],
-                "emotional_impact": "description of emotional impact",
-                "tags": ["relevant", "tags", "or", "themes"],
-                "timing": "early/middle/late"
-            }}
-        ]
+        base_prompt = f"""
+        You must respond with ONLY a JSON array of memory objects for {character_name}.
+        Each object must follow this exact structure:
+        {{
+            "description": "string describing the event",
+            "characters": ["array of character names"],
+            "emotional_impact": "string describing emotional impact",
+            "tags": ["array of relevant tags"],
+            "timing": "early/middle/late"
+        }}
 
-        Return only the JSON array, properly formatted. Ensure all values are properly quoted strings or arrays.
+        Include memories about:
+        - Major plot events
+        - Personal interactions
+        - Emotional moments
+        - Important decisions
+        - Character development
+        - Significant realizations
         
-        Text content:
-        {epub_content}
+        FORMAT YOUR RESPONSE AS A VALID JSON ARRAY ONLY, starting with [ and ending with ].
         """
-        
-        # Calculate available tokens for the content
-        template_tokens = self.count_tokens(prompt)
-        available_tokens = min(self.token_limit, 4096 - template_tokens - 100)
-        truncated_content = self.truncate_text_to_token_limit(epub_content, available_tokens)
-        
-        final_prompt = prompt.replace(epub_content, truncated_content)
 
-        try:
-            response = self.client.chat.completions.create(
-                model="gpt-4o-mini",
-                messages=[
-                    {"role": "system", "content": "You are a literary analyst extracting character memories and interactions. Always return valid JSON."},
-                    {"role": "user", "content": final_prompt}
-                ],
-                temperature=0.7,
-                max_tokens=1000
-            )
-
-            response_text = response.choices[0].message.content.strip()
-            
+        # Process content in smaller chunks
+        chunk_size = 2000  # Smaller chunk size for better processing
+        content_chunks = [epub_content[i:i + chunk_size] 
+                        for i in range(0, len(epub_content), chunk_size)]
+        
+        all_memories = []
+        for i, chunk in enumerate(content_chunks):
             try:
-                memories = json.loads(response_text)
-                if not isinstance(memories, list):
-                    memories = [memories]
-            except json.JSONDecodeError:
-                import re
-                json_match = re.search(r'(\[[\s\S]*\])', response_text)
-                if json_match:
-                    memories = json.loads(json_match.group(1))
-                else:
-                    raise ValueError("Could not extract valid JSON from response")
+                chunk_prompt = f"""{base_prompt}
 
-            return memories
+    Text content (Part {i+1}/{len(content_chunks)}):
+    {chunk}
 
-        except Exception as e:
-            print(f"Error in extract_memories: {str(e)}")
-            print(f"Raw response: {response_text if 'response_text' in locals() else 'No response received'}")
-            
-            # Return a default memory if extraction fails
-            return [{
-                "description": "Default memory created due to extraction error",
-                "characters": [character_name],
-                "emotional_impact": "neutral",
-                "tags": ["error"],
-                "timing": "early"
-            }]
+    Remember to respond ONLY with a JSON array of memory objects.
+    """
+                
+                response = self.client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=[
+                        {
+                            "role": "system", 
+                            "content": "You are a JSON-generating assistant that creates memory entries. Always respond with valid JSON arrays only."
+                        },
+                        {"role": "user", "content": chunk_prompt}
+                    ],
+                    temperature=0.7,
+                    max_tokens=1000
+                )
+
+                response_text = response.choices[0].message.content.strip()
+                
+                # Clean up the response to ensure it's valid JSON
+                try:
+                    # First try to parse as-is
+                    chunk_memories = json.loads(response_text)
+                    if not isinstance(chunk_memories, list):
+                        chunk_memories = [chunk_memories]
+                except json.JSONDecodeError:
+                    # If that fails, try to extract JSON array
+                    import re
+                    json_match = re.search(r'\[(.*?)\]', response_text, re.DOTALL)
+                    if json_match:
+                        chunk_memories = json.loads(f"[{json_match.group(1)}]")
+                    else:
+                        print(f"Chunk {i+1} did not return valid JSON. Skipping...")
+                        continue
+
+                all_memories.extend(chunk_memories)
+                print(f"Successfully processed chunk {i+1}, found {len(chunk_memories)} memories")
+                
+            except Exception as e:
+                print(f"Error processing chunk {i+1}: {str(e)}")
+                continue
+        
+        # Remove duplicates while preserving order
+        seen = set()
+        unique_memories = []
+        for memory in all_memories:
+            memory_key = memory['description']
+            if memory_key not in seen:
+                seen.add(memory_key)
+                unique_memories.append(memory)
+        
+        # Sort memories chronologically
+        timing_order = {'early': 0, 'middle': 1, 'late': 2}
+        unique_memories.sort(key=lambda x: timing_order[x['timing']])
+        
+        print(f"Total unique memories extracted: {len(unique_memories)}")
+        return unique_memories
 
     def create_memory_graph(self, memories: List[Dict]) -> nx.Graph:
         """Create a memory graph from extracted memories."""

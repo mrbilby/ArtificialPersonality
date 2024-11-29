@@ -1,106 +1,15 @@
 {
     "patterns": {
-        "conversation_patterns": {
-            "response_times": [
-                2592000.0,
-                2592000.0,
-                2592000.0,
-                23760071.275938,
-                8.016783,
-                11.750063
-            ],
-            "conversation_length": [],
-            "topic_transitions": []
-        },
-        "topic_patterns": {
-            "topic_frequency": {
-                "catastrophe": 1,
-                "survival": 2,
-                "loss": 1,
-                "urgency": 1,
-                "responsibility": 1,
-                "cat": 1,
-                "relationship": 1,
-                "betrayal": 1,
-                "heartbreak": 1,
-                "mystery": 1,
-                "new reality": 1,
-                "n/a": 1,
-                "personal well-being": 1,
-                "communication": 1,
-                "social interaction": 1
-            },
-            "topic_chains": [],
-            "topic_duration": {}
-        },
-        "emotional_patterns": {
-            "emotions": [
-                {
-                    "timestamp": "2023-11-30T16:05:48.953657",
-                    "emotion": "neutral",
-                    "intensity": 1.0
-                },
-                {
-                    "timestamp": "2023-12-30T16:05:48.953657",
-                    "emotion": "neutral",
-                    "intensity": 1.0
-                },
-                {
-                    "timestamp": "2024-01-29T16:05:48.953657",
-                    "emotion": "neutral",
-                    "intensity": 1.0
-                },
-                {
-                    "timestamp": "2024-02-28T16:05:48.953657",
-                    "emotion": "neutral",
-                    "intensity": 1.0
-                },
-                {
-                    "timestamp": "2024-11-29T16:07:00.229595",
-                    "emotion": "neutral",
-                    "intensity": 1.0
-                },
-                {
-                    "timestamp": "2024-11-29T16:07:08.246378",
-                    "emotion": "neutral",
-                    "intensity": 1.0
-                },
-                {
-                    "timestamp": "2024-11-29T16:07:19.996441",
-                    "emotion": "neutral",
-                    "intensity": 1.0
-                }
-            ],
-            "emotional_intensity": {},
-            "emotional_progression": []
-        }
+        "conversation_patterns": {},
+        "topic_patterns": {},
+        "emotional_patterns": {}
     },
-    "insights": [
-        "Conversation has relaxed response times",
-        "Conversation shows primarily neutral emotions",
-        "Most discussed topics: survival, catastrophe, loss"
-    ],
+    "insights": [],
     "key_memories": [],
     "relationship_data": {
         "familiarity_level": 0,
         "interaction_quality": [],
-        "shared_interests": [
-            "betrayal",
-            "heartbreak",
-            "relationship",
-            "urgency",
-            "survival",
-            "n/a",
-            "communication",
-            "social interaction",
-            "new reality",
-            "loss",
-            "personal well-being",
-            "catastrophe",
-            "responsibility",
-            "mystery",
-            "cat"
-        ],
+        "shared_interests": [],
         "conversation_style_preferences": {},
         "inside_references": {
             "phrases": {},
@@ -108,5 +17,5 @@
             "context": {}
         }
     },
-    "last_consolidated": "2024-11-29T16:07:20.813108"
+    "last_consolidated": "2024-11-29T16:53:48.230295"
 }

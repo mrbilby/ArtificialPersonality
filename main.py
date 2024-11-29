@@ -378,12 +378,19 @@ class TimeAnalyzer:
         return patterns
 
 class GraphMemoryManager:
-    def __init__(self, graph_file='memory_graph.json'):
-        self.graph_file = graph_file
+    def __init__(self, personality_name='default'):
+        self.graph_file = self._get_graph_file(personality_name)
         self.G = self._load_or_create_graph()
-    
+
+    def _get_graph_file(self, personality_name: str) -> str:
+        """Determine the graph file based on the personality name."""
+        if personality_name.lower() == 'default':
+            return 'memory_graph.json'
+        else:
+            return f'{personality_name.lower()}_memory_graph.json'
+
     def _load_or_create_graph(self):
-        """Load existing graph or create new one."""
+        """Load existing graph or create a new one."""
         try:
             with open(self.graph_file, 'r') as f:
                 data = json.load(f)
@@ -399,7 +406,19 @@ class GraphMemoryManager:
                 
                 return G
         except (FileNotFoundError, json.JSONDecodeError):
+            print(f"[Debug] No existing graph found for {self.graph_file}. Creating a new graph.")
             return nx.Graph()
+
+    def save_graph(self):
+        """Save graph to file."""
+        graph_data = {
+            'nodes': [[n, data] for n, data in self.G.nodes(data=True)],
+            'edges': [[u, v, data] for u, v, data in self.G.edges(data=True)]
+        }
+        with open(self.graph_file, 'w') as f:
+            json.dump(graph_data, f, indent=4)
+        print(f"[Debug] Memory graph saved to {self.graph_file}")
+
 
     def calculate_tag_similarity(self, tags1, tags2):
         """Calculate Jaccard similarity between two sets of tags."""
@@ -469,14 +488,6 @@ class GraphMemoryManager:
         
         return sorted(similarities, key=lambda x: x[1], reverse=True)[:top_n]
 
-    def save_graph(self):
-        """Save graph to file."""
-        graph_data = {
-            'nodes': [[n, data] for n, data in self.G.nodes(data=True)],
-            'edges': [[u, v, data] for u, v, data in self.G.edges(data=True)]
-        }
-        with open(self.graph_file, 'w') as f:
-            json.dump(graph_data, f, indent=4)
 
 class Memory:
     def __init__(self, max_interactions: int):
@@ -643,9 +654,9 @@ class ShortTermMemory(Memory):
             self.interactions = self.interactions[:self.max_interactions]
 
 class LongTermMemory(Memory):
-    def __init__(self, max_interactions: int = 1000):
+    def __init__(self, max_interactions: int = 1000, personality_name: str = 'default'):
         super().__init__(max_interactions)
-        self.graph_manager = GraphMemoryManager()
+        self.graph_manager = GraphMemoryManager(personality_name)
 
     def add_interaction(self, interaction: Interaction):
         # Call parent class add_interaction to maintain core functionality
@@ -1081,7 +1092,7 @@ class PersonalityManager:
         
         # Initialize memories
         short_memory = ShortTermMemory(max_interactions=25)
-        long_memory = LongTermMemory(max_interactions=1000)
+        long_memory = LongTermMemory(max_interactions=1000, personality_name=name)
         
         # Try to load existing memories
         try:
