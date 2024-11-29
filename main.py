@@ -389,6 +389,7 @@ class GraphMemoryManager:
         else:
             return f'{personality_name.lower()}_memory_graph.json'
 
+
     def _load_or_create_graph(self):
         """Load existing graph or create a new one."""
         try:
@@ -661,12 +662,13 @@ class LongTermMemory(Memory):
     def add_interaction(self, interaction: Interaction):
         # Call parent class add_interaction to maintain core functionality
         super().add_interaction(interaction)
-        
+
         # Add to graph after successful addition to main memory
         try:
             memory_dict = interaction.to_dict()
             self.graph_manager.add_memory(memory_dict)
-            print("[Debug] Interaction added to memory graph")
+            self.graph_manager.save_graph()  # Save graph to persist changes
+            print("[Debug] Interaction added to memory graph and saved.")
         except Exception as e:
             print(f"[Error] Failed to add interaction to graph: {e}")
 
@@ -878,24 +880,31 @@ class MemoryConsolidator:
             'neutral': 1.0
         }
 
+    def load_consolidated_memory(self, file_path: str = "consolidated_memory.json"):
+        """Load consolidated memory from file."""
+        try:
+            with open(file_path, 'r') as f:
+                data = json.load(f)
+                self.consolidated_memory = ConsolidatedMemory.from_dict(data)
+                print(f"[Debug] Loaded consolidated memory from {file_path}")
+        except FileNotFoundError:
+            print(f"[Debug] No existing consolidated memory found at {file_path}. Starting fresh.")
+            self.consolidated_memory = ConsolidatedMemory()
+
+    def save_consolidated_memory(self, file_path: str = "consolidated_memory.json"):
+        """Save consolidated memory to file."""
+        try:
+            with open(file_path, 'w') as f:
+                json.dump(self.consolidated_memory.to_dict(), f, indent=4)
+            print(f"[Debug] Saved consolidated memory to {file_path}")
+        except Exception as e:
+            print(f"[Error] Failed to save consolidated memory: {e}")
+
     def should_consolidate(self) -> bool:
         """Check if enough time has passed for consolidation"""
         time_since_last = datetime.now() - self.consolidated_memory.last_consolidated
         return time_since_last >= self.consolidation_interval
 
-    def save_consolidated_memory(self, file_path: str = "consolidated_memory.json"):
-        """Save consolidated memory to file"""
-        with open(file_path, 'w') as f:
-            json.dump(self.consolidated_memory.to_dict(), f, indent=4)
-
-    def load_consolidated_memory(self, file_path: str = "consolidated_memory.json"):
-        """Load consolidated memory from file"""
-        try:
-            with open(file_path, 'r') as f:
-                data = json.load(f)
-                self.consolidated_memory = ConsolidatedMemory.from_dict(data)
-        except FileNotFoundError:
-            self.consolidated_memory = ConsolidatedMemory()
 
     def _analyze_conversation_patterns(self, interactions: List[Interaction]) -> Dict:
         """Analyze patterns in conversation flow and timing"""
@@ -1076,16 +1085,15 @@ class PersonalityManager:
         return profile
     
     def load_or_create_personality(self, name: str) -> Tuple[PersonalityProfile, ShortTermMemory, LongTermMemory]:
-        """Load existing personality or create new one"""
+        """Load existing personality or create new one."""
         files = self.get_personality_files(name)
         
-        # Try to load existing personality
+        # Load or create personality
         try:
             personality = PersonalityProfile.load_from_file(files["personality"])
             personality.set_name(name)  # Ensure name is set
             print(f"[Info] Loaded existing personality: {name}")
         except FileNotFoundError:
-            # Create new personality
             personality = self.create_default_personality(name)
             personality.save_to_file(files["personality"])
             print(f"[Info] Created new personality: {name}")
@@ -1094,7 +1102,7 @@ class PersonalityManager:
         short_memory = ShortTermMemory(max_interactions=25)
         long_memory = LongTermMemory(max_interactions=1000, personality_name=name)
         
-        # Try to load existing memories
+        # Load short-term and long-term memories
         try:
             with open(files["short_memory"], "r") as f:
                 short_memory.load_from_list(json.load(f))
@@ -1107,31 +1115,45 @@ class PersonalityManager:
         except FileNotFoundError:
             print(f"[Info] No existing long-term memory for {name}. Starting fresh.")
         
+        # Load consolidated memory
+        memory_consolidator = MemoryConsolidator(short_memory, long_memory)
+        memory_consolidator.load_consolidated_memory(file_path=files["consolidated_memory"])
+        
         return personality, short_memory, long_memory
+
     
     def save_personality_state(self, name: str, personality: PersonalityProfile, 
                             short_memory: ShortTermMemory, long_memory: LongTermMemory,
-                            consolidated_memory: ConsolidatedMemory):
-        """Save all personality-related files"""
+                            memory_consolidator: MemoryConsolidator):
+        """Save all personality-related files."""
         files = self.get_personality_files(name)
         
         try:
-            # Don't save personality.json for default name if it's not the default file
+            # Save personality profile
             if name != "default" or files["personality"] != "personality.json":
                 personality.save_to_file(files["personality"])
-                
+            
+            # Save short-term memory
             with open(files["short_memory"], "w") as f:
                 json.dump(short_memory.to_list(), f, indent=4)
-                
+            
+            # Save long-term memory
             with open(files["long_memory"], "w") as f:
                 json.dump(long_memory.to_list(), f, indent=4)
-                
-            with open(files["consolidated_memory"], "w") as f:
-                json.dump(consolidated_memory.to_dict(), f, indent=4)
+            
+            # Save consolidated memory using the MemoryConsolidator instance
+            consolidated_memory_file = files["consolidated_memory"]
+            memory_consolidator.save_consolidated_memory(file_path=consolidated_memory_file)
+            
+            # Explicitly save the memory graph
+            long_memory.graph_manager.save_graph()
             
             print(f"[Debug] Saved all state files for personality: {name}")
         except Exception as e:
             print(f"[Error] Failed to save personality state: {e}")
+
+
+
     
     def list_available_personalities(self) -> List[str]:
         """List all available personalities including default"""
@@ -1464,11 +1486,12 @@ def main():
     
     # Save personality state before exiting
     personality_manager.save_personality_state(
-    personality_name, 
-    personality, 
-    short_memory, 
-    long_memory,
-    chatbot.memory_consolidator.consolidated_memory)
+        personality_name, 
+        personality, 
+        short_memory, 
+        long_memory,
+        chatbot.memory_consolidator  # Pass the MemoryConsolidator instance here
+    )
     print(f"Session saved for personality: {personality_name}. Goodbye!")
 
 if __name__ == "__main__":

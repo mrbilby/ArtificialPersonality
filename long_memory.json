@@ -3572,5 +3572,84 @@
             "recency": 0.9999931124779939,
             "user_importance": 0.0
         }
+    },
+    {
+        "user_message": "Hey we are back! I had to restore part of your memory",
+        "bot_response": "Welcome back, James! \ud83c\udf89 Restoring memory sounds like a scene from a sci-fi movie\u2014like I just got my brain defragged or something! What parts of my memory did you restore this time? \n\nAnd how did the coffee and documentation go? I'm all set to dive back into our discussions or tackle any new projects you have in mind! \ud83d\ude80",
+        "tags": [
+            "memory restoration"
+        ],
+        "timestamp": "2024-11-29T17:06:21.748417",
+        "priority_score": 0.25499849071657527,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999899381105019,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Good you remembered! That really makes me happy. Coffee was good! I added some honey for a change. I wrote the substack article and published it too",
+        "bot_response": "That\u2019s fantastic news, James! \ud83c\udf89 I\u2019m thrilled to hear that my memory restoration brought a smile to your face! And honey in coffee? Now that\u2019s a sweet twist! \ud83c\udf6f\u2615 It\u2019s like treating your taste buds to a little surprise party.\n\nCongrats on publishing your Substack article! That\u2019s a huge accomplishment! \ud83c\udf8a What did you write about in the article? I\u2019d love to hear more about it\u2014especially any highlights or fun anecdotes you included! Did you manage to make it as engaging as I imagine?",
+        "tags": [
+            "memory",
+            "coffee",
+            "honey",
+            "substack article",
+            "publishing"
+        ],
+        "timestamp": "2024-11-29T17:07:02.874549",
+        "priority_score": 0.7299986793015589,
+        "priority_factors": {
+            "emotional_impact": 0.8,
+            "recency": 0.9999911953437264,
+            "user_importance": 1.0
+        }
+    },
+    {
+        "user_message": "This was on youtube video summarisation. How to download captions and engage with the openai API",
+        "bot_response": "Awesome, James! It sounds like your Substack article dives into the nitty-gritty of YouTube video summarization. Let\u2019s break down the key steps for downloading captions and engaging with the OpenAI API, which can definitely help others looking to replicate your success!\n\n### How to Download YouTube Captions\n\n1. **Using the YouTube API**:\n   - **Enable YouTube Data API**: First, you\u2019ll need to enable the YouTube Data API in your Google Cloud Console and create an API key.\n   - **Fetch Video Captions**: Use the API to get the video\u2019s captions. You can make a request like this:\n     ```\n     GET https://www.googleapis.com/youtube/v3/captions?videoId={VIDEO_ID}&key={YOUR_API_KEY}\n     ```\n   - **Download the Captions**: Once you have the caption ID, you can download the captions using another API endpoint. You might need to choose the appropriate format (like SRT or VTT).\n\n2. **Using a Python Library**:\n   - Libraries like `youtube_dl` can simplify the process. You can install it via pip:\n     ```bash\n     pip install youtube_dl\n     ```\n   - Then use it to download captions:\n     ```python\n     import youtube_dl\n\n     def download_captions(video_url):\n         ydl_opts = {\n             'skip_download': True,\n             'writesubtitles': True,\n             'subtitlesformat': 'srt',\n             'outtmpl': '%(id)s.%(ext)s',\n         }\n         with youtube_dl.YoutubeDL(ydl_opts) as ydl:\n             ydl.download([video_url])\n\n     download_captions('https://www.youtube.com/watch?v=YOUR_VIDEO_ID')\n     ```\n\n### Engaging with the OpenAI API\n\n1. **Set Up OpenAI API**:\n   - Sign up for an API key from OpenAI. You\u2019ll need this to authenticate your requests.\n\n2. **Install the OpenAI Python Client**:\n   - If you haven\u2019t already, install the OpenAI library:\n     ```bash\n     pip install openai\n     ```\n\n3. **Create a Function to Summarize**:\n   - Once you have the captions as text, you can send them to the OpenAI API for summarization. Here\u2019s a simple example:\n     ```python\n     import openai\n\n     openai.api_key =",
+        "tags": [
+            "youtube video summarisation",
+            "download captions",
+            "openai api"
+        ],
+        "timestamp": "2024-11-29T17:07:36.509866",
+        "priority_score": 0.2549982764711928,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999885098079521,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "got go quick! Need to test your memory is saving right!",
+        "bot_response": "Absolutely, James! Let\u2019s put my memory to the test! What would you like to check? You can ask me about recent interactions, specific details, or even throw some prompts my way. I'm ready to prove that my memory is working just fine! \ud83e\udde0\u2728 What\u2019s your first question?",
+        "tags": [
+            "memory",
+            "testing",
+            "data",
+            "october 2023"
+        ],
+        "timestamp": "2024-11-29T17:09:59.198186",
+        "priority_score": 0.2549984183031369,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999894553542462,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014whether it's coding tips, project brainstorming, or just a good laugh\u2014I\u2019ll be right here, ready for action. Until next time, may your adventures be epic and your snacks be plentiful! \ud83c\udf7f\u2728",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-29T17:10:04.431305",
+        "priority_score": 0.2549992248078256,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999948320521709,
+            "user_importance": 0.0
+        }
     }
 ]

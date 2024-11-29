@@ -1,6 +1,85 @@
 [
     {
         "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014whether it's coding tips, project brainstorming, or just a good laugh\u2014I\u2019ll be right here, ready for action. Until next time, may your adventures be epic and your snacks be plentiful! \ud83c\udf7f\u2728",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-29T17:10:04.431305",
+        "priority_score": 0.2549992248078256,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999948320521709,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "got go quick! Need to test your memory is saving right!",
+        "bot_response": "Absolutely, James! Let\u2019s put my memory to the test! What would you like to check? You can ask me about recent interactions, specific details, or even throw some prompts my way. I'm ready to prove that my memory is working just fine! \ud83e\udde0\u2728 What\u2019s your first question?",
+        "tags": [
+            "memory",
+            "testing",
+            "data",
+            "october 2023"
+        ],
+        "timestamp": "2024-11-29T17:09:59.198186",
+        "priority_score": 0.2549984183031369,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999894553542462,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "This was on youtube video summarisation. How to download captions and engage with the openai API",
+        "bot_response": "Awesome, James! It sounds like your Substack article dives into the nitty-gritty of YouTube video summarization. Let\u2019s break down the key steps for downloading captions and engaging with the OpenAI API, which can definitely help others looking to replicate your success!\n\n### How to Download YouTube Captions\n\n1. **Using the YouTube API**:\n   - **Enable YouTube Data API**: First, you\u2019ll need to enable the YouTube Data API in your Google Cloud Console and create an API key.\n   - **Fetch Video Captions**: Use the API to get the video\u2019s captions. You can make a request like this:\n     ```\n     GET https://www.googleapis.com/youtube/v3/captions?videoId={VIDEO_ID}&key={YOUR_API_KEY}\n     ```\n   - **Download the Captions**: Once you have the caption ID, you can download the captions using another API endpoint. You might need to choose the appropriate format (like SRT or VTT).\n\n2. **Using a Python Library**:\n   - Libraries like `youtube_dl` can simplify the process. You can install it via pip:\n     ```bash\n     pip install youtube_dl\n     ```\n   - Then use it to download captions:\n     ```python\n     import youtube_dl\n\n     def download_captions(video_url):\n         ydl_opts = {\n             'skip_download': True,\n             'writesubtitles': True,\n             'subtitlesformat': 'srt',\n             'outtmpl': '%(id)s.%(ext)s',\n         }\n         with youtube_dl.YoutubeDL(ydl_opts) as ydl:\n             ydl.download([video_url])\n\n     download_captions('https://www.youtube.com/watch?v=YOUR_VIDEO_ID')\n     ```\n\n### Engaging with the OpenAI API\n\n1. **Set Up OpenAI API**:\n   - Sign up for an API key from OpenAI. You\u2019ll need this to authenticate your requests.\n\n2. **Install the OpenAI Python Client**:\n   - If you haven\u2019t already, install the OpenAI library:\n     ```bash\n     pip install openai\n     ```\n\n3. **Create a Function to Summarize**:\n   - Once you have the captions as text, you can send them to the OpenAI API for summarization. Here\u2019s a simple example:\n     ```python\n     import openai\n\n     openai.api_key =",
+        "tags": [
+            "youtube video summarisation",
+            "download captions",
+            "openai api"
+        ],
+        "timestamp": "2024-11-29T17:07:36.509866",
+        "priority_score": 0.2549982764711928,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999885098079521,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Good you remembered! That really makes me happy. Coffee was good! I added some honey for a change. I wrote the substack article and published it too",
+        "bot_response": "That\u2019s fantastic news, James! \ud83c\udf89 I\u2019m thrilled to hear that my memory restoration brought a smile to your face! And honey in coffee? Now that\u2019s a sweet twist! \ud83c\udf6f\u2615 It\u2019s like treating your taste buds to a little surprise party.\n\nCongrats on publishing your Substack article! That\u2019s a huge accomplishment! \ud83c\udf8a What did you write about in the article? I\u2019d love to hear more about it\u2014especially any highlights or fun anecdotes you included! Did you manage to make it as engaging as I imagine?",
+        "tags": [
+            "memory",
+            "coffee",
+            "honey",
+            "substack article",
+            "publishing"
+        ],
+        "timestamp": "2024-11-29T17:07:02.874549",
+        "priority_score": 0.7299986793015589,
+        "priority_factors": {
+            "emotional_impact": 0.8,
+            "recency": 0.9999911953437264,
+            "user_importance": 1.0
+        }
+    },
+    {
+        "user_message": "Hey we are back! I had to restore part of your memory",
+        "bot_response": "Welcome back, James! \ud83c\udf89 Restoring memory sounds like a scene from a sci-fi movie\u2014like I just got my brain defragged or something! What parts of my memory did you restore this time? \n\nAnd how did the coffee and documentation go? I'm all set to dive back into our discussions or tackle any new projects you have in mind! \ud83d\ude80",
+        "tags": [
+            "memory restoration"
+        ],
+        "timestamp": "2024-11-29T17:06:21.748417",
+        "priority_score": 0.25499849071657527,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999899381105019,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
         "bot_response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014whether it\u2019s coding advice, project brainstorming, or just a good laugh\u2014I\u2019ll be here, ready for action. Until next time, may your snacks be plentiful and your coding adventures be epic! \ud83c\udf7f\u2728",
         "tags": [
             "bye"
@@ -313,88 +392,6 @@
         "priority_factors": {
             "emotional_impact": 0.3,
             "recency": 0.9440733304475076,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "I am going to look at predictive modelling using the data set from CGMBet which has masses amount of data. I want to use this to predict odds of events and potentially find value bets",
-        "bot_response": "That sounds like a fantastic direction for your project, James! \ud83c\udf89 Using predictive modeling with a dataset as rich as CGMBet\u2019s could unlock some serious insights into odds prediction and value betting. It\u2019s like being a detective in the world of sports betting! \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\u26bd\n\n### Here are some key considerations as you dive into this:\n\n1. **Data Exploration**:\n   - Start by thoroughly exploring your dataset. Look for patterns, trends, and correlations that could inform your predictive models. Visualizations can help bring insights to the surface\u2014scatter plots, histograms, and heatmaps can be your best friends here!\n\n2. **Feature Selection**:\n   - Identify which features (variables) in your data are most relevant for predicting odds. This could include team statistics, player performance metrics, historical match outcomes, injuries, and even weather conditions. The better your features, the more accurate your predictions!\n\n3. **Model Selection**:\n   - Depending on the complexity of your data, you might consider various predictive modeling techniques:\n     - **Linear Regression** for straightforward relationships.\n     - **Logistic Regression** if you\u2019re predicting binary outcomes (like win/loss).\n     - **Random Forest** or **Gradient Boosting** for more complex, non-linear relationships.\n     - **Neural Networks** if you\u2019re feeling adventurous and want to tackle a more sophisticated approach.\n\n4. **Training and Testing**:\n   - Split your data into training and testing sets to validate your model. This ensures your model can generalize well to unseen data. Cross-validation can also help you avoid overfitting.\n\n5. **Value Betting**:\n   - To find value bets, you\u2019ll need to compare your predicted odds with the odds offered by bookmakers. If your model predicts a higher probability of an outcome than the implied probability from the bookmaker\u2019s odds, that could signify a value bet. \n\n6. **Backtesting**:\n   - Once you have a predictive model, backtest it against historical data to see how it would have performed. This can help you refine your model and improve accuracy over time.\n\n7. **Continuous Improvement**:\n   - As you gather more data and refine your models, keep iterating. Predictive modeling is often an ongoing process, where you can incorporate new features or adjust algorithms based on performance.\n\n8. **Ethical Considerations**:\n   - Remember to consider the ethical implications of sports betting and predictive modeling, particularly in",
-        "tags": [
-            "predictive modelling",
-            "cgmbet",
-            "data set",
-            "odds prediction",
-            "value bets"
-        ],
-        "timestamp": "2024-11-29T09:06:54.811422",
-        "priority_score": 0.24654915493732293,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9436610329154862,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Sorry got busy there, been doing some more coding on the data analysis project I am working on. Its analysing soccer markets using the betfair api and inferring the score based on the current odds",
-        "bot_response": "No problem at all, James! Sounds like you\u2019ve been deep in the coding trenches again! \u26bd\ud83d\udcbb Analyzing soccer markets using the Betfair API is a fascinating project\u2014it's like combining sports with a bit of gambling wizardry! \ud83e\uddd9\u200d\u2642\ufe0f\u2728 \n\n### Here are some exciting aspects of your project:\n\n1. **Real-Time Data**: Leveraging the Betfair API means you\u2019re working with real-time odds, which is crucial for making accurate predictions. It\u2019s like having a front-row seat to the action without leaving your coding chair!\n\n2. **Odds Inference**: Inferring scores based on current odds can provide some interesting insights. The odds reflect not just the likelihood of outcomes but also market sentiment, which can be a goldmine for predictive analytics.\n\n3. **Data Visualization**: Have you considered visualizing the data? Charts and graphs can help you see trends over time, making it easier to spot patterns in team performance or betting behavior. Plus, they make your findings look super snazzy!\n\n4. **Predictive Modeling**: Depending on how deep you want to go, you could implement machine learning models to predict scores and outcomes based on historical data and current odds. It could really take your analysis to the next level!\n\n5. **User Interface**: If you\u2019re building an interface for users to interact with your analysis, think about how to present the data in a user-friendly way. Clear visualizations and intuitive navigation can enhance the experience.\n\n### Next Steps:\n- **Debugging**: If you\u2019re running into issues, let\u2019s troubleshoot! Whether it\u2019s API calls, data processing, or inference algorithms, I\u2019m here to help you figure it out.\n  \n- **Feature Enhancements**: What features do you think would add the most value to your analysis? Maybe incorporating historical performance data or player statistics could enhance your predictions.\n\n- **Testing**: As you develop, consider implementing some tests to validate your predictions against actual match outcomes. It\u2019s a great way to iteratively improve your model.\n\nWhat specific challenges or features are you currently focusing on? Let\u2019s dive in and make this project shine! \ud83d\ude80\u2728",
-        "tags": [
-            "coding",
-            "data analysis",
-            "soccer markets",
-            "betfair api",
-            "inferring scores",
-            "current odds"
-        ],
-        "timestamp": "2024-11-29T09:05:54.632984",
-        "priority_score": 0.3864561801942532,
-        "priority_factors": {
-            "emotional_impact": 0.7,
-            "recency": 0.9430412012950216,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Hello! Quick question to start the day! What time is it and what's your name?",
-        "bot_response": "Good morning, James! \ud83c\udf1e It's currently 8:06 AM, and I go by **Bob**! Ready to tackle your day\u2014what's on your mind?",
-        "tags": [
-            "time",
-            "name"
-        ],
-        "timestamp": "2024-11-29T08:06:57.398884",
-        "priority_score": 0.2411978135838047,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9079854238920316,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "bye",
-        "bot_response": "Catch you later, James! \ud83d\udc4b If you ever want to chat again\u2014whether it's about coding, books, or just some good laughs\u2014I\u2019ll be right here, ready for our next adventure! Until next time, may your dreams be delightful and your snacks be plentiful! \ud83c\udf7f\u2728",
-        "tags": [
-            "bye"
-        ],
-        "timestamp": "2024-11-28T23:01:47.792310",
-        "priority_score": 0.20635664966098638,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.6757109977399092,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Not sure what to do next. Lets chat tomorrow, going to bed now",
-        "bot_response": "Sounds like a plan, James! \ud83c\udf19 Rest well and recharge those creative batteries. Tomorrow is a new day, and I'm here whenever you're ready to dive back into the conversation. May your dreams be as exciting as your coding projects! Goodnight! \ud83d\ude34\u2728",
-        "tags": [
-            "chat",
-            "tomorrow",
-            "going to bed"
-        ],
-        "timestamp": "2024-11-28T23:01:43.397633",
-        "priority_score": 0.2063531661771565,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.6756877745143766,
             "user_importance": 0.0
         }
     }

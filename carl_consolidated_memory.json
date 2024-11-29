@@ -1,15 +1,534 @@
 {
     "patterns": {
-        "conversation_patterns": {},
-        "topic_patterns": {},
-        "emotional_patterns": {}
+        "conversation_patterns": {
+            "response_times": [
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                2592000.0,
+                -1692143936.243066,
+                22.405651,
+                12.449698,
+                1400.26841,
+                13.302545,
+                1094.61095,
+                32.667307,
+                6.683538,
+                405.995489,
+                15.133927,
+                14.968256,
+                30.753067,
+                4.649535,
+                378.313336,
+                14.972885,
+                20.647141,
+                3.470408,
+                94.092544,
+                17.672315,
+                9.518791
+            ],
+            "conversation_length": [],
+            "topic_transitions": []
+        },
+        "topic_patterns": {
+            "topic_frequency": {
+                "conflict": 1,
+                "strategy": 3,
+                "morality": 1,
+                "explosion": 1,
+                "survival": 4,
+                "fear": 1,
+                "doubt": 1,
+                "reflection": 3,
+                "consequences": 1,
+                "friendship": 2,
+                "humor": 2,
+                "light-hearted": 1,
+                "decision": 1,
+                "urgency": 3,
+                "adventure": 2,
+                "loss": 1,
+                "destruction": 1,
+                "sorrow": 1,
+                "escape": 1,
+                "teamwork": 1,
+                "despair": 1,
+                "realization": 3,
+                "extinction": 1,
+                "hopelessness": 1,
+                "contemplation": 1,
+                "loneliness": 1,
+                "humanity": 1,
+                "achievement": 1,
+                "skill development": 1,
+                "growth": 1,
+                "excitement": 1,
+                "rewards": 1,
+                "loot": 1,
+                "emotions": 1,
+                "character development": 2,
+                "emotional moment": 1,
+                "support": 1,
+                "character interaction": 1,
+                "concern": 2,
+                "rest": 1,
+                "camaraderie": 1,
+                "bonding": 1,
+                "anticipation": 1,
+                "companionship": 1,
+                "joy": 1,
+                "distraction": 1,
+                "accusation": 1,
+                "drama": 1,
+                "revelation": 1,
+                "danger": 3,
+                "group dynamics": 1,
+                "confrontation": 1,
+                "victory": 1,
+                "violence": 1,
+                "social issue": 1,
+                "anger": 1,
+                "vulnerability": 1,
+                "desperation": 1,
+                "suspense": 1,
+                "leadership": 1,
+                "decision-making": 1,
+                "courage": 1,
+                "protection": 2,
+                "responsibility": 1,
+                "action": 1,
+                "safety": 1,
+                "bond": 1,
+                "connection": 1,
+                "greetings": 1,
+                "conversation": 2,
+                "social interaction": 1,
+                "daily challenges": 1,
+                "personal struggles": 1,
+                "coping mechanisms": 1,
+                "work": 1,
+                "play": 1,
+                "greeting": 1,
+                "bye": 4,
+                "tests": 1,
+                "communication": 1,
+                "brief interaction": 1,
+                "memory management": 1,
+                "long term memories": 2,
+                "graph plot": 1,
+                "testing": 1,
+                "carl": 2,
+                "retry": 1,
+                "attempt": 1,
+                "chat": 1,
+                "saved": 1,
+                "mindfulness": 1,
+                "thoughts": 1,
+                "mental health": 1,
+                "self-reflection": 1,
+                "departure": 1,
+                "bug": 1,
+                "dungeon": 1,
+                "experience": 1,
+                "bad holidays": 1,
+                "memory saving": 1
+            },
+            "topic_chains": [],
+            "topic_duration": {}
+        },
+        "emotional_patterns": {
+            "emotions": [
+                {
+                    "timestamp": "2076-02-25T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2076-03-26T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2076-04-25T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2076-05-25T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2076-06-24T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2076-07-24T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2076-08-23T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2076-09-22T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2076-10-22T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2076-11-21T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2076-12-21T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2077-01-20T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2077-02-19T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2077-03-21T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2077-04-20T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2077-05-20T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2077-06-19T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2077-07-19T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2077-08-18T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2077-09-17T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2077-10-17T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2077-11-16T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2077-12-16T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2078-01-15T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2078-02-14T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2078-03-16T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2078-04-15T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2078-05-15T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2078-06-14T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2078-07-14T16:28:54.333377",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T16:29:58.090311",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T16:30:20.495962",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T16:30:32.945660",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T16:53:53.214070",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T16:54:06.516615",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:12:21.127565",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:12:53.794872",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:13:00.478410",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:19:46.473899",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:20:01.607826",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:20:16.576082",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:20:47.329149",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:20:51.978684",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:27:10.292020",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:27:25.264905",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:27:45.912046",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:27:49.382454",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:29:23.474998",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:29:41.147313",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T17:29:50.666104",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                }
+            ],
+            "emotional_intensity": {},
+            "emotional_progression": []
+        }
     },
-    "insights": [],
+    "insights": [
+        "Conversation has quick response times",
+        "Conversation shows primarily neutral emotions",
+        "Most discussed topics: survival, bye, strategy"
+    ],
     "key_memories": [],
     "relationship_data": {
-        "familiarity_level": 0,
+        "familiarity_level": 67,
         "interaction_quality": [],
-        "shared_interests": [],
+        "shared_interests": [
+            "humanity",
+            "companionship",
+            "desperation",
+            "humor",
+            "explosion",
+            "anger",
+            "connection",
+            "loot",
+            "strategy",
+            "memory management",
+            "friendship",
+            "revelation",
+            "distraction",
+            "greetings",
+            "chat",
+            "despair",
+            "contemplation",
+            "support",
+            "social interaction",
+            "growth",
+            "decision-making",
+            "bye",
+            "morality",
+            "long term memories",
+            "memory saving",
+            "safety",
+            "violence",
+            "bond",
+            "leadership",
+            "extinction",
+            "departure",
+            "vulnerability",
+            "adventure",
+            "bonding",
+            "camaraderie",
+            "conflict",
+            "danger",
+            "responsibility",
+            "suspense",
+            "concern",
+            "decision",
+            "thoughts",
+            "mental health",
+            "excitement",
+            "coping mechanisms",
+            "greeting",
+            "survival",
+            "rewards",
+            "retry",
+            "mindfulness",
+            "tests",
+            "escape",
+            "realization",
+            "work",
+            "fear",
+            "victory",
+            "conversation",
+            "anticipation",
+            "rest",
+            "character development",
+            "saved",
+            "urgency",
+            "loss",
+            "skill development",
+            "light-hearted",
+            "bad holidays",
+            "character interaction",
+            "protection",
+            "consequences",
+            "courage",
+            "hopelessness",
+            "group dynamics",
+            "attempt",
+            "social issue",
+            "emotional moment",
+            "experience",
+            "bug",
+            "action",
+            "graph plot",
+            "personal struggles",
+            "achievement",
+            "doubt",
+            "accusation",
+            "dungeon",
+            "emotions",
+            "communication",
+            "play",
+            "joy",
+            "sorrow",
+            "carl",
+            "teamwork",
+            "destruction",
+            "self-reflection",
+            "reflection",
+            "confrontation",
+            "loneliness",
+            "daily challenges",
+            "drama",
+            "testing",
+            "brief interaction"
+        ],
         "conversation_style_preferences": {},
         "inside_references": {
             "phrases": {},
@@ -17,5 +536,5 @@
             "context": {}
         }
     },
-    "last_consolidated": "2024-11-29T16:53:48.230295"
+    "last_consolidated": "2024-11-29T17:29:51.652581"
 }
