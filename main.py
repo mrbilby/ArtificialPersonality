@@ -11,6 +11,17 @@ import networkx as nx
 # Load environment variables from .env file
 load_dotenv()
 
+def normalize_timestamp(timestamp_str):
+    try:
+        timestamp = datetime.fromisoformat(timestamp_str)
+        if timestamp > datetime.now():
+            print(f"[Warning] Future timestamp detected: {timestamp_str}. Adjusting to current time.")
+            return datetime.now()
+        return timestamp
+    except ValueError:
+        print(f"[Warning] Invalid timestamp format: {timestamp_str}. Setting to current time.")
+        return datetime.now()
+
 
 class PersonalityProfile:
     def __init__(
@@ -141,10 +152,23 @@ class Interaction:
             tags=data.get("tags", [])
         )
         # Deserialize timestamp correctly
-        interaction.timestamp = datetime.fromisoformat(data["timestamp"])
+        timestamp_str = data.get("timestamp")
+        if timestamp_str:
+            try:
+                interaction.timestamp = datetime.fromisoformat(timestamp_str)
+                if interaction.timestamp > datetime.now():
+                    print(f"[Warning] Future timestamp detected: {interaction.timestamp}. Adjusting to current time.")
+                    interaction.timestamp = datetime.now()
+            except ValueError:
+                print(f"[Warning] Invalid timestamp format: {timestamp_str}. Setting to current time.")
+                interaction.timestamp = datetime.now()
+        else:
+            print(f"[Warning] Missing timestamp in interaction. Setting to current time.")
+            interaction.timestamp = datetime.now()
         interaction.priority_score = float(data.get("priority_score", 0.0))
         interaction.priority_factors = data.get("priority_factors", {})
         return interaction
+
     
 
 class MemoryPriority:
@@ -334,9 +358,13 @@ class TimeAnalyzer:
             return patterns
 
         # Sort interactions by timestamp
-        sorted_interactions = sorted(interactions, key=lambda x: x.timestamp)
-        
-        # Get current time
+        try:
+            sorted_interactions = sorted(interactions, key=lambda x: x.timestamp)
+        except Exception as e:
+            print(f"[Debug] Error sorting interactions: {e}")
+            return patterns  # Early return since we can't proceed without sorted interactions
+
+        # Proceed with analysis
         now = datetime.now()
         
         try:
@@ -348,14 +376,14 @@ class TimeAnalyzer:
             last_two_messages = sorted_interactions[-2:]
             if len(last_two_messages) == 2:
                 time_between = (last_two_messages[1].timestamp - 
-                              last_two_messages[0].timestamp).total_seconds()
+                            last_two_messages[0].timestamp).total_seconds()
                 patterns['current_response_time'] = time_between
             
             # Calculate recent response times (last 5 pairs)
             recent_times = []
             for i in range(len(sorted_interactions)-1):
                 time_diff = (sorted_interactions[i+1].timestamp - 
-                           sorted_interactions[i].timestamp).total_seconds()
+                        sorted_interactions[i].timestamp).total_seconds()
                 recent_times.append(time_diff)
             
             if recent_times:
@@ -377,8 +405,8 @@ class TimeAnalyzer:
             print(f"[Debug] Error in time analysis: {e}")
             
         patterns['total_interactions'] = len(sorted_interactions)
-
         return patterns
+
 
 class GraphMemoryManager:
     def __init__(self, personality_name='default'):
@@ -402,6 +430,10 @@ class GraphMemoryManager:
                 
                 # Reconstruct nodes
                 for node_id, node_data in data['nodes']:
+                    # Ensure 'timestamp' and 'tags' exist
+                    if 'timestamp' not in node_data or 'tags' not in node_data:
+                        print(f"[Warning] Node {node_id} missing 'timestamp' or 'tags'. Skipping node.")
+                        continue
                     G.add_node(node_id, **node_data)
                 
                 # Reconstruct edges
@@ -412,6 +444,7 @@ class GraphMemoryManager:
         except (FileNotFoundError, json.JSONDecodeError):
             print(f"[Debug] No existing graph found for {self.graph_file}. Creating a new graph.")
             return nx.Graph()
+
 
     def save_graph(self):
         """Save graph to file."""
@@ -436,10 +469,15 @@ class GraphMemoryManager:
 
     def calculate_temporal_proximity(self, time1, time2, max_time_diff=86400):
         """Calculate temporal proximity between two timestamps."""
-        t1 = datetime.fromisoformat(time1)
-        t2 = datetime.fromisoformat(time2)
-        time_diff = abs((t1 - t2).total_seconds())
-        return max(0, 1 - (time_diff / max_time_diff))
+        try:
+            t1 = datetime.fromisoformat(time1)
+            t2 = datetime.fromisoformat(time2)
+            time_diff = abs((t1 - t2).total_seconds())
+            return max(0, 1 - (time_diff / max_time_diff))
+        except Exception as e:
+            print(f"[Warning] Error calculating temporal proximity: {e}")
+            return 0  # Default to 0 if calculation fails
+
 
     def add_memory(self, memory):
         """Add a new memory to the graph."""
@@ -449,6 +487,14 @@ class GraphMemoryManager:
             return
         
         try:
+            # Validate and normalize timestamp
+            if isinstance(memory['timestamp'], str):
+                timestamp = datetime.fromisoformat(memory['timestamp'])
+                if timestamp.year > datetime.now().year + 1:  # Allow for small clock differences
+                    print(f"[Error] Invalid future timestamp detected: {timestamp}")
+                    timestamp = datetime.now()
+                memory['timestamp'] = timestamp.isoformat()
+            
             node_id = max(self.G.nodes(), default=-1) + 1
             self.G.add_node(node_id,
                             message=memory['user_message'],
@@ -460,11 +506,17 @@ class GraphMemoryManager:
             # Add edges to other nodes based on similarity
             for existing_id in list(self.G.nodes):
                 if existing_id != node_id:
+                    existing_node = self.G.nodes[existing_id]
+                    # Check if 'tags' and 'timestamp' exist
+                    if "tags" not in existing_node or "timestamp" not in existing_node:
+                        print(f"[Warning] Node {existing_id} missing 'tags' or 'timestamp'. Skipping.")
+                        continue  # Skip nodes with missing data
+                    
                     tag_sim = self.calculate_tag_similarity(
-                        memory["tags"], self.G.nodes[existing_id]["tags"]
+                        memory["tags"], existing_node["tags"]
                     )
                     temp_prox = self.calculate_temporal_proximity(
-                        memory["timestamp"], self.G.nodes[existing_id]["timestamp"]
+                        memory["timestamp"], existing_node["timestamp"]
                     )
                     edge_weight = (0.7 * tag_sim) + (0.3 * temp_prox)
                     if edge_weight > 0.1:
@@ -475,6 +527,7 @@ class GraphMemoryManager:
             print(f"[Debug] Memory added to graph: {memory['user_message'][:30]}...")
         except Exception as e:
             print(f"[Error] Failed to add memory: {e}")
+
 
     def find_similar_memories(self, query_tags, top_n=5):
         """Find most similar memories to query tags."""
@@ -619,18 +672,16 @@ class Memory:
             try:
                 if loaded_count >= self.max_interactions:
                     break
-                    
                 interaction = Interaction.from_dict(entry)
-                print(f"[Debug] Loaded interaction timestamp: {interaction.timestamp}")
+                # Validate the timestamp
+                if not interaction.timestamp or interaction.timestamp > datetime.now():
+                    interaction.timestamp = datetime.now()
                 self.interactions.append(interaction)
                 loaded_count += 1
-                
-                if loaded_count % 100 == 0:
-                    print(f"[Debug] Loaded {loaded_count} interactions so far...")
-                    
             except Exception as e:
                 print(f"[Debug] Error loading interaction: {e}")
                 continue
+
                 
         print(f"[Debug] Successfully loaded {len(self.interactions)} out of {len(data)} available interactions.")
         print(f"[Debug] Max interactions setting: {self.max_interactions}")

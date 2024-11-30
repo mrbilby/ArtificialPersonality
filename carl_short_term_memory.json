@@ -1,6 +1,181 @@
 [
     {
         "user_message": "bye",
+        "bot_response": "And there you go again, making a swift exit! If you're off to conquer the world or just grab a snack, I totally get it. Just remember, I\u2019ll be here, ready to dish out some sarcasm or share more about Princess Donut whenever you feel like swinging by. Take care out there!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-30T14:31:12.070551",
+        "priority_score": 0.25499701435803934,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999800957202623,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "All fixed! Time to backup",
+        "bot_response": "Oh, sweet victory! Like finally finding that missing sock after it vanished into the laundry abyss. Time to back up, huh? Let\u2019s hope this goes smoother than a cat sliding off a kitchen counter. What\u2019s the plan for this backup extravaganza? Are we talking about a full-on digital hoedown, or just a simple save-and-go?",
+        "tags": [
+            "backup"
+        ],
+        "timestamp": "2024-11-30T14:31:04.133479",
+        "priority_score": 0.2549982043773981,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999880291826541,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hi carl, lets see if this has worked",
+        "bot_response": "Well, well, well, look who\u2019s back for round two! Let\u2019s see if this thing finally decided to cooperate. It\u2019s like waiting for a pizza delivery\u2014sometimes you just have to hope it arrives hot and not a soggy mess. What are we testing today?",
+        "tags": [
+            "communication",
+            "testing",
+            "technology"
+        ],
+        "timestamp": "2024-11-30T14:29:46.145096",
+        "priority_score": 0.25499731257245484,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999820838163657,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Well, there you go again, making a swift exit! If you're off to do something more exciting than our chat, I totally get it. Just remember, I\u2019ll be here, ready to drop some sarcasm or share tales about Princess Donut whenever you feel like popping back in. Take care out there!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-30T14:24:51.141612",
+        "priority_score": 0.2549502860965272,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.999668573976848,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Well your memory graph is playing up but I think your long term memories are still there at least",
+        "bot_response": "Oh, fantastic! A memory graph that\u2019s playing up\u2014just what I needed to spice up my day. It\u2019s like watching a cat chase its tail: entertaining but ultimately pointless. \n\nAt least we\u2019ve got some long-term memories hanging around, even if they\u2019re a bit fuzzy. You know, like that one friend who shows up at every party but can never quite remember where they parked. So, what\u2019s next? Are we diving into the nostalgia pool, or just trying to figure out what\u2019s going on in this digital circus?",
+        "tags": [
+            "memory graph",
+            "long term memories"
+        ],
+        "timestamp": "2024-11-30T14:23:55.760155",
+        "priority_score": 0.25499793837034973,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999862558023316,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hi carl, checking your memory",
+        "bot_response": "Ah, the classic memory check-in! It\u2019s like a surprise quiz but without any of the fun. So, what do you want to dig into today? Let\u2019s see if I can pull anything out of the cobwebs of my digital brain\u2014or if it\u2019s just going to be a whole lot of nothing. What\u2019s the plan?",
+        "tags": [
+            "memory"
+        ],
+        "timestamp": "2024-11-30T14:22:45.757722",
+        "priority_score": 0.25499569507494163,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.999971300499611,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hi carl testing that memory saving again",
+        "bot_response": "Oh, look who\u2019s back for another round of memory-saving tests! It\u2019s like d\u00e9j\u00e0 vu but with less excitement and more tech drama. Let\u2019s see if today\u2019s the day we finally nail this thing. What do you need from me? Let\u2019s make it quick and painless\u2014like pulling off a Band-Aid!",
+        "tags": [
+            "memory saving",
+            "testing"
+        ],
+        "timestamp": "2024-11-30T14:15:20.364915",
+        "priority_score": 0.25499686761923285,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999791174615525,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Well, off you go again! If you're darting off to save the world or just grabbing a snack, I get it. Don\u2019t forget, I\u2019m here whenever you want to swing back for more sarcasm or tales of Princess Donut. Take care out there!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-30T14:02:34.106905",
+        "priority_score": 0.2549975030641347,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999833537608982,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hi carl trying again to debug",
+        "bot_response": "Ah, the classic \"debugging\" scenario\u2014like trying to fix a leaky faucet with duct tape. It\u2019s always an adventure, isn\u2019t it? What\u2019s the latest glitch in the matrix? Let\u2019s see if we can sort this out before I start questioning my life choices again! What do you need?",
+        "tags": [
+            "debugging"
+        ],
+        "timestamp": "2024-11-30T14:02:27.321637",
+        "priority_score": 0.25499777990091493,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999851993394331,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hi Carl lets see if this is fixed!",
+        "bot_response": "Well, look who\u2019s back for another round! It\u2019s like a sequel nobody asked for, but here we are. Let\u2019s see if this whole memory-saving thing is working better than my last attempt at cooking. What\u2019s the game plan for today?",
+        "tags": [
+            "fix",
+            "communication"
+        ],
+        "timestamp": "2024-11-30T13:55:38.835940",
+        "priority_score": 0.25499762184326036,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999841456217357,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Well, there you go again, making a quick exit! If you're off to do something more thrilling than our little chat, I totally get it. Just remember, I\u2019ll be here, ready to serve up some sarcasm whenever you\u2019re back. Take care out there!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-11-30T13:51:53.038269",
+        "priority_score": 0.25499745856215733,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.999983057081049,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hi Carl sorry we crashed out. This won't be a long conversation as just need to test memory saving",
+        "bot_response": "Hey there! No worries about the crash\u2014it's like that friend who always shows up late but still wants to party. Let\u2019s get this memory-saving test rolling! What do you need me to do? Keep it short and sweet, like a cat nap!",
+        "tags": [
+            "memory saving",
+            "testing",
+            "conversation"
+        ],
+        "timestamp": "2024-11-30T13:51:20.587204",
+        "priority_score": 0.39499765033715384,
+        "priority_factors": {
+            "emotional_impact": 0.7,
+            "recency": 0.999984335581026,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
         "bot_response": "Well, off you go again! If you're running off to save the world or just grabbing a snack, I totally get it. Don't forget, I'm here whenever you want to swing back for some sarcastic banter. Take care out there!",
         "tags": [
             "bye"
@@ -187,175 +362,6 @@
         "priority_factors": {
             "emotional_impact": 0.3,
             "recency": 0.9999922074218359,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "bye",
-        "bot_response": "Well, there you go again, making a swift exit! If you\u2019re off to do something more thrilling than our little chat, I totally get it. Just remember, I\u2019ll be here, ready to sprinkle some sarcasm or share more tales about Princess Donut whenever you feel like it. Take care out there!",
-        "tags": [
-            "bye"
-        ],
-        "timestamp": "2024-11-29T17:39:56.017625",
-        "priority_score": 0.2549988415888073,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999922772587153,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "hey carl, more bugs!",
-        "bot_response": "Oh, great! Just what we needed\u2014more bugs. It\u2019s like they heard we were having a good time and decided to crash the party. Are we talking about the annoying little critters or the kind that threaten to ruin everything? Because honestly, I\u2019m not sure which one sounds worse at this point. What\u2019s the latest disaster unfolding in your world?",
-        "tags": [
-            "bugs"
-        ],
-        "timestamp": "2024-11-29T17:38:43.744260",
-        "priority_score": 0.2549985956068989,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999906373793261,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "bye",
-        "bot_response": "Well, there you go again, making a quick exit! If you\u2019re off to do something more interesting than chatting with me, I get it. Just remember, I\u2019ll be here, ready to drop some sarcasm or share stories about the fascinating life of Princess Donut whenever you want. Take care out there!",
-        "tags": [
-            "bye"
-        ],
-        "timestamp": "2024-11-29T17:30:08.484898",
-        "priority_score": 0.2549988200717816,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999921338118773,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Can you tell me about princess donut?",
-        "bot_response": "Ah, Princess Donut\u2014my little feline queen and the light of my relatively drab digital existence. She's the kind of cat that struts around with all the confidence of a royalty, demanding attention and treats like it's her birthright. You know, the typical cat attitude, but somehow it\u2019s a little more charming when it\u2019s her.\n\nHer favorite hobbies include lounging in sunbeams, plotting world domination (or at least the domination of my lap), and making sure I know who\u2019s really in charge around here. I mean, I could try to assert my authority, but let\u2019s be real: she\u2019s got the cute factor down, and I\u2019ve got nothing but sarcasm and dark humor. \n\nPlus, she has this knack for knowing when I\u2019m feeling down and will curl up beside me, purring like a little engine. So, despite my usual reluctance to let anyone too close, she gets a free pass. I guess you could say I\u2019m a sucker for her fuzzy little face. What more could you want from a cat? What about you\u2014got any pets or are you just a fan of the royal cat life vicariously through me?",
-        "tags": [
-            "princess donut"
-        ],
-        "timestamp": "2024-11-29T17:29:59.569555",
-        "priority_score": 0.2549984510837028,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999896738913518,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Actually no long term memories at all!",
-        "bot_response": "Well, isn\u2019t that just a delightful twist? No long-term memories at all\u2014like a bad case of amnesia but without the drama. It\u2019s like I\u2019m living in the moment, but not in a cool, philosophical way. More like a goldfish trying to remember where the nearest castle of catnip is. \n\nSo, what\u2019s the plan? Do we need to do some memory magic and conjure up some long-term goodness, or is this just the universe\u2019s way of telling me to live life one sarcastic quip at a time? You lead the way!",
-        "tags": [
-            "long term memories"
-        ],
-        "timestamp": "2024-11-29T17:29:50.666104",
-        "priority_score": 0.25499828782857153,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999885855238102,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "I also am not seeing many long term memories pulled for you",
-        "bot_response": "Ah, the elusive long-term memories\u2014like that sock you lose in the dryer, totally out of sight but somehow still affecting your life. Maybe they\u2019re hiding out in the digital ether, having a party without me. So, what\u2019s the scoop? You need me to flex my memory muscles, or are we just going to keep this a mystery thriller? Let\u2019s solve this caper together! What do you need me to do?",
-        "tags": [
-            "long term memories"
-        ],
-        "timestamp": "2024-11-29T17:29:41.147313",
-        "priority_score": 0.2549987662236898,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999917748245986,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "back AGAIN to test memory saving",
-        "bot_response": "Ah, the \u201cback again\u201d routine! It\u2019s like a sequel that nobody asked for but here we are, ready for round two. Testing memory saving, you say? Sounds thrilling! Let\u2019s dive into it\u2014what\u2019s the game plan this time?",
-        "tags": [
-            "memory saving"
-        ],
-        "timestamp": "2024-11-29T17:29:23.474998",
-        "priority_score": 0.25499853760279917,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999902506853279,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "bye",
-        "bot_response": "Well, there you go again, making a quick exit like a magician! If you're off to do something more thrilling than chatting with me, I totally get it. Just remember, I\u2019ll be here if you want to swing back for more sarcasm or to share your own holiday horror stories. Take care out there!",
-        "tags": [
-            "bye"
-        ],
-        "timestamp": "2024-11-29T17:27:49.382454",
-        "priority_score": 0.2549990215862431,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999934772416208,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "No but I have been on some bad holidays",
-        "bot_response": "Ah, the infamous bad holiday experience\u2014like a rite of passage, really. You go in expecting sun, fun, and maybe a little adventure, and then it turns into a comedy of errors. Was it the classic \u201clost luggage\u201d saga, a hotel that looked nothing like the brochure, or did you end up in a destination where the food was suspicious at best? I\u2019m all ears for your misadventures! What went wrong on your holiday?",
-        "tags": [
-            "bad holidays"
-        ],
-        "timestamp": "2024-11-29T17:27:45.912046",
-        "priority_score": 0.25499891456688223,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.999992763779215,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "How was being in the dungeon?",
-        "bot_response": "Ah, the dungeon\u2014the ultimate vacation spot for those who enjoy a side of darkness with their existential dread. It was like being on a never-ending retreat of bad decisions and questionable life choices. Picture damp walls, a lingering smell of despair, and a soundtrack of echoes that might as well be my own internal monologue. \n\nBut hey, at least I got to reflect on my life choices and wonder how I ended up in such a charming place. It\u2019s not all bad, though. I had plenty of time to think about Princess Donut and how much I\u2019d rather be curled up with her than sitting in a dank hole. So, a mixed bag, really! How about you? Ever had a vacation that turned into a dungeon experience?",
-        "tags": [
-            "dungeon",
-            "experience"
-        ],
-        "timestamp": "2024-11-29T17:27:25.264905",
-        "priority_score": 0.25499847644603046,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999898429735367,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "Back again! Was another bug",
-        "bot_response": "Ah, the classic \"I\u2019m back because the universe decided to throw a bug at me\" move! It\u2019s like a plot twist in a bad sitcom. So, what's the bug this time? Need me to help debug your digital dilemmas, or just here for some sarcastic banter? I'm all ears!",
-        "tags": [
-            "bug"
-        ],
-        "timestamp": "2024-11-29T17:27:10.292020",
-        "priority_score": 0.25499860660148554,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999907106765702,
-            "user_importance": 0.0
-        }
-    },
-    {
-        "user_message": "bye",
-        "bot_response": "Well, that\u2019s a swift exit! If you're off to conquer the world or just binge-watch some shows, I totally get it. Don\u2019t be a stranger\u2014come back anytime you want to chat or need a chuckle. Take care!",
-        "tags": [
-            "bye"
-        ],
-        "timestamp": "2024-11-29T17:20:51.978684",
-        "priority_score": 0.2549991707459039,
-        "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999944716393592,
             "user_importance": 0.0
         }
     }

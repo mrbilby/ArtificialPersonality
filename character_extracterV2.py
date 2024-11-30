@@ -131,41 +131,66 @@ class CharacterPersonalityExtractor:
             response = self.client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
-                    {"role": "system", "content": "You are a character analyst creating personality profiles. Always return valid JSON."},
+                    {
+                        "role": "system", 
+                        "content": "You are a character analyst creating personality profiles. Return only the JSON object with no formatting tokens, no ```json markers, and no backticks."
+                    },
                     {"role": "user", "content": final_prompt}
                 ],
                 temperature=0.7,
-                max_tokens=1000
+                max_tokens=2000
             )
 
             response_text = response.choices[0].message.content.strip()
             
-            # Try to extract JSON if it's wrapped in other text
+            # Remove any markdown formatting
+            response_text = response_text.replace('```json', '').replace('```', '')
+            
             try:
-                # First try to parse as-is
                 personality_data = json.loads(response_text)
-            except json.JSONDecodeError:
-                # If that fails, try to find JSON-like structure
-                import re
-                json_match = re.search(r'({[\s\S]*})', response_text)
-                if json_match:
-                    personality_data = json.loads(json_match.group(1))
-                else:
-                    raise ValueError("Could not extract valid JSON from response")
-
-            # Ensure all required fields are present
-            required_fields = ['tone', 'response_style', 'behavior', 'user_preferences', 'do_dont']
-            for field in required_fields:
-                if field not in personality_data:
-                    personality_data[field] = ""
+            except json.JSONDecodeError as e:
+                print(f"Failed to parse JSON: {str(e)}")
+                print("Raw response:", response_text)
+                # If parsing fails, return the default structure
+                return {
+                    "tone": "neutral",
+                    "response_style": "direct",
+                    "behavior": "standard",
+                    "user_preferences": {
+                        "likes": [],
+                        "dislikes": [],
+                        "preferences": {}
+                    },
+                    "do_dont": {
+                        "do": [],
+                        "dont": []
+                    },
+                    "personality_traits": {
+                        "strengths": [],
+                        "weaknesses": [],
+                        "growth_areas": [],
+                        "core_values": [],
+                        "coping_mechanisms": []
+                    },
+                    "background_influence": {
+                        "key_experiences": [],
+                        "relationships": [],
+                        "worldview": ""
+                    },
+                    "social_dynamics": {
+                        "leadership_style": "",
+                        "group_role": "",
+                        "friendship_approach": "",
+                        "trust_patterns": "",
+                        "conflict_style": ""
+                    }
+                }
 
             return personality_data
 
         except Exception as e:
-            print(f"Error in generate_personality: {str(e)}")
-            print(f"Raw response: {response_text if 'response_text' in locals() else 'No response received'}")
-            
-            # Return a default personality if generation fails
+            print(f"API call failed: {str(e)}")
+            # Return default structure on API failure
             return {
                 "tone": "neutral",
                 "response_style": "direct",
@@ -178,6 +203,25 @@ class CharacterPersonalityExtractor:
                 "do_dont": {
                     "do": [],
                     "dont": []
+                },
+                "personality_traits": {
+                    "strengths": [],
+                    "weaknesses": [],
+                    "growth_areas": [],
+                    "core_values": [],
+                    "coping_mechanisms": []
+                },
+                "background_influence": {
+                    "key_experiences": [],
+                    "relationships": [],
+                    "worldview": ""
+                },
+                "social_dynamics": {
+                    "leadership_style": "",
+                    "group_role": "",
+                    "friendship_approach": "",
+                    "trust_patterns": "",
+                    "conflict_style": ""
                 }
             }
 
