@@ -2,6 +2,8 @@ import unittest
 from datetime import datetime
 from main import ChatBot, PersonalityProfile, ShortTermMemory, LongTermMemory, Interaction, MemoryPriority
 
+# run with python -m unittest test_emotions.py -v
+
 class EmotionAwarenessTests(unittest.TestCase):
     def setUp(self):
         # Create a test personality
@@ -27,7 +29,7 @@ class EmotionAwarenessTests(unittest.TestCase):
         ]
 
         for message, expected_emotion in test_cases:
-            detected_emotion = self.priority_system._detect_emotion(message)
+            detected_emotion, _ = self.priority_system._detect_emotion(message)  # Note the tuple unpacking
             self.assertEqual(
                 detected_emotion, 
                 expected_emotion, 
@@ -119,17 +121,11 @@ class EmotionAwarenessTests(unittest.TestCase):
             ("I'm a bit happy.", "joy", 0.5)
         ]
 
-        for message, emotion, expected_intensity in test_cases:
-            interaction = Interaction(
-                user_message=message,
-                bot_response="I understand.",
-                tags=[emotion]
-            )
-            score, factors = self.priority_system.calculate_priority_with_factors(
-                interaction, {"recent_interactions": []}
-            )
+        for message, expected_emotion, expected_intensity in test_cases:
+            emotion, intensity = self.priority_system._detect_emotion(message)  # Get both values
+            self.assertEqual(emotion, expected_emotion, f"Wrong emotion detected for: {message}")
             self.assertAlmostEqual(
-                factors['emotional_impact'],
+                intensity,
                 expected_intensity,
                 delta=0.4,
                 msg=f"Emotion intensity not properly scaled for: {message}"

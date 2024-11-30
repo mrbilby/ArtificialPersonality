@@ -206,27 +206,25 @@ class MemoryPriority:
 
     def calculate_priority_with_factors(self, interaction: 'Interaction', 
                                     memory_context: Dict) -> Tuple[float, Dict]:
+        """Updated priority calculation using new emotion detection"""
         factors = {}
         priority_score = 0.0
         
-        # Emotional Impact (increased impact)
-        emotion = self._detect_emotion(interaction.user_message)
-        emotional_score = self.emotion_intensity.get(emotion, 0.3)
+        # Emotional Impact (using new emotion detection)
+        emotion, emotional_score = self._detect_emotion(interaction.user_message)
         factors['emotional_impact'] = emotional_score
-        priority_score += emotional_score * 0.35  # Increased from 0.25
+        priority_score += emotional_score * 0.35
         
-        # Recency (slightly reduced)
+        # Recency (same as before)
         time_diff = (datetime.now() - interaction.timestamp).total_seconds()
         recency_score = 1 / (1 + (time_diff / (24 * 3600)))
         factors['recency'] = recency_score
-        priority_score += recency_score * 0.15  # Reduced from 0.20
+        priority_score += recency_score * 0.15
         
-        # User Importance (increased impact)
+        # User Importance (same as before)
         importance_score = self._calculate_user_importance(interaction)
         factors['user_importance'] = importance_score
-        priority_score += importance_score * 0.30  # Increased from 0.20
-        
-        # Rest remains the same...
+        priority_score += importance_score * 0.30
         
         return min(priority_score, 1.0), factors
 
@@ -312,23 +310,132 @@ class MemoryPriority:
         overlap = len(words1 & words2) / len(words1 | words2)
         return overlap > 0.2
 
-    def _detect_emotion(self, text: str) -> str:
-        """Detect dominant emotion in text"""
+    def _detect_emotion(self, text: str) -> tuple[str, float]:
+        """
+        Detect dominant emotion and its intensity in text.
+        Returns tuple of (emotion, intensity)
+        """
+        # Expanded emotion keywords with intensity weights
         emotion_keywords = {
-            'joy': {'happy', 'great', 'excellent', 'wonderful', 'love', 'enjoy'},
-            'sadness': {'sad', 'sorry', 'disappointed', 'upset', 'unhappy'},
-            'anger': {'angry', 'frustrated', 'annoyed', 'mad', 'hate'},
-            'surprise': {'wow', 'amazing', 'unexpected', 'surprised'}
+            'joy': {
+                'high': {
+                    'overjoyed': 0.9, 'ecstatic': 0.9, 'thrilled': 0.9, 'fantastic': 0.8, 'amazing': 0.8,
+                    'happiest': 0.9, 'best': 0.8  # Added for phrases like "happiest day"
+                },
+                'medium': {
+                    'happy': 0.6, 'glad': 0.6, 'pleased': 0.6, 'good': 0.5,
+                    'great': 0.6, 'wonderful': 0.6
+                },
+                'low': {
+                    'content': 0.4, 'nice': 0.4, 'okay': 0.3
+                }
+            },
+            'sadness': {
+                'high': {
+                    'devastated': 0.9, 'heartbroken': 0.9, 'miserable': 0.9, 'depressed': 0.8
+                },
+                'medium': {
+                    'sad': 0.6, 'unhappy': 0.6, 'down': 0.6, 'upset': 0.5
+                },
+                'low': {
+                    'disappointed': 0.4, 'blue': 0.4, 'meh': 0.3
+                }
+            },
+            'anger': {
+                'high': {
+                    'furious': 0.9, 'enraged': 0.9, 'livid': 0.9, 'outraged': 0.8
+                },
+                'medium': {
+                    'angry': 0.6, 'mad': 0.6, 'irritated': 0.6, 'annoyed': 0.5
+                },
+                'low': {
+                    'frustrated': 0.4, 'bothered': 0.4, 'displeased': 0.3
+                }
+            },
+            'surprise': {
+                'high': {
+                    'shocked': 0.9, 'astonished': 0.9, 'astounded': 0.9, 'stunned': 0.8,
+                    'wow': 0.9, "can't believe": 0.9  # Added for common surprise expressions
+                },
+                'medium': {
+                    'surprised': 0.6, 'amazed': 0.6, 'unexpected': 0.6,
+                    'unbelievable': 0.7
+                },
+                'low': {
+                    'curious': 0.4, 'interesting': 0.4, 'different': 0.3
+                }
+            }
         }
-        
-        text_lower = text.lower()
-        emotion_scores = {
-            emotion: sum(1 for word in keywords if word in text_lower)
-            for emotion, keywords in emotion_keywords.items()
-        }
-        
-        return max(emotion_scores.items(), key=lambda x: x[1])[0] if any(emotion_scores.values()) else 'neutral'
 
+        intensity_modifiers = {
+            'increase': {'very': 0.15, 'really': 0.15, 'so': 0.15, 'extremely': 0.2, 'absolutely': 0.2, 'completely': 0.2},
+            'decrease': {'slightly': -0.15, 'somewhat': -0.15, 'a bit': -0.15, 'kind of': -0.1, 'sort of': -0.1}
+        }
+
+        text_lower = text.lower()
+        words = text_lower.split()
+        
+        # Initialize emotion scores
+        emotion_scores = {emotion: 0.0 for emotion in emotion_keywords.keys()}
+        max_intensity = 0.0
+        
+        # First pass: Find base emotions and their intensities
+        for emotion, levels in emotion_keywords.items():
+            for level, words_dict in levels.items():
+                for word, intensity in words_dict.items():
+                    if word in text_lower:
+                        current_intensity = intensity
+                        
+                        # Look for intensity modifiers before the emotion word
+                        word_index = text_lower.find(word)
+                        preceding_text = text_lower[:word_index]
+                        
+                        # Check for intensity modifiers
+                        for modifier_type, modifiers in intensity_modifiers.items():
+                            for modifier, mod_value in modifiers.items():
+                                if modifier in preceding_text:
+                                    if modifier_type == 'increase':
+                                        current_intensity = min(1.0, current_intensity + mod_value)
+                                    else:
+                                        current_intensity = max(0.1, current_intensity + mod_value)
+                        
+                        emotion_scores[emotion] = max(emotion_scores[emotion], current_intensity)
+                        max_intensity = max(max_intensity, current_intensity)
+
+        # Additional context analysis
+        if '!' in text:
+            # Check for surprise indicators with exclamation
+            if any(word in text_lower for word in ['wow', 'whoa', "can't believe", 'oh']):
+                emotion_scores['surprise'] = max(emotion_scores['surprise'], 0.8)
+        
+        # If no emotion is detected, return neutral with base intensity
+        if max(emotion_scores.values()) == 0:
+            return ('neutral', 0.3)
+        
+        # Find the highest scoring emotion
+        max_score = max(emotion_scores.values())
+        tied_emotions = [
+            emotion for emotion, score in emotion_scores.items() 
+            if score == max_score
+        ]
+        
+        # Handle ties
+        if len(tied_emotions) > 1:
+            if '!' in text:  # Fixed: Removed any()
+                for emotion in ['joy', 'anger', 'surprise']:
+                    if emotion in tied_emotions:
+                        return (emotion, max_score)
+            if '?' in text:
+                if 'surprise' in tied_emotions:
+                    return ('surprise', max_score)
+            
+            # If still tied, return the first one
+            return (tied_emotions[0], max_score)
+        
+        # Return the single highest scoring emotion
+        dominant_emotion = tied_emotions[0]
+        return (dominant_emotion, max_score)  
+      
     def adjust_weights(self, usage_patterns: Dict):
         """Dynamically adjust priority weights based on interaction patterns"""
         if usage_patterns.get('emotional_engagement', 0) > 0.7:
@@ -954,11 +1061,13 @@ class ConsolidatedMemory:
             memory.last_consolidated = datetime.now()
 
         return memory
+    
+
 class MemoryConsolidator:
     def __init__(self, short_memory: ShortTermMemory, long_memory: LongTermMemory, personality_name: str = 'default'):
         self.short_memory = short_memory
         self.long_memory = long_memory
-        self.personality_name = personality_name  # Store personality name
+        self.personality_name = personality_name
         self.consolidated_memory = ConsolidatedMemory()
         self.consolidation_interval = timedelta(seconds=30)
         self.emotion_weights = {
@@ -968,6 +1077,13 @@ class MemoryConsolidator:
             'surprise': 1.2,
             'neutral': 1.0
         }
+        # Add this line to create an instance of MemoryPriority
+        self.priority_system = MemoryPriority()
+
+    def _detect_emotion(self, text: str) -> str:
+        """Use MemoryPriority's emotion detection"""
+        emotion, _ = self.priority_system._detect_emotion(text)
+        return emotion
 
     def load_consolidated_memory(self, file_path: str = None):
         """Load consolidated memory from file."""
@@ -1178,11 +1294,6 @@ class MemoryConsolidator:
         
         return insights
 
-
-    def _detect_emotion(self, text: str) -> str:
-        """Reuse emotion detection from MemoryPriority"""
-        # Implementation similar to MemoryPriority._detect_emotion
-        return 'neutral'  # Default fallback
 
 class PersonalityManager:
     def __init__(self):
