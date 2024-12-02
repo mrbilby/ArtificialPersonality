@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot Selection</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Select a Chatbot</h1>
+        <div class="personality-list">
+            <!-- This is where the previous code is replaced with the new code -->
+            {% if personalities %}
+                {% for personality in personalities %}
+                <div class="personality-card">
+                    <h2>{{ personality|title }}</h2>
+                    <a href="{% url 'chat' %}?personality={{ personality }}" class="chat-button">
+                        Start Chat
+                    </a>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="personality-card">
+                    <h2>No personalities found</h2>
+                    <p>Default personality will be created</p>
+                </div>
+            {% endif %}
+
+            <!-- Keep the create new personality card -->
+            <div class="personality-card">
+                <h2>Create New</h2>
+                <form action="{% url 'chat' %}" method="get" class="create-form">
+                    <input type="text" name="personality" placeholder="Enter name" required>
+                    <button type="submit" class="chat-button">Create & Start</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,308 @@
+{
+    "nodes": [
+        [
+            0,
+            {
+                "message": "Hi there, are you getting this?",
+                "response": "",
+                "timestamp": "2024-12-02T10:07:33.244079",
+                "tags": [
+                    "communication",
+                    "technology",
+                    "data"
+                ],
+                "priority": 0.25499695731692906
+            }
+        ],
+        [
+            1,
+            {
+                "message": "Quick check first! What is your name?",
+                "response": "",
+                "timestamp": "2024-12-02T10:07:49.015825",
+                "tags": [
+                    "name"
+                ],
+                "priority": 0.2549982028756979
+            }
+        ],
+        [
+            2,
+            {
+                "message": "What do you remember of some old chats?",
+                "response": "",
+                "timestamp": "2024-12-02T10:08:05.767548",
+                "tags": [
+                    "old chats",
+                    "memory",
+                    "conversation history"
+                ],
+                "priority": 0.554997010911996
+            }
+        ],
+        [
+            3,
+            {
+                "message": "That is great! We have the UI up and working!",
+                "response": "",
+                "timestamp": "2024-12-02T10:08:44.972832",
+                "tags": [
+                    "ui",
+                    "user interface",
+                    "functionality"
+                ],
+                "priority": 0.3599975886828608
+            }
+        ],
+        [
+            4,
+            {
+                "message": "Hi Bob, back to test a bit more, had to drop out of the earlier chat sorry",
+                "response": "",
+                "timestamp": "2024-12-02T10:27:28.066381",
+                "tags": [
+                    "testing",
+                    "chat",
+                    "communication"
+                ],
+                "priority": 0.2549964879086227
+            }
+        ],
+        [
+            5,
+            {
+                "message": "Well one test was the format of your response which I am happy to say looks good!",
+                "response": "",
+                "timestamp": "2024-12-02T10:27:49.444572",
+                "tags": [
+                    "response format",
+                    "feedback"
+                ],
+                "priority": 0.35999790124985154
+            }
+        ],
+        [
+            6,
+            {
+                "message": "Well I need to test the end chat button. Will try that shortly",
+                "response": "",
+                "timestamp": "2024-12-02T10:28:11.837187",
+                "tags": [
+                    "end chat button",
+                    "testing"
+                ],
+                "priority": 0.25499784635036626
+            }
+        ],
+        [
+            7,
+            {
+                "message": "bye",
+                "response": "",
+                "timestamp": "2024-12-02T10:28:20.157949",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.25499785173736456
+            }
+        ]
+    ],
+    "edges": [
+        [
+            0,
+            1,
+            {
+                "weight": 0.29994523699305553
+            }
+        ],
+        [
+            0,
+            2,
+            {
+                "weight": 0.2998870712881944
+            }
+        ],
+        [
+            0,
+            3,
+            {
+                "weight": 0.29975094182986106
+            }
+        ],
+        [
+            0,
+            4,
+            {
+                "weight": 0.4358513114513889
+            }
+        ],
+        [
+            0,
+            5,
+            {
+                "weight": 0.29577708162152777
+            }
+        ],
+        [
+            0,
+            6,
+            {
+                "weight": 0.2956993294861111
+            }
+        ],
+        [
+            0,
+            7,
+            {
+                "weight": 0.29567043795138886
+            }
+        ],
+        [
+            1,
+            2,
+            {
+                "weight": 0.2999418342951389
+            }
+        ],
+        [
+            1,
+            3,
+            {
+                "weight": 0.2998057048368055
+            }
+        ],
+        [
+            1,
+            4,
+            {
+                "weight": 0.29590607445833333
+            }
+        ],
+        [
+            1,
+            5,
+            {
+                "weight": 0.29583184462847223
+            }
+        ],
+        [
+            1,
+            6,
+            {
+                "weight": 0.2957540924930555
+            }
+        ],
+        [
+            1,
+            7,
+            {
+                "weight": 0.2957252009583333
+            }
+        ],
+        [
+            2,
+            3,
+            {
+                "weight": 0.29986387054166663
+            }
+        ],
+        [
+            2,
+            4,
+            {
+                "weight": 0.29596424016319445
+            }
+        ],
+        [
+            2,
+            5,
+            {
+                "weight": 0.29589001033333334
+            }
+        ],
+        [
+            2,
+            6,
+            {
+                "weight": 0.2958122581979166
+            }
+        ],
+        [
+            2,
+            7,
+            {
+                "weight": 0.29578336666319444
+            }
+        ],
+        [
+            3,
+            4,
+            {
+                "weight": 0.29610036962152775
+            }
+        ],
+        [
+            3,
+            5,
+            {
+                "weight": 0.29602613979166664
+            }
+        ],
+        [
+            3,
+            6,
+            {
+                "weight": 0.29594838765625
+            }
+        ],
+        [
+            3,
+            7,
+            {
+                "weight": 0.29591949612152774
+            }
+        ],
+        [
+            4,
+            5,
+            {
+                "weight": 0.2999257701701389
+            }
+        ],
+        [
+            4,
+            6,
+            {
+                "weight": 0.4748480180347222
+            }
+        ],
+        [
+            4,
+            7,
+            {
+                "weight": 0.2998191265
+            }
+        ],
+        [
+            5,
+            6,
+            {
+                "weight": 0.2999222478645833
+            }
+        ],
+        [
+            5,
+            7,
+            {
+                "weight": 0.2998933563298611
+            }
+        ],
+        [
+            6,
+            7,
+            {
+                "weight": 0.29997110846527775
+            }
+        ]
+    ]
+}

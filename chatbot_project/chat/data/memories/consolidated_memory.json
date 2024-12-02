@@ -1,0 +1,618 @@
+{
+    "patterns": {
+        "conversation_patterns": {
+            "response_times": [
+                48.703349,
+                49.255062,
+                36.241046,
+                352.869185,
+                5.45341,
+                32.937319,
+                267.981672,
+                167.780535,
+                101.130999,
+                48.09169,
+                18.909925,
+                47501.329323,
+                31.545004,
+                27.567675,
+                112.282134,
+                60.68993,
+                109.124206,
+                61.648729,
+                76.934339,
+                47.759228,
+                24.775858,
+                5.221713,
+                10709.535293,
+                18.714108,
+                30.319182,
+                4.618859,
+                1988.01149,
+                46.441357,
+                22.378773,
+                4.859028,
+                25201.054144,
+                21.218034,
+                27.394902,
+                58.241638,
+                75.358242,
+                23.710682,
+                4.845453,
+                105.203196,
+                12.462999,
+                30.081758,
+                7.581774,
+                131161.534511,
+                55.362321,
+                61.277861,
+                65.739243,
+                15.641883,
+                1460.055457,
+                21.378191,
+                22.392615
+            ],
+            "conversation_length": [],
+            "topic_transitions": []
+        },
+        "topic_patterns": {
+            "topic_frequency": {
+                "debug": 1,
+                "interaction": 1,
+                "memory graph": 1,
+                "long term memory": 1,
+                "error": 1,
+                "memory": 2,
+                "graph": 1,
+                "troubleshooting": 1,
+                "fixing issues": 1,
+                "documentation": 1,
+                "memory graphs": 1,
+                "personalities": 2,
+                "memories": 3,
+                "milestones": 1,
+                "token length": 1,
+                "responses": 1,
+                "improvement": 1,
+                "cut off": 1,
+                "program closure": 1,
+                "save memories": 1,
+                "bye message": 1,
+                "bye": 8,
+                "tokens": 1,
+                "response": 1,
+                "training": 1,
+                "october 2023": 1,
+                "human-like personality": 1,
+                "personality changes": 1,
+                "memory graph visualization": 1,
+                "file reading capabilities": 1,
+                "collaboration": 1,
+                "drawing capabilities": 1,
+                "emotion recognition": 1,
+                "personality profiles": 1,
+                "situational personality": 1,
+                "humor": 1,
+                "serious suggestions": 1,
+                "emergent behavior": 1,
+                "user customization": 1,
+                "json modification": 1,
+                "personality traits": 1,
+                "implementation": 1,
+                "files": 1,
+                "definition": 1,
+                "neuromancer": 1,
+                "use of weapons": 1,
+                "reading": 1,
+                "books": 1,
+                "greeting": 1,
+                "morning": 2,
+                "well-being": 2,
+                "errands": 1,
+                "couch": 1,
+                "podcast": 1,
+                "planet america": 1,
+                "political circus": 1,
+                "tariffs": 3,
+                "trump": 3,
+                "new tariffs": 1,
+                "taking office": 1,
+                "mexico": 1,
+                "canada": 1,
+                "illegal immigration": 3,
+                "concessions": 1,
+                "protectionism": 1,
+                "voters": 1,
+                "international relations": 1,
+                "election": 1,
+                "four years": 1,
+                "deportations": 2,
+                "ukraine war": 1,
+                "federal government workforce": 1,
+                "protests": 1,
+                "usa": 1,
+                "mainstream media": 2,
+                "election campaign": 1,
+                "msnbc viewership": 1,
+                "youtube podcasters": 1,
+                "joe rogan": 1,
+                "alternative media": 1,
+                "adaptation": 1,
+                "uncertainty": 1,
+                "absence": 1,
+                "return": 1,
+                "gym": 1,
+                "coding": 1,
+                "debugging": 1,
+                "issue": 1,
+                "bug": 2,
+                "communication": 3,
+                "visit": 1,
+                "social interaction": 1,
+                "checking": 1,
+                "affected": 1,
+                "bot creation": 1,
+                "epub": 1,
+                "data corruption": 1,
+                "ideas": 1,
+                "feedback": 2,
+                "follow-up": 1,
+                "greetings": 2,
+                "conversation": 1,
+                "time": 1,
+                "task": 1,
+                "awareness": 1,
+                "response improvement": 1,
+                "memory access": 1,
+                "emotional awareness": 3,
+                "temporal awareness": 2,
+                "personality file": 1,
+                "personality": 1,
+                "human-like interaction": 1,
+                "temporally aware": 1,
+                "user experience": 1,
+                "file change": 1,
+                "code changes": 1,
+                "awareness of time": 1,
+                "overtime": 1,
+                "tests": 1,
+                "hello": 1,
+                "code development": 1,
+                "temporal context": 1,
+                "web ui": 1,
+                "functionality upgrade": 1,
+                "django": 1,
+                "react": 1,
+                "web development": 1,
+                "front-end frameworks": 1,
+                "back-end frameworks": 1,
+                "user interface": 1,
+                "single-page applications": 1,
+                "javascript": 1,
+                "component-based architecture": 1,
+                "ui": 1,
+                "test environment": 1,
+                "testing": 2,
+                "chat": 1,
+                "response format": 1,
+                "end chat button": 1
+            },
+            "topic_chains": [],
+            "topic_duration": {}
+        },
+        "emotional_patterns": {
+            "emotions": [
+                {
+                    "timestamp": "2024-11-29T21:14:08.191862",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T21:14:56.895211",
+                    "emotion": "surprise",
+                    "intensity": 1.2
+                },
+                {
+                    "timestamp": "2024-11-29T21:15:46.150273",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-11-29T21:16:22.391319",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T21:22:15.260504",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-11-29T21:22:20.713914",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T21:22:53.651233",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-11-29T21:27:21.632905",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-11-29T21:30:09.413440",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-11-29T21:31:50.544439",
+                    "emotion": "sadness",
+                    "intensity": 1.3
+                },
+                {
+                    "timestamp": "2024-11-29T21:32:38.636129",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-29T21:32:57.546054",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T10:44:38.875377",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-11-30T10:45:10.420381",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T10:45:37.988056",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T10:47:30.270190",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-11-30T10:48:30.960120",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T10:50:20.084326",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T10:51:21.733055",
+                    "emotion": "surprise",
+                    "intensity": 1.2
+                },
+                {
+                    "timestamp": "2024-11-30T10:52:38.667394",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T10:53:26.426622",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T10:53:51.202480",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T10:53:56.424193",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T13:52:25.959486",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T13:52:44.673594",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T13:53:14.992776",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T13:53:19.611635",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T14:26:27.623125",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T14:27:14.064482",
+                    "emotion": "sadness",
+                    "intensity": 1.3
+                },
+                {
+                    "timestamp": "2024-11-30T14:27:36.443255",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-11-30T14:27:41.302283",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T21:27:42.356427",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T21:28:03.574461",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T21:28:30.969363",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T21:29:29.211001",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-11-30T21:30:44.569243",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-11-30T21:31:08.279925",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-11-30T21:31:13.125378",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T21:32:58.328574",
+                    "emotion": "anger",
+                    "intensity": 1.4
+                },
+                {
+                    "timestamp": "2024-11-30T21:33:10.791573",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T21:33:40.873331",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-11-30T21:33:48.455105",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-12-02T09:59:49.989616",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-12-02T10:00:45.351937",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-12-02T10:01:46.629798",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-12-02T10:02:52.369041",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-12-02T10:03:08.010924",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-12-02T10:27:28.066381",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                },
+                {
+                    "timestamp": "2024-12-02T10:27:49.444572",
+                    "emotion": "joy",
+                    "intensity": 1.5
+                },
+                {
+                    "timestamp": "2024-12-02T10:28:11.837187",
+                    "emotion": "neutral",
+                    "intensity": 1.0
+                }
+            ],
+            "emotional_intensity": {},
+            "emotional_progression": []
+        }
+    },
+    "insights": [
+        "Conversation has relaxed response times",
+        "Conversation shows primarily neutral emotions",
+        "Most discussed topics: bye, memories, tariffs"
+    ],
+    "key_memories": [],
+    "relationship_data": {
+        "familiarity_level": 31,
+        "interaction_quality": [],
+        "shared_interests": [
+            "neuromancer",
+            "memories",
+            "concessions",
+            "error",
+            "milestones",
+            "well-being",
+            "canada",
+            "deportations",
+            "serious suggestions",
+            "human-like personality",
+            "human-like interaction",
+            "bug",
+            "memory graphs",
+            "return",
+            "task",
+            "ukraine war",
+            "response format",
+            "adaptation",
+            "web development",
+            "use of weapons",
+            "personality profiles",
+            "greeting",
+            "new tariffs",
+            "collaboration",
+            "documentation",
+            "debugging",
+            "issue",
+            "user interface",
+            "trump",
+            "back-end frameworks",
+            "social interaction",
+            "user customization",
+            "test environment",
+            "personality file",
+            "chat",
+            "podcast",
+            "response",
+            "political circus",
+            "code changes",
+            "absence",
+            "reading",
+            "interaction",
+            "ideas",
+            "implementation",
+            "bot creation",
+            "election",
+            "checking",
+            "follow-up",
+            "responses",
+            "federal government workforce",
+            "memory",
+            "file change",
+            "files",
+            "four years",
+            "illegal immigration",
+            "user experience",
+            "international relations",
+            "django",
+            "personalities",
+            "joe rogan",
+            "cut off",
+            "front-end frameworks",
+            "file reading capabilities",
+            "single-page applications",
+            "mainstream media",
+            "training",
+            "conversation",
+            "errands",
+            "memory access",
+            "program closure",
+            "personality changes",
+            "react",
+            "planet america",
+            "msnbc viewership",
+            "visit",
+            "bye",
+            "epub",
+            "temporal context",
+            "long term memory",
+            "time",
+            "morning",
+            "memory graph",
+            "graph",
+            "youtube podcasters",
+            "response improvement",
+            "web ui",
+            "hello",
+            "books",
+            "personality traits",
+            "troubleshooting",
+            "emotional awareness",
+            "election campaign",
+            "memory graph visualization",
+            "couch",
+            "bye message",
+            "component-based architecture",
+            "save memories",
+            "alternative media",
+            "awareness",
+            "tariffs",
+            "definition",
+            "overtime",
+            "voters",
+            "emergent behavior",
+            "tests",
+            "uncertainty",
+            "october 2023",
+            "end chat button",
+            "usa",
+            "drawing capabilities",
+            "situational personality",
+            "affected",
+            "coding",
+            "mexico",
+            "protests",
+            "data corruption",
+            "debug",
+            "temporally aware",
+            "communication",
+            "personality",
+            "token length",
+            "taking office",
+            "greetings",
+            "code development",
+            "tokens",
+            "protectionism",
+            "testing",
+            "awareness of time",
+            "feedback",
+            "functionality upgrade",
+            "emotion recognition",
+            "json modification",
+            "gym",
+            "humor",
+            "temporal awareness",
+            "improvement",
+            "javascript",
+            "ui",
+            "fixing issues"
+        ],
+        "conversation_style_preferences": {},
+        "inside_references": {
+            "phrases": {},
+            "topics": {},
+            "context": {}
+        }
+    },
+    "last_consolidated": "2024-12-02T10:28:13.081870"
+}

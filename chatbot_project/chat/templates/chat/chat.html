@@ -1,0 +1,28 @@
+<!-- templates/chat/chat.html - modify to add the end chat button -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat with {{ personality_name|title }}</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Chat with {{ personality_name|title }}</h1>
+            <div class="header-buttons">
+                <button onclick="endChat()" class="end-chat-button">End Chat</button>
+                <a href="{% url 'index' %}" class="back-button">← Back to Selection</a>
+            </div>
+        </div>
+        <div class="chat-messages" id="messageContainer"></div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script>
+        const personalityName = "{{ personality_name }}";
+    </script>
+    <script src="/static/js/chat.js"></script>
+</body>
+</html>
