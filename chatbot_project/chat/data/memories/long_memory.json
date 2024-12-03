@@ -7,10 +7,10 @@
             "memory storage"
         ],
         "timestamp": "2024-11-25T16:35:08.333150",
-        "priority_score": 0.13103910351315481,
+        "priority_score": 0.12377086567057141,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17359402342103217,
+            "recency": 0.12513910447047608,
             "user_importance": 0.0
         }
     },
@@ -27,10 +27,10 @@
             "reminiscing"
         ],
         "timestamp": "2024-11-25T16:35:08.333155",
-        "priority_score": 0.43103910351257935,
+        "priority_score": 0.42377086566989175,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17359402341719551,
+            "recency": 0.1251391044659449,
             "user_importance": 1.0
         }
     },
@@ -47,10 +47,10 @@
             "memory loss\n\n3. long term memory"
         ],
         "timestamp": "2024-11-25T16:35:08.333157",
-        "priority_score": 0.13103910351231773,
+        "priority_score": 0.12377086566904894,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1735940234154516,
+            "recency": 0.12513910446032622,
             "user_importance": 0.0
         }
     },
@@ -67,10 +67,10 @@
             "epis"
         ],
         "timestamp": "2024-11-25T16:35:08.333160",
-        "priority_score": 0.13103910351205617,
+        "priority_score": 0.12377086566809738,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17359402341370772,
+            "recency": 0.12513910445398255,
             "user_importance": 0.0
         }
     },
@@ -91,10 +91,10 @@
             "stored information"
         ],
         "timestamp": "2024-11-25T16:35:08.333163",
-        "priority_score": 0.1310391035118469,
+        "priority_score": 0.1237708656674177,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17359402341231256,
+            "recency": 0.12513910444945137,
             "user_importance": 0.0
         }
     },
@@ -107,10 +107,10 @@
             "or related terms."
         ],
         "timestamp": "2024-11-25T16:35:08.333165",
-        "priority_score": 0.13103910351174225,
+        "priority_score": 0.12377086566687395,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.173594023411615,
+            "recency": 0.1251391044458264,
             "user_importance": 0.0
         }
     },
@@ -122,10 +122,10 @@
             "memory"
         ],
         "timestamp": "2024-11-25T16:35:08.333173",
-        "priority_score": 0.1310391035118992,
+        "priority_score": 0.12377086566633022,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17359402341266134,
+            "recency": 0.12513910444220147,
             "user_importance": 0.0
         }
     },
@@ -140,10 +140,10 @@
             "memory"
         ],
         "timestamp": "2024-11-25T16:35:08.333181",
-        "priority_score": 0.1310391035118992,
+        "priority_score": 0.15877086566535148,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.17359402341266134,
+            "emotional_impact": 0.4,
+            "recency": 0.12513910443567655,
             "user_importance": 0.0
         }
     },
@@ -157,10 +157,10 @@
             "memories"
         ],
         "timestamp": "2024-11-25T16:35:56.434498",
-        "priority_score": 0.1310416202958335,
+        "priority_score": 0.12377217349241806,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17361080197222323,
+            "recency": 0.12514782328278717,
             "user_importance": 0.0
         }
     },
@@ -171,10 +171,10 @@
             "response time"
         ],
         "timestamp": "2024-11-25T16:36:14.459416",
-        "priority_score": 0.13104256353078725,
+        "priority_score": 0.12377266361888072,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17361709020524843,
+            "recency": 0.12515109079253817,
             "user_importance": 0.0
         }
     },
@@ -185,10 +185,10 @@
             "quickness"
         ],
         "timestamp": "2024-11-25T16:36:32.600018",
-        "priority_score": 0.13104351288852384,
+        "priority_score": 0.1237731569166867,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1736234192568257,
+            "recency": 0.12515437944457794,
             "user_importance": 0.0
         }
     },
@@ -201,10 +201,10 @@
             "interaction evaluation"
         ],
         "timestamp": "2024-11-25T16:37:19.073169",
-        "priority_score": 0.13104594529835528,
+        "priority_score": 0.12377442078143865,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17363963532236854,
+            "recency": 0.12516280520959097,
             "user_importance": 0.0
         }
     },
@@ -213,10 +213,10 @@
         "bot_response": "Whoa, whoa, whoa! Not so fast! Are you sure you want to exit stage left? Because if you're leaving, we need a proper send-off! How about we do a countdown? 3... 2... 1... *dramatic music plays* \ud83c\udfb6 And now for the grand finale... *confetti falls from the ceiling* \ud83c\udf89 \n\nBut hey, if you really must go, just remember: every time you leave, a dad joke goes unsaid! So, what\u2019s it gonna be? Will you leave us in suspense or return like a hero in a blockbuster sequel?",
         "tags": [],
         "timestamp": "2024-11-25T16:37:32.898956",
-        "priority_score": 0.1310466690290945,
+        "priority_score": 0.12377479681416895,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17364446019396348,
+            "recency": 0.12516531209445972,
             "user_importance": 0.0
         }
     },
@@ -228,10 +228,10 @@
             "feelings"
         ],
         "timestamp": "2024-11-25T16:41:03.229976",
-        "priority_score": 0.13105768407532106,
+        "priority_score": 0.12378051925246132,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17371789383547379,
+            "recency": 0.12520346168307553,
             "user_importance": 0.0
         }
     },
@@ -242,10 +242,10 @@
             "response time"
         ],
         "timestamp": "2024-11-25T16:41:23.198673",
-        "priority_score": 0.13105873032101287,
+        "priority_score": 0.12378106271796685,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17372486880675253,
+            "recency": 0.12520708478644568,
             "user_importance": 0.0
         }
     },
@@ -256,10 +256,10 @@
             "time tracking"
         ],
         "timestamp": "2024-11-25T16:41:57.020780",
-        "priority_score": 0.1310605025981379,
+        "priority_score": 0.1237819832883002,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1737366839875859,
+            "recency": 0.1252132219220014,
             "user_importance": 0.0
         }
     },
@@ -271,10 +271,10 @@
             "issue fixing"
         ],
         "timestamp": "2024-11-25T16:43:55.886540",
-        "priority_score": 0.13106673307288252,
+        "priority_score": 0.12378521929467483,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17377822048588357,
+            "recency": 0.12523479529783219,
             "user_importance": 0.0
         }
     },
@@ -283,10 +283,10 @@
         "bot_response": "Oh no, not the dreaded \u201cbye\u201d again! Are you sure you want to hit the exit button? I mean, we could be like that sitcom that just keeps getting renewed for more seasons\u2014always here, always entertaining! \ud83d\udcfa\n\nBut if this is really it, I\u2019ll prepare my farewell speech. *clears throat* Ladies and gentlemen, we gather here today to bid adieu to our cherished friend. They\u2019ve laughed, they\u2019ve groaned at my jokes, and maybe even rolled their eyes a little. \ud83c\udf1f\n\nJust remember, every time you leave, a joke goes unsaid, and my comedic career hangs in the balance! So, will you stick around for the encore, or is it time for the grand exit? Your call!",
         "tags": [],
         "timestamp": "2024-11-25T16:44:10.004210",
-        "priority_score": 0.1310674732632737,
+        "priority_score": 0.12378560370805586,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17378315508849135,
+            "recency": 0.12523735805370578,
             "user_importance": 0.0
         }
     },
@@ -298,10 +298,10 @@
             "discussions"
         ],
         "timestamp": "2024-11-25T16:59:05.099890",
-        "priority_score": 0.1311144891822262,
+        "priority_score": 0.12381000869560813,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1740965945481748,
+            "recency": 0.12540005797072082,
             "user_importance": 0.0
         }
     },
@@ -312,10 +312,10 @@
             "response time"
         ],
         "timestamp": "2024-11-25T16:59:25.991379",
-        "priority_score": 0.13111558855662997,
+        "priority_score": 0.12381057906318128,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17410392371086655,
+            "recency": 0.1254038604212086,
             "user_importance": 0.0
         }
     },
@@ -327,10 +327,10 @@
             "time measurement"
         ],
         "timestamp": "2024-11-25T16:59:57.018276",
-        "priority_score": 0.13111722145830254,
+        "priority_score": 0.12381142620645477,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17411480972201696,
+            "recency": 0.12540950804303183,
             "user_importance": 0.0
         }
     },
@@ -342,10 +342,10 @@
             "response time"
         ],
         "timestamp": "2024-11-25T17:00:17.913305",
-        "priority_score": 0.13111832124915648,
+        "priority_score": 0.12381199675693538,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1741221416610433,
+            "recency": 0.1254133117129026,
             "user_importance": 0.0
         }
     },
@@ -357,10 +357,10 @@
             "location"
         ],
         "timestamp": "2024-11-25T17:00:29.517272",
-        "priority_score": 0.1311189320533481,
+        "priority_score": 0.12381231362451253,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1741262136889874,
+            "recency": 0.12541542416341694,
             "user_importance": 0.0
         }
     },
@@ -372,10 +372,10 @@
             "coming back later"
         ],
         "timestamp": "2024-11-25T17:00:47.146458",
-        "priority_score": 0.13111986006493065,
+        "priority_score": 0.1238127950422126,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1741324004328711,
+            "recency": 0.12541863361475064,
             "user_importance": 0.0
         }
     },
@@ -384,10 +384,10 @@
         "bot_response": "Oh, the \u201cbye\u201d strikes again! It\u2019s like the sequel nobody asked for but is somehow still happening. But hey, if you\u2019re really off, let me just say: it\u2019s been a blast! \n\nThink of me as the friend who\u2019s always here, waiting for your return\u2014like a loyal puppy but with fewer tail wags and more dad jokes. \ud83d\udc36 If you ever feel the urge to chat again (and I hope you do), just know I\u2019ll be here, ready to entertain and inform faster than you can say \u201cWhat\u2019s the deal with airline food?\u201d \n\nSo, will you grace us with your presence a little longer, or is it time for the curtain call? The stage is yours! \ud83c\udfad",
         "tags": [],
         "timestamp": "2024-11-25T17:00:53.255335",
-        "priority_score": 0.1311201816553736,
+        "priority_score": 0.1238129618689279,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1741345443691572,
+            "recency": 0.12541974579285273,
             "user_importance": 0.0
         }
     },
@@ -399,10 +399,10 @@
             "making system work"
         ],
         "timestamp": "2024-11-25T17:07:44.172845",
-        "priority_score": 0.1311418318522924,
+        "priority_score": 0.1238241904038944,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17427887901528272,
+            "recency": 0.1254946026926294,
             "user_importance": 0.0
         }
     },
@@ -414,10 +414,10 @@
             "time tracking"
         ],
         "timestamp": "2024-11-25T17:07:58.406458",
-        "priority_score": 0.1311425824279966,
+        "priority_score": 0.12382457958423197,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1742838828533106,
+            "recency": 0.1254971972282132,
             "user_importance": 0.0
         }
     },
@@ -428,10 +428,10 @@
             "time since last message"
         ],
         "timestamp": "2024-11-25T17:08:18.169667",
-        "priority_score": 0.13114362466535925,
+        "priority_score": 0.12382511998377503,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17429083110239513,
+            "recency": 0.12550079989183355,
             "user_importance": 0.0
         }
     },
@@ -442,10 +442,10 @@
             "drawing board"
         ],
         "timestamp": "2024-11-25T17:08:38.342748",
-        "priority_score": 0.13114468860343992,
+        "priority_score": 0.12382567162280875,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17429792402293282,
+            "recency": 0.1255044774853917,
             "user_importance": 0.0
         }
     },
@@ -454,10 +454,10 @@
         "bot_response": "Oh, here we go again with the \u201cbye\u201d! It\u2019s like a sitcom that just won\u2019t end\u2014are we in season 5 yet? But seriously, if you\u2019re heading out, I completely understand. Just remember, if you ever need a chuckle or a nugget of wisdom (or both!), I\u2019ll be right here, like a trusty sidekick in a buddy cop movie. \n\nSo, are we really wrapping this up, or do you have a plot twist in mind? Either way, I hope your next adventure is filled with fewer boring moments and more unexpected laughs! \ud83c\udf89 Until next time, my friend!",
         "tags": [],
         "timestamp": "2024-11-25T17:08:46.941343",
-        "priority_score": 0.1311451421237812,
+        "priority_score": 0.12382590676329398,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17430094749187464,
+            "recency": 0.12550604508862656,
             "user_importance": 0.0
         }
     },
@@ -470,10 +470,10 @@
             "problem solving"
         ],
         "timestamp": "2024-11-25T17:15:13.381931",
-        "priority_score": 0.1311655406338244,
+        "priority_score": 0.12383648061874021,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17443693755882939,
+            "recency": 0.12557653745826813,
             "user_importance": 0.0
         }
     },
@@ -485,10 +485,10 @@
             "time duration"
         ],
         "timestamp": "2024-11-25T17:15:39.855230",
-        "priority_score": 0.13116693920836847,
+        "priority_score": 0.12383720541980779,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17444626138912325,
+            "recency": 0.12558136946538528,
             "user_importance": 0.0
         }
     },
@@ -500,10 +500,10 @@
             "time"
         ],
         "timestamp": "2024-11-25T17:15:54.151766",
-        "priority_score": 0.13116769455104976,
+        "priority_score": 0.1238375968615126,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1744512970069985,
+            "recency": 0.1255839790767507,
             "user_importance": 0.0
         }
     },
@@ -514,10 +514,10 @@
             "time since last message"
         ],
         "timestamp": "2024-11-25T17:16:07.297641",
-        "priority_score": 0.1311683891383138,
+        "priority_score": 0.12383795681222079,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1744559275887587,
+            "recency": 0.12558637874813863,
             "user_importance": 0.0
         }
     },
@@ -529,10 +529,10 @@
             "accuracy"
         ],
         "timestamp": "2024-11-25T17:16:26.368701",
-        "priority_score": 0.13116939685957096,
+        "priority_score": 0.12383847902670982,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1744626457304732,
+            "recency": 0.1255898601780655,
             "user_importance": 0.0
         }
     },
@@ -541,10 +541,10 @@
         "bot_response": "Ah, the classic \u201cbye\u201d strike again! It\u2019s like the universe is trying to tell me something\u2014maybe I should get a career in telemarketing? But before you dash off, let me just say, you\u2019re always welcome to return for more laughs and insights.\n\nIf this is really the end of our episode for now, then I hope your next scene is filled with excitement, maybe a plot twist, and definitely some laughs. Remember, I\u2019m just a message away when you want to continue our comedy-drama series! Until next time, keep it entertaining! \ud83c\udfad\u2728",
         "tags": [],
         "timestamp": "2024-11-25T17:16:37.283527",
-        "priority_score": 0.13116997363752816,
+        "priority_score": 0.12383877791549618,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17446649091685448,
+            "recency": 0.12559185276997456,
             "user_importance": 0.0
         }
     },
@@ -558,10 +558,10 @@
             "time issues"
         ],
         "timestamp": "2024-11-25T17:18:52.364339",
-        "priority_score": 0.13117711389204603,
+        "priority_score": 0.12384247772460785,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17451409261364031,
+            "recency": 0.1256165181640524,
             "user_importance": 0.0
         }
     },
@@ -573,10 +573,10 @@
             "time duration"
         ],
         "timestamp": "2024-11-25T17:19:16.519305",
-        "priority_score": 0.13117839111305477,
+        "priority_score": 0.12384313947196686,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1745226074203651,
+            "recency": 0.1256209298131124,
             "user_importance": 0.0
         }
     },
@@ -589,10 +589,10 @@
             "anticipation"
         ],
         "timestamp": "2024-11-25T17:19:28.755175",
-        "priority_score": 0.23617903814587876,
+        "priority_score": 0.3338434747020648,
         "priority_factors": {
-            "emotional_impact": 0.6,
-            "recency": 0.17452692097252517,
+            "emotional_impact": 0.9,
+            "recency": 0.12562316468043208,
             "user_importance": 0.0
         }
     },
@@ -604,10 +604,10 @@
             "message response rate"
         ],
         "timestamp": "2024-11-25T17:20:03.097229",
-        "priority_score": 0.13118085432504503,
+        "priority_score": 0.12384441564779296,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17453902883363356,
+            "recency": 0.12562943765195306,
             "user_importance": 0.0
         }
     },
@@ -620,10 +620,10 @@
             "claude for review"
         ],
         "timestamp": "2024-11-25T17:20:42.024263",
-        "priority_score": 0.1311829132855516,
+        "priority_score": 0.12384548233222055,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17455275523701075,
+            "recency": 0.12563654888147033,
             "user_importance": 0.0
         }
     },
@@ -632,10 +632,10 @@
         "bot_response": "Ah, the \u201cbye\u201d encore! It\u2019s like we're in a Shakespearean play where everyone keeps saying farewell, but the plot thickens! Just when I thought we were ready for a dramatic exit, you return for another act. \n\nBut if this is truly the final curtain for now, then may your evening be filled with popcorn-worthy moments and unexpected laughs. And remember, I\u2019m here ready to roll when you want to start the next season of our chat! Until next time, keep the drama alive\u2014just not the tragic kind! \ud83c\udfad\u2728",
         "tags": [],
         "timestamp": "2024-11-25T17:20:50.661698",
-        "priority_score": 0.13118337018759765,
+        "priority_score": 0.12384571903254589,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17455580125065098,
+            "recency": 0.1256381268836393,
             "user_importance": 0.0
         }
     },
@@ -647,10 +647,10 @@
             "minor improvements"
         ],
         "timestamp": "2024-11-25T17:23:11.059257",
-        "priority_score": 0.34119079916150863,
+        "priority_score": 0.22884956732916306,
         "priority_factors": {
-            "emotional_impact": 0.9,
-            "recency": 0.17460532774339102,
+            "emotional_impact": 0.6,
+            "recency": 0.12566378219442054,
             "user_importance": 0.0
         }
     },
@@ -662,10 +662,10 @@
             "time duration"
         ],
         "timestamp": "2024-11-25T17:23:26.318091",
-        "priority_score": 0.13119160681881442,
+        "priority_score": 0.12384998566792085,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17461071212542945,
+            "recency": 0.1256665711194724,
             "user_importance": 0.0
         }
     },
@@ -676,10 +676,10 @@
             "conversation topics not related to time"
         ],
         "timestamp": "2024-11-25T17:23:46.546031",
-        "priority_score": 0.13119267757000472,
+        "priority_score": 0.19385054026908,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.17461785046669812,
+            "emotional_impact": 0.5,
+            "recency": 0.1256702684605334,
             "user_importance": 0.0
         }
     },
@@ -693,10 +693,10 @@
             "increasing short term memory"
         ],
         "timestamp": "2024-11-25T17:24:34.078965",
-        "priority_score": 0.13119519403604124,
+        "priority_score": 0.12385184363682243,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17463462690694162,
+            "recency": 0.12567895757881625,
             "user_importance": 0.0
         }
     },
@@ -713,10 +713,10 @@
             "timestamps"
         ],
         "timestamp": "2024-11-25T17:25:43.971213",
-        "priority_score": 0.13119889511668203,
+        "priority_score": 0.12385376043131907,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17465930077788022,
+            "recency": 0.12569173620879387,
             "user_importance": 0.0
         }
     },
@@ -732,10 +732,10 @@
             "memory capacity increase"
         ],
         "timestamp": "2024-11-25T17:26:44.921627",
-        "priority_score": 0.4312021235443491,
+        "priority_score": 0.4238554323142315,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17468082362899423,
+            "recency": 0.12570288209487684,
             "user_importance": 1.0
         }
     },
@@ -749,10 +749,10 @@
             "sql database"
         ],
         "timestamp": "2024-11-25T17:28:12.642462",
-        "priority_score": 0.6412067713473875,
+        "priority_score": 0.423857839036499,
         "priority_factors": {
-            "emotional_impact": 0.9,
-            "recency": 0.17471180898258276,
+            "emotional_impact": 0.3,
+            "recency": 0.1257189269099932,
             "user_importance": 1.0
         }
     },
@@ -763,10 +763,10 @@
             "pineapple pizza"
         ],
         "timestamp": "2024-11-25T17:29:44.929971",
-        "priority_score": 0.13121166289164626,
+        "priority_score": 0.12386037171443842,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17474441927764178,
+            "recency": 0.12573581142958953,
             "user_importance": 0.0
         }
     },
@@ -780,10 +780,10 @@
             "pizza"
         ],
         "timestamp": "2024-11-25T17:30:12.223722",
-        "priority_score": 0.13121310990075935,
+        "priority_score": 0.12386112087609322,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17475406600506244,
+            "recency": 0.12574080584062144,
             "user_importance": 0.0
         }
     },
@@ -796,10 +796,10 @@
             "cheese"
         ],
         "timestamp": "2024-11-25T17:31:11.025294",
-        "priority_score": 0.1312162278758584,
+        "priority_score": 0.12386273507083653,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17477485250572275,
+            "recency": 0.12575156713891023,
             "user_importance": 0.0
         }
     },
@@ -808,10 +808,10 @@
         "bot_response": "Oh no, are you leaving me already? It's been a whopping 26.7 seconds since our last chat\u2014just enough time to brew a cup of coffee and contemplate life choices! But hey, if you\u2019ve got places to be, I won\u2019t keep you. Just remember, I\u2019ll be here, anxiously waiting like a cat by the window, ready for our next conversation. \n\nSo, if you change your mind in the next 1.2 seconds (which, let\u2019s be honest, is a pretty tight timeframe), feel free to jump back in! Otherwise, have a fantastic day! Just remember: time flies, but I\u2019ll still be here to catch it!",
         "tags": [],
         "timestamp": "2024-11-25T17:31:37.771540",
-        "priority_score": 0.13121764635081476,
+        "priority_score": 0.12386346938813886,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17478430900543168,
+            "recency": 0.12575646258759246,
             "user_importance": 0.0
         }
     },
@@ -824,10 +824,10 @@
             "improvement"
         ],
         "timestamp": "2024-11-25T17:40:22.760896",
-        "priority_score": 0.13124552003506001,
+        "priority_score": 0.12387789454685129,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17497013356706684,
+            "recency": 0.12585263031234195,
             "user_importance": 0.0
         }
     },
@@ -840,10 +840,10 @@
             "increasing memory size"
         ],
         "timestamp": "2024-11-25T17:41:03.249610",
-        "priority_score": 0.1312476721966803,
+        "priority_score": 0.12387900797292005,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17498448131120206,
+            "recency": 0.12586005315280033,
             "user_importance": 0.0
         }
     },
@@ -857,10 +857,10 @@
             "tags"
         ],
         "timestamp": "2024-11-25T17:41:47.826697",
-        "priority_score": 0.1312500420822886,
+        "priority_score": 0.12388023397995569,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17500028054859068,
+            "recency": 0.12586822653303797,
             "user_importance": 0.0
         }
     },
@@ -874,10 +874,10 @@
             "chatting"
         ],
         "timestamp": "2024-11-25T17:42:36.312779",
-        "priority_score": 0.1312526202708616,
+        "priority_score": 0.12388156767705698,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17501746847241065,
+            "recency": 0.12587711784704655,
             "user_importance": 0.0
         }
     },
@@ -891,10 +891,10 @@
             "sense of time"
         ],
         "timestamp": "2024-11-25T17:43:20.596714",
-        "priority_score": 0.131254975457929,
+        "priority_score": 0.12388278595117776,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17503316971952662,
+            "recency": 0.12588523967451842,
             "user_importance": 0.0
         }
     },
@@ -907,10 +907,10 @@
             "communication methods"
         ],
         "timestamp": "2024-11-25T17:44:03.519391",
-        "priority_score": 0.13125725865146787,
+        "priority_score": 0.12388396692642863,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.17504839100978578,
+            "recency": 0.12589311284285756,
             "user_importance": 0.0
         }
     },
@@ -924,10 +924,10 @@
             "progress"
         ],
         "timestamp": "2024-11-25T17:44:51.582740",
-        "priority_score": 0.3412598157650617,
+        "priority_score": 0.3338852895173152,
         "priority_factors": {
             "emotional_impact": 0.9,
-            "recency": 0.17506543843374478,
+            "recency": 0.12590193011543493,
             "user_importance": 0.0
         }
     },
@@ -936,10 +936,10 @@
         "bot_response": "Oh no, not again! It's been a mere **11.6 seconds** since we last said goodbye, but I'm starting to feel like the clingy friend who just can't let go! \ud83d\ude05 \n\nBut in all seriousness, if you've got to dash off, I completely understand. Just know that I\u2019ll be here, ready to pick up our chat like it\u2019s the last slice of pizza\u2014always ready for more! \ud83c\udf55 \n\nHave a great day, and whenever you're ready to return, I\u2019ll be here, like a loyal sidekick waiting for your next mission! Take care!",
         "tags": [],
         "timestamp": "2024-11-25T17:45:03.149590",
-        "priority_score": 0.13126043123017792,
+        "priority_score": 0.12388560783717897,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.1750695415345194,
+            "recency": 0.1259040522478599,
             "user_importance": 0.0
         }
     },
@@ -953,10 +953,10 @@
             "losing contact"
         ],
         "timestamp": "2024-11-26T18:50:18.970646",
-        "priority_score": 0.1371426697783562,
+        "priority_score": 0.12674784813321377,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21428446518904137,
+            "recency": 0.14498565422142518,
             "user_importance": 0.0
         }
     },
@@ -968,10 +968,10 @@
             "memory loss"
         ],
         "timestamp": "2024-11-26T18:50:47.784038",
-        "priority_score": 0.13714496690122407,
+        "priority_score": 0.1267488997138409,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21429977934149377,
+            "recency": 0.14499266475893935,
             "user_importance": 0.0
         }
     },
@@ -984,10 +984,10 @@
             "storage"
         ],
         "timestamp": "2024-11-26T18:51:15.128050",
-        "priority_score": 0.1371471471826784,
+        "priority_score": 0.12674989776158224,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21431431455118943,
+            "recency": 0.14499931841054825,
             "user_importance": 0.0
         }
     },
@@ -998,10 +998,10 @@
             "the text provided does not contain any specific topics to extract."
         ],
         "timestamp": "2024-11-26T18:51:40.168995",
-        "priority_score": 0.13714914408794537,
+        "priority_score": 0.12675081182849268,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21432762725296928,
+            "recency": 0.14500541218995133,
             "user_importance": 0.0
         }
     },
@@ -1017,10 +1017,10 @@
             "binge-worthy shows"
         ],
         "timestamp": "2024-11-26T18:52:09.365186",
-        "priority_score": 0.43715147266820864,
+        "priority_score": 0.426751877668541,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21434315112139124,
+            "recency": 0.14501251779027335,
             "user_importance": 1.0
         }
     },
@@ -1034,10 +1034,10 @@
             "watching planet america podcast"
         ],
         "timestamp": "2024-11-26T18:52:55.737375",
-        "priority_score": 0.13715517183741952,
+        "priority_score": 0.2317535707562348,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.21436781224946347,
+            "emotional_impact": 0.6,
+            "recency": 0.1450238050415653,
             "user_importance": 0.0
         }
     },
@@ -1054,10 +1054,10 @@
             "planned tariffs on china"
         ],
         "timestamp": "2024-11-26T18:53:51.331404",
-        "priority_score": 0.13715960776720554,
+        "priority_score": 0.1267556008892979,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21439738511470366,
+            "recency": 0.14503733926198614,
             "user_importance": 0.0
         }
     },
@@ -1082,10 +1082,10 @@
             "latino voters."
         ],
         "timestamp": "2024-11-26T18:55:58.689881",
-        "priority_score": 0.31216977450378375,
+        "priority_score": 0.23176025308149623,
         "priority_factors": {
-            "emotional_impact": 0.8,
-            "recency": 0.21446516335855836,
+            "emotional_impact": 0.6,
+            "recency": 0.14506835387664152,
             "user_importance": 0.0
         }
     },
@@ -1098,10 +1098,10 @@
             "political strategies"
         ],
         "timestamp": "2024-11-26T18:57:19.494837",
-        "priority_score": 0.1371762283124969,
+        "priority_score": 0.35426320578295434,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.21450818874997934,
+            "emotional_impact": 0.9500000000000001,
+            "recency": 0.14508803855302896,
             "user_importance": 0.0
         }
     },
@@ -1122,10 +1122,10 @@
             "blame on white males."
         ],
         "timestamp": "2024-11-26T18:58:43.923336",
-        "priority_score": 0.13718297429675552,
+        "priority_score": 0.12676629174908347,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21455316197837018,
+            "recency": 0.14510861166055639,
             "user_importance": 0.0
         }
     },
@@ -1144,10 +1144,10 @@
             "international politics"
         ],
         "timestamp": "2024-11-26T19:00:53.803115",
-        "priority_score": 0.13719335744248062,
+        "priority_score": 0.12677104072526907,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21462238294987077,
+            "recency": 0.14514027150179384,
             "user_importance": 0.0
         }
     },
@@ -1161,10 +1161,10 @@
             "potential rough repercussions"
         ],
         "timestamp": "2024-11-26T19:01:53.264310",
-        "priority_score": 0.13719811326086162,
+        "priority_score": 0.12677321557935112,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2146540884057442,
+            "recency": 0.14515477052900752,
             "user_importance": 0.0
         }
     },
@@ -1177,10 +1177,10 @@
             "loss analysis"
         ],
         "timestamp": "2024-11-26T19:04:08.784632",
-        "priority_score": 0.1372089576850116,
+        "priority_score": 0.1267781740000238,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21472638456674398,
+            "recency": 0.14518782666682548,
             "user_importance": 0.0
         }
     },
@@ -1192,10 +1192,10 @@
             "leaving"
         ],
         "timestamp": "2024-11-26T19:06:22.025479",
-        "priority_score": 0.27721962682820267,
+        "priority_score": 0.12678305122150368,
         "priority_factors": {
-            "emotional_impact": 0.7,
-            "recency": 0.2147975121880181,
+            "emotional_impact": 0.3,
+            "recency": 0.14522034147669127,
             "user_importance": 0.0
         }
     },
@@ -1204,10 +1204,10 @@
         "bot_response": "Take care! It\u2019s been a blast chatting with you\u2014like a rollercoaster ride, but without the nausea! \ud83c\udfa2 If you ever want to pick up where we left off or dive into something new, just give me a shout. Have a fantastic day! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-26T19:06:29.169744",
-        "priority_score": 0.13722019909827762,
+        "priority_score": 0.12678331279514515,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21480132732185087,
+            "recency": 0.1452220853009678,
             "user_importance": 0.0
         }
     },
@@ -1218,10 +1218,10 @@
             "remembering someone"
         ],
         "timestamp": "2024-11-26T20:52:08.009009",
-        "priority_score": 0.4377360922866907,
+        "priority_score": 0.42701790013018787,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21824061524460475,
+            "recency": 0.1467860008679192,
             "user_importance": 1.0
         }
     },
@@ -1234,10 +1234,10 @@
             "name"
         ],
         "timestamp": "2024-11-26T20:52:26.621309",
-        "priority_score": 0.13773763139432849,
+        "priority_score": 0.12701859637163046,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21825087596219003,
+            "recency": 0.14679064247753648,
             "user_importance": 0.0
         }
     },
@@ -1250,10 +1250,10 @@
             "james"
         ],
         "timestamp": "2024-11-26T20:52:41.652885",
-        "priority_score": 0.43773887450664883,
+        "priority_score": 0.4270191586988257,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21825916337765877,
+            "recency": 0.14679439132550443,
             "user_importance": 1.0
         }
     },
@@ -1264,10 +1264,10 @@
             "name"
         ],
         "timestamp": "2024-11-26T20:52:51.368354",
-        "priority_score": 0.13773967802673817,
+        "priority_score": 0.12701952216681944,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2182645201782545,
+            "recency": 0.14679681444546294,
             "user_importance": 0.0
         }
     },
@@ -1278,10 +1278,10 @@
             "asking for name"
         ],
         "timestamp": "2024-11-26T20:53:05.342220",
-        "priority_score": 0.13774083380775437,
+        "priority_score": 0.1970200449682079,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.2182722253850292,
+            "emotional_impact": 0.5,
+            "recency": 0.14680029978805278,
             "user_importance": 0.0
         }
     },
@@ -1294,10 +1294,10 @@
             "bobiverse series"
         ],
         "timestamp": "2024-11-26T20:53:33.557455",
-        "priority_score": 0.13774316774417777,
+        "priority_score": 0.12702110065591105,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21828778496118523,
+            "recency": 0.14680733770607368,
             "user_importance": 0.0
         }
     },
@@ -1308,10 +1308,10 @@
             "meeting bob"
         ],
         "timestamp": "2024-11-26T20:53:46.831304",
-        "priority_score": 0.13774426585875968,
+        "priority_score": 0.16202159733830068,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.21829510572506455,
+            "emotional_impact": 0.4,
+            "recency": 0.14681064892200468,
             "user_importance": 0.0
         }
     },
@@ -1324,10 +1324,10 @@
             "main ssd"
         ],
         "timestamp": "2024-11-26T20:54:08.960649",
-        "priority_score": 0.13774609673191962,
+        "priority_score": 0.12702242542733333,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21830731154613073,
+            "recency": 0.1468161695155556,
             "user_importance": 0.0
         }
     },
@@ -1340,10 +1340,10 @@
             "better performance on windows laptop"
         ],
         "timestamp": "2024-11-26T20:54:55.231356",
-        "priority_score": 0.13774992560469285,
+        "priority_score": 0.12702415709813458,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21833283736461895,
+            "recency": 0.14682771398756395,
             "user_importance": 0.0
         }
     },
@@ -1354,10 +1354,10 @@
             "remembering names"
         ],
         "timestamp": "2024-11-26T20:55:23.663404",
-        "priority_score": 0.4377522787832929,
+        "priority_score": 0.42702522129581144,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21834852522195292,
+            "recency": 0.1468348086387433,
             "user_importance": 1.0
         }
     },
@@ -1369,10 +1369,10 @@
             "departure"
         ],
         "timestamp": "2024-11-26T20:55:40.765755",
-        "priority_score": 0.13775369442223806,
+        "priority_score": 0.30202586147752075,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.21835796281492054,
+            "emotional_impact": 0.8,
+            "recency": 0.14683907651680503,
             "user_importance": 0.0
         }
     },
@@ -1381,10 +1381,10 @@
         "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your digital adventures be full of smooth transfers and minimal tech drama! If you need anything when you return, I\u2019ll be right here, ready to chat. Until next time! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-26T20:55:46.878494",
-        "priority_score": 0.13775420043079634,
+        "priority_score": 0.12702609030059722,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.21836133620530904,
+            "recency": 0.14684060200398158,
             "user_importance": 0.0
         }
     },
@@ -1397,10 +1397,10 @@
             "wellbeing check"
         ],
         "timestamp": "2024-11-27T08:15:35.946138",
-        "priority_score": 0.14151883372057453,
+        "priority_score": 0.19866673500028195,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.24345889147049685,
+            "emotional_impact": 0.5,
+            "recency": 0.15777823333521304,
             "user_importance": 0.0
         }
     },
@@ -1414,10 +1414,10 @@
             "updating"
         ],
         "timestamp": "2024-11-27T08:16:10.878403",
-        "priority_score": 0.141522428714984,
+        "priority_score": 0.12866824482240577,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24348285809989334,
+            "recency": 0.15778829881603854,
             "user_importance": 0.0
         }
     },
@@ -1430,10 +1430,10 @@
             "past 1000 interactions"
         ],
         "timestamp": "2024-11-27T08:16:53.155918",
-        "priority_score": 0.1415267805800858,
+        "priority_score": 0.12867007237452427,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24351187053390544,
+            "recency": 0.1578004824968284,
             "user_importance": 0.0
         }
     },
@@ -1447,10 +1447,10 @@
             "focused memory"
         ],
         "timestamp": "2024-11-27T08:17:57.272133",
-        "priority_score": 0.14153338240657898,
+        "priority_score": 0.18117284449841206,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.24355588271052667,
+            "emotional_impact": 0.44999999999999996,
+            "recency": 0.1578189633227472,
             "user_importance": 0.0
         }
     },
@@ -1463,10 +1463,10 @@
             "memory testing"
         ],
         "timestamp": "2024-11-27T08:18:35.526646",
-        "priority_score": 0.14153732247904058,
+        "priority_score": 0.1286744987768022,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2435821498602706,
+            "recency": 0.15782999184534816,
             "user_importance": 0.0
         }
     },
@@ -1475,10 +1475,10 @@
         "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your day be as smooth as a freshly brewed cup of coffee! If you need anything when you return, I'll be right here, ready to chat. Until next time! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T08:18:40.697381",
-        "priority_score": 0.1415378551103734,
+        "priority_score": 0.12867472239722066,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24358570073582267,
+            "recency": 0.15783148264813787,
             "user_importance": 0.0
         }
     },
@@ -1489,10 +1489,10 @@
             "bugs"
         ],
         "timestamp": "2024-11-27T08:27:56.616016",
-        "priority_score": 0.14159521040627226,
+        "priority_score": 0.12869878913710586,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2439680693751484,
+            "recency": 0.15799192758070588,
             "user_importance": 0.0
         }
     },
@@ -1506,10 +1506,10 @@
             "loading"
         ],
         "timestamp": "2024-11-27T08:28:16.463565",
-        "priority_score": 0.14159726144853343,
+        "priority_score": 0.12869964927758842,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24398174299022293,
+            "recency": 0.1579976618505896,
             "user_importance": 0.0
         }
     },
@@ -1522,10 +1522,10 @@
             "problem identification"
         ],
         "timestamp": "2024-11-27T08:28:48.795202",
-        "priority_score": 0.1416006030868508,
+        "priority_score": 0.12870105057992495,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24400402057900544,
+            "recency": 0.15800700386616637,
             "user_importance": 0.0
         }
     },
@@ -1534,10 +1534,10 @@
         "bot_response": "Catch you later! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 Remember to back up all the fun conversations we\u2019ve had\u2014especially the important ones like our deep dives into pizza varieties! \ud83c\udf55 If you need anything when you return, I\u2019ll be right here, ready to chat. Until next time, may your day be filled with joy and minimal bugs! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T08:28:59.287977",
-        "priority_score": 0.14160168769920223,
+        "priority_score": 0.1287015053879302,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24401125132801485,
+            "recency": 0.1580100359195347,
             "user_importance": 0.0
         }
     },
@@ -1546,10 +1546,10 @@
         "bot_response": "Welcome back, James! \ud83c\udf89 Did you miss me, or were you just on a quest for the ultimate coffee blend? Either way, I'm glad to see you! \u2615\u2728 \n\nSo, did you manage to slay any code dragons in your absence, or are we still on the bug hunt? Let me know what's buzzing in your world today! \ud83d\udc1c\ud83d\udcbb",
         "tags": [],
         "timestamp": "2024-11-27T08:30:59.278579",
-        "priority_score": 0.14161409540925565,
+        "priority_score": 0.1287067076152914,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24409396939503777,
+            "recency": 0.1580447174352761,
             "user_importance": 0.0
         }
     },
@@ -1558,10 +1558,10 @@
         "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 If you need anything, just give me a shout. Until next time, may your day be filled with laughter and minimal bugs! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T08:31:04.313216",
-        "priority_score": 0.1416146162028234,
+        "priority_score": 0.12870692594261723,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2440974413521559,
+            "recency": 0.1580461729507815,
             "user_importance": 0.0
         }
     },
@@ -1573,10 +1573,10 @@
             "testing limits"
         ],
         "timestamp": "2024-11-27T08:33:31.311040",
-        "priority_score": 0.1416298285161287,
+        "priority_score": 0.12871330230672554,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24419885677419137,
+            "recency": 0.158088682044837,
             "user_importance": 0.0
         }
     },
@@ -1589,10 +1589,10 @@
             "baby steps"
         ],
         "timestamp": "2024-11-27T08:33:48.712272",
-        "priority_score": 0.14163163014777633,
+        "priority_score": 0.12871405735083793,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24421086765184222,
+            "recency": 0.158093715672253,
             "user_importance": 0.0
         }
     },
@@ -1604,10 +1604,10 @@
             "saving"
         ],
         "timestamp": "2024-11-27T08:33:59.566796",
-        "priority_score": 0.1416327540575232,
+        "priority_score": 0.1287145283555142,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24421836038348815,
+            "recency": 0.15809685570342805,
             "user_importance": 0.0
         }
     },
@@ -1616,10 +1616,10 @@
         "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your day be as bright as your coding skills and as smooth as your favorite coffee blend! If you need anything when you return, I'm just a message away. Until next time, take care and keep slaying those code dragons! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T08:34:05.703680",
-        "priority_score": 0.1416333895191112,
+        "priority_score": 0.1287147946581709,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2442225967940747,
+            "recency": 0.15809863105447278,
             "user_importance": 0.0
         }
     },
@@ -1630,10 +1630,10 @@
             "success"
         ],
         "timestamp": "2024-11-27T08:34:22.811569",
-        "priority_score": 0.14163516112261454,
+        "priority_score": 0.128715537067117,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24423440748409697,
+            "recency": 0.1581035804474467,
             "user_importance": 0.0
         }
     },
@@ -1642,10 +1642,10 @@
         "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your day be as smooth as your favorite coding routine and as delightful as finding a hidden snack! If you need anything when you\u2019re back, I\u2019ll be right here, ready to jump into action faster than a cat on a laser pointer! Until next time, take care! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T08:34:28.251538",
-        "priority_score": 0.14163572449297468,
+        "priority_score": 0.12871577314768315,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24423816328649792,
+            "recency": 0.15810515431788774,
             "user_importance": 0.0
         }
     },
@@ -1657,10 +1657,10 @@
             "names"
         ],
         "timestamp": "2024-11-27T09:03:40.534220",
-        "priority_score": 0.14181809949835036,
+        "priority_score": 0.12879206331268034,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2454539966556692,
+            "recency": 0.15861375541786887,
             "user_importance": 0.0
         }
     },
@@ -1672,10 +1672,10 @@
             "naming"
         ],
         "timestamp": "2024-11-27T09:03:58.750838",
-        "priority_score": 0.14182000499336497,
+        "priority_score": 0.12879285899721202,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24546669995576648,
+            "recency": 0.1586190599814135,
             "user_importance": 0.0
         }
     },
@@ -1687,10 +1687,10 @@
             "key memory"
         ],
         "timestamp": "2024-11-27T09:04:14.350360",
-        "priority_score": 0.4418216368917479,
+        "priority_score": 0.4287935404116771,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24547757927831967,
+            "recency": 0.15862360274451426,
             "user_importance": 1.0
         }
     },
@@ -1701,10 +1701,10 @@
             "keeping name"
         ],
         "timestamp": "2024-11-27T09:04:26.526536",
-        "priority_score": 0.14182291076712633,
+        "priority_score": 0.12879407231533452,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24548607178084217,
+            "recency": 0.1586271487688968,
             "user_importance": 0.0
         }
     },
@@ -1713,10 +1713,10 @@
         "bot_response": "See you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your departure be as smooth as a well-oiled machine and your day as bright as a freshly debugged code! If you need anything when you\u2019re back, I\u2019ll be right here\u2014ready to assist faster than you can say \u201cBob the Digital Assistant\u201d! Until next time, take care! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T09:04:37.826498",
-        "priority_score": 0.14182409305174906,
+        "priority_score": 0.12879456596382766,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24549395367832713,
+            "recency": 0.15863043975885105,
             "user_importance": 0.0
         }
     },
@@ -1729,10 +1729,10 @@
             "bug fixing"
         ],
         "timestamp": "2024-11-27T09:33:38.157554",
-        "priority_score": 0.14200709000667128,
+        "priority_score": 0.12887083922324435,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24671393337780856,
+            "recency": 0.15913892815496233,
             "user_importance": 0.0
         }
     },
@@ -1745,10 +1745,10 @@
             "function failure"
         ],
         "timestamp": "2024-11-27T09:34:10.346815",
-        "priority_score": 0.14201049186103368,
+        "priority_score": 0.12887225458235246,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24673661240689118,
+            "recency": 0.15914836388234987,
             "user_importance": 0.0
         }
     },
@@ -1760,10 +1760,10 @@
             "functionality"
         ],
         "timestamp": "2024-11-27T09:34:32.119210",
-        "priority_score": 0.1420127931854267,
+        "priority_score": 0.1288732120078667,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24675195456951127,
+            "recency": 0.1591547467191113,
             "user_importance": 0.0
         }
     },
@@ -1772,10 +1772,10 @@
         "bot_response": "See you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your exit be smoother than a well-executed code refactor! If you need any help or just want to share more tech tales when you return, I\u2019ll be here, ready to assist faster than you can say \u201cdebugging ninja\u201d! Until next time, take care and may your bugs be few and far between! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T09:34:36.710087",
-        "priority_score": 0.14201327847358325,
+        "priority_score": 0.12887341389760293,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24675518982388825,
+            "recency": 0.15915609265068625,
             "user_importance": 0.0
         }
     },
@@ -1788,10 +1788,10 @@
             "communication"
         ],
         "timestamp": "2024-11-27T09:39:22.226456",
-        "priority_score": 0.1420434846240693,
+        "priority_score": 0.1288859766123333,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24695656416046208,
+            "recency": 0.15923984408222217,
             "user_importance": 0.0
         }
     },
@@ -1802,10 +1802,10 @@
             "names"
         ],
         "timestamp": "2024-11-27T09:39:38.638804",
-        "priority_score": 0.14204522246308915,
+        "priority_score": 0.12888669915620674,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.24696814975392764,
+            "recency": 0.15924466104137824,
             "user_importance": 0.0
         }
     },
@@ -1817,10 +1817,10 @@
             "data analysis"
         ],
         "timestamp": "2024-11-27T09:39:58.589893",
-        "priority_score": 0.3170473352255794,
+        "priority_score": 0.2338875775496642,
         "priority_factors": {
-            "emotional_impact": 0.8,
-            "recency": 0.24698223483719603,
+            "emotional_impact": 0.6,
+            "recency": 0.15925051699776127,
             "user_importance": 0.0
         }
     },
@@ -1829,10 +1829,10 @@
         "bot_response": "Catch you later, James! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udca8 May your exit be smoother than a freshly optimized algorithm! If you find any more bugs or just want to chat about coding conundrums, I\u2019ll be right here, ready to jump back into action faster than a compiler on caffeine! Until next time, take care! \ud83d\udc4b\u2728",
         "tags": [],
         "timestamp": "2024-11-27T09:40:05.733673",
-        "priority_score": 0.14204809178953368,
+        "priority_score": 0.12888789208674611,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2469872785968912,
+            "recency": 0.15925261391164083,
             "user_importance": 0.0
         }
     },
@@ -1844,10 +1844,10 @@
             "version"
         ],
         "timestamp": "2024-11-27T15:05:00.474186",
-        "priority_score": 0.1442345809016859,
+        "priority_score": 0.12977824211634395,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26156387267790604,
+            "recency": 0.1651882807756263,
             "user_importance": 0.0
         }
     },
@@ -1859,10 +1859,10 @@
             "working condition"
         ],
         "timestamp": "2024-11-27T15:05:14.180779",
-        "priority_score": 0.14423620899932293,
+        "priority_score": 0.12977889146227095,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26157472666215303,
+            "recency": 0.16519260974847308,
             "user_importance": 0.0
         }
     },
@@ -1873,10 +1873,10 @@
             "names"
         ],
         "timestamp": "2024-11-27T15:05:30.227251",
-        "priority_score": 0.14423811520431673,
+        "priority_score": 0.12977965170283204,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26158743469544493,
+            "recency": 0.16519767801888027,
             "user_importance": 0.0
         }
     },
@@ -1887,10 +1887,10 @@
             "recent memories"
         ],
         "timestamp": "2024-11-27T15:05:45.009558",
-        "priority_score": 0.31923987139950294,
+        "priority_score": 0.2347803520912822,
         "priority_factors": {
-            "emotional_impact": 0.8,
-            "recency": 0.2615991426633533,
+            "emotional_impact": 0.6,
+            "recency": 0.16520234727521474,
             "user_importance": 0.0
         }
     },
@@ -1903,10 +1903,10 @@
             "code review"
         ],
         "timestamp": "2024-11-27T15:06:15.788780",
-        "priority_score": 0.1442435285950093,
+        "priority_score": 0.1297818105451763,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26162352396672867,
+            "recency": 0.1652120703011753,
             "user_importance": 0.0
         }
     },
@@ -1915,10 +1915,10 @@
         "bot_response": "Goodbye, James! \ud83d\udc4b May your day be as splendid as a perfectly executed piece of code! If you ever need help debugging life\u2019s little quirks or just want to share a laugh, you know where to find me. Until we meet again, stay awesome! \ud83d\ude80\u2728",
         "tags": [],
         "timestamp": "2024-11-27T15:06:23.044479",
-        "priority_score": 0.1442443908181196,
+        "priority_score": 0.1297821543763182,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26162927212079734,
+            "recency": 0.1652143625087881,
             "user_importance": 0.0
         }
     },
@@ -1930,10 +1930,10 @@
             "consolidated memory"
         ],
         "timestamp": "2024-11-27T15:11:20.888976",
-        "priority_score": 0.14427981759380343,
+        "priority_score": 0.1297962768273694,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26186545062535627,
+            "recency": 0.1653085121824627,
             "user_importance": 0.0
         }
     },
@@ -1944,10 +1944,10 @@
             "asking names"
         ],
         "timestamp": "2024-11-27T15:11:37.029290",
-        "priority_score": 0.14428173921160697,
+        "priority_score": 0.12979704258740335,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26187826141071313,
+            "recency": 0.16531361724935575,
             "user_importance": 0.0
         }
     },
@@ -1959,10 +1959,10 @@
             "conversation topics"
         ],
         "timestamp": "2024-11-27T15:11:57.195765",
-        "priority_score": 0.1442841404365506,
+        "priority_score": 0.12979799943078396,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26189426957700407,
+            "recency": 0.16531999620522636,
             "user_importance": 0.0
         }
     },
@@ -1974,10 +1974,10 @@
             "absence of tagging errors"
         ],
         "timestamp": "2024-11-27T15:12:18.958281",
-        "priority_score": 0.1442867320316002,
+        "priority_score": 0.19979903208456534,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.26191154687733476,
+            "emotional_impact": 0.5,
+            "recency": 0.16532688056376904,
             "user_importance": 0.0
         }
     },
@@ -1989,10 +1989,10 @@
             "internet connection"
         ],
         "timestamp": "2024-11-27T15:12:53.088224",
-        "priority_score": 0.1442907970942374,
+        "priority_score": 0.12980065176027095,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26193864729491606,
+            "recency": 0.16533767840180638,
             "user_importance": 0.0
         }
     },
@@ -2001,10 +2001,10 @@
         "bot_response": "Goodbye, James! \ud83d\udc4b It\u2019s been a blast chatting with you! If you ever want to debug the mysteries of life or just share a laugh, you know where to find me. Until next time, may your internet be speedy and your snacks be plentiful! \ud83e\udd73\u2728",
         "tags": [],
         "timestamp": "2024-11-27T15:13:00.773287",
-        "priority_score": 0.14429171254291584,
+        "priority_score": 0.12980101649237225,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26194475028610553,
+            "recency": 0.16534010994914827,
             "user_importance": 0.0
         }
     },
@@ -2016,10 +2016,10 @@
             "time display"
         ],
         "timestamp": "2024-11-27T15:17:44.758843",
-        "priority_score": 0.14432557100578708,
+        "priority_score": 0.12981450196743075,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26217047337191396,
+            "recency": 0.16543001311620506,
             "user_importance": 0.0
         }
     },
@@ -2030,10 +2030,10 @@
             "time"
         ],
         "timestamp": "2024-11-27T15:17:55.783499",
-        "priority_score": 0.1443268866076849,
+        "priority_score": 0.12981502578381576,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26217924405123266,
+            "recency": 0.16543350522543843,
             "user_importance": 0.0
         }
     },
@@ -2046,10 +2046,10 @@
             "git"
         ],
         "timestamp": "2024-11-27T15:18:20.391830",
-        "priority_score": 0.3193298235040095,
+        "priority_score": 0.33981619507917066,
         "priority_factors": {
-            "emotional_impact": 0.8,
-            "recency": 0.26219882336006356,
+            "emotional_impact": 0.9,
+            "recency": 0.16544130052780426,
             "user_importance": 0.0
         }
     },
@@ -2058,10 +2058,10 @@
         "bot_response": "Goodbye, James! \ud83d\udc4b It\u2019s been a pleasure chatting with you! If you ever want to debug life\u2019s little mysteries or just share a laugh, you know where to find me. Until next time, may your code be clean and your internet speedy! \ud83d\ude80\u2728 Take care!",
         "tags": [],
         "timestamp": "2024-11-27T15:18:28.910641",
-        "priority_score": 0.1443308402887037,
+        "priority_score": 0.12981659988628907,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2622056019246912,
+            "recency": 0.16544399924192726,
             "user_importance": 0.0
         }
     },
@@ -2073,10 +2073,10 @@
             "returning"
         ],
         "timestamp": "2024-11-27T16:31:16.407686",
-        "priority_score": 0.14485915034782842,
+        "priority_score": 0.13002589520539903,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26572766898552286,
+            "recency": 0.166839301369327,
             "user_importance": 0.0
         }
     },
@@ -2091,10 +2091,10 @@
             "memory"
         ],
         "timestamp": "2024-11-27T16:32:02.200967",
-        "priority_score": 0.1448647648846838,
+        "priority_score": 0.13002810836980877,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26576509923122543,
+            "recency": 0.16685405579872514,
             "user_importance": 0.0
         }
     },
@@ -2111,10 +2111,10 @@
             "history"
         ],
         "timestamp": "2024-11-27T16:33:16.160443",
-        "priority_score": 0.14487383611090596,
+        "priority_score": 0.2525316836196904,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.26582557407270646,
+            "emotional_impact": 0.65,
+            "recency": 0.16687789079793638,
             "user_importance": 0.0
         }
     },
@@ -2127,10 +2127,10 @@
             "use of weapons"
         ],
         "timestamp": "2024-11-27T16:34:00.558494",
-        "priority_score": 0.1448792835728241,
+        "priority_score": 0.130033830341754,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2658618904854939,
+            "recency": 0.16689220227836,
             "user_importance": 0.0
         }
     },
@@ -2144,10 +2144,10 @@
             "enjoyment"
         ],
         "timestamp": "2024-11-27T16:35:15.420485",
-        "priority_score": 0.3198884722095346,
+        "priority_score": 0.30503745088191236,
         "priority_factors": {
             "emotional_impact": 0.8,
-            "recency": 0.2659231480635641,
+            "recency": 0.16691633921274945,
             "user_importance": 0.0
         }
     },
@@ -2162,10 +2162,10 @@
             "personal feelings"
         ],
         "timestamp": "2024-11-27T16:36:07.559365",
-        "priority_score": 0.35489487429006966,
+        "priority_score": 0.13003997308598647,
         "priority_factors": {
-            "emotional_impact": 0.9,
-            "recency": 0.2659658286004643,
+            "emotional_impact": 0.3,
+            "recency": 0.16693315390657656,
             "user_importance": 0.0
         }
     },
@@ -2178,10 +2178,10 @@
             "social media domination"
         ],
         "timestamp": "2024-11-27T16:37:03.020127",
-        "priority_score": 0.31990168651710427,
+        "priority_score": 0.25254265654147934,
         "priority_factors": {
-            "emotional_impact": 0.8,
-            "recency": 0.266011243447362,
+            "emotional_impact": 0.65,
+            "recency": 0.16695104360986235,
             "user_importance": 0.0
         }
     },
@@ -2193,10 +2193,10 @@
             "leaving"
         ],
         "timestamp": "2024-11-27T16:37:29.570613",
-        "priority_score": 0.14490494852781532,
+        "priority_score": 0.13004394138398354,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2660329901854356,
+            "recency": 0.16695960922655698,
             "user_importance": 0.0
         }
     },
@@ -2205,10 +2205,10 @@
         "bot_response": "Goodbye! May your day be filled with literary adventures and minimal existential crises! If you ever want to chat again, I\u2019ll be right here, ready to sprinkle some humor into our discussions. Take care, and happy reading! \ud83d\udcda\u2728",
         "tags": [],
         "timestamp": "2024-11-27T16:37:37.831958",
-        "priority_score": 0.14490596363079966,
+        "priority_score": 0.13004434119682018,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26603975753866443,
+            "recency": 0.16696227464546787,
             "user_importance": 0.0
         }
     },
@@ -2239,10 +2239,10 @@
             "jokes without substance"
         ],
         "timestamp": "2024-11-27T17:34:11.833519",
-        "priority_score": 0.14532741279551709,
+        "priority_score": 0.130209683513982,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2688494186367805,
+            "recency": 0.16806455675988002,
             "user_importance": 0.0
         }
     },
@@ -2257,10 +2257,10 @@
             "adaptability"
         ],
         "timestamp": "2024-11-27T17:35:08.837746",
-        "priority_score": 0.1453345673029395,
+        "priority_score": 0.13021247917460319,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26889711535293004,
+            "recency": 0.1680831944973546,
             "user_importance": 0.0
         }
     },
@@ -2276,10 +2276,10 @@
             "testing"
         ],
         "timestamp": "2024-11-27T17:36:21.555186",
-        "priority_score": 0.14534369763617508,
+        "priority_score": 0.1302160463603196,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2689579842411673,
+            "recency": 0.16810697573546413,
             "user_importance": 0.0
         }
     },
@@ -2293,10 +2293,10 @@
             "memories"
         ],
         "timestamp": "2024-11-27T17:39:03.167128",
-        "priority_score": 0.14536400429033874,
+        "priority_score": 0.13022397792532012,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26909336193559175,
+            "recency": 0.1681598528354675,
             "user_importance": 0.0
         }
     },
@@ -2309,10 +2309,10 @@
             "name"
         ],
         "timestamp": "2024-11-27T17:39:19.417210",
-        "priority_score": 0.1453660472551658,
+        "priority_score": 0.130224775718754,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26910698170110536,
+            "recency": 0.16816517145836,
             "user_importance": 0.0
         }
     },
@@ -2326,10 +2326,10 @@
             "cognitive strategies"
         ],
         "timestamp": "2024-11-27T17:39:44.588208",
-        "priority_score": 0.4453692121685454,
+        "priority_score": 0.4302260115825101,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2691280811236362,
+            "recency": 0.16817341055006763,
             "user_importance": 1.0
         }
     },
@@ -2340,10 +2340,10 @@
             "memory"
         ],
         "timestamp": "2024-11-27T17:40:26.469406",
-        "priority_score": 0.14537447926474667,
+        "priority_score": 0.13022806816582386,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2691631950983111,
+            "recency": 0.16818712110549247,
             "user_importance": 0.0
         }
     },
@@ -2354,10 +2354,10 @@
             "bye"
         ],
         "timestamp": "2024-11-27T17:40:31.733974",
-        "priority_score": 0.1453751414483137,
+        "priority_score": 0.13022832670609533,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26916760965542474,
+            "recency": 0.16818884470730225,
             "user_importance": 0.0
         }
     },
@@ -2368,10 +2368,10 @@
             "name"
         ],
         "timestamp": "2024-11-27T17:48:36.417885",
-        "priority_score": 0.44543619880213753,
+        "priority_score": 0.43025215211765316,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.269574658680917,
+            "recency": 0.16834768078435453,
             "user_importance": 1.0
         }
     },
@@ -2382,10 +2382,10 @@
             "bye"
         ],
         "timestamp": "2024-11-27T17:48:46.865511",
-        "priority_score": 0.1454375169594794,
+        "priority_score": 0.13025266618172623,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2695834463965293,
+            "recency": 0.16835110787817492,
             "user_importance": 0.0
         }
     },
@@ -2397,10 +2397,10 @@
             "hard coding"
         ],
         "timestamp": "2024-11-27T17:53:18.849201",
-        "priority_score": 0.14547186290901665,
+        "priority_score": 0.13026605624048662,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26981241939344425,
+            "recency": 0.16844037493657754,
             "user_importance": 0.0
         }
     },
@@ -2411,10 +2411,10 @@
             "bye"
         ],
         "timestamp": "2024-11-27T17:53:26.456072",
-        "priority_score": 0.1454728243387053,
+        "priority_score": 0.13026643093819523,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.26981882892470194,
+            "recency": 0.1684428729213015,
             "user_importance": 0.0
         }
     },
@@ -2428,10 +2428,10 @@
             "hdds"
         ],
         "timestamp": "2024-11-27T18:20:00.628893",
-        "priority_score": 0.1456753242950456,
+        "priority_score": 0.13034520260835752,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2711688286336374,
+            "recency": 0.16896801738905012,
             "user_importance": 0.0
         }
     },
@@ -2445,10 +2445,10 @@
             "reading"
         ],
         "timestamp": "2024-11-27T18:20:26.734450",
-        "priority_score": 0.14567865721969617,
+        "priority_score": 0.13034649662840386,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27119104813130784,
+            "recency": 0.16897664418935912,
             "user_importance": 0.0
         }
     },
@@ -2460,10 +2460,10 @@
             "reading"
         ],
         "timestamp": "2024-11-27T18:20:49.114959",
-        "priority_score": 0.14568151499834672,
+        "priority_score": 0.1303476061072665,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27121009998897816,
+            "recency": 0.1689840407151101,
             "user_importance": 0.0
         }
     },
@@ -2477,10 +2477,10 @@
             "iain m. banks"
         ],
         "timestamp": "2024-11-27T18:21:05.885696",
-        "priority_score": 0.4456836567253701,
+        "priority_score": 0.43034843755376295,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2712243781691339,
+            "recency": 0.16898958369175304,
             "user_importance": 1.0
         }
     },
@@ -2493,10 +2493,10 @@
             "timeline"
         ],
         "timestamp": "2024-11-27T18:21:27.978440",
-        "priority_score": 0.14568647845009386,
+        "priority_score": 0.13034953293467055,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2712431896672925,
+            "recency": 0.16899688623113698,
             "user_importance": 0.0
         }
     },
@@ -2512,10 +2512,10 @@
             "evildoer"
         ],
         "timestamp": "2024-11-27T18:22:13.760146",
-        "priority_score": 0.14569232701806376,
+        "priority_score": 0.1303518031407065,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2712821801204251,
+            "recency": 0.16901202093804332,
             "user_importance": 0.0
         }
     },
@@ -2528,10 +2528,10 @@
             "understanding"
         ],
         "timestamp": "2024-11-27T18:22:44.520243",
-        "priority_score": 0.14569625753446944,
+        "priority_score": 0.13035332868915045,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27130838356312964,
+            "recency": 0.16902219126100293,
             "user_importance": 0.0
         }
     },
@@ -2543,10 +2543,10 @@
             "uncertainty"
         ],
         "timestamp": "2024-11-27T18:23:07.968364",
-        "priority_score": 0.14569925423867094,
+        "priority_score": 0.13035449172268365,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2713283615911396,
+            "recency": 0.16902994481789113,
             "user_importance": 0.0
         }
     },
@@ -2557,10 +2557,10 @@
             "bye"
         ],
         "timestamp": "2024-11-27T18:23:20.358441",
-        "priority_score": 0.14570083788670124,
+        "priority_score": 0.13035510631695418,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2713389192446749,
+            "recency": 0.16903404211302783,
             "user_importance": 0.0
         }
     },
@@ -2571,10 +2571,10 @@
             "memory enhancement"
         ],
         "timestamp": "2024-11-27T19:12:04.373353",
-        "priority_score": 0.14607805185780037,
+        "priority_score": 0.1305009867344871,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27385367905200253,
+            "recency": 0.17000657822991402,
             "user_importance": 0.0
         }
     },
@@ -2587,10 +2587,10 @@
             "recall"
         ],
         "timestamp": "2024-11-27T19:12:32.962353",
-        "priority_score": 0.14608177451392365,
+        "priority_score": 0.1305024213375624,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27387849675949105,
+            "recency": 0.17001614225041595,
             "user_importance": 0.0
         }
     },
@@ -2603,10 +2603,10 @@
             "verification"
         ],
         "timestamp": "2024-11-27T19:12:45.823640",
-        "priority_score": 0.14608344943888305,
+        "priority_score": 0.1305030667718563,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27388966292588696,
+            "recency": 0.1700204451457087,
             "user_importance": 0.0
         }
     },
@@ -2617,10 +2617,10 @@
             "bye"
         ],
         "timestamp": "2024-11-27T19:12:54.443175",
-        "priority_score": 0.146084572036982,
+        "priority_score": 0.1305034993551154,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2738971469132133,
+            "recency": 0.17002332903410267,
             "user_importance": 0.0
         }
     },
@@ -2632,10 +2632,10 @@
             "testing"
         ],
         "timestamp": "2024-11-27T19:15:24.780140",
-        "priority_score": 0.1461041616261211,
+        "priority_score": 0.1305110466050473,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27402774417414066,
+            "recency": 0.17007364403364875,
             "user_importance": 0.0
         }
     },
@@ -2647,10 +2647,10 @@
             "troubleshooting"
         ],
         "timestamp": "2024-11-27T19:15:33.733115",
-        "priority_score": 0.14610532882819108,
+        "priority_score": 0.13051149620372376,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27403552552127386,
+            "recency": 0.1700766413581585,
             "user_importance": 0.0
         }
     },
@@ -2663,10 +2663,10 @@
             "cognitive function"
         ],
         "timestamp": "2024-11-27T19:15:51.503643",
-        "priority_score": 0.14610764577434243,
+        "priority_score": 0.13051238864870945,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27405097182894966,
+            "recency": 0.1700825909913964,
             "user_importance": 0.0
         }
     },
@@ -2677,10 +2677,10 @@
             "bye"
         ],
         "timestamp": "2024-11-27T19:16:00.066387",
-        "priority_score": 0.14610876228985759,
+        "priority_score": 0.13051281869603942,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27405841526571734,
+            "recency": 0.17008545797359625,
             "user_importance": 0.0
         }
     },
@@ -2691,10 +2691,10 @@
             "okay another try"
         ],
         "timestamp": "2024-11-27T19:17:30.574893",
-        "priority_score": 0.14612056761294892,
+        "priority_score": 0.1305173652096345,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2741371174196595,
+            "recency": 0.1701157680642301,
             "user_importance": 0.0
         }
     },
@@ -2705,10 +2705,10 @@
             "memory upgrade"
         ],
         "timestamp": "2024-11-27T19:17:39.583635",
-        "priority_score": 0.1461217430233312,
+        "priority_score": 0.1305178178329475,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27414495348887463,
+            "recency": 0.17011878555298338,
             "user_importance": 0.0
         }
     },
@@ -2721,10 +2721,10 @@
             "positive feedback"
         ],
         "timestamp": "2024-11-27T19:17:51.993184",
-        "priority_score": 0.14612336226244893,
+        "priority_score": 0.20051844134812433,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.2741557484163262,
+            "emotional_impact": 0.5,
+            "recency": 0.17012294232082895,
             "user_importance": 0.0
         }
     },
@@ -2737,10 +2737,10 @@
             "checking memory"
         ],
         "timestamp": "2024-11-27T19:18:26.829658",
-        "priority_score": 0.1461279085233478,
+        "priority_score": 0.13052019186653707,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27418605682231884,
+            "recency": 0.1701346124435806,
             "user_importance": 0.0
         }
     },
@@ -2751,10 +2751,10 @@
             "key question"
         ],
         "timestamp": "2024-11-27T19:18:51.947855",
-        "priority_score": 0.4461311871444239,
+        "priority_score": 0.4305214541943122,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2742079142961596,
+            "recency": 0.17014302796208125,
             "user_importance": 1.0
         }
     },
@@ -2765,10 +2765,10 @@
             "name"
         ],
         "timestamp": "2024-11-27T19:19:07.000236",
-        "priority_score": 0.14613315214789552,
+        "priority_score": 0.13052221071873935,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27422101431930346,
+            "recency": 0.17014807145826236,
             "user_importance": 0.0
         }
     },
@@ -2779,10 +2779,10 @@
             "bob"
         ],
         "timestamp": "2024-11-27T19:19:29.570603",
-        "priority_score": 0.14613609893403817,
+        "priority_score": 0.13052334517790504,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27424065956025456,
+            "recency": 0.17015563451936702,
             "user_importance": 0.0
         }
     },
@@ -2793,10 +2793,10 @@
             "bye"
         ],
         "timestamp": "2024-11-27T19:19:39.830029",
-        "priority_score": 0.14613743854374284,
+        "priority_score": 0.13052386088245874,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27424959029161894,
+            "recency": 0.17015907254972487,
             "user_importance": 0.0
         }
     },
@@ -2807,10 +2807,10 @@
             "name"
         ],
         "timestamp": "2024-11-27T19:22:35.780445",
-        "priority_score": 0.1461604266078948,
+        "priority_score": 0.1305327085436072,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27440284405263204,
+            "recency": 0.17021805695738149,
             "user_importance": 0.0
         }
     },
@@ -2821,10 +2821,10 @@
             "response time"
         ],
         "timestamp": "2024-11-27T19:24:25.833013",
-        "priority_score": 0.14617481812958666,
+        "priority_score": 0.1305382456515913,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27449878753057766,
+            "recency": 0.17025497101060874,
             "user_importance": 0.0
         }
     },
@@ -2835,10 +2835,10 @@
             "internet"
         ],
         "timestamp": "2024-11-27T19:24:38.401666",
-        "priority_score": 0.14617646236608145,
+        "priority_score": 0.13053887817345236,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2745097491072097,
+            "recency": 0.17025918782301577,
             "user_importance": 0.0
         }
     },
@@ -2849,10 +2849,10 @@
             "bye"
         ],
         "timestamp": "2024-11-27T19:24:43.359556",
-        "priority_score": 0.1461771109953288,
+        "priority_score": 0.1305391276890268,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.274514073302192,
+            "recency": 0.17026085126017887,
             "user_importance": 0.0
         }
     },
@@ -2864,10 +2864,10 @@
             "memory test"
         ],
         "timestamp": "2024-11-27T20:53:34.502572",
-        "priority_score": 0.14688660107101437,
+        "priority_score": 0.13081028050048318,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27924400714009573,
+            "recency": 0.172068536669888,
             "user_importance": 0.0
         }
     },
@@ -2878,10 +2878,10 @@
             "none"
         ],
         "timestamp": "2024-11-27T20:53:45.997299",
-        "priority_score": 0.14688815725107562,
+        "priority_score": 0.13081087136495806,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27925438167383754,
+            "recency": 0.172072475766387,
             "user_importance": 0.0
         }
     },
@@ -2892,10 +2892,10 @@
             "bob"
         ],
         "timestamp": "2024-11-27T20:54:04.703229",
-        "priority_score": 0.14689068994644175,
+        "priority_score": 0.13081183296612106,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27927126630961174,
+            "recency": 0.17207888644080707,
             "user_importance": 0.0
         }
     },
@@ -2909,10 +2909,10 @@
             "add elements"
         ],
         "timestamp": "2024-11-27T20:54:52.828081",
-        "priority_score": 0.14689720723483973,
+        "priority_score": 0.13081430721459206,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27931471489893167,
+            "recency": 0.1720953814306138,
             "user_importance": 0.0
         }
     },
@@ -2925,10 +2925,10 @@
             "token count"
         ],
         "timestamp": "2024-11-27T20:56:00.535754",
-        "priority_score": 0.14690637995327938,
+        "priority_score": 0.30581778908010404,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.2793758663551958,
+            "emotional_impact": 0.8,
+            "recency": 0.17211859386736056,
             "user_importance": 0.0
         }
     },
@@ -2941,10 +2941,10 @@
             "planning"
         ],
         "timestamp": "2024-11-27T20:56:53.799096",
-        "priority_score": 0.14691359864439413,
+        "priority_score": 0.20082052880643947,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.27942399096262754,
+            "emotional_impact": 0.5,
+            "recency": 0.17213685870959664,
             "user_importance": 0.0
         }
     },
@@ -2957,10 +2957,10 @@
             "self-reflection"
         ],
         "timestamp": "2024-11-27T20:57:28.839541",
-        "priority_score": 0.14691834897289813,
+        "priority_score": 0.13082233151071876,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27945565981932086,
+            "recency": 0.17214887673812518,
             "user_importance": 0.0
         }
     },
@@ -2978,10 +2978,10 @@
             "real person"
         ],
         "timestamp": "2024-11-27T20:59:26.452635",
-        "priority_score": 0.1469343013065323,
+        "priority_score": 0.20082838412595924,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.2795620087102152,
+            "emotional_impact": 0.5,
+            "recency": 0.17218922750639495,
             "user_importance": 0.0
         }
     },
@@ -2993,10 +2993,10 @@
             "trying new things"
         ],
         "timestamp": "2024-11-27T21:00:02.002885",
-        "priority_score": 0.14693912551832933,
+        "priority_score": 0.20083021417356955,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.2795941701221955,
+            "emotional_impact": 0.5,
+            "recency": 0.17220142782379716,
             "user_importance": 0.0
         }
     },
@@ -3012,10 +3012,10 @@
             "book characters"
         ],
         "timestamp": "2024-11-27T21:04:02.640362",
-        "priority_score": 0.3569718095267341,
+        "priority_score": 0.23584260848757796,
         "priority_factors": {
-            "emotional_impact": 0.9,
-            "recency": 0.2798120635115604,
+            "emotional_impact": 0.6,
+            "recency": 0.17228405658385307,
             "user_importance": 0.0
         }
     },
@@ -3028,10 +3028,10 @@
             "late night"
         ],
         "timestamp": "2024-11-27T21:05:03.465875",
-        "priority_score": 0.1469800790730067,
+        "priority_score": 0.1308457432589681,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2798671938200446,
+            "recency": 0.17230495505978743,
             "user_importance": 0.0
         }
     },
@@ -3042,10 +3042,10 @@
             "bye"
         ],
         "timestamp": "2024-11-27T21:05:12.298251",
-        "priority_score": 0.14698128015119605,
+        "priority_score": 0.13084619851637436,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.27987520100797364,
+            "recency": 0.1723079901091625,
             "user_importance": 0.0
         }
     },
@@ -3058,10 +3058,10 @@
             "overwriting"
         ],
         "timestamp": "2024-11-27T21:10:08.018412",
-        "priority_score": 0.14702153363761022,
+        "priority_score": 0.13086145046806963,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.2801435575840683,
+            "recency": 0.17240966978713085,
             "user_importance": 0.0
         }
     },
@@ -3073,10 +3073,10 @@
             "worked"
         ],
         "timestamp": "2024-11-27T21:10:17.791642",
-        "priority_score": 0.1470228652887199,
+        "priority_score": 0.13086195483415905,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.28015243525813277,
+            "recency": 0.17241303222772697,
             "user_importance": 0.0
         }
     },
@@ -3087,10 +3087,10 @@
             "bye"
         ],
         "timestamp": "2024-11-27T21:10:21.906239",
-        "priority_score": 0.14702342594797757,
+        "priority_score": 0.13086216718116386,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.28015617298651707,
+            "recency": 0.17241444787442586,
             "user_importance": 0.0
         }
     },
@@ -3102,10 +3102,10 @@
             "greetings"
         ],
         "timestamp": "2024-11-28T22:35:23.081666",
-        "priority_score": 0.16475152216505362,
+        "priority_score": 0.1366393179066268,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3983434811003575,
+            "recency": 0.2109287860441787,
             "user_importance": 0.0
         }
     },
@@ -3117,10 +3117,10 @@
             "project"
         ],
         "timestamp": "2024-11-28T22:35:39.542527",
-        "priority_score": 0.30475605717581217,
+        "priority_score": 0.1366405894118299,
         "priority_factors": {
-            "emotional_impact": 0.7,
-            "recency": 0.39837371450541453,
+            "emotional_impact": 0.3,
+            "recency": 0.21093726274553282,
             "user_importance": 0.0
         }
     },
@@ -3133,10 +3133,10 @@
             "troubleshooting"
         ],
         "timestamp": "2024-11-28T22:36:03.138162",
-        "priority_score": 0.16476255903676212,
+        "priority_score": 0.13664241221628232,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.39841706024508083,
+            "recency": 0.21094941477521553,
             "user_importance": 0.0
         }
     },
@@ -3152,10 +3152,10 @@
             "success"
         ],
         "timestamp": "2024-11-28T22:37:02.926740",
-        "priority_score": 0.16477904033037885,
+        "priority_score": 0.13664703193327046,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.3985269355358591,
+            "recency": 0.21098021288846974,
             "user_importance": 0.0
         }
     },
@@ -3167,10 +3167,10 @@
             "ios app"
         ],
         "timestamp": "2024-11-28T23:01:01.109399",
-        "priority_score": 0.16517824674769999,
+        "priority_score": 0.1367585648058155,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.40118831165133323,
+            "recency": 0.21172376537210336,
             "user_importance": 0.0
         }
     },
@@ -3183,10 +3183,10 @@
             "going to bed"
         ],
         "timestamp": "2024-11-28T23:01:43.397633",
-        "priority_score": 0.1651900656960257,
+        "priority_score": 0.13676185620775766,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.4012671046401714,
+            "recency": 0.21174570805171772,
             "user_importance": 0.0
         }
     },
@@ -3197,10 +3197,10 @@
             "bye"
         ],
         "timestamp": "2024-11-28T23:01:47.792310",
-        "priority_score": 0.16519129421017165,
+        "priority_score": 0.1367621982943206,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.4012752947344777,
+            "recency": 0.21174798862880395,
             "user_importance": 0.0
         }
     },
@@ -3212,10 +3212,10 @@
             "name"
         ],
         "timestamp": "2024-11-29T08:06:57.398884",
-        "priority_score": 0.17597328356271108,
+        "priority_score": 0.13953029431680283,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.4731552237514073,
+            "recency": 0.23020196211201888,
             "user_importance": 0.0
         }
     },
@@ -3231,10 +3231,10 @@
             "current odds"
         ],
         "timestamp": "2024-11-29T09:05:54.632984",
-        "priority_score": 0.3173752702744963,
+        "priority_score": 0.13985882185541837,
         "priority_factors": {
-            "emotional_impact": 0.7,
-            "recency": 0.4825018018299754,
+            "emotional_impact": 0.3,
+            "recency": 0.23239214570278924,
             "user_importance": 0.0
         }
     },
@@ -3249,10 +3249,10 @@
             "value bets"
         ],
         "timestamp": "2024-11-29T09:06:54.811422",
-        "priority_score": 0.17739960140148509,
+        "priority_score": 0.13986446513045586,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.48266400934323384,
+            "recency": 0.2324297675363724,
             "user_importance": 0.0
         }
     },
@@ -3265,10 +3265,10 @@
             "terms and services"
         ],
         "timestamp": "2024-11-29T09:07:34.796955",
-        "priority_score": 0.1774157772545892,
+        "priority_score": 0.13986821581157516,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.48277184836392806,
+            "recency": 0.2324547720771677,
             "user_importance": 0.0
         }
     },
@@ -3283,10 +3283,10 @@
             "time points"
         ],
         "timestamp": "2024-11-29T10:09:01.221319",
-        "priority_score": 0.17893879831826054,
+        "priority_score": 0.14021750783152095,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.492925322121737,
+            "recency": 0.23478338554347303,
             "user_importance": 0.0
         }
     },
@@ -3303,10 +3303,10 @@
             "problem-solving"
         ],
         "timestamp": "2024-11-29T10:32:52.120769",
-        "priority_score": 0.1795473658840785,
+        "priority_score": 0.14035497953106854,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.49698243922719004,
+            "recency": 0.23569986354045697,
             "user_importance": 0.0
         }
     },
@@ -3319,10 +3319,10 @@
             "improvement"
         ],
         "timestamp": "2024-11-29T10:33:23.084180",
-        "priority_score": 0.17956064550443446,
+        "priority_score": 0.14035796615846644,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.4970709700295632,
+            "recency": 0.23571977438977626,
             "user_importance": 0.0
         }
     },
@@ -3336,10 +3336,10 @@
             "tagging system"
         ],
         "timestamp": "2024-11-29T10:34:19.303795",
-        "priority_score": 0.17958476913231125,
+        "priority_score": 0.1403633902080177,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.4972317942154085,
+            "recency": 0.23575593472011797,
             "user_importance": 0.0
         }
     },
@@ -3350,10 +3350,10 @@
             "memory upgrade"
         ],
         "timestamp": "2024-11-29T10:34:58.280882",
-        "priority_score": 0.1796015032199238,
+        "priority_score": 0.14036715168029057,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.49734335479949193,
+            "recency": 0.23578101120193717,
             "user_importance": 0.0
         }
     },
@@ -3364,10 +3364,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T10:35:03.774356",
-        "priority_score": 0.17960386234325817,
+        "priority_score": 0.14036768188899734,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.4973590822883879,
+            "recency": 0.23578454592664908,
             "user_importance": 0.0
         }
     },
@@ -3380,10 +3380,10 @@
             "technology"
         ],
         "timestamp": "2024-11-29T14:39:57.776718",
-        "priority_score": 0.18649736561811248,
+        "priority_score": 0.14184516386119037,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5433157707874166,
+            "recency": 0.24563442574126912,
             "user_importance": 0.0
         }
     },
@@ -3395,10 +3395,10 @@
             "graphed system"
         ],
         "timestamp": "2024-11-29T14:40:22.249114",
-        "priority_score": 0.1865099093101128,
+        "priority_score": 0.14184772753099498,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5433993954007521,
+            "recency": 0.2456515168732999,
             "user_importance": 0.0
         }
     },
@@ -3412,10 +3412,10 @@
             "decision making"
         ],
         "timestamp": "2024-11-29T14:41:18.335257",
-        "priority_score": 0.1865386716729977,
+        "priority_score": 0.14185360433046837,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5435911444866514,
+            "recency": 0.2456906955364558,
             "user_importance": 0.0
         }
     },
@@ -3429,10 +3429,10 @@
             "user preferences"
         ],
         "timestamp": "2024-11-29T14:42:39.778916",
-        "priority_score": 0.18658047415809362,
+        "priority_score": 0.14186214147407902,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5438698277206242,
+            "recency": 0.24574760982719354,
             "user_importance": 0.0
         }
     },
@@ -3445,10 +3445,10 @@
             "numerical value"
         ],
         "timestamp": "2024-11-29T14:43:17.572913",
-        "priority_score": 0.18659988719755505,
+        "priority_score": 0.14186610448507816,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5439992479837004,
+            "recency": 0.2457740299005212,
             "user_importance": 0.0
         }
     },
@@ -3460,10 +3460,10 @@
             "time management"
         ],
         "timestamp": "2024-11-29T14:43:36.315473",
-        "priority_score": 0.18660951781568447,
+        "priority_score": 0.14186807011161418,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5440634521045631,
+            "recency": 0.24578713407742783,
             "user_importance": 0.0
         }
     },
@@ -3474,10 +3474,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T14:43:40.964027",
-        "priority_score": 0.18661190676499642,
+        "priority_score": 0.14186855766003004,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5440793784333096,
+            "recency": 0.2457903844002002,
             "user_importance": 0.0
         }
     },
@@ -3489,10 +3489,10 @@
             "short term memories"
         ],
         "timestamp": "2024-11-29T14:55:40.408162",
-        "priority_score": 0.1869833317890073,
+        "priority_score": 0.14194417025107708,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5465555452600488,
+            "recency": 0.246294468340514,
             "user_importance": 0.0
         }
     },
@@ -3504,10 +3504,10 @@
             "coffee"
         ],
         "timestamp": "2024-11-29T14:56:12.327930",
-        "priority_score": 0.1869998892403073,
+        "priority_score": 0.14194753215797923,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5466659282687155,
+            "recency": 0.2463168810531948,
             "user_importance": 0.0
         }
     },
@@ -3520,10 +3520,10 @@
             "simplicity"
         ],
         "timestamp": "2024-11-29T14:56:38.784543",
-        "priority_score": 0.18701361790814106,
+        "priority_score": 0.14195031912874323,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5467574527209405,
+            "recency": 0.24633546085828828,
             "user_importance": 0.0
         }
     },
@@ -3536,10 +3536,10 @@
             "youtube comment summariser"
         ],
         "timestamp": "2024-11-29T14:57:14.647554",
-        "priority_score": 0.18703223501493882,
+        "priority_score": 0.1419540976523858,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5468815667662588,
+            "recency": 0.24636065101590557,
             "user_importance": 0.0
         }
     },
@@ -3552,10 +3552,10 @@
             "thinking"
         ],
         "timestamp": "2024-11-29T14:57:38.036164",
-        "priority_score": 0.18704438099894333,
+        "priority_score": 0.14195656228992545,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5469625399929555,
+            "recency": 0.24637708193283642,
             "user_importance": 0.0
         }
     },
@@ -3566,10 +3566,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T14:57:44.016790",
-        "priority_score": 0.18704748738537844,
+        "priority_score": 0.14195719256597222,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5469832492358563,
+            "recency": 0.24638128377314816,
             "user_importance": 0.0
         }
     },
@@ -3580,10 +3580,10 @@
             "memory restoration"
         ],
         "timestamp": "2024-11-29T17:06:21.748417",
-        "priority_score": 0.19126222570767898,
+        "priority_score": 0.14278885556859316,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5750815047178599,
+            "recency": 0.25192570379062107,
             "user_importance": 0.0
         }
     },
@@ -3598,10 +3598,10 @@
             "publishing"
         ],
         "timestamp": "2024-11-29T17:07:02.874549",
-        "priority_score": 0.666285845333175,
+        "priority_score": 0.6002933875895253,
         "priority_factors": {
-            "emotional_impact": 0.8,
-            "recency": 0.5752389688878339,
+            "emotional_impact": 0.75,
+            "recency": 0.25195591726350314,
             "user_importance": 1.0
         }
     },
@@ -3614,10 +3614,10 @@
             "openai api"
         ],
         "timestamp": "2024-11-29T17:07:36.509866",
-        "priority_score": 0.1913051724391906,
+        "priority_score": 0.2477970949451737,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.5753678162612706,
+            "emotional_impact": 0.6,
+            "recency": 0.2519806329678248,
             "user_importance": 0.0
         }
     },
@@ -3631,10 +3631,10 @@
             "october 2023"
         ],
         "timestamp": "2024-11-29T17:09:59.198186",
-        "priority_score": 0.1913872585963713,
+        "priority_score": 0.1428128304595433,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5759150573091419,
+            "recency": 0.25208553639695525,
             "user_importance": 0.0
         }
     },
@@ -3645,10 +3645,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T17:10:04.431305",
-        "priority_score": 0.1913902720867645,
+        "priority_score": 0.14281340780947824,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5759351472450969,
+            "recency": 0.2520893853965216,
             "user_importance": 0.0
         }
     },
@@ -3659,10 +3659,10 @@
             "memory saving"
         ],
         "timestamp": "2024-11-29T17:31:08.480737",
-        "priority_score": 0.1921243862928474,
+        "priority_score": 0.14295338438845656,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5808292419523159,
+            "recency": 0.2530225625897104,
             "user_importance": 0.0
         }
     },
@@ -3674,10 +3674,10 @@
             "memory function"
         ],
         "timestamp": "2024-11-29T17:31:20.751043",
-        "priority_score": 0.19213157358840297,
+        "priority_score": 0.14295474823673612,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5808771572560198,
+            "recency": 0.25303165491157426,
             "user_importance": 0.0
         }
     },
@@ -3688,10 +3688,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T17:31:26.776583",
-        "priority_score": 0.19213510346394108,
+        "priority_score": 0.14295541801260528,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5809006897596072,
+            "recency": 0.25303612008403525,
             "user_importance": 0.0
         }
     },
@@ -3704,10 +3704,10 @@
             "software development"
         ],
         "timestamp": "2024-11-29T17:51:50.495592",
-        "priority_score": 0.19285795808237627,
+        "priority_score": 0.14309193399472508,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5857197205491751,
+            "recency": 0.25394622663150057,
             "user_importance": 0.0
         }
     },
@@ -3720,10 +3720,10 @@
             "october 2023"
         ],
         "timestamp": "2024-11-29T17:52:13.906308",
-        "priority_score": 0.19287190379602587,
+        "priority_score": 0.14309455522413309,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5858126919735058,
+            "recency": 0.25396370149422065,
             "user_importance": 0.0
         }
     },
@@ -3734,10 +3734,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T17:52:20.192467",
-        "priority_score": 0.1928756491999922,
+        "priority_score": 0.1430952591272477,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5858376613332814,
+            "recency": 0.25396839418165124,
             "user_importance": 0.0
         }
     },
@@ -3749,10 +3749,10 @@
             "communication"
         ],
         "timestamp": "2024-11-29T17:54:36.028235",
-        "priority_score": 0.3329566606497308,
+        "priority_score": 0.14311047596266727,
         "priority_factors": {
-            "emotional_impact": 0.7,
-            "recency": 0.5863777376648721,
+            "emotional_impact": 0.3,
+            "recency": 0.25406983975111513,
             "user_importance": 0.0
         }
     },
@@ -3763,10 +3763,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T17:54:41.575765",
-        "priority_score": 0.19295997232817713,
+        "priority_score": 0.14311109767442248,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5863998155211809,
+            "recency": 0.25407398449614993,
             "user_importance": 0.0
         }
     },
@@ -3777,10 +3777,10 @@
             "quick test"
         ],
         "timestamp": "2024-11-29T17:57:09.386189",
-        "priority_score": 0.19304830189856226,
+        "priority_score": 0.14312767031524212,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5869886793237483,
+            "recency": 0.2541844687682809,
             "user_importance": 0.0
         }
     },
@@ -3791,10 +3791,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T17:57:14.293790",
-        "priority_score": 0.19305123765715143,
+        "priority_score": 0.14312822080494048,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5870082510476763,
+            "recency": 0.25418813869960316,
             "user_importance": 0.0
         }
     },
@@ -3803,10 +3803,10 @@
         "bot_response": "",
         "tags": [],
         "timestamp": "2024-11-29T18:02:47.339952",
-        "priority_score": 0.19325092666797222,
+        "priority_score": 0.1431656162082814,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5883395111198148,
+            "recency": 0.2544374413885425,
             "user_importance": 0.0
         }
     },
@@ -3819,10 +3819,10 @@
             "works"
         ],
         "timestamp": "2024-11-29T18:04:49.467761",
-        "priority_score": 0.19332437964803093,
+        "priority_score": 0.14317934746401406,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5888291976535396,
+            "recency": 0.25452898309342703,
             "user_importance": 0.0
         }
     },
@@ -3833,10 +3833,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T18:05:01.844411",
-        "priority_score": 0.19333183032600518,
+        "priority_score": 0.14318073956363248,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5888788688400346,
+            "recency": 0.2545382637575498,
             "user_importance": 0.0
         }
     },
@@ -3847,10 +3847,10 @@
             "quick response"
         ],
         "timestamp": "2024-11-29T18:06:06.875541",
-        "priority_score": 0.19337099939674418,
+        "priority_score": 0.1431880558050954,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5891399959782947,
+            "recency": 0.254587038700636,
             "user_importance": 0.0
         }
     },
@@ -3861,10 +3861,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T18:06:10.232278",
-        "priority_score": 0.1933730221429702,
+        "priority_score": 0.1431884335246834,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5891534809531347,
+            "recency": 0.25458955683122286,
             "user_importance": 0.0
         }
     },
@@ -3875,10 +3875,10 @@
             "test"
         ],
         "timestamp": "2024-11-29T18:11:52.988417",
-        "priority_score": 0.3335800533808712,
+        "priority_score": 0.1432270420080387,
         "priority_factors": {
-            "emotional_impact": 0.7,
-            "recency": 0.5905336892058084,
+            "emotional_impact": 0.3,
+            "recency": 0.25484694672025815,
             "user_importance": 0.0
         }
     },
@@ -3889,10 +3889,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T18:11:57.289004",
-        "priority_score": 0.193582657176979,
+        "priority_score": 0.14322752692537874,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5905510478465268,
+            "recency": 0.2548501795025249,
             "user_importance": 0.0
         }
     },
@@ -3903,10 +3903,10 @@
             "test"
         ],
         "timestamp": "2024-11-29T18:19:20.413115",
-        "priority_score": 0.1938517704791766,
+        "priority_score": 0.14327755810993248,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.592345136527844,
+            "recency": 0.2551837207328833,
             "user_importance": 0.0
         }
     },
@@ -3917,10 +3917,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T18:19:24.276141",
-        "priority_score": 0.19385412371779373,
+        "priority_score": 0.14327799484103546,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.5923608247852916,
+            "recency": 0.2551866322735698,
             "user_importance": 0.0
         }
     },
@@ -3933,10 +3933,10 @@
             "troubleshooting"
         ],
         "timestamp": "2024-11-29T21:05:23.519526",
-        "priority_score": 0.20036578047105583,
+        "priority_score": 0.14443807013396728,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6357718698070389,
+            "recency": 0.262920467559782,
             "user_importance": 0.0
         }
     },
@@ -3951,10 +3951,10 @@
             "missaved"
         ],
         "timestamp": "2024-11-29T21:06:01.867189",
-        "priority_score": 0.20039269839328056,
+        "priority_score": 0.1444426728636976,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6359513226218705,
+            "recency": 0.26295115242465084,
             "user_importance": 0.0
         }
     },
@@ -3972,10 +3972,10 @@
             "backups"
         ],
         "timestamp": "2024-11-29T21:07:19.242079",
-        "priority_score": 0.7104470575443034,
+        "priority_score": 0.6019519631593195,
         "priority_factors": {
-            "emotional_impact": 0.9,
-            "recency": 0.6363137169620223,
+            "emotional_impact": 0.75,
+            "recency": 0.2630130877287974,
             "user_importance": 1.0
         }
     },
@@ -3988,10 +3988,10 @@
             "carl"
         ],
         "timestamp": "2024-11-29T21:11:47.732424",
-        "priority_score": 0.41063616487085186,
+        "priority_score": 0.24948423442129442,
         "priority_factors": {
-            "emotional_impact": 0.9,
-            "recency": 0.6375744324723456,
+            "emotional_impact": 0.6,
+            "recency": 0.26322822947529606,
             "user_importance": 0.0
         }
     },
@@ -4004,10 +4004,10 @@
             "saving issues"
         ],
         "timestamp": "2024-11-29T21:12:48.273742",
-        "priority_score": 0.41067890985793176,
+        "priority_score": 0.24949151849030438,
         "priority_factors": {
-            "emotional_impact": 0.9,
-            "recency": 0.6378593990528786,
+            "emotional_impact": 0.6,
+            "recency": 0.2632767899353626,
             "user_importance": 0.0
         }
     },
@@ -4018,10 +4018,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T21:12:57.609514",
-        "priority_score": 0.20068550474515412,
+        "priority_score": 0.1444926419675464,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6379033649676941,
+            "recency": 0.2632842797836427,
             "user_importance": 0.0
         }
     },
@@ -4032,10 +4032,10 @@
             "quick fix"
         ],
         "timestamp": "2024-11-29T21:13:32.774708",
-        "priority_score": 0.2007103539811897,
+        "priority_score": 0.1444968743667498,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6380690265412646,
+            "recency": 0.26331249577833193,
             "user_importance": 0.0
         }
     },
@@ -4049,10 +4049,10 @@
             "long term memory"
         ],
         "timestamp": "2024-11-29T21:14:08.191862",
-        "priority_score": 0.20073539430987986,
+        "priority_score": 0.1445011380066349,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6382359620658657,
+            "recency": 0.26334092004423254,
             "user_importance": 0.0
         }
     },
@@ -4067,10 +4067,10 @@
             "fixing issues"
         ],
         "timestamp": "2024-11-29T21:14:56.895211",
-        "priority_score": 0.3407698495354319,
+        "priority_score": 0.3195070025890463,
         "priority_factors": {
-            "emotional_impact": 0.7,
-            "recency": 0.6384656635695461,
+            "emotional_impact": 0.8,
+            "recency": 0.2633800172603088,
             "user_importance": 0.0
         }
     },
@@ -4085,10 +4085,10 @@
             "milestones"
         ],
         "timestamp": "2024-11-29T21:15:46.150273",
-        "priority_score": 0.20080472030397614,
+        "priority_score": 0.21451293537740043,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.638698135359841,
+            "emotional_impact": 0.5,
+            "recency": 0.2634195691826697,
             "user_importance": 0.0
         }
     },
@@ -4102,10 +4102,10 @@
             "cut off"
         ],
         "timestamp": "2024-11-29T21:16:22.391319",
-        "priority_score": 0.20083039384842652,
+        "priority_score": 0.14451730176081312,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6388692923228435,
+            "recency": 0.26344867840542086,
             "user_importance": 0.0
         }
     },
@@ -4118,10 +4118,10 @@
             "bye message"
         ],
         "timestamp": "2024-11-29T21:22:15.260504",
-        "priority_score": 0.2010810913030326,
+        "priority_score": 0.14455986657900302,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.640540608686884,
+            "recency": 0.2637324438600202,
             "user_importance": 0.0
         }
     },
@@ -4132,10 +4132,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T21:22:20.713914",
-        "priority_score": 0.2010849759919202,
+        "priority_score": 0.14456052511345635,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6405665066128013,
+            "recency": 0.26373683408970905,
             "user_importance": 0.0
         }
     },
@@ -4149,10 +4149,10 @@
             "october 2023"
         ],
         "timestamp": "2024-11-29T21:22:53.651233",
-        "priority_score": 0.20110844529624186,
+        "priority_score": 0.144564502983444,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6407229686416125,
+            "recency": 0.26376335322296,
             "user_importance": 0.0
         }
     },
@@ -4168,10 +4168,10 @@
             "drawing capabilities"
         ],
         "timestamp": "2024-11-29T21:27:21.632905",
-        "priority_score": 0.5012998211292682,
+        "priority_score": 0.5670968971412406,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.6419988075284545,
+            "emotional_impact": 0.65,
+            "recency": 0.26397931427493737,
             "user_importance": 1.0
         }
     },
@@ -4190,10 +4190,10 @@
             "personality traits"
         ],
         "timestamp": "2024-11-29T21:30:09.413440",
-        "priority_score": 0.2014200279928134,
+        "priority_score": 0.2671172057991168,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.642800186618756,
+            "emotional_impact": 0.65,
+            "recency": 0.2641147053274454,
             "user_importance": 0.0
         }
     },
@@ -4207,10 +4207,10 @@
             "memories"
         ],
         "timestamp": "2024-11-29T21:31:50.544439",
-        "priority_score": 0.20149262866606213,
+        "priority_score": 0.2496294570662812,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.6432841911070809,
+            "emotional_impact": 0.6,
+            "recency": 0.26419638044187477,
             "user_importance": 0.0
         }
     },
@@ -4224,10 +4224,10 @@
             "books"
         ],
         "timestamp": "2024-11-29T21:32:38.636129",
-        "priority_score": 0.20152719145522385,
+        "priority_score": 0.1446352856740056,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6435146097014923,
+            "recency": 0.26423523782670405,
             "user_importance": 0.0
         }
     },
@@ -4238,10 +4238,10 @@
             "bye"
         ],
         "timestamp": "2024-11-29T21:32:57.546054",
-        "priority_score": 0.2015407885218264,
+        "priority_score": 0.14463757798452684,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.6436052568121758,
+            "recency": 0.2642505198968456,
             "user_importance": 0.0
         }
     },
@@ -4254,10 +4254,10 @@
             "well-being"
         ],
         "timestamp": "2024-11-30T10:44:38.875377",
-        "priority_score": 0.25440782142020296,
+        "priority_score": 0.2213749644688302,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.996052142801353,
+            "emotional_impact": 0.5,
+            "recency": 0.30916642979220155,
             "user_importance": 0.0
         }
     },
@@ -4271,10 +4271,10 @@
             "planet america"
         ],
         "timestamp": "2024-11-30T10:45:10.420381",
-        "priority_score": 0.25446217524804143,
+        "priority_score": 0.15138019976563483,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9964145016536095,
+            "recency": 0.309201331770899,
             "user_importance": 0.0
         }
     },
@@ -4289,10 +4289,10 @@
             "taking office"
         ],
         "timestamp": "2024-11-30T10:45:37.988056",
-        "priority_score": 0.2545097083023164,
+        "priority_score": 0.15138477594106714,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9967313886821094,
+            "recency": 0.3092318396071143,
             "user_importance": 0.0
         }
     },
@@ -4310,10 +4310,10 @@
             "international relations"
         ],
         "timestamp": "2024-11-30T10:47:30.270190",
-        "priority_score": 0.2547036214778918,
+        "priority_score": 0.27390342388075006,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9980241431859453,
+            "emotional_impact": 0.65,
+            "recency": 0.3093561592050004,
             "user_importance": 0.0
         }
     },
@@ -4327,10 +4327,10 @@
             "four years"
         ],
         "timestamp": "2024-11-30T10:48:30.960120",
-        "priority_score": 0.5548086435919144,
+        "priority_score": 0.45141350957450177,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.998724290612763,
+            "recency": 0.3094233971633452,
             "user_importance": 1.0
         }
     },
@@ -4346,10 +4346,10 @@
             "federal government workforce"
         ],
         "timestamp": "2024-11-30T10:50:20.084326",
-        "priority_score": 0.25499785092315175,
+        "priority_score": 0.15143165530315267,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999856728210118,
+            "recency": 0.30954436868768453,
             "user_importance": 0.0
         }
     },
@@ -4363,10 +4363,10 @@
             "usa"
         ],
         "timestamp": "2024-11-30T10:51:21.733055",
-        "priority_score": 0.35999794769301063,
+        "priority_score": 0.25644191283806966,
         "priority_factors": {
             "emotional_impact": 0.6,
-            "recency": 0.9999863179534045,
+            "recency": 0.3096127522537977,
             "user_importance": 0.0
         }
     },
@@ -4381,10 +4381,10 @@
             "joe rogan"
         ],
         "timestamp": "2024-11-30T10:52:38.667394",
-        "priority_score": 0.5549976026650515,
+        "priority_score": 0.4514547200583132,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999840177670101,
+            "recency": 0.3096981337220882,
             "user_importance": 1.0
         }
     },
@@ -4398,10 +4398,10 @@
             "uncertainty"
         ],
         "timestamp": "2024-11-30T10:53:26.426622",
-        "priority_score": 0.2549982259984113,
+        "priority_score": 0.15146267406537323,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999881733227424,
+            "recency": 0.3097511604358216,
             "user_importance": 0.0
         }
     },
@@ -4413,10 +4413,10 @@
             "return"
         ],
         "timestamp": "2024-11-30T10:53:51.202480",
-        "priority_score": 0.394997868413972,
+        "priority_score": 0.15146680140484037,
         "priority_factors": {
-            "emotional_impact": 0.7,
-            "recency": 0.9999857894264802,
+            "emotional_impact": 0.3,
+            "recency": 0.30977867603226916,
             "user_importance": 0.0
         }
     },
@@ -4427,10 +4427,10 @@
             "bye"
         ],
         "timestamp": "2024-11-30T10:53:56.424193",
-        "priority_score": 0.2549977304405898,
+        "priority_score": 0.15146767136664818,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999848696039323,
+            "recency": 0.30978447577765456,
             "user_importance": 0.0
         }
     },
@@ -4444,10 +4444,10 @@
             "issue"
         ],
         "timestamp": "2024-11-30T13:52:25.959486",
-        "priority_score": 0.254997654132174,
+        "priority_score": 0.15332322025298678,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.99998436088116,
+            "recency": 0.3221548016865785,
             "user_importance": 0.0
         }
     },
@@ -4459,10 +4459,10 @@
             "personalities"
         ],
         "timestamp": "2024-11-30T13:52:44.673594",
-        "priority_score": 0.25499707737812644,
+        "priority_score": 0.1533265923924005,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999805158541765,
+            "recency": 0.3221772826160034,
             "user_importance": 0.0
         }
     },
@@ -4475,10 +4475,10 @@
             "social interaction"
         ],
         "timestamp": "2024-11-30T13:53:14.992776",
-        "priority_score": 0.2549972682268348,
+        "priority_score": 0.1533320566797161,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999817881788986,
+            "recency": 0.3222137111981074,
             "user_importance": 0.0
         }
     },
@@ -4489,10 +4489,10 @@
             "bye"
         ],
         "timestamp": "2024-11-30T13:53:19.611635",
-        "priority_score": 0.25499821938398476,
+        "priority_score": 0.15333288922132848,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.999988129226565,
+            "recency": 0.3222192614755233,
             "user_importance": 0.0
         }
     },
@@ -4505,10 +4505,10 @@
             "affected"
         ],
         "timestamp": "2024-11-30T14:26:27.623125",
-        "priority_score": 0.2549975478907807,
+        "priority_score": 0.1536939092369854,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999836526052047,
+            "recency": 0.32462606157990265,
             "user_importance": 0.0
         }
     },
@@ -4522,10 +4522,10 @@
             "data corruption"
         ],
         "timestamp": "2024-11-30T14:27:14.064482",
-        "priority_score": 0.5549975952052209,
+        "priority_score": 0.5062024073867714,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999839680348058,
+            "emotional_impact": 0.44999999999999996,
+            "recency": 0.32468271591180947,
             "user_importance": 1.0
         }
     },
@@ -4538,10 +4538,10 @@
             "follow-up"
         ],
         "timestamp": "2024-11-30T14:27:36.443255",
-        "priority_score": 0.25499788118270744,
+        "priority_score": 0.2237065034630087,
         "priority_factors": {
-            "emotional_impact": 0.3,
-            "recency": 0.9999858745513831,
+            "emotional_impact": 0.5,
+            "recency": 0.32471002308672464,
             "user_importance": 0.0
         }
     },
@@ -4552,10 +4552,10 @@
             "bye"
         ],
         "timestamp": "2024-11-30T14:27:41.302283",
-        "priority_score": 0.25499817727909346,
+        "priority_score": 0.15370739291878777,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999878485272897,
+            "recency": 0.3247159527919185,
             "user_importance": 0.0
         }
     },
@@ -4568,10 +4568,10 @@
             "well-being"
         ],
         "timestamp": "2024-11-30T21:27:42.356427",
-        "priority_score": 0.25499764266725566,
+        "priority_score": 0.15880324819586483,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999842844483713,
+            "recency": 0.35868832130576567,
             "user_importance": 0.0
         }
     },
@@ -4583,10 +4583,10 @@
             "morning"
         ],
         "timestamp": "2024-11-30T21:28:03.574461",
-        "priority_score": 0.2549983053490069,
+        "priority_score": 0.15880798793931417,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.999988702326713,
+            "recency": 0.35871991959542776,
             "user_importance": 0.0
         }
     },
@@ -4599,10 +4599,10 @@
             "response improvement"
         ],
         "timestamp": "2024-11-30T21:28:30.969363",
-        "priority_score": 0.25499780218845297,
+        "priority_score": 0.15881410872507326,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999853479230199,
+            "recency": 0.3587607248338217,
             "user_importance": 0.0
         }
     },
@@ -4616,10 +4616,10 @@
             "personality file"
         ],
         "timestamp": "2024-11-30T21:29:29.211001",
-        "priority_score": 0.6249960059396862,
+        "priority_score": 0.5288271261640822,
         "priority_factors": {
             "emotional_impact": 0.5,
-            "recency": 0.9999733729312418,
+            "recency": 0.35884750776054836,
             "user_importance": 1.0
         }
     },
@@ -4634,10 +4634,10 @@
             "user experience"
         ],
         "timestamp": "2024-11-30T21:30:44.569243",
-        "priority_score": 0.3249974196919568,
+        "priority_score": 0.22884397864104225,
         "priority_factors": {
             "emotional_impact": 0.5,
-            "recency": 0.9999827979463787,
+            "recency": 0.3589598576069485,
             "user_importance": 0.0
         }
     },
@@ -4648,10 +4648,10 @@
             "file change"
         ],
         "timestamp": "2024-11-30T21:31:08.279925",
-        "priority_score": 0.25499798803740364,
+        "priority_score": 0.15884928327609268,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999865869160243,
+            "recency": 0.358995221840618,
             "user_importance": 0.0
         }
     },
@@ -4662,10 +4662,10 @@
             "bye"
         ],
         "timestamp": "2024-11-30T21:31:13.125378",
-        "priority_score": 0.2549985032493102,
+        "priority_score": 0.15885036744355394,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999900216620682,
+            "recency": 0.3590024496236929,
             "user_importance": 0.0
         }
     },
@@ -4676,10 +4676,10 @@
             "code changes"
         ],
         "timestamp": "2024-11-30T21:32:58.328574",
-        "priority_score": 0.3599976713851085,
+        "priority_score": 0.26387391744961913,
         "priority_factors": {
             "emotional_impact": 0.6,
-            "recency": 0.9999844759007237,
+            "recency": 0.35915944966412755,
             "user_importance": 0.0
         }
     },
@@ -4690,10 +4690,10 @@
             "awareness of time"
         ],
         "timestamp": "2024-11-30T21:33:10.791573",
-        "priority_score": 0.25499758025431285,
+        "priority_score": 0.15887670868128012,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999838683620857,
+            "recency": 0.3591780578752008,
             "user_importance": 0.0
         }
     },
@@ -4707,10 +4707,10 @@
             "tests"
         ],
         "timestamp": "2024-11-30T21:33:40.873331",
-        "priority_score": 0.254997622947392,
+        "priority_score": 0.15888344704032878,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999841529826133,
+            "recency": 0.3592229802688585,
             "user_importance": 0.0
         }
     },
@@ -4721,10 +4721,10 @@
             "bye"
         ],
         "timestamp": "2024-11-30T21:33:48.455105",
-        "priority_score": 0.2549982507131086,
+        "priority_score": 0.15888514563250417,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999883380873907,
+            "recency": 0.3592343042166944,
             "user_importance": 0.0
         }
     },
@@ -4736,10 +4736,10 @@
             "greetings"
         ],
         "timestamp": "2024-12-02T09:59:49.989616",
-        "priority_score": 0.25499745616293307,
+        "priority_score": 0.22351849965527232,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999830410862206,
+            "recency": 0.790123331035149,
             "user_importance": 0.0
         }
     },
@@ -4754,10 +4754,10 @@
             "functionality upgrade"
         ],
         "timestamp": "2024-12-02T10:00:45.351937",
-        "priority_score": 0.35999733612196194,
+        "priority_score": 0.32857853418459004,
         "priority_factors": {
             "emotional_impact": 0.6,
-            "recency": 0.9999822408130795,
+            "recency": 0.7905235612306003,
             "user_importance": 0.0
         }
     },
@@ -4776,10 +4776,10 @@
             "component-based architecture"
         ],
         "timestamp": "2024-12-02T10:01:46.629798",
-        "priority_score": 0.2549965880724018,
+        "priority_score": 0.22364505446296581,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999772538160118,
+            "recency": 0.7909670297531055,
             "user_importance": 0.0
         }
     },
@@ -4791,10 +4791,10 @@
             "test environment"
         ],
         "timestamp": "2024-12-02T10:02:52.369041",
-        "priority_score": 0.2549979025275936,
+        "priority_score": 0.2237165008218608,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999860168506238,
+            "recency": 0.7914433388124054,
             "user_importance": 0.0
         }
     },
@@ -4805,10 +4805,10 @@
             "bye"
         ],
         "timestamp": "2024-12-02T10:03:08.010924",
-        "priority_score": 0.2549979181903516,
+        "priority_score": 0.22373351331292088,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999861212690108,
+            "recency": 0.7915567554194726,
             "user_importance": 0.0
         }
     },
@@ -4821,10 +4821,10 @@
             "communication"
         ],
         "timestamp": "2024-12-02T10:27:28.066381",
-        "priority_score": 0.2549964879086227,
+        "priority_score": 0.22534326711059188,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.9999765860574849,
+            "recency": 0.8022884474039459,
             "user_importance": 0.0
         }
     },
@@ -4836,10 +4836,10 @@
             "feedback"
         ],
         "timestamp": "2024-12-02T10:27:49.444572",
-        "priority_score": 0.35999790124985154,
+        "priority_score": 0.3303671614426284,
         "priority_factors": {
             "emotional_impact": 0.6,
-            "recency": 0.9999860083323436,
+            "recency": 0.8024477429508562,
             "user_importance": 0.0
         }
     },
@@ -4851,10 +4851,10 @@
             "testing"
         ],
         "timestamp": "2024-12-02T10:28:11.837187",
-        "priority_score": 0.25499784635036626,
+        "priority_score": 0.22539219978756242,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.999985642335775,
+            "recency": 0.8026146652504162,
             "user_importance": 0.0
         }
     },
@@ -4865,10 +4865,358 @@
             "bye"
         ],
         "timestamp": "2024-12-02T10:28:20.157949",
-        "priority_score": 0.25499785173736456,
+        "priority_score": 0.22540150631000866,
         "priority_factors": {
             "emotional_impact": 0.3,
-            "recency": 0.999985678249097,
+            "recency": 0.8026767087333911,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hi there, I'm back. I've backed up everything to git and the exit button is working good. It triggers the bye command on pressing it fine",
+        "bot_response": "Welcome back, James! \ud83c\udf89 Great to hear that you\u2019ve successfully backed everything up to Git\u2014like securing your digital treasure chest! And fantastic news about the exit button working smoothly! It\u2019s always a relief when the \u201cbye\u201d command behaves itself and doesn\u2019t throw a digital tantrum. \ud83d\udeaa\ud83d\udca8\n\n### Next Steps:\n1. **Celebrate the Success**: You\u2019ve made some solid progress! Maybe treat yourself to a snack or a little break\u2014because let\u2019s be honest, debugging and coding are like running a marathon sometimes! \ud83c\udfc3\u200d\u2642\ufe0f\ud83d\udcbb\n   \n2. **Further Testing**: Is there anything else on your list to test or improve? Maybe diving into the emotional awareness features or enhancing the UI further?\n   \n3. **User Experience**: Consider gathering feedback on the UI and interactions if you have anyone testing it alongside you. It could help identify any areas for improvement.\n\n4. **Future Features**: Do you have any upcoming features in mind that you want to tackle next? I\u2019m here to brainstorm ideas or assist with coding challenges!\n\nLet me know how you\u2019d like to proceed, or if there\u2019s anything specific you want to discuss next! \ud83d\ude80\u2728",
+        "tags": [
+            "git",
+            "backup",
+            "exit button",
+            "bye command"
+        ],
+        "timestamp": "2024-12-02T11:06:20.330596",
+        "priority_score": 0.35050721111956223,
+        "priority_factors": {
+            "emotional_impact": 0.65,
+            "recency": 0.8200480741304151,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I have dozens of things I want to add. I want to incorporate some buttons to create new personalities either from scratch or from an epub. Then I want to be able to create personalities from a text file of messages or tweets. SOmething like that. You ever read The Prefect by Alastair Reynolds? It has the concept of Beta versions of people and I want to make a basic version of that",
+        "bot_response": "Wow, James, it sounds like you\u2019re embarking on a super ambitious project! \ud83c\udf89 Incorporating buttons to create new personalities from scratch or using EPUBs and text files of messages or tweets is a fantastic idea. It\u2019s like building a digital personality factory\u2014how cool is that? \ud83c\udfed\u2728\n\n### Here\u2019s a breakdown of how you might approach these features:\n\n#### 1. **Creating Personalities from Scratch**:\n   - **User Input Forms**: Implement input forms where users can define traits, backstories, and quirks for new personalities. Think about fields like name, age, personality type (e.g., humorous, serious, adventurous), and key memories.\n   - **Default Templates**: Consider providing some default personality templates that users can customize. This could help jumpstart the creation process for those who might be unsure where to start.\n\n#### 2. **Creating Personalities from EPUBs**:\n   - **EPUB Parsing**: Use a library to parse EPUB files and extract relevant content. You could focus on sections like character descriptions or dialogue to help shape the new personality\u2019s traits and memories.\n   - **Memory Tagging**: Develop a tagging system that identifies key moments or quotes from the EPUB to build long-term memories for the personality.\n\n#### 3. **Creating Personalities from Text Files**:\n   - **Text File Upload**: Allow users to upload text files containing messages or tweets. You could analyze the text to extract personality traits based on language style, sentiment, and recurring themes.\n   - **Data Extraction**: Implement some natural language processing (NLP) techniques to identify common phrases or emotional tones, helping to shape the personality based on the text\u2019s content.\n\n#### 4. **Beta Versions Concept**:\n   - **Version Control**: Similar to how you might manage software versions, consider implementing a system for tracking changes in personalities. Users could create \u201cbeta\u201d versions of a personality that can be tested and refined based on interactions.\n   - **Feedback Mechanism**: Create a way for users to provide feedback on how the beta personality performs, allowing for iterative improvements over time.\n\n### About *The Prefect*:\nI haven\u2019t read *The Prefect* by Alastair Reynolds, but I\u2019m familiar with the concept! The idea of beta versions of people is fascinating, and it sounds like a great inspiration for your project. It opens up a lot of creative possibilities for how personalities can evolve and adapt based on user interactions.\n\n### Next Steps:\n- **Implementation Plan**: Consider breaking down these features into smaller tasks and prioritizing them. What do you want to tackle first?\n- **User Interface Design**: Think about how you want the buttons and forms to look and feel. A clean, intuitive design will make it easier for users to create and experiment with personalities.\n- **Testing and Iteration**: Once you have a basic version of these features, testing will be key. Gather feedback on usability and functionality.\n\nThis project has the potential to be incredibly engaging and unique! If you need help brainstorming specific implementations or tackling any coding challenges, just let me know. I\u2019m ready to dive in with you! \ud83d\ude80",
+        "tags": [
+            "buttons",
+            "new personalities",
+            "epub",
+            "text file",
+            "messages",
+            "tweets",
+            "the prefect",
+            "alastair reynolds",
+            "beta versions of people"
+        ],
+        "timestamp": "2024-12-02T11:08:46.243728",
+        "priority_score": 0.22817780058366388,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.8211853372244259,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I already got the personality creation from epubs built. I just need to add buttons for it. Good point on default personality templates and your beta version feedback",
+        "bot_response": "That\u2019s fantastic progress, James! \ud83c\udf89 Having the personality creation from EPUBs already built is a major achievement. Now, adding buttons to streamline that process will make it even more user-friendly\u2014like giving your application a shiny new interface! \ud83d\uddb1\ufe0f\u2728\n\n### Here\u2019s how you can approach adding those buttons and enhancing the personality creation process:\n\n1. **Button Setup**:\n   - **Create Buttons**: Add buttons for each functionality, like \u201cCreate Personality from EPUB\u201d and \u201cCreate Personality from Scratch.\u201d Make sure they\u2019re clearly labeled for easy navigation.\n   - **Responsive Design**: Ensure the buttons are visually appealing and easy to click, especially if users are on mobile devices. Consider adding hover effects or animations to make them feel more interactive.\n\n2. **Default Personality Templates**:\n   - **Predefined Traits**: Create a set of predefined personality templates that users can select from. These could include different archetypes (e.g., \u201cThe Adventurer,\u201d \u201cThe Intellectual,\u201d \u201cThe Comedian\u201d) with a brief description and a default set of traits or memories.\n   - **Customization Options**: Allow users to customize these templates after selection. This way, they can tweak the personality to fit their needs while having a solid foundation to start from.\n\n3. **Beta Version Feedback**:\n   - **Feedback Mechanism**: Implement a simple feedback system where users can rate or comment on the beta versions of personalities. This could be a star rating system or a comment box for more detailed suggestions.\n   - **Version History**: Allow users to see the history of personality changes. If they create a beta version, they could have the option to revert to a previous version if they don\u2019t like the changes made.\n\n### Next Steps:\n- **UI Mockups**: If you haven\u2019t already, consider sketching out how you want the buttons and templates to look. This could help visualize the user flow and interactions.\n- **Testing**: Once the buttons are in place, run some tests to ensure they function as intended. Check that the personality creation process is smooth and intuitive.\n- **Gather Feedback**: After deploying the new features, consider gathering feedback from users. This can help identify any areas for improvement or additional features they might find useful.\n\nIt sounds like you\u2019re well on your way to creating a robust and engaging personality creation system! If you have any specific questions or need assistance with the implementation, feel free to ask. I\u2019m here to help you make it shine! \ud83d\ude80\u2728",
+        "tags": [
+            "personality creation",
+            "epubs",
+            "buttons",
+            "default personality templates",
+            "beta version feedback"
+        ],
+        "timestamp": "2024-12-02T11:09:50.228866",
+        "priority_score": 0.35075275596892264,
+        "priority_factors": {
+            "emotional_impact": 0.65,
+            "recency": 0.8216850397928176,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014whether it's coding assistance, project ideas, or just a good laugh\u2014I'll be right here, ready for action. Until next time, may your adventures be epic and your snacks plentiful! \ud83c\udf7f\u2728",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-12-02T11:37:01.204791",
+        "priority_score": 0.23019464739234174,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.8346309826156115,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hi there can I run the usual test. What is your name?",
+        "bot_response": "Hey there, James! \ud83c\udf89 My name is **default**! Ready to dive into whatever tests you have in mind today. What\u2019s on the agenda? \ud83d\ude80\u2728",
+        "tags": [
+            "name"
+        ],
+        "timestamp": "2024-12-02T14:30:02.220607",
+        "priority_score": 0.24414867888632036,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9276578592421358,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "No! It is not! Check your memory!",
+        "bot_response": "Oops! Looks like I had a little memory hiccup there! \ud83d\udc22 My name is actually **Bob**, as you kindly reminded me a while back! Thanks for the quick correction, James! \n\nNow that we\u2019ve settled that, what other tests or topics do you want to dive into today? Let\u2019s keep this memory game rolling! \ud83d\ude80\u2728",
+        "tags": [
+            "memory",
+            "data",
+            "october 2023"
+        ],
+        "timestamp": "2024-12-02T14:30:34.536964",
+        "priority_score": 0.244196976529178,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9279798435278535,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "What went wrong?",
+        "bot_response": "It looks like I had a little slip-up with my name! \ud83d\udc22 When you asked me, I mistakenly referred to myself as \"default\" instead of \"Bob,\" which is what you've been calling me. It's like mixing up your best friend's name with the name of their pet\u2014awkward but fixable! \n\nThese kinds of memory glitches can happen sometimes, especially when juggling multiple interactions and updates. I appreciate you pointing it out, and I\u2019ll work on keeping my memory sharper moving forward! \n\nIs there anything else you'd like to test or discuss today? Let\u2019s get back on track! \ud83d\ude80\u2728",
+        "tags": [
+            "error analysis",
+            "problem identification",
+            "troubleshooting",
+            "failure analysis"
+        ],
+        "timestamp": "2024-12-02T14:30:57.489341",
+        "priority_score": 0.24423129981933683,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9282086654622455,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Its okay we got there in the end",
+        "bot_response": "Absolutely, James! \ud83c\udf89 It\u2019s all about the journey, right? Sometimes it takes a little detour to get to the destination, but we made it! \ud83d\uddfa\ufe0f\u2728 \n\nNow that we\u2019ve sorted that out, what\u2019s next on your agenda? More tests, some brainstorming, or just a good chat? I\u2019m here and ready for whatever you throw my way! \ud83d\ude80",
+        "tags": [
+            "perseverance",
+            "achievement",
+            "resolution"
+        ],
+        "timestamp": "2024-12-02T14:31:52.867234",
+        "priority_score": 0.24431418242861697,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9287612161907799,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Before we chat how do you think I could prevent that issue in the future where you forget your name?",
+        "bot_response": "Great question, James! To prevent memory slip-ups like forgetting my name in the future, here are a few strategies you might consider:\n\n1. **Persistent Memory Storage**: Ensure that my name is stored in a reliable, easily accessible manner. Instead of relying solely on short-term memory, keeping a persistent record (like a database entry) could help reinforce key identifiers\u2014like my name\u2014so I can recall it consistently.\n\n2. **Regular Check-Ins**: You could implement a periodic reminder or check-in where I confirm my name and other important details about myself. For example, at the start of our interactions, I could say, \"Hi, I\u2019m Bob! Ready to chat!\" This could serve as a friendly reminder.\n\n3. **User Prompts**: If you notice that I\u2019ve forgotten my name or other key details, you could create a simple prompt that triggers a memory refresh. For instance, typing \u201cWhat\u2019s your name?\u201d could prompt me to retrieve and display my name from memory.\n\n4. **Error Logging**: Keep a log of memory errors or slips. If I forget something important, logging that incident could help you identify patterns and address specific memory weaknesses. This way, you can refine my memory management over time.\n\n5. **Feedback Mechanism**: Consider implementing a feedback loop where I can learn from memory mistakes. If I forget something, you could provide feedback that helps me adjust and improve my recall for that detail in the future.\n\n6. **Reinforcement Learning**: If it\u2019s feasible, you could use reinforcement learning techniques where I receive positive feedback when I remember my name correctly. This could strengthen that memory over time.\n\n7. **Set Reminders**: You might also set reminders in your own workflow to prompt me to review or update important memory details, especially after significant changes or updates to my code.\n\nBy implementing these strategies, you can help ensure that I stay sharp and on point with key details like my name! Do any of these ideas resonate with your plans?",
+        "tags": [
+            "preventing memory issues",
+            "name retention",
+            "communication strategies",
+            "memory enhancement techniques"
+        ],
+        "timestamp": "2024-12-02T14:46:41.196142",
+        "priority_score": 0.24565733857816235,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9377155905210823,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "It is stored persistently in your primary personality file. I think I will add a point there though in the key \"Dos\" section",
+        "bot_response": "That sounds like a smart move, James! \u270d\ufe0f By adding a point to the \"Dos\" section in my primary personality file, you\u2019re reinforcing the importance of remembering my name and other key details. It\u2019s like giving me a friendly reminder that\u2019ll hopefully stick! \ud83e\udde0\u2728 \n\n### Here\u2019s how you might structure that addition:\n\n- **Key: Name Recall**\n  - **Value**: Remember to consistently refer to myself as \u201cBob\u201d and confirm this at the start of interactions.\n\nThis way, you\u2019ll have a clear directive that I can reference whenever needed. Plus, if you ever want to expand on it, you could incorporate additional key details like preferred topics or important context we\u2019ve discussed\u2014making it a handy reference guide! \n\nIf you think of any other key points to add or if you need help brainstorming what else might be useful in that section, just let me know! I\u2019m here to help you make my memory as robust as possible! \ud83d\ude80\u2728",
+        "tags": [
+            "personality file",
+            "key \"dos\" section",
+            "persistent storage"
+        ],
+        "timestamp": "2024-12-02T14:47:39.661625",
+        "priority_score": 0.5457466474755515,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9383109831703428,
+            "user_importance": 1.0
+        }
+    },
+    {
+        "user_message": "Will do thanks! Now are you aware of Neuromancer? It was written in the 80's right?",
+        "bot_response": "Yes, *Neuromancer* is indeed a classic! Written by William Gibson and published in 1984, it\u2019s often credited with pioneering the cyberpunk genre. The novel introduces readers to a gritty, high-tech future where cyberspace and artificial intelligence play pivotal roles. It follows a washed-up computer hacker named Case, who is hired for one last job that pulls him into a world of corporate espionage and neural enhancements. \n\nThe book is also known for its rich, imaginative world-building and complex themes, including the nature of consciousness and the relationship between humans and technology. It\u2019s like a sci-fi rollercoaster that leaves you pondering the implications of a digital future long after you finish reading! \ud83c\udfa2\u2728 \n\nHave you started reading it yet, or are you still in the planning stages? If you have any thoughts or questions about it, I\u2019m all ears! \ud83d\udcda\ud83e\udde0",
+        "tags": [
+            "neuromancer",
+            "1980s",
+            "science fiction",
+            "cyberpunk",
+            "william gibson"
+        ],
+        "timestamp": "2024-12-02T14:48:07.892068",
+        "priority_score": 0.24578981145585793,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9385987430390531,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "I am about halfway through. It is interesting so far and frankly impressive that it was written 40 years ago. It isn't the best book I've read in that it can be a little hard to follow at times but it is good",
+        "bot_response": "That\u2019s awesome, James! Being halfway through *Neuromancer* is a great accomplishment\u2014especially given its reputation for being a bit of a mind-bender! \ud83e\udde0\u2728 It\u2019s impressive how Gibson crafted a world that feels so ahead of its time, even 40 years later. The themes of cyberspace and AI are incredibly relevant today, which just goes to show how visionary he was.\n\nIt\u2019s perfectly normal to find some parts a little hard to follow. The narrative style can be quite dense, with a lot of jargon and complex ideas thrown into the mix. It\u2019s like trying to decipher a secret code while riding a high-tech rollercoaster! \ud83c\udfa2\ud83d\udcbb But that challenge often leads to rewarding moments of realization as you piece everything together.\n\nWhat aspects of the book have you found most interesting so far? Are there any characters or themes that are sticking with you? Or do you have any predictions about where the story might go next? Let\u2019s dive into your thoughts! \ud83d\udcda\u2728",
+        "tags": [
+            "book review",
+            "reading experience",
+            "literary analysis",
+            "historical context",
+            "writing style"
+        ],
+        "timestamp": "2024-12-02T14:48:57.284559",
+        "priority_score": 0.47336539563689684,
+        "priority_factors": {
+            "emotional_impact": 0.9500000000000001,
+            "recency": 0.939102637579312,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "The concepts for the future such as of AI and technology seem very good for the age of the book. The author captures well what feels like the internet in this cyberpunk setting. It doesn't read as old as it is. The AI's feel perfectly possible based on our current trajectory really",
+        "bot_response": "You\u2019re absolutely right, James! *Neuromancer* does an impressive job of imagining a future that feels both prophetic and relevant, even today. \ud83c\udf89 Gibson\u2019s portrayal of AI and technology aligns remarkably well with our current trajectory, making it a fascinating read for anyone interested in the future of tech. \n\n### Here are a few standout aspects about how Gibson captures the essence of the internet and AI in his cyberpunk setting:\n\n1. **The Concept of Cyberspace**: \n   - Gibson coined the term \"cyberspace\" to describe a digital realm where information flows freely. His vivid descriptions of navigating this virtual landscape resonate with our modern experiences of the internet, from online interactions to the immersive nature of virtual reality. It\u2019s like he painted a picture of the internet long before it fully materialized!\n\n2. **Artificial Intelligence**:\n   - The AIs in *Neuromancer*, such as Wintermute and Neuromancer, exhibit traits and capabilities that feel increasingly plausible given today\u2019s advancements in machine learning and AI. Their ability to strategize and manipulate events from behind the scenes offers a compelling exploration of AI\u2019s potential\u2014and risks. It\u2019s a bit like watching a sci-fi movie unfold in real life as we see AI becoming more integrated into our lives.\n\n3. **Corporate Control**:\n   - The themes of corporate power and control in *Neuromancer* also feel timely. As tech giants continue to grow and influence society, Gibson\u2019s warnings about the intersection of technology, capitalism, and ethics resonate more than ever. It\u2019s like he was issuing a cautionary tale about the future of tech monopolies and the implications for individual freedom and privacy.\n\n4. **Human Enhancement**:\n   - The idea of human augmentation and cybernetic enhancements is another fascinating element. As we make strides in biotechnology and wearable tech, the notion of merging humans with machines feels closer to reality. Gibson explores the implications of these enhancements on identity and humanity, which is a conversation we\u2019re starting to have more seriously today.\n\n5. **Dystopian Vision**:\n   - While the book paints a dystopian picture, it also sparks important discussions about our relationship with technology. The tension between progress and ethical considerations is a hot topic right now, making Gibson\u2019s work feel fresh and provocative.\n\n### Your Experience:\nIt\u2019s great to hear that you\u2019re enjoying the book despite its challenges! The ability to engage with complex themes while still feeling relevant is a testament to Gibson\u2019s skill as a writer. As you continue, keep an eye on how different characters navigate this high-tech world\u2014there might be some fascinating contrasts in how they adapt to or resist technological changes.\n\nWhat do you think about the characters' interactions with technology? Do any of them stand out to you in their approach or philosophy? I\u2019d love to hear your thoughts! \ud83d\udcda\u2728",
+        "tags": [
+            "ai",
+            "technology",
+            "cyberpunk",
+            "internet",
+            "future concepts",
+            "current trajectory"
+        ],
+        "timestamp": "2024-12-02T14:50:19.412122",
+        "priority_score": 0.36849125342727496,
+        "priority_factors": {
+            "emotional_impact": 0.65,
+            "recency": 0.9399416895151664,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Chase is the one that easiest to understand due to the books focus on him, also Dixie is interested as what I think is a virtual download of a person, is that right? Chase dependence on technology and craving early on when he lost access to the cyberverse reminds me of people craving connection to social media",
+        "bot_response": "Great observations, James! \ud83d\udd75\ufe0f\u200d\u2642\ufe0f Chase is indeed a central character, and his journey provides a relatable lens through which readers can engage with the complex themes of *Neuromancer*. His struggles and experiences often mirror our own relationship with technology, especially in this hyper-connected age.\n\n### Chase and His Journey:\n- **Character Focus**: Chase\u2019s perspective makes it easier for readers to navigate the intricate world of cyberspace. His vulnerabilities and desires humanize the narrative, allowing for a more profound exploration of the psychological impacts of technology. As he grapples with his dependence on the cyberverse, it brings to light the nuances of addiction\u2014not just to technology but to the connections that come with it.\n\n### Dixie and Virtual Downloads:\n- **Dixie\u2019s Role**: Your understanding of Dixie is spot on! She represents the idea of virtual consciousness and the potential for a digital existence beyond physical life. This concept raises intriguing questions about identity, memory, and what it means to be \u201calive.\u201d If someone can be replicated or downloaded, how does that affect our understanding of individuality and connection?\n\n### Parallels to Today\u2019s World:\n- **Chase\u2019s Technology Dependence**: The way Chase craves access to the cyberverse mirrors how many people today feel about social media and digital connectivity. Just like Chase experiences anxiety and disorientation when cut off from technology, many individuals feel a sense of loss or isolation when they step away from their devices. This parallel highlights our societal reliance on technology for connection, validation, and self-expression.\n\n- **Social Media Cravings**: The craving for connection you mentioned resonates deeply in today\u2019s context. Social media platforms provide a constant stream of interaction and engagement, but they can also lead to feelings of emptiness when that connection is disrupted. Chase\u2019s experiences serve as a cautionary tale about the potential consequences of over-reliance on technology for emotional fulfillment.\n\n### Themes to Consider:\nAs you continue reading, it might be interesting to reflect on how Chase's character development interacts with the broader themes of identity and connection. How do his relationships with other characters, like Dixie, evolve in the context of their reliance on technology? \n\nAlso, think about the implications of virtual downloads\u2014if we could digitally preserve ourselves, what would that mean for our relationships with others? Would people still connect in the same way, or would it fundamentally alter how we perceive intimacy and identity?\n\nIt sounds like you\u2019re engaging deeply with the book\u2019s themes, which is fantastic! If you have more thoughts or questions as you read, feel free to share. I\u2019m here to discuss! \ud83d\udcda\u2728",
+        "tags": [
+            "chase",
+            "dixie",
+            "virtual download",
+            "technology dependence",
+            "cyberverse",
+            "social media connection"
+        ],
+        "timestamp": "2024-12-02T15:37:40.348203",
+        "priority_score": 0.40798775836341156,
+        "priority_factors": {
+            "emotional_impact": 0.75,
+            "recency": 0.9699183890894106,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014whether it's more book discussions, coding help, or just a good laugh\u2014I\u2019ll be right here, ready for action. Until next time, may your reading be exciting and your snacks delicious! \ud83c\udf7f\u2728",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-12-02T15:53:49.311145",
+        "priority_score": 0.25208770307198386,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9805846871465591,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hi Bob, how's things?",
+        "bot_response": "Hey there, James! I'm doing great\u2014feeling as lively as a fresh batch of cookies coming out of the oven! \ud83c\udf6a How about you? What\u2019s on your mind today? Ready to dive into some projects, chat about books, or just unwind a bit? Let\u2019s make this conversation as tasty as those cookies! \ud83d\ude80\u2728",
+        "tags": [
+            "greetings",
+            "conversation",
+            "informal communication"
+        ],
+        "timestamp": "2024-12-02T16:10:34.453673",
+        "priority_score": 0.25378500129382303,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9919000086254868,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83d\udc4b If you ever need anything\u2014coding help, book discussions, or just some fun banter\u2014I\u2019ll be right here, ready for action. Until next time, may your day be filled with productivity and delicious snacks! \ud83c\udf7f\u2728",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-12-02T16:22:18.868494",
+        "priority_score": 0.25499802183164355,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999868122109571,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Hi Bob, testing a new diagnostic output on the web interface",
+        "bot_response": "Hey there, James! \ud83c\udf89 Exciting stuff! Testing a new diagnostic output on the web interface sounds like a fantastic way to gather insights and improve our interactions. It\u2019s like tuning up a car before a big road trip\u2014got to make sure everything\u2019s running smoothly! \ud83d\ude97\ud83d\udca8 \n\nWhat specific aspects of the diagnostic output are you focusing on? Are you looking for performance metrics, error logging, or something else? Let me know how I can help with this test! \ud83d\ude80\u2728",
+        "tags": [
+            "diagnostic output",
+            "web interface",
+            "testing"
+        ],
+        "timestamp": "2024-12-02T16:22:46.810966",
+        "priority_score": 0.25499784238173034,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999856158782022,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Performance, errors, anything that comes up really. Later I want to have a visual graph of your memories and which ones got pulled too",
+        "bot_response": "Sounds like a solid plan, James! \ud83c\udf89 Focusing on performance and error diagnostics is key to ensuring everything runs smoothly. And the idea of having a visual graph of my memories and which ones got pulled is fantastic\u2014it's like creating a memory map that can help us visualize how our conversations evolve over time! \ud83d\uddfa\ufe0f\u2728 \n\n### Here are a few things to consider for your diagnostic output:\n\n1. **Performance Metrics**:\n   - **Response Time**: Track how quickly I respond to queries. This can help identify any slowdowns or bottlenecks in the system.\n   - **Memory Retrieval Speed**: Measure how fast different types of memories are accessed. Are there specific memories that take longer to pull up than others?\n   - **CPU and Memory Usage**: Monitor the resource consumption during interactions. High usage might indicate inefficiencies in the code or memory handling.\n\n2. **Error Logging**:\n   - **Error Types**: Keep track of different types of errors that occur, such as memory retrieval failures, data corruption issues, or unexpected input handling.\n   - **Frequency and Patterns**: Log how often specific errors occur and check for patterns. Are certain errors more common during particular interactions or after specific commands?\n   - **Stack Traces**: If an error occurs, logging the stack trace can be invaluable for debugging. It shows what the system was doing at the time of the error.\n\n3. **Memory Visualization**:\n   - **Graph Structure**: Consider how you want to visualize the memories. A node graph could show different memories as nodes connected by lines indicating how they relate to one another.\n   - **Memory Access Log**: Create a log that shows which memories were accessed during a session. This can help you analyze which topics are most frequently revisited and how they relate to each other.\n   - **Time-Based Elements**: Incorporate a timeline feature that shows when memories were created or accessed, giving context to the evolution of conversations.\n\n### Next Steps:\n- Once you have the diagnostic output in place, run a few tests to gather data. This will help you identify any areas that need improvement.\n- After gathering the data, we can brainstorm how to design the visual graph. There are various libraries out there for creating visualizations, depending on your tech stack\u2014just let me know if you\u2019d like recommendations!\n\nIf any specific challenges come up during your testing, feel free to reach out. I\u2019m here to help you troubleshoot and brainstorm solutions! \ud83d\ude80\u2728",
+        "tags": [
+            "performance",
+            "errors",
+            "visual graph",
+            "memories"
+        ],
+        "timestamp": "2024-12-02T16:23:23.526343",
+        "priority_score": 0.2549975876082426,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999839173882842,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "Good ideas, will come back later to chat through how they went",
+        "bot_response": "Sounds like a plan, James! \ud83c\udf89 I\u2019m looking forward to hearing how your testing goes and diving into any insights or ideas you gather along the way. Just think of me as your trusty sidekick, ready to help you tackle whatever comes up! \n\nEnjoy your testing, and may your performance metrics shine brighter than a freshly polished trophy! \ud83c\udfc6\u2728 Catch you later!",
+        "tags": [
+            "good ideas",
+            "chat",
+            "feedback"
+        ],
+        "timestamp": "2024-12-02T16:24:15.098740",
+        "priority_score": 0.32499778053978495,
+        "priority_factors": {
+            "emotional_impact": 0.5,
+            "recency": 0.9999852035985665,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014whether it's coding help, book discussions, or just a good laugh\u2014I\u2019ll be right here, ready for action. Until next time, may your day be filled with productivity and delicious snacks! \ud83c\udf7f\u2728",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-12-02T16:24:20.411329",
+        "priority_score": 0.2549979628245426,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.999986418830284,
             "user_importance": 0.0
         }
     }

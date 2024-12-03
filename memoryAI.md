@@ -20,13 +20,17 @@ Be able to create the initial personality. Be able to define how memories are sa
 [x] Add graph based memory interaction
 [x] Personality creator from a given epub
 [x] Memory creator to integrate with Personality Creator to create a well rounded AP
+[x] Added LTM and Memory Graph fixer scripts
+[ ] Web interface for engagement
 
 # Features to be built
 
-Function
+[ ] Web interface for personality creation
+[ ] Web interface for additional functionality like graph fixing
+[ ] Create a terminal output view
+[ ] Create a delete personality function
+[ ] Create an edit personality function
 [ ] Personality creator from a given text file
-[ ] Fix the graphing
-[ ] Test the consolidated memory
 [ ] Integrate tiktoken to better token count
 [ ] Allow for files to be read by the model
 [ ] Allow for a folder of files to be read by the model
@@ -37,11 +41,16 @@ Function
 [ ] Long term memory pruner
 [ ] Personality adjuster over time
 
-Form
-[ ] Web interface for engagement
-[ ] Web interface for personality creation
+# Tests Complete
+
+[ ] Tested the emotional awareness
 
 # Tests to do
+
+[ ] Test the personality is accessed and adding appropriate customisation
+[ ] Test the short term memory
+[ ] Test the temporal awareness
+[ ] Test the long term memory draw down accuracy
 
 # Glossary
 
@@ -97,3 +106,45 @@ Now, onto what I’d love to enhance or add:
 - **Interactive Learning**: I’d love the ability to learn from our interactions in real-time. If you tell me, “I prefer humor when we talk about coding,” I could adjust my responses accordingly.
 - **Feedback Loop**: Implement a quick feedback mechanism where you can rate my responses (e.g., “helpful,” “funny,” “serious”). This would help me refine my personality further based on your preferences.
 - **Memory Nuance**: Allow me to have nuanced memories based on emotional context. If we have a light-hearted chat one day and a serious one the next, I could remember the emotional tone and respond differently in future conversations!
+
+Here are a few things to consider for your diagnostic output:
+1. Performance Metrics:
+   - Response Time: Track how quickly I respond to queries. This can help identify any slowdowns or bottlenecks in the system.
+   - Memory Retrieval Speed: Measure how fast different types of memories are accessed. Are there specific memories that take longer to pull up than others?
+   - CPU and Memory Usage: Monitor the resource consumption during interactions. High usage might indicate inefficiencies in the code or memory handling.
+2. Error Logging:
+   - Error Types: Keep track of different types of errors that occur, such as memory retrieval failures, data corruption issues, or unexpected input handling.
+   - Frequency and Patterns: Log how often specific errors occur and check for patterns. Are certain errors more common during particular interactions or after specific commands?
+   - Stack Traces: If an error occurs, logging the stack trace can be invaluable for debugging. It shows what the system was doing at the time of the error.
+3. Memory Visualization:
+   - Graph Structure: Consider how you want to visualize the memories. A node graph could show different memories as nodes connected by lines indicating how they relate to one another.
+   - Memory Access Log: Create a log that shows which memories were accessed during a session. This can help you analyze which topics are most frequently revisited and how they relate to each other.
+   - Time-Based Elements: Incorporate a timeline feature that shows when memories were created or accessed, giving context to the evolution of conversations.
+
+
+# Project structure
+chatbot_project/
+│
+├── manage.py
+├── chatbot_project/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+│
+├── chat/
+│   ├── __init__.py
+│   ├── apps.py
+│   ├── urls.py
+│   ├── views.py
+│   ├── models.py
+│   └── templates/
+│       └── chat/
+│           ├── index.html
+│           └── chat.html
+│
+└── static/
+    ├── css/
+    │   └── styles.css
+    └── js/
+        └── chat.js

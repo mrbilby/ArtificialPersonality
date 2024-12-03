@@ -1,4 +1,4 @@
-<!-- templates/chat/chat.html - modify to add the end chat button -->
+<!-- templates/chat/chat.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,20 +6,39 @@
     <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-    <div class="chat-container">
-        <div class="chat-header">
-            <h1>Chat with {{ personality_name|title }}</h1>
-            <div class="header-buttons">
-                <button onclick="endChat()" class="end-chat-button">End Chat</button>
-                <a href="{% url 'index' %}" class="back-button">← Back to Selection</a>
+
+    <div class="main-container">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h1>Chat with {{ personality_name|title }}</h1>
+                <div class="header-buttons">
+                    <button onclick="endChat()" class="end-chat-button">End Chat</button>
+                    <a href="{% url 'index' %}" class="back-button">← Back to Selection</a>
+                </div>
+                <!-- Add this block for the diagnostic mode toggle -->
+                <div class="diagnostic-toggle">
+                    <label>
+                        <input type="checkbox" id="diagnosticMode">
+                        Diagnostic Mode
+                    </label>
+                </div>
+            </div>
+            <div id="messageContainer" class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type your message...">
+                <button onclick="sendMessage()">Send</button>
             </div>
         </div>
-        <div class="chat-messages" id="messageContainer"></div>
-        <div class="chat-input">
-            <input type="text" id="messageInput" placeholder="Type your message...">
-            <button onclick="sendMessage()">Send</button>
+        
+        <div id="diagnosticPanel" class="diagnostic-panel">
+            <div class="diagnostic-header">
+                <h2>Diagnostic Output</h2>
+                <button onclick="clearDiagnostics()" class="clear-button">Clear</button>
+            </div>
+            <div id="diagnosticOutput" class="diagnostic-output"></div>
         </div>
     </div>
+    
     <script>
         const personalityName = "{{ personality_name }}";
     </script>

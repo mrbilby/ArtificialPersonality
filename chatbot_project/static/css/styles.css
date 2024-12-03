@@ -204,3 +204,72 @@ body {
 .end-chat-button:hover {
     background-color: #c82333;
 }
+
+/* Add to static/css/styles.css */
+.diagnostic-toggle {
+    margin: 20px 0;
+}
+
+.diagnostic-header {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.diagnostic-header h2 {
+    margin: 0;
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+.clear-button {
+    padding: 4px 8px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background: #444;
+}
+
+/* In styles.css */
+.main-container {
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+    margin: 20px;
+    height: calc(100vh - 40px);
+}
+
+.chat-container {
+    flex: 1;
+    min-width: 0;  /* Allows container to shrink below content width */
+    display: flex;
+    flex-direction: column;
+}
+
+.diagnostic-panel {
+    width: 400px;
+    background: #1e1e1e;
+    color: #00ff00;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+}
+
+.diagnostic-output {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    white-space: pre-wrap;
+    color: #00ff00;  /* Make sure this is here to show green text */
+}

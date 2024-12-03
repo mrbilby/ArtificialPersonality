@@ -105,6 +105,376 @@
                 ],
                 "priority": 0.25499785173736456
             }
+        ],
+        [
+            8,
+            {
+                "message": "Hi there, I'm back. I've backed up everything to git and the exit button is working good. It triggers the bye command on pressing it fine",
+                "response": "",
+                "timestamp": "2024-12-02T11:06:20.330596",
+                "tags": [
+                    "git",
+                    "backup",
+                    "exit button",
+                    "bye command"
+                ],
+                "priority": 0.377496760720996
+            }
+        ],
+        [
+            9,
+            {
+                "message": "I have dozens of things I want to add. I want to incorporate some buttons to create new personalities either from scratch or from an epub. Then I want to be able to create personalities from a text file of messages or tweets. SOmething like that. You ever read The Prefect by Alastair Reynolds? It has the concept of Beta versions of people and I want to make a basic version of that",
+                "response": "",
+                "timestamp": "2024-12-02T11:08:46.243728",
+                "tags": [
+                    "buttons",
+                    "new personalities",
+                    "epub",
+                    "text file",
+                    "messages",
+                    "tweets",
+                    "the prefect",
+                    "alastair reynolds",
+                    "beta versions of people"
+                ],
+                "priority": 0.25499660609588953
+            }
+        ],
+        [
+            10,
+            {
+                "message": "I already got the personality creation from epubs built. I just need to add buttons for it. Good point on default personality templates and your beta version feedback",
+                "response": "",
+                "timestamp": "2024-12-02T11:09:50.228866",
+                "tags": [
+                    "personality creation",
+                    "epubs",
+                    "buttons",
+                    "default personality templates",
+                    "beta version feedback"
+                ],
+                "priority": 0.37749671478549407
+            }
+        ],
+        [
+            11,
+            {
+                "message": "bye",
+                "response": "",
+                "timestamp": "2024-12-02T11:37:01.204791",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.2549975643659383
+            }
+        ],
+        [
+            12,
+            {
+                "message": "Hi there can I run the usual test. What is your name?",
+                "response": "",
+                "timestamp": "2024-12-02T14:30:02.220607",
+                "tags": [
+                    "name"
+                ],
+                "priority": 0.25497716829174727
+            }
+        ],
+        [
+            13,
+            {
+                "message": "No! It is not! Check your memory!",
+                "response": "",
+                "timestamp": "2024-12-02T14:30:34.536964",
+                "tags": [
+                    "memory",
+                    "data",
+                    "october 2023"
+                ],
+                "priority": 0.2549885994169017
+            }
+        ],
+        [
+            14,
+            {
+                "message": "What went wrong?",
+                "response": "",
+                "timestamp": "2024-12-02T14:30:57.489341",
+                "tags": [
+                    "error analysis",
+                    "problem identification",
+                    "troubleshooting",
+                    "failure analysis"
+                ],
+                "priority": 0.25499655695056017
+            }
+        ],
+        [
+            15,
+            {
+                "message": "Its okay we got there in the end",
+                "response": "",
+                "timestamp": "2024-12-02T14:31:52.867234",
+                "tags": [
+                    "perseverance",
+                    "achievement",
+                    "resolution"
+                ],
+                "priority": 0.2549975401618671
+            }
+        ],
+        [
+            16,
+            {
+                "message": "Before we chat how do you think I could prevent that issue in the future where you forget your name?",
+                "response": "",
+                "timestamp": "2024-12-02T14:46:41.196142",
+                "tags": [
+                    "preventing memory issues",
+                    "name retention",
+                    "communication strategies",
+                    "memory enhancement techniques"
+                ],
+                "priority": 0.25499669174310424
+            }
+        ],
+        [
+            17,
+            {
+                "message": "It is stored persistently in your primary personality file. I think I will add a point there though in the key \"Dos\" section",
+                "response": "",
+                "timestamp": "2024-12-02T14:47:39.661625",
+                "tags": [
+                    "personality file",
+                    "key \"dos\" section",
+                    "persistent storage"
+                ],
+                "priority": 0.5549977208262981
+            }
+        ],
+        [
+            18,
+            {
+                "message": "Will do thanks! Now are you aware of Neuromancer? It was written in the 80's right?",
+                "response": "",
+                "timestamp": "2024-12-02T14:48:07.892068",
+                "tags": [
+                    "neuromancer",
+                    "1980s",
+                    "science fiction",
+                    "cyberpunk",
+                    "william gibson"
+                ],
+                "priority": 0.25499676930916726
+            }
+        ],
+        [
+            19,
+            {
+                "message": "I am about halfway through. It is interesting so far and frankly impressive that it was written 40 years ago. It isn't the best book I've read in that it can be a little hard to follow at times but it is good",
+                "response": "",
+                "timestamp": "2024-12-02T14:48:57.284559",
+                "tags": [
+                    "book review",
+                    "reading experience",
+                    "literary analysis",
+                    "historical context",
+                    "writing style"
+                ],
+                "priority": 0.48249736101517915
+            }
+        ],
+        [
+            20,
+            {
+                "message": "The concepts for the future such as of AI and technology seem very good for the age of the book. The author captures well what feels like the internet in this cyberpunk setting. It doesn't read as old as it is. The AI's feel perfectly possible based on our current trajectory really",
+                "response": "",
+                "timestamp": "2024-12-02T14:50:19.412122",
+                "tags": [
+                    "ai",
+                    "technology",
+                    "cyberpunk",
+                    "internet",
+                    "future concepts",
+                    "current trajectory"
+                ],
+                "priority": 0.3774861798984187
+            }
+        ],
+        [
+            21,
+            {
+                "message": "Chase is the one that easiest to understand due to the books focus on him, also Dixie is interested as what I think is a virtual download of a person, is that right? Chase dependence on technology and craving early on when he lost access to the cyberverse reminds me of people craving connection to social media",
+                "response": "",
+                "timestamp": "2024-12-02T15:37:40.348203",
+                "tags": [
+                    "chase",
+                    "dixie",
+                    "virtual download",
+                    "technology dependence",
+                    "cyberverse",
+                    "social media connection"
+                ],
+                "priority": 0.4124942762652909
+            }
+        ],
+        [
+            22,
+            {
+                "message": "bye",
+                "response": "",
+                "timestamp": "2024-12-02T15:53:49.311145",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.25499705847782367
+            }
+        ],
+        [
+            23,
+            {
+                "message": "Hi Bob, how's things?",
+                "response": "",
+                "timestamp": "2024-12-02T16:10:34.453673",
+                "tags": [
+                    "greetings",
+                    "conversation",
+                    "informal communication"
+                ],
+                "priority": 0.2549970037855443
+            }
+        ],
+        [
+            24,
+            {
+                "message": "bye",
+                "response": "",
+                "timestamp": "2024-12-02T16:22:18.868494",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.25499802183164355
+            }
+        ],
+        [
+            25,
+            {
+                "message": "Hi Bob, testing a new diagnostic output on the web interface",
+                "response": "",
+                "timestamp": "2024-12-02T16:22:46.810966",
+                "tags": [
+                    "diagnostic output",
+                    "web interface",
+                    "testing"
+                ],
+                "priority": 0.25499784238173034
+            }
+        ],
+        [
+            26,
+            {
+                "message": "Performance, errors, anything that comes up really. Later I want to have a visual graph of your memories and which ones got pulled too",
+                "response": "",
+                "timestamp": "2024-12-02T16:23:23.526343",
+                "tags": [
+                    "performance",
+                    "errors",
+                    "visual graph",
+                    "memories"
+                ],
+                "priority": 0.2549975876082426
+            }
+        ],
+        [
+            27,
+            {
+                "message": "Good ideas, will come back later to chat through how they went",
+                "response": "",
+                "timestamp": "2024-12-02T16:24:15.098740",
+                "tags": [
+                    "good ideas",
+                    "chat",
+                    "feedback"
+                ],
+                "priority": 0.32499778053978495
+            }
+        ],
+        [
+            28,
+            {
+                "message": "bye",
+                "response": "",
+                "timestamp": "2024-12-02T16:24:20.411329",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.2549979628245426
+            }
+        ],
+        [
+            29,
+            {
+                "message": "Hi bob, we are back!",
+                "response": "",
+                "timestamp": "2024-12-02T16:39:33.098016",
+                "tags": [
+                    "greetings",
+                    "return"
+                ],
+                "priority": 0.2549974650220081
+            }
+        ],
+        [
+            30,
+            {
+                "message": "Just making dinner",
+                "response": "",
+                "timestamp": "2024-12-02T16:39:44.371380",
+                "tags": [
+                    "dinner",
+                    "cooking"
+                ],
+                "priority": 0.2549974100690246
+            }
+        ],
+        [
+            31,
+            {
+                "message": "Roast chicken with roast vegetables",
+                "response": "",
+                "timestamp": "2024-12-02T16:39:55.746898",
+                "tags": [
+                    "roast chicken",
+                    "roast vegetables"
+                ],
+                "priority": 0.25499784848572166
+            }
+        ],
+        [
+            32,
+            {
+                "message": "good idea! will do. Back later",
+                "response": "",
+                "timestamp": "2024-12-02T16:40:13.050915",
+                "tags": [
+                    "good idea",
+                    "back later"
+                ],
+                "priority": 0.3249978759762575
+            }
+        ],
+        [
+            33,
+            {
+                "message": "bye",
+                "response": "",
+                "timestamp": "2024-12-02T16:40:18.136990",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.25499825315923214
+            }
         ]
     ],
     "edges": [
@@ -158,6 +528,188 @@
             }
         ],
         [
+            0,
+            8,
+            {
+                "weight": 0.2877531718159722
+            }
+        ],
+        [
+            0,
+            9,
+            {
+                "weight": 0.28724652899652775
+            }
+        ],
+        [
+            0,
+            10,
+            {
+                "weight": 0.28702435837847223
+            }
+        ],
+        [
+            0,
+            11,
+            {
+                "weight": 0.28136124752777775
+            }
+        ],
+        [
+            0,
+            12,
+            {
+                "weight": 0.2453160537222222
+            }
+        ],
+        [
+            0,
+            13,
+            {
+                "weight": 0.38520384414930553
+            }
+        ],
+        [
+            0,
+            14,
+            {
+                "weight": 0.24512414839583332
+            }
+        ],
+        [
+            0,
+            15,
+            {
+                "weight": 0.24493186404513886
+            }
+        ],
+        [
+            0,
+            16,
+            {
+                "weight": 0.24184738867013889
+            }
+        ],
+        [
+            0,
+            17,
+            {
+                "weight": 0.24164438352083334
+            }
+        ],
+        [
+            0,
+            18,
+            {
+                "weight": 0.24154636114930553
+            }
+        ],
+        [
+            0,
+            19,
+            {
+                "weight": 0.24137485944444442
+            }
+        ],
+        [
+            0,
+            20,
+            {
+                "weight": 0.32858969429513885
+            }
+        ],
+        [
+            0,
+            21,
+            {
+                "weight": 0.23122533290277775
+            }
+        ],
+        [
+            0,
+            22,
+            {
+                "weight": 0.22786087824305556
+            }
+        ],
+        [
+            0,
+            23,
+            {
+                "weight": 0.22437080002083332
+            }
+        ],
+        [
+            0,
+            24,
+            {
+                "weight": 0.22192491522569446
+            }
+        ],
+        [
+            0,
+            25,
+            {
+                "weight": 0.2218278927534722
+            }
+        ],
+        [
+            0,
+            26,
+            {
+                "weight": 0.22170040880555555
+            }
+        ],
+        [
+            0,
+            27,
+            {
+                "weight": 0.22152133798263887
+            }
+        ],
+        [
+            0,
+            28,
+            {
+                "weight": 0.22150289149305558
+            }
+        ],
+        [
+            0,
+            29,
+            {
+                "weight": 0.2183338404965278
+            }
+        ],
+        [
+            0,
+            30,
+            {
+                "weight": 0.21829469687152778
+            }
+        ],
+        [
+            0,
+            31,
+            {
+                "weight": 0.2182551985451389
+            }
+        ],
+        [
+            0,
+            32,
+            {
+                "weight": 0.21819511515277776
+            }
+        ],
+        [
+            0,
+            33,
+            {
+                "weight": 0.2181774551701389
+            }
+        ],
+        [
             1,
             2,
             {
@@ -200,6 +752,188 @@
             }
         ],
         [
+            1,
+            8,
+            {
+                "weight": 0.28780793482291667
+            }
+        ],
+        [
+            1,
+            9,
+            {
+                "weight": 0.2873012920034722
+            }
+        ],
+        [
+            1,
+            10,
+            {
+                "weight": 0.28707912138541664
+            }
+        ],
+        [
+            1,
+            11,
+            {
+                "weight": 0.2814160105347222
+            }
+        ],
+        [
+            1,
+            12,
+            {
+                "weight": 0.9453708167291666
+            }
+        ],
+        [
+            1,
+            13,
+            {
+                "weight": 0.24525860715624997
+            }
+        ],
+        [
+            1,
+            14,
+            {
+                "weight": 0.24517891140277775
+            }
+        ],
+        [
+            1,
+            15,
+            {
+                "weight": 0.24498662705208332
+            }
+        ],
+        [
+            1,
+            16,
+            {
+                "weight": 0.24190215167708334
+            }
+        ],
+        [
+            1,
+            17,
+            {
+                "weight": 0.2416991465277778
+            }
+        ],
+        [
+            1,
+            18,
+            {
+                "weight": 0.24160112415624999
+            }
+        ],
+        [
+            1,
+            19,
+            {
+                "weight": 0.24142962245138888
+            }
+        ],
+        [
+            1,
+            20,
+            {
+                "weight": 0.24114445730208334
+            }
+        ],
+        [
+            1,
+            21,
+            {
+                "weight": 0.2312800959097222
+            }
+        ],
+        [
+            1,
+            22,
+            {
+                "weight": 0.22791564125
+            }
+        ],
+        [
+            1,
+            23,
+            {
+                "weight": 0.22442556302777775
+            }
+        ],
+        [
+            1,
+            24,
+            {
+                "weight": 0.2219796782326389
+            }
+        ],
+        [
+            1,
+            25,
+            {
+                "weight": 0.22188265576041666
+            }
+        ],
+        [
+            1,
+            26,
+            {
+                "weight": 0.2217551718125
+            }
+        ],
+        [
+            1,
+            27,
+            {
+                "weight": 0.2215761009895833
+            }
+        ],
+        [
+            1,
+            28,
+            {
+                "weight": 0.2215576545
+            }
+        ],
+        [
+            1,
+            29,
+            {
+                "weight": 0.2183886035034722
+            }
+        ],
+        [
+            1,
+            30,
+            {
+                "weight": 0.21834945987847224
+            }
+        ],
+        [
+            1,
+            31,
+            {
+                "weight": 0.21830996155208335
+            }
+        ],
+        [
+            1,
+            32,
+            {
+                "weight": 0.21824987815972222
+            }
+        ],
+        [
+            1,
+            33,
+            {
+                "weight": 0.21823221817708333
+            }
+        ],
+        [
             2,
             3,
             {
@@ -235,6 +969,188 @@
             }
         ],
         [
+            2,
+            8,
+            {
+                "weight": 0.2878661005277778
+            }
+        ],
+        [
+            2,
+            9,
+            {
+                "weight": 0.2873594577083333
+            }
+        ],
+        [
+            2,
+            10,
+            {
+                "weight": 0.28713728709027775
+            }
+        ],
+        [
+            2,
+            11,
+            {
+                "weight": 0.2814741762395833
+            }
+        ],
+        [
+            2,
+            12,
+            {
+                "weight": 0.24542898243402778
+            }
+        ],
+        [
+            2,
+            13,
+            {
+                "weight": 0.3853167728611111
+            }
+        ],
+        [
+            2,
+            14,
+            {
+                "weight": 0.24523707710763887
+            }
+        ],
+        [
+            2,
+            15,
+            {
+                "weight": 0.24504479275694444
+            }
+        ],
+        [
+            2,
+            16,
+            {
+                "weight": 0.24196031738194446
+            }
+        ],
+        [
+            2,
+            17,
+            {
+                "weight": 0.24175731223263885
+            }
+        ],
+        [
+            2,
+            18,
+            {
+                "weight": 0.2416592898611111
+            }
+        ],
+        [
+            2,
+            19,
+            {
+                "weight": 0.24148778815625
+            }
+        ],
+        [
+            2,
+            20,
+            {
+                "weight": 0.24120262300694442
+            }
+        ],
+        [
+            2,
+            21,
+            {
+                "weight": 0.23133826161458332
+            }
+        ],
+        [
+            2,
+            22,
+            {
+                "weight": 0.22797380695486108
+            }
+        ],
+        [
+            2,
+            23,
+            {
+                "weight": 0.22448372873263892
+            }
+        ],
+        [
+            2,
+            24,
+            {
+                "weight": 0.22203784393749998
+            }
+        ],
+        [
+            2,
+            25,
+            {
+                "weight": 0.22194082146527777
+            }
+        ],
+        [
+            2,
+            26,
+            {
+                "weight": 0.2218133375173611
+            }
+        ],
+        [
+            2,
+            27,
+            {
+                "weight": 0.22163426669444444
+            }
+        ],
+        [
+            2,
+            28,
+            {
+                "weight": 0.2216158202048611
+            }
+        ],
+        [
+            2,
+            29,
+            {
+                "weight": 0.2184467692083333
+            }
+        ],
+        [
+            2,
+            30,
+            {
+                "weight": 0.2184076255833333
+            }
+        ],
+        [
+            2,
+            31,
+            {
+                "weight": 0.21836812725694443
+            }
+        ],
+        [
+            2,
+            32,
+            {
+                "weight": 0.21830804386458336
+            }
+        ],
+        [
+            2,
+            33,
+            {
+                "weight": 0.21829038388194444
+            }
+        ],
+        [
             3,
             4,
             {
@@ -263,6 +1179,188 @@
             }
         ],
         [
+            3,
+            8,
+            {
+                "weight": 0.28800222998611114
+            }
+        ],
+        [
+            3,
+            9,
+            {
+                "weight": 0.2874955871666667
+            }
+        ],
+        [
+            3,
+            10,
+            {
+                "weight": 0.2872734165486111
+            }
+        ],
+        [
+            3,
+            11,
+            {
+                "weight": 0.2816103056979167
+            }
+        ],
+        [
+            3,
+            12,
+            {
+                "weight": 0.2455651118923611
+            }
+        ],
+        [
+            3,
+            13,
+            {
+                "weight": 0.24545290231944444
+            }
+        ],
+        [
+            3,
+            14,
+            {
+                "weight": 0.24537320656597222
+            }
+        ],
+        [
+            3,
+            15,
+            {
+                "weight": 0.24518092221527776
+            }
+        ],
+        [
+            3,
+            16,
+            {
+                "weight": 0.24209644684027776
+            }
+        ],
+        [
+            3,
+            17,
+            {
+                "weight": 0.2418934416909722
+            }
+        ],
+        [
+            3,
+            18,
+            {
+                "weight": 0.24179541931944443
+            }
+        ],
+        [
+            3,
+            19,
+            {
+                "weight": 0.24162391761458332
+            }
+        ],
+        [
+            3,
+            20,
+            {
+                "weight": 0.24133875246527775
+            }
+        ],
+        [
+            3,
+            21,
+            {
+                "weight": 0.23147439107291665
+            }
+        ],
+        [
+            3,
+            22,
+            {
+                "weight": 0.22810993641319444
+            }
+        ],
+        [
+            3,
+            23,
+            {
+                "weight": 0.22461985819097222
+            }
+        ],
+        [
+            3,
+            24,
+            {
+                "weight": 0.22217397339583334
+            }
+        ],
+        [
+            3,
+            25,
+            {
+                "weight": 0.22207695092361107
+            }
+        ],
+        [
+            3,
+            26,
+            {
+                "weight": 0.22194946697569443
+            }
+        ],
+        [
+            3,
+            27,
+            {
+                "weight": 0.22177039615277777
+            }
+        ],
+        [
+            3,
+            28,
+            {
+                "weight": 0.22175194966319445
+            }
+        ],
+        [
+            3,
+            29,
+            {
+                "weight": 0.21858289866666666
+            }
+        ],
+        [
+            3,
+            30,
+            {
+                "weight": 0.21854375504166665
+            }
+        ],
+        [
+            3,
+            31,
+            {
+                "weight": 0.21850425671527776
+            }
+        ],
+        [
+            3,
+            32,
+            {
+                "weight": 0.21844417332291666
+            }
+        ],
+        [
+            3,
+            33,
+            {
+                "weight": 0.21842651334027777
+            }
+        ],
+        [
             4,
             5,
             {
@@ -284,6 +1382,188 @@
             }
         ],
         [
+            4,
+            8,
+            {
+                "weight": 0.2919018603645833
+            }
+        ],
+        [
+            4,
+            9,
+            {
+                "weight": 0.29139521754513886
+            }
+        ],
+        [
+            4,
+            10,
+            {
+                "weight": 0.29117304692708335
+            }
+        ],
+        [
+            4,
+            11,
+            {
+                "weight": 0.28550993607638886
+            }
+        ],
+        [
+            4,
+            12,
+            {
+                "weight": 0.24946474227083332
+            }
+        ],
+        [
+            4,
+            13,
+            {
+                "weight": 0.24935253269791666
+            }
+        ],
+        [
+            4,
+            14,
+            {
+                "weight": 0.24927283694444444
+            }
+        ],
+        [
+            4,
+            15,
+            {
+                "weight": 0.24908055259375
+            }
+        ],
+        [
+            4,
+            16,
+            {
+                "weight": 0.24599607721874997
+            }
+        ],
+        [
+            4,
+            17,
+            {
+                "weight": 0.24579307206944442
+            }
+        ],
+        [
+            4,
+            18,
+            {
+                "weight": 0.24569504969791667
+            }
+        ],
+        [
+            4,
+            19,
+            {
+                "weight": 0.24552354799305554
+            }
+        ],
+        [
+            4,
+            20,
+            {
+                "weight": 0.24523838284375
+            }
+        ],
+        [
+            4,
+            21,
+            {
+                "weight": 0.23537402145138886
+            }
+        ],
+        [
+            4,
+            22,
+            {
+                "weight": 0.23200956679166668
+            }
+        ],
+        [
+            4,
+            23,
+            {
+                "weight": 0.22851948856944443
+            }
+        ],
+        [
+            4,
+            24,
+            {
+                "weight": 0.22607360377430555
+            }
+        ],
+        [
+            4,
+            25,
+            {
+                "weight": 0.3659765813020833
+            }
+        ],
+        [
+            4,
+            26,
+            {
+                "weight": 0.22584909735416664
+            }
+        ],
+        [
+            4,
+            27,
+            {
+                "weight": 0.36567002653124997
+            }
+        ],
+        [
+            4,
+            28,
+            {
+                "weight": 0.22565158004166666
+            }
+        ],
+        [
+            4,
+            29,
+            {
+                "weight": 0.22248252904513888
+            }
+        ],
+        [
+            4,
+            30,
+            {
+                "weight": 0.2224433854201389
+            }
+        ],
+        [
+            4,
+            31,
+            {
+                "weight": 0.22240388709375
+            }
+        ],
+        [
+            4,
+            32,
+            {
+                "weight": 0.22234380370138887
+            }
+        ],
+        [
+            4,
+            33,
+            {
+                "weight": 0.22232614371875
+            }
+        ],
+        [
             5,
             6,
             {
@@ -298,10 +1578,2831 @@
             }
         ],
         [
+            5,
+            8,
+            {
+                "weight": 0.2919760901944444
+            }
+        ],
+        [
+            5,
+            9,
+            {
+                "weight": 0.291469447375
+            }
+        ],
+        [
+            5,
+            10,
+            {
+                "weight": 0.29124727675694445
+            }
+        ],
+        [
+            5,
+            11,
+            {
+                "weight": 0.28558416590624996
+            }
+        ],
+        [
+            5,
+            12,
+            {
+                "weight": 0.24953897210069442
+            }
+        ],
+        [
+            5,
+            13,
+            {
+                "weight": 0.24942676252777776
+            }
+        ],
+        [
+            5,
+            14,
+            {
+                "weight": 0.24934706677430554
+            }
+        ],
+        [
+            5,
+            15,
+            {
+                "weight": 0.24915478242361108
+            }
+        ],
+        [
+            5,
+            16,
+            {
+                "weight": 0.2460703070486111
+            }
+        ],
+        [
+            5,
+            17,
+            {
+                "weight": 0.24586730189930556
+            }
+        ],
+        [
+            5,
+            18,
+            {
+                "weight": 0.24576927952777775
+            }
+        ],
+        [
+            5,
+            19,
+            {
+                "weight": 0.24559777782291664
+            }
+        ],
+        [
+            5,
+            20,
+            {
+                "weight": 0.2453126126736111
+            }
+        ],
+        [
+            5,
+            21,
+            {
+                "weight": 0.23544825128124997
+            }
+        ],
+        [
+            5,
+            22,
+            {
+                "weight": 0.23208379662152778
+            }
+        ],
+        [
+            5,
+            23,
+            {
+                "weight": 0.22859371839930556
+            }
+        ],
+        [
+            5,
+            24,
+            {
+                "weight": 0.22614783360416663
+            }
+        ],
+        [
+            5,
+            25,
+            {
+                "weight": 0.22605081113194442
+            }
+        ],
+        [
+            5,
+            26,
+            {
+                "weight": 0.22592332718402777
+            }
+        ],
+        [
+            5,
+            27,
+            {
+                "weight": 0.4007442563611111
+            }
+        ],
+        [
+            5,
+            28,
+            {
+                "weight": 0.2257258098715278
+            }
+        ],
+        [
+            5,
+            29,
+            {
+                "weight": 0.222556758875
+            }
+        ],
+        [
+            5,
+            30,
+            {
+                "weight": 0.22251761525
+            }
+        ],
+        [
+            5,
+            31,
+            {
+                "weight": 0.2224781169236111
+            }
+        ],
+        [
+            5,
+            32,
+            {
+                "weight": 0.22241803353124998
+            }
+        ],
+        [
+            5,
+            33,
+            {
+                "weight": 0.2224003735486111
+            }
+        ],
+        [
             6,
             7,
             {
                 "weight": 0.29997110846527775
+            }
+        ],
+        [
+            6,
+            8,
+            {
+                "weight": 0.2920538423298611
+            }
+        ],
+        [
+            6,
+            9,
+            {
+                "weight": 0.29154719951041663
+            }
+        ],
+        [
+            6,
+            10,
+            {
+                "weight": 0.2913250288923611
+            }
+        ],
+        [
+            6,
+            11,
+            {
+                "weight": 0.2856619180416667
+            }
+        ],
+        [
+            6,
+            12,
+            {
+                "weight": 0.2496167242361111
+            }
+        ],
+        [
+            6,
+            13,
+            {
+                "weight": 0.24950451466319445
+            }
+        ],
+        [
+            6,
+            14,
+            {
+                "weight": 0.24942481890972223
+            }
+        ],
+        [
+            6,
+            15,
+            {
+                "weight": 0.24923253455902777
+            }
+        ],
+        [
+            6,
+            16,
+            {
+                "weight": 0.24614805918402777
+            }
+        ],
+        [
+            6,
+            17,
+            {
+                "weight": 0.24594505403472222
+            }
+        ],
+        [
+            6,
+            18,
+            {
+                "weight": 0.24584703166319444
+            }
+        ],
+        [
+            6,
+            19,
+            {
+                "weight": 0.24567552995833333
+            }
+        ],
+        [
+            6,
+            20,
+            {
+                "weight": 0.24539036480902776
+            }
+        ],
+        [
+            6,
+            21,
+            {
+                "weight": 0.23552600341666666
+            }
+        ],
+        [
+            6,
+            22,
+            {
+                "weight": 0.23216154875694442
+            }
+        ],
+        [
+            6,
+            23,
+            {
+                "weight": 0.2286714705347222
+            }
+        ],
+        [
+            6,
+            24,
+            {
+                "weight": 0.22622558573958332
+            }
+        ],
+        [
+            6,
+            25,
+            {
+                "weight": 0.4011285632673611
+            }
+        ],
+        [
+            6,
+            26,
+            {
+                "weight": 0.22600107931944444
+            }
+        ],
+        [
+            6,
+            27,
+            {
+                "weight": 0.22582200849652775
+            }
+        ],
+        [
+            6,
+            28,
+            {
+                "weight": 0.22580356200694443
+            }
+        ],
+        [
+            6,
+            29,
+            {
+                "weight": 0.22263451101041667
+            }
+        ],
+        [
+            6,
+            30,
+            {
+                "weight": 0.22259536738541666
+            }
+        ],
+        [
+            6,
+            31,
+            {
+                "weight": 0.22255586905902777
+            }
+        ],
+        [
+            6,
+            32,
+            {
+                "weight": 0.22249578566666667
+            }
+        ],
+        [
+            6,
+            33,
+            {
+                "weight": 0.22247812568402778
+            }
+        ],
+        [
+            7,
+            8,
+            {
+                "weight": 0.29208273386458333
+            }
+        ],
+        [
+            7,
+            9,
+            {
+                "weight": 0.2915760910451389
+            }
+        ],
+        [
+            7,
+            10,
+            {
+                "weight": 0.2913539204270833
+            }
+        ],
+        [
+            7,
+            11,
+            {
+                "weight": 0.9856908095763888
+            }
+        ],
+        [
+            7,
+            12,
+            {
+                "weight": 0.24964561577083333
+            }
+        ],
+        [
+            7,
+            13,
+            {
+                "weight": 0.24953340619791667
+            }
+        ],
+        [
+            7,
+            14,
+            {
+                "weight": 0.24945371044444442
+            }
+        ],
+        [
+            7,
+            15,
+            {
+                "weight": 0.24926142609375002
+            }
+        ],
+        [
+            7,
+            16,
+            {
+                "weight": 0.24617695071874998
+            }
+        ],
+        [
+            7,
+            17,
+            {
+                "weight": 0.24597394556944444
+            }
+        ],
+        [
+            7,
+            18,
+            {
+                "weight": 0.24587592319791662
+            }
+        ],
+        [
+            7,
+            19,
+            {
+                "weight": 0.24570442149305555
+            }
+        ],
+        [
+            7,
+            20,
+            {
+                "weight": 0.24541925634375
+            }
+        ],
+        [
+            7,
+            21,
+            {
+                "weight": 0.23555489495138887
+            }
+        ],
+        [
+            7,
+            22,
+            {
+                "weight": 0.9321904402916666
+            }
+        ],
+        [
+            7,
+            23,
+            {
+                "weight": 0.22870036206944444
+            }
+        ],
+        [
+            7,
+            24,
+            {
+                "weight": 0.9262544772743055
+            }
+        ],
+        [
+            7,
+            25,
+            {
+                "weight": 0.2261574548020833
+            }
+        ],
+        [
+            7,
+            26,
+            {
+                "weight": 0.22602997085416665
+            }
+        ],
+        [
+            7,
+            27,
+            {
+                "weight": 0.22585090003125
+            }
+        ],
+        [
+            7,
+            28,
+            {
+                "weight": 0.9258324535416667
+            }
+        ],
+        [
+            7,
+            29,
+            {
+                "weight": 0.2226634025451389
+            }
+        ],
+        [
+            7,
+            30,
+            {
+                "weight": 0.22262425892013887
+            }
+        ],
+        [
+            7,
+            31,
+            {
+                "weight": 0.22258476059375001
+            }
+        ],
+        [
+            7,
+            32,
+            {
+                "weight": 0.22252467720138888
+            }
+        ],
+        [
+            7,
+            33,
+            {
+                "weight": 0.92250701721875
+            }
+        ],
+        [
+            8,
+            9,
+            {
+                "weight": 0.29949335718055553
+            }
+        ],
+        [
+            8,
+            10,
+            {
+                "weight": 0.2992711865625
+            }
+        ],
+        [
+            8,
+            11,
+            {
+                "weight": 0.2936080757118055
+            }
+        ],
+        [
+            8,
+            12,
+            {
+                "weight": 0.25756288190625
+            }
+        ],
+        [
+            8,
+            13,
+            {
+                "weight": 0.2574506723333333
+            }
+        ],
+        [
+            8,
+            14,
+            {
+                "weight": 0.2573709765798611
+            }
+        ],
+        [
+            8,
+            15,
+            {
+                "weight": 0.25717869222916667
+            }
+        ],
+        [
+            8,
+            16,
+            {
+                "weight": 0.2540942168541666
+            }
+        ],
+        [
+            8,
+            17,
+            {
+                "weight": 0.25389121170486106
+            }
+        ],
+        [
+            8,
+            18,
+            {
+                "weight": 0.25379318933333334
+            }
+        ],
+        [
+            8,
+            19,
+            {
+                "weight": 0.2536216876284722
+            }
+        ],
+        [
+            8,
+            20,
+            {
+                "weight": 0.25333652247916666
+            }
+        ],
+        [
+            8,
+            21,
+            {
+                "weight": 0.24347216108680553
+            }
+        ],
+        [
+            8,
+            22,
+            {
+                "weight": 0.24010770642708334
+            }
+        ],
+        [
+            8,
+            23,
+            {
+                "weight": 0.2366176282048611
+            }
+        ],
+        [
+            8,
+            24,
+            {
+                "weight": 0.23417174340972224
+            }
+        ],
+        [
+            8,
+            25,
+            {
+                "weight": 0.23407472093749998
+            }
+        ],
+        [
+            8,
+            26,
+            {
+                "weight": 0.2339472369895833
+            }
+        ],
+        [
+            8,
+            27,
+            {
+                "weight": 0.23376816616666662
+            }
+        ],
+        [
+            8,
+            28,
+            {
+                "weight": 0.23374971967708336
+            }
+        ],
+        [
+            8,
+            29,
+            {
+                "weight": 0.23058066868055554
+            }
+        ],
+        [
+            8,
+            30,
+            {
+                "weight": 0.23054152505555556
+            }
+        ],
+        [
+            8,
+            31,
+            {
+                "weight": 0.23050202672916664
+            }
+        ],
+        [
+            8,
+            32,
+            {
+                "weight": 0.23044194333680554
+            }
+        ],
+        [
+            8,
+            33,
+            {
+                "weight": 0.23042428335416665
+            }
+        ],
+        [
+            9,
+            10,
+            {
+                "weight": 0.3536239832280983
+            }
+        ],
+        [
+            9,
+            11,
+            {
+                "weight": 0.29411471853125
+            }
+        ],
+        [
+            9,
+            12,
+            {
+                "weight": 0.25806952472569444
+            }
+        ],
+        [
+            9,
+            13,
+            {
+                "weight": 0.25795731515277776
+            }
+        ],
+        [
+            9,
+            14,
+            {
+                "weight": 0.25787761939930554
+            }
+        ],
+        [
+            9,
+            15,
+            {
+                "weight": 0.25768533504861113
+            }
+        ],
+        [
+            9,
+            16,
+            {
+                "weight": 0.25460085967361107
+            }
+        ],
+        [
+            9,
+            17,
+            {
+                "weight": 0.2543978545243055
+            }
+        ],
+        [
+            9,
+            18,
+            {
+                "weight": 0.2542998321527778
+            }
+        ],
+        [
+            9,
+            19,
+            {
+                "weight": 0.25412833044791666
+            }
+        ],
+        [
+            9,
+            20,
+            {
+                "weight": 0.2538431652986111
+            }
+        ],
+        [
+            9,
+            21,
+            {
+                "weight": 0.24397880390624999
+            }
+        ],
+        [
+            9,
+            22,
+            {
+                "weight": 0.2406143492465278
+            }
+        ],
+        [
+            9,
+            23,
+            {
+                "weight": 0.23712427102430556
+            }
+        ],
+        [
+            9,
+            24,
+            {
+                "weight": 0.23467838622916665
+            }
+        ],
+        [
+            9,
+            25,
+            {
+                "weight": 0.23458136375694444
+            }
+        ],
+        [
+            9,
+            26,
+            {
+                "weight": 0.23445387980902777
+            }
+        ],
+        [
+            9,
+            27,
+            {
+                "weight": 0.23427480898611108
+            }
+        ],
+        [
+            9,
+            28,
+            {
+                "weight": 0.23425636249652776
+            }
+        ],
+        [
+            9,
+            29,
+            {
+                "weight": 0.2310873115
+            }
+        ],
+        [
+            9,
+            30,
+            {
+                "weight": 0.23104816787500002
+            }
+        ],
+        [
+            9,
+            31,
+            {
+                "weight": 0.2310086695486111
+            }
+        ],
+        [
+            9,
+            32,
+            {
+                "weight": 0.23094858615625
+            }
+        ],
+        [
+            9,
+            33,
+            {
+                "weight": 0.2309309261736111
+            }
+        ],
+        [
+            10,
+            11,
+            {
+                "weight": 0.29433688914930556
+            }
+        ],
+        [
+            10,
+            12,
+            {
+                "weight": 0.25829169534374996
+            }
+        ],
+        [
+            10,
+            13,
+            {
+                "weight": 0.25817948577083333
+            }
+        ],
+        [
+            10,
+            14,
+            {
+                "weight": 0.2580997900173611
+            }
+        ],
+        [
+            10,
+            15,
+            {
+                "weight": 0.25790750566666665
+            }
+        ],
+        [
+            10,
+            16,
+            {
+                "weight": 0.25482303029166664
+            }
+        ],
+        [
+            10,
+            17,
+            {
+                "weight": 0.2546200251423611
+            }
+        ],
+        [
+            10,
+            18,
+            {
+                "weight": 0.2545220027708333
+            }
+        ],
+        [
+            10,
+            19,
+            {
+                "weight": 0.2543505010659722
+            }
+        ],
+        [
+            10,
+            20,
+            {
+                "weight": 0.25406533591666663
+            }
+        ],
+        [
+            10,
+            21,
+            {
+                "weight": 0.24420097452430553
+            }
+        ],
+        [
+            10,
+            22,
+            {
+                "weight": 0.24083651986458332
+            }
+        ],
+        [
+            10,
+            23,
+            {
+                "weight": 0.23734644164236113
+            }
+        ],
+        [
+            10,
+            24,
+            {
+                "weight": 0.2349005568472222
+            }
+        ],
+        [
+            10,
+            25,
+            {
+                "weight": 0.23480353437499998
+            }
+        ],
+        [
+            10,
+            26,
+            {
+                "weight": 0.23467605042708334
+            }
+        ],
+        [
+            10,
+            27,
+            {
+                "weight": 0.23449697960416666
+            }
+        ],
+        [
+            10,
+            28,
+            {
+                "weight": 0.2344785331145833
+            }
+        ],
+        [
+            10,
+            29,
+            {
+                "weight": 0.23130948211805558
+            }
+        ],
+        [
+            10,
+            30,
+            {
+                "weight": 0.23127033849305556
+            }
+        ],
+        [
+            10,
+            31,
+            {
+                "weight": 0.23123084016666667
+            }
+        ],
+        [
+            10,
+            32,
+            {
+                "weight": 0.23117075677430554
+            }
+        ],
+        [
+            10,
+            33,
+            {
+                "weight": 0.23115309679166665
+            }
+        ],
+        [
+            11,
+            12,
+            {
+                "weight": 0.26395480619444445
+            }
+        ],
+        [
+            11,
+            13,
+            {
+                "weight": 0.26384259662152776
+            }
+        ],
+        [
+            11,
+            14,
+            {
+                "weight": 0.26376290086805554
+            }
+        ],
+        [
+            11,
+            15,
+            {
+                "weight": 0.2635706165173611
+            }
+        ],
+        [
+            11,
+            16,
+            {
+                "weight": 0.2604861411423611
+            }
+        ],
+        [
+            11,
+            17,
+            {
+                "weight": 0.2602831359930555
+            }
+        ],
+        [
+            11,
+            18,
+            {
+                "weight": 0.26018511362152774
+            }
+        ],
+        [
+            11,
+            19,
+            {
+                "weight": 0.26001361191666666
+            }
+        ],
+        [
+            11,
+            20,
+            {
+                "weight": 0.2597284467673611
+            }
+        ],
+        [
+            11,
+            21,
+            {
+                "weight": 0.24986408537500002
+            }
+        ],
+        [
+            11,
+            22,
+            {
+                "weight": 0.9464996307152778
+            }
+        ],
+        [
+            11,
+            23,
+            {
+                "weight": 0.24300955249305553
+            }
+        ],
+        [
+            11,
+            24,
+            {
+                "weight": 0.9405636676979166
+            }
+        ],
+        [
+            11,
+            25,
+            {
+                "weight": 0.24046664522569444
+            }
+        ],
+        [
+            11,
+            26,
+            {
+                "weight": 0.24033916127777777
+            }
+        ],
+        [
+            11,
+            27,
+            {
+                "weight": 0.24016009045486109
+            }
+        ],
+        [
+            11,
+            28,
+            {
+                "weight": 0.9401416439652777
+            }
+        ],
+        [
+            11,
+            29,
+            {
+                "weight": 0.23697259296874998
+            }
+        ],
+        [
+            11,
+            30,
+            {
+                "weight": 0.23693344934374996
+            }
+        ],
+        [
+            11,
+            31,
+            {
+                "weight": 0.2368939510173611
+            }
+        ],
+        [
+            11,
+            32,
+            {
+                "weight": 0.23683386762499997
+            }
+        ],
+        [
+            11,
+            33,
+            {
+                "weight": 0.9368162076423611
+            }
+        ],
+        [
+            12,
+            13,
+            {
+                "weight": 0.29988779042708336
+            }
+        ],
+        [
+            12,
+            14,
+            {
+                "weight": 0.29980809467361114
+            }
+        ],
+        [
+            12,
+            15,
+            {
+                "weight": 0.2996158103229167
+            }
+        ],
+        [
+            12,
+            16,
+            {
+                "weight": 0.29653133494791667
+            }
+        ],
+        [
+            12,
+            17,
+            {
+                "weight": 0.2963283297986111
+            }
+        ],
+        [
+            12,
+            18,
+            {
+                "weight": 0.29623030742708334
+            }
+        ],
+        [
+            12,
+            19,
+            {
+                "weight": 0.2960588057222222
+            }
+        ],
+        [
+            12,
+            20,
+            {
+                "weight": 0.29577364057291666
+            }
+        ],
+        [
+            12,
+            21,
+            {
+                "weight": 0.28590927918055553
+            }
+        ],
+        [
+            12,
+            22,
+            {
+                "weight": 0.2825448245208333
+            }
+        ],
+        [
+            12,
+            23,
+            {
+                "weight": 0.2790547462986111
+            }
+        ],
+        [
+            12,
+            24,
+            {
+                "weight": 0.2766088615034722
+            }
+        ],
+        [
+            12,
+            25,
+            {
+                "weight": 0.27651183903125
+            }
+        ],
+        [
+            12,
+            26,
+            {
+                "weight": 0.2763843550833333
+            }
+        ],
+        [
+            12,
+            27,
+            {
+                "weight": 0.27620528426041663
+            }
+        ],
+        [
+            12,
+            28,
+            {
+                "weight": 0.2761868377708333
+            }
+        ],
+        [
+            12,
+            29,
+            {
+                "weight": 0.27301778677430555
+            }
+        ],
+        [
+            12,
+            30,
+            {
+                "weight": 0.27297864314930553
+            }
+        ],
+        [
+            12,
+            31,
+            {
+                "weight": 0.27293914482291665
+            }
+        ],
+        [
+            12,
+            32,
+            {
+                "weight": 0.27287906143055557
+            }
+        ],
+        [
+            12,
+            33,
+            {
+                "weight": 0.27286140144791665
+            }
+        ],
+        [
+            13,
+            14,
+            {
+                "weight": 0.29992030424652777
+            }
+        ],
+        [
+            13,
+            15,
+            {
+                "weight": 0.2997280198958333
+            }
+        ],
+        [
+            13,
+            16,
+            {
+                "weight": 0.29664354452083336
+            }
+        ],
+        [
+            13,
+            17,
+            {
+                "weight": 0.29644053937152776
+            }
+        ],
+        [
+            13,
+            18,
+            {
+                "weight": 0.29634251699999997
+            }
+        ],
+        [
+            13,
+            19,
+            {
+                "weight": 0.2961710152951389
+            }
+        ],
+        [
+            13,
+            20,
+            {
+                "weight": 0.2958858501458333
+            }
+        ],
+        [
+            13,
+            21,
+            {
+                "weight": 0.2860214887534722
+            }
+        ],
+        [
+            13,
+            22,
+            {
+                "weight": 0.28265703409375
+            }
+        ],
+        [
+            13,
+            23,
+            {
+                "weight": 0.27916695587152773
+            }
+        ],
+        [
+            13,
+            24,
+            {
+                "weight": 0.2767210710763889
+            }
+        ],
+        [
+            13,
+            25,
+            {
+                "weight": 0.2766240486041667
+            }
+        ],
+        [
+            13,
+            26,
+            {
+                "weight": 0.27649656465625
+            }
+        ],
+        [
+            13,
+            27,
+            {
+                "weight": 0.2763174938333333
+            }
+        ],
+        [
+            13,
+            28,
+            {
+                "weight": 0.27629904734375
+            }
+        ],
+        [
+            13,
+            29,
+            {
+                "weight": 0.2731299963472222
+            }
+        ],
+        [
+            13,
+            30,
+            {
+                "weight": 0.2730908527222222
+            }
+        ],
+        [
+            13,
+            31,
+            {
+                "weight": 0.27305135439583333
+            }
+        ],
+        [
+            13,
+            32,
+            {
+                "weight": 0.2729912710034722
+            }
+        ],
+        [
+            13,
+            33,
+            {
+                "weight": 0.27297361102083334
+            }
+        ],
+        [
+            14,
+            15,
+            {
+                "weight": 0.29980771564930553
+            }
+        ],
+        [
+            14,
+            16,
+            {
+                "weight": 0.2967232402743056
+            }
+        ],
+        [
+            14,
+            17,
+            {
+                "weight": 0.296520235125
+            }
+        ],
+        [
+            14,
+            18,
+            {
+                "weight": 0.2964222127534722
+            }
+        ],
+        [
+            14,
+            19,
+            {
+                "weight": 0.2962507110486111
+            }
+        ],
+        [
+            14,
+            20,
+            {
+                "weight": 0.29596554589930557
+            }
+        ],
+        [
+            14,
+            21,
+            {
+                "weight": 0.28610118450694444
+            }
+        ],
+        [
+            14,
+            22,
+            {
+                "weight": 0.2827367298472222
+            }
+        ],
+        [
+            14,
+            23,
+            {
+                "weight": 0.279246651625
+            }
+        ],
+        [
+            14,
+            24,
+            {
+                "weight": 0.2768007668298611
+            }
+        ],
+        [
+            14,
+            25,
+            {
+                "weight": 0.2767037443576389
+            }
+        ],
+        [
+            14,
+            26,
+            {
+                "weight": 0.2765762604097222
+            }
+        ],
+        [
+            14,
+            27,
+            {
+                "weight": 0.27639718958680554
+            }
+        ],
+        [
+            14,
+            28,
+            {
+                "weight": 0.2763787430972222
+            }
+        ],
+        [
+            14,
+            29,
+            {
+                "weight": 0.2732096921006944
+            }
+        ],
+        [
+            14,
+            30,
+            {
+                "weight": 0.27317054847569444
+            }
+        ],
+        [
+            14,
+            31,
+            {
+                "weight": 0.27313105014930555
+            }
+        ],
+        [
+            14,
+            32,
+            {
+                "weight": 0.2730709667569444
+            }
+        ],
+        [
+            14,
+            33,
+            {
+                "weight": 0.27305330677430556
+            }
+        ],
+        [
+            15,
+            16,
+            {
+                "weight": 0.296915524625
+            }
+        ],
+        [
+            15,
+            17,
+            {
+                "weight": 0.29671251947569444
+            }
+        ],
+        [
+            15,
+            18,
+            {
+                "weight": 0.29661449710416665
+            }
+        ],
+        [
+            15,
+            19,
+            {
+                "weight": 0.2964429953993055
+            }
+        ],
+        [
+            15,
+            20,
+            {
+                "weight": 0.29615783025
+            }
+        ],
+        [
+            15,
+            21,
+            {
+                "weight": 0.28629346885763884
+            }
+        ],
+        [
+            15,
+            22,
+            {
+                "weight": 0.28292901419791666
+            }
+        ],
+        [
+            15,
+            23,
+            {
+                "weight": 0.2794389359756944
+            }
+        ],
+        [
+            15,
+            24,
+            {
+                "weight": 0.27699305118055556
+            }
+        ],
+        [
+            15,
+            25,
+            {
+                "weight": 0.2768960287083333
+            }
+        ],
+        [
+            15,
+            26,
+            {
+                "weight": 0.2767685447604166
+            }
+        ],
+        [
+            15,
+            27,
+            {
+                "weight": 0.2765894739375
+            }
+        ],
+        [
+            15,
+            28,
+            {
+                "weight": 0.2765710274479167
+            }
+        ],
+        [
+            15,
+            29,
+            {
+                "weight": 0.27340197645138886
+            }
+        ],
+        [
+            15,
+            30,
+            {
+                "weight": 0.2733628328263889
+            }
+        ],
+        [
+            15,
+            31,
+            {
+                "weight": 0.27332333449999996
+            }
+        ],
+        [
+            15,
+            32,
+            {
+                "weight": 0.2732632511076389
+            }
+        ],
+        [
+            15,
+            33,
+            {
+                "weight": 0.27324559112499996
+            }
+        ],
+        [
+            16,
+            17,
+            {
+                "weight": 0.29979699485069444
+            }
+        ],
+        [
+            16,
+            18,
+            {
+                "weight": 0.29969897247916666
+            }
+        ],
+        [
+            16,
+            19,
+            {
+                "weight": 0.2995274707743056
+            }
+        ],
+        [
+            16,
+            20,
+            {
+                "weight": 0.299242305625
+            }
+        ],
+        [
+            16,
+            21,
+            {
+                "weight": 0.2893779442326389
+            }
+        ],
+        [
+            16,
+            22,
+            {
+                "weight": 0.28601348957291667
+            }
+        ],
+        [
+            16,
+            23,
+            {
+                "weight": 0.2825234113506944
+            }
+        ],
+        [
+            16,
+            24,
+            {
+                "weight": 0.28007752655555557
+            }
+        ],
+        [
+            16,
+            25,
+            {
+                "weight": 0.27998050408333336
+            }
+        ],
+        [
+            16,
+            26,
+            {
+                "weight": 0.2798530201354167
+            }
+        ],
+        [
+            16,
+            27,
+            {
+                "weight": 0.2796739493125
+            }
+        ],
+        [
+            16,
+            28,
+            {
+                "weight": 0.2796555028229167
+            }
+        ],
+        [
+            16,
+            29,
+            {
+                "weight": 0.27648645182638887
+            }
+        ],
+        [
+            16,
+            30,
+            {
+                "weight": 0.27644730820138885
+            }
+        ],
+        [
+            16,
+            31,
+            {
+                "weight": 0.276407809875
+            }
+        ],
+        [
+            16,
+            32,
+            {
+                "weight": 0.2763477264826389
+            }
+        ],
+        [
+            16,
+            33,
+            {
+                "weight": 0.27633006649999997
+            }
+        ],
+        [
+            17,
+            18,
+            {
+                "weight": 0.2999019776284722
+            }
+        ],
+        [
+            17,
+            19,
+            {
+                "weight": 0.29973047592361113
+            }
+        ],
+        [
+            17,
+            20,
+            {
+                "weight": 0.29944531077430553
+            }
+        ],
+        [
+            17,
+            21,
+            {
+                "weight": 0.28958094938194445
+            }
+        ],
+        [
+            17,
+            22,
+            {
+                "weight": 0.2862164947222222
+            }
+        ],
+        [
+            17,
+            23,
+            {
+                "weight": 0.28272641649999997
+            }
+        ],
+        [
+            17,
+            24,
+            {
+                "weight": 0.2802805317048611
+            }
+        ],
+        [
+            17,
+            25,
+            {
+                "weight": 0.2801835092326389
+            }
+        ],
+        [
+            17,
+            26,
+            {
+                "weight": 0.28005602528472223
+            }
+        ],
+        [
+            17,
+            27,
+            {
+                "weight": 0.27987695446180555
+            }
+        ],
+        [
+            17,
+            28,
+            {
+                "weight": 0.2798585079722222
+            }
+        ],
+        [
+            17,
+            29,
+            {
+                "weight": 0.2766894569756944
+            }
+        ],
+        [
+            17,
+            30,
+            {
+                "weight": 0.2766503133506944
+            }
+        ],
+        [
+            17,
+            31,
+            {
+                "weight": 0.27661081502430557
+            }
+        ],
+        [
+            17,
+            32,
+            {
+                "weight": 0.27655073163194444
+            }
+        ],
+        [
+            17,
+            33,
+            {
+                "weight": 0.2765330716493056
+            }
+        ],
+        [
+            18,
+            19,
+            {
+                "weight": 0.29982849829513886
+            }
+        ],
+        [
+            18,
+            20,
+            {
+                "weight": 0.3695433331458333
+            }
+        ],
+        [
+            18,
+            21,
+            {
+                "weight": 0.2896789717534722
+            }
+        ],
+        [
+            18,
+            22,
+            {
+                "weight": 0.28631451709375
+            }
+        ],
+        [
+            18,
+            23,
+            {
+                "weight": 0.28282443887152775
+            }
+        ],
+        [
+            18,
+            24,
+            {
+                "weight": 0.2803785540763889
+            }
+        ],
+        [
+            18,
+            25,
+            {
+                "weight": 0.28028153160416663
+            }
+        ],
+        [
+            18,
+            26,
+            {
+                "weight": 0.28015404765624996
+            }
+        ],
+        [
+            18,
+            27,
+            {
+                "weight": 0.27997497683333333
+            }
+        ],
+        [
+            18,
+            28,
+            {
+                "weight": 0.27995653034375
+            }
+        ],
+        [
+            18,
+            29,
+            {
+                "weight": 0.2767874793472222
+            }
+        ],
+        [
+            18,
+            30,
+            {
+                "weight": 0.27674833572222224
+            }
+        ],
+        [
+            18,
+            31,
+            {
+                "weight": 0.2767088373958333
+            }
+        ],
+        [
+            18,
+            32,
+            {
+                "weight": 0.2766487540034722
+            }
+        ],
+        [
+            18,
+            33,
+            {
+                "weight": 0.2766310940208333
+            }
+        ],
+        [
+            19,
+            20,
+            {
+                "weight": 0.29971483485069444
+            }
+        ],
+        [
+            19,
+            21,
+            {
+                "weight": 0.2898504734583333
+            }
+        ],
+        [
+            19,
+            22,
+            {
+                "weight": 0.2864860187986111
+            }
+        ],
+        [
+            19,
+            23,
+            {
+                "weight": 0.2829959405763889
+            }
+        ],
+        [
+            19,
+            24,
+            {
+                "weight": 0.28055005578125
+            }
+        ],
+        [
+            19,
+            25,
+            {
+                "weight": 0.28045303330902777
+            }
+        ],
+        [
+            19,
+            26,
+            {
+                "weight": 0.2803255493611111
+            }
+        ],
+        [
+            19,
+            27,
+            {
+                "weight": 0.2801464785381944
+            }
+        ],
+        [
+            19,
+            28,
+            {
+                "weight": 0.2801280320486111
+            }
+        ],
+        [
+            19,
+            29,
+            {
+                "weight": 0.27695898105208333
+            }
+        ],
+        [
+            19,
+            30,
+            {
+                "weight": 0.2769198374270833
+            }
+        ],
+        [
+            19,
+            31,
+            {
+                "weight": 0.27688033910069443
+            }
+        ],
+        [
+            19,
+            32,
+            {
+                "weight": 0.2768202557083333
+            }
+        ],
+        [
+            19,
+            33,
+            {
+                "weight": 0.27680259572569443
+            }
+        ],
+        [
+            20,
+            21,
+            {
+                "weight": 0.29013563860763886
+            }
+        ],
+        [
+            20,
+            22,
+            {
+                "weight": 0.2867711839479167
+            }
+        ],
+        [
+            20,
+            23,
+            {
+                "weight": 0.2832811057256944
+            }
+        ],
+        [
+            20,
+            24,
+            {
+                "weight": 0.2808352209305556
+            }
+        ],
+        [
+            20,
+            25,
+            {
+                "weight": 0.2807381984583333
+            }
+        ],
+        [
+            20,
+            26,
+            {
+                "weight": 0.28061071451041664
+            }
+        ],
+        [
+            20,
+            27,
+            {
+                "weight": 0.2804316436875
+            }
+        ],
+        [
+            20,
+            28,
+            {
+                "weight": 0.2804131971979167
+            }
+        ],
+        [
+            20,
+            29,
+            {
+                "weight": 0.2772441462013889
+            }
+        ],
+        [
+            20,
+            30,
+            {
+                "weight": 0.27720500257638886
+            }
+        ],
+        [
+            20,
+            31,
+            {
+                "weight": 0.27716550424999997
+            }
+        ],
+        [
+            20,
+            32,
+            {
+                "weight": 0.2771054208576389
+            }
+        ],
+        [
+            20,
+            33,
+            {
+                "weight": 0.277087760875
+            }
+        ],
+        [
+            21,
+            22,
+            {
+                "weight": 0.29663554534027775
+            }
+        ],
+        [
+            21,
+            23,
+            {
+                "weight": 0.29314546711805556
+            }
+        ],
+        [
+            21,
+            24,
+            {
+                "weight": 0.29069958232291665
+            }
+        ],
+        [
+            21,
+            25,
+            {
+                "weight": 0.29060255985069444
+            }
+        ],
+        [
+            21,
+            26,
+            {
+                "weight": 0.29047507590277777
+            }
+        ],
+        [
+            21,
+            27,
+            {
+                "weight": 0.2902960050798611
+            }
+        ],
+        [
+            21,
+            28,
+            {
+                "weight": 0.29027755859027776
+            }
+        ],
+        [
+            21,
+            29,
+            {
+                "weight": 0.28710850759375
+            }
+        ],
+        [
+            21,
+            30,
+            {
+                "weight": 0.28706936396875
+            }
+        ],
+        [
+            21,
+            31,
+            {
+                "weight": 0.2870298656423611
+            }
+        ],
+        [
+            21,
+            32,
+            {
+                "weight": 0.28696978224999997
+            }
+        ],
+        [
+            21,
+            33,
+            {
+                "weight": 0.2869521222673611
+            }
+        ],
+        [
+            22,
+            23,
+            {
+                "weight": 0.2965099217777778
+            }
+        ],
+        [
+            22,
+            24,
+            {
+                "weight": 0.9940640369826388
+            }
+        ],
+        [
+            22,
+            25,
+            {
+                "weight": 0.2939670145104167
+            }
+        ],
+        [
+            22,
+            26,
+            {
+                "weight": 0.2938395305625
+            }
+        ],
+        [
+            22,
+            27,
+            {
+                "weight": 0.2936604597395833
+            }
+        ],
+        [
+            22,
+            28,
+            {
+                "weight": 0.9936420132499999
+            }
+        ],
+        [
+            22,
+            29,
+            {
+                "weight": 0.29047296225347224
+            }
+        ],
+        [
+            22,
+            30,
+            {
+                "weight": 0.29043381862847223
+            }
+        ],
+        [
+            22,
+            31,
+            {
+                "weight": 0.29039432030208334
+            }
+        ],
+        [
+            22,
+            32,
+            {
+                "weight": 0.2903342369097222
+            }
+        ],
+        [
+            22,
+            33,
+            {
+                "weight": 0.9903165769270833
+            }
+        ],
+        [
+            23,
+            24,
+            {
+                "weight": 0.2975541152048611
+            }
+        ],
+        [
+            23,
+            25,
+            {
+                "weight": 0.2974570927326389
+            }
+        ],
+        [
+            23,
+            26,
+            {
+                "weight": 0.2973296087847222
+            }
+        ],
+        [
+            23,
+            27,
+            {
+                "weight": 0.2971505379618055
+            }
+        ],
+        [
+            23,
+            28,
+            {
+                "weight": 0.2971320914722222
+            }
+        ],
+        [
+            23,
+            29,
+            {
+                "weight": 0.4689630404756944
+            }
+        ],
+        [
+            23,
+            30,
+            {
+                "weight": 0.2939238968506944
+            }
+        ],
+        [
+            23,
+            31,
+            {
+                "weight": 0.29388439852430553
+            }
+        ],
+        [
+            23,
+            32,
+            {
+                "weight": 0.29382431513194446
+            }
+        ],
+        [
+            23,
+            33,
+            {
+                "weight": 0.29380665514930554
+            }
+        ],
+        [
+            24,
+            25,
+            {
+                "weight": 0.2999029775277778
+            }
+        ],
+        [
+            24,
+            26,
+            {
+                "weight": 0.2997754935798611
+            }
+        ],
+        [
+            24,
+            27,
+            {
+                "weight": 0.2995964227569444
+            }
+        ],
+        [
+            24,
+            28,
+            {
+                "weight": 0.9995779762673611
+            }
+        ],
+        [
+            24,
+            29,
+            {
+                "weight": 0.29640892527083335
+            }
+        ],
+        [
+            24,
+            30,
+            {
+                "weight": 0.29636978164583333
+            }
+        ],
+        [
+            24,
+            31,
+            {
+                "weight": 0.29633028331944444
+            }
+        ],
+        [
+            24,
+            32,
+            {
+                "weight": 0.2962701999270833
+            }
+        ],
+        [
+            24,
+            33,
+            {
+                "weight": 0.9962525399444444
+            }
+        ],
+        [
+            25,
+            26,
+            {
+                "weight": 0.2998725160520833
+            }
+        ],
+        [
+            25,
+            27,
+            {
+                "weight": 0.29969344522916663
+            }
+        ],
+        [
+            25,
+            28,
+            {
+                "weight": 0.2996749987395833
+            }
+        ],
+        [
+            25,
+            29,
+            {
+                "weight": 0.29650594774305555
+            }
+        ],
+        [
+            25,
+            30,
+            {
+                "weight": 0.29646680411805554
+            }
+        ],
+        [
+            25,
+            31,
+            {
+                "weight": 0.29642730579166665
+            }
+        ],
+        [
+            25,
+            32,
+            {
+                "weight": 0.2963672223993055
+            }
+        ],
+        [
+            25,
+            33,
+            {
+                "weight": 0.29634956241666666
+            }
+        ],
+        [
+            26,
+            27,
+            {
+                "weight": 0.2998209291770833
+            }
+        ],
+        [
+            26,
+            28,
+            {
+                "weight": 0.2998024826875
+            }
+        ],
+        [
+            26,
+            29,
+            {
+                "weight": 0.2966334316909722
+            }
+        ],
+        [
+            26,
+            30,
+            {
+                "weight": 0.2965942880659722
+            }
+        ],
+        [
+            26,
+            31,
+            {
+                "weight": 0.2965547897395833
+            }
+        ],
+        [
+            26,
+            32,
+            {
+                "weight": 0.2964947063472222
+            }
+        ],
+        [
+            26,
+            33,
+            {
+                "weight": 0.29647704636458333
+            }
+        ],
+        [
+            27,
+            28,
+            {
+                "weight": 0.29998155351041667
+            }
+        ],
+        [
+            27,
+            29,
+            {
+                "weight": 0.2968125025138889
+            }
+        ],
+        [
+            27,
+            30,
+            {
+                "weight": 0.2967733588888889
+            }
+        ],
+        [
+            27,
+            31,
+            {
+                "weight": 0.2967338605625
+            }
+        ],
+        [
+            27,
+            32,
+            {
+                "weight": 0.2966737771701389
+            }
+        ],
+        [
+            27,
+            33,
+            {
+                "weight": 0.2966561171875
+            }
+        ],
+        [
+            28,
+            29,
+            {
+                "weight": 0.29683094900347223
+            }
+        ],
+        [
+            28,
+            30,
+            {
+                "weight": 0.2967918053784722
+            }
+        ],
+        [
+            28,
+            31,
+            {
+                "weight": 0.29675230705208333
+            }
+        ],
+        [
+            28,
+            32,
+            {
+                "weight": 0.2966922236597222
+            }
+        ],
+        [
+            28,
+            33,
+            {
+                "weight": 0.9966745636770833
+            }
+        ],
+        [
+            29,
+            30,
+            {
+                "weight": 0.299960856375
+            }
+        ],
+        [
+            29,
+            31,
+            {
+                "weight": 0.2999213580486111
+            }
+        ],
+        [
+            29,
+            32,
+            {
+                "weight": 0.29986127465625
+            }
+        ],
+        [
+            29,
+            33,
+            {
+                "weight": 0.2998436146736111
+            }
+        ],
+        [
+            30,
+            31,
+            {
+                "weight": 0.2999605016736111
+            }
+        ],
+        [
+            30,
+            32,
+            {
+                "weight": 0.29990041828125
+            }
+        ],
+        [
+            30,
+            33,
+            {
+                "weight": 0.2998827582986111
+            }
+        ],
+        [
+            31,
+            32,
+            {
+                "weight": 0.29993991660763886
+            }
+        ],
+        [
+            31,
+            33,
+            {
+                "weight": 0.299922256625
+            }
+        ],
+        [
+            32,
+            33,
+            {
+                "weight": 0.2999823400173611
             }
         ]
     ]

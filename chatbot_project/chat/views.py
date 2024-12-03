@@ -5,7 +5,27 @@ from django.http import JsonResponse, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
 from .chatbot import PersonalityManager, ChatBot
+import io
+import sys
+from contextlib import redirect_stdout
+from io import StringIO
 
+class OutputCapture:
+    def __init__(self):
+        self.outputs = []
+        self.original_stdout = sys.stdout
+        self.capture_buffer = StringIO()
+    
+    def start(self):
+        sys.stdout = self.capture_buffer
+    
+    def stop(self):
+        sys.stdout = self.original_stdout
+        output = self.capture_buffer.getvalue()
+        self.capture_buffer = StringIO()
+        return output
+
+output_capture = OutputCapture()
 
 class ChatbotManager:
     _instance = None
@@ -50,36 +70,42 @@ def index(request):
 # chat/views.py - modify the chat view to handle the bye command
 # chat/views.py
 
+# In views.py
 @csrf_exempt
 def chat(request):
     if request.method == 'POST':
         try:
-            data = json.loads(request.body)
-            message = data.get('message')
-            personality_name = data.get('personality', 'default')
-            is_bye = data.get('is_bye', False)
-            
-            chatbot_manager = ChatbotManager.get_instance()
-            chatbot = chatbot_manager.get_or_create_chatbot(personality_name)
-            
-            response = chatbot.process_query(message)
-            
-            if is_bye or message.lower() == 'bye':
-                chatbot_manager.save_all_chatbots()
+            stdout_capture = StringIO()
+            with redirect_stdout(stdout_capture):
+                print("TESTING DIAGNOSTIC OUTPUT - IF YOU SEE THIS, CAPTURE WORKS")  # Test print
+                
+                data = json.loads(request.body)
+                message = data.get('message')
+                personality_name = data.get('personality', 'default')
+                is_bye = data.get('is_bye', False)
+                
+                chatbot_manager = ChatbotManager.get_instance()
+                chatbot = chatbot_manager.get_or_create_chatbot(personality_name)
+                response = chatbot.process_query(message)
+                
+                diagnostic_output = stdout_capture.getvalue()
+                
+                if not data.get('diagnostic_mode', False):
+                    diagnostic_output = None
+
+                print("Diagnostic output being sent:", diagnostic_output)  # Debug check
+                
                 return JsonResponse({
                     'response': response,
-                    'terminated': True
+                    'diagnostic_output': diagnostic_output,
+                    'terminated': is_bye or message.lower() == 'bye'
                 })
                 
-            return JsonResponse({'response': response})
-            
         except Exception as e:
             return JsonResponse({'error': str(e)}, status=500)
     
-    # Handle GET request
     elif request.method == 'GET':
         personality_name = request.GET.get('personality', 'default')
         return render(request, 'chat/chat.html', {'personality_name': personality_name})
-
-    # Handle other methods
-    return HttpResponse(status=405)  # Method not allowed
+    
+    return HttpResponse(status=405)
