@@ -522,10 +522,12 @@ class GraphMemoryManager:
 
     def _get_graph_file(self, personality_name: str) -> str:
         """Determine the graph file based on the personality name."""
+        # Get the base path from PersonalityManager
+        graph_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'graphs')
         if personality_name.lower() == 'default':
-            return 'memory_graph.json'
+            return os.path.join(graph_path, 'memory_graph.json')
         else:
-            return f'{personality_name.lower()}_memory_graph.json'
+            return os.path.join(graph_path, f'{personality_name.lower()}_memory_graph.json')
 
 
     def _load_or_create_graph(self):
@@ -1110,20 +1112,12 @@ class MemoryConsolidator:
     def save_consolidated_memory(self, file_path: str = None):
         """Save consolidated memory to file."""
         if file_path is None:
+            # Get the base memory path from PersonalityManager
+            memory_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data', 'memories')
             if self.personality_name == 'default':
-                file_path = "consolidated_memory.json"
+                file_path = os.path.join(memory_path, "consolidated_memory.json")
             else:
-                file_path = f"{self.personality_name}_consolidated_memory.json"
-        try:
-            # Check if consolidated_memory has meaningful data
-            if not self.consolidated_memory or self.consolidated_memory.is_empty():
-                print(f"[Debug] Consolidated memory is empty. Skipping save to avoid overwriting existing data.")
-                return
-            with open(file_path, 'w') as f:
-                json.dump(self.consolidated_memory.to_dict(), f, indent=4)
-            print(f"[Debug] Saved consolidated memory to {file_path}")
-        except Exception as e:
-            print(f"[Error] Failed to save consolidated memory: {e}")
+                file_path = os.path.join(memory_path, f"{self.personality_name}_consolidated_memory.json")
 
     def should_consolidate(self) -> bool:
         """Check if enough time has passed for consolidation"""
@@ -1294,36 +1288,73 @@ class MemoryConsolidator:
         
         return insights
 
+class ChatbotManager:
+    _instance = None
+    
+    @classmethod
+    def get_instance(cls):
+        if cls._instance is None:
+            cls._instance = cls()
+        return cls._instance
+    
+    def __init__(self):
+        self.personality_manager = PersonalityManager()
+        self.active_chatbots = {}
+    
+    def get_or_create_chatbot(self, personality_name):
+        if personality_name not in self.active_chatbots:
+            personality, short_memory, long_memory = (
+                self.personality_manager.load_or_create_personality(personality_name)
+            )
+            self.active_chatbots[personality_name] = ChatBot(
+                personality, short_memory, long_memory
+            )
+        return self.active_chatbots[personality_name]
+    
+    def save_all_chatbots(self):
+        for name, chatbot in self.active_chatbots.items():
+            self.personality_manager.save_personality_state(
+                name,
+                chatbot.personality,
+                chatbot.short_memory,
+                chatbot.long_memory,
+                chatbot.memory_consolidator
+            )
+
 
 class PersonalityManager:
     def __init__(self):
         self.default_personality_name = "default"
-        # Define base paths
-        self.base_path = os.path.join(os.path.dirname(__file__), 'data')
+        # Define base paths - use os.path.abspath to get absolute paths
+        self.base_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'data')
         self.personality_path = os.path.join(self.base_path, 'personalities')
         self.memory_path = os.path.join(self.base_path, 'memories')
         self.graph_path = os.path.join(self.base_path, 'graphs')
         
         # Create directories if they don't exist
-        os.makedirs(self.personality_path, exist_ok=True)
-        os.makedirs(self.memory_path, exist_ok=True)
-        os.makedirs(self.graph_path, exist_ok=True)
+        for path in [self.base_path, self.personality_path, self.memory_path, self.graph_path]:
+            os.makedirs(path, exist_ok=True)
+            print(f"[Debug] Created/verified directory: {path}")
     
     def get_personality_files(self, name: str) -> Dict[str, str]:
         """Get file paths for a given personality name."""
         base_name = name.lower()
+        
         if base_name == self.default_personality_name:
             return {
                 "personality": os.path.join(self.personality_path, "personality.json"),
                 "short_memory": os.path.join(self.memory_path, "short_memory.json"),
                 "long_memory": os.path.join(self.memory_path, "long_memory.json"),
-                "consolidated_memory": os.path.join(self.memory_path, "consolidated_memory.json")
+                "consolidated_memory": os.path.join(self.memory_path, "consolidated_memory.json"),
+                "graph": os.path.join(self.graph_path, "memory_graph.json")  # Add graph path
             }
+            
         return {
             "personality": os.path.join(self.personality_path, f"{base_name}_personality.json"),
             "short_memory": os.path.join(self.memory_path, f"{base_name}_short_term_memory.json"),
             "long_memory": os.path.join(self.memory_path, f"{base_name}_long_term_memory.json"),
-            "consolidated_memory": os.path.join(self.memory_path, f"{base_name}_consolidated_memory.json")
+            "consolidated_memory": os.path.join(self.memory_path, f"{base_name}_consolidated_memory.json"),
+            "graph": os.path.join(self.graph_path, f"{base_name}_memory_graph.json")  # Add graph path
         }
 
     
@@ -1435,6 +1466,7 @@ class PersonalityManager:
             print(f"[Error] Failed to list personalities: {e}")
             return ["default"]
 
+
 class ChatBot:
     def __init__(
         self,
@@ -1468,44 +1500,62 @@ class ChatBot:
         print("==================\n")
 
     def process_query(self, query: str) -> str:
-        # Add timestamp debugging
-        print(f"[Debug] Processing query at: {datetime.now()}")
-        
-        # Create interaction and generate tags first
-        interaction = Interaction(user_message=query, bot_response="", tags=[])
-        tags = self._generate_tags(query)
-        interaction.tags = tags
-        
-        # Get current time
-        current_time = interaction.timestamp
-        
-        # Get relevant context
-        relevant_tags = self._extract_relevant_tags(query)
-        short_term_context = self.short_memory.retrieve_relevant_interactions(query)
-        long_term_context = self.long_memory.retrieve_relevant_interactions_by_tags(relevant_tags)
-        
-        # Add the new interaction to memories after tags are set
-        self.short_memory.add_interaction(interaction)
-        self.long_memory.add_interaction(interaction)
-
-        # Add this line to trigger memory consolidation
-        self.memory_consolidator.consolidate_memories()
-        
-        # Generate response
-        messages = self._build_messages(query, short_term_context, long_term_context)
         try:
-            response = self._generate_response(messages)
-            response_text = response.choices[0].message.content.strip()
-            print("[Debug] Response generated.")
+            print(f"[Debug] Processing query at: {datetime.now()}")
+            
+            # Create interaction and generate tags first
+            interaction = Interaction(user_message=query, bot_response="", tags=[])
+            tags = self._generate_tags(query)
+            interaction.tags = tags
+            
+            # Get current time
+            current_time = interaction.timestamp
+            
+            # Get relevant context
+            relevant_tags = self._extract_relevant_tags(query)
+            short_term_context = self.short_memory.retrieve_relevant_interactions(query)
+            long_term_context = self.long_memory.retrieve_relevant_interactions_by_tags(relevant_tags)
+            
+            # Generate response
+            messages = self._build_messages(query, short_term_context, long_term_context)
+            try:
+                response = self._generate_response(messages)
+                response_text = response.choices[0].message.content.strip()
+                print("[Debug] Response generated.")
+            except Exception as e:
+                response_text = f"Sorry, I encountered an error: {str(e)}"
+                print(f"[Error] {response_text}")
+            
+            # Update the interaction with the response
+            interaction.bot_response = response_text
+            
+            # Add the interaction to memories
+            self.short_memory.add_interaction(interaction)
+            self.long_memory.add_interaction(interaction)
+            
+            # Explicitly save memory files
+            chatbot_manager = ChatbotManager.get_instance()
+            personality_manager = chatbot_manager.personality_manager
+            files = personality_manager.get_personality_files(self.personality.name)
+            
+            # Save short-term memory
+            with open(files["short_memory"], "w") as f:
+                json.dump(self.short_memory.to_list(), f, indent=4)
+                print(f"[Debug] Saved short-term memory to {files['short_memory']}")
+            
+            # Save long-term memory
+            with open(files["long_memory"], "w") as f:
+                json.dump(self.long_memory.to_list(), f, indent=4)
+                print(f"[Debug] Saved long-term memory to {files['long_memory']}")
+            
+            # Consolidate and save memories
+            self.memory_consolidator.consolidate_memories()
+            
+            print(f"[Debug] Interaction completed at: {datetime.now()}")
+            return response_text
         except Exception as e:
-            response_text = f"Sorry, I encountered an error: {str(e)}"
-            print(f"[Error] {response_text}")
-        
-        # Update the interaction with the response
-        interaction.bot_response = response_text
-        
-        print(f"[Debug] Interaction completed at: {datetime.now()}")
-        return response_text
+            print(f"[Error] Failed to process query: {e}")
+            return f"Sorry, I encountered an error: {str(e)}"
         
     def _format_time(self, seconds: float) -> str:
         """Format seconds into a readable string with better precision"""

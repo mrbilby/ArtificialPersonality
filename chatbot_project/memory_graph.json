@@ -475,6 +475,143 @@
                 ],
                 "priority": 0.25499825315923214
             }
+        ],
+        [
+            34,
+            {
+                "message": "Hello there! How you doing today?",
+                "response": "",
+                "timestamp": "2024-12-03T14:38:09.221885",
+                "tags": [
+                    "greetings",
+                    "conversation",
+                    "well-being"
+                ],
+                "priority": 0.25499632204157363
+            }
+        ],
+        [
+            35,
+            {
+                "message": "It's the afternoon! I been awake awhile. I wrote a substack article on the development of your codebase",
+                "response": "",
+                "timestamp": "2024-12-03T14:38:35.879101",
+                "tags": [
+                    "afternoon",
+                    "awake",
+                    "substack article",
+                    "development",
+                    "codebase"
+                ],
+                "priority": 0.2549970989797183
+            }
+        ],
+        [
+            36,
+            {
+                "message": "After spending a day bug fixing little issues and testing emotional awareness and temporal awareness I decided it was time to create a user interface that was more aesthetically pleasing and better to work with than the terminal. This isn\u2019t the first UI I have made for interacting with an LLM as I have made a couple for summarising youtube videos, which I showed last blog, and another relating to classification. This made choosing the backend easy as I was familiar with Django which is a well established web framework using python. Pages are then built in HTML, CSS, and JavaScript. I believe React can be integrated but I haven\u2019t dabbled in this yet. With the UI framework picked it was now a matter of how it should look. As this use case for me is a more conversational chatbot I wanted a text messaging style system that we are all familiar with.  Building the backend.  I won\u2019t bore you with how to build and create the base for a Django project because frankly Django does most of it for you and chatgpt or the countless guides on YouTube will be better than me. What I will do is explain how I structured what is individual to this project. As this project is an extension of my interactive personality project I need folders for personalities, memories, and memory graphs. So I made folders for these aspects in a folder called data in the web app directory.  Apart from this I had a static folder for CSS and JS, and the standard templates folder for my HTML.  Building the basic webUI I find that building a basic UI is fairly straight forward. Building one that you like and looks good can be more of a pain in the arse. CSS and HTML skills are essential but I do find ChatGPT and Claude are great in this space. They are NOT perfect though and will make mistakes that they can\u2019t see themselves so knowledge of the functions and structure is needed.  With that said this is how the chat looks after implementing the code:   Similar style to what you get in iOS messaging and the leg work is all css and html. I won\u2019t paste the code here as its long and boring but you can find this all in my github for this project. The backend is powered by Django but the functions and classes behind the scenes are drawn from the code I showed a couple blogs ago from the terminal based system. Django is great in that it can draw from these meaning creating a UI is more faffing about making the page pretty than building the whole thing from scratch.  One aspect that is missing with this UI though that I did like in the Terminal output is print and log outputs to track how the model is going. This is particularly important as I add more functionality here instead of back in the old terminal system. To be able to view this all in the one page I added a diagnostics toggle which brings up a dummy terminal window with the outputs.   What to work on next Well moving to a web UI based system means a lot more work on aesthetics. The index page of the web UI looks like below:   This is functional but it isn\u2019t pretty. Also having a UI gives much better options for crafting a new personality file for a new chatbot or to create one from an epub or text files. This will be my next focus starting with the new personality creation.  You can track the evolving codebase on my github.",
+                "response": "",
+                "timestamp": "2024-12-03T14:39:46.773446",
+                "tags": [
+                    "user interface",
+                    "emotional awareness",
+                    "temporal awareness",
+                    "django",
+                    "web framework",
+                    "html",
+                    "css",
+                    "javascript",
+                    "react",
+                    "chatbot",
+                    "interactive personality project",
+                    "personalities",
+                    "memories",
+                    "memory graphs",
+                    "static folder",
+                    "templates folder",
+                    "webui",
+                    "chatgpt",
+                    "claude",
+                    "diagnostics toggle",
+                    "aesthetics",
+                    "personality creation",
+                    "codebase"
+                ],
+                "priority": 0.7124937478092213
+            }
+        ],
+        [
+            37,
+            {
+                "message": "Smaller article compared to others but here it is",
+                "response": "",
+                "timestamp": "2024-12-03T14:39:45.286061",
+                "tags": [
+                    "smaller article"
+                ],
+                "priority": 0.2549857025174305
+            }
+        ],
+        [
+            38,
+            {
+                "message": "Good point on code snippets. I did include screenshots and github links at least. Also been working on a separate coding project analysing soccer match results",
+                "response": "",
+                "timestamp": "2024-12-03T14:41:09.567966",
+                "tags": [
+                    "code snippets",
+                    "screenshots",
+                    "github links",
+                    "coding project",
+                    "soccer match results"
+                ],
+                "priority": 0.32499721014043137
+            }
+        ],
+        [
+            39,
+            {
+                "message": "So it is mostly built. It finds all soccer matches within a certain time frame, and/or country. Then it tracks the odds when the match starts, 20 minutes in, then half time. All this data is saved to csv files. Then separately I use data from the past six years of soccer matches which shows the actual percentages by market of the home, away or draw from happening at half time or twenty minutes when the home team is the favourite. I then take the historical percentages and map them against the inplay odds and where there is a 10% difference in odds in favour to me I intend to make a bet. At the moment I am just simulating bets",
+                "response": "",
+                "timestamp": "2024-12-03T14:44:01.011658",
+                "tags": [
+                    "soccer matches",
+                    "odds tracking",
+                    "data saving",
+                    "csv files",
+                    "historical percentages",
+                    "betting strategy",
+                    "simulation of bets"
+                ],
+                "priority": 0.2549966135573578
+            }
+        ],
+        [
+            40,
+            {
+                "message": "Thanks, will be interesting how it goes. I may use machine learning but I think the analytical approach is fine for now. I have used it in the past for horse racing and haven't seen it perform much better than analytical approaches",
+                "response": "",
+                "timestamp": "2024-12-03T14:46:09.031309",
+                "tags": [
+                    "machine learning",
+                    "analytical approach",
+                    "horse racing",
+                    "performance comparison"
+                ],
+                "priority": 0.28999616023197516
+            }
+        ],
+        [
+            41,
+            {
+                "message": "bye",
+                "response": "",
+                "timestamp": "2024-12-03T14:46:46.175431",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.2549971736990875
+            }
         ]
     ],
     "edges": [
@@ -2131,6 +2268,13 @@
             }
         ],
         [
+            7,
+            41,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             8,
             9,
             {
@@ -2786,6 +2930,13 @@
             33,
             {
                 "weight": 0.9368162076423611
+            }
+        ],
+        [
+            11,
+            41,
+            {
+                "weight": 0.7
             }
         ],
         [
@@ -4021,6 +4172,13 @@
             }
         ],
         [
+            22,
+            41,
+            {
+                "weight": 0.7139692212291666
+            }
+        ],
+        [
             23,
             24,
             {
@@ -4091,6 +4249,13 @@
             }
         ],
         [
+            23,
+            34,
+            {
+                "weight": 0.36925427704166663
+            }
+        ],
+        [
             24,
             25,
             {
@@ -4151,6 +4316,13 @@
             33,
             {
                 "weight": 0.9962525399444444
+            }
+        ],
+        [
+            24,
+            41,
+            {
+                "weight": 0.7199051842465277
             }
         ],
         [
@@ -4336,6 +4508,13 @@
             }
         ],
         [
+            28,
+            41,
+            {
+                "weight": 0.7203272079791666
+            }
+        ],
+        [
             29,
             30,
             {
@@ -4361,6 +4540,13 @@
             33,
             {
                 "weight": 0.2998436146736111
+            }
+        ],
+        [
+            29,
+            34,
+            {
+                "weight": 0.2002912365659722
             }
         ],
         [
@@ -4403,6 +4589,209 @@
             33,
             {
                 "weight": 0.2999823400173611
+            }
+        ],
+        [
+            33,
+            41,
+            {
+                "weight": 0.7236526443020833
+            }
+        ],
+        [
+            34,
+            35,
+            {
+                "weight": 0.2999074402222222
+            }
+        ],
+        [
+            34,
+            36,
+            {
+                "weight": 0.2996612793020833
+            }
+        ],
+        [
+            34,
+            37,
+            {
+                "weight": 0.2996664438333333
+            }
+        ],
+        [
+            34,
+            38,
+            {
+                "weight": 0.2993737983298611
+            }
+        ],
+        [
+            34,
+            39,
+            {
+                "weight": 0.29877850773263886
+            }
+        ],
+        [
+            34,
+            40,
+            {
+                "weight": 0.2983339950555555
+            }
+        ],
+        [
+            34,
+            41,
+            {
+                "weight": 0.2982050224097222
+            }
+        ],
+        [
+            35,
+            36,
+            {
+                "weight": 0.325679765005787
+            }
+        ],
+        [
+            35,
+            37,
+            {
+                "weight": 0.2997590036111111
+            }
+        ],
+        [
+            35,
+            38,
+            {
+                "weight": 0.2994663581076389
+            }
+        ],
+        [
+            35,
+            39,
+            {
+                "weight": 0.29887106751041664
+            }
+        ],
+        [
+            35,
+            40,
+            {
+                "weight": 0.2984265548333333
+            }
+        ],
+        [
+            35,
+            41,
+            {
+                "weight": 0.2982975821875
+            }
+        ],
+        [
+            36,
+            37,
+            {
+                "weight": 0.29999483546875
+            }
+        ],
+        [
+            36,
+            38,
+            {
+                "weight": 0.29971251902777774
+            }
+        ],
+        [
+            36,
+            39,
+            {
+                "weight": 0.29911722843055555
+            }
+        ],
+        [
+            36,
+            40,
+            {
+                "weight": 0.2986727157534722
+            }
+        ],
+        [
+            36,
+            41,
+            {
+                "weight": 0.29854374310763887
+            }
+        ],
+        [
+            37,
+            38,
+            {
+                "weight": 0.29970735449652774
+            }
+        ],
+        [
+            37,
+            39,
+            {
+                "weight": 0.29911206389930556
+            }
+        ],
+        [
+            37,
+            40,
+            {
+                "weight": 0.2986675512222222
+            }
+        ],
+        [
+            37,
+            41,
+            {
+                "weight": 0.2985385785763889
+            }
+        ],
+        [
+            38,
+            39,
+            {
+                "weight": 0.29940470940277775
+            }
+        ],
+        [
+            38,
+            40,
+            {
+                "weight": 0.29896019672569446
+            }
+        ],
+        [
+            38,
+            41,
+            {
+                "weight": 0.29883122407986107
+            }
+        ],
+        [
+            39,
+            40,
+            {
+                "weight": 0.29955548732291665
+            }
+        ],
+        [
+            39,
+            41,
+            {
+                "weight": 0.2994265146770833
+            }
+        ],
+        [
+            40,
+            41,
+            {
+                "weight": 0.29987102735416665
             }
         ]
     ]

@@ -143,3 +143,4 @@ messageInput.addEventListener('keypress', function(e) {
         sendMessage();
     }
 });
+

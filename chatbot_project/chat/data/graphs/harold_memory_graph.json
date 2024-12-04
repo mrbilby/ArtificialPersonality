@@ -1,0 +1,97 @@
+{
+    "nodes": [
+        [
+            0,
+            {
+                "message": "Hi Harold, quick tes",
+                "response": "",
+                "timestamp": "2024-12-03T16:30:37.927410",
+                "tags": [
+                    "harold",
+                    "quick test"
+                ],
+                "priority": 0.2549976860009756
+            }
+        ],
+        [
+            1,
+            {
+                "message": "bye",
+                "response": "",
+                "timestamp": "2024-12-03T16:31:00.830738",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.2549976178746363
+            }
+        ],
+        [
+            2,
+            {
+                "message": "Hi Harold, testing the memory again",
+                "response": "Hello! It seems like this is our first interaction, so I don\u2019t have any memory of previous conversations. How can I assist you today?",
+                "timestamp": "2024-12-03T16:39:06.391661",
+                "tags": [
+                    "memory testing"
+                ],
+                "priority": 0.25499574393673613
+            }
+        ],
+        [
+            3,
+            {
+                "message": "bye",
+                "response": "Goodbye! If you have any questions or need assistance in the future, feel free to reach out. Have a great day!",
+                "timestamp": "2024-12-03T16:39:12.753510",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.2549951009603564
+            }
+        ]
+    ],
+    "edges": [
+        [
+            0,
+            1,
+            {
+                "weight": 0.29992047455555554
+            }
+        ],
+        [
+            0,
+            2,
+            {
+                "weight": 0.2982344991284722
+            }
+        ],
+        [
+            0,
+            3,
+            {
+                "weight": 0.298212409375
+            }
+        ],
+        [
+            1,
+            2,
+            {
+                "weight": 0.29831402457291667
+            }
+        ],
+        [
+            1,
+            3,
+            {
+                "weight": 0.9982919348194443
+            }
+        ],
+        [
+            2,
+            3,
+            {
+                "weight": 0.29997791024652776
+            }
+        ]
+    ]
+}

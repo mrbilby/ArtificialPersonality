@@ -1,0 +1,30 @@
+[
+    {
+        "user_message": "Hi Harold, testing the memory again",
+        "bot_response": "Hello! It seems like this is our first interaction, so I don\u2019t have any memory of previous conversations. How can I assist you today?",
+        "tags": [
+            "memory testing"
+        ],
+        "timestamp": "2024-12-03T16:39:06.391661",
+        "priority_score": 0.25499574393673613,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999716262449075,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Goodbye! If you have any questions or need assistance in the future, feel free to reach out. Have a great day!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-12-03T16:39:12.753510",
+        "priority_score": 0.2549951009603564,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999673397357093,
+            "user_importance": 0.0
+        }
+    }
+]

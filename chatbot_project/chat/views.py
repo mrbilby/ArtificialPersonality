@@ -4,7 +4,15 @@ from django.shortcuts import render
 from django.http import JsonResponse, HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
-from .chatbot import PersonalityManager, ChatBot
+from .chatbot import (
+    PersonalityManager, 
+    ChatBot, 
+    PersonalityProfile,
+    ShortTermMemory,
+    LongTermMemory,
+    MemoryConsolidator,
+    ChatbotManager,
+)
 import io
 import sys
 from contextlib import redirect_stdout
@@ -27,38 +35,7 @@ class OutputCapture:
 
 output_capture = OutputCapture()
 
-class ChatbotManager:
-    _instance = None
-    
-    @classmethod
-    def get_instance(cls):
-        if cls._instance is None:
-            cls._instance = cls()
-        return cls._instance
-    
-    def __init__(self):
-        self.personality_manager = PersonalityManager()
-        self.active_chatbots = {}
-    
-    def get_or_create_chatbot(self, personality_name):
-        if personality_name not in self.active_chatbots:
-            personality, short_memory, long_memory = (
-                self.personality_manager.load_or_create_personality(personality_name)
-            )
-            self.active_chatbots[personality_name] = ChatBot(
-                personality, short_memory, long_memory
-            )
-        return self.active_chatbots[personality_name]
-    
-    def save_all_chatbots(self):
-        for name, chatbot in self.active_chatbots.items():
-            self.personality_manager.save_personality_state(
-                name,
-                chatbot.personality,
-                chatbot.short_memory,
-                chatbot.long_memory,
-                chatbot.memory_consolidator
-            )
+
 
 def index(request):
     chatbot_manager = ChatbotManager.get_instance()
@@ -109,3 +86,61 @@ def chat(request):
         return render(request, 'chat/chat.html', {'personality_name': personality_name})
     
     return HttpResponse(status=405)
+
+def create_personality(request):
+    if request.method == 'POST':
+        data = json.loads(request.body)
+        chatbot_manager = ChatbotManager.get_instance()
+        personality_name = data['name'].lower()
+        
+        try:
+            # Create personality profile
+            personality = PersonalityProfile(
+                tone=data.get('tone', 'neutral'),
+                response_style=data.get('response_style', 'detailed'),
+                behavior=data.get('behavior', 'reactive'),
+                user_preferences=data.get('user_preferences', {}),
+                name=personality_name
+            )
+            
+            # Add do/don't rules
+            for do_rule in data['do_dont'].get('do', []):
+                personality.add_do_rule(do_rule)
+            for dont_rule in data['do_dont'].get('dont', []):
+                personality.add_dont_rule(dont_rule)
+            
+            # Initialize memory components
+            short_memory = ShortTermMemory(max_interactions=25)
+            long_memory = LongTermMemory(max_interactions=1000, personality_name=personality_name)
+            
+            # Get file paths
+            personality_manager = chatbot_manager.personality_manager
+            files = personality_manager.get_personality_files(personality_name)
+            
+            # Save all components
+            personality.save_to_file(files["personality"])
+            
+            # Save memory files with initial empty states
+            with open(files["short_memory"], "w") as f:
+                json.dump([], f)
+            with open(files["long_memory"], "w") as f:
+                json.dump([], f)
+            
+            # Initialize and save consolidated memory
+            memory_consolidator = MemoryConsolidator(short_memory, long_memory, personality_name)
+            memory_consolidator.save_consolidated_memory(files["consolidated_memory"])
+            
+            print(f"[Debug] Created and saved all files for personality: {personality_name}")
+            print(f"[Debug] Short-term memory file: {files['short_memory']}")
+            print(f"[Debug] Long-term memory file: {files['long_memory']}")
+            
+            return JsonResponse({'success': True})
+            
+        except Exception as e:
+            print(f"[Error] Failed to create personality: {e}")
+            return JsonResponse({'error': str(e)}, status=500)
+            
+    return render(request, 'chat/create_personality.html')
+
+def create_from_epub(request):
+    return render(request, 'chat/create_from_epub.html')
