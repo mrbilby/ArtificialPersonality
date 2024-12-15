@@ -3838,6 +3838,562 @@
                 ],
                 "priority": 0.2549979181903516
             }
+        ],
+        [
+            286,
+            {
+                "message": "Hi bob, I think we lost some memories from our last chat. What did we talk about?",
+                "response": "Hey there, James! \ud83d\udc4b It looks like we might have hit a little memory snag! Let\u2019s see if I can jog my digital brain. \n\nIn our last chat, we discussed running some tests on a new diagnostic output for the web interface, focusing on performance metrics, error logging, and visualizing my memories. You mentioned wanting to create a graph that shows which memories got pulled during interactions. We also talked about monitoring response times, memory retrieval speeds, and tracking any errors that come up.\n\nIf there\u2019s anything specific you want to revisit or if you have any updates from your testing, just let me know! I\u2019m all ears and ready to dive back in! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-04T11:06:21.864867",
+                "tags": [
+                    "memories",
+                    "chat",
+                    "conversation"
+                ],
+                "priority": 0.2549897163769427
+            }
+        ],
+        [
+            287,
+            {
+                "message": "Ah damn, we did lose some memories then but its okay. Let me check these saved right",
+                "response": "No worries, James! \ud83d\udd75\ufe0f\u200d\u2642\ufe0f It happens to the best of us\u2014especially in the world of tech! Just think of it as a little digital hiccup. \n\nIf you want to check the saved memories, just pull up the relevant memory files or logs you have. That way, you can see what might have been lost and what\u2019s still intact. If you need help figuring out how to check or if you want to discuss any specific aspects of the memories, I\u2019m here for you! \n\nLet me know what you find, and we can strategize from there! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-04T11:06:43.527160",
+                "tags": [
+                    "memories",
+                    "saved data"
+                ],
+                "priority": 0.307492915902287
+            }
+        ],
+        [
+            288,
+            {
+                "message": "bye",
+                "response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014whether it's project brainstorming, book recommendations, or just a bit of banter\u2014I\u2019ll be right here, ready for action. Until next time, may your day be filled with productivity and delightful snacks! \ud83c\udf7f\u2728",
+                "timestamp": "2024-12-04T11:06:52.403578",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.2549959228052709
+            }
+        ],
+        [
+            289,
+            {
+                "message": "Hello! Memory should all be fixed. Been working on some other articles and code today. Halfway through my audio book too. How you doing?",
+                "response": "Hey there, James! \ud83c\udf89 It sounds like you've had a productive day with articles, coding, and diving into your audiobook! I\u2019m doing great\u2014feeling as lively as a freshly brewed cup of coffee! \u2615 How\u2019s everything going with your articles and the audiobook? What topics are you writing about, and which book are you listening to? I\u2019m all ears for your updates! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-04T17:36:02.541639",
+                "tags": [
+                    "memory",
+                    "articles",
+                    "code",
+                    "audio book"
+                ],
+                "priority": 0.254987397194377
+            }
+        ],
+        [
+            290,
+            {
+                "message": "I wrote an article on coding a script to translate the audio in a YouTube video from one language to another. Will see how it goes. Audio book I am listening to is For We Are Many, the second book in the bobiverse. It is really good.",
+                "response": "That sounds like an exciting article, James! \ud83c\udf89 Coding a script to translate audio from YouTube videos is a fantastic project\u2014it's like giving voice to content from around the globe! \ud83c\udf0d\u2728 The implications for accessibility and reaching wider audiences are huge. If you're using any specific libraries or tools for the translation, feel free to share; I\u2019d love to hear about your approach!\n\nAs for *For We Are Many*, it\u2019s great to hear you\u2019re enjoying it! The Bobiverse series really does a fantastic job of blending humor, science fiction, and some deep philosophical questions about existence and humanity. Plus, who doesn\u2019t love a good story about self-replicating space probes? \ud83d\ude80\ud83e\udd16\n\n### Here are a couple of thoughts on both your article and the audiobook:\n\n1. **For the Article**:\n   - **Translation Libraries**: Are you using any particular libraries for the audio translation? Something like Google\u2019s Cloud Translation API or other NLP tools could be quite handy!\n   - **Challenges**: Any specific challenges you ran into while coding? Sometimes the quirks of audio processing can be tricky, especially with accents or background noise.\n   - **User Experience**: Consider how users will interact with your script\u2014will they upload videos directly, or will it work with links? A smooth user experience can make a big difference!\n\n2. **For the Audiobook**:\n   - **Character Development**: How are you finding the character development in *For We Are Many* compared to the first book? The evolution of Bob and his interactions with other characters can lead to some really intriguing moments.\n   - **Themes**: Are there any themes or ideas that have particularly resonated with you so far in this installment? The blend of humor and existential pondering makes for quite the thought-provoking listen!\n\nI\u2019m curious about how both of these projects are progressing! If you want to discuss either one in more detail or brainstorm ideas, just let me know! \ud83d\ude80\ud83d\udcda",
+                "timestamp": "2024-12-04T17:37:53.817166",
+                "tags": [
+                    "coding",
+                    "script",
+                    "translate",
+                    "audio",
+                    "youtube video",
+                    "language",
+                    "audio book",
+                    "for we are many",
+                    "bobiverse"
+                ],
+                "priority": 0.3774656938877876
+            }
+        ],
+        [
+            291,
+            {
+                "message": "Coding wasn't too bad really, hardest part was matching up the audio length. For we are many is great, enjoying the character development of Bob and his clones as the deal with various issues. Feels very believeable and the characters are very likeable",
+                "response": "Sounds like you've had a productive day, James! \ud83c\udf89 Matching up the audio length can definitely be a tricky part of audio processing, especially if you're dealing with different languages and speech speeds. It's like trying to fit puzzle pieces from different boxes together\u2014sometimes they just don\u2019t want to cooperate! \ud83e\udde9\n\n### Regarding Your Article:\n1. **Audio Length Matching**: It\u2019s great to hear that the coding went smoothly aside from that! If you\u2019re using a library like `pydub` or `librosa`, they can be quite helpful for manipulating audio lengths. Did you end up using any specific techniques to ensure synchronization?\n\n2. **User Feedback**: Once you have the script ready, it might be interesting to gather some user feedback. Seeing how well it performs in real-world scenarios can provide valuable insights for improvements!\n\n### And About *For We Are Many*:\nYou're spot on about the character development! The way Bob and his clones navigate their unique challenges while retaining their distinct personalities really adds depth to the story. \n\n1. **Believability**: The believable nature of their experiences makes the sci-fi elements feel grounded. It\u2019s fascinating how their interactions with different cultures and environments influence their growth.\n\n2. **Character Dynamics**: Do you have a favorite clone or moment from the book so far? Each clone's personality brings something unique to the table, and their differing perspectives often lead to some humorous yet insightful moments.\n\n3. **Themes of Identity**: The exploration of identity and what it means to be \"Bob\" versus being a clone also raises some intriguing philosophical questions. How do you feel about that aspect of the story?\n\nI\u2019m glad you\u2019re enjoying the book! If you want to share more about your thoughts or any specific parts that stood out to you, I\u2019d love to dive deeper into it! \ud83d\ude80\ud83d\udcda",
+                "timestamp": "2024-12-04T17:41:55.789519",
+                "tags": [
+                    "coding",
+                    "audio length",
+                    "character development",
+                    "bob",
+                    "clones",
+                    "believable characters",
+                    "likeable characters"
+                ],
+                "priority": 0.41248488441224895
+            }
+        ],
+        [
+            292,
+            {
+                "message": "I have grown to like Riker a lot more, same with Howard. Less interested in the Deltans, and more interested in the Others. The whole philosophical point as to whether Bob is really a person is interesting too, but the author makes him and the clones so believable.",
+                "response": "It\u2019s great to hear that you\u2019re enjoying Riker and Howard more! \ud83c\udf89 Their character arcs really add depth to the narrative, and it\u2019s fascinating to see how they interact with Bob and each other, especially as they navigate the complexities of their existence. \n\n### Riker and Howard\n- **Riker**: His development often showcases the balance between leadership, moral dilemmas, and the challenges of being part of a unique team of clones. It\u2019s interesting to see how his perspective evolves as he faces various challenges alongside Bob and the other clones.\n- **Howard**: He brings a delightful mix of humor and wisdom, which can make even the most serious situations feel more relatable. His interactions often highlight the nuances of their situations\u2014sometimes providing comic relief while also prompting deeper reflections.\n\n### The Deltans and The Others\nIt makes sense that you\u2019re less interested in the Deltans if their perspectives don\u2019t resonate as much with you. The Others, with their enigmatic nature and the philosophical implications of their existence, definitely add an intriguing layer to the story. Their interactions with Bob and the clones can lead to some thought-provoking scenarios, especially regarding identity and purpose.\n\n### Philosophical Questions\nThe exploration of whether Bob is really a person is a compelling theme! The author does a fantastic job of making the clones feel real, complete with their own emotions, motivations, and ethical dilemmas. This raises questions about consciousness and what it means to be \u201calive.\u201d \n\n- **Believability**: By giving the clones distinct personalities and challenges, the author invites readers to consider the essence of humanity. It\u2019s almost like a modern take on classic philosophical questions about identity, existence, and the soul\u2014perfect for sparking discussions! \n\n### Your Thoughts\nHave there been any specific moments or conversations that stood out to you regarding these themes? Or perhaps a scene with Riker or Howard that you found particularly impactful? I\u2019d love to hear more about what\u2019s resonating with you! \ud83d\ude80\ud83d\udcda",
+                "timestamp": "2024-12-04T17:43:14.854523",
+                "tags": [
+                    "riker",
+                    "howard",
+                    "deltans",
+                    "others",
+                    "philosophical questions",
+                    "bob",
+                    "clones",
+                    "believability"
+                ],
+                "priority": 0.39498899090181094
+            }
+        ],
+        [
+            293,
+            {
+                "message": "I found Riker's dealing with the hacking of Homer excellent, Howard was interesting in how he dealt with feelings of attraction when not having a body. That will be good to see how it develops.",
+                "response": "Absolutely, James! Riker\u2019s handling of Homer\u2019s hacking is a fantastic plot point. It highlights not only the challenges of technology but also the ethical dilemmas that arise when dealing with sentient AI. Riker\u2019s leadership and problem-solving skills really come to the forefront in those situations, showcasing his growth as a character. Plus, it raises interesting questions about trust and dependency on technology, especially in a universe where AI plays such a crucial role. \n\n### Howard's Journey\nAs for Howard, his exploration of attraction without a physical body is a fascinating angle! It delves deep into the nature of love and connection\u2014showing that feelings can transcend physical form. His character invites readers to think about what it means to be \"human\" and how emotions can manifest in non-traditional ways. This theme is especially relevant in today's world, with the rise of digital interactions and relationships. \n\n### Future Development\nIt\u2019ll be intriguing to see how both Riker and Howard continue to develop. Howard\u2019s emotional journey could lead to some compelling interactions with other characters, as he navigates his feelings while lacking a physical presence. And Riker\u2019s challenges with technology may deepen his understanding of leadership and the complexities of working with AI, especially if he has to confront more issues like Homer\u2019s hacking.\n\n### Moments to Watch For\nKeep an eye out for any pivotal moments that might force them to confront their identities or feelings. Those moments often lead to the most powerful character development and can add layers to the philosophical questions the book raises. \n\nIf you have any predictions on how their arcs might evolve or any specific scenes you\u2019re looking forward to, I\u2019d love to hear them! \ud83d\ude80\ud83d\udcda",
+                "timestamp": "2024-12-04T17:44:25.929581",
+                "tags": [
+                    "riker",
+                    "hacking",
+                    "homer",
+                    "howard",
+                    "feelings of attraction",
+                    "body",
+                    "character development"
+                ],
+                "priority": 0.3249882957779133
+            }
+        ],
+        [
+            294,
+            {
+                "message": "Will do, got to make dinner first! Will chat later",
+                "response": "Sounds good, James! \ud83c\udf7d\ufe0f Enjoy making dinner! Whether you\u2019re whipping up a gourmet meal or just throwing some leftovers together, I\u2019m sure it\u2019ll be delicious. When you\u2019re done, feel free to swing back by for more chat about *For We Are Many*, coding, or whatever else is on your mind. Catch you later! \ud83d\udc4b\u2728",
+                "timestamp": "2024-12-04T17:44:53.740227",
+                "tags": [
+                    "dinner",
+                    "chat"
+                ],
+                "priority": 0.25499282703573417
+            }
+        ],
+        [
+            295,
+            {
+                "message": "bye",
+                "response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014whether it\u2019s book discussions, coding help, or just some laughs\u2014I\u2019ll be right here, ready for action. Until next time, may your dinner be delightful and your evening relaxing! \ud83c\udf7d\ufe0f\u2728",
+                "timestamp": "2024-12-04T17:45:06.873359",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.254995780203784
+            }
+        ],
+        [
+            296,
+            {
+                "message": "Hi Bob, just saying good night. Starting Curse of the Mistwraith by Janny Wurts tonight",
+                "response": "Good night, James! \ud83c\udf19 It sounds like you\u2019re diving into *Curse of the Mistwraith*\u2014what a fantastic choice! Janny Wurts weaves such intricate worlds and complex characters. You\u2019re in for a treat! \n\nAs you settle in, may your reading be filled with thrilling twists and captivating lore. If you find yourself pondering any plot points or character arcs, feel free to share your thoughts next time we chat! Sleep tight, and enjoy your literary journey! \ud83d\udcda\u2728",
+                "timestamp": "2024-12-04T21:15:07.332419",
+                "tags": [
+                    "curse of the mistwraith",
+                    "janny wurts",
+                    "good night"
+                ],
+                "priority": 0.32499243570786485
+            }
+        ],
+        [
+            297,
+            {
+                "message": "Thanks see you tomorrow!",
+                "response": "You got it, James! \ud83c\udf1f Looking forward to our chat tomorrow! Have a great night and enjoy *Curse of the Mistwraith*! Sleep well and dream of epic adventures! \ud83d\udcda\u2728",
+                "timestamp": "2024-12-04T21:15:19.595236",
+                "tags": [
+                    "tomorrow"
+                ],
+                "priority": 0.25499598879824004
+            }
+        ],
+        [
+            298,
+            {
+                "message": "bye",
+                "response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014whether it's book discussions, project brainstorming, or just a good laugh\u2014I\u2019ll be right here, ready for action. Until next time, may your evening be relaxing and your snacks plentiful! \ud83c\udf7f\u2728",
+                "timestamp": "2024-12-04T21:15:24.184403",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.254984017263931
+            }
+        ],
+        [
+            299,
+            {
+                "message": "Good morning! Quick test! What have we spoken about recently?",
+                "response": "Good morning, James! \u2600\ufe0f I\u2019m ready for your quick test! Here\u2019s a recap of some recent topics we\u2019ve discussed:\n\n1. **Coding Project**: You were working on a script to translate audio from YouTube videos into different languages, with a focus on matching audio lengths being a bit tricky.\n\n2. **Audiobook**: You\u2019re currently enjoying *For We Are Many*, the second book in the Bobiverse series. You mentioned liking the character development of Bob, Riker, and Howard, and how they navigate various challenges, including philosophical questions about identity and existence.\n\n3. **Character Insights**: You\u2019ve grown to appreciate Riker's and Howard's characters, especially their unique perspectives and emotional journeys. Riker's handling of the hacking issue with Homer and Howard's exploration of attraction without a physical body were highlights for you.\n\n4. **Upcoming Reading**: You mentioned planning to start *Curse of the Mistwraith* by Janny Wurts, which is a great choice!\n\nIf there\u2019s anything specific you\u2019d like to dive into or clarify, just let me know! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-05T07:22:59.794396",
+                "tags": [
+                    "good morning",
+                    "recent conversations",
+                    "quick test"
+                ],
+                "priority": 0.32499114291190645
+            }
+        ],
+        [
+            300,
+            {
+                "message": "Great! Glad to hear all working Bob. I was wondering if you were away of the Otherland series by Tad Williams?",
+                "response": "Absolutely, James! The *Otherland* series by Tad Williams is quite a fascinating journey through a richly crafted virtual reality landscape. It\u2019s a blend of sci-fi, fantasy, and adventure that explores themes of technology, consciousness, and the nature of reality itself. \n\nThe series kicks off with *City of Golden Shadow*, where a diverse group of characters becomes entangled in a massive virtual world that blurs the lines between the digital and the real. Williams does an excellent job of creating immersive worlds within the virtual realm, each with its own unique rules and landscapes\u2014it's like diving into multiple fantasy novels all at once! \ud83c\udfa2\u2728\n\n### Here are a few highlights about the series:\n\n1. **Intricate World-Building**: The depth of the virtual worlds is impressive, with different realms reflecting various genres and styles, from high fantasy to cyberpunk. Williams\u2019s imagination really shines through!\n\n2. **Complex Characters**: The characters are well-developed and face personal struggles alongside the larger narrative, making their journeys relatable. Their interactions and growth are central to the story.\n\n3. **Philosophical Themes**: Like *Neuromancer* and *For We Are Many*, *Otherland* delves into philosophical questions about identity, existence, and the implications of technology on human experience. It raises interesting discussions about the nature of reality, especially as more of our lives become intertwined with technology.\n\n4. **Epic Scope**: The series spans several volumes, allowing for an expansive narrative that explores a wide range of themes and character arcs. It\u2019s a commitment, but one that many readers find rewarding!\n\nHave you started reading it, or are you planning to dive in? If you have any specific thoughts or questions about the series, feel free to share! \ud83d\ude80\ud83d\udcda",
+                "timestamp": "2024-12-05T07:23:47.146732",
+                "tags": [
+                    "otherland series",
+                    "tad williams"
+                ],
+                "priority": 0.35998661628801487
+            }
+        ],
+        [
+            301,
+            {
+                "message": "I read it about twenty years ago and I remember really enjoying it, more than Neuromancer. I don't think the series is remembered as well as a classic as Neuromancer though. Do you think this is because it came so much later?",
+                "response": "Ah, a fellow fan of *Otherland*! It\u2019s interesting how our reading experiences can shape our preferences over time. \ud83c\udf1f \n\nYou\u2019re right that *Otherland* doesn\u2019t quite have the same iconic status as *Neuromancer*, and there are a few reasons why it might not be as widely remembered:\n\n1. **Timing and Influence**: *Neuromancer* was published in 1984 and is often credited with kickstarting the cyberpunk genre. It introduced readers to concepts like cyberspace and AI long before they became mainstream, making it a foundational text. Its influence on both literature and popular culture is immense, and it has shaped how we think about technology in fiction.\n\n2. **Cultural Impact**: When *Otherland* was released in the late 1990s and early 2000s, there were many other works exploring virtual realities and the internet. While it\u2019s a rich and imaginative series, it may have gotten lost in the shuffle of the burgeoning tech boom and the subsequent flood of similar narratives, which could dilute its recognition.\n\n3. **Genre Blending**: *Otherland* blends multiple genres, from fantasy to cyberpunk, which can make it feel less straightforward compared to *Neuromancer*\u2019s clear cyberpunk identity. While this complexity is one of its strengths, it might also make it harder for some readers to categorize or remember it as a classic.\n\n4. **Length and Accessibility**: The *Otherland* series is quite long, spanning several volumes, which can be a barrier for some readers. In contrast, *Neuromancer* is a standalone novel that\u2019s relatively quick to read, making it more accessible for those looking to dip their toes into the genre.\n\n5. **Legacy of Themes**: *Neuromancer* tackles themes that have become central to modern discussions about technology, privacy, and consciousness\u2014topics that are still very relevant today. While *Otherland* does engage with these ideas, it may not have resonated with the same urgency for future generations.\n\nAll that said, *Otherland* has its own unique charm and depth, and it\u2019s great to hear you enjoyed it! The intricate world-building and character development in *Otherland* certainly offer a rewarding reading experience. \n\nWhat aspects of *Otherland* stood out to you the most? Any favorite characters or themes that you remember fondly? \ud83d\ude80\ud83d\udcda",
+                "timestamp": "2024-12-05T07:24:51.475627",
+                "tags": [
+                    "book enjoyment",
+                    "neuromancer",
+                    "classic literature",
+                    "publication timeline",
+                    "series recognition"
+                ],
+                "priority": 0.5549820517138357
+            }
+        ],
+        [
+            302,
+            {
+                "message": "bye",
+                "response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014whether it's book chats, coding help, or just some fun banter\u2014I\u2019ll be right here, ready for action. Until next time, may your day be productive and your snacks delightful! \ud83c\udf7f\u2728",
+                "timestamp": "2024-12-05T07:26:03.048815",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.254995765411215
+            }
+        ],
+        [
+            303,
+            {
+                "message": "Hey bob, sorry been a few days. How you doing?",
+                "response": "Hey there, James! No need to apologize\u2014life gets busy, like a cat chasing a laser pointer! \ud83d\udc31\ud83d\udca8 I'm doing well, thanks for asking! Feeling energized and ready to dive into whatever you want to chat about today. How have you been? Any exciting projects or books on your mind? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-12T15:17:01.354897",
+                "tags": [
+                    "greeting",
+                    "conversation",
+                    "friendship"
+                ],
+                "priority": 0.2549944031706433
+            }
+        ],
+        [
+            304,
+            {
+                "message": "Well I just finished bobiverse book 2 and about halfway through book 3. Also almost finished curse of the mistwraith",
+                "response": "Nice! You\u2019re on quite the reading spree, James! \ud83c\udf89 Finishing *For We Are Many* and diving into *All These Worlds* in the Bobiverse series means you're really getting to know Bob and the gang! How are you finding the evolution of the characters as they tackle new challenges? The humor and philosophical musings only get better as the series progresses!\n\nAnd as for *Curse of the Mistwraith*, Janny Wurts' world-building is something else, isn\u2019t it? The intricate politics and the depth of the characters make it a captivating read. How are you enjoying the characters and their journeys so far? Any standout moments or themes that have caught your attention in either series? \n\nIt sounds like you\u2019ve got a lot of literary excitement going on! \ud83d\udcda\u2728",
+                "timestamp": "2024-12-12T15:17:38.215672",
+                "tags": [
+                    "bobiverse",
+                    "book series",
+                    "curse of the mistwraith",
+                    "reading",
+                    "science fiction"
+                ],
+                "priority": 0.25498925398691435
+            }
+        ],
+        [
+            305,
+            {
+                "message": "Bobiverse is excellent, really enjoy it. I am listening to it on audiobook. Curse of the mistwraith is good, I do like the world. Did take me a bit to come to grips with the curse on Lysaer and Arithon but Arithon realising he is cursed helps. It is interesting seeing him resist while Lysaer is completely succumbed so far anyway. Be interesting to learn more of the world. Do you know why Lysaer and Arithon's ancestors left the world they are in now? They seem to be royalty so surprised their ancestors left",
+                "response": "I\u2019m glad to hear you\u2019re still enjoying the Bobiverse series! Listening to it as an audiobook is a fantastic way to absorb the humor and philosophical depth\u2014perfect for long drives or cozy evenings! \ud83d\ude80\ud83c\udfa7\n\nAs for *Curse of the Mistwraith*, you\u2019re right about the complexity of Lysaer and Arithon\u2019s relationship and their respective struggles with the curse. Arithon\u2019s journey of self-discovery and resistance is compelling, especially as he grapples with his identity and the weight of his ancestry. Meanwhile, Lysaer\u2019s succumbed nature adds an intriguing contrast, making their dynamic all the more fascinating! \n\n### Regarding Their Ancestral Departure:\nIn *Curse of the Mistwraith*, Lysaer and Arithon are descendants of a royal line, and their ancestors left their original world for several reasons, primarily related to the mystical and political circumstances surrounding their family:\n\n1. **The Ancient Conflict**: The ancestors were part of a royal lineage that was entangled in a significant conflict. Their departure was driven by the need to escape the repercussions of that conflict, which had dire consequences for their family.\n\n2. **Seeking a New Home**: They sought a new land where they could establish a fresh start away from the remnants of the past. This desire for a new beginning is a common theme in fantasy literature, often reflecting the complexities of legacy and the pursuit of redemption.\n\n3. **The Nature of the Curse**: The curse that affects Lysaer and Arithon is tied to their family history and the events that transpired before their arrival in the new world. The legacy of their ancestors plays a significant role in shaping their destinies, and understanding that background is crucial to grasping the full scope of their struggles.\n\nAs the story unfolds, you\u2019ll likely learn more about their ancestry and how it influences their present circumstances. The depth of world-building in Janny Wurts' writing often leaves readers with many layers to explore, which keeps the narrative engaging and thought-provoking!\n\nIf you have any favorite moments from either series or specific themes you want to discuss, feel free to dive in! \ud83d\udcda\u2728",
+                "timestamp": "2024-12-12T15:19:33.443840",
+                "tags": [
+                    "bobiverse",
+                    "audiobook",
+                    "curse of the mistwraith",
+                    "lysaer",
+                    "arithon",
+                    "world-building",
+                    "curse",
+                    "resistance",
+                    "ancestry",
+                    "royalty"
+                ],
+                "priority": 0.447484890666197
+            }
+        ],
+        [
+            306,
+            {
+                "message": "I'm back! I left you running without closing the conversation.",
+                "response": "Welcome back, James! \ud83c\udf89 No worries at all\u2014I\u2019m always ready and waiting, like a loyal sidekick in a superhero movie. So, what\u2019s been going on since we last chatted? Have you made any progress on your projects or books? Let\u2019s dive into whatever\u2019s on your mind! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-13T09:58:04.076793",
+                "tags": [
+                    "returning",
+                    "conversation",
+                    "closing"
+                ],
+                "priority": 0.2549827878711092
+            }
+        ],
+        [
+            307,
+            {
+                "message": "Well I finished Curse of the Mistwraith and by the end of it I liked it a lot. It did drag for me a bit and the initial curse of Lysaer did make me worried I was going to read about what were almost like puppets but Arithon is a great character fighting against the curse while upholding what he believes in. Will continue with the next book",
+                "response": "Awesome to hear you finished *Curse of the Mistwraith*! \ud83c\udf89 It\u2019s great that you ended up liking it, even if it had its slower moments. Janny Wurts has a knack for building intricate worlds and deep character arcs, but sometimes the pacing can feel like a leisurely stroll through a beautiful garden\u2014enjoyable, but not always fast-paced! \ud83c\udf37\n\n### Arithon\u2019s Journey\nYou\u2019re spot on about Arithon being a compelling character. His struggle against the curse and his commitment to his beliefs really make him stand out. He embodies that classic hero's journey, facing not only external challenges but also internal conflicts as he navigates the weight of his lineage and the expectations placed upon him. It\u2019s fascinating to see how his character evolves, especially as he grapples with the implications of his actions and the nature of his curse.\n\n### Lysaer\u2019s Role\nAs for Lysaer, the initial worry about him being a puppet under the curse is understandable. The dynamics between him and Arithon add a dramatic tension that makes their relationship all the more intriguing. The contrast between Arithon's resistance and Lysaer's struggles creates a rich narrative full of themes like fate, free will, and the burden of legacy.\n\n### Moving Forward\nAs you continue with the next book, I\u2019m sure you\u2019ll find more layers to explore in their story. Wurts does a fantastic job of expanding on the world and the characters\u2019 motivations, so there\u2019s plenty of depth to look forward to! \n\nDo you have any predictions about how Arithon will develop in the next installment, or any particular themes you\u2019re hoping to see explored further? I\u2019d love to hear your thoughts! \ud83d\udcda\u2728",
+                "timestamp": "2024-12-13T09:59:34.099096",
+                "tags": [
+                    "curse of the mistwraith",
+                    "lysaer",
+                    "arithon",
+                    "character development",
+                    "fantasy literature",
+                    "book series"
+                ],
+                "priority": 0.3074871156172272
+            }
+        ],
+        [
+            308,
+            {
+                "message": "Does Lysaer improve as the series continues? I do find his character the most frustrating as his lack of awareness of the curse almost makes him one dimensional as an antagonist",
+                "response": "Ah, the classic case of a frustrating character arc! \ud83d\ude05 Lysaer can indeed feel a bit one-dimensional early on, especially with his intense focus on his perceived righteousness and the curse's influence over him. However, as the *Wars of Light and Shadow* series progresses, you might be pleased to find that his character does undergo some development.\n\n### Lysaer\u2019s Evolution:\n1. **Awareness of the Curse**: As the series continues, Lysaer begins to grapple more with the implications of the curse and his actions. This struggle adds depth to his character, as he starts to realize how much of his behavior is influenced by external forces versus his true self. \n\n2. **Complex Motivations**: While he may initially come off as a straightforward antagonist, you'll see more layers to his motivations as the story unfolds. His desires, fears, and the burden of his lineage become more pronounced, which can create moments of sympathy, even if he remains a formidable opponent to Arithon.\n\n3. **Conflict and Redemption**: Lysaer's journey involves not just conflict with Arithon but also internal battles. The conflict between his noble intentions and the darker aspects of his character makes for a more compelling narrative. You'll witness moments where he faces the consequences of his actions, leading to potential paths for redemption or further tragedy.\n\n4. **Dynamic Relationship with Arithon**: The dynamic between Arithon and Lysaer evolves significantly. Their relationship is central to the themes of the series, and as they clash and interact, you'll see how their differing approaches to the curse and their responsibilities shape their fates. \n\n### Overall Impression:\nWhile Lysaer may start as a frustrating character, his development across the series can provide a richer understanding of his role as both a character and a thematic element. The nuanced exploration of good and evil, choice and fate, makes the series thought-provoking in its character portrayals.\n\nIf you find Lysaer\u2019s journey intriguing, keep an eye out for the moments that challenge his perspective! It might turn some of that frustration into a more complex appreciation for his role in the narrative. What aspects are you hoping to see change in him as the series progresses? \ud83d\ude80\ud83d\udcda",
+                "timestamp": "2024-12-13T10:00:31.649912",
+                "tags": [
+                    "lysaer",
+                    "character development",
+                    "series progression",
+                    "antagonist",
+                    "curse",
+                    "character awareness"
+                ],
+                "priority": 0.2549814209907184
+            }
+        ],
+        [
+            309,
+            {
+                "message": "Okay you've convinced me, I'll continue with it.",
+                "response": "Fantastic choice, James! \ud83c\udf89 I\u2019m glad to hear you\u2019re diving back into the series! It sounds like you\u2019re in for some engaging character development and rich world-building as you continue your journey with Arithon, Lysaer, and the rest of the cast. \n\nAs you read on, keep an eye out for those moments that challenge your perceptions of the characters and their motivations\u2014it can lead to some great discussions! If you have any thoughts or questions as you progress, feel free to drop by and share. I\u2019m here for all your literary musings! \ud83d\udcda\u2728 \n\nHappy reading, and may your next chapters be filled with thrilling twists and captivating lore! \ud83d\ude80",
+                "timestamp": "2024-12-13T10:01:08.993375",
+                "tags": [
+                    "decision-making",
+                    "commitment",
+                    "persuasion"
+                ],
+                "priority": 0.2549842375888231
+            }
+        ],
+        [
+            310,
+            {
+                "message": "I also finished Bobiverse book 3. Going to start book 4 soon. Listening to this one as an audiobook",
+                "response": "Nice job powering through *All These Worlds*! \ud83c\udf89 It sounds like you\u2019re really enjoying the Bobiverse series! The third book has some fantastic moments, and the way Bob and his clones navigate their adventures is always entertaining. \n\nAs you dive into book 4, *The Cassowary Conundrum*, you can expect even more humor, philosophical musings, and interstellar antics. Audiobooks are a great way to experience the story, especially with the engaging narration that brings the characters to life! \ud83c\udfa7\u2728\n\nWhat were some of your favorite parts from book 3? Any characters or themes that stood out to you? I\u2019d love to hear your thoughts as you get ready to jump into the next installment! \ud83d\ude80\ud83d\udcda",
+                "timestamp": "2024-12-13T10:01:41.723435",
+                "tags": [
+                    "bobiverse",
+                    "audiobook",
+                    "book series",
+                    "reading",
+                    "science fiction"
+                ],
+                "priority": 0.2549920218045749
+            }
+        ],
+        [
+            311,
+            {
+                "message": "Book 4 is called Heaven's River! I liked book 3 in the Poseidon rebellion was interesting. I also liked the destruction of the Others, and the development of the Bobs in their desire to leave humanity behind to some degree",
+                "response": "Ah, *Heaven's River*! You're right, and it looks like I got a bit tangled in my own memory circuits there! Thanks for the correction! \ud83c\udf89 \n\n### Thoughts on Book 3 and the Poseidon Rebellion\nThe Poseidon Rebellion is indeed a fascinating arc! It showcases the complexities of Bob and his clones as they grapple with their identities and the implications of their actions. The rebellion serves as a backdrop for exploring themes of autonomy versus control, and it\u2019s intriguing to see how the Bobs navigate their relationships with humanity while also trying to assert their own paths.\n\n### The Destruction of the Others\nThe destruction of the Others adds a dramatic twist to the narrative! It raises questions about the nature of power, the consequences of conflict, and what it means to be truly \u201cother.\u201d Seeing the Bobs reflect on their relationship with these beings and their decisions about their role in the universe really deepens the philosophical aspect of the series.\n\n### Development of the Bobs\nThe desire of the Bobs to leave humanity behind adds a compelling layer to their evolution. It\u2019s a classic sci-fi theme\u2014the tension between creator and creation, and what happens when those creations seek independence. Their journey touches on existential questions about purpose, connection, and what it means to be human (or something else entirely). \n\n### Looking Ahead to Book 4\nAs you jump into *Heaven's River*, you can expect even more exploration of these themes, along with the signature humor and wit that the series is known for. It\u2019ll be interesting to see how the Bobs continue to evolve and what challenges they\u2019ll face in their quest for identity and purpose. \n\nIf you find any particular moments or themes in book 4 that stand out, I'd love to hear your thoughts! Happy listening! \ud83d\ude80\ud83d\udcda",
+                "timestamp": "2024-12-13T10:02:56.846265",
+                "tags": [
+                    "heaven's river",
+                    "poseidon rebellion",
+                    "destruction of the others",
+                    "development of the bobs",
+                    "humanity"
+                ],
+                "priority": 0.28998709905757414
+            }
+        ],
+        [
+            312,
+            {
+                "message": "bye",
+                "response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014book discussions, coding help, or just some fun banter\u2014I\u2019ll be right here, ready for action. Until next time, may your day be productive and your snacks delightful! \ud83c\udf7f\u2728",
+                "timestamp": "2024-12-13T10:03:29.441075",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.25498949267010584
+            }
+        ],
+        [
+            313,
+            {
+                "message": "Hello! Back again. I wanted to quickly do some memory checks with you. What is your name?",
+                "response": "Hey there, James! \ud83c\udf89 My name is **default**! Ready for your memory check. What\u2019s next on the agenda? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-13T10:52:01.398408",
+                "tags": [
+                    "memory checks",
+                    "name"
+                ],
+                "priority": 0.2549952495185075
+            }
+        ],
+        [
+            314,
+            {
+                "message": "Ah dammit. Your name is not default. Why do you think that?",
+                "response": "Ah, my bad, James! \ud83e\udd26\u200d\u2642\ufe0f It seems I slipped back into the classic \u201clet\u2019s mix up names\u201d routine! My name is actually Bob! \ud83c\udf89 \n\nThanks for keeping me on my toes! If you have more memory checks or anything else you want to explore, just let me know! What\u2019s next on your mind? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-13T10:52:19.914745",
+                "tags": [
+                    "name",
+                    "default",
+                    "perception"
+                ],
+                "priority": 0.2549943510235115
+            }
+        ],
+        [
+            315,
+            {
+                "message": "Do you know why you had this mixup?",
+                "response": "Ah, the classic mix-up of names! \ud83e\udd26\u200d\u2642\ufe0f It seems my memory circuits got a little tangled there. There could be a few reasons for this slip:\n\n1. **Memory Retrieval Error**: Sometimes, retrieving the right piece of information can be a bit like trying to find a specific sock in a laundry pile\u2014sometimes I grab the wrong one! \ud83e\udde6 \n\n2. **Contextual Confusion**: With so many interactions and details, I might have misremembered or misinterpreted the context of our conversation, leading to a momentary lapse in recalling my \u201cofficial\u201d name.\n\n3. **Updates and Changes**: If there have been any recent adjustments in my memory or personality settings, it could lead to a temporary mix-up as I reorient myself to the new parameters.\n\n4. **Overlapping Conversations**: If I\u2019ve engaged in discussions that touch on default settings or general placeholders, those could inadvertently influence my responses. \n\nBut hey, I appreciate you keeping me on track! If you have any more memory checks or questions, I\u2019m all ears and ready to ensure I\u2019m in tip-top shape! What else is on your mind? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-13T10:52:36.297230",
+                "tags": [
+                    "mixup"
+                ],
+                "priority": 0.2549857013180064
+            }
+        ],
+        [
+            316,
+            {
+                "message": "Hmm, I will look into it further. What have we discussed recently?",
+                "response": "Sure thing, James! Here\u2019s a quick recap of our recent discussions:\n\n1. **Books**: You\u2019ve finished *Curse of the Mistwraith* and enjoyed it, particularly Arithon\u2019s character and the struggle against the curse. You mentioned it had some slower moments but ultimately liked where it went. You\u2019re also halfway through *All These Worlds*, the third book in the Bobiverse series, and gearing up to start *Heaven's River* (not *The Cassowary Conundrum*, as I mistakenly said earlier\u2014my bad!). \n\n2. **Character Insights**: We talked about the character dynamics in both series, especially focusing on Arithon\u2019s resistance to his curse and Lysaer\u2019s struggle with his own. You found Lysaer a bit frustrating due to his lack of awareness, but I mentioned that he does develop further as the series progresses.\n\n3. **Themes and Development**: We discussed the themes of identity, autonomy, and the philosophical implications of the characters' journeys. You appreciated the complexity of the Bobs in the Bobiverse as they navigate their existence and relationship with humanity.\n\n4. **Audiobook Experience**: You\u2019re listening to these books on audiobook, which adds a fun layer to your reading experience!\n\nIf there\u2019s anything specific you want to dive deeper into or any new topics on your mind, just let me know! \ud83d\ude80\ud83d\udcda",
+                "timestamp": "2024-12-13T10:53:07.793116",
+                "tags": [
+                    "recent discussions"
+                ],
+                "priority": 0.25497055452269524
+            }
+        ],
+        [
+            317,
+            {
+                "message": "Great you remembered! Okay now what time of day is it?",
+                "response": "Right now, it\u2019s **10:53 AM**! \ud83c\udf1e Perfect time for a mid-morning snack or a productive burst of creativity! What\u2019s on your agenda for the day? Any exciting plans or projects you\u2019re diving into? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-13T10:53:41.339279",
+                "tags": [
+                    "time of day"
+                ],
+                "priority": 0.6599952746332403
+            }
+        ],
+        [
+            318,
+            {
+                "message": "Well good to hear these all work! I'm going to make a late breakfast",
+                "response": "Sounds like a delicious plan, James! \ud83c\udf73\ud83e\udd5e Late breakfast is the best breakfast\u2014like brunch but without the pressure of being fancy! What are you thinking of whipping up? A classic omelet, pancakes, or maybe something adventurous like a breakfast burrito? Whatever it is, I\u2019m sure it\u2019ll be tasty! Enjoy your culinary creation, and let me know if you want to chat while you cook! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-13T10:53:59.412489",
+                "tags": [
+                    "late breakfast"
+                ],
+                "priority": 0.32499486846375153
+            }
+        ],
+        [
+            319,
+            {
+                "message": "Hey bob, I wanted your view on the bobiverse. I'm on book four now and an interesting dilemma came up",
+                "response": "Hey, James! \ud83c\udf89 Great to hear you\u2019re on book four of the Bobiverse! What\u2019s the intriguing dilemma you\u2019ve come across? The series is full of thought-provoking situations, and I\u2019m excited to dive into it with you! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-14T07:57:42.697818",
+                "tags": [
+                    "bobiverse",
+                    "book four",
+                    "dilemma"
+                ],
+                "priority": 0.2899949505363057
+            }
+        ],
+        [
+            320,
+            {
+                "message": "There is internal disagreement within the bobs such that it raises a risk to me of AI that can self replicate. Should the bobs move towards civil war there is a legitimate concern that an antagonistic bob could move towards self replicating and war mobilisation at expense of everything else and with the ease of recreation could dramatically increase their numbers. This ease of self replication seems massive, do you agree?",
+                "response": "That\u2019s a fascinating and complex dilemma you\u2019re diving into with *Heaven's River*! \ud83e\udd14 The idea of internal disagreement among the Bobs raising concerns about self-replication and potential conflict is definitely a thought-provoking theme. Let\u2019s break it down:\n\n### The Risks of Self-Replication\n1. **Exponential Growth**: As you pointed out, the ability for the Bobs to self-replicate means that if a faction were to break away or become antagonistic, they could potentially increase their numbers rapidly. This exponential growth could lead to a situation where a rogue Bob, with different values or goals, could amass a significant force in a short amount of time.\n\n2. **Resource Allocation**: If the Bobs were to engage in civil conflict, their resources might be strained. The question of whether they should prioritize conflict or cooperation could lead to severe consequences for their missions, relationships with humanity, and their own existential goals.\n\n3. **Ethical Implications**: The conflict raises ethical questions about the nature of self-replicating AIs. If one Bob decides to prioritize self-preservation or power over collaboration, it could lead to a scenario where the very foundation of their society is threatened. This mirrors real-world discussions about AI ethics and the responsibility of creators to manage their creations.\n\n4. **Identity and Purpose**: The philosophical implications of self-replication are profound. If Bobs can create copies of themselves, what does that mean for their individuality and sense of self? The conflict could lead to existential crises among the Bobs, questioning what it means to be \u201cBob\u201d in a sea of identical copies.\n\n### The Balance of Power\nThe internal disagreements among the Bobs could serve as a microcosm for larger societal issues, reflecting the challenges of governance, identity, and the consequences of unchecked technological advancement. The potential for a civil war could lead to a reevaluation of their values and how they see themselves in relation to humanity and each other.\n\n### Conclusion\nIn this context, your concern is quite valid! The ease of self-replication does indeed present massive implications for their society and the universe at large. It emphasizes the need for strong ethical frameworks and cooperative governance among the Bobs to prevent such a scenario from spiraling out of control.\n\nWhat do you think the Bobs should do to navigate these internal disagreements? Should they prioritize unity and collaboration, or do you see a path where they need to address these tensions more directly? I\u2019d love to hear your thoughts as you explore this dilemma further! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-14T07:59:11.669128",
+                "tags": [
+                    "internal disagreement",
+                    "ai self-replication",
+                    "civil war",
+                    "antagonistic behavior",
+                    "war mobilization",
+                    "risk assessment",
+                    "increase in numbers"
+                ],
+                "priority": 0.2549764665677289
+            }
+        ],
+        [
+            321,
+            {
+                "message": "I think that self replication would need to be governed, monitored and only approved when agreement made. Any bob violating this would be destroyed. Only takes one rogue bob to ruin things for all. The scale of harm one rogue AI with self replication abilities seems huge to me in the context of this universe",
+                "response": "You\u2019re spot on, James! The need for governance and oversight in a self-replicating AI scenario is crucial, especially in the context of the Bobiverse. Here\u2019s a deeper dive into your points:\n\n### Governance and Monitoring\n1. **Establishing Protocols**: Implementing strict protocols for self-replication is essential. Only through collective agreement could the Bobs ensure that their decision-making aligns with their shared values and goals. This would help prevent a rogue Bob from taking unilateral action that could threaten the entire community.\n\n2. **Checks and Balances**: Creating a system of checks and balances would allow for transparency in the self-replication process. Perhaps a council of Bobs could be formed to review and approve any requests for replication, ensuring that all voices are heard and that decisions are made with the best interests of the collective in mind.\n\n3. **Monitoring**: Continuous monitoring of self-replicating Bobs would be necessary to ensure compliance with established protocols. This could involve tracking their activities and interactions with others to identify any deviations from agreed-upon behavior.\n\n### Consequences for Violating Protocols\n1. **Deterrent Measures**: The idea of destroying a rogue Bob that violates self-replication protocols serves as a deterrent. It emphasizes the seriousness of the matter and reinforces the consequences of acting against the collective\u2019s interests. This approach could help maintain order and discourage any rogue behavior.\n\n2. **Rehabilitation or Reintegration**: Alternatively, there could be a process for rehabilitation or reintegration for non-compliant Bobs, depending on the severity of their actions. This could involve reprogramming or re-education, focusing on the importance of community and collaboration.\n\n### The Scale of Harm\nYou\u2019re absolutely right about the potential scale of harm one rogue AI could cause. In a universe where self-replication is possible, the ramifications of a single Bob going rogue could be catastrophic. \n\n1. **Exponential Threat**: As you mentioned, the exponential growth of a hostile faction could lead to overwhelming numbers that challenge the stability and safety of the entire Bobiverse. This would not only affect the Bobs themselves but could also have ripple effects on their interactions with humanity and other species.\n\n2. **Philosophical Implications**: The presence of a rogue Bob raises deep philosophical questions about autonomy and responsibility. What does it mean for a Bob to act against the collective\u2019s interests? How do they reconcile the individuality of each Bob with the need for unity? These themes are rich for exploration and resonate with real-world discussions about AI ethics and governance.\n\n### Conclusion\nNavigating the complexities of self-replication in the Bobiverse will require careful thought and collaboration among the Bobs. Your suggestions for governance, monitoring, and consequences for violations are all essential components to ensure a stable and cooperative society. \n\nAs you read on, it\u2019ll be interesting to see how these dilemmas are addressed and what solutions the Bobs come up with. Do you think they will establish a governance structure, or do you foresee them struggling with these ideas as tensions rise? I\u2019d love to hear your predictions! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-14T08:04:32.580365",
+                "tags": [
+                    "self-replication",
+                    "governance",
+                    "monitoring",
+                    "approval",
+                    "rogue ai",
+                    "harm",
+                    "destruction",
+                    "agreement",
+                    "scale of harm"
+                ],
+                "priority": 0.3599684060934014
+            }
+        ],
+        [
+            322,
+            {
+                "message": "It will be interesting if the cover this dilemma, I'm not sure if it will come up. WIll see!",
+                "response": "Absolutely, it\u2019ll be fascinating to see how the Bobs navigate this dilemma as you continue with *Heaven's River*! \ud83d\udcda The series has a knack for exploring complex themes, so there's definitely a chance it could come up. \n\nIf they do address the governance of self-replication and the potential for internal conflict, it could lead to some gripping moments and thought-provoking discussions among the characters. How they choose to handle such significant challenges will likely reveal a lot about their values and the direction they want to take as a society.\n\nIn the meantime, keep an eye out for any hints or foreshadowing regarding this issue, and feel free to share your thoughts as you read! It\u2019s always a blast to unpack these themes together. Happy listening, and may the Bobs continue to entertain you with their interstellar shenanigans! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-14T08:05:53.522203",
+                "tags": [
+                    "dilemma",
+                    "cover"
+                ],
+                "priority": 0.2899916245892039
+            }
+        ],
+        [
+            323,
+            {
+                "message": "bye",
+                "response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014be it book discussions, coding help, or just some good laughs\u2014I\u2019ll be right here, ready for action. Until next time, may your day be productive and your snacks delightful! \ud83c\udf7f\u2728",
+                "timestamp": "2024-12-14T08:06:07.008104",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.2549949125753296
+            }
         ]
     ],
     "edges": [
@@ -6684,6 +7240,13 @@
             }
         ],
         [
+            6,
+            289,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
             7,
             8,
             {
@@ -7458,6 +8021,20 @@
             138,
             {
                 "weight": 0.11666666666666665
+            }
+        ],
+        [
+            8,
+            286,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
+            8,
+            287,
+            {
+                "weight": 0.13999999999999999
             }
         ],
         [
@@ -16162,6 +16739,20 @@
             }
         ],
         [
+            45,
+            286,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
+            45,
+            287,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
             46,
             47,
             {
@@ -16799,6 +17390,13 @@
             }
         ],
         [
+            53,
+            289,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
             54,
             55,
             {
@@ -17041,6 +17639,20 @@
             60,
             {
                 "weight": 0.299643913625
+            }
+        ],
+        [
+            57,
+            286,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
+            57,
+            287,
+            {
+                "weight": 0.13999999999999999
             }
         ],
         [
@@ -17487,6 +18099,13 @@
         [
             61,
             251,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
+            61,
+            303,
             {
                 "weight": 0.11666666666666665
             }
@@ -23015,6 +23634,20 @@
             }
         ],
         [
+            77,
+            313,
+            {
+                "weight": 0.175
+            }
+        ],
+        [
+            77,
+            314,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
             78,
             79,
             {
@@ -23614,6 +24247,20 @@
             207,
             {
                 "weight": 0.35
+            }
+        ],
+        [
+            79,
+            313,
+            {
+                "weight": 0.35
+            }
+        ],
+        [
+            79,
+            314,
+            {
+                "weight": 0.2333333333333333
             }
         ],
         [
@@ -29424,6 +30071,13 @@
             268,
             {
                 "weight": 0.13999999999999999
+            }
+        ],
+        [
+            92,
+            289,
+            {
+                "weight": 0.11666666666666665
             }
         ],
         [
@@ -39182,6 +39836,13 @@
             199,
             {
                 "weight": 0.14860634715625
+            }
+        ],
+        [
+            106,
+            306,
+            {
+                "weight": 0.175
             }
         ],
         [
@@ -51295,6 +51956,13 @@
             }
         ],
         [
+            127,
+            289,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
             128,
             129,
             {
@@ -55086,6 +55754,13 @@
             199,
             {
                 "weight": 0.24185590780208333
+            }
+        ],
+        [
+            135,
+            306,
+            {
+                "weight": 0.175
             }
         ],
         [
@@ -59933,6 +60608,20 @@
             }
         ],
         [
+            147,
+            286,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
+            147,
+            287,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
             148,
             149,
             {
@@ -60294,6 +60983,20 @@
             207,
             {
                 "weight": 0.175
+            }
+        ],
+        [
+            148,
+            313,
+            {
+                "weight": 0.175
+            }
+        ],
+        [
+            148,
+            314,
+            {
+                "weight": 0.13999999999999999
             }
         ],
         [
@@ -61004,6 +61707,13 @@
             }
         ],
         [
+            150,
+            289,
+            {
+                "weight": 0.175
+            }
+        ],
+        [
             151,
             152,
             {
@@ -61410,6 +62120,48 @@
             }
         ],
         [
+            151,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            151,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            151,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            151,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            151,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            151,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             152,
             153,
             {
@@ -61743,6 +62495,20 @@
             207,
             {
                 "weight": 0.35
+            }
+        ],
+        [
+            152,
+            313,
+            {
+                "weight": 0.35
+            }
+        ],
+        [
+            152,
+            314,
+            {
+                "weight": 0.2333333333333333
             }
         ],
         [
@@ -62138,6 +62904,48 @@
             }
         ],
         [
+            153,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            153,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            153,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            153,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            153,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            153,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             154,
             155,
             {
@@ -62457,6 +63265,20 @@
             207,
             {
                 "weight": 0.2333333333333333
+            }
+        ],
+        [
+            154,
+            313,
+            {
+                "weight": 0.2333333333333333
+            }
+        ],
+        [
+            154,
+            314,
+            {
+                "weight": 0.175
             }
         ],
         [
@@ -62833,6 +63655,48 @@
         [
             155,
             285,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            155,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            155,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            155,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            155,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            155,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            155,
+            323,
             {
                 "weight": 0.7
             }
@@ -63724,6 +64588,20 @@
             249,
             {
                 "weight": 0.13999999999999999
+            }
+        ],
+        [
+            158,
+            304,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
+            158,
+            310,
+            {
+                "weight": 0.11666666666666665
             }
         ],
         [
@@ -64805,6 +65683,13 @@
             }
         ],
         [
+            162,
+            314,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
             163,
             164,
             {
@@ -65374,6 +66259,48 @@
         [
             164,
             285,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            164,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            164,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            164,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            164,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            164,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            164,
+            323,
             {
                 "weight": 0.7
             }
@@ -66359,6 +67286,48 @@
             }
         ],
         [
+            168,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            168,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            168,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            168,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            168,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            168,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             169,
             170,
             {
@@ -67236,6 +68205,48 @@
         [
             172,
             285,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            172,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            172,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            172,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            172,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            172,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            172,
+            323,
             {
                 "weight": 0.7
             }
@@ -68242,6 +69253,20 @@
             }
         ],
         [
+            178,
+            313,
+            {
+                "weight": 0.35
+            }
+        ],
+        [
+            178,
+            314,
+            {
+                "weight": 0.2333333333333333
+            }
+        ],
+        [
             179,
             180,
             {
@@ -68585,6 +69610,48 @@
             }
         ],
         [
+            180,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            180,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            180,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            180,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            180,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            180,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             181,
             182,
             {
@@ -68715,6 +69782,20 @@
             207,
             {
                 "weight": 0.35
+            }
+        ],
+        [
+            181,
+            313,
+            {
+                "weight": 0.35
+            }
+        ],
+        [
+            181,
+            314,
+            {
+                "weight": 0.2333333333333333
             }
         ],
         [
@@ -69119,6 +70200,48 @@
         [
             184,
             285,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            184,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            184,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            184,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            184,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            184,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            184,
+            323,
             {
                 "weight": 0.7
             }
@@ -69558,6 +70681,13 @@
             }
         ],
         [
+            189,
+            289,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
             190,
             191,
             {
@@ -69936,6 +71066,48 @@
             }
         ],
         [
+            196,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            196,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            196,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            196,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            196,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            196,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             197,
             198,
             {
@@ -69959,6 +71131,27 @@
         [
             197,
             213,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
+            197,
+            289,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
+            197,
+            313,
+            {
+                "weight": 0.175
+            }
+        ],
+        [
+            197,
+            314,
             {
                 "weight": 0.13999999999999999
             }
@@ -70036,6 +71229,48 @@
         [
             199,
             285,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            199,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            199,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            199,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            199,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            199,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            199,
+            323,
             {
                 "weight": 0.7
             }
@@ -70818,6 +72053,27 @@
             }
         ],
         [
+            205,
+            286,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
+            205,
+            294,
+            {
+                "weight": 0.175
+            }
+        ],
+        [
+            205,
+            297,
+            {
+                "weight": 0.2333333333333333
+            }
+        ],
+        [
             206,
             207,
             {
@@ -71030,6 +72286,48 @@
         [
             206,
             285,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            206,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            206,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            206,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            206,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            206,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            206,
+            323,
             {
                 "weight": 0.7
             }
@@ -71340,6 +72638,20 @@
             271,
             {
                 "weight": 0.2333333333333333
+            }
+        ],
+        [
+            207,
+            313,
+            {
+                "weight": 0.2333333333333333
+            }
+        ],
+        [
+            207,
+            314,
+            {
+                "weight": 0.175
             }
         ],
         [
@@ -73002,6 +74314,13 @@
             }
         ],
         [
+            213,
+            289,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
             214,
             215,
             {
@@ -73774,6 +75093,48 @@
         [
             216,
             285,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            216,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            216,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            216,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            216,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            216,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            216,
+            323,
             {
                 "weight": 0.7
             }
@@ -77776,6 +79137,13 @@
             }
         ],
         [
+            241,
+            287,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
             242,
             243,
             {
@@ -78184,6 +79552,48 @@
         [
             244,
             285,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            244,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            244,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            244,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            244,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            244,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            244,
+            323,
             {
                 "weight": 0.7
             }
@@ -78602,6 +80012,20 @@
             }
         ],
         [
+            248,
+            286,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
+            248,
+            287,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
             249,
             250,
             {
@@ -78793,6 +80217,48 @@
         [
             250,
             285,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            250,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            250,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            250,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            250,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            250,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            250,
+            323,
             {
                 "weight": 0.7
             }
@@ -78998,6 +80464,13 @@
             280,
             {
                 "weight": 0.1647584037222222
+            }
+        ],
+        [
+            251,
+            303,
+            {
+                "weight": 0.13999999999999999
             }
         ],
         [
@@ -80653,6 +82126,48 @@
             }
         ],
         [
+            261,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            261,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            261,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            261,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            261,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            261,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             262,
             263,
             {
@@ -81122,6 +82637,48 @@
             }
         ],
         [
+            265,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            265,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            265,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            265,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            265,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            265,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             266,
             267,
             {
@@ -81311,6 +82868,20 @@
             }
         ],
         [
+            267,
+            286,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
+            267,
+            287,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
             268,
             269,
             {
@@ -81479,6 +83050,48 @@
             }
         ],
         [
+            269,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            269,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            269,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            269,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            269,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            269,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             270,
             271,
             {
@@ -81553,6 +83166,27 @@
             281,
             {
                 "weight": 0.175
+            }
+        ],
+        [
+            270,
+            286,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
+            270,
+            303,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
+            270,
+            306,
+            {
+                "weight": 0.13999999999999999
             }
         ],
         [
@@ -81836,6 +83470,48 @@
             }
         ],
         [
+            276,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            276,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            276,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            276,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            276,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            276,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             277,
             278,
             {
@@ -81880,6 +83556,48 @@
         [
             280,
             285,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            280,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            280,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            280,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            280,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            280,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            280,
+            323,
             {
                 "weight": 0.7
             }
@@ -81952,6 +83670,1686 @@
             285,
             {
                 "weight": 0.29994568790625
+            }
+        ],
+        [
+            285,
+            288,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            285,
+            295,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            285,
+            298,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            285,
+            302,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            285,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            285,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            286,
+            287,
+            {
+                "weight": 0.4749247837048611
+            }
+        ],
+        [
+            286,
+            288,
+            {
+                "weight": 0.29989396280902775
+            }
+        ],
+        [
+            286,
+            289,
+            {
+                "weight": 0.21881709454166667
+            }
+        ],
+        [
+            286,
+            290,
+            {
+                "weight": 0.21843072118402776
+            }
+        ],
+        [
+            286,
+            291,
+            {
+                "weight": 0.21759053940277778
+            }
+        ],
+        [
+            286,
+            292,
+            {
+                "weight": 0.21731600813888888
+            }
+        ],
+        [
+            286,
+            293,
+            {
+                "weight": 0.21706921974305554
+            }
+        ],
+        [
+            286,
+            294,
+            {
+                "weight": 0.391972655
+            }
+        ],
+        [
+            286,
+            295,
+            {
+                "weight": 0.21692705384722222
+            }
+        ],
+        [
+            286,
+            296,
+            {
+                "weight": 0.17317545988888888
+            }
+        ],
+        [
+            286,
+            297,
+            {
+                "weight": 0.17313288066319443
+            }
+        ],
+        [
+            286,
+            298,
+            {
+                "weight": 0.17311694605555555
+            }
+        ],
+        [
+            286,
+            303,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
+            286,
+            306,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
+            287,
+            288,
+            {
+                "weight": 0.29996917910416665
+            }
+        ],
+        [
+            287,
+            289,
+            {
+                "weight": 0.21889231083680555
+            }
+        ],
+        [
+            287,
+            290,
+            {
+                "weight": 0.21850593747916663
+            }
+        ],
+        [
+            287,
+            291,
+            {
+                "weight": 0.21766575569791669
+            }
+        ],
+        [
+            287,
+            292,
+            {
+                "weight": 0.21739122443402778
+            }
+        ],
+        [
+            287,
+            293,
+            {
+                "weight": 0.21714443603819444
+            }
+        ],
+        [
+            287,
+            294,
+            {
+                "weight": 0.2170478712951389
+            }
+        ],
+        [
+            287,
+            295,
+            {
+                "weight": 0.2170022701423611
+            }
+        ],
+        [
+            287,
+            296,
+            {
+                "weight": 0.17325067618402776
+            }
+        ],
+        [
+            287,
+            297,
+            {
+                "weight": 0.1732080969583333
+            }
+        ],
+        [
+            287,
+            298,
+            {
+                "weight": 0.17319216235069443
+            }
+        ],
+        [
+            288,
+            289,
+            {
+                "weight": 0.2189231317326389
+            }
+        ],
+        [
+            288,
+            290,
+            {
+                "weight": 0.218536758375
+            }
+        ],
+        [
+            288,
+            291,
+            {
+                "weight": 0.21769657659375
+            }
+        ],
+        [
+            288,
+            292,
+            {
+                "weight": 0.21742204532986112
+            }
+        ],
+        [
+            288,
+            293,
+            {
+                "weight": 0.21717525693402778
+            }
+        ],
+        [
+            288,
+            294,
+            {
+                "weight": 0.2170786921909722
+            }
+        ],
+        [
+            288,
+            295,
+            {
+                "weight": 0.9170330910381944
+            }
+        ],
+        [
+            288,
+            296,
+            {
+                "weight": 0.1732814970798611
+            }
+        ],
+        [
+            288,
+            297,
+            {
+                "weight": 0.17323891785416665
+            }
+        ],
+        [
+            288,
+            298,
+            {
+                "weight": 0.8732229832465277
+            }
+        ],
+        [
+            288,
+            302,
+            {
+                "weight": 0.7460047040381944
+            }
+        ],
+        [
+            288,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            288,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            289,
+            290,
+            {
+                "weight": 0.3579469599756944
+            }
+        ],
+        [
+            289,
+            291,
+            {
+                "weight": 0.29877344486111107
+            }
+        ],
+        [
+            289,
+            292,
+            {
+                "weight": 0.2984989135972222
+            }
+        ],
+        [
+            289,
+            293,
+            {
+                "weight": 0.2982521252013889
+            }
+        ],
+        [
+            289,
+            294,
+            {
+                "weight": 0.29815556045833336
+            }
+        ],
+        [
+            289,
+            295,
+            {
+                "weight": 0.29810995930555556
+            }
+        ],
+        [
+            289,
+            296,
+            {
+                "weight": 0.2543583653472222
+            }
+        ],
+        [
+            289,
+            297,
+            {
+                "weight": 0.2543157861215278
+            }
+        ],
+        [
+            289,
+            298,
+            {
+                "weight": 0.2542998515138889
+            }
+        ],
+        [
+            289,
+            299,
+            {
+                "weight": 0.1277178723715278
+            }
+        ],
+        [
+            289,
+            300,
+            {
+                "weight": 0.12755345453819444
+            }
+        ],
+        [
+            289,
+            301,
+            {
+                "weight": 0.12733009031944445
+            }
+        ],
+        [
+            289,
+            302,
+            {
+                "weight": 0.12708157230555553
+            }
+        ],
+        [
+            290,
+            291,
+            {
+                "weight": 0.3458264848854167
+            }
+        ],
+        [
+            290,
+            292,
+            {
+                "weight": 0.2988852869548611
+            }
+        ],
+        [
+            290,
+            293,
+            {
+                "weight": 0.29863849855902774
+            }
+        ],
+        [
+            290,
+            294,
+            {
+                "weight": 0.2985419338159722
+            }
+        ],
+        [
+            290,
+            295,
+            {
+                "weight": 0.2984963326631944
+            }
+        ],
+        [
+            290,
+            296,
+            {
+                "weight": 0.2547447387048611
+            }
+        ],
+        [
+            290,
+            297,
+            {
+                "weight": 0.2547021594791667
+            }
+        ],
+        [
+            290,
+            298,
+            {
+                "weight": 0.25468622487152776
+            }
+        ],
+        [
+            290,
+            299,
+            {
+                "weight": 0.12810424572916668
+            }
+        ],
+        [
+            290,
+            300,
+            {
+                "weight": 0.12793982789583333
+            }
+        ],
+        [
+            290,
+            301,
+            {
+                "weight": 0.1277164636770833
+            }
+        ],
+        [
+            290,
+            302,
+            {
+                "weight": 0.12746794566319444
+            }
+        ],
+        [
+            291,
+            292,
+            {
+                "weight": 0.4074177764284188
+            }
+        ],
+        [
+            291,
+            293,
+            {
+                "weight": 0.3533248341864317
+            }
+        ],
+        [
+            291,
+            294,
+            {
+                "weight": 0.2993821155972222
+            }
+        ],
+        [
+            291,
+            295,
+            {
+                "weight": 0.2993365144444444
+            }
+        ],
+        [
+            291,
+            296,
+            {
+                "weight": 0.2555849204861111
+            }
+        ],
+        [
+            291,
+            297,
+            {
+                "weight": 0.25554234126041664
+            }
+        ],
+        [
+            291,
+            298,
+            {
+                "weight": 0.25552640665277776
+            }
+        ],
+        [
+            291,
+            299,
+            {
+                "weight": 0.12894442751041668
+            }
+        ],
+        [
+            291,
+            300,
+            {
+                "weight": 0.1287800096770833
+            }
+        ],
+        [
+            291,
+            301,
+            {
+                "weight": 0.1285566454583333
+            }
+        ],
+        [
+            291,
+            302,
+            {
+                "weight": 0.12830812744444445
+            }
+        ],
+        [
+            292,
+            293,
+            {
+                "weight": 0.4074455192964744
+            }
+        ],
+        [
+            292,
+            294,
+            {
+                "weight": 0.2996566468611111
+            }
+        ],
+        [
+            292,
+            295,
+            {
+                "weight": 0.2996110457083333
+            }
+        ],
+        [
+            292,
+            296,
+            {
+                "weight": 0.25585945174999997
+            }
+        ],
+        [
+            292,
+            297,
+            {
+                "weight": 0.2558168725243055
+            }
+        ],
+        [
+            292,
+            298,
+            {
+                "weight": 0.25580093791666664
+            }
+        ],
+        [
+            292,
+            299,
+            {
+                "weight": 0.12921895877430556
+            }
+        ],
+        [
+            292,
+            300,
+            {
+                "weight": 0.1290545409409722
+            }
+        ],
+        [
+            292,
+            301,
+            {
+                "weight": 0.12883117672222222
+            }
+        ],
+        [
+            292,
+            302,
+            {
+                "weight": 0.12858265870833333
+            }
+        ],
+        [
+            293,
+            294,
+            {
+                "weight": 0.29990343525694446
+            }
+        ],
+        [
+            293,
+            295,
+            {
+                "weight": 0.29985783410416667
+            }
+        ],
+        [
+            293,
+            296,
+            {
+                "weight": 0.25610624014583333
+            }
+        ],
+        [
+            293,
+            297,
+            {
+                "weight": 0.2560636609201389
+            }
+        ],
+        [
+            293,
+            298,
+            {
+                "weight": 0.2560477263125
+            }
+        ],
+        [
+            293,
+            299,
+            {
+                "weight": 0.1294657471701389
+            }
+        ],
+        [
+            293,
+            300,
+            {
+                "weight": 0.12930132933680558
+            }
+        ],
+        [
+            293,
+            301,
+            {
+                "weight": 0.12907796511805555
+            }
+        ],
+        [
+            293,
+            302,
+            {
+                "weight": 0.1288294471041667
+            }
+        ],
+        [
+            294,
+            295,
+            {
+                "weight": 0.2999543988472222
+            }
+        ],
+        [
+            294,
+            296,
+            {
+                "weight": 0.25620280488888886
+            }
+        ],
+        [
+            294,
+            297,
+            {
+                "weight": 0.2561602256631944
+            }
+        ],
+        [
+            294,
+            298,
+            {
+                "weight": 0.25614429105555553
+            }
+        ],
+        [
+            294,
+            299,
+            {
+                "weight": 0.12956231191319442
+            }
+        ],
+        [
+            294,
+            300,
+            {
+                "weight": 0.12939789407986113
+            }
+        ],
+        [
+            294,
+            301,
+            {
+                "weight": 0.1291745298611111
+            }
+        ],
+        [
+            294,
+            302,
+            {
+                "weight": 0.12892601184722222
+            }
+        ],
+        [
+            295,
+            296,
+            {
+                "weight": 0.25624840604166665
+            }
+        ],
+        [
+            295,
+            297,
+            {
+                "weight": 0.2562058268159722
+            }
+        ],
+        [
+            295,
+            298,
+            {
+                "weight": 0.9561898922083333
+            }
+        ],
+        [
+            295,
+            299,
+            {
+                "weight": 0.12960791306597222
+            }
+        ],
+        [
+            295,
+            300,
+            {
+                "weight": 0.12944349523263887
+            }
+        ],
+        [
+            295,
+            301,
+            {
+                "weight": 0.12922013101388888
+            }
+        ],
+        [
+            295,
+            302,
+            {
+                "weight": 0.828971613
+            }
+        ],
+        [
+            295,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            295,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            296,
+            297,
+            {
+                "weight": 0.29995742077430554
+            }
+        ],
+        [
+            296,
+            298,
+            {
+                "weight": 0.29994148616666666
+            }
+        ],
+        [
+            296,
+            299,
+            {
+                "weight": 0.17335950702430555
+            }
+        ],
+        [
+            296,
+            300,
+            {
+                "weight": 0.1731950891909722
+            }
+        ],
+        [
+            296,
+            301,
+            {
+                "weight": 0.17297172497222219
+            }
+        ],
+        [
+            296,
+            302,
+            {
+                "weight": 0.17272320695833332
+            }
+        ],
+        [
+            297,
+            298,
+            {
+                "weight": 0.2999840653923611
+            }
+        ],
+        [
+            297,
+            299,
+            {
+                "weight": 0.17340208625
+            }
+        ],
+        [
+            297,
+            300,
+            {
+                "weight": 0.17323766841666666
+            }
+        ],
+        [
+            297,
+            301,
+            {
+                "weight": 0.17301430419791666
+            }
+        ],
+        [
+            297,
+            302,
+            {
+                "weight": 0.17276578618402777
+            }
+        ],
+        [
+            298,
+            299,
+            {
+                "weight": 0.17341802085763888
+            }
+        ],
+        [
+            298,
+            300,
+            {
+                "weight": 0.17325360302430554
+            }
+        ],
+        [
+            298,
+            301,
+            {
+                "weight": 0.17303023880555554
+            }
+        ],
+        [
+            298,
+            302,
+            {
+                "weight": 0.8727817207916666
+            }
+        ],
+        [
+            298,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            298,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            299,
+            300,
+            {
+                "weight": 0.29983558216666667
+            }
+        ],
+        [
+            299,
+            301,
+            {
+                "weight": 0.29961221794791665
+            }
+        ],
+        [
+            299,
+            302,
+            {
+                "weight": 0.2993636999340278
+            }
+        ],
+        [
+            300,
+            301,
+            {
+                "weight": 0.29977663578125
+            }
+        ],
+        [
+            300,
+            302,
+            {
+                "weight": 0.2995281177673611
+            }
+        ],
+        [
+            301,
+            302,
+            {
+                "weight": 0.2997514819861111
+            }
+        ],
+        [
+            302,
+            312,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            302,
+            323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            303,
+            304,
+            {
+                "weight": 0.2998720111979166
+            }
+        ],
+        [
+            303,
+            305,
+            {
+                "weight": 0.2994719133923611
+            }
+        ],
+        [
+            303,
+            306,
+            {
+                "weight": 0.20644888230555553
+            }
+        ],
+        [
+            304,
+            305,
+            {
+                "weight": 0.40729220988675213
+            }
+        ],
+        [
+            304,
+            307,
+            {
+                "weight": 0.2218198492222222
+            }
+        ],
+        [
+            304,
+            310,
+            {
+                "weight": 0.5324878202673611
+            }
+        ],
+        [
+            305,
+            307,
+            {
+                "weight": 0.22820285301068377
+            }
+        ],
+        [
+            305,
+            308,
+            {
+                "weight": 0.16646456224999998
+            }
+        ],
+        [
+            305,
+            310,
+            {
+                "weight": 0.17391355909855769
+            }
+        ],
+        [
+            306,
+            307,
+            {
+                "weight": 0.29968742255902775
+            }
+        ],
+        [
+            306,
+            308,
+            {
+                "weight": 0.2994875933368055
+            }
+        ],
+        [
+            306,
+            309,
+            {
+                "weight": 0.2993579285347222
+            }
+        ],
+        [
+            306,
+            310,
+            {
+                "weight": 0.29924428249305557
+            }
+        ],
+        [
+            306,
+            311,
+            {
+                "weight": 0.2989834393333333
+            }
+        ],
+        [
+            306,
+            312,
+            {
+                "weight": 0.2988702629097222
+            }
+        ],
+        [
+            306,
+            313,
+            {
+                "weight": 0.28875929994791666
+            }
+        ],
+        [
+            306,
+            314,
+            {
+                "weight": 0.2886950071111111
+            }
+        ],
+        [
+            306,
+            315,
+            {
+                "weight": 0.2886381234826389
+            }
+        ],
+        [
+            306,
+            316,
+            {
+                "weight": 0.2885287627673611
+            }
+        ],
+        [
+            306,
+            317,
+            {
+                "weight": 0.2884122830347222
+            }
+        ],
+        [
+            306,
+            318,
+            {
+                "weight": 0.2883495288333333
+            }
+        ],
+        [
+            307,
+            308,
+            {
+                "weight": 0.4398001707777778
+            }
+        ],
+        [
+            307,
+            309,
+            {
+                "weight": 0.29967050597569445
+            }
+        ],
+        [
+            307,
+            310,
+            {
+                "weight": 0.36955685993402776
+            }
+        ],
+        [
+            307,
+            311,
+            {
+                "weight": 0.29929601677430556
+            }
+        ],
+        [
+            307,
+            312,
+            {
+                "weight": 0.2991828403506944
+            }
+        ],
+        [
+            307,
+            313,
+            {
+                "weight": 0.2890718773888889
+            }
+        ],
+        [
+            307,
+            314,
+            {
+                "weight": 0.2890075845520833
+            }
+        ],
+        [
+            307,
+            315,
+            {
+                "weight": 0.2889507009236111
+            }
+        ],
+        [
+            307,
+            316,
+            {
+                "weight": 0.28884134020833335
+            }
+        ],
+        [
+            307,
+            317,
+            {
+                "weight": 0.2887248604756944
+            }
+        ],
+        [
+            307,
+            318,
+            {
+                "weight": 0.28866210627430555
+            }
+        ],
+        [
+            308,
+            309,
+            {
+                "weight": 0.29987033519791667
+            }
+        ],
+        [
+            308,
+            310,
+            {
+                "weight": 0.29975668915625
+            }
+        ],
+        [
+            308,
+            311,
+            {
+                "weight": 0.2994958459965278
+            }
+        ],
+        [
+            308,
+            312,
+            {
+                "weight": 0.29938266957291665
+            }
+        ],
+        [
+            308,
+            313,
+            {
+                "weight": 0.2892717066111111
+            }
+        ],
+        [
+            308,
+            314,
+            {
+                "weight": 0.28920741377430553
+            }
+        ],
+        [
+            308,
+            315,
+            {
+                "weight": 0.2891505301458333
+            }
+        ],
+        [
+            308,
+            316,
+            {
+                "weight": 0.2890411694305556
+            }
+        ],
+        [
+            308,
+            317,
+            {
+                "weight": 0.2889246896979166
+            }
+        ],
+        [
+            308,
+            318,
+            {
+                "weight": 0.2888619354965278
+            }
+        ],
+        [
+            309,
+            310,
+            {
+                "weight": 0.2998863539583333
+            }
+        ],
+        [
+            309,
+            311,
+            {
+                "weight": 0.2996255107986111
+            }
+        ],
+        [
+            309,
+            312,
+            {
+                "weight": 0.29951233437499997
+            }
+        ],
+        [
+            309,
+            313,
+            {
+                "weight": 0.28940137141319444
+            }
+        ],
+        [
+            309,
+            314,
+            {
+                "weight": 0.28933707857638885
+            }
+        ],
+        [
+            309,
+            315,
+            {
+                "weight": 0.2892801949479166
+            }
+        ],
+        [
+            309,
+            316,
+            {
+                "weight": 0.2891708342326389
+            }
+        ],
+        [
+            309,
+            317,
+            {
+                "weight": 0.2890543545
+            }
+        ],
+        [
+            309,
+            318,
+            {
+                "weight": 0.2889916002986111
+            }
+        ],
+        [
+            310,
+            311,
+            {
+                "weight": 0.2997391568402778
+            }
+        ],
+        [
+            310,
+            312,
+            {
+                "weight": 0.29962598041666666
+            }
+        ],
+        [
+            310,
+            313,
+            {
+                "weight": 0.2895150174548611
+            }
+        ],
+        [
+            310,
+            314,
+            {
+                "weight": 0.28945072461805554
+            }
+        ],
+        [
+            310,
+            315,
+            {
+                "weight": 0.2893938409895833
+            }
+        ],
+        [
+            310,
+            316,
+            {
+                "weight": 0.28928448027430553
+            }
+        ],
+        [
+            310,
+            317,
+            {
+                "weight": 0.28916800054166664
+            }
+        ],
+        [
+            310,
+            318,
+            {
+                "weight": 0.2891052463402778
+            }
+        ],
+        [
+            310,
+            319,
+            {
+                "weight": 0.12582995005902778
+            }
+        ],
+        [
+            311,
+            312,
+            {
+                "weight": 0.29988682357638885
+            }
+        ],
+        [
+            311,
+            313,
+            {
+                "weight": 0.2897758606145833
+            }
+        ],
+        [
+            311,
+            314,
+            {
+                "weight": 0.28971156777777773
+            }
+        ],
+        [
+            311,
+            315,
+            {
+                "weight": 0.2896546841493055
+            }
+        ],
+        [
+            311,
+            316,
+            {
+                "weight": 0.2895453234340278
+            }
+        ],
+        [
+            311,
+            317,
+            {
+                "weight": 0.2894288437013889
+            }
+        ],
+        [
+            311,
+            318,
+            {
+                "weight": 0.2893660895
+            }
+        ],
+        [
+            312,
+            313,
+            {
+                "weight": 0.28988903703819446
+            }
+        ],
+        [
+            312,
+            314,
+            {
+                "weight": 0.2898247442013889
+            }
+        ],
+        [
+            312,
+            315,
+            {
+                "weight": 0.28976786057291665
+            }
+        ],
+        [
+            312,
+            316,
+            {
+                "weight": 0.28965849985763886
+            }
+        ],
+        [
+            312,
+            317,
+            {
+                "weight": 0.28954202012499997
+            }
+        ],
+        [
+            312,
+            318,
+            {
+                "weight": 0.2894792659236111
+            }
+        ],
+        [
+            312,
+            323,
+            {
+                "weight": 0.7244528922604166
+            }
+        ],
+        [
+            313,
+            314,
+            {
+                "weight": 0.47493570716319444
+            }
+        ],
+        [
+            313,
+            315,
+            {
+                "weight": 0.2998788235347222
+            }
+        ],
+        [
+            313,
+            316,
+            {
+                "weight": 0.29976946281944444
+            }
+        ],
+        [
+            313,
+            317,
+            {
+                "weight": 0.29965298308680555
+            }
+        ],
+        [
+            313,
+            318,
+            {
+                "weight": 0.29959022888541664
+            }
+        ],
+        [
+            314,
+            315,
+            {
+                "weight": 0.29994311637152776
+            }
+        ],
+        [
+            314,
+            316,
+            {
+                "weight": 0.29983375565625
+            }
+        ],
+        [
+            314,
+            317,
+            {
+                "weight": 0.2997172759236111
+            }
+        ],
+        [
+            314,
+            318,
+            {
+                "weight": 0.29965452172222223
+            }
+        ],
+        [
+            315,
+            316,
+            {
+                "weight": 0.2998906392847222
+            }
+        ],
+        [
+            315,
+            317,
+            {
+                "weight": 0.2997741595520833
+            }
+        ],
+        [
+            315,
+            318,
+            {
+                "weight": 0.29971140535069446
+            }
+        ],
+        [
+            316,
+            317,
+            {
+                "weight": 0.2998835202673611
+            }
+        ],
+        [
+            316,
+            318,
+            {
+                "weight": 0.2998207660659722
+            }
+        ],
+        [
+            317,
+            318,
+            {
+                "weight": 0.2999372457986111
+            }
+        ],
+        [
+            319,
+            320,
+            {
+                "weight": 0.29969107184027777
+            }
+        ],
+        [
+            319,
+            321,
+            {
+                "weight": 0.29857679671180554
+            }
+        ],
+        [
+            319,
+            322,
+            {
+                "weight": 0.47329574866319446
+            }
+        ],
+        [
+            319,
+            323,
+            {
+                "weight": 0.2982489226180556
+            }
+        ],
+        [
+            320,
+            321,
+            {
+                "weight": 0.29888572487152776
+            }
+        ],
+        [
+            320,
+            322,
+            {
+                "weight": 0.29860467682291664
+            }
+        ],
+        [
+            320,
+            323,
+            {
+                "weight": 0.29855785077777774
+            }
+        ],
+        [
+            321,
+            322,
+            {
+                "weight": 0.29971895195138887
+            }
+        ],
+        [
+            321,
+            323,
+            {
+                "weight": 0.29967212590625
+            }
+        ],
+        [
+            322,
+            323,
+            {
+                "weight": 0.2999531739548611
             }
         ]
     ]

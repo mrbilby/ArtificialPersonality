@@ -48,6 +48,31 @@
                 ],
                 "priority": 0.2549951009603564
             }
+        ],
+        [
+            4,
+            {
+                "message": "Hi Harold, how are you?",
+                "response": "Hello! I\u2019m just a program, so I don\u2019t have feelings, but I\u2019m here and ready to assist you. How can I help you today?",
+                "timestamp": "2024-12-04T11:02:00.429807",
+                "tags": [
+                    "greeting",
+                    "personal communication"
+                ],
+                "priority": 0.2549951024741464
+            }
+        ],
+        [
+            5,
+            {
+                "message": "bye",
+                "response": "Goodbye! If you need anything in the future, don't hesitate to reach out. Have a great day!",
+                "timestamp": "2024-12-04T11:06:02.801168",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.2549959295740004
+            }
         ]
     ],
     "edges": [
@@ -87,10 +112,31 @@
             }
         ],
         [
+            1,
+            5,
+            {
+                "weight": 0.7677014915624999
+            }
+        ],
+        [
             2,
             3,
             {
                 "weight": 0.29997791024652776
+            }
+        ],
+        [
+            3,
+            5,
+            {
+                "weight": 0.7694095567430556
+            }
+        ],
+        [
+            4,
+            5,
+            {
+                "weight": 0.29915843277430554
             }
         ]
     ]

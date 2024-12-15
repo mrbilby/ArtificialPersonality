@@ -26,5 +26,34 @@
             "recency": 0.9999673397357093,
             "user_importance": 0.0
         }
+    },
+    {
+        "user_message": "Hi Harold, how are you?",
+        "bot_response": "Hello! I\u2019m just a program, so I don\u2019t have feelings, but I\u2019m here and ready to assist you. How can I help you today?",
+        "tags": [
+            "greeting",
+            "personal communication"
+        ],
+        "timestamp": "2024-12-04T11:02:00.429807",
+        "priority_score": 0.2549951024741464,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999673498276427,
+            "user_importance": 0.0
+        }
+    },
+    {
+        "user_message": "bye",
+        "bot_response": "Goodbye! If you need anything in the future, don't hesitate to reach out. Have a great day!",
+        "tags": [
+            "bye"
+        ],
+        "timestamp": "2024-12-04T11:06:02.801168",
+        "priority_score": 0.2549959295740004,
+        "priority_factors": {
+            "emotional_impact": 0.3,
+            "recency": 0.9999728638266696,
+            "user_importance": 0.0
+        }
     }
 ]
