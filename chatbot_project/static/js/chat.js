@@ -84,7 +84,8 @@ async function sendMessage(isBye = false) {
     const message = isBye ? 'bye' : messageInput.value.trim();
     if (!message && !isBye) return;
 
-    const thinkingMode = document.getElementById('thinkingMode').checked;
+    const thinkingModeCheckbox = document.getElementById('thinkingMode');
+    const thinkingMode = thinkingModeCheckbox.checked;
     const thinkingTime = thinkingMode ? parseInt(document.getElementById('thinkingTime').value) : 0;
 
     if (thinkingMode && (thinkingTime < 1 || thinkingTime > 60)) {
@@ -149,15 +150,22 @@ async function sendMessage(isBye = false) {
             addMessage(`Error: ${data.error}`); // Display the error message in the chat
             addDiagnosticOutput(`Error: ${data.error}`); // Log it in the diagnostics panel
         } else {
+            addMessage(data.response);
+
+            // Handle termination (bye command)
+            if (data.terminated) {
+                addMessage('Chat has ended. Returning to main menu...');
+                setTimeout(() => {
+                    window.location.href = '/';
+                }, 2000); // Redirect to the main menu after 2 seconds
+                return; // Stop further execution
+            }
+
             if (data.thinking_complete) {
                 // Display the final thinking output
-                addMessage(data.response);
                 if (data.diagnostic_output) {
                     addDiagnosticOutput(data.diagnostic_output);
                 }
-            } else {
-                // Handle regular responses
-                addMessage(data.response);
             }
         }
     } catch (error) {
@@ -169,6 +177,10 @@ async function sendMessage(isBye = false) {
             clearInterval(progressInterval);
             const overlay = document.getElementById('thinkingOverlay');
             overlay.style.display = 'none';
+
+            // Uncheck the checkbox after completion and hide the input container
+            thinkingModeCheckbox.checked = false;
+            document.getElementById('thinkingTimeContainer').style.display = 'none';
         }
 
         // Re-enable input

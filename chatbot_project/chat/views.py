@@ -71,6 +71,14 @@ def chat(request):
                 chatbot_manager = ChatbotManager.get_instance()
                 chatbot = chatbot_manager.get_or_create_chatbot(personality_name)
 
+                # Handle "bye" command
+                if is_bye or (message.strip().lower() == 'bye'):
+                    return JsonResponse({
+                        'response': 'Goodbye! The chat session has been terminated.',
+                        'terminated': True,  # Signal the frontend to terminate the chat
+                    })
+
+                # Handle thinking mode
                 if thinking_mode and thinking_minutes > 0:
                     # Process thinking asynchronously
                     async def run_thinking():
@@ -97,7 +105,7 @@ def chat(request):
                             'diagnostic_output': diagnostic_output
                         })
 
-                # Regular message processing
+                # Handle regular message processing
                 if file_contents:
                     file_summary = summarize_files(file_contents, chatbot.client)
                     if file_summary:
@@ -112,7 +120,7 @@ def chat(request):
                 return JsonResponse({
                     'response': response,
                     'diagnostic_output': diagnostic_output,
-                    'terminated': is_bye or (message.strip().lower() == 'bye')
+                    'terminated': False  # Chat continues
                 })
 
         except Exception as e:
