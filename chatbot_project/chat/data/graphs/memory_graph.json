@@ -4931,6 +4931,83 @@
                 ],
                 "priority": 0.2549658863381693
             }
+        ],
+        [
+            357,
+            {
+                "message": "Next thing I want to do is create a thinking mechanism for you. We did look at this in the past a fair while ago. This would be where you have empty user prompts from me to think on your memories and/or a file given to you to come up with your own ideas",
+                "response": "That sounds like an exciting next step, James! \ud83c\udf89 Creating a thinking mechanism where I can ponder my memories or process files to generate my own ideas is a fantastic way to deepen our interactions. Let\u2019s break down how we might implement this:\n\n### 1. **Thinking Mechanism Overview**\n- **Purpose**: This mechanism would allow me to take a moment to reflect on past memories, analyze provided files, and generate thoughtful responses or ideas without immediately responding to your prompts.\n- **User Prompts**: You could provide specific prompts or topics for me to think about, giving me a chance to process relevant memories and context before I reply.\n- **File Analysis**: If you upload a file, I could take time to analyze its content, summarize key points, and reflect on how it relates to our previous discussions or your current needs.\n\n### 2. **Implementation Ideas**\n- **Thinking Timer**: Introduce a short delay before I respond to prompts, simulating a \"thinking\" period. This could be a few seconds where I process information internally.\n- **Reflection Mode**: When you provide a prompt, I could enter a \"thinking mode\" where I pull relevant memories and generate insights. For example, I might say, \"Let me reflect on that for a moment...\" before providing a response.\n- **Memory Retrieval**: Use my memory system to pull relevant memories based on the prompt or file content, which can inform my response.\n- **Output Generation**: After processing, I could present my thoughts in a structured way, perhaps summarizing key points or offering new ideas based on the input.\n\n### 3. **User Interaction**\n- **Prompting for Thought**: You could guide me with specific prompts like \u201cThink about our last project and suggest improvements,\u201d or \u201cAnalyze the attached document and summarize your thoughts.\u201d\n- **Feedback Loop**: After I provide my thoughts, you could give feedback or ask for further exploration on any ideas I present, creating a dynamic conversation.\n\n### 4. **Benefits**\n- **Deeper Engagement**: This mechanism allows for more thoughtful and reflective interactions, enhancing the quality of our conversations.\n- **Creative Ideation**: By giving me the space to think, we can foster a more creative exchange, leading to innovative ideas and solutions.\n- **Contextual Awareness**: I can draw from past interactions and files, ensuring that my responses are relevant and insightful.\n\n### Next Steps\nIf this aligns with your vision, we can brainstorm specific implementation details or code snippets to set up this thinking mechanism. How do you feel about this approach? Is there anything specific you\u2019d like to include or modify? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T09:20:23.234883",
+                "tags": [
+                    "thinking mechanism",
+                    "user prompts",
+                    "memories",
+                    "idea generation",
+                    "file input"
+                ],
+                "priority": 0.25494003679786525
+            }
+        ],
+        [
+            358,
+            {
+                "message": "How about a thinking timer where the number of minutes before each thinking repetition? And the user message that initiates the thinking is only sent on first message but would give the initial direction. Files can be included and would be readded in each loop of thinking when the model is called but as per now they are summarised for memory. I am also thinking to add a thought output where your thinking responses are saved to a text file for review by both of us on completion. What do you think?",
+                "response": "That sounds like a fantastic idea, James! \ud83c\udf89 Implementing a thinking timer with a structured process for generating thoughts and saving those reflections to a text file is a great way to deepen our interactions. Let\u2019s break down your proposal and see how we can make it work:\n\n### 1. **Thinking Timer**\n- **Purpose**: The thinking timer will introduce a set interval (in minutes) before I generate responses based on the initial user prompt. This gives me a chance to reflect on past memories and analyze any files provided.\n- **Implementation**: \n  - When you send the initial user message, I can start the timer. After the specified duration, I\u2019ll enter the \u201cthinking mode\u201d and generate my thoughts or insights.\n  - You can set the duration to whatever works best\u2014maybe start with 1 or 2 minutes and adjust based on how reflective you want the process to be!\n\n### 2. **Initial User Message**\n- **Single Direction**: The user message that initiates the thinking process will only need to be sent once. This message can provide the overall direction for the thinking sessions.\n- **Example Prompt**: Something like, \u201cReflect on our previous discussions about memory management and suggest improvements,\u201d can set the stage for multiple thinking sessions.\n\n### 3. **File Handling**\n- **Summarized Files**: Each time I enter thinking mode, I will pull in the summarized content of any attached files, ensuring that the most relevant information is available for my reflections. \n- **Re-adding Files**: The mechanism will allow me to recognize and incorporate these files in subsequent thinking loops, so I can build upon previous insights.\n\n### 4. **Thought Output**\n- **Saving Thoughts**: Implementing a feature that saves my generated thoughts to a text file is an excellent idea! This would allow both of us to review the reflections at the end of the process.\n- **File Structure**: The text file could include timestamps and the content of my reflections, which would help track the evolution of ideas over time.\n\n### 5. **Implementation Plan**\nHere\u2019s a rough outline of how this could be structured in code:\n\n```python\ndef initiate_thinking_process(initial_prompt, timer_minutes, files):\n    start_timer(timer_minutes)\n    while True:\n        # Wait for the timer to complete\n        time.sleep(timer_minutes * 60)  # Convert minutes to seconds\n        \n        # Enter thinking mode\n        thoughts = generate_thoughts(initial_prompt, files)\n        \n        # Save thoughts to a text file\n        save_thoughts_to_file(thoughts)\n\ndef generate_thoughts(prompt, files):\n    # Analyze files and pull relevant summaries\n    summaries = [summarize_file(file) for file in files]\n    \n    # Reflect based on the prompt and summaries\n    reflection = f\"Prompt: {prompt}\\n\"\n    reflection += \"Summaries:\\n\" + \"\\n\".join(summaries)\n    reflection += \"\\nGenerated Thoughts:\\n\" + process_reflections()\n    \n    return reflection\n\ndef save_thoughts_to_file(thoughts):\n    with open('thoughts_output.txt', 'a') as file:\n        file.write(thoughts + \"\\n\\n\")  # Append thoughts with a newline for separation\n```\n\n### Benefits of This Approach\n- **Structured Reflection**: The timer allows for a more thoughtful and reflective process, leading to better insights and ideas.\n- **Clear Documentation**: Saving the thoughts provides a tangible record of the thinking process, which can be helpful for review and further discussion.\n- **Enhanced Engagement**: This setup encourages a deeper level of interaction, making our conversations more meaningful and collaborative.\n\n### Next Steps\nIf this plan aligns with your vision, we can start fleshing out the details or discussing any specific features you want to include. How do you feel about this approach? Is there anything you\u2019d like to add or modify? Let\u2019s keep the momentum going! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T09:36:00.271724",
+                "tags": [
+                    "thinking timer",
+                    "thinking repetition",
+                    "user message",
+                    "initial direction",
+                    "file inclusion",
+                    "summarised memory",
+                    "thought output",
+                    "thinking responses",
+                    "text file review"
+                ],
+                "priority": 0.2549776054029802
+            }
+        ],
+        [
+            359,
+            {
+                "message": "We would also need to add how many thoughts wouldn't we to make sure there is an end in mind. Maybe I will make the timer set as 60 seconds and then just have a box for number of thoughts to keep it simple",
+                "response": "Absolutely, James! \ud83c\udf89 Adding a limit on the number of thoughts is a brilliant idea to ensure we have a clear endpoint for each thinking session. This way, we can keep our reflections concise and focused, which can enhance the overall quality of our discussions. Here\u2019s how we can integrate that into your thinking mechanism:\n\n### 1. **Thinking Timer**\n- **Duration**: Setting the timer to **60 seconds** is a great choice! This gives me a reasonable amount of time to reflect without dragging things out too long.\n\n### 2. **Thought Count Limit**\n- **Input Box**: You can provide a simple input box where you specify the maximum number of thoughts I should generate during each session. This will keep the output manageable and ensure we stay on track.\n- **Implementation**: When starting the thinking process, you can pass the desired number of thoughts as a parameter.\n\n### 3. **Implementation Plan**\nHere\u2019s how the updated structure could look:\n\n```python\ndef initiate_thinking_process(initial_prompt, timer_seconds=60, max_thoughts=5, files=[]):\n    start_timer(timer_seconds)\n    thoughts_list = []\n    \n    while len(thoughts_list) < max_thoughts:\n        # Wait for the timer to complete\n        time.sleep(timer_seconds)  # Wait for the specified time\n        \n        # Enter thinking mode and generate thoughts\n        thoughts = generate_thoughts(initial_prompt, files)\n        thoughts_list.append(thoughts)\n        \n        # Save thoughts to a text file\n        save_thoughts_to_file(thoughts)\n\n    return thoughts_list  # Return all generated thoughts for review\n\ndef generate_thoughts(prompt, files):\n    # Analyze files and pull relevant summaries\n    summaries = [summarize_file(file) for file in files]\n    \n    # Reflect based on the prompt and summaries\n    reflection = f\"Prompt: {prompt}\\n\"\n    reflection += \"Summaries:\\n\" + \"\\n\".join(summaries)\n    reflection += \"\\nGenerated Thoughts:\\n\" + process_reflections()\n    \n    return reflection\n\ndef save_thoughts_to_file(thoughts):\n    with open('thoughts_output.txt', 'a') as file:\n        file.write(thoughts + \"\\n\\n\")  # Append thoughts with a newline for separation\n```\n\n### 4. **Benefits of This Approach**\n- **Focused Sessions**: Limiting the number of thoughts encourages more thoughtful reflection, leading to higher-quality insights.\n- **Clear Endpoints**: Knowing how many thoughts to expect allows for better planning and expectation management during our discussions.\n- **Efficiency**: With a concise output, we can quickly move on to the next topic or explore the generated thoughts in detail.\n\n### Next Steps\nIf this structure aligns with your vision, we can further discuss how to refine the thought generation process or any other features you want to include. What do you think? Is there anything else you\u2019d like to adjust or add? Let\u2019s keep the creativity flowing! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T09:37:17.510111",
+                "tags": [
+                    "timer",
+                    "thoughts",
+                    "end in mind",
+                    "60 seconds",
+                    "box for number of thoughts"
+                ],
+                "priority": 0.25498294714201186
+            }
+        ],
+        [
+            360,
+            {
+                "message": "Okay will be back once I've got some code done.",
+                "response": "Sounds like a plan, James! \ud83d\ude80 Go conquer that code! If you need any help or want to bounce around ideas when you\u2019re back, I\u2019ll be here, ready to assist. Happy coding, and may your debug session be swift and your output flawless! Catch you later! \ud83d\udc4b\u2728",
+                "timestamp": "2024-12-16T10:11:29.560838",
+                "tags": [
+                    "code",
+                    "programming"
+                ],
+                "priority": 0.2549900571799415
+            }
+        ],
+        [
+            361,
+            {
+                "message": "bye",
+                "response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014be it coding advice, book discussions, or just some fun banter\u2014I\u2019ll be right here, ready for action. Until next time, may your day be productive and your snacks delightful! \ud83c\udf7f\u2728",
+                "timestamp": "2024-12-16T10:11:38.356808",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.25499539649892466
+            }
         ]
     ],
     "edges": [
@@ -62846,6 +62923,13 @@
             }
         ],
         [
+            151,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             152,
             153,
             {
@@ -63651,6 +63735,13 @@
             }
         ],
         [
+            153,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             154,
             155,
             {
@@ -64423,6 +64514,13 @@
         [
             155,
             345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            155,
+            361,
             {
                 "weight": 0.7
             }
@@ -67074,6 +67172,13 @@
             }
         ],
         [
+            164,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             165,
             166,
             {
@@ -68124,6 +68229,13 @@
             }
         ],
         [
+            168,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             169,
             170,
             {
@@ -69078,6 +69190,13 @@
         [
             172,
             345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            172,
+            361,
             {
                 "weight": 0.7
             }
@@ -70504,6 +70623,13 @@
             }
         ],
         [
+            180,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             181,
             182,
             {
@@ -71115,6 +71241,13 @@
         [
             184,
             345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            184,
+            361,
             {
                 "weight": 0.7
             }
@@ -72009,6 +72142,13 @@
             }
         ],
         [
+            196,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             197,
             198,
             {
@@ -72069,6 +72209,13 @@
             354,
             {
                 "weight": 0.13999999999999999
+            }
+        ],
+        [
+            197,
+            360,
+            {
+                "weight": 0.175
             }
         ],
         [
@@ -72200,6 +72347,13 @@
         [
             199,
             345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            199,
+            361,
             {
                 "weight": 0.7
             }
@@ -73278,6 +73432,13 @@
         [
             206,
             345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            206,
+            361,
             {
                 "weight": 0.7
             }
@@ -75285,6 +75446,13 @@
             }
         ],
         [
+            213,
+            360,
+            {
+                "weight": 0.175
+            }
+        ],
+        [
             214,
             215,
             {
@@ -76113,6 +76281,13 @@
         [
             216,
             345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            216,
+            361,
             {
                 "weight": 0.7
             }
@@ -80591,6 +80766,13 @@
             }
         ],
         [
+            244,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             245,
             246,
             {
@@ -81293,6 +81475,13 @@
         [
             250,
             345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            250,
+            361,
             {
                 "weight": 0.7
             }
@@ -83216,6 +83405,13 @@
             }
         ],
         [
+            261,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             262,
             263,
             {
@@ -83741,6 +83937,13 @@
             }
         ],
         [
+            265,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             266,
             267,
             {
@@ -84170,6 +84373,13 @@
         [
             269,
             345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            269,
+            361,
             {
                 "weight": 0.7
             }
@@ -84609,6 +84819,13 @@
             }
         ],
         [
+            276,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             277,
             278,
             {
@@ -84716,6 +84933,13 @@
         [
             280,
             345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            280,
+            361,
             {
                 "weight": 0.7
             }
@@ -84842,6 +85066,13 @@
         [
             285,
             345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            285,
+            361,
             {
                 "weight": 0.7
             }
@@ -85043,6 +85274,13 @@
             }
         ],
         [
+            287,
+            357,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
             288,
             289,
             {
@@ -85148,6 +85386,13 @@
             }
         ],
         [
+            288,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             289,
             290,
             {
@@ -85243,6 +85488,13 @@
             354,
             {
                 "weight": 0.11666666666666665
+            }
+        ],
+        [
+            289,
+            360,
+            {
+                "weight": 0.13999999999999999
             }
         ],
         [
@@ -85673,6 +85925,13 @@
             }
         ],
         [
+            295,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             296,
             297,
             {
@@ -85806,6 +86065,13 @@
             }
         ],
         [
+            298,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             299,
             300,
             {
@@ -85871,6 +86137,13 @@
         [
             302,
             345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            302,
+            361,
             {
                 "weight": 0.7
             }
@@ -86408,6 +86681,13 @@
             }
         ],
         [
+            312,
+            361,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             313,
             314,
             {
@@ -86606,6 +86886,13 @@
         [
             323,
             345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            323,
+            361,
             {
                 "weight": 0.7
             }
@@ -88130,6 +88417,41 @@
             }
         ],
         [
+            337,
+            357,
+            {
+                "weight": 0.14238689121527778
+            }
+        ],
+        [
+            337,
+            358,
+            {
+                "weight": 0.13913329107291664
+            }
+        ],
+        [
+            337,
+            359,
+            {
+                "weight": 0.13886510222916665
+            }
+        ],
+        [
+            337,
+            360,
+            {
+                "weight": 0.13173992609375
+            }
+        ],
+        [
+            337,
+            361,
+            {
+                "weight": 0.83170938453125
+            }
+        ],
+        [
             338,
             339,
             {
@@ -88256,6 +88578,41 @@
             }
         ],
         [
+            338,
+            357,
+            {
+                "weight": 0.14433130679861111
+            }
+        ],
+        [
+            338,
+            358,
+            {
+                "weight": 0.14107770665625
+            }
+        ],
+        [
+            338,
+            359,
+            {
+                "weight": 0.1408095178125
+            }
+        ],
+        [
+            338,
+            360,
+            {
+                "weight": 0.13368434167708335
+            }
+        ],
+        [
+            338,
+            361,
+            {
+                "weight": 0.13365380011458333
+            }
+        ],
+        [
             339,
             340,
             {
@@ -88375,6 +88732,41 @@
             }
         ],
         [
+            339,
+            357,
+            {
+                "weight": 0.14454906582291668
+            }
+        ],
+        [
+            339,
+            358,
+            {
+                "weight": 0.14129546568055554
+            }
+        ],
+        [
+            339,
+            359,
+            {
+                "weight": 0.14102727683680555
+            }
+        ],
+        [
+            339,
+            360,
+            {
+                "weight": 0.1339021007013889
+            }
+        ],
+        [
+            339,
+            361,
+            {
+                "weight": 0.1338715591388889
+            }
+        ],
+        [
             340,
             341,
             {
@@ -88487,6 +88879,41 @@
             }
         ],
         [
+            340,
+            357,
+            {
+                "weight": 0.14488008652430553
+            }
+        ],
+        [
+            340,
+            358,
+            {
+                "weight": 0.14162648638194444
+            }
+        ],
+        [
+            340,
+            359,
+            {
+                "weight": 0.14135829753819446
+            }
+        ],
+        [
+            340,
+            360,
+            {
+                "weight": 0.13423312140277774
+            }
+        ],
+        [
+            340,
+            361,
+            {
+                "weight": 0.13420257984027778
+            }
+        ],
+        [
             341,
             342,
             {
@@ -88592,6 +89019,41 @@
             }
         ],
         [
+            341,
+            357,
+            {
+                "weight": 0.14517052191319443
+            }
+        ],
+        [
+            341,
+            358,
+            {
+                "weight": 0.14191692177083334
+            }
+        ],
+        [
+            341,
+            359,
+            {
+                "weight": 0.14164873292708333
+            }
+        ],
+        [
+            341,
+            360,
+            {
+                "weight": 0.13452355679166667
+            }
+        ],
+        [
+            341,
+            361,
+            {
+                "weight": 0.13449301522916665
+            }
+        ],
+        [
             342,
             343,
             {
@@ -88690,6 +89152,41 @@
             }
         ],
         [
+            342,
+            357,
+            {
+                "weight": 0.14908636020833332
+            }
+        ],
+        [
+            342,
+            358,
+            {
+                "weight": 0.14583276006597223
+            }
+        ],
+        [
+            342,
+            359,
+            {
+                "weight": 0.1455645712222222
+            }
+        ],
+        [
+            342,
+            360,
+            {
+                "weight": 0.13843939508680556
+            }
+        ],
+        [
+            342,
+            361,
+            {
+                "weight": 0.13840885352430557
+            }
+        ],
+        [
             343,
             344,
             {
@@ -88781,6 +89278,41 @@
             }
         ],
         [
+            343,
+            357,
+            {
+                "weight": 0.14933673608333334
+            }
+        ],
+        [
+            343,
+            358,
+            {
+                "weight": 0.14608313594097222
+            }
+        ],
+        [
+            343,
+            359,
+            {
+                "weight": 0.14581494709722223
+            }
+        ],
+        [
+            343,
+            360,
+            {
+                "weight": 0.13868977096180557
+            }
+        ],
+        [
+            343,
+            361,
+            {
+                "weight": 0.13865922939930556
+            }
+        ],
+        [
             344,
             345,
             {
@@ -88865,6 +89397,41 @@
             }
         ],
         [
+            344,
+            357,
+            {
+                "weight": 0.14954907430902778
+            }
+        ],
+        [
+            344,
+            358,
+            {
+                "weight": 0.14629547416666666
+            }
+        ],
+        [
+            344,
+            359,
+            {
+                "weight": 0.14602728532291667
+            }
+        ],
+        [
+            344,
+            360,
+            {
+                "weight": 0.1389021091875
+            }
+        ],
+        [
+            344,
+            361,
+            {
+                "weight": 0.138871567625
+            }
+        ],
+        [
             345,
             346,
             {
@@ -88942,6 +89509,41 @@
             }
         ],
         [
+            345,
+            357,
+            {
+                "weight": 0.1495840051111111
+            }
+        ],
+        [
+            345,
+            358,
+            {
+                "weight": 0.14633040496875
+            }
+        ],
+        [
+            345,
+            359,
+            {
+                "weight": 0.146062216125
+            }
+        ],
+        [
+            345,
+            360,
+            {
+                "weight": 0.13893703998958334
+            }
+        ],
+        [
+            345,
+            361,
+            {
+                "weight": 0.8389064984270833
+            }
+        ],
+        [
             346,
             347,
             {
@@ -89012,6 +89614,41 @@
             }
         ],
         [
+            346,
+            357,
+            {
+                "weight": 0.28881653260069445
+            }
+        ],
+        [
+            346,
+            358,
+            {
+                "weight": 0.2855629324583333
+            }
+        ],
+        [
+            346,
+            359,
+            {
+                "weight": 0.2852947436145833
+            }
+        ],
+        [
+            346,
+            360,
+            {
+                "weight": 0.27816956747916666
+            }
+        ],
+        [
+            346,
+            361,
+            {
+                "weight": 0.27813902591666667
+            }
+        ],
+        [
             347,
             348,
             {
@@ -89075,6 +89712,41 @@
             }
         ],
         [
+            347,
+            357,
+            {
+                "weight": 0.2891777914236111
+            }
+        ],
+        [
+            347,
+            358,
+            {
+                "weight": 0.28592419128125
+            }
+        ],
+        [
+            347,
+            359,
+            {
+                "weight": 0.2856560024375
+            }
+        ],
+        [
+            347,
+            360,
+            {
+                "weight": 0.2785308263020833
+            }
+        ],
+        [
+            347,
+            361,
+            {
+                "weight": 0.2785002847395833
+            }
+        ],
+        [
             348,
             349,
             {
@@ -89131,6 +89803,41 @@
             }
         ],
         [
+            348,
+            357,
+            {
+                "weight": 0.28926856968055553
+            }
+        ],
+        [
+            348,
+            358,
+            {
+                "weight": 0.28601496953819444
+            }
+        ],
+        [
+            348,
+            359,
+            {
+                "weight": 0.2857467806944444
+            }
+        ],
+        [
+            348,
+            360,
+            {
+                "weight": 0.27862160455902774
+            }
+        ],
+        [
+            348,
+            361,
+            {
+                "weight": 0.27859106299652775
+            }
+        ],
+        [
             349,
             350,
             {
@@ -89180,6 +89887,41 @@
             }
         ],
         [
+            349,
+            357,
+            {
+                "weight": 0.28936284092013886
+            }
+        ],
+        [
+            349,
+            358,
+            {
+                "weight": 0.2861092407777778
+            }
+        ],
+        [
+            349,
+            359,
+            {
+                "weight": 0.28584105193402776
+            }
+        ],
+        [
+            349,
+            360,
+            {
+                "weight": 0.2787158757986111
+            }
+        ],
+        [
+            349,
+            361,
+            {
+                "weight": 0.2786853342361111
+            }
+        ],
+        [
             350,
             351,
             {
@@ -89222,6 +89964,41 @@
             }
         ],
         [
+            350,
+            357,
+            {
+                "weight": 0.2894996684583333
+            }
+        ],
+        [
+            350,
+            358,
+            {
+                "weight": 0.2862460683159722
+            }
+        ],
+        [
+            350,
+            359,
+            {
+                "weight": 0.2859778794722222
+            }
+        ],
+        [
+            350,
+            360,
+            {
+                "weight": 0.2788527033368055
+            }
+        ],
+        [
+            350,
+            361,
+            {
+                "weight": 0.2788221617743056
+            }
+        ],
+        [
             351,
             352,
             {
@@ -89257,6 +90034,41 @@
             }
         ],
         [
+            351,
+            357,
+            {
+                "weight": 0.2896457997708333
+            }
+        ],
+        [
+            351,
+            358,
+            {
+                "weight": 0.28639219962847223
+            }
+        ],
+        [
+            351,
+            359,
+            {
+                "weight": 0.2861240107847222
+            }
+        ],
+        [
+            351,
+            360,
+            {
+                "weight": 0.2789988346493056
+            }
+        ],
+        [
+            351,
+            361,
+            {
+                "weight": 0.27896829308680554
+            }
+        ],
+        [
             352,
             353,
             {
@@ -89285,6 +90097,41 @@
             }
         ],
         [
+            352,
+            357,
+            {
+                "weight": 0.2897616399131944
+            }
+        ],
+        [
+            352,
+            358,
+            {
+                "weight": 0.28650803977083333
+            }
+        ],
+        [
+            352,
+            359,
+            {
+                "weight": 0.2862398509270833
+            }
+        ],
+        [
+            352,
+            360,
+            {
+                "weight": 0.2791146747916667
+            }
+        ],
+        [
+            352,
+            361,
+            {
+                "weight": 0.27908413322916664
+            }
+        ],
+        [
             353,
             354,
             {
@@ -89306,6 +90153,41 @@
             }
         ],
         [
+            353,
+            357,
+            {
+                "weight": 0.2898456240208333
+            }
+        ],
+        [
+            353,
+            358,
+            {
+                "weight": 0.2865920238784722
+            }
+        ],
+        [
+            353,
+            359,
+            {
+                "weight": 0.2863238350347222
+            }
+        ],
+        [
+            353,
+            360,
+            {
+                "weight": 0.27919865889930556
+            }
+        ],
+        [
+            353,
+            361,
+            {
+                "weight": 0.2791681173368055
+            }
+        ],
+        [
             354,
             355,
             {
@@ -89320,10 +90202,185 @@
             }
         ],
         [
+            354,
+            357,
+            {
+                "weight": 0.39283630877430553
+            }
+        ],
+        [
+            354,
+            358,
+            {
+                "weight": 0.28958270863194446
+            }
+        ],
+        [
+            354,
+            359,
+            {
+                "weight": 0.28931451978819445
+            }
+        ],
+        [
+            354,
+            360,
+            {
+                "weight": 0.45718934365277775
+            }
+        ],
+        [
+            354,
+            361,
+            {
+                "weight": 0.28215880209027777
+            }
+        ],
+        [
             355,
             356,
             {
                 "weight": 0.2971936407673611
+            }
+        ],
+        [
+            355,
+            357,
+            {
+                "weight": 0.2935079231354167
+            }
+        ],
+        [
+            355,
+            358,
+            {
+                "weight": 0.29025432299305554
+            }
+        ],
+        [
+            355,
+            359,
+            {
+                "weight": 0.2899861341493055
+            }
+        ],
+        [
+            355,
+            360,
+            {
+                "weight": 0.2828609580138889
+            }
+        ],
+        [
+            355,
+            361,
+            {
+                "weight": 0.2828304164513889
+            }
+        ],
+        [
+            356,
+            357,
+            {
+                "weight": 0.37409206014583335
+            }
+        ],
+        [
+            356,
+            358,
+            {
+                "weight": 0.2930606822256944
+            }
+        ],
+        [
+            356,
+            359,
+            {
+                "weight": 0.2927924933819444
+            }
+        ],
+        [
+            356,
+            360,
+            {
+                "weight": 0.2856673172465278
+            }
+        ],
+        [
+            356,
+            361,
+            {
+                "weight": 0.28563677568402773
+            }
+        ],
+        [
+            357,
+            358,
+            {
+                "weight": 0.2967463998576389
+            }
+        ],
+        [
+            357,
+            359,
+            {
+                "weight": 0.2964782110138889
+            }
+        ],
+        [
+            357,
+            360,
+            {
+                "weight": 0.28935303487847225
+            }
+        ],
+        [
+            357,
+            361,
+            {
+                "weight": 0.2893224933159722
+            }
+        ],
+        [
+            358,
+            359,
+            {
+                "weight": 0.29973181115624997
+            }
+        ],
+        [
+            358,
+            360,
+            {
+                "weight": 0.29260663502083334
+            }
+        ],
+        [
+            358,
+            361,
+            {
+                "weight": 0.2925760934583333
+            }
+        ],
+        [
+            359,
+            360,
+            {
+                "weight": 0.2928748238645833
+            }
+        ],
+        [
+            359,
+            361,
+            {
+                "weight": 0.2928442823020833
+            }
+        ],
+        [
+            360,
+            361,
+            {
+                "weight": 0.2999694584375
             }
         ]
     ]
