@@ -392,3 +392,56 @@ body {
 .remove-file:hover {
     color: #c82333;
 }
+.thinking-mode-container {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #dee2e6;
+}
+
+.thinking-mode-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.thinking-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.thinking-time-input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.thinking-time-input input {
+    width: 80px;
+    padding: 5px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+/* Add these styles to make the controls more visible */
+#thinkingMode {
+    width: 20px;
+    height: 20px;
+}
+
+.thinking-mode-controls label {
+    font-size: 14px;
+    font-weight: 500;
+}
+.thinking-progress-counter {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+    font-family: monospace;
+    background: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-align: center;
+}

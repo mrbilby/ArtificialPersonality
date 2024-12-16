@@ -74,15 +74,54 @@ function addDiagnosticOutput(output) {
     diagnosticOutput.scrollTop = diagnosticOutput.scrollHeight;
 }
 
+// Add thinking mode event listener
+document.getElementById('thinkingMode').addEventListener('change', function(e) {
+    const timeContainer = document.getElementById('thinkingTimeContainer');
+    timeContainer.style.display = e.target.checked ? 'block' : 'none';
+});
+
 async function sendMessage(isBye = false) {
     const message = isBye ? 'bye' : messageInput.value.trim();
-    if (!message) return;
-    
+    if (!message && !isBye) return;
+
+    const thinkingMode = document.getElementById('thinkingMode').checked;
+    const thinkingTime = thinkingMode ? parseInt(document.getElementById('thinkingTime').value) : 0;
+
+    if (thinkingMode && (thinkingTime < 1 || thinkingTime > 60)) {
+        addMessage('Please enter a valid thinking time between 1 and 60 minutes.');
+        return;
+    }
+
+    // Add the user's message to the chat
     addMessage(message, true);
-    messageInput.value = '';
-    
+    messageInput.value = ''; // Clear the input field
+
+    let progressInterval; // Declare the interval variable
+
+    if (thinkingMode) {
+        // Show the thinking overlay and disable input
+        const overlay = document.getElementById('thinkingOverlay');
+        overlay.style.display = 'block';
+        const progressDiv = document.getElementById('thinkingProgress');
+        progressDiv.textContent = `Starting the thinking process...`;
+
+        let currentMinute = 0;
+        const totalMinutes = thinkingTime;
+
+        // Update the progress counter every minute
+        progressInterval = setInterval(() => {
+            if (currentMinute >= totalMinutes) {
+                clearInterval(progressInterval);
+                progressDiv.textContent = `Thinking process completed. Waiting for final response...`;
+                return;
+            }
+            currentMinute++;
+            progressDiv.textContent = `Thinking iteration ${currentMinute}/${totalMinutes}...`;
+        }, 60000); // Update every minute
+    }
+
     try {
-        // Include uploadedFiles in the request body so the server can integrate them
+        // Make the POST request to the server
         const response = await fetch('/chat/', {
             method: 'POST',
             headers: {
@@ -93,30 +132,49 @@ async function sendMessage(isBye = false) {
                 personality: personalityName,
                 is_bye: isBye,
                 diagnostic_mode: localStorage.getItem('diagnosticMode') === 'true',
-                file_contents: uploadedFiles // Send all uploaded files with each message
-            })
+                file_contents: uploadedFiles,
+                thinking_mode: thinkingMode,
+                thinking_minutes: thinkingTime,
+            }),
         });
-        
+
         const data = await response.json();
+
         if (data.error) {
-            addMessage('Error: ' + data.error);
-            addDiagnosticOutput('Error: ' + data.error);
+            addMessage(`Error: ${data.error}`); // Display the error message in the chat
+            addDiagnosticOutput(`Error: ${data.error}`); // Log it in the diagnostics panel
         } else {
-            addMessage(data.response);
-            if (data.diagnostic_output) {
-                addDiagnosticOutput(data.diagnostic_output);
-            }
-            if (data.terminated) {
-                setTimeout(() => {
-                    window.location.href = '/';
-                }, 2000);
+            if (data.thinking_complete) {
+                // Display the final thinking output
+                addMessage(data.response);
+                if (data.diagnostic_output) {
+                    addDiagnosticOutput(data.diagnostic_output);
+                }
+            } else {
+                // Handle regular responses
+                addMessage(data.response);
             }
         }
     } catch (error) {
         addMessage('Error: Could not send message');
-        addDiagnosticOutput('Error: ' + error.message);
+        addDiagnosticOutput(`Error: ${error.message}`);
+    } finally {
+        if (thinkingMode) {
+            // Stop the progress counter and hide the overlay
+            clearInterval(progressInterval);
+            const overlay = document.getElementById('thinkingOverlay');
+            overlay.style.display = 'none';
+        }
+
+        // Re-enable input
+        document.querySelector('.chat-input').classList.remove('thinking');
+        messageInput.disabled = false;
     }
 }
+
+
+
+
 
 function clearDiagnostics() {
     const diagnosticOutput = document.getElementById('diagnosticOutput');
@@ -149,8 +207,6 @@ async function readFileContent(file) {
     });
 }
 
-// We no longer send files to the server upon drop.
-// Instead, we just store them in 'uploadedFiles' and display them in the UI.
 async function handleFiles(files) {
     const fileList = document.getElementById('fileList');
     const MAX_FILE_SIZE = 100 * 1024; // 100KB
@@ -167,7 +223,7 @@ async function handleFiles(files) {
             // Store file content in memory for later use
             uploadedFiles[file.name] = content;
 
-            // Display the file in the UI, but do not send to the server yet
+            // Display the file in the UI
             const fileEntry = document.createElement('div');
             fileEntry.className = 'file-entry';
             fileEntry.innerHTML = `

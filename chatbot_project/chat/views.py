@@ -17,6 +17,8 @@ import io
 import sys
 from contextlib import redirect_stdout
 from io import StringIO
+import asyncio
+from datetime import datetime
 
 class OutputCapture:
     def __init__(self):
@@ -56,31 +58,60 @@ def chat(request):
             with redirect_stdout(stdout_capture):
                 print("TESTING DIAGNOSTIC OUTPUT - IF YOU SEE THIS, CAPTURE WORKS")
 
+                # Extract data from the request
                 data = json.loads(request.body)
                 message = data.get('message', '')
                 personality_name = data.get('personality', 'default')
                 is_bye = data.get('is_bye', False)
-
-                # This is the new field we expect from the updated frontend logic.
-                # It's a dictionary of filename: content pairs.
                 file_contents = data.get('file_contents', {})
+                thinking_mode = data.get('thinking_mode', False)
+                thinking_minutes = data.get('thinking_minutes', 0)
+                diagnostic_mode = data.get('diagnostic_mode', False)
 
-                # Initialize chatbot instance early to use for summarization
+                # Initialize chatbot manager and chatbot instance
                 chatbot_manager = ChatbotManager.get_instance()
                 chatbot = chatbot_manager.get_or_create_chatbot(personality_name)
 
-                # If there are uploaded files, get their summary instead of raw contents
+                if thinking_mode and thinking_minutes > 0:
+                    # Process thinking asynchronously
+                    async def run_thinking():
+                        return await process_thinking(
+                            message, file_contents, thinking_minutes, personality_name, chatbot.client
+                        )
+
+                    # Execute the asynchronous function
+                    success, result = asyncio.run(run_thinking())
+                    diagnostic_output = stdout_capture.getvalue()
+
+                    if not diagnostic_mode:
+                        diagnostic_output = None
+
+                    if success:
+                        # Return final thinking output
+                        return JsonResponse({
+                            'response': result,
+                            'thinking_complete': True,
+                            'diagnostic_output': diagnostic_output
+                        })
+                    else:
+                        # Return error during thinking process
+                        return JsonResponse({
+                            'error': f"Error during thinking process: {result}",
+                            'diagnostic_output': diagnostic_output
+                        })
+
+                # Regular message processing
                 if file_contents:
+                    # Summarize file contents if provided
                     file_summary = summarize_files(file_contents, chatbot.client)
                     if file_summary:
                         message += f"\n\nFile Contents Summary:\n{file_summary}"
 
-                # Process the user's query with the summarized message
+                # Process the message through the chatbot
                 response = chatbot.process_query(message)
-
                 diagnostic_output = stdout_capture.getvalue()
-                
-                if not data.get('diagnostic_mode', False):
+
+                if not diagnostic_mode:
                     diagnostic_output = None
 
                 return JsonResponse({
@@ -90,13 +121,18 @@ def chat(request):
                 })
 
         except Exception as e:
+            # Catch and return any server-side errors
             return JsonResponse({'error': str(e)}, status=500)
-    
+
     elif request.method == 'GET':
+        # Render the chat interface for GET requests
         personality_name = request.GET.get('personality', 'default')
         return render(request, 'chat/chat.html', {'personality_name': personality_name})
-    
+
+    # Return a 405 for unsupported request methods
     return HttpResponse(status=405)
+
+
 
 def create_personality(request):
     if request.method == 'POST':
@@ -189,5 +225,59 @@ def summarize_files(file_contents: dict, client) -> str:
         print(f"[Error] Failed to summarize files: {e}")
         return "Error: Could not generate file summary."
 
+async def process_thinking(message, file_contents, minutes, personality_name, client):
+    """Process thinking iterations with proper delays and context building."""
+    final_output = ""  # Collect all thoughts here
+
+    try:
+        chatbot_manager = ChatbotManager.get_instance()
+        chatbot = chatbot_manager.get_or_create_chatbot(personality_name)
+        
+        # Initialize context with base message and any file contents
+        running_context = message
+        if file_contents:
+            file_summary = summarize_files(file_contents, client)
+            running_context += f"\n\nContext from files:\n{file_summary}"
+        
+        previous_thoughts = []
+        iterations = int(minutes)
+        
+        for i in range(iterations):
+            if previous_thoughts:
+                thinking_prompt = (
+                    f"Previous thoughts:\n"
+                    f"{chr(10).join(previous_thoughts)}\n\n"
+                    f"Building upon these previous thoughts (iteration {i + 1}/{iterations}):\n"
+                    f"Continue developing ideas about: {running_context}"
+                )
+            else:
+                thinking_prompt = (
+                    f"Initial thinking iteration {i + 1}/{iterations}:\n"
+                    f"Begin deep analysis of: {running_context}"
+                )
+            
+            # Generate new thought
+            response = chatbot.process_query(thinking_prompt)
+            
+            # Append to final output
+            final_output += f"=== Thought {i + 1}/{iterations} ===\n{response}\n\n"
+
+            # Store thought for the next iteration
+            previous_thoughts.append(f"Thought {i + 1}: {response}")
+            
+            # Wait before the next iteration (unless it's the last one)
+            if i < iterations - 1:
+                await asyncio.sleep(30)
+
+        # Return the collected thoughts
+        return True, final_output
+
+    except Exception as e:
+        print(f"Error in thinking process: {e}")
+        return False, str(e)
+
+
+
+        
 def create_from_epub(request):
     return render(request, 'chat/create_from_epub.html')
