@@ -65,18 +65,17 @@ def chat(request):
                 # It's a dictionary of filename: content pairs.
                 file_contents = data.get('file_contents', {})
 
-                # If there are uploaded files, append their contents to the message
-                if file_contents:
-                    # Add a section to the message with all file contents
-                    message += "\n\nUploaded File Contents:\n"
-                    for fname, fcontent in file_contents.items():
-                        message += f"Filename: {fname}\n{fcontent}\n\n"
-
-                # Initialize and get the chatbot instance
+                # Initialize chatbot instance early to use for summarization
                 chatbot_manager = ChatbotManager.get_instance()
                 chatbot = chatbot_manager.get_or_create_chatbot(personality_name)
 
-                # Process the user's query with the possibly augmented message
+                # If there are uploaded files, get their summary instead of raw contents
+                if file_contents:
+                    file_summary = summarize_files(file_contents, chatbot.client)
+                    if file_summary:
+                        message += f"\n\nFile Contents Summary:\n{file_summary}"
+
+                # Process the user's query with the summarized message
                 response = chatbot.process_query(message)
 
                 diagnostic_output = stdout_capture.getvalue()
@@ -153,6 +152,42 @@ def create_personality(request):
             return JsonResponse({'error': str(e)}, status=500)
             
     return render(request, 'chat/create_personality.html')
+
+def summarize_files(file_contents: dict, client) -> str:
+    """
+    Summarize the contents of uploaded files using the model.
+    Returns a synopsis of the files' contents.
+    """
+    if not file_contents:
+        return ""
+    
+    # Create a prompt for summarization
+    files_text = "\n\n".join([
+        f"File: {fname}\nContents:\n{content}"
+        for fname, content in file_contents.items()
+    ])
+    
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "Provide a concise synopsis of the following file(s). Focus on key points and main content. Start with 'Files Synopsis:' followed by your summary."
+                },
+                {
+                    "role": "user",
+                    "content": files_text
+                }
+            ],
+            max_tokens=500,
+            temperature=0.3
+        )
+        
+        return response.choices[0].message.content.strip()
+    except Exception as e:
+        print(f"[Error] Failed to summarize files: {e}")
+        return "Error: Could not generate file summary."
 
 def create_from_epub(request):
     return render(request, 'chat/create_from_epub.html')

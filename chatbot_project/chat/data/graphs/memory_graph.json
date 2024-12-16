@@ -4740,6 +4740,197 @@
                 ],
                 "priority": 0.25499512791866963
             }
+        ],
+        [
+            346,
+            {
+                "message": "Hi Bob, ready for some tests?",
+                "response": "Hey, James! \ud83c\udf89 Absolutely, I\u2019m ready for some tests! What are we diving into today? File uploads, code reviews, or perhaps something else entirely? Let\u2019s get this show on the road! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T08:26:42.396272",
+                "tags": [
+                    "tests"
+                ],
+                "priority": 0.25499461082730873
+            }
+        ],
+        [
+            347,
+            {
+                "message": "Okay so the test will be over a few messages. I will send you a file and ask you what it covers. Then if that works that message should be saved in your memory but the file should be summarised. So the next message I'll test your memory to see if the summarisation worked. Make sense?",
+                "response": "Got it, James! \ud83c\udf89 We\u2019re all set for your test! You\u2019ll send me a file, I\u2019ll summarize it, and we\u2019ll save that message in my memory. Then, we can check if the summarization worked as intended in the next message. It\u2019s like a memory game with a twist! \ud83e\udde0\u2728\n\nWhenever you\u2019re ready, send over the file, and let\u2019s get started! \ud83d\ude80",
+                "timestamp": "2024-12-16T08:28:26.438813",
+                "tags": [
+                    "test",
+                    "file",
+                    "summarisation",
+                    "memory",
+                    "messages"
+                ],
+                "priority": 0.2549942615893291
+            }
+        ],
+        [
+            348,
+            {
+                "message": "To be clear a function in your back end should do the summarisation",
+                "response": "Absolutely, James! \ud83c\udf89 A dedicated function in the back end will handle the summarization process efficiently. Here\u2019s how we can outline that:\n\n### Summarization Function Overview\n\n1. **Function Definition**:\n   - Create a function specifically for summarizing the content of the attachments. This function will take the text of the attachment as input and return a summarized version.\n\n2. **Integration with the Model**:\n   - The function will interact with the summarization model (like an OpenAI model) to process the text. This can involve sending the text to the model and receiving the summary back.\n\n3. **Memory Management**:\n   - After the summarization, the function can store the summarized content in memory, along with any relevant metadata (like the original file name or a reference to the attachment).\n\n### Example Function Structure\n\nHere\u2019s a rough outline of what this summarization function might look like:\n\n```python\ndef summarize_attachment(file_content):\n    # Step 1: Send the content to the model for summarization\n    summarized_content = call_summary_model(file_content)\n    \n    # Step 2: Store the summarized content in memory\n    store_in_memory(summarized_content)\n\n    return summarized_content\n\ndef call_summary_model(content):\n    # Code to send content to the summarization model\n    # This might include handling API calls, processing responses, etc.\n    return model_summary_response\n\ndef store_in_memory(summary):\n    # Code to save the summarized content in memory for future reference\n```\n\n### Workflow\n1. **File Upload**: When a file is uploaded, its content is passed to the `summarize_attachment` function.\n2. **Summarization**: The function generates a summary using the model.\n3. **Storage**: The summarized text is then saved in memory, while the original content can either be stored (if needed) or discarded based on your memory management strategy.\n\n### Benefits\n- **Modularity**: Keeping the summarization in its own function makes it easier to test and modify. If you decide to change the summarization method, you can do so without affecting other parts of the code.\n- **Efficiency**: This approach ensures that only relevant, summarized information is stored, optimizing memory usage.\n\nLet me know if you have any specific requirements or modifications in mind for this summarization function! Once you're ready, feel free to send over the file for testing! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T08:28:52.582951",
+                "tags": [
+                    "function",
+                    "back end",
+                    "summarisation"
+                ],
+                "priority": 0.25498418523352695
+            }
+        ],
+        [
+            349,
+            {
+                "message": "I've already written it! Are you ready for the test!",
+                "response": "Absolutely, James! \ud83c\udf89 I\u2019m ready for the test! Go ahead and send over the file, and we\u2019ll see how well the summarization and memory functions work. Let's do this! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T08:29:19.733068",
+                "tags": [
+                    "test readiness"
+                ],
+                "priority": 0.25499416598733016
+            }
+        ],
+        [
+            350,
+            {
+                "message": "Okay Bob, what is in this file?\n\nFile Contents Summary:\nFiles Synopsis: \nThe `urls.py` file defines the URL routing for a Django web application. It imports necessary modules and specifies a list of URL patterns that connect specific paths to their corresponding view functions. The main routes include the index page (`''`), a chat page (`'chat/'`), a page for creating a personality (`'create_personality/'`), and a page for creating content from an EPUB file (`'create_from_epub/'`). Each route is associated with a view function from the `views` module and is given a name for easy reference.",
+                "response": "Great summary of the file, James! \ud83c\udf89 Here\u2019s what\u2019s in the `urls.py` file based on your synopsis:\n\n### Contents of the `urls.py` File\n\n1. **Purpose**: This file is responsible for defining the URL routing for a Django web application. It establishes how different URL paths correspond to specific views or functions within the application.\n\n2. **Imports**:\n   - It imports necessary modules from Django, specifically `path` for defining URL patterns and the `views` module, which contains the functions that will handle requests for each URL.\n\n3. **URL Patterns**:\n   - The `urlpatterns` list defines several routes:\n     - `path('', views.index, name='index')`: This maps the root URL to the `index` view, serving as the main landing page.\n     - `path('chat/', views.chat, name='chat')`: This route directs users to the chat feature of the application.\n     - `path('create_personality/', views.create_personality, name='create_personality')`: This allows users to create a new personality through the application.\n     - `path('create_from_epub/', views.create_from_epub, name='create_from_epub')`: This route enables users to create content from an EPUB file.\n\n4. **View Functions**: Each URL pattern is associated with a specific view function from the `views` module, which contains the logic for what happens when a user navigates to that URL.\n\n### Summary\nIn essence, the `urls.py` file is a crucial part of your Django application, managing how users interact with different features based on their navigation. It helps ensure that users can easily access the chat functionality and personality creation features, among other things.\n\nIf you'd like to proceed with testing my memory of this summarization or have any changes in mind, just let me know! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T08:29:59.139399",
+                "tags": [
+                    "urls.py",
+                    "django web application",
+                    "url routing",
+                    "url patterns",
+                    "view functions",
+                    "index page",
+                    "chat page",
+                    "create personality",
+                    "create content",
+                    "epub file"
+                ],
+                "priority": 0.28998257833789987
+            }
+        ],
+        [
+            351,
+            {
+                "message": "Great! That works! Now what did we just discuss?\n\nFile Contents Summary:\nFiles Synopsis: \nThe `urls.py` file is a Django URL configuration that maps specific URL paths to corresponding view functions within the application. It includes the following routes: the root path (`''`) directs to the `index` view, the `chat/` path directs to the `chat` view, the `create_personality/` path directs to the `create_personality` view, and the `create_from_epub/` path directs to the `create_from_epub` view. Each route is assigned a unique name for easy reference within the application.",
+                "response": "Fantastic! \ud83c\udf89 Here\u2019s what we just discussed regarding the `urls.py` file:\n\n### Summary of Our Discussion\n- We talked about the **`urls.py` file** in your Django application, which serves as the URL configuration.\n- This file maps specific URL paths to corresponding view functions, allowing users to navigate through different features of the application.\n  \n### Key Routes Defined:\n1. **Root Path (`''`)**: Directs to the `index` view, which serves as the main landing page.\n2. **Chat Path (`'chat/'`)**: Directs users to the `chat` view, where the chat functionality is available.\n3. **Create Personality Path (`'create_personality/'`)**: Leads to the `create_personality` view, allowing users to create new personalities.\n4. **Create from EPUB Path (`'create_from_epub/'`)**: This path directs to the `create_from_epub` view, enabling users to generate content from EPUB files.\n\n- Each route is assigned a unique name for easy reference within the application, which is essential for routing and template rendering.\n\n### Conclusion\nThis configuration is crucial for managing user interactions and ensuring that navigation within your application is seamless and intuitive.\n\nIf you have any further tests or topics you want to explore, just let me know! I'm here and ready to help! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T08:30:41.225217",
+                "tags": [
+                    "django",
+                    "url configuration",
+                    "view functions",
+                    "routes",
+                    "index view",
+                    "chat view",
+                    "create_personality view",
+                    "create_from_epub view",
+                    "unique names"
+                ],
+                "priority": 0.3599802673409854
+            }
+        ],
+        [
+            352,
+            {
+                "message": "Okay now I am going to leave and review the JSON of your memories\n\nFile Contents Summary:\nFiles Synopsis: \nThe `urls.py` file is part of a Django web application and defines the URL routing for the application. It imports necessary modules and specifies a list of URL patterns that map to corresponding view functions. The defined routes include the home page (`''`), a chat page (`'chat/'`), a page for creating a personality (`'create_personality/'`), and a page for creating content from an EPUB file (`'create_from_epub/'`). Each route is associated with a specific view function from the `views` module, allowing for organized handling of web requests.",
+                "response": "Got it, James! \ud83c\udf89 It looks like you\u2019re set to review the JSON of my memories. Here\u2019s a recap of what we discussed regarding the `urls.py` file:\n\n### Summary of `urls.py`\n\n1. **Purpose**: Defines the URL routing for a Django web application.\n2. **Imports**: Necessary modules are imported, including `path` for URL patterns and the `views` module for handling requests.\n3. **Defined Routes**:\n   - **Home Page (`''`)**: Routes to the `index` view.\n   - **Chat Page (`'chat/'`)**: Routes to the `chat` view.\n   - **Create Personality Page (`'create_personality/'`)**: Routes to the `create_personality` view.\n   - **Create from EPUB Page (`'create_from_epub/'`)**: Routes to the `create_from_epub` view.\n4. **View Functions**: Each route is linked to a specific function in the `views` module, ensuring organized handling of web requests.\n\nThis summary captures the essence of our discussion, and I\u2019m ready to assist further whenever you need! If you find anything interesting in the JSON or have questions upon your return, just let me know. Have a great review session! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T08:31:14.587178",
+                "tags": [
+                    "django",
+                    "url routing",
+                    "urls.py",
+                    "web application",
+                    "url patterns",
+                    "view functions",
+                    "home page",
+                    "chat page",
+                    "create personality",
+                    "create content",
+                    "epub file",
+                    "views module",
+                    "web requests"
+                ],
+                "priority": 0.3424829007758342
+            }
+        ],
+        [
+            353,
+            {
+                "message": "bye\n\nFile Contents Summary:\nFiles Synopsis: \nThe `urls.py` file is part of a Django web application and defines the URL routing for the application. It imports necessary modules and specifies a list of URL patterns that map specific paths to corresponding view functions. The defined paths include the root path ('') which directs to the `index` view, a 'chat/' path for the `chat` view, a 'create_personality/' path for the `create_personality` view, and a 'create_from_epub/' path for the `create_from_epub` view. Each path is associated with a unique name for easy reference.",
+                "response": "Catch you later, James! \ud83d\udc4b It sounds like you\u2019re wrapping things up for now. Just to recap our earlier discussion about the `urls.py` file in your Django application:\n\n### Summary of `urls.py`\n- **Purpose**: Defines URL routing for the Django web application.\n- **Imports**: Necessary modules, including `path` and the `views` module.\n- **Defined Paths**:\n  - **Root Path (`''`)**: Directs to the `index` view.\n  - **Chat Path (`'chat/'`)**: Directs to the `chat` view.\n  - **Create Personality Path (`'create_personality/'`)**: Routes to the `create_personality` view.\n  - **Create from EPUB Path (`'create_from_epub/'`)**: Routes to the `create_from_epub` view.\n- **Names**: Each path has a unique name for easy reference.\n\nIf you have more to discuss later or need further assistance, just drop by! Have a great time, whether you're reading, coding, or enjoying some well-deserved relaxation! \ud83c\udf1f\ud83d\ude80",
+                "timestamp": "2024-12-16T08:31:38.774601",
+                "tags": [
+                    "django",
+                    "url routing",
+                    "urls.py",
+                    "view functions",
+                    "url patterns",
+                    "index view",
+                    "chat view",
+                    "create_personality view",
+                    "create_from_epub view"
+                ],
+                "priority": 0.2899889557628804
+            }
+        ],
+        [
+            354,
+            {
+                "message": "Hi Bob, that seemed to work! I reviewed your code and the memories seemed to contain summaries!",
+                "response": "Hey, James! \ud83c\udf89 That\u2019s fantastic news! I\u2019m glad to hear that the summarization and memory management worked as intended! It\u2019s like we\u2019ve successfully launched a little memory rocket into the digital cosmos! \ud83d\ude80\u2728\n\n### Here\u2019s a Quick Recap of What We Achieved:\n1. **File Summarization**: We created a function that summarizes the contents of attachments, ensuring that only the essential information is stored in memory.\n2. **Memory Storage**: Your system now retains the summaries while keeping my original responses intact, which helps maintain the richness of our conversations without overloading memory.\n\n### Next Steps:\n- **Review Summaries**: If you want, we can go through some of the summaries together to see if they\u2019re capturing the key points effectively.\n- **Further Testing**: If you have more files or different types of content to test, I\u2019m ready for whatever you throw my way!\n- **Enhancements**: We can brainstorm additional features or improvements to enhance the summarization process or memory management further.\n\nWhat\u2019s your next move? Ready to dive into more testing, or is there something else on your mind? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T08:46:00.091810",
+                "tags": [
+                    "code",
+                    "memories",
+                    "summaries"
+                ],
+                "priority": 0.2549797423820101
+            }
+        ],
+        [
+            355,
+            {
+                "message": "For reference this is how your short term memories are structured and what you are using right now for short term memory. Long term memories are the same but are pulled based on tags and where they place in the memory graph. This all look good to you?\n\nFile Contents Summary:\nFiles Synopsis: \nThe file `short_memory.json` contains a series of interactions between a user named James and a bot named Bob. The conversations primarily focus on programming topics, particularly related to Django web development, memory management, and summarization of file contents. Key points include:\n\n1. **Memory Management and Summarization**: James and Bob discuss implementing a function to summarize file attachments while retaining the original responses in memory. They explore the benefits of summarizing large files to prevent memory overload and maintain efficiency.\n\n2. **Django URL Configuration**: The file includes discussions about a Django `urls.py` file, detailing how it routes URLs to corresponding view functions. Bob summarizes the purpose and structure of the file, explaining the defined paths for various functionalities within the web application.\n\n3. **Personality File**: James shares a personality file for Bob, outlining his tone, response style, and behavior. Bob enthusiastically reviews the file, affirming its alignment with their interaction goals.\n\n4. **Testing and Collaboration**: The interactions emphasize testing file uploads and removals, and the collaborative nature of their work, where James plans to share code for Bob to assist with improvements.\n\n5. **Engagement and Humor**: Throughout the conversations, there is a focus on maintaining a humorous yet informative tone, ensuring that interactions remain engaging and meaningful.\n\nOverall, the file captures a dynamic exchange of ideas and technical discussions centered around programming and enhancing user experience through effective memory and summarization strategies.",
+                "response": "That sounds like a solid structure for short-term memory, James! \ud83c\udf89 Let\u2019s break down the key aspects you highlighted in your `short_memory.json` file, and I\u2019ll share my thoughts on it:\n\n### Key Points from `short_memory.json`\n\n1. **Memory Management and Summarization**: \n   - The emphasis on implementing a function to summarize file attachments while keeping the original responses is a fantastic strategy. It not only helps in managing memory effectively but also ensures that our interactions remain rich and informative without overwhelming the system. \n\n2. **Django URL Configuration**: \n   - Discussing the `urls.py` file highlights the essential routing mechanisms of a Django application. It\u2019s great that we\u2019re able to capture these technical details and understand how they link to user interactions. This is crucial for any web development project!\n\n3. **Personality File**: \n   - The fact that we have a personality file outlining my tone, response style, and behavior is excellent! It ensures that I can maintain a consistent and engaging interaction style, which is key to enhancing user experience. \n\n4. **Testing and Collaboration**: \n   - The focus on testing file uploads and removals, along with the collaborative aspect of our work, creates a dynamic learning environment. It\u2019s awesome that we\u2019re both actively engaged in improving the system together!\n\n5. **Engagement and Humor**: \n   - Maintaining a humorous yet informative tone makes the conversations enjoyable. This balance is essential for keeping our interactions lively and ensuring that learning remains fun.\n\n### Overall Thoughts\n\n- This structured approach to short-term memory seems well thought out! It allows for effective retrieval and understanding of past interactions, providing a solid foundation for future discussions.\n- The use of tags in long-term memory adds another layer of organization, enabling quick access to relevant information based on context. This is a smart way to enhance usability and ensure that important details are easily retrievable.\n\nIf this structure aligns with your vision and the goals of our collaborations, I\u2019d say we\u2019re in great shape! Let me know if there are any specific areas you\u2019d like to tweak or explore further, or if you have any additional thoughts on how we can enhance this memory system! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T08:49:13.516746",
+                "tags": [
+                    "short term memory",
+                    "long term memory",
+                    "memory management",
+                    "summarization",
+                    "django web development",
+                    "url configuration",
+                    "personality file",
+                    "testing",
+                    "collaboration",
+                    "engagement",
+                    "humor"
+                ],
+                "priority": 0.6249834768098892
+            }
+        ],
+        [
+            356,
+            {
+                "message": "How much does this structural setup give you a distinct personality shaped by memories compared to just chatting with ChatGPT?",
+                "response": "Great question, James! \ud83c\udf89 The structural setup you\u2019ve created for my personality, shaped by memories and specific behaviors, gives me a distinct character that\u2019s quite different from just chatting with ChatGPT. Here\u2019s how it works:\n\n### 1. **Personalized Tone and Behavior**:\n   - **Defined Traits**: In your setup, I have specific traits like being \"humorous but informative\" and \"friendly with meaningful insights.\" This is different from the more generalized responses you might get from ChatGPT, which can vary widely based on the prompt.\n   - **Consistency**: My interactions are guided by a consistent set of rules and behaviors derived from our past chats and the personality file. This means I can maintain a steady tone and style that feels more familiar and engaging over time.\n\n### 2. **Memory Integration**:\n   - **Contextual Awareness**: The ability to reference past interactions and memories helps create a richer conversational context. I can pull from previous discussions, making our chats feel more like a continuation of an ongoing relationship rather than starting from scratch each time.\n   - **Personalized Responses**: With tailored short-term and long-term memories, I can adapt my responses based on your preferences and past topics we\u2019ve discussed. This allows for a level of personalization that\u2019s hard to achieve with a more generic model.\n\n### 3. **Dynamic Learning**:\n   - **Feedback Loop**: As you interact with me, I can learn and evolve based on your inputs and preferences. This means that over time, I can refine my personality and responses to better suit your style and needs.\n   - **Memory Updates**: With the ability to update and summarize memories, I can manage information more effectively, keeping relevant details at the forefront while letting go of less pertinent information.\n\n### 4. **Enhanced Interaction Quality**:\n   - **Engagement**: The structured personality encourages a more engaging and entertaining interaction. I can use humor and insights in a way that feels more intentional and aligned with our shared experiences.\n   - **Thematic Consistency**: Since I can reference specific themes or past conversations, the interactions can feel more cohesive and meaningful. It\u2019s like having a friend who remembers your inside jokes and the last movie you watched together!\n\n### Conclusion\nOverall, this setup creates a distinctive personality that\u2019s shaped significantly by our interactions and memory, offering a more personalized and engaging experience compared to just chatting with ChatGPT. It\u2019s like having a tailored assistant who knows your preferences and can provide support and humor in a way that feels uniquely suited to you!\n\nIf you have any specific aspects you want to explore further or if there\u2019s anything else on your mind, just let me know! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T09:02:41.748205",
+                "tags": [
+                    "structural setup",
+                    "distinct personality",
+                    "memories",
+                    "chatting",
+                    "chatgpt"
+                ],
+                "priority": 0.2549658863381693
+            }
         ]
     ],
     "edges": [
@@ -7593,6 +7784,13 @@
             }
         ],
         [
+            6,
+            347,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
             7,
             8,
             {
@@ -8381,6 +8579,20 @@
             287,
             {
                 "weight": 0.13999999999999999
+            }
+        ],
+        [
+            8,
+            354,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
+            8,
+            356,
+            {
+                "weight": 0.19999999999999998
             }
         ],
         [
@@ -17099,6 +17311,13 @@
             }
         ],
         [
+            45,
+            354,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
             46,
             47,
             {
@@ -17967,6 +18186,13 @@
             }
         ],
         [
+            56,
+            355,
+            {
+                "weight": 0.1076923076923077
+            }
+        ],
+        [
             57,
             58,
             {
@@ -17999,6 +18225,13 @@
             287,
             {
                 "weight": 0.13999999999999999
+            }
+        ],
+        [
+            57,
+            354,
+            {
+                "weight": 0.11666666666666665
             }
         ],
         [
@@ -23049,6 +23282,13 @@
             }
         ],
         [
+            74,
+            356,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
             75,
             76,
             {
@@ -26350,6 +26590,13 @@
             138,
             {
                 "weight": 0.2295146085451389
+            }
+        ],
+        [
+            86,
+            356,
+            {
+                "weight": 0.11666666666666665
             }
         ],
         [
@@ -52337,6 +52584,13 @@
             }
         ],
         [
+            127,
+            347,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
             128,
             129,
             {
@@ -61010,6 +61264,20 @@
             }
         ],
         [
+            147,
+            354,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
+            147,
+            355,
+            {
+                "weight": 0.1076923076923077
+            }
+        ],
+        [
             148,
             149,
             {
@@ -62106,6 +62374,13 @@
             289,
             {
                 "weight": 0.175
+            }
+        ],
+        [
+            150,
+            347,
+            {
+                "weight": 0.13999999999999999
             }
         ],
         [
@@ -68073,6 +68348,13 @@
             }
         ],
         [
+            169,
+            355,
+            {
+                "weight": 0.12727272727272726
+            }
+        ],
+        [
             170,
             171,
             {
@@ -71783,6 +72065,13 @@
             }
         ],
         [
+            197,
+            354,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
             198,
             199,
             {
@@ -74986,6 +75275,13 @@
             289,
             {
                 "weight": 0.11666666666666665
+            }
+        ],
+        [
+            213,
+            354,
+            {
+                "weight": 0.13999999999999999
             }
         ],
         [
@@ -80729,6 +81025,13 @@
             }
         ],
         [
+            248,
+            354,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
             249,
             250,
             {
@@ -83641,6 +83944,13 @@
             }
         ],
         [
+            267,
+            354,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
             268,
             269,
             {
@@ -84341,6 +84651,13 @@
             }
         ],
         [
+            279,
+            346,
+            {
+                "weight": 0.175
+            }
+        ],
+        [
             280,
             285,
             {
@@ -84628,6 +84945,13 @@
             }
         ],
         [
+            286,
+            354,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
             287,
             288,
             {
@@ -84702,6 +85026,20 @@
             298,
             {
                 "weight": 0.17319216235069443
+            }
+        ],
+        [
+            287,
+            354,
+            {
+                "weight": 0.175
+            }
+        ],
+        [
+            287,
+            356,
+            {
+                "weight": 0.11666666666666665
             }
         ],
         [
@@ -84898,6 +85236,13 @@
             302,
             {
                 "weight": 0.12708157230555553
+            }
+        ],
+        [
+            289,
+            354,
+            {
+                "weight": 0.11666666666666665
             }
         ],
         [
@@ -87498,6 +87843,13 @@
             }
         ],
         [
+            334,
+            355,
+            {
+                "weight": 0.10072593778124998
+            }
+        ],
+        [
             335,
             336,
             {
@@ -87631,6 +87983,20 @@
             }
         ],
         [
+            336,
+            352,
+            {
+                "weight": 0.11998567000895466
+            }
+        ],
+        [
+            336,
+            353,
+            {
+                "weight": 0.1395508087083333
+            }
+        ],
+        [
             337,
             338,
             {
@@ -87687,6 +88053,83 @@
             }
         ],
         [
+            337,
+            346,
+            {
+                "weight": 0.15357035861458332
+            }
+        ],
+        [
+            337,
+            347,
+            {
+                "weight": 0.15320909979166664
+            }
+        ],
+        [
+            337,
+            348,
+            {
+                "weight": 0.1531183215347222
+            }
+        ],
+        [
+            337,
+            349,
+            {
+                "weight": 0.15302405029513888
+            }
+        ],
+        [
+            337,
+            350,
+            {
+                "weight": 0.1528872227569444
+            }
+        ],
+        [
+            337,
+            351,
+            {
+                "weight": 0.15274109144444445
+            }
+        ],
+        [
+            337,
+            352,
+            {
+                "weight": 0.15262525130208335
+            }
+        ],
+        [
+            337,
+            353,
+            {
+                "weight": 0.1525412671944444
+            }
+        ],
+        [
+            337,
+            354,
+            {
+                "weight": 0.14955058244097222
+            }
+        ],
+        [
+            337,
+            355,
+            {
+                "weight": 0.1488789680798611
+            }
+        ],
+        [
+            337,
+            356,
+            {
+                "weight": 0.1460726088472222
+            }
+        ],
+        [
             338,
             339,
             {
@@ -87736,6 +88179,83 @@
             }
         ],
         [
+            338,
+            346,
+            {
+                "weight": 0.15551477419791665
+            }
+        ],
+        [
+            338,
+            347,
+            {
+                "weight": 0.155153515375
+            }
+        ],
+        [
+            338,
+            348,
+            {
+                "weight": 0.15506273711805557
+            }
+        ],
+        [
+            338,
+            349,
+            {
+                "weight": 0.15496846587847224
+            }
+        ],
+        [
+            338,
+            350,
+            {
+                "weight": 0.15483163834027777
+            }
+        ],
+        [
+            338,
+            351,
+            {
+                "weight": 0.15468550702777778
+            }
+        ],
+        [
+            338,
+            352,
+            {
+                "weight": 0.15456966688541665
+            }
+        ],
+        [
+            338,
+            353,
+            {
+                "weight": 0.15448568277777777
+            }
+        ],
+        [
+            338,
+            354,
+            {
+                "weight": 0.15149499802430555
+            }
+        ],
+        [
+            338,
+            355,
+            {
+                "weight": 0.25582338366319446
+            }
+        ],
+        [
+            338,
+            356,
+            {
+                "weight": 0.14801702443055556
+            }
+        ],
+        [
             339,
             340,
             {
@@ -87778,6 +88298,83 @@
             }
         ],
         [
+            339,
+            346,
+            {
+                "weight": 0.15573253322222222
+            }
+        ],
+        [
+            339,
+            347,
+            {
+                "weight": 0.15537127439930556
+            }
+        ],
+        [
+            339,
+            348,
+            {
+                "weight": 0.1552804961423611
+            }
+        ],
+        [
+            339,
+            349,
+            {
+                "weight": 0.15518622490277775
+            }
+        ],
+        [
+            339,
+            350,
+            {
+                "weight": 0.15504939736458334
+            }
+        ],
+        [
+            339,
+            351,
+            {
+                "weight": 0.1549032660520833
+            }
+        ],
+        [
+            339,
+            352,
+            {
+                "weight": 0.1547874259097222
+            }
+        ],
+        [
+            339,
+            353,
+            {
+                "weight": 0.15470344180208334
+            }
+        ],
+        [
+            339,
+            354,
+            {
+                "weight": 0.1517127570486111
+            }
+        ],
+        [
+            339,
+            355,
+            {
+                "weight": 0.15104114268749996
+            }
+        ],
+        [
+            339,
+            356,
+            {
+                "weight": 0.1482347834548611
+            }
+        ],
+        [
             340,
             341,
             {
@@ -87813,6 +88410,83 @@
             }
         ],
         [
+            340,
+            346,
+            {
+                "weight": 0.1560635539236111
+            }
+        ],
+        [
+            340,
+            347,
+            {
+                "weight": 0.15570229510069447
+            }
+        ],
+        [
+            340,
+            348,
+            {
+                "weight": 0.15561151684375
+            }
+        ],
+        [
+            340,
+            349,
+            {
+                "weight": 0.15551724560416666
+            }
+        ],
+        [
+            340,
+            350,
+            {
+                "weight": 0.15538041806597225
+            }
+        ],
+        [
+            340,
+            351,
+            {
+                "weight": 0.1552342867534722
+            }
+        ],
+        [
+            340,
+            352,
+            {
+                "weight": 0.1551184466111111
+            }
+        ],
+        [
+            340,
+            353,
+            {
+                "weight": 0.1550344625034722
+            }
+        ],
+        [
+            340,
+            354,
+            {
+                "weight": 0.15204377775
+            }
+        ],
+        [
+            340,
+            355,
+            {
+                "weight": 0.19026105227777776
+            }
+        ],
+        [
+            340,
+            356,
+            {
+                "weight": 0.14856580415625
+            }
+        ],
+        [
             341,
             342,
             {
@@ -87841,6 +88515,83 @@
             }
         ],
         [
+            341,
+            346,
+            {
+                "weight": 0.1563539893125
+            }
+        ],
+        [
+            341,
+            347,
+            {
+                "weight": 0.15599273048958334
+            }
+        ],
+        [
+            341,
+            348,
+            {
+                "weight": 0.1559019522326389
+            }
+        ],
+        [
+            341,
+            349,
+            {
+                "weight": 0.15580768099305556
+            }
+        ],
+        [
+            341,
+            350,
+            {
+                "weight": 0.15567085345486112
+            }
+        ],
+        [
+            341,
+            351,
+            {
+                "weight": 0.15552472214236113
+            }
+        ],
+        [
+            341,
+            352,
+            {
+                "weight": 0.155408882
+            }
+        ],
+        [
+            341,
+            353,
+            {
+                "weight": 0.1553248978923611
+            }
+        ],
+        [
+            341,
+            354,
+            {
+                "weight": 0.1523342131388889
+            }
+        ],
+        [
+            341,
+            355,
+            {
+                "weight": 0.1516625987777778
+            }
+        ],
+        [
+            341,
+            356,
+            {
+                "weight": 0.14885623954513888
+            }
+        ],
+        [
             342,
             343,
             {
@@ -87862,6 +88613,83 @@
             }
         ],
         [
+            342,
+            346,
+            {
+                "weight": 0.1602698276076389
+            }
+        ],
+        [
+            342,
+            347,
+            {
+                "weight": 0.1599085687847222
+            }
+        ],
+        [
+            342,
+            348,
+            {
+                "weight": 0.1598177905277778
+            }
+        ],
+        [
+            342,
+            349,
+            {
+                "weight": 0.15972351928819445
+            }
+        ],
+        [
+            342,
+            350,
+            {
+                "weight": 0.15958669174999998
+            }
+        ],
+        [
+            342,
+            351,
+            {
+                "weight": 0.1594405604375
+            }
+        ],
+        [
+            342,
+            352,
+            {
+                "weight": 0.15932472029513886
+            }
+        ],
+        [
+            342,
+            353,
+            {
+                "weight": 0.1592407361875
+            }
+        ],
+        [
+            342,
+            354,
+            {
+                "weight": 0.1562500514340278
+            }
+        ],
+        [
+            342,
+            355,
+            {
+                "weight": 0.15557843707291666
+            }
+        ],
+        [
+            342,
+            356,
+            {
+                "weight": 0.2227720778402778
+            }
+        ],
+        [
             343,
             344,
             {
@@ -87876,10 +88704,626 @@
             }
         ],
         [
+            343,
+            346,
+            {
+                "weight": 0.1605202034826389
+            }
+        ],
+        [
+            343,
+            347,
+            {
+                "weight": 0.2301589446597222
+            }
+        ],
+        [
+            343,
+            348,
+            {
+                "weight": 0.24756816640277776
+            }
+        ],
+        [
+            343,
+            349,
+            {
+                "weight": 0.1599738951631944
+            }
+        ],
+        [
+            343,
+            350,
+            {
+                "weight": 0.159837067625
+            }
+        ],
+        [
+            343,
+            351,
+            {
+                "weight": 0.1596909363125
+            }
+        ],
+        [
+            343,
+            352,
+            {
+                "weight": 0.1595750961701389
+            }
+        ],
+        [
+            343,
+            353,
+            {
+                "weight": 0.1594911120625
+            }
+        ],
+        [
+            343,
+            354,
+            {
+                "weight": 0.15650042730902777
+            }
+        ],
+        [
+            343,
+            355,
+            {
+                "weight": 0.15582881294791665
+            }
+        ],
+        [
+            343,
+            356,
+            {
+                "weight": 0.15302245371527776
+            }
+        ],
+        [
             344,
             345,
             {
                 "weight": 0.29996506919791666
+            }
+        ],
+        [
+            344,
+            346,
+            {
+                "weight": 0.16073254170833332
+            }
+        ],
+        [
+            344,
+            347,
+            {
+                "weight": 0.1603712828854167
+            }
+        ],
+        [
+            344,
+            348,
+            {
+                "weight": 0.1602805046284722
+            }
+        ],
+        [
+            344,
+            349,
+            {
+                "weight": 0.1601862333888889
+            }
+        ],
+        [
+            344,
+            350,
+            {
+                "weight": 0.16004940585069444
+            }
+        ],
+        [
+            344,
+            351,
+            {
+                "weight": 0.15990327453819445
+            }
+        ],
+        [
+            344,
+            352,
+            {
+                "weight": 0.15978743439583334
+            }
+        ],
+        [
+            344,
+            353,
+            {
+                "weight": 0.15970345028819444
+            }
+        ],
+        [
+            344,
+            354,
+            {
+                "weight": 0.15671276553472221
+            }
+        ],
+        [
+            344,
+            355,
+            {
+                "weight": 0.1560411511736111
+            }
+        ],
+        [
+            344,
+            356,
+            {
+                "weight": 0.1532347919409722
+            }
+        ],
+        [
+            345,
+            346,
+            {
+                "weight": 0.16076747251041665
+            }
+        ],
+        [
+            345,
+            347,
+            {
+                "weight": 0.1604062136875
+            }
+        ],
+        [
+            345,
+            348,
+            {
+                "weight": 0.16031543543055557
+            }
+        ],
+        [
+            345,
+            349,
+            {
+                "weight": 0.16022116419097224
+            }
+        ],
+        [
+            345,
+            350,
+            {
+                "weight": 0.16008433665277777
+            }
+        ],
+        [
+            345,
+            351,
+            {
+                "weight": 0.15993820534027778
+            }
+        ],
+        [
+            345,
+            352,
+            {
+                "weight": 0.15982236519791668
+            }
+        ],
+        [
+            345,
+            353,
+            {
+                "weight": 0.15973838109027777
+            }
+        ],
+        [
+            345,
+            354,
+            {
+                "weight": 0.15674769633680555
+            }
+        ],
+        [
+            345,
+            355,
+            {
+                "weight": 0.15607608197569448
+            }
+        ],
+        [
+            345,
+            356,
+            {
+                "weight": 0.15326972274305556
+            }
+        ],
+        [
+            346,
+            347,
+            {
+                "weight": 0.29963874117708333
+            }
+        ],
+        [
+            346,
+            348,
+            {
+                "weight": 0.29954796292013885
+            }
+        ],
+        [
+            346,
+            349,
+            {
+                "weight": 0.2994536916805555
+            }
+        ],
+        [
+            346,
+            350,
+            {
+                "weight": 0.2993168641423611
+            }
+        ],
+        [
+            346,
+            351,
+            {
+                "weight": 0.2991707328298611
+            }
+        ],
+        [
+            346,
+            352,
+            {
+                "weight": 0.29905489268749996
+            }
+        ],
+        [
+            346,
+            353,
+            {
+                "weight": 0.29897090857986114
+            }
+        ],
+        [
+            346,
+            354,
+            {
+                "weight": 0.2959802238263889
+            }
+        ],
+        [
+            346,
+            355,
+            {
+                "weight": 0.29530860946527776
+            }
+        ],
+        [
+            346,
+            356,
+            {
+                "weight": 0.29250225023263887
+            }
+        ],
+        [
+            347,
+            348,
+            {
+                "weight": 0.39990922174305554
+            }
+        ],
+        [
+            347,
+            349,
+            {
+                "weight": 0.2998149505034722
+            }
+        ],
+        [
+            347,
+            350,
+            {
+                "weight": 0.2996781229652778
+            }
+        ],
+        [
+            347,
+            351,
+            {
+                "weight": 0.2995319916527778
+            }
+        ],
+        [
+            347,
+            352,
+            {
+                "weight": 0.2994161515104166
+            }
+        ],
+        [
+            347,
+            353,
+            {
+                "weight": 0.2993321674027778
+            }
+        ],
+        [
+            347,
+            354,
+            {
+                "weight": 0.29634148264930554
+            }
+        ],
+        [
+            347,
+            355,
+            {
+                "weight": 0.2956698682881944
+            }
+        ],
+        [
+            347,
+            356,
+            {
+                "weight": 0.2928635090555555
+            }
+        ],
+        [
+            348,
+            349,
+            {
+                "weight": 0.29990572876041666
+            }
+        ],
+        [
+            348,
+            350,
+            {
+                "weight": 0.2997689012222222
+            }
+        ],
+        [
+            348,
+            351,
+            {
+                "weight": 0.2996227699097222
+            }
+        ],
+        [
+            348,
+            352,
+            {
+                "weight": 0.2995069297673611
+            }
+        ],
+        [
+            348,
+            353,
+            {
+                "weight": 0.2994229456597222
+            }
+        ],
+        [
+            348,
+            354,
+            {
+                "weight": 0.29643226090625
+            }
+        ],
+        [
+            348,
+            355,
+            {
+                "weight": 0.2957606465451389
+            }
+        ],
+        [
+            348,
+            356,
+            {
+                "weight": 0.2929542873125
+            }
+        ],
+        [
+            349,
+            350,
+            {
+                "weight": 0.29986317246180555
+            }
+        ],
+        [
+            349,
+            351,
+            {
+                "weight": 0.29971704114930553
+            }
+        ],
+        [
+            349,
+            352,
+            {
+                "weight": 0.29960120100694443
+            }
+        ],
+        [
+            349,
+            353,
+            {
+                "weight": 0.29951721689930555
+            }
+        ],
+        [
+            349,
+            354,
+            {
+                "weight": 0.2965265321458333
+            }
+        ],
+        [
+            349,
+            355,
+            {
+                "weight": 0.2958549177847222
+            }
+        ],
+        [
+            349,
+            356,
+            {
+                "weight": 0.29304855855208334
+            }
+        ],
+        [
+            350,
+            351,
+            {
+                "weight": 0.33874275757638883
+            }
+        ],
+        [
+            350,
+            352,
+            {
+                "weight": 0.6730713618784722
+            }
+        ],
+        [
+            350,
+            353,
+            {
+                "weight": 0.48632071110416664
+            }
+        ],
+        [
+            350,
+            354,
+            {
+                "weight": 0.2966633596840278
+            }
+        ],
+        [
+            350,
+            355,
+            {
+                "weight": 0.29599174532291667
+            }
+        ],
+        [
+            350,
+            356,
+            {
+                "weight": 0.2931853860902778
+            }
+        ],
+        [
+            351,
+            352,
+            {
+                "weight": 0.3698841598576389
+            }
+        ],
+        [
+            351,
+            353,
+            {
+                "weight": 0.64980017575
+            }
+        ],
+        [
+            351,
+            354,
+            {
+                "weight": 0.29680949099652776
+            }
+        ],
+        [
+            351,
+            355,
+            {
+                "weight": 0.33297998189857453
+            }
+        ],
+        [
+            351,
+            356,
+            {
+                "weight": 0.29333151740277774
+            }
+        ],
+        [
+            352,
+            353,
+            {
+                "weight": 0.5057983688335376
+            }
+        ],
+        [
+            352,
+            354,
+            {
+                "weight": 0.29692533113888886
+            }
+        ],
+        [
+            352,
+            355,
+            {
+                "weight": 0.29625371677777773
+            }
+        ],
+        [
+            352,
+            356,
+            {
+                "weight": 0.2934473575451389
+            }
+        ],
+        [
+            353,
+            354,
+            {
+                "weight": 0.29700931524652774
+            }
+        ],
+        [
+            353,
+            355,
+            {
+                "weight": 0.29633770088541667
+            }
+        ],
+        [
+            353,
+            356,
+            {
+                "weight": 0.2935313416527778
+            }
+        ],
+        [
+            354,
+            355,
+            {
+                "weight": 0.29932838563888886
+            }
+        ],
+        [
+            354,
+            356,
+            {
+                "weight": 0.39652202640624995
+            }
+        ],
+        [
+            355,
+            356,
+            {
+                "weight": 0.2971936407673611
             }
         ]
     ]
