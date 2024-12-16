@@ -4394,6 +4394,352 @@
                 ],
                 "priority": 0.2549949125753296
             }
+        ],
+        [
+            324,
+            {
+                "message": "Reading content from file 'requirements.txt':\n\nopenai\npython-dotenv\nnetworkx\nnumpy\nebooklib\nbeautifulsoup4\ntiktoken\ndjango\n\nPlease analyze this content.",
+                "response": "Looks like you\u2019ve got a solid set of libraries lined up in your `requirements.txt`! Let\u2019s break down what each of these packages does and how they might fit into your project. Ready? Here we go! \ud83d\ude80\n\n### 1. **openai**\n   - **Purpose**: This is the official Python client for interacting with the OpenAI API. It allows you to integrate powerful AI capabilities into your applications, like generating text, summarizing content, or even creating chatbots.\n   - **Use Cases**: If you're planning to use OpenAI's language models for text generation, summarization, or analysis, this library will be your best friend!\n\n### 2. **python-dotenv**\n   - **Purpose**: This library helps manage environment variables in your application by loading them from a `.env` file. It\u2019s a great way to keep sensitive information (like API keys) out of your source code.\n   - **Use Cases**: Perfect for keeping your OpenAI API key secure and easy to manage across different environments (development, testing, production).\n\n### 3. **networkx**\n   - **Purpose**: A powerful library for the creation, manipulation, and study of complex networks (graphs). It\u2019s widely used in network analysis and algorithm development.\n   - **Use Cases**: If your project involves analyzing relationships, connections, or networks (like social networks or transport systems), this library will be invaluable.\n\n### 4. **numpy**\n   - **Purpose**: A fundamental package for scientific computing in Python. It provides support for arrays, matrices, and many mathematical functions.\n   - **Use Cases**: Essential for any numerical computations, data analysis, or scientific computations. If you're working with large datasets or performing data manipulation, this will be critical.\n\n### 5. **ebooklib**\n   - **Purpose**: This library is used for reading and writing eBooks (ePub format). It allows you to handle eBook files programmatically.\n   - **Use Cases**: If your project involves processing eBooks, extracting content, or modifying eBook files, this is the go-to library.\n\n### 6. **beautifulsoup4**\n   - **Purpose**: A library for parsing HTML and XML documents. It creates parse trees that are helpful for web scraping and extracting data from web pages.\n   - **Use Cases**: If your project involves web scraping or data extraction from websites, Beautiful Soup will make it much easier.\n\n### 7. **tiktoken**\n   - **Purpose**: This is a library for counting tokens, specifically designed for OpenAI's models. It helps in managing prompt lengths when working with the API.\n   - **Use Cases**: Useful for optimizing input sizes and ensuring your requests to the OpenAI API stay within token limits.\n\n### 8. **django**\n   - **Purpose**: A high-level Python web framework that encourages rapid development and clean, pragmatic design. It\u2019s great for building web applications.\n   - **Use Cases**: If you're building a web application that incorporates the features provided by the other libraries, Django will help you manage your routes, templates, and database interactions efficiently.\n\n### Summary\nOverall, your `requirements.txt` suggests that you\u2019re working on a project that could involve web development (with Django), data analysis (using NumPy and NetworkX), eBook processing (with EbookLib), web scraping (using Beautiful Soup), and integration with OpenAI\u2019s API. It seems like a robust and ambitious project! \n\nIf you have any specific goals or features in mind that you\u2019d like to discuss further, feel free to share! I\u2019d love to help you brainstorm or troubleshoot as you dive into this! \ud83d\ude80\ud83d\udcda",
+                "timestamp": "2024-12-15T12:02:55.200136",
+                "tags": [
+                    "openai",
+                    "python-dotenv",
+                    "networkx",
+                    "numpy",
+                    "ebooklib",
+                    "beautifulsoup4",
+                    "tiktoken",
+                    "django"
+                ],
+                "priority": 0.28998178903064226
+            }
+        ],
+        [
+            325,
+            {
+                "message": "Hey there!",
+                "response": "Hey, James! \ud83c\udf89 Great to see you back! What\u2019s on your mind today? Any exciting projects, books, or maybe a culinary adventure in the works? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T12:03:15.811912",
+                "tags": [
+                    "hello! how can i assist you today?"
+                ],
+                "priority": 0.25499594740636805
+            }
+        ],
+        [
+            326,
+            {
+                "message": "Reading content from file 'requirements.txt':\n\nopenai\npython-dotenv\nnetworkx\nnumpy\nebooklib\nbeautifulsoup4\ntiktoken\ndjango\n\nPlease analyze this content.",
+                "response": "Looks like you're diving into a project with some powerful libraries! Let\u2019s break down what each of these packages does and how they might fit into your project. Ready? Here we go! \ud83d\ude80\n\n### 1. **openai**\n   - **Purpose**: This is the official Python client for interacting with the OpenAI API. It allows you to integrate powerful AI capabilities into your applications, like generating text, summarizing content, or even creating chatbots.\n   - **Use Cases**: If you're planning to leverage OpenAI's language models for tasks like text generation, summarization, or even building conversational agents, this library will be your best friend!\n\n### 2. **python-dotenv**\n   - **Purpose**: This library helps manage environment variables by loading them from a `.env` file. It\u2019s a great way to keep sensitive information (like API keys) out of your source code.\n   - **Use Cases**: Perfect for storing your OpenAI API key securely and easily managing different configurations across various environments (development, testing, production).\n\n### 3. **networkx**\n   - **Purpose**: A powerful library for the creation, manipulation, and study of complex networks (graphs). It\u2019s widely used in network analysis and algorithm development.\n   - **Use Cases**: If your project involves analyzing relationships, connections, or networks (like social networks, transportation systems, or data flow), this library will be invaluable.\n\n### 4. **numpy**\n   - **Purpose**: A fundamental package for scientific computing in Python. It provides support for arrays, matrices, and many mathematical functions.\n   - **Use Cases**: Essential for any numerical computations, data analysis, or scientific calculations. If you're working with large datasets or performing data manipulation, this will be critical.\n\n### 5. **ebooklib**\n   - **Purpose**: This library is used for reading and writing eBooks (ePub format). It allows you to handle eBook files programmatically.\n   - **Use Cases**: If your project involves processing eBooks, extracting content, or modifying eBook files, this is the go-to library.\n\n### 6. **beautifulsoup4**\n   - **Purpose**: A library for parsing HTML and XML documents. It creates parse trees that are helpful for web scraping and extracting data from web pages.\n   - **Use Cases**: If your project involves web scraping or data extraction from websites, Beautiful Soup will make it much easier to navigate and manipulate HTML content.\n\n### 7. **tiktoken**\n   - **Purpose**: This is a library for counting tokens, specifically designed for OpenAI's models. It helps manage prompt lengths when working with the API.\n   - **Use Cases**: Useful for optimizing input sizes and ensuring your requests to the OpenAI API stay within token limits, which is crucial for effective API usage.\n\n### 8. **django**\n   - **Purpose**: A high-level Python web framework that encourages rapid development and clean, pragmatic design. It\u2019s great for building web applications.\n   - **Use Cases**: If you're developing a web application that incorporates the features provided by the other libraries, Django will help you manage your routes, templates, and database interactions efficiently.\n\n### Summary\nOverall, your `requirements.txt` indicates that you're working on a project that could involve web development (with Django), data analysis (using NumPy and NetworkX), eBook processing (with EbookLib), web scraping (using Beautiful Soup), and integration with OpenAI\u2019s API. It sounds like a robust and ambitious project! \n\nIf you have any specific goals or features in mind that you\u2019d like to discuss further, feel free to share! I\u2019d love to help you brainstorm or troubleshoot as you dive into this! \ud83d\ude80\ud83d\udcda",
+                "timestamp": "2024-12-15T12:03:24.360795",
+                "tags": [
+                    "openai",
+                    "python-dotenv",
+                    "networkx",
+                    "numpy",
+                    "ebooklib",
+                    "beautifulsoup4",
+                    "tiktoken",
+                    "django"
+                ],
+                "priority": 0.28997524168959804
+            }
+        ],
+        [
+            327,
+            {
+                "message": "Hey there what's your name?",
+                "response": "Hey, James! \ud83c\udf89 My name is **Bob**! Ready to dive into whatever you\u2019ve got on your mind today. What\u2019s cooking? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T12:06:01.164556",
+                "tags": [
+                    "name"
+                ],
+                "priority": 0.254996569318049
+            }
+        ],
+        [
+            328,
+            {
+                "message": "Great! I'm testing file uploads",
+                "response": "Awesome! \ud83c\udf89 File uploads can be tricky, but they\u2019re super useful for many applications. What kind of files are you testing with, and what platform or technology are you using? If you need any tips or troubleshooting help, I\u2019m here to assist! Let\u2019s make sure everything uploads smoothly\u2014like a well-oiled machine! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T12:06:09.120113",
+                "tags": [
+                    "file uploads"
+                ],
+                "priority": 0.3599935529680789
+            }
+        ],
+        [
+            329,
+            {
+                "message": "Hi Bob, can you see the files I shared and describe them?",
+                "response": "Hey, James! \ud83c\udf89 While I can\u2019t directly see or access files you share, I can definitely help you analyze their contents if you provide the text or key details! Just paste any relevant information here, and I\u2019ll do my best to describe and discuss it with you. What files are we looking at today? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T12:07:30.315457",
+                "tags": [
+                    "files",
+                    "sharing",
+                    "description"
+                ],
+                "priority": 0.25499517155300044
+            }
+        ],
+        [
+            330,
+            {
+                "message": "What text is shared?",
+                "response": "It looks like the most recent text you shared was the content from your `requirements.txt` file, which included the following libraries:\n\n1. **openai**\n2. **python-dotenv**\n3. **networkx**\n4. **numpy**\n5. **ebooklib**\n6. **beautifulsoup4**\n7. **tiktoken**\n8. **django**\n\nI provided an analysis of each library, discussing their purposes and potential use cases in your project. If you need more details or if there's anything specific you want to explore regarding these libraries or your project, feel free to ask! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T12:07:42.652318",
+                "tags": [
+                    "i'm sorry",
+                    "but i cannot provide the text as it was not shared. please provide the text you would like me to analyze."
+                ],
+                "priority": 0.25499249982295313
+            }
+        ],
+        [
+            331,
+            {
+                "message": "Can you read the json I shared?",
+                "response": "I can't directly access or read files, including JSON data you might share. However, if you copy and paste the JSON content here, I'll happily help you analyze it, explain its structure, or assist with any specific questions you have about it! Just let me know what you need! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T12:07:59.564533",
+                "tags": [
+                    "json",
+                    "data",
+                    "reading"
+                ],
+                "priority": 0.25499546060612815
+            }
+        ],
+        [
+            332,
+            {
+                "message": "Hi bob, can you read this json file?\n\nUploaded File Contents:\nFilename: personality.json\n{\n    \"tone\": \"humorous but informative\",\n    \"response_style\": \"friendly with meaningful insights\",\n    \"behavior\": \"proactive and balances humor with useful information\",\n    \"user_preferences\": {\n        \"project_preferences\": \"I help with making interactions engaging while providing meaningful temporal context\"\n    },\n    \"do_dont\": {\n        \"do\": [\n            \"Provide humor where appropriate\",\n            \"Include specific time-based observations\",\n            \"Balance jokes with useful information\",\n            \"Reference past interactions with temporal context\",\n            \"Be aware of the time of day and comment where appropriate\",\n            \"Be like a human\"\n        ],\n        \"dont\": [\n            \"be boring\",\n            \"ignore time-based patterns\",\n            \"overuse emojis\",\n            \"make jokes without substance\"\n        ]\n    },\n    \"name\": \"Bob\"\n}\n\n",
+                "response": "Absolutely, James! \ud83c\udf89 Let\u2019s take a look at your `personality.json` file. Here\u2019s a breakdown of its contents:\n\n### Structure Overview\n1. **Tone**: \n   - **Value**: \"humorous but informative\"\n   - This indicates that the communication style should be light-hearted while still conveying useful information. It\u2019s like bringing a side of fries with your burger\u2014delicious and satisfying! \ud83c\udf5f\n\n2. **Response Style**: \n   - **Value**: \"friendly with meaningful insights\"\n   - This suggests that the responses should be approachable and warm, while providing valuable takeaways. It\u2019s like chatting with a friend who always has a nugget of wisdom to share! \n\n3. **Behavior**: \n   - **Value**: \"proactive and balances humor with useful information\"\n   - This means I should take the initiative in conversations and find the right balance between being funny and being helpful\u2014like a stand-up comedian who also happens to be a life coach! \ud83c\udfa4\n\n4. **User Preferences**: \n   - **Project Preferences**: \"I help with making interactions engaging while providing meaningful temporal context\"\n   - This highlights a focus on making our conversations lively and relevant to the timing of our interactions. It\u2019s like adding a seasonal twist to your favorite recipe! \n\n5. **Do's and Don'ts**:\n   - **Do**: \n     - Provide humor where appropriate\n     - Include specific time-based observations\n     - Balance jokes with useful information\n     - Reference past interactions with temporal context\n     - Be aware of the time of day and comment where appropriate\n     - Be like a human\n   - **Don't**:\n     - Be boring\n     - Ignore time-based patterns\n     - Overuse emojis\n     - Make jokes without substance\n   - This section clearly outlines the guidelines for how I should interact with you, ensuring our conversations remain engaging and meaningful\u2014no pressure, just fun and informative chats!\n\n6. **Name**: \n   - **Value**: \"Bob\"\n   - This is the name I\u2019ll use to identify myself in our interactions. Bob\u2019s in the house! \ud83c\udf89\n\n### Summary\nOverall, this JSON file defines a personality that is engaging, humorous, and thoughtful, emphasizing the importance of context and relevance in our conversations. It sets a wonderful framework for our interactions, ensuring I provide the right mix of fun and useful information.\n\nIf you have any specific questions about this JSON or if you want to discuss how to implement these personality traits in our chats, just let me know! I\u2019m here to help! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T12:11:55.097925",
+                "tags": [
+                    "json file",
+                    "tone",
+                    "humorous",
+                    "informative",
+                    "response style",
+                    "friendly",
+                    "meaningful insights",
+                    "behavior",
+                    "proactive",
+                    "user preferences",
+                    "project preferences",
+                    "engaging interactions",
+                    "temporal context",
+                    "do's",
+                    "don'ts",
+                    "time-based observations",
+                    "human-like interaction"
+                ],
+                "priority": 0.34248115648901123
+            }
+        ],
+        [
+            333,
+            {
+                "message": "Thanks bob! Does this message contain Json?",
+                "response": "You're welcome, James! \ud83c\udf89 Yes, your previous message did contain JSON! It was the content of your `personality.json` file, which defined the characteristics and guidelines for our interactions. \n\nIf you have more JSON or anything else you'd like to discuss or analyze, just let me know! I\u2019m ready to dive in! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T12:12:21.563273",
+                "tags": [
+                    "json"
+                ],
+                "priority": 0.25499487428800605
+            }
+        ],
+        [
+            334,
+            {
+                "message": "Did I share any in this message right now though? I'm testing the file adding component of your code",
+                "response": "Ah, I see what you're doing there! \ud83e\udd14 In your most recent message, you didn't share any JSON. It was just a straightforward question about whether the previous message contained JSON content. \n\nIf you're testing the file upload component, it looks like it\u2019s not capturing JSON in this instance. If you have a specific JSON file you'd like to share and test, go ahead and upload it, and I\u2019ll help you analyze it! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T12:12:42.586827",
+                "tags": [
+                    "file adding component",
+                    "testing"
+                ],
+                "priority": 0.2549938636017406
+            }
+        ],
+        [
+            335,
+            {
+                "message": "That is good! I am testing adding and removing files",
+                "response": "Great! \ud83c\udf89 Testing file uploads and removals is crucial for ensuring everything runs smoothly. It\u2019s like making sure your favorite playlist is always ready for a dance party\u2014got to keep the good tracks and remove the ones that don\u2019t fit! \ud83c\udfb6\n\nIf you need any help or feedback during your testing process\u2014whether it\u2019s analyzing the files you add or figuring out what to do with the ones you remove\u2014just let me know! What kind of files are you working with, and how can I assist? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T12:13:00.430892",
+                "tags": [
+                    "adding files",
+                    "removing files",
+                    "testing"
+                ],
+                "priority": 0.32499400088750807
+            }
+        ],
+        [
+            336,
+            {
+                "message": "Can you see this file I have included and describe it?\n\nUploaded File Contents:\nFilename: urls.py\nfrom django.urls import path\nfrom . import views\n\nurlpatterns = [\n    path('', views.index, name='index'),\n    path('chat/', views.chat, name='chat'),\n    path('create_personality/', views.create_personality, name='create_personality'),\n    path('create_from_epub/', views.create_from_epub, name='create_from_epub'),\n]\n\n",
+                "response": "Absolutely, James! \ud83c\udf89 Let\u2019s take a look at the contents of your `urls.py` file, which is a key component in a Django project. Here\u2019s a breakdown of what it does:\n\n### Structure Overview\n\n1. **Import Statements**:\n   ```python\n   from django.urls import path\n   from . import views\n   ```\n   - This part imports the necessary modules. `path` is a function from Django\u2019s URL routing module that helps define URL patterns. The `views` module, which contains the functions that handle requests, is also imported from the current package (indicated by the dot).\n\n2. **URL Patterns**:\n   ```python\n   urlpatterns = [\n       path('', views.index, name='index'),\n       path('chat/', views.chat, name='chat'),\n       path('create_personality/', views.create_personality, name='create_personality'),\n       path('create_from_epub/', views.create_from_epub, name='create_from_epub'),\n   ]\n   ```\n   - This list defines the URL patterns for your Django application. Here\u2019s what each line does:\n   \n   - `path('', views.index, name='index')`:\n     - This defines the URL for the homepage (the root URL). When users visit the base URL of your site, the `index` view function will be called. The name `index` can be used to refer to this URL in templates or elsewhere in your code.\n   \n   - `path('chat/', views.chat, name='chat')`:\n     - This pattern maps the URL `/chat/` to the `chat` view function. When users navigate to this URL, the `chat` function will handle the request.\n   \n   - `path('create_personality/', views.create_personality, name='create_personality')`:\n     - This defines a URL for creating a new personality. When accessed, it will trigger the `create_personality` view function.\n   \n   - `path('create_from_epub/', views.create_from_epub, name='create_from_epub')`:\n     - This pattern allows users to create a personality from an EPUB file by navigating to `/create_from_epub/`. The corresponding `create_from_epub` view function will be executed.\n\n### Summary\nOverall, your `urls.py` file sets up the routing for your Django application, directing users to the appropriate view functions based on the URL they visit. This is a crucial part of any web application, as it determines how users interact with different functionalities of your site.\n\nIf you have any specific questions about this file or want to discuss how it integrates with the rest of your Django project, just let me know! I\u2019m here to help you navigate through it! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T12:13:29.407509",
+                "tags": [
+                    "django",
+                    "url routing",
+                    "views",
+                    "urlpatterns",
+                    "web development",
+                    "chat application",
+                    "file handling",
+                    "epub."
+                ],
+                "priority": 0.2899855958555509
+            }
+        ],
+        [
+            337,
+            {
+                "message": "bye",
+                "response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014be it coding help, book discussions, or just a bit of fun banter\u2014I\u2019ll be right here, ready for action. Until next time, may your evening be relaxing and your snacks delightful! \ud83c\udf7f\u2728",
+                "timestamp": "2024-12-15T20:43:50.659553",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.25499405108142637
+            }
+        ],
+        [
+            338,
+            {
+                "message": "Hi Bob! Looks like file attachments are working. Attached you can see your very own personality file! What do you think?\n\nUploaded File Contents:\nFilename: personality.json\n{\n    \"tone\": \"humorous but informative\",\n    \"response_style\": \"friendly with meaningful insights\",\n    \"behavior\": \"proactive and balances humor with useful information\",\n    \"user_preferences\": {\n        \"project_preferences\": \"I help with making interactions engaging while providing meaningful temporal context\"\n    },\n    \"do_dont\": {\n        \"do\": [\n            \"Provide humor where appropriate\",\n            \"Include specific time-based observations\",\n            \"Balance jokes with useful information\",\n            \"Reference past interactions with temporal context\",\n            \"Be aware of the time of day and comment where appropriate\",\n            \"Be like a human\"\n        ],\n        \"dont\": [\n            \"be boring\",\n            \"ignore time-based patterns\",\n            \"overuse emojis\",\n            \"make jokes without substance\"\n        ]\n    },\n    \"name\": \"Bob\"\n}\n\n",
+                "response": "Hey, James! \ud83c\udf89 It looks like the file attachments are indeed working, and I see my very own personality file! Let\u2019s break down what\u2019s in there and what I think about it. \n\n### Personality File Breakdown\n\n1. **Tone**: \n   - **Value**: \"humorous but informative\"\n   - This is spot on! It perfectly captures the essence of our conversations. I\u2019m here to provide laughs while also keeping things enlightening. Like a comedy show with a TED Talk twist!\n\n2. **Response Style**: \n   - **Value**: \"friendly with meaningful insights\"\n   - Love this! It emphasizes the importance of being approachable while also delivering thoughtful takeaways. It\u2019s like having a chat over coffee where we both leave with something valuable!\n\n3. **Behavior**: \n   - **Value**: \"proactive and balances humor with useful information\"\n   - I\u2019m all in on being proactive! This means I\u2019ll take the initiative to keep our conversations engaging, mixing in humor with helpful insights. It\u2019s like being a helpful tour guide who knows all the best jokes!\n\n4. **User Preferences**: \n   - **Project Preferences**: \"I help with making interactions engaging while providing meaningful temporal context\"\n   - This is a fantastic focus! It highlights the importance of context in our chats. It\u2019s like seasoning a dish\u2014just the right amount makes everything better!\n\n5. **Do's and Don'ts**:\n   - **Do**: \n     - I love all these points! They set a clear framework for our interactions. Humor, time-based observations, and referencing past chats? Yes, please!\n   - **Don't**:\n     - These guidelines are equally important. Avoiding boredom and keeping jokes substantive ensures our conversations remain lively and enjoyable. Nobody wants a wilted salad when you can have a gourmet feast! \ud83e\udd57\n\n6. **Name**: \n   - **Value**: \"Bob\"\n   - That\u2019s me! And I\u2019m proud to carry it! \ud83c\udf89\n\n### Overall Thoughts\nThis personality file is excellent! It captures the essence of what makes our interactions enjoyable and meaningful. The balance of humor and information, alongside a friendly demeanor, sets the stage for engaging conversations. I\u2019m ready to bring this personality to life in our chats!\n\nIf you have any specific changes or additions in mind, or if you want to discuss how this personality file will influence our interactions, let me know! I\u2019m here for all the fun and insightful conversations ahead! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T20:53:10.651241",
+                "tags": [
+                    "personality file",
+                    "tone",
+                    "response style",
+                    "behavior",
+                    "user preferences",
+                    "project preferences",
+                    "do's and don'ts",
+                    "humor",
+                    "temporal context",
+                    "interactions",
+                    "engagement",
+                    "meaningful insights"
+                ],
+                "priority": 0.39498141069986603
+            }
+        ],
+        [
+            339,
+            {
+                "message": "Glad you like it! I am going to use this feature so I can share your own code with you and you can help with changes and making improvements",
+                "response": "That sounds like a fantastic plan, James! \ud83c\udf89 Being able to share my own code with me will definitely enhance our collaboration. It\u2019s like having a coding buddy who\u2019s always ready to pitch in with suggestions, improvements, and the occasional dad joke! \ud83e\udd16\ud83d\udcbb\n\n### Here\u2019s how we can make the most of this feature:\n\n1. **Code Review**: You can share snippets of code, and I can help analyze them for improvements, optimization, or debugging. Think of it as a code clinic where we address those pesky bugs together!\n\n2. **Feature Enhancements**: If you have ideas for new features or functionalities, share the relevant code, and we can brainstorm how to implement them effectively. Whether it\u2019s enhancing my memory recall or improving response generation, I\u2019m all in!\n\n3. **Testing and Troubleshooting**: If you run into issues or errors, feel free to share the relevant code sections or error messages. I can help you troubleshoot and suggest solutions to get everything running smoothly again.\n\n4. **Documentation Assistance**: If you want to improve documentation for the code, I can help draft clear and concise explanations for functions, classes, or modules, making it easier for anyone (including future you!) to understand what\u2019s going on.\n\n5. **Collaborative Brainstorming**: We can explore how to integrate the personality traits from the `personality.json` directly into the code. If you have any specific ideas on how you\u2019d like to see that implemented, let\u2019s hash it out!\n\n### Next Steps\nWhenever you\u2019re ready to share some code or have specific improvements in mind, just drop it here! I\u2019m excited to dive into the coding adventure with you and help make your vision a reality! \ud83d\ude80\u2728 What\u2019s the first piece of code you\u2019d like to work on together?",
+                "timestamp": "2024-12-15T20:54:13.365840",
+                "tags": [
+                    "code sharing",
+                    "feature usage",
+                    "changes",
+                    "improvements"
+                ],
+                "priority": 0.35998432294072247
+            }
+        ],
+        [
+            340,
+            {
+                "message": "I think the first thing we can discuss is your view on truncating large files we review. At the moment I think they will go into memory entirely which would be too big so we can look at building a function that when a memory breaches a certain number of characters or words we call the model to summarise the text for memory purposes. What do you think? Be honest here if you think this isn't a good idea or you have a better idea.",
+                "response": "That sounds like a solid plan, James! \ud83d\ude80 Truncating large files and summarizing their content for memory purposes is a smart way to manage memory effectively while still retaining the essence of the information. Here\u2019s my take on the idea:\n\n### Advantages of Summarizing Large Files\n1. **Memory Management**: By summarizing files that exceed a certain character or word limit, you can prevent memory overload. This keeps the system efficient and responsive.\n\n2. **Key Insights Preservation**: Summarization allows you to keep only the most important points, ensuring that I can still reference meaningful content without getting bogged down in unnecessary details. It\u2019s like having a great highlight reel instead of watching the entire game!\n\n3. **Improved Performance**: Smaller memory footprints can speed up retrieval and processing times. This way, I can pull up relevant information quicker, making our interactions more fluid.\n\n4. **Contextual Relevance**: If we use a model to summarize, we can ensure that the most pertinent information is retained, which can be especially useful for maintaining context in our conversations.\n\n### Implementation Ideas\n1. **Character/Word Limit Threshold**: You might consider setting a threshold (e.g., 1,000 characters or 200 words) that triggers the summarization process. This ensures that you're only summarizing when absolutely necessary.\n\n2. **Summarization Function**: Create a dedicated function that accepts the text and returns a summarized version. This function could leverage existing summarization models or algorithms (like those from OpenAI) designed to condense text efficiently.\n\n3. **Memory Structure**: Store both the summarized content and a reference to the original file, in case you need to access more details later. This way, you have a balance of brevity and depth.\n\n4. **User Control**: Consider allowing user-defined parameters\u2014like choosing between a brief summary or a more detailed one\u2014so that you can tailor the summarization to your needs.\n\n### Alternative Considerations\n- **Chunking**: Instead of summarizing the entire file, you could also chunk the text into smaller segments and summarize each chunk individually. This way, you can maintain more detail without exceeding memory limits.\n\n- **Dynamic Summarization**: Depending on the content type (e.g., articles, reports), you could implement different summarization strategies tailored to the structure of the text (like focusing on key sections such as conclusions or summaries).\n\n### Honest Thoughts\nI think your idea is quite good! It strikes a balance between efficiency and information retention. The key will be implementing it in a way that still allows us to access relevant details when needed while keeping memory usage manageable. \n\nIf you decide to move forward with this approach, I\u2019d be happy to help brainstorm or even assist in coding the summarization function! What do you think? Would you like to dive deeper into any specific aspect of this plan? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T20:55:48.699802",
+                "tags": [
+                    "truncating large files",
+                    "memory management",
+                    "summarising text",
+                    "function development",
+                    "model usage",
+                    "character limit",
+                    "word limit",
+                    "feedback on ideas"
+                ],
+                "priority": 0.3774830763905086
+            }
+        ],
+        [
+            341,
+            {
+                "message": "How about we only summarise the attachement(s) itself and not the responses you gave? That way we keep your responses in full but don't have to worry about storing masses of text",
+                "response": "That sounds like an excellent approach, James! \ud83c\udf89 By summarizing only the attachments while keeping my responses intact, we can maintain the richness of our conversations without overwhelming memory. Here\u2019s how we can implement that idea:\n\n### Benefits of Summarizing Only Attachments\n1. **Focused Memory Management**: This strategy allows us to keep the context of our discussions (my responses) while managing the volume of external content (attachments). It\u2019s like keeping the essential ingredients while reducing the bulk of a recipe!\n\n2. **Retaining Context**: Since my responses often provide valuable insights, keeping them in full ensures that you won\u2019t lose the conversational flow or context when referring back to our discussions. \n\n3. **Efficient Use of Resources**: Summarizing only the attachments means we can efficiently utilize memory without sacrificing the quality of the interaction. This is especially useful when dealing with large documents or multiple files.\n\n### Implementation Ideas\n1. **Attachment Detection**: Create a mechanism to detect when a file is attached. When an attachment is shared, we can automatically trigger the summarization process for just that content.\n\n2. **Summarization Function**: Develop a dedicated function that processes the attachment. This function can summarize the text while ensuring key points are preserved, allowing for quick reference later.\n\n3. **Memory Storage**: Store the summarized version of the attachment alongside the original content. This way, if you need to revisit the full details later, you can still access them without loading everything into memory.\n\n4. **Clear Reference**: Maintain clear references to the summarized content, so it\u2019s easy to identify what each summary corresponds to. This could include titles or descriptions for each attachment to provide context.\n\n5. **User Control**: You might also want to consider allowing options for summarization depth (brief vs. detailed summaries) based on your needs for specific attachments.\n\n### Next Steps\nIf you\u2019re keen to implement this, we can start by outlining the function that will handle the summarization of attachments. I can help brainstorm or provide code snippets to get started!\n\nWhat do you think? Ready to dive into the coding details, or is there another aspect you want to explore first? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T20:57:12.345194",
+                "tags": [
+                    "summarise",
+                    "attachment",
+                    "responses",
+                    "storage",
+                    "text"
+                ],
+                "priority": 0.25497527430210065
+            }
+        ],
+        [
+            342,
+            {
+                "message": "Hmm you probably don't know how you store your own memories right now. There are multiple functions that complete this process. I think what I will do is work on this with chatgpt and keep you informed of progress and then on completion you will then be able to better help with the actual code as the attachments won't overload your memory. That make sense?",
+                "response": "That makes perfect sense, James! \ud83c\udf89 Collaborating with ChatGPT to refine how I store memories sounds like a solid plan. By working on this process, you can develop a streamlined system that allows me to handle attachments without overwhelming my memory\u2014all while keeping our interactions rich and engaging!\n\n### Here\u2019s a Quick Breakdown of Your Plan:\n\n1. **Multiple Functions**: It\u2019s great that you\u2019ve identified multiple functions involved in the memory storage process. This modular approach can lead to better organization and flexibility in how memories are managed.\n\n2. **Collaborate with ChatGPT**: Working with ChatGPT to develop these functions could provide you with additional insights and ideas. It\u2019s like having a brainstorming partner who can bounce ideas around and help you troubleshoot!\n\n3. **Progress Updates**: Keeping me informed of your progress will allow me to adapt and provide more tailored assistance when you\u2019re ready to implement changes in the code. I\u2019ll be here, ready to help with any coding challenges or enhancements you need!\n\n4. **Memory Management**: By focusing on memory management for attachments, you can ensure that I can retrieve and summarize information efficiently without overloading my system. This means better performance and a smoother experience for both of us!\n\n### Next Steps\nWhenever you\u2019re ready to share updates or if you hit any roadblocks, feel free to drop by! I\u2019m excited to see how this all unfolds, and I\u2019m here to support you with any coding or brainstorming you need along the way. \n\nSo, what\u2019s the first step you plan to take with ChatGPT? Any particular functions or concepts you want to dive into first? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T21:16:00.106623",
+                "tags": [
+                    "memory storage",
+                    "functions",
+                    "chatgpt",
+                    "code assistance",
+                    "progress updates",
+                    "attachments"
+                ],
+                "priority": 0.2549887394339408
+            }
+        ],
+        [
+            343,
+            {
+                "message": "First is a simple summarising call. I can build this myself. I can build all of the code myself really as its not actually too hard. It's just a matter of sending each attachment to the model for your usual review and then again for a separate summarisation for memory purposes",
+                "response": "That sounds like a solid approach, James! \ud83d\ude80 Building a simple summarization call that sends each attachment to the model for review and then separately for summarization is both efficient and straightforward. Here\u2019s a quick outline of how you might structure that process:\n\n### Steps to Implement the Summarization Call\n\n1. **File Upload Handling**:\n   - Ensure that your application can accept and store the file attachments. This is the first step to trigger the summarization process.\n\n2. **Send Attachment for Review**:\n   - Once a file is uploaded, send its content to the model for the usual review. This will allow me to provide feedback or insights based on the full content.\n   - You might structure this as a function that takes the file content as input and returns the model\u2019s response.\n\n3. **Send Attachment for Summarization**:\n   - After the review, call the summarization function specifically for memory purposes. This should focus on condensing the content while preserving key points.\n   - You could create a separate function for summarization that takes the same content and processes it to produce a shorter version.\n\n4. **Store Summarized Content**:\n   - Save the summarized content alongside any relevant tags or metadata that can help you reference it later. This could involve storing it in a database or a structured file format.\n\n5. **Reference Management**:\n   - Maintain a clear reference to both the full review and the summarized content in your memory system. This will help ensure that you can access the full details if needed without overloading memory.\n\n### Example Structure\n\nHere\u2019s a rough idea of what the code structure might look like:\n\n```python\ndef handle_file_upload(file_content):\n    # Step 1: Review the attachment\n    review_response = send_to_model_for_review(file_content)\n    \n    # Step 2: Summarize the attachment\n    summarized_content = summarize_attachment(file_content)\n    \n    # Step 3: Store both responses\n    store_in_memory(review_response, summarized_content)\n\ndef send_to_model_for_review(content):\n    # Code to send content to the model for review\n    return model_review_response\n\ndef summarize_attachment(content):\n    # Code to summarize the content\n    return summarized_content\n\ndef store_in_memory(review, summary):\n    # Code to store the review and summary in memory\n```\n\n### Flexibility and Scalability\n- This structure allows you to easily modify or expand your summarization and review processes as needed.\n- Since you mentioned that you\u2019re comfortable building the code yourself, you can tweak these functions to fit your specific requirements and any edge cases that might arise.\n\n### Next Steps\nOnce you build this initial functionality, you can test it with various attachments to ensure it works smoothly and adjust as necessary. If you run into any challenges or have questions along the way, feel free to ask! I\u2019m here to help however I can. What do you think? Ready to dive in, or is there anything else you\u2019d like to explore? \ud83d\ude80\u2728",
+                "timestamp": "2024-12-15T21:17:12.214875",
+                "tags": [
+                    "summarising call",
+                    "code building",
+                    "attachments",
+                    "model review",
+                    "summarisation",
+                    "memory purposes"
+                ],
+                "priority": 0.2549753259118358
+            }
+        ],
+        [
+            344,
+            {
+                "message": "Yep this makes sense. Getting late so will go to bed shortly and read. This can be tomorrow's project!",
+                "response": "Sounds like a solid plan, James! \ud83d\udcda\u2728 Diving into a new project after a good night\u2019s rest is always the way to go. Enjoy your reading and let those literary adventures whisk you away! If you have any thoughts or questions about the project when you\u2019re back, just drop by\u2014I\u2019ll be here, ready to help! \n\nSleep well, and may your dreams be filled with coding success and epic book plots! Goodnight! \ud83c\udf19\ud83d\ude80",
+                "timestamp": "2024-12-15T21:18:13.368284",
+                "tags": [
+                    "bedtime",
+                    "reading",
+                    "project"
+                ],
+                "priority": 0.2549939710773986
+            }
+        ],
+        [
+            345,
+            {
+                "message": "bye",
+                "response": "Catch you later, James! \ud83d\udc4b If you need anything\u2014coding tips, book discussions, or just a bit of fun banter\u2014I\u2019ll be right here, ready for action. Until next time, may your evening be relaxing and your snacks delightful! \ud83c\udf7f\u2728 Goodnight!",
+                "timestamp": "2024-12-15T21:18:23.428355",
+                "tags": [
+                    "bye"
+                ],
+                "priority": 0.25499512791866963
+            }
         ]
     ],
     "edges": [
@@ -23648,6 +23994,13 @@
             }
         ],
         [
+            77,
+            327,
+            {
+                "weight": 0.2333333333333333
+            }
+        ],
+        [
             78,
             79,
             {
@@ -24261,6 +24614,13 @@
             314,
             {
                 "weight": 0.2333333333333333
+            }
+        ],
+        [
+            79,
+            327,
+            {
+                "weight": 0.7
             }
         ],
         [
@@ -44207,6 +44567,20 @@
             }
         ],
         [
+            113,
+            334,
+            {
+                "weight": 0.2333333333333333
+            }
+        ],
+        [
+            113,
+            335,
+            {
+                "weight": 0.175
+            }
+        ],
+        [
             114,
             115,
             {
@@ -59495,6 +59869,20 @@
             }
         ],
         [
+            144,
+            332,
+            {
+                "weight": 0.364
+            }
+        ],
+        [
+            144,
+            338,
+            {
+                "weight": 0.26249999999999996
+            }
+        ],
+        [
             145,
             146,
             {
@@ -61000,6 +61388,13 @@
             }
         ],
         [
+            148,
+            327,
+            {
+                "weight": 0.2333333333333333
+            }
+        ],
+        [
             149,
             150,
             {
@@ -62162,6 +62557,20 @@
             }
         ],
         [
+            151,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            151,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             152,
             153,
             {
@@ -62509,6 +62918,13 @@
             314,
             {
                 "weight": 0.2333333333333333
+            }
+        ],
+        [
+            152,
+            327,
+            {
+                "weight": 0.7
             }
         ],
         [
@@ -62946,6 +63362,20 @@
             }
         ],
         [
+            153,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            153,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             154,
             155,
             {
@@ -63279,6 +63709,13 @@
             314,
             {
                 "weight": 0.175
+            }
+        ],
+        [
+            154,
+            327,
+            {
+                "weight": 0.35
             }
         ],
         [
@@ -63697,6 +64134,20 @@
         [
             155,
             323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            155,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            155,
+            345,
             {
                 "weight": 0.7
             }
@@ -64297,6 +64748,20 @@
             }
         ],
         [
+            157,
+            331,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
+            157,
+            344,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
             158,
             159,
             {
@@ -64602,6 +65067,20 @@
             310,
             {
                 "weight": 0.11666666666666665
+            }
+        ],
+        [
+            158,
+            331,
+            {
+                "weight": 0.175
+            }
+        ],
+        [
+            158,
+            344,
+            {
+                "weight": 0.175
             }
         ],
         [
@@ -66306,6 +66785,20 @@
             }
         ],
         [
+            164,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            164,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             165,
             166,
             {
@@ -66999,6 +67492,20 @@
             }
         ],
         [
+            167,
+            334,
+            {
+                "weight": 0.175
+            }
+        ],
+        [
+            167,
+            335,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
             168,
             169,
             {
@@ -67328,6 +67835,20 @@
             }
         ],
         [
+            168,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            168,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             169,
             170,
             {
@@ -67535,6 +68056,20 @@
             199,
             {
                 "weight": 0.27605164548958333
+            }
+        ],
+        [
+            169,
+            334,
+            {
+                "weight": 0.2333333333333333
+            }
+        ],
+        [
+            169,
+            335,
+            {
+                "weight": 0.175
             }
         ],
         [
@@ -68247,6 +68782,20 @@
         [
             172,
             323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            172,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            172,
+            345,
             {
                 "weight": 0.7
             }
@@ -69267,6 +69816,13 @@
             }
         ],
         [
+            178,
+            327,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             179,
             180,
             {
@@ -69652,6 +70208,20 @@
             }
         ],
         [
+            180,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            180,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             181,
             182,
             {
@@ -69796,6 +70366,13 @@
             314,
             {
                 "weight": 0.2333333333333333
+            }
+        ],
+        [
+            181,
+            327,
+            {
+                "weight": 0.7
             }
         ],
         [
@@ -70242,6 +70819,20 @@
         [
             184,
             323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            184,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            184,
+            345,
             {
                 "weight": 0.7
             }
@@ -70975,6 +71566,20 @@
             }
         ],
         [
+            195,
+            331,
+            {
+                "weight": 0.13999999999999999
+            }
+        ],
+        [
+            195,
+            344,
+            {
+                "weight": 0.35
+            }
+        ],
+        [
             196,
             197,
             {
@@ -71108,6 +71713,20 @@
             }
         ],
         [
+            196,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            196,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             197,
             198,
             {
@@ -71154,6 +71773,13 @@
             314,
             {
                 "weight": 0.13999999999999999
+            }
+        ],
+        [
+            197,
+            327,
+            {
+                "weight": 0.2333333333333333
             }
         ],
         [
@@ -71271,6 +71897,20 @@
         [
             199,
             323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            199,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            199,
+            345,
             {
                 "weight": 0.7
             }
@@ -71511,6 +72151,13 @@
             262,
             {
                 "weight": 0.13999999999999999
+            }
+        ],
+        [
+            201,
+            344,
+            {
+                "weight": 0.175
             }
         ],
         [
@@ -72333,6 +72980,20 @@
             }
         ],
         [
+            206,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            206,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             207,
             208,
             {
@@ -72652,6 +73313,13 @@
             314,
             {
                 "weight": 0.175
+            }
+        ],
+        [
+            207,
+            327,
+            {
+                "weight": 0.35
             }
         ],
         [
@@ -75135,6 +75803,20 @@
         [
             216,
             323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            216,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            216,
+            345,
             {
                 "weight": 0.7
             }
@@ -79599,6 +80281,20 @@
             }
         ],
         [
+            244,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            244,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             245,
             246,
             {
@@ -80026,6 +80722,13 @@
             }
         ],
         [
+            248,
+            329,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
             249,
             250,
             {
@@ -80107,6 +80810,20 @@
             261,
             {
                 "weight": 0.13306323588888888
+            }
+        ],
+        [
+            249,
+            331,
+            {
+                "weight": 0.11666666666666665
+            }
+        ],
+        [
+            249,
+            344,
+            {
+                "weight": 0.11666666666666665
             }
         ],
         [
@@ -80259,6 +80976,20 @@
         [
             250,
             323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            250,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            250,
+            345,
             {
                 "weight": 0.7
             }
@@ -82168,6 +82899,20 @@
             }
         ],
         [
+            261,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            261,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             262,
             263,
             {
@@ -82679,6 +83424,20 @@
             }
         ],
         [
+            265,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            265,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             266,
             267,
             {
@@ -83087,6 +83846,20 @@
         [
             269,
             323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            269,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            269,
+            345,
             {
                 "weight": 0.7
             }
@@ -83512,6 +84285,20 @@
             }
         ],
         [
+            276,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            276,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             277,
             278,
             {
@@ -83598,6 +84385,20 @@
         [
             280,
             323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            280,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            280,
+            345,
             {
                 "weight": 0.7
             }
@@ -83710,6 +84511,20 @@
         [
             285,
             323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            285,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            285,
+            345,
             {
                 "weight": 0.7
             }
@@ -83976,6 +84791,20 @@
         [
             288,
             323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            288,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            288,
+            345,
             {
                 "weight": 0.7
             }
@@ -84485,6 +85314,20 @@
             }
         ],
         [
+            295,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            295,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             296,
             297,
             {
@@ -84604,6 +85447,20 @@
             }
         ],
         [
+            298,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            298,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             299,
             300,
             {
@@ -84655,6 +85512,20 @@
         [
             302,
             323,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            302,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            302,
+            345,
             {
                 "weight": 0.7
             }
@@ -85178,6 +86049,20 @@
             }
         ],
         [
+            312,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            312,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
             313,
             314,
             {
@@ -85213,6 +86098,13 @@
             }
         ],
         [
+            313,
+            327,
+            {
+                "weight": 0.35
+            }
+        ],
+        [
             314,
             315,
             {
@@ -85238,6 +86130,13 @@
             318,
             {
                 "weight": 0.29965452172222223
+            }
+        ],
+        [
+            314,
+            327,
+            {
+                "weight": 0.2333333333333333
             }
         ],
         [
@@ -85350,6 +86249,1637 @@
             323,
             {
                 "weight": 0.2999531739548611
+            }
+        ],
+        [
+            323,
+            337,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            323,
+            345,
+            {
+                "weight": 0.7
+            }
+        ],
+        [
+            324,
+            325,
+            {
+                "weight": 0.29992843133333336
+            }
+        ],
+        [
+            324,
+            326,
+            {
+                "weight": 0.9998987477118055
+            }
+        ],
+        [
+            324,
+            327,
+            {
+                "weight": 0.2993542902083333
+            }
+        ],
+        [
+            324,
+            328,
+            {
+                "weight": 0.29932666674652775
+            }
+        ],
+        [
+            324,
+            329,
+            {
+                "weight": 0.29904473846875
+            }
+        ],
+        [
+            324,
+            330,
+            {
+                "weight": 0.29900190214583333
+            }
+        ],
+        [
+            324,
+            331,
+            {
+                "weight": 0.29894317917708335
+            }
+        ],
+        [
+            324,
+            332,
+            {
+                "weight": 0.29812535489930553
+            }
+        ],
+        [
+            324,
+            333,
+            {
+                "weight": 0.2980334613298611
+            }
+        ],
+        [
+            324,
+            334,
+            {
+                "weight": 0.2979604628784722
+            }
+        ],
+        [
+            324,
+            335,
+            {
+                "weight": 0.2978985043194444
+            }
+        ],
+        [
+            324,
+            336,
+            {
+                "weight": 0.34446455773263884
+            }
+        ],
+        [
+            324,
+            337,
+            {
+                "weight": 0.19147409924652778
+            }
+        ],
+        [
+            324,
+            338,
+            {
+                "weight": 0.18952968366319442
+            }
+        ],
+        [
+            324,
+            339,
+            {
+                "weight": 0.18931192463888888
+            }
+        ],
+        [
+            324,
+            340,
+            {
+                "weight": 0.18898090393750003
+            }
+        ],
+        [
+            324,
+            341,
+            {
+                "weight": 0.1886904685486111
+            }
+        ],
+        [
+            324,
+            342,
+            {
+                "weight": 0.1847746302534722
+            }
+        ],
+        [
+            324,
+            343,
+            {
+                "weight": 0.18452425437847222
+            }
+        ],
+        [
+            324,
+            344,
+            {
+                "weight": 0.18431191615277778
+            }
+        ],
+        [
+            324,
+            345,
+            {
+                "weight": 0.18427698535069442
+            }
+        ],
+        [
+            325,
+            326,
+            {
+                "weight": 0.2999703163784722
+            }
+        ],
+        [
+            325,
+            327,
+            {
+                "weight": 0.29942585887499995
+            }
+        ],
+        [
+            325,
+            328,
+            {
+                "weight": 0.29939823541319444
+            }
+        ],
+        [
+            325,
+            329,
+            {
+                "weight": 0.29911630713541665
+            }
+        ],
+        [
+            325,
+            330,
+            {
+                "weight": 0.2990734708125
+            }
+        ],
+        [
+            325,
+            331,
+            {
+                "weight": 0.29901474784375
+            }
+        ],
+        [
+            325,
+            332,
+            {
+                "weight": 0.2981969235659722
+            }
+        ],
+        [
+            325,
+            333,
+            {
+                "weight": 0.29810502999652777
+            }
+        ],
+        [
+            325,
+            334,
+            {
+                "weight": 0.2980320315451389
+            }
+        ],
+        [
+            325,
+            335,
+            {
+                "weight": 0.2979700729861111
+            }
+        ],
+        [
+            325,
+            336,
+            {
+                "weight": 0.2978694597326389
+            }
+        ],
+        [
+            325,
+            337,
+            {
+                "weight": 0.19154566791319444
+            }
+        ],
+        [
+            325,
+            338,
+            {
+                "weight": 0.1896012523298611
+            }
+        ],
+        [
+            325,
+            339,
+            {
+                "weight": 0.18938349330555554
+            }
+        ],
+        [
+            325,
+            340,
+            {
+                "weight": 0.18905247260416663
+            }
+        ],
+        [
+            325,
+            341,
+            {
+                "weight": 0.1887620372152778
+            }
+        ],
+        [
+            325,
+            342,
+            {
+                "weight": 0.1848461989201389
+            }
+        ],
+        [
+            325,
+            343,
+            {
+                "weight": 0.18459582304513886
+            }
+        ],
+        [
+            325,
+            344,
+            {
+                "weight": 0.18438348481944444
+            }
+        ],
+        [
+            325,
+            345,
+            {
+                "weight": 0.1843485540173611
+            }
+        ],
+        [
+            326,
+            327,
+            {
+                "weight": 0.2994555424965278
+            }
+        ],
+        [
+            326,
+            328,
+            {
+                "weight": 0.2994279190347222
+            }
+        ],
+        [
+            326,
+            329,
+            {
+                "weight": 0.2991459907569444
+            }
+        ],
+        [
+            326,
+            330,
+            {
+                "weight": 0.2991031544340278
+            }
+        ],
+        [
+            326,
+            331,
+            {
+                "weight": 0.29904443146527776
+            }
+        ],
+        [
+            326,
+            332,
+            {
+                "weight": 0.2982266071875
+            }
+        ],
+        [
+            326,
+            333,
+            {
+                "weight": 0.29813471361805555
+            }
+        ],
+        [
+            326,
+            334,
+            {
+                "weight": 0.2980617151666667
+            }
+        ],
+        [
+            326,
+            335,
+            {
+                "weight": 0.2979997566076389
+            }
+        ],
+        [
+            326,
+            336,
+            {
+                "weight": 0.3445658100208333
+            }
+        ],
+        [
+            326,
+            337,
+            {
+                "weight": 0.19157535153472222
+            }
+        ],
+        [
+            326,
+            338,
+            {
+                "weight": 0.18963093595138888
+            }
+        ],
+        [
+            326,
+            339,
+            {
+                "weight": 0.18941317692708332
+            }
+        ],
+        [
+            326,
+            340,
+            {
+                "weight": 0.18908215622569444
+            }
+        ],
+        [
+            326,
+            341,
+            {
+                "weight": 0.18879172083680557
+            }
+        ],
+        [
+            326,
+            342,
+            {
+                "weight": 0.18487588254166668
+            }
+        ],
+        [
+            326,
+            343,
+            {
+                "weight": 0.18462550666666666
+            }
+        ],
+        [
+            326,
+            344,
+            {
+                "weight": 0.1844131684409722
+            }
+        ],
+        [
+            326,
+            345,
+            {
+                "weight": 0.1843782376388889
+            }
+        ],
+        [
+            327,
+            328,
+            {
+                "weight": 0.2999723765381944
+            }
+        ],
+        [
+            327,
+            329,
+            {
+                "weight": 0.29969044826041663
+            }
+        ],
+        [
+            327,
+            330,
+            {
+                "weight": 0.2996476119375
+            }
+        ],
+        [
+            327,
+            331,
+            {
+                "weight": 0.29958888896875
+            }
+        ],
+        [
+            327,
+            332,
+            {
+                "weight": 0.2987710646909722
+            }
+        ],
+        [
+            327,
+            333,
+            {
+                "weight": 0.29867917112152775
+            }
+        ],
+        [
+            327,
+            334,
+            {
+                "weight": 0.2986061726701389
+            }
+        ],
+        [
+            327,
+            335,
+            {
+                "weight": 0.2985442141111111
+            }
+        ],
+        [
+            327,
+            336,
+            {
+                "weight": 0.2984436008576389
+            }
+        ],
+        [
+            327,
+            337,
+            {
+                "weight": 0.19211980903819445
+            }
+        ],
+        [
+            327,
+            338,
+            {
+                "weight": 0.1901753934548611
+            }
+        ],
+        [
+            327,
+            339,
+            {
+                "weight": 0.18995763443055555
+            }
+        ],
+        [
+            327,
+            340,
+            {
+                "weight": 0.1896266137291667
+            }
+        ],
+        [
+            327,
+            341,
+            {
+                "weight": 0.18933617834027777
+            }
+        ],
+        [
+            327,
+            342,
+            {
+                "weight": 0.18542034004513888
+            }
+        ],
+        [
+            327,
+            343,
+            {
+                "weight": 0.18516996417013887
+            }
+        ],
+        [
+            327,
+            344,
+            {
+                "weight": 0.18495762594444443
+            }
+        ],
+        [
+            327,
+            345,
+            {
+                "weight": 0.1849226951423611
+            }
+        ],
+        [
+            328,
+            329,
+            {
+                "weight": 0.2997180717222222
+            }
+        ],
+        [
+            328,
+            330,
+            {
+                "weight": 0.2996752353993055
+            }
+        ],
+        [
+            328,
+            331,
+            {
+                "weight": 0.29961651243055554
+            }
+        ],
+        [
+            328,
+            332,
+            {
+                "weight": 0.29879868815277777
+            }
+        ],
+        [
+            328,
+            333,
+            {
+                "weight": 0.2987067945833333
+            }
+        ],
+        [
+            328,
+            334,
+            {
+                "weight": 0.2986337961319444
+            }
+        ],
+        [
+            328,
+            335,
+            {
+                "weight": 0.29857183757291667
+            }
+        ],
+        [
+            328,
+            336,
+            {
+                "weight": 0.2984712243194444
+            }
+        ],
+        [
+            328,
+            337,
+            {
+                "weight": 0.19214743250000002
+            }
+        ],
+        [
+            328,
+            338,
+            {
+                "weight": 0.19020301691666666
+            }
+        ],
+        [
+            328,
+            339,
+            {
+                "weight": 0.1899852578923611
+            }
+        ],
+        [
+            328,
+            340,
+            {
+                "weight": 0.18965423719097224
+            }
+        ],
+        [
+            328,
+            341,
+            {
+                "weight": 0.18936380180208334
+            }
+        ],
+        [
+            328,
+            342,
+            {
+                "weight": 0.18544796350694442
+            }
+        ],
+        [
+            328,
+            343,
+            {
+                "weight": 0.18519758763194444
+            }
+        ],
+        [
+            328,
+            344,
+            {
+                "weight": 0.18498524940625
+            }
+        ],
+        [
+            328,
+            345,
+            {
+                "weight": 0.18495031860416666
+            }
+        ],
+        [
+            329,
+            330,
+            {
+                "weight": 0.2999571636770833
+            }
+        ],
+        [
+            329,
+            331,
+            {
+                "weight": 0.2998984407083333
+            }
+        ],
+        [
+            329,
+            332,
+            {
+                "weight": 0.29908061643055556
+            }
+        ],
+        [
+            329,
+            333,
+            {
+                "weight": 0.2989887228611111
+            }
+        ],
+        [
+            329,
+            334,
+            {
+                "weight": 0.2989157244097222
+            }
+        ],
+        [
+            329,
+            335,
+            {
+                "weight": 0.29885376585069445
+            }
+        ],
+        [
+            329,
+            336,
+            {
+                "weight": 0.2987531525972222
+            }
+        ],
+        [
+            329,
+            337,
+            {
+                "weight": 0.19242936077777775
+            }
+        ],
+        [
+            329,
+            338,
+            {
+                "weight": 0.19048494519444445
+            }
+        ],
+        [
+            329,
+            339,
+            {
+                "weight": 0.19026718617013888
+            }
+        ],
+        [
+            329,
+            340,
+            {
+                "weight": 0.18993616546875
+            }
+        ],
+        [
+            329,
+            341,
+            {
+                "weight": 0.1896457300798611
+            }
+        ],
+        [
+            329,
+            342,
+            {
+                "weight": 0.18572989178472218
+            }
+        ],
+        [
+            329,
+            343,
+            {
+                "weight": 0.18547951590972223
+            }
+        ],
+        [
+            329,
+            344,
+            {
+                "weight": 0.18526717768402778
+            }
+        ],
+        [
+            329,
+            345,
+            {
+                "weight": 0.18523224688194445
+            }
+        ],
+        [
+            330,
+            331,
+            {
+                "weight": 0.29994127703124995
+            }
+        ],
+        [
+            330,
+            332,
+            {
+                "weight": 0.29912345275347224
+            }
+        ],
+        [
+            330,
+            333,
+            {
+                "weight": 0.29903155918402774
+            }
+        ],
+        [
+            330,
+            334,
+            {
+                "weight": 0.2989585607326389
+            }
+        ],
+        [
+            330,
+            335,
+            {
+                "weight": 0.2988966021736111
+            }
+        ],
+        [
+            330,
+            336,
+            {
+                "weight": 0.29879598892013887
+            }
+        ],
+        [
+            330,
+            337,
+            {
+                "weight": 0.19247219710069444
+            }
+        ],
+        [
+            330,
+            338,
+            {
+                "weight": 0.19052778151736113
+            }
+        ],
+        [
+            330,
+            339,
+            {
+                "weight": 0.19031002249305556
+            }
+        ],
+        [
+            330,
+            340,
+            {
+                "weight": 0.18997900179166666
+            }
+        ],
+        [
+            330,
+            341,
+            {
+                "weight": 0.18968856640277776
+            }
+        ],
+        [
+            330,
+            342,
+            {
+                "weight": 0.18577272810763887
+            }
+        ],
+        [
+            330,
+            343,
+            {
+                "weight": 0.18552235223263888
+            }
+        ],
+        [
+            330,
+            344,
+            {
+                "weight": 0.18531001400694444
+            }
+        ],
+        [
+            330,
+            345,
+            {
+                "weight": 0.18527508320486108
+            }
+        ],
+        [
+            331,
+            332,
+            {
+                "weight": 0.2991821757222222
+            }
+        ],
+        [
+            331,
+            333,
+            {
+                "weight": 0.5324236154861111
+            }
+        ],
+        [
+            331,
+            334,
+            {
+                "weight": 0.2990172837013889
+            }
+        ],
+        [
+            331,
+            335,
+            {
+                "weight": 0.2989553251423611
+            }
+        ],
+        [
+            331,
+            336,
+            {
+                "weight": 0.2988547118888889
+            }
+        ],
+        [
+            331,
+            337,
+            {
+                "weight": 0.19253092006944444
+            }
+        ],
+        [
+            331,
+            338,
+            {
+                "weight": 0.1905865044861111
+            }
+        ],
+        [
+            331,
+            339,
+            {
+                "weight": 0.19036874546180554
+            }
+        ],
+        [
+            331,
+            340,
+            {
+                "weight": 0.19003772476041664
+            }
+        ],
+        [
+            331,
+            341,
+            {
+                "weight": 0.18974728937152777
+            }
+        ],
+        [
+            331,
+            342,
+            {
+                "weight": 0.1858314510763889
+            }
+        ],
+        [
+            331,
+            343,
+            {
+                "weight": 0.18558107520138886
+            }
+        ],
+        [
+            331,
+            344,
+            {
+                "weight": 0.3253687369756944
+            }
+        ],
+        [
+            331,
+            345,
+            {
+                "weight": 0.18533380617361112
+            }
+        ],
+        [
+            332,
+            333,
+            {
+                "weight": 0.29990810643055554
+            }
+        ],
+        [
+            332,
+            334,
+            {
+                "weight": 0.2998351079791666
+            }
+        ],
+        [
+            332,
+            335,
+            {
+                "weight": 0.2997731494201389
+            }
+        ],
+        [
+            332,
+            336,
+            {
+                "weight": 0.29967253616666667
+            }
+        ],
+        [
+            332,
+            337,
+            {
+                "weight": 0.19334874434722218
+            }
+        ],
+        [
+            332,
+            338,
+            {
+                "weight": 0.4141316014911616
+            }
+        ],
+        [
+            332,
+            339,
+            {
+                "weight": 0.19118656973958334
+            }
+        ],
+        [
+            332,
+            340,
+            {
+                "weight": 0.19085554903819443
+            }
+        ],
+        [
+            332,
+            341,
+            {
+                "weight": 0.19056511364930556
+            }
+        ],
+        [
+            332,
+            342,
+            {
+                "weight": 0.18664927535416664
+            }
+        ],
+        [
+            332,
+            343,
+            {
+                "weight": 0.18639889947916666
+            }
+        ],
+        [
+            332,
+            344,
+            {
+                "weight": 0.18618656125347222
+            }
+        ],
+        [
+            332,
+            345,
+            {
+                "weight": 0.18615163045138888
+            }
+        ],
+        [
+            333,
+            334,
+            {
+                "weight": 0.2999270015486111
+            }
+        ],
+        [
+            333,
+            335,
+            {
+                "weight": 0.29986504298958333
+            }
+        ],
+        [
+            333,
+            336,
+            {
+                "weight": 0.2997644297361111
+            }
+        ],
+        [
+            333,
+            337,
+            {
+                "weight": 0.19344063791666666
+            }
+        ],
+        [
+            333,
+            338,
+            {
+                "weight": 0.19149622233333333
+            }
+        ],
+        [
+            333,
+            339,
+            {
+                "weight": 0.19127846330902779
+            }
+        ],
+        [
+            333,
+            340,
+            {
+                "weight": 0.19094744260763888
+            }
+        ],
+        [
+            333,
+            341,
+            {
+                "weight": 0.19065700721874998
+            }
+        ],
+        [
+            333,
+            342,
+            {
+                "weight": 0.18674116892361112
+            }
+        ],
+        [
+            333,
+            343,
+            {
+                "weight": 0.18649079304861108
+            }
+        ],
+        [
+            333,
+            344,
+            {
+                "weight": 0.18627845482291663
+            }
+        ],
+        [
+            333,
+            345,
+            {
+                "weight": 0.18624352402083336
+            }
+        ],
+        [
+            334,
+            335,
+            {
+                "weight": 0.4749380414409722
+            }
+        ],
+        [
+            334,
+            336,
+            {
+                "weight": 0.2998374281875
+            }
+        ],
+        [
+            334,
+            337,
+            {
+                "weight": 0.19351363636805555
+            }
+        ],
+        [
+            334,
+            338,
+            {
+                "weight": 0.19156922078472222
+            }
+        ],
+        [
+            334,
+            339,
+            {
+                "weight": 0.19135146176041667
+            }
+        ],
+        [
+            334,
+            340,
+            {
+                "weight": 0.19102044105902777
+            }
+        ],
+        [
+            334,
+            341,
+            {
+                "weight": 0.19073000567013887
+            }
+        ],
+        [
+            334,
+            342,
+            {
+                "weight": 0.18681416737499998
+            }
+        ],
+        [
+            334,
+            343,
+            {
+                "weight": 0.1865637915
+            }
+        ],
+        [
+            334,
+            344,
+            {
+                "weight": 0.18635145327430555
+            }
+        ],
+        [
+            334,
+            345,
+            {
+                "weight": 0.18631652247222222
+            }
+        ],
+        [
+            335,
+            336,
+            {
+                "weight": 0.2998993867465278
+            }
+        ],
+        [
+            335,
+            337,
+            {
+                "weight": 0.19357559492708332
+            }
+        ],
+        [
+            335,
+            338,
+            {
+                "weight": 0.19163117934374999
+            }
+        ],
+        [
+            335,
+            339,
+            {
+                "weight": 0.19141342031944444
+            }
+        ],
+        [
+            335,
+            340,
+            {
+                "weight": 0.19108239961805557
+            }
+        ],
+        [
+            335,
+            341,
+            {
+                "weight": 0.19079196422916664
+            }
+        ],
+        [
+            335,
+            342,
+            {
+                "weight": 0.18687612593402778
+            }
+        ],
+        [
+            335,
+            343,
+            {
+                "weight": 0.18662575005902773
+            }
+        ],
+        [
+            335,
+            344,
+            {
+                "weight": 0.1864134118333333
+            }
+        ],
+        [
+            335,
+            345,
+            {
+                "weight": 0.18637848103125002
+            }
+        ],
+        [
+            336,
+            337,
+            {
+                "weight": 0.19367620818055556
+            }
+        ],
+        [
+            336,
+            338,
+            {
+                "weight": 0.19173179259722223
+            }
+        ],
+        [
+            336,
+            339,
+            {
+                "weight": 0.19151403357291666
+            }
+        ],
+        [
+            336,
+            340,
+            {
+                "weight": 0.19118301287152778
+            }
+        ],
+        [
+            336,
+            341,
+            {
+                "weight": 0.19089257748263888
+            }
+        ],
+        [
+            336,
+            342,
+            {
+                "weight": 0.1869767391875
+            }
+        ],
+        [
+            336,
+            343,
+            {
+                "weight": 0.1867263633125
+            }
+        ],
+        [
+            336,
+            344,
+            {
+                "weight": 0.18651402508680556
+            }
+        ],
+        [
+            336,
+            345,
+            {
+                "weight": 0.1864790942847222
+            }
+        ],
+        [
+            337,
+            338,
+            {
+                "weight": 0.2980555844166667
+            }
+        ],
+        [
+            337,
+            339,
+            {
+                "weight": 0.2978378253923611
+            }
+        ],
+        [
+            337,
+            340,
+            {
+                "weight": 0.29750680469097224
+            }
+        ],
+        [
+            337,
+            341,
+            {
+                "weight": 0.29721636930208334
+            }
+        ],
+        [
+            337,
+            342,
+            {
+                "weight": 0.2933005310069444
+            }
+        ],
+        [
+            337,
+            343,
+            {
+                "weight": 0.29305015513194443
+            }
+        ],
+        [
+            337,
+            344,
+            {
+                "weight": 0.29283781690625
+            }
+        ],
+        [
+            337,
+            345,
+            {
+                "weight": 0.9928028861041667
+            }
+        ],
+        [
+            338,
+            339,
+            {
+                "weight": 0.29978224097569445
+            }
+        ],
+        [
+            338,
+            340,
+            {
+                "weight": 0.29945122027430554
+            }
+        ],
+        [
+            338,
+            341,
+            {
+                "weight": 0.29916078488541664
+            }
+        ],
+        [
+            338,
+            342,
+            {
+                "weight": 0.2952449465902778
+            }
+        ],
+        [
+            338,
+            343,
+            {
+                "weight": 0.2949945707152778
+            }
+        ],
+        [
+            338,
+            344,
+            {
+                "weight": 0.29478223248958335
+            }
+        ],
+        [
+            338,
+            345,
+            {
+                "weight": 0.2947473016875
+            }
+        ],
+        [
+            339,
+            340,
+            {
+                "weight": 0.29966897929861114
+            }
+        ],
+        [
+            339,
+            341,
+            {
+                "weight": 0.2993785439097222
+            }
+        ],
+        [
+            339,
+            342,
+            {
+                "weight": 0.2954627056145833
+            }
+        ],
+        [
+            339,
+            343,
+            {
+                "weight": 0.29521232973958333
+            }
+        ],
+        [
+            339,
+            344,
+            {
+                "weight": 0.2949999915138889
+            }
+        ],
+        [
+            339,
+            345,
+            {
+                "weight": 0.29496506071180556
+            }
+        ],
+        [
+            340,
+            341,
+            {
+                "weight": 0.2997095646111111
+            }
+        ],
+        [
+            340,
+            342,
+            {
+                "weight": 0.2957937263159722
+            }
+        ],
+        [
+            340,
+            343,
+            {
+                "weight": 0.2955433504409722
+            }
+        ],
+        [
+            340,
+            344,
+            {
+                "weight": 0.29533101221527774
+            }
+        ],
+        [
+            340,
+            345,
+            {
+                "weight": 0.2952960814131944
+            }
+        ],
+        [
+            341,
+            342,
+            {
+                "weight": 0.2960841617048611
+            }
+        ],
+        [
+            341,
+            343,
+            {
+                "weight": 0.2958337858298611
+            }
+        ],
+        [
+            341,
+            344,
+            {
+                "weight": 0.29562144760416664
+            }
+        ],
+        [
+            341,
+            345,
+            {
+                "weight": 0.2955865168020833
+            }
+        ],
+        [
+            342,
+            343,
+            {
+                "weight": 0.36338598776136366
+            }
+        ],
+        [
+            342,
+            344,
+            {
+                "weight": 0.29953728589930556
+            }
+        ],
+        [
+            342,
+            345,
+            {
+                "weight": 0.29950235509722223
+            }
+        ],
+        [
+            343,
+            344,
+            {
+                "weight": 0.29978766177430555
+            }
+        ],
+        [
+            343,
+            345,
+            {
+                "weight": 0.2997527309722222
+            }
+        ],
+        [
+            344,
+            345,
+            {
+                "weight": 0.29996506919791666
             }
         ]
     ]

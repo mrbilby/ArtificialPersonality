@@ -1,4 +1,3 @@
-<!-- templates/chat/chat.html -->
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,16 +5,30 @@
     <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 <body>
-
     <div class="main-container">
+        <div class="left-panel">
+            <div class="file-section">
+                <!-- The drop zone and file list as before -->
+                <div id="fileDropZone" class="file-drop-zone">
+                    <div class="drop-zone-content">
+                        <!-- SVG and text content as before -->
+                        <svg xmlns="http://www.w3.org/2000/svg" ...></svg>
+                        <p>Drag and drop files here</p>
+                        <p class="file-limit">(Max file size: 100KB)</p>
+                    </div>
+                </div>
+                <div id="fileList" class="file-list"></div>
+            </div>
+        </div>
+        
         <div class="chat-container">
+            <!-- Chat UI as before -->
             <div class="chat-header">
                 <h1>Chat with {{ personality_name|title }}</h1>
                 <div class="header-buttons">
                     <button onclick="endChat()" class="end-chat-button">End Chat</button>
                     <a href="{% url 'index' %}" class="back-button">← Back to Selection</a>
                 </div>
-                <!-- Add this block for the diagnostic mode toggle -->
                 <div class="diagnostic-toggle">
                     <label>
                         <input type="checkbox" id="diagnosticMode">
@@ -23,6 +36,7 @@
                     </label>
                 </div>
             </div>
+            
             <div id="messageContainer" class="chat-messages"></div>
             <div class="chat-input">
                 <input type="text" id="messageInput" placeholder="Type your message...">
@@ -42,6 +56,7 @@
     <script>
         const personalityName = "{{ personality_name }}";
     </script>
+    <!-- Include chat.js after the elements are defined -->
     <script src="/static/js/chat.js"></script>
 </body>
 </html>

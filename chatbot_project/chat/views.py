@@ -54,30 +54,42 @@ def chat(request):
         try:
             stdout_capture = StringIO()
             with redirect_stdout(stdout_capture):
-                print("TESTING DIAGNOSTIC OUTPUT - IF YOU SEE THIS, CAPTURE WORKS")  # Test print
-                
+                print("TESTING DIAGNOSTIC OUTPUT - IF YOU SEE THIS, CAPTURE WORKS")
+
                 data = json.loads(request.body)
-                message = data.get('message')
+                message = data.get('message', '')
                 personality_name = data.get('personality', 'default')
                 is_bye = data.get('is_bye', False)
-                
+
+                # This is the new field we expect from the updated frontend logic.
+                # It's a dictionary of filename: content pairs.
+                file_contents = data.get('file_contents', {})
+
+                # If there are uploaded files, append their contents to the message
+                if file_contents:
+                    # Add a section to the message with all file contents
+                    message += "\n\nUploaded File Contents:\n"
+                    for fname, fcontent in file_contents.items():
+                        message += f"Filename: {fname}\n{fcontent}\n\n"
+
+                # Initialize and get the chatbot instance
                 chatbot_manager = ChatbotManager.get_instance()
                 chatbot = chatbot_manager.get_or_create_chatbot(personality_name)
+
+                # Process the user's query with the possibly augmented message
                 response = chatbot.process_query(message)
-                
+
                 diagnostic_output = stdout_capture.getvalue()
                 
                 if not data.get('diagnostic_mode', False):
                     diagnostic_output = None
 
-                print("Diagnostic output being sent:", diagnostic_output)  # Debug check
-                
                 return JsonResponse({
                     'response': response,
                     'diagnostic_output': diagnostic_output,
-                    'terminated': is_bye or message.lower() == 'bye'
+                    'terminated': is_bye or (message.strip().lower() == 'bye')
                 })
-                
+
         except Exception as e:
             return JsonResponse({'error': str(e)}, status=500)
     
