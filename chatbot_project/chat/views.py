@@ -68,7 +68,6 @@ def chat(request):
                 thinking_minutes = data.get('thinking_minutes', 0)
                 diagnostic_mode = data.get('diagnostic_mode', False)
 
-                # Initialize chatbot manager and chatbot instance
                 chatbot_manager = ChatbotManager.get_instance()
                 chatbot = chatbot_manager.get_or_create_chatbot(personality_name)
 
@@ -79,22 +78,20 @@ def chat(request):
                             message, file_contents, thinking_minutes, personality_name, chatbot.client
                         )
 
-                    # Execute the asynchronous function
-                    success, result = asyncio.run(run_thinking())
+                    success, result, file_path = asyncio.run(run_thinking())
                     diagnostic_output = stdout_capture.getvalue()
 
                     if not diagnostic_mode:
                         diagnostic_output = None
 
                     if success:
-                        # Return final thinking output
                         return JsonResponse({
                             'response': result,
+                            'file_path': file_path,  # Include file path in response
                             'thinking_complete': True,
                             'diagnostic_output': diagnostic_output
                         })
                     else:
-                        # Return error during thinking process
                         return JsonResponse({
                             'error': f"Error during thinking process: {result}",
                             'diagnostic_output': diagnostic_output
@@ -102,12 +99,10 @@ def chat(request):
 
                 # Regular message processing
                 if file_contents:
-                    # Summarize file contents if provided
                     file_summary = summarize_files(file_contents, chatbot.client)
                     if file_summary:
                         message += f"\n\nFile Contents Summary:\n{file_summary}"
 
-                # Process the message through the chatbot
                 response = chatbot.process_query(message)
                 diagnostic_output = stdout_capture.getvalue()
 
@@ -121,16 +116,14 @@ def chat(request):
                 })
 
         except Exception as e:
-            # Catch and return any server-side errors
             return JsonResponse({'error': str(e)}, status=500)
 
     elif request.method == 'GET':
-        # Render the chat interface for GET requests
         personality_name = request.GET.get('personality', 'default')
         return render(request, 'chat/chat.html', {'personality_name': personality_name})
 
-    # Return a 405 for unsupported request methods
     return HttpResponse(status=405)
+
 
 
 
@@ -227,55 +220,64 @@ def summarize_files(file_contents: dict, client) -> str:
 
 async def process_thinking(message, file_contents, minutes, personality_name, client):
     """Process thinking iterations with proper delays and context building."""
+    thoughts_file = f"thoughts_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
     final_output = ""  # Collect all thoughts here
 
     try:
         chatbot_manager = ChatbotManager.get_instance()
         chatbot = chatbot_manager.get_or_create_chatbot(personality_name)
-        
+
         # Initialize context with base message and any file contents
         running_context = message
         if file_contents:
             file_summary = summarize_files(file_contents, client)
             running_context += f"\n\nContext from files:\n{file_summary}"
-        
+
         previous_thoughts = []
         iterations = int(minutes)
-        
-        for i in range(iterations):
-            if previous_thoughts:
-                thinking_prompt = (
-                    f"Previous thoughts:\n"
-                    f"{chr(10).join(previous_thoughts)}\n\n"
-                    f"Building upon these previous thoughts (iteration {i + 1}/{iterations}):\n"
-                    f"Continue developing ideas about: {running_context}"
-                )
-            else:
-                thinking_prompt = (
-                    f"Initial thinking iteration {i + 1}/{iterations}:\n"
-                    f"Begin deep analysis of: {running_context}"
-                )
-            
-            # Generate new thought
-            response = chatbot.process_query(thinking_prompt)
-            
-            # Append to final output
-            final_output += f"=== Thought {i + 1}/{iterations} ===\n{response}\n\n"
 
-            # Store thought for the next iteration
-            previous_thoughts.append(f"Thought {i + 1}: {response}")
-            
-            # Wait before the next iteration (unless it's the last one)
-            if i < iterations - 1:
-                await asyncio.sleep(30)
+        with open(thoughts_file, 'w', encoding='utf-8') as f:
+            for i in range(iterations):
+                if previous_thoughts:
+                    thinking_prompt = (
+                        f"Previous thoughts:\n"
+                        f"{chr(10).join(previous_thoughts)}\n\n"
+                        f"Building upon these previous thoughts (iteration {i + 1}/{iterations}):\n"
+                        f"Continue developing ideas about: {running_context}"
+                    )
+                else:
+                    thinking_prompt = (
+                        f"Initial thinking iteration {i + 1}/{iterations}:\n"
+                        f"Begin deep analysis of: {running_context}"
+                    )
 
-        # Return the collected thoughts
-        return True, final_output
+                # Generate new thought
+                response = chatbot.process_query(thinking_prompt)
+
+                # Save to file
+                timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                f.write(f"=== Thought {i + 1}/{iterations} ===\n")
+                f.write(f"Time: {timestamp}\n")
+                f.write(response)
+                f.write("\n\n")
+                f.flush()
+
+                # Append to final output
+                final_output += f"=== Thought {i + 1}/{iterations} ===\nTime: {timestamp}\n{response}\n\n"
+
+                # Store thought for next iteration
+                previous_thoughts.append(f"Thought {i + 1}: {response}")
+
+                # Wait before next thought (unless it's the last one)
+                if i < iterations - 1:
+                    await asyncio.sleep(60)
+
+        # Return the collected thoughts and saved file path
+        return True, final_output, thoughts_file
 
     except Exception as e:
         print(f"Error in thinking process: {e}")
-        return False, str(e)
-
+        return False, str(e), None
 
 
         

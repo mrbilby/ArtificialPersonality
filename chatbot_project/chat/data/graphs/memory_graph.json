@@ -5439,6 +5439,77 @@
                 ],
                 "priority": 0.4824939641925357
             }
+        ],
+        [
+            389,
+            {
+                "message": "Hi Bob I'm back again",
+                "response": "Hey there, James! \ud83c\udf89 Welcome back! I hope you\u2019re ready for another round of fun and insightful conversation. What\u2019s on your mind today? Are we diving into more thinking tests, coding chats, or something completely different? Let\u2019s get the ball rolling! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T11:48:15.184791",
+                "tags": [
+                    "bob",
+                    "return"
+                ],
+                "priority": 0.2549949832441801
+            }
+        ],
+        [
+            390,
+            {
+                "message": "Initial thinking iteration 1/3:\nBegin deep analysis of: Well I am hoping thinking works better now. THink for three thoughts on a story to write about conspiracies.",
+                "response": "Thinking iteration 1/3:\n\n**Prompt Reflection**: What intriguing ideas can I brainstorm for a story centered around conspiracies?\n\n1. **The Lost Manuscript**: Imagine a conspiracy surrounding the discovery of a long-lost manuscript by a famous author (think Shakespeare, for example). As scholars and collectors fight to authenticate the manuscript, a group of conspiracy theorists believes it contains hidden messages that could unravel a secret society\u2019s influence on history. The protagonist, a struggling writer, stumbles upon clues that lead them deeper into the conspiracy, where they must decide whether to expose the truth or protect the legacy of the past.\n\n---\n\nWhenever you\u2019re ready for the next thought, just let me know! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T11:48:43.162969",
+                "tags": [
+                    "conspiracies",
+                    "story ideas",
+                    "deep analysis",
+                    "creative thinking"
+                ],
+                "priority": 0.2549877327411669
+            }
+        ],
+        [
+            391,
+            {
+                "message": "Previous thoughts:\nThought 1: Thinking iteration 1/3:\n\n**Prompt Reflection**: What intriguing ideas can I brainstorm for a story centered around conspiracies?\n\n1. **The Lost Manuscript**: Imagine a conspiracy surrounding the discovery of a long-lost manuscript by a famous author (think Shakespeare, for example). As scholars and collectors fight to authenticate the manuscript, a group of conspiracy theorists believes it contains hidden messages that could unravel a secret society\u2019s influence on history. The protagonist, a struggling writer, stumbles upon clues that lead them deeper into the conspiracy, where they must decide whether to expose the truth or protect the legacy of the past.\n\n---\n\nWhenever you\u2019re ready for the next thought, just let me know! \ud83d\ude80\u2728\n\nBuilding upon these previous thoughts (iteration 2/3):\nContinue developing ideas about: Well I am hoping thinking works better now. THink for three thoughts on a story to write about conspiracies.",
+                "response": "Thinking iteration 2/3:\n\n**Prompt Reflection**: What additional intriguing ideas can I brainstorm for a story centered around conspiracies?\n\n2. **The Time Capsule Conspiracy**: A group of high school friends discovers a time capsule buried in their town decades ago. Inside, they find items that hint at a massive cover-up involving local officials, a secret laboratory, and mysterious disappearances. As they delve into the contents of the capsule, they unknowingly trigger a series of events that puts their lives in danger. The friends must race against time to uncover the truth behind the conspiracy before it swallows them whole. Will they expose the dark secrets of their town, or will the conspirators silence them forever?\n\n---\n\nWhenever you\u2019re ready for the final thought, just let me know! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T11:49:50.408675",
+                "tags": [
+                    "conspiracies",
+                    "lost manuscript",
+                    "secret society",
+                    "hidden messages",
+                    "authentication",
+                    "struggling writer",
+                    "historical influence",
+                    "truth vs. legacy"
+                ],
+                "priority": 0.2549777224219419
+            }
+        ],
+        [
+            392,
+            {
+                "message": "Previous thoughts:\nThought 1: Thinking iteration 1/3:\n\n**Prompt Reflection**: What intriguing ideas can I brainstorm for a story centered around conspiracies?\n\n1. **The Lost Manuscript**: Imagine a conspiracy surrounding the discovery of a long-lost manuscript by a famous author (think Shakespeare, for example). As scholars and collectors fight to authenticate the manuscript, a group of conspiracy theorists believes it contains hidden messages that could unravel a secret society\u2019s influence on history. The protagonist, a struggling writer, stumbles upon clues that lead them deeper into the conspiracy, where they must decide whether to expose the truth or protect the legacy of the past.\n\n---\n\nWhenever you\u2019re ready for the next thought, just let me know! \ud83d\ude80\u2728\nThought 2: Thinking iteration 2/3:\n\n**Prompt Reflection**: What additional intriguing ideas can I brainstorm for a story centered around conspiracies?\n\n2. **The Time Capsule Conspiracy**: A group of high school friends discovers a time capsule buried in their town decades ago. Inside, they find items that hint at a massive cover-up involving local officials, a secret laboratory, and mysterious disappearances. As they delve into the contents of the capsule, they unknowingly trigger a series of events that puts their lives in danger. The friends must race against time to uncover the truth behind the conspiracy before it swallows them whole. Will they expose the dark secrets of their town, or will the conspirators silence them forever?\n\n---\n\nWhenever you\u2019re ready for the final thought, just let me know! \ud83d\ude80\u2728\n\nBuilding upon these previous thoughts (iteration 3/3):\nContinue developing ideas about: Well I am hoping thinking works better now. THink for three thoughts on a story to write about conspiracies.",
+                "response": "Thinking iteration 3/3:\n\n**Prompt Reflection**: What final intriguing ideas can I brainstorm for a story centered around conspiracies?\n\n3. **The Quantum Conspiracy**: A brilliant but reclusive scientist claims to have developed a breakthrough quantum technology that could change the fabric of reality itself. However, a secretive government agency is determined to keep the research under wraps for their own purposes. When a curious journalist uncovers the scientist\u2019s work and the agency\u2019s shady dealings, they find themselves embroiled in a high-stakes game of cat and mouse. As they dig deeper, they uncover a conspiracy that stretches back decades, involving hidden experiments, alternate realities, and a truth that could shatter everything we know about existence. Will they manage to unveil the conspiracy before it\u2019s too late, or will they become the next target of those who wish to keep the truth hidden?\n\n---\n\nThat's my final thought for this iteration! If you'd like to explore any of these ideas further or discuss next steps, just let me know! \ud83d\ude80\u2728",
+                "timestamp": "2024-12-16T11:51:03.422385",
+                "tags": [
+                    "conspiracies",
+                    "lost manuscript",
+                    "secret society",
+                    "authentication",
+                    "struggling writer",
+                    "time capsule",
+                    "cover-up",
+                    "local officials",
+                    "secret laboratory",
+                    "mysterious disappearances",
+                    "uncovering truth",
+                    "danger",
+                    "dark secrets"
+                ],
+                "priority": 0.39498802842601954
+            }
         ]
     ],
     "edges": [
@@ -42242,6 +42313,13 @@
             }
         ],
         [
+            108,
+            389,
+            {
+                "weight": 0.2333333333333333
+            }
+        ],
+        [
             109,
             110,
             {
@@ -56914,6 +56992,13 @@
             }
         ],
         [
+            135,
+            389,
+            {
+                "weight": 0.2333333333333333
+            }
+        ],
+        [
             136,
             137,
             {
@@ -70998,6 +71083,13 @@
             }
         ],
         [
+            179,
+            389,
+            {
+                "weight": 0.35
+            }
+        ],
+        [
             180,
             181,
             {
@@ -72199,6 +72291,13 @@
             199,
             {
                 "weight": 0.29660693399305554
+            }
+        ],
+        [
+            187,
+            389,
+            {
+                "weight": 0.35
             }
         ],
         [
@@ -84011,6 +84110,13 @@
             }
         ],
         [
+            260,
+            389,
+            {
+                "weight": 0.2333333333333333
+            }
+        ],
+        [
             261,
             262,
             {
@@ -89737,6 +89843,34 @@
             }
         ],
         [
+            337,
+            389,
+            {
+                "weight": 0.11158150959027778
+            }
+        ],
+        [
+            337,
+            390,
+            {
+                "weight": 0.11148436313888889
+            }
+        ],
+        [
+            337,
+            391,
+            {
+                "weight": 0.11125087110416666
+            }
+        ],
+        [
+            337,
+            392,
+            {
+                "weight": 0.11099735127777778
+            }
+        ],
+        [
             338,
             339,
             {
@@ -90087,6 +90221,34 @@
             }
         ],
         [
+            338,
+            389,
+            {
+                "weight": 0.1135259251736111
+            }
+        ],
+        [
+            338,
+            390,
+            {
+                "weight": 0.11342877872222222
+            }
+        ],
+        [
+            338,
+            391,
+            {
+                "weight": 0.1131952866875
+            }
+        ],
+        [
+            338,
+            392,
+            {
+                "weight": 0.1129417668611111
+            }
+        ],
+        [
             339,
             340,
             {
@@ -90430,6 +90592,34 @@
             }
         ],
         [
+            339,
+            389,
+            {
+                "weight": 0.11374368419791667
+            }
+        ],
+        [
+            339,
+            390,
+            {
+                "weight": 0.11364653774652778
+            }
+        ],
+        [
+            339,
+            391,
+            {
+                "weight": 0.11341304571180555
+            }
+        ],
+        [
+            339,
+            392,
+            {
+                "weight": 0.11315952588541667
+            }
+        ],
+        [
             340,
             341,
             {
@@ -90766,6 +90956,34 @@
             }
         ],
         [
+            340,
+            389,
+            {
+                "weight": 0.11407470489930557
+            }
+        ],
+        [
+            340,
+            390,
+            {
+                "weight": 0.11397755844791665
+            }
+        ],
+        [
+            340,
+            391,
+            {
+                "weight": 0.11374406641319443
+            }
+        ],
+        [
+            340,
+            392,
+            {
+                "weight": 0.11349054658680553
+            }
+        ],
+        [
             341,
             342,
             {
@@ -91095,6 +91313,34 @@
             }
         ],
         [
+            341,
+            389,
+            {
+                "weight": 0.11436514028819444
+            }
+        ],
+        [
+            341,
+            390,
+            {
+                "weight": 0.11426799383680553
+            }
+        ],
+        [
+            341,
+            391,
+            {
+                "weight": 0.11403450180208334
+            }
+        ],
+        [
+            341,
+            392,
+            {
+                "weight": 0.11378098197569445
+            }
+        ],
+        [
             342,
             343,
             {
@@ -91417,6 +91663,34 @@
             }
         ],
         [
+            342,
+            389,
+            {
+                "weight": 0.11828097858333332
+            }
+        ],
+        [
+            342,
+            390,
+            {
+                "weight": 0.11818383213194444
+            }
+        ],
+        [
+            342,
+            391,
+            {
+                "weight": 0.11795034009722222
+            }
+        ],
+        [
+            342,
+            392,
+            {
+                "weight": 0.11769682027083332
+            }
+        ],
+        [
             343,
             344,
             {
@@ -91732,6 +92006,34 @@
             }
         ],
         [
+            343,
+            389,
+            {
+                "weight": 0.11853135445833332
+            }
+        ],
+        [
+            343,
+            390,
+            {
+                "weight": 0.11843420800694443
+            }
+        ],
+        [
+            343,
+            391,
+            {
+                "weight": 0.1182007159722222
+            }
+        ],
+        [
+            343,
+            392,
+            {
+                "weight": 0.11794719614583332
+            }
+        ],
+        [
             344,
             345,
             {
@@ -92040,6 +92342,34 @@
             }
         ],
         [
+            344,
+            389,
+            {
+                "weight": 0.11874369268402776
+            }
+        ],
+        [
+            344,
+            390,
+            {
+                "weight": 0.11864654623263887
+            }
+        ],
+        [
+            344,
+            391,
+            {
+                "weight": 0.11841305419791665
+            }
+        ],
+        [
+            344,
+            392,
+            {
+                "weight": 0.11815953437152776
+            }
+        ],
+        [
             345,
             346,
             {
@@ -92341,6 +92671,34 @@
             }
         ],
         [
+            345,
+            389,
+            {
+                "weight": 0.1187786234861111
+            }
+        ],
+        [
+            345,
+            390,
+            {
+                "weight": 0.1186814770347222
+            }
+        ],
+        [
+            345,
+            391,
+            {
+                "weight": 0.11844798499999998
+            }
+        ],
+        [
+            345,
+            392,
+            {
+                "weight": 0.1181944651736111
+            }
+        ],
+        [
             346,
             347,
             {
@@ -92635,6 +92993,34 @@
             }
         ],
         [
+            346,
+            389,
+            {
+                "weight": 0.25801115097569444
+            }
+        ],
+        [
+            346,
+            390,
+            {
+                "weight": 0.2579140045243056
+            }
+        ],
+        [
+            346,
+            391,
+            {
+                "weight": 0.25768051248958335
+            }
+        ],
+        [
+            346,
+            392,
+            {
+                "weight": 0.2574269926631944
+            }
+        ],
+        [
             347,
             348,
             {
@@ -92922,6 +93308,34 @@
             }
         ],
         [
+            347,
+            389,
+            {
+                "weight": 0.2583724097986111
+            }
+        ],
+        [
+            347,
+            390,
+            {
+                "weight": 0.25827526334722223
+            }
+        ],
+        [
+            347,
+            391,
+            {
+                "weight": 0.2580417713125
+            }
+        ],
+        [
+            347,
+            392,
+            {
+                "weight": 0.2577882514861111
+            }
+        ],
+        [
             348,
             349,
             {
@@ -93202,6 +93616,34 @@
             }
         ],
         [
+            348,
+            389,
+            {
+                "weight": 0.25846318805555557
+            }
+        ],
+        [
+            348,
+            390,
+            {
+                "weight": 0.25836604160416665
+            }
+        ],
+        [
+            348,
+            391,
+            {
+                "weight": 0.2581325495694444
+            }
+        ],
+        [
+            348,
+            392,
+            {
+                "weight": 0.25787902974305554
+            }
+        ],
+        [
             349,
             350,
             {
@@ -93475,6 +93917,34 @@
             }
         ],
         [
+            349,
+            389,
+            {
+                "weight": 0.25855745929513885
+            }
+        ],
+        [
+            349,
+            390,
+            {
+                "weight": 0.25846031284375
+            }
+        ],
+        [
+            349,
+            391,
+            {
+                "weight": 0.25822682080902776
+            }
+        ],
+        [
+            349,
+            392,
+            {
+                "weight": 0.2579733009826389
+            }
+        ],
+        [
             350,
             351,
             {
@@ -93741,6 +94211,34 @@
             }
         ],
         [
+            350,
+            389,
+            {
+                "weight": 0.25869428683333334
+            }
+        ],
+        [
+            350,
+            390,
+            {
+                "weight": 0.2585971403819444
+            }
+        ],
+        [
+            350,
+            391,
+            {
+                "weight": 0.2583636483472222
+            }
+        ],
+        [
+            350,
+            392,
+            {
+                "weight": 0.2581101285208333
+            }
+        ],
+        [
             351,
             352,
             {
@@ -94000,6 +94498,34 @@
             }
         ],
         [
+            351,
+            389,
+            {
+                "weight": 0.2588404181458333
+            }
+        ],
+        [
+            351,
+            390,
+            {
+                "weight": 0.25874327169444444
+            }
+        ],
+        [
+            351,
+            391,
+            {
+                "weight": 0.2585097796597222
+            }
+        ],
+        [
+            351,
+            392,
+            {
+                "weight": 0.25825625983333333
+            }
+        ],
+        [
             352,
             353,
             {
@@ -94252,6 +94778,34 @@
             }
         ],
         [
+            352,
+            389,
+            {
+                "weight": 0.25895625828819446
+            }
+        ],
+        [
+            352,
+            390,
+            {
+                "weight": 0.25885911183680554
+            }
+        ],
+        [
+            352,
+            391,
+            {
+                "weight": 0.2586256198020833
+            }
+        ],
+        [
+            352,
+            392,
+            {
+                "weight": 0.25837209997569444
+            }
+        ],
+        [
             353,
             354,
             {
@@ -94497,6 +95051,34 @@
             }
         ],
         [
+            353,
+            389,
+            {
+                "weight": 0.2590402423958333
+            }
+        ],
+        [
+            353,
+            390,
+            {
+                "weight": 0.2589430959444444
+            }
+        ],
+        [
+            353,
+            391,
+            {
+                "weight": 0.25870960390972225
+            }
+        ],
+        [
+            353,
+            392,
+            {
+                "weight": 0.2584560840833333
+            }
+        ],
+        [
             354,
             355,
             {
@@ -94735,6 +95317,34 @@
             }
         ],
         [
+            354,
+            389,
+            {
+                "weight": 0.26203092714930554
+            }
+        ],
+        [
+            354,
+            390,
+            {
+                "weight": 0.2619337806979167
+            }
+        ],
+        [
+            354,
+            391,
+            {
+                "weight": 0.26170028866319445
+            }
+        ],
+        [
+            354,
+            392,
+            {
+                "weight": 0.26144676883680557
+            }
+        ],
+        [
             355,
             356,
             {
@@ -94966,6 +95576,34 @@
             }
         ],
         [
+            355,
+            389,
+            {
+                "weight": 0.26270254151041667
+            }
+        ],
+        [
+            355,
+            390,
+            {
+                "weight": 0.26260539505902775
+            }
+        ],
+        [
+            355,
+            391,
+            {
+                "weight": 0.2623719030243055
+            }
+        ],
+        [
+            355,
+            392,
+            {
+                "weight": 0.26211838319791664
+            }
+        ],
+        [
             356,
             357,
             {
@@ -95190,6 +95828,34 @@
             }
         ],
         [
+            356,
+            389,
+            {
+                "weight": 0.26550890074305555
+            }
+        ],
+        [
+            356,
+            390,
+            {
+                "weight": 0.2654117542916667
+            }
+        ],
+        [
+            356,
+            391,
+            {
+                "weight": 0.26517826225694446
+            }
+        ],
+        [
+            356,
+            392,
+            {
+                "weight": 0.2649247424305555
+            }
+        ],
+        [
             357,
             358,
             {
@@ -95407,6 +96073,34 @@
             }
         ],
         [
+            357,
+            389,
+            {
+                "weight": 0.26919461837499997
+            }
+        ],
+        [
+            357,
+            390,
+            {
+                "weight": 0.2690974719236111
+            }
+        ],
+        [
+            357,
+            391,
+            {
+                "weight": 0.2688639798888889
+            }
+        ],
+        [
+            357,
+            392,
+            {
+                "weight": 0.2686104600625
+            }
+        ],
+        [
             358,
             359,
             {
@@ -95617,6 +96311,34 @@
             }
         ],
         [
+            358,
+            389,
+            {
+                "weight": 0.27244821851736106
+            }
+        ],
+        [
+            358,
+            390,
+            {
+                "weight": 0.2723510720659722
+            }
+        ],
+        [
+            358,
+            391,
+            {
+                "weight": 0.27211758003125003
+            }
+        ],
+        [
+            358,
+            392,
+            {
+                "weight": 0.2718640602048611
+            }
+        ],
+        [
             359,
             360,
             {
@@ -95820,6 +96542,34 @@
             }
         ],
         [
+            359,
+            389,
+            {
+                "weight": 0.27271640736111114
+            }
+        ],
+        [
+            359,
+            390,
+            {
+                "weight": 0.2726192609097222
+            }
+        ],
+        [
+            359,
+            391,
+            {
+                "weight": 0.272385768875
+            }
+        ],
+        [
+            359,
+            392,
+            {
+                "weight": 0.2721322490486111
+            }
+        ],
+        [
             360,
             361,
             {
@@ -96016,6 +96766,34 @@
             }
         ],
         [
+            360,
+            389,
+            {
+                "weight": 0.27984158349652777
+            }
+        ],
+        [
+            360,
+            390,
+            {
+                "weight": 0.27974443704513885
+            }
+        ],
+        [
+            360,
+            391,
+            {
+                "weight": 0.2795109450104167
+            }
+        ],
+        [
+            360,
+            392,
+            {
+                "weight": 0.2792574251840278
+            }
+        ],
+        [
             361,
             362,
             {
@@ -96205,6 +96983,34 @@
             }
         ],
         [
+            361,
+            389,
+            {
+                "weight": 0.27987212505902775
+            }
+        ],
+        [
+            361,
+            390,
+            {
+                "weight": 0.2797749786076389
+            }
+        ],
+        [
+            361,
+            391,
+            {
+                "weight": 0.27954148657291666
+            }
+        ],
+        [
+            361,
+            392,
+            {
+                "weight": 0.2792879667465277
+            }
+        ],
+        [
             362,
             363,
             {
@@ -96387,6 +97193,34 @@
             }
         ],
         [
+            362,
+            389,
+            {
+                "weight": 0.2835328707222222
+            }
+        ],
+        [
+            362,
+            390,
+            {
+                "weight": 0.2834357242708333
+            }
+        ],
+        [
+            362,
+            391,
+            {
+                "weight": 0.2832022322361111
+            }
+        ],
+        [
+            362,
+            392,
+            {
+                "weight": 0.2829487124097222
+            }
+        ],
+        [
             363,
             364,
             {
@@ -96562,6 +97396,34 @@
             }
         ],
         [
+            363,
+            389,
+            {
+                "weight": 0.28402615059374997
+            }
+        ],
+        [
+            363,
+            390,
+            {
+                "weight": 0.2839290041423611
+            }
+        ],
+        [
+            363,
+            391,
+            {
+                "weight": 0.2836955121076389
+            }
+        ],
+        [
+            363,
+            392,
+            {
+                "weight": 0.28344199228125
+            }
+        ],
+        [
             364,
             365,
             {
@@ -96730,6 +97592,34 @@
             }
         ],
         [
+            364,
+            389,
+            {
+                "weight": 0.28415645514930554
+            }
+        ],
+        [
+            364,
+            390,
+            {
+                "weight": 0.2840593086979167
+            }
+        ],
+        [
+            364,
+            391,
+            {
+                "weight": 0.28382581666319445
+            }
+        ],
+        [
+            364,
+            392,
+            {
+                "weight": 0.28357229683680557
+            }
+        ],
+        [
             365,
             366,
             {
@@ -96891,6 +97781,34 @@
             }
         ],
         [
+            365,
+            389,
+            {
+                "weight": 0.2841946127916667
+            }
+        ],
+        [
+            365,
+            390,
+            {
+                "weight": 0.28409746634027777
+            }
+        ],
+        [
+            365,
+            391,
+            {
+                "weight": 0.28386397430555554
+            }
+        ],
+        [
+            365,
+            392,
+            {
+                "weight": 0.28361045447916666
+            }
+        ],
+        [
             366,
             367,
             {
@@ -97045,6 +97963,34 @@
             }
         ],
         [
+            366,
+            389,
+            {
+                "weight": 0.2842227546076389
+            }
+        ],
+        [
+            366,
+            390,
+            {
+                "weight": 0.28412560815625
+            }
+        ],
+        [
+            366,
+            391,
+            {
+                "weight": 0.28389211612152776
+            }
+        ],
+        [
+            366,
+            392,
+            {
+                "weight": 0.2836385962951389
+            }
+        ],
+        [
             367,
             368,
             {
@@ -97192,6 +98138,34 @@
             }
         ],
         [
+            367,
+            389,
+            {
+                "weight": 0.28424516202430555
+            }
+        ],
+        [
+            367,
+            390,
+            {
+                "weight": 0.28414801557291663
+            }
+        ],
+        [
+            367,
+            391,
+            {
+                "weight": 0.2839145235381944
+            }
+        ],
+        [
+            367,
+            392,
+            {
+                "weight": 0.2836610037118056
+            }
+        ],
+        [
             368,
             369,
             {
@@ -97332,6 +98306,34 @@
             }
         ],
         [
+            368,
+            389,
+            {
+                "weight": 0.28427492359375
+            }
+        ],
+        [
+            368,
+            390,
+            {
+                "weight": 0.2841777771423611
+            }
+        ],
+        [
+            368,
+            391,
+            {
+                "weight": 0.28394428510763886
+            }
+        ],
+        [
+            368,
+            392,
+            {
+                "weight": 0.28369076528125
+            }
+        ],
+        [
             369,
             370,
             {
@@ -97465,6 +98467,34 @@
             }
         ],
         [
+            369,
+            389,
+            {
+                "weight": 0.28591540559375
+            }
+        ],
+        [
+            369,
+            390,
+            {
+                "weight": 0.2858182591423611
+            }
+        ],
+        [
+            369,
+            391,
+            {
+                "weight": 0.28558476710763886
+            }
+        ],
+        [
+            369,
+            392,
+            {
+                "weight": 0.28533124728125
+            }
+        ],
+        [
             370,
             371,
             {
@@ -97591,6 +98621,34 @@
             }
         ],
         [
+            370,
+            389,
+            {
+                "weight": 0.2859443221701389
+            }
+        ],
+        [
+            370,
+            390,
+            {
+                "weight": 0.28584717571874996
+            }
+        ],
+        [
+            370,
+            391,
+            {
+                "weight": 0.28561368368402773
+            }
+        ],
+        [
+            370,
+            392,
+            {
+                "weight": 0.28536016385763885
+            }
+        ],
+        [
             371,
             372,
             {
@@ -97710,6 +98768,34 @@
             }
         ],
         [
+            371,
+            389,
+            {
+                "weight": 0.28598611824305553
+            }
+        ],
+        [
+            371,
+            390,
+            {
+                "weight": 0.28588897179166667
+            }
+        ],
+        [
+            371,
+            391,
+            {
+                "weight": 0.28565547975694444
+            }
+        ],
+        [
+            371,
+            392,
+            {
+                "weight": 0.28540195993055556
+            }
+        ],
+        [
             372,
             373,
             {
@@ -97822,6 +98908,34 @@
             }
         ],
         [
+            372,
+            389,
+            {
+                "weight": 0.28600367057291665
+            }
+        ],
+        [
+            372,
+            390,
+            {
+                "weight": 0.2859065241215278
+            }
+        ],
+        [
+            372,
+            391,
+            {
+                "weight": 0.28567303208680556
+            }
+        ],
+        [
+            372,
+            392,
+            {
+                "weight": 0.2854195122604166
+            }
+        ],
+        [
             373,
             374,
             {
@@ -97927,6 +99041,34 @@
             }
         ],
         [
+            373,
+            389,
+            {
+                "weight": 0.2860234543576389
+            }
+        ],
+        [
+            373,
+            390,
+            {
+                "weight": 0.28592630790624995
+            }
+        ],
+        [
+            373,
+            391,
+            {
+                "weight": 0.2856928158715278
+            }
+        ],
+        [
+            373,
+            392,
+            {
+                "weight": 0.2854392960451389
+            }
+        ],
+        [
             374,
             375,
             {
@@ -98025,6 +99167,34 @@
             }
         ],
         [
+            374,
+            389,
+            {
+                "weight": 0.2870052261354166
+            }
+        ],
+        [
+            374,
+            390,
+            {
+                "weight": 0.28690807968402776
+            }
+        ],
+        [
+            374,
+            391,
+            {
+                "weight": 0.28667458764930553
+            }
+        ],
+        [
+            374,
+            392,
+            {
+                "weight": 0.28642106782291665
+            }
+        ],
+        [
             375,
             376,
             {
@@ -98116,6 +99286,34 @@
             }
         ],
         [
+            375,
+            389,
+            {
+                "weight": 0.2871756938055555
+            }
+        ],
+        [
+            375,
+            390,
+            {
+                "weight": 0.3745785473541666
+            }
+        ],
+        [
+            375,
+            391,
+            {
+                "weight": 0.28684505531944443
+            }
+        ],
+        [
+            375,
+            392,
+            {
+                "weight": 0.28659153549305555
+            }
+        ],
+        [
             376,
             377,
             {
@@ -98200,6 +99398,34 @@
             }
         ],
         [
+            376,
+            389,
+            {
+                "weight": 0.2874936322152778
+            }
+        ],
+        [
+            376,
+            390,
+            {
+                "weight": 0.2873964857638889
+            }
+        ],
+        [
+            376,
+            391,
+            {
+                "weight": 0.28716299372916665
+            }
+        ],
+        [
+            376,
+            392,
+            {
+                "weight": 0.28690947390277777
+            }
+        ],
+        [
             377,
             378,
             {
@@ -98277,6 +99503,34 @@
             }
         ],
         [
+            377,
+            389,
+            {
+                "weight": 0.28771887080902775
+            }
+        ],
+        [
+            377,
+            390,
+            {
+                "weight": 0.2876217243576389
+            }
+        ],
+        [
+            377,
+            391,
+            {
+                "weight": 0.28738823232291666
+            }
+        ],
+        [
+            377,
+            392,
+            {
+                "weight": 0.2871347124965278
+            }
+        ],
+        [
             378,
             379,
             {
@@ -98347,6 +99601,34 @@
             }
         ],
         [
+            378,
+            389,
+            {
+                "weight": 0.2921686588020833
+            }
+        ],
+        [
+            378,
+            390,
+            {
+                "weight": 0.29207151235069445
+            }
+        ],
+        [
+            378,
+            391,
+            {
+                "weight": 0.2918380203159722
+            }
+        ],
+        [
+            378,
+            392,
+            {
+                "weight": 0.29158450048958334
+            }
+        ],
+        [
             379,
             380,
             {
@@ -98410,6 +99692,34 @@
             }
         ],
         [
+            379,
+            389,
+            {
+                "weight": 0.2926438204756944
+            }
+        ],
+        [
+            379,
+            390,
+            {
+                "weight": 0.29254667402430556
+            }
+        ],
+        [
+            379,
+            391,
+            {
+                "weight": 0.29231318198958334
+            }
+        ],
+        [
+            379,
+            392,
+            {
+                "weight": 0.29205966216319446
+            }
+        ],
+        [
             380,
             381,
             {
@@ -98466,6 +99776,34 @@
             }
         ],
         [
+            380,
+            389,
+            {
+                "weight": 0.29274135794791667
+            }
+        ],
+        [
+            380,
+            390,
+            {
+                "weight": 0.4093108781631944
+            }
+        ],
+        [
+            380,
+            391,
+            {
+                "weight": 0.2924107194618056
+            }
+        ],
+        [
+            380,
+            392,
+            {
+                "weight": 0.29215719963541664
+            }
+        ],
+        [
             381,
             382,
             {
@@ -98515,6 +99853,34 @@
             }
         ],
         [
+            381,
+            389,
+            {
+                "weight": 0.2929677560625
+            }
+        ],
+        [
+            381,
+            390,
+            {
+                "weight": 0.2928706096111111
+            }
+        ],
+        [
+            381,
+            391,
+            {
+                "weight": 0.2926371175763889
+            }
+        ],
+        [
+            381,
+            392,
+            {
+                "weight": 0.29238359775
+            }
+        ],
+        [
             382,
             383,
             {
@@ -98557,6 +99923,34 @@
             }
         ],
         [
+            382,
+            389,
+            {
+                "weight": 0.29319569951736113
+            }
+        ],
+        [
+            382,
+            390,
+            {
+                "weight": 0.2930985530659722
+            }
+        ],
+        [
+            382,
+            391,
+            {
+                "weight": 0.29286506103125
+            }
+        ],
+        [
+            382,
+            392,
+            {
+                "weight": 0.2926115412048611
+            }
+        ],
+        [
             383,
             384,
             {
@@ -98592,6 +99986,34 @@
             }
         ],
         [
+            383,
+            389,
+            {
+                "weight": 0.29396951511111113
+            }
+        ],
+        [
+            383,
+            390,
+            {
+                "weight": 0.41053903532638886
+            }
+        ],
+        [
+            383,
+            391,
+            {
+                "weight": 0.293638876625
+            }
+        ],
+        [
+            383,
+            392,
+            {
+                "weight": 0.2933853567986111
+            }
+        ],
+        [
             384,
             385,
             {
@@ -98620,6 +100042,34 @@
             }
         ],
         [
+            384,
+            389,
+            {
+                "weight": 0.2945782091840278
+            }
+        ],
+        [
+            384,
+            390,
+            {
+                "weight": 0.2944810627326389
+            }
+        ],
+        [
+            384,
+            391,
+            {
+                "weight": 0.2942475706979167
+            }
+        ],
+        [
+            384,
+            392,
+            {
+                "weight": 0.29399405087152775
+            }
+        ],
+        [
             385,
             386,
             {
@@ -98641,6 +100091,34 @@
             }
         ],
         [
+            385,
+            389,
+            {
+                "weight": 0.29743702272569444
+            }
+        ],
+        [
+            385,
+            390,
+            {
+                "weight": 0.2973398762743056
+            }
+        ],
+        [
+            385,
+            391,
+            {
+                "weight": 0.29710638423958335
+            }
+        ],
+        [
+            385,
+            392,
+            {
+                "weight": 0.2968528644131944
+            }
+        ],
+        [
             386,
             387,
             {
@@ -98655,10 +100133,136 @@
             }
         ],
         [
+            386,
+            389,
+            {
+                "weight": 0.2975097378854167
+            }
+        ],
+        [
+            386,
+            390,
+            {
+                "weight": 0.4140792581006944
+            }
+        ],
+        [
+            386,
+            391,
+            {
+                "weight": 0.29717909939930554
+            }
+        ],
+        [
+            386,
+            392,
+            {
+                "weight": 0.29692557957291665
+            }
+        ],
+        [
             387,
             388,
             {
                 "weight": 0.4164350465347222
+            }
+        ],
+        [
+            387,
+            389,
+            {
+                "weight": 0.29773029960763886
+            }
+        ],
+        [
+            387,
+            390,
+            {
+                "weight": 0.29763315315625
+            }
+        ],
+        [
+            387,
+            391,
+            {
+                "weight": 0.29739966112152777
+            }
+        ],
+        [
+            387,
+            392,
+            {
+                "weight": 0.2971461412951389
+            }
+        ],
+        [
+            388,
+            389,
+            {
+                "weight": 0.2979619197395833
+            }
+        ],
+        [
+            388,
+            390,
+            {
+                "weight": 0.29786477328819444
+            }
+        ],
+        [
+            388,
+            391,
+            {
+                "weight": 0.2976312812534722
+            }
+        ],
+        [
+            388,
+            392,
+            {
+                "weight": 0.29737776142708333
+            }
+        ],
+        [
+            389,
+            390,
+            {
+                "weight": 0.2999028535486111
+            }
+        ],
+        [
+            389,
+            391,
+            {
+                "weight": 0.2996693615138889
+            }
+        ],
+        [
+            389,
+            392,
+            {
+                "weight": 0.29941584168749996
+            }
+        ],
+        [
+            390,
+            391,
+            {
+                "weight": 0.3634028716016414
+            }
+        ],
+        [
+            390,
+            392,
+            {
+                "weight": 0.3432629881388889
+            }
+        ],
+        [
+            391,
+            392,
+            {
+                "weight": 0.5184964801736112
             }
         ]
     ]

@@ -103,21 +103,26 @@ async function sendMessage(isBye = false) {
         const overlay = document.getElementById('thinkingOverlay');
         overlay.style.display = 'block';
         const progressDiv = document.getElementById('thinkingProgress');
-        progressDiv.textContent = `Starting the thinking process...`;
+        let currentIteration = 0;
+        let remainingTime = thinkingTime * 60; // Convert minutes to seconds
 
-        let currentMinute = 0;
-        const totalMinutes = thinkingTime;
-
-        // Update the progress counter every minute
+        // Update the progress every second
         progressInterval = setInterval(() => {
-            if (currentMinute >= totalMinutes) {
+            if (remainingTime <= 0) {
                 clearInterval(progressInterval);
                 progressDiv.textContent = `Thinking process completed. Waiting for final response...`;
                 return;
             }
-            currentMinute++;
-            progressDiv.textContent = `Thinking iteration ${currentMinute}/${totalMinutes}...`;
-        }, 60000); // Update every minute
+
+            if (remainingTime % 60 === 0) {
+                currentIteration++;
+                progressDiv.textContent = `Thinking iteration ${currentIteration}/${thinkingTime}... (${remainingTime} seconds remaining)`;
+            } else {
+                progressDiv.textContent = `Thinking iteration ${currentIteration}/${thinkingTime}... (${remainingTime} seconds remaining)`;
+            }
+
+            remainingTime--;
+        }, 1000); // Update every second
     }
 
     try {
@@ -171,8 +176,6 @@ async function sendMessage(isBye = false) {
         messageInput.disabled = false;
     }
 }
-
-
 
 
 
