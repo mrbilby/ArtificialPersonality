@@ -14,5 +14,5 @@ myenv/
 # Ignore all .txt files
 *.txt
 
-# But do not ignore personality.json
+# But do not ignore requirements.txt
 !requirements.txt

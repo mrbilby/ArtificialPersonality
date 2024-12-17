@@ -22,6 +22,7 @@ from datetime import datetime
 from .character_extracter_personality import CharacterPersonalityExtractor
 import tempfile
 import os
+import shutil
 
 
 class OutputCapture:
@@ -392,3 +393,146 @@ def create_personality_epub(request):
             }, status=500)
 
     return render(request, 'chat/create_personality_epub.html')
+
+@csrf_exempt
+def adjust_personality(request):
+    """Update personality settings with support for flexible JSON structures"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Method not allowed'}, status=405)
+    
+    try:
+        data = json.loads(request.body)
+        personality_name = data.get('name')
+        
+        if not personality_name:
+            return JsonResponse({'error': 'Personality name is required'}, status=400)
+
+        chatbot_manager = ChatbotManager.get_instance()
+        personality, short_memory, long_memory = chatbot_manager.personality_manager.load_or_create_personality(personality_name)
+        
+        # Get the existing personality data to preserve structure
+        personality_manager = chatbot_manager.personality_manager
+        files = personality_manager.get_personality_files(personality_name)
+        
+        try:
+            with open(files["personality"], 'r') as f:
+                existing_data = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            existing_data = {}
+
+        # Update the personality data while preserving structure
+        def update_dict_recursively(existing, new):
+            """Recursively update dictionary while preserving structure"""
+            if not isinstance(existing, dict) or not isinstance(new, dict):
+                return new
+            
+            result = existing.copy()
+            for key, value in new.items():
+                if key in result and isinstance(result[key], dict) and isinstance(value, dict):
+                    result[key] = update_dict_recursively(result[key], value)
+                else:
+                    result[key] = value
+            return result
+
+        # Update core personality attributes if they exist in the request
+        for attr in ['tone', 'response_style', 'behavior']:
+            if attr in data:
+                existing_data[attr] = data[attr]
+
+        # Update nested structures
+        for key in ['user_preferences', 'do_dont', 'personality_traits', 
+                   'background_influence', 'social_dynamics']:
+            if key in data:
+                if key not in existing_data:
+                    existing_data[key] = {}
+                existing_data[key] = update_dict_recursively(existing_data[key], data[key])
+
+        # Ensure name is preserved
+        existing_data['name'] = personality_name
+
+        # Save the updated personality file
+        with open(files["personality"], 'w') as f:
+            json.dump(existing_data, f, indent=4)
+
+        # Update the personality object with core attributes
+        personality.tone = existing_data.get('tone', '')
+        personality.response_style = existing_data.get('response_style', '')
+        personality.behavior = existing_data.get('behavior', '')
+        personality.user_preferences = existing_data.get('user_preferences', {})
+        personality.do_dont = existing_data.get('do_dont', {'do': [], 'dont': []})
+
+        print(f"[Debug] Successfully updated personality: {personality_name}")
+        return JsonResponse({'success': True})
+        
+    except Exception as e:
+        print(f"[Error] Failed to update personality: {str(e)}")
+        return JsonResponse({'error': str(e)}, status=500)
+
+@csrf_exempt
+def get_personality_settings(request, personality_name):
+    """Fetch current settings for a personality with full structure"""
+    try:
+        chatbot_manager = ChatbotManager.get_instance()
+        personality_manager = chatbot_manager.personality_manager
+        files = personality_manager.get_personality_files(personality_name)
+        
+        try:
+            with open(files["personality"], 'r') as f:
+                personality_data = json.load(f)
+        except (FileNotFoundError, json.JSONDecodeError):
+            personality_data = {
+                'tone': '',
+                'response_style': '',
+                'behavior': '',
+                'user_preferences': {},
+                'do_dont': {'do': [], 'dont': []},
+                'name': personality_name
+            }
+        
+        return JsonResponse(personality_data)
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+@csrf_exempt
+def delete_personality(request):
+    """Delete a personality and its related files"""
+    if request.method != 'POST':
+        return JsonResponse({'error': 'Method not allowed'}, status=405)
+    
+    try:
+        data = json.loads(request.body)
+        personality_name = data['personality']
+        
+        # Don't allow deletion of default personality
+        if personality_name.lower() == 'default':
+            return JsonResponse({'error': 'Cannot delete default personality'}, status=400)
+        
+        chatbot_manager = ChatbotManager.get_instance()
+        personality_manager = chatbot_manager.personality_manager
+        
+        # Get all related file paths
+        files = personality_manager.get_personality_files(personality_name)
+        
+        # Remove the personality from active chatbots if it exists
+        if personality_name in chatbot_manager.active_chatbots:
+            del chatbot_manager.active_chatbots[personality_name]
+        
+        # Delete all related files
+        for file_path in files.values():
+            try:
+                if os.path.exists(file_path):
+                    os.remove(file_path)
+                    print(f"[Debug] Deleted file: {file_path}")
+            except Exception as e:
+                print(f"[Warning] Failed to delete file {file_path}: {e}")
+        
+        return JsonResponse({'success': True})
+    except Exception as e:
+        return JsonResponse({'error': str(e)}, status=500)
+
+def personality_manager(request):
+    chatbot_manager = ChatbotManager.get_instance()
+    personalities = chatbot_manager.personality_manager.list_available_personalities()
+    print(f"[Debug] Available personalities: {personalities}")  # Add this debug line
+    print(f"[Debug] Looking for personalities in: {chatbot_manager.personality_manager.personality_path}")  # Add this
+    return render(request, 'chat/personality_manager.html', {'personalities': personalities})

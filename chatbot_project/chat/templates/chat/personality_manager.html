@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personality Manager</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    <style>
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            justify-content: center;
+        }
+        
+        .adjust-button {
+            padding: 8px 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .adjust-button:hover {
+            background-color: #218838;
+        }
+        
+        .delete-button {
+            padding: 8px 16px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .delete-button:hover {
+            background-color: #c82333;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            width: 90%;
+            max-height: 90vh;
+            overflow-y: auto;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .form-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .form-section h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .modal-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .success-message, .error-message {
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            display: none;
+        }
+
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Manage Personalities</h1>
+        <a href="/" class="back-button">← Back to Personalities</a>
+        
+        <div class="personality-list">
+            {% for personality in personalities %}
+            <div class="personality-card">
+                <h2>{{ personality }}</h2>
+                <div class="button-group">
+                    <button class="adjust-button" onclick="openAdjustModal('{{ personality }}')">Adjust Personality</button>
+                    <button class="delete-button" onclick="confirmDelete('{{ personality }}')">Delete Personality</button>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Enhanced Adjust Personality Modal -->
+    <div id="adjustModal" class="modal">
+        <div class="modal-content">
+            <h2>Adjust Personality</h2>
+            <div id="adjustSuccessMessage" class="success-message"></div>
+            <div id="adjustErrorMessage" class="error-message"></div>
+            <form id="adjustForm">
+                <!-- Core Personality Traits -->
+                <div class="form-section">
+                    <h3>Core Traits</h3>
+                    <div class="form-group">
+                        <label>Tone</label>
+                        <textarea id="tone" name="tone" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Response Style</label>
+                        <textarea id="responseStyle" name="responseStyle" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Behavior</label>
+                        <textarea id="behavior" name="behavior" required></textarea>
+                    </div>
+                </div>
+
+                <!-- User Preferences Section -->
+                <div class="form-section">
+                    <h3>User Preferences</h3>
+                    <div class="form-group">
+                        <label>Likes</label>
+                        <textarea id="userLikes" name="userLikes" placeholder="One item per line"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Dislikes</label>
+                        <textarea id="userDislikes" name="userDislikes" placeholder="One item per line"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Preferences (JSON format)</label>
+                        <textarea id="preferences" name="preferences" placeholder="Enter preferences in JSON format"></textarea>
+                    </div>
+                </div>
+
+                <!-- Do/Don't Rules -->
+                <div class="form-section">
+                    <h3>Do/Don't Rules</h3>
+                    <div class="form-group">
+                        <label>Do Rules</label>
+                        <textarea id="doRules" name="doRules" placeholder="One rule per line"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Don't Rules</label>
+                        <textarea id="dontRules" name="dontRules" placeholder="One rule per line"></textarea>
+                    </div>
+                </div>
+
+                <!-- Additional Traits -->
+                <div class="form-section">
+                    <h3>Additional Traits (JSON format)</h3>
+                    <div class="form-group">
+                        <label>Personality Traits</label>
+                        <textarea id="personalityTraits" name="personalityTraits" placeholder="Enter personality traits in JSON format"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Background Influence</label>
+                        <textarea id="backgroundInfluence" name="backgroundInfluence" placeholder="Enter background influence in JSON format"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Social Dynamics</label>
+                        <textarea id="socialDynamics" name="socialDynamics" placeholder="Enter social dynamics in JSON format"></textarea>
+                    </div>
+                </div>
+
+                <div class="modal-buttons">
+                    <button type="button" class="chat-button" onclick="closeAdjustModal()">Cancel</button>
+                    <button type="submit" class="chat-button">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let currentPersonality = '';
+
+        function openAdjustModal(personality) {
+            currentPersonality = personality;
+            const modal = document.getElementById('adjustModal');
+            modal.style.display = 'flex';
+
+            fetch(`/get_personality_settings/${personality}/`)
+                .then(response => response.json())
+                .then(data => {
+                    // Core traits
+                    document.getElementById('tone').value = data.tone || '';
+                    document.getElementById('responseStyle').value = data.response_style || '';
+                    document.getElementById('behavior').value = data.behavior || '';
+                    
+                    // User preferences
+                    if (data.user_preferences) {
+                        document.getElementById('userLikes').value = 
+                            Array.isArray(data.user_preferences.likes) ? 
+                            data.user_preferences.likes.join('\n') : '';
+                        
+                        document.getElementById('userDislikes').value = 
+                            Array.isArray(data.user_preferences.dislikes) ? 
+                            data.user_preferences.dislikes.join('\n') : '';
+                        
+                        document.getElementById('preferences').value = 
+                            JSON.stringify(data.user_preferences.preferences || {}, null, 2);
+                    }
+
+                    // Do/Don't rules
+                    if (data.do_dont) {
+                        document.getElementById('doRules').value = 
+                            Array.isArray(data.do_dont.do) ? 
+                            data.do_dont.do.join('\n') : '';
+                        
+                        document.getElementById('dontRules').value = 
+                            Array.isArray(data.do_dont.dont) ? 
+                            data.do_dont.dont.join('\n') : '';
+                    }
+
+                    // Additional traits
+                    if (data.personality_traits) {
+                        document.getElementById('personalityTraits').value = 
+                            JSON.stringify(data.personality_traits, null, 2);
+                    }
+                    if (data.background_influence) {
+                        document.getElementById('backgroundInfluence').value = 
+                            JSON.stringify(data.background_influence, null, 2);
+                    }
+                    if (data.social_dynamics) {
+                        document.getElementById('socialDynamics').value = 
+                            JSON.stringify(data.social_dynamics, null, 2);
+                    }
+                })
+                .catch(error => {
+                    showErrorMessage('Failed to load personality settings');
+                });
+        }
+
+        function closeAdjustModal() {
+            const modal = document.getElementById('adjustModal');
+            modal.style.display = 'none';
+            clearMessages();
+        }
+
+        function showSuccessMessage(message) {
+            const successDiv = document.getElementById('adjustSuccessMessage');
+            successDiv.textContent = message;
+            successDiv.style.display = 'block';
+            setTimeout(() => {
+                successDiv.style.display = 'none';
+            }, 3000);
+        }
+
+        function showErrorMessage(message) {
+            const errorDiv = document.getElementById('adjustErrorMessage');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+            setTimeout(() => {
+                errorDiv.style.display = 'none';
+            }, 3000);
+        }
+
+        function clearMessages() {
+            document.getElementById('adjustSuccessMessage').style.display = 'none';
+            document.getElementById('adjustErrorMessage').style.display = 'none';
+        }
+
+        function safeJSONParse(str, defaultValue = {}) {
+            try {
+                return str ? JSON.parse(str) : defaultValue;
+            } catch (e) {
+                console.error('JSON parse error:', e);
+                return defaultValue;
+            }
+        }
+
+        document.getElementById('adjustForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = {
+                name: currentPersonality,
+                tone: document.getElementById('tone').value,
+                response_style: document.getElementById('responseStyle').value,
+                behavior: document.getElementById('behavior').value,
+                user_preferences: {
+                    likes: document.getElementById('userLikes').value.split('\n').filter(item => item.trim()),
+                    dislikes: document.getElementById('userDislikes').value.split('\n').filter(item => item.trim()),
+                    preferences: safeJSONParse(document.getElementById('preferences').value)
+                },
+                do_dont: {
+                    do: document.getElementById('doRules').value.split('\n').filter(item => item.trim()),
+                    dont: document.getElementById('dontRules').value.split('\n').filter(item => item.trim())
+                },
+                personality_traits: safeJSONParse(document.getElementById('personalityTraits').value),
+                background_influence: safeJSONParse(document.getElementById('backgroundInfluence').value),
+                social_dynamics: safeJSONParse(document.getElementById('socialDynamics').value)
+            };
+
+            fetch('/adjust_personality/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showSuccessMessage('Personality updated successfully!');
+                    setTimeout(closeAdjustModal, 1500);
+                } else {
+                    showErrorMessage(data.error || 'Failed to update personality');
+                }
+            })
+            .catch(error => {
+                showErrorMessage('Error updating personality');
+            });
+        });
+
+        function confirmDelete(personality) {
+            if (personality.toLowerCase() === 'default') {
+                alert('The default personality cannot be deleted.');
+                return;
+            }
+            
+            if (confirm(`Are you sure you want to delete the personality "${personality}"? This will delete all related memories and cannot be undone.`)) {
+                fetch('/delete_personality/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ personality: personality })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Personality deleted successfully!');
+                        location.reload();
+                    } else {
+                        alert(data.error || 'Failed to delete personality');
+                    }
+                })
+                .catch(error => {
+                    alert('Error deleting personality');
+                });
+            }
+        }
+    </script>
+</body>
+</html>
