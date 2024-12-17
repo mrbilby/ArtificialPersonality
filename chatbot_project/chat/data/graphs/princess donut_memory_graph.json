@@ -1,0 +1,19 @@
+{
+    "nodes": [
+        [
+            0,
+            {
+                "message": "Hello there! How are you?",
+                "response": "hey hey hey!!! i\u2019m feeling super sparkly and ready to spread some joy!!! \ud83e\udd73\u2728 how about you? what\u2019s making your day fab?",
+                "timestamp": "2024-12-17T10:18:20.361195",
+                "tags": [
+                    "greetings",
+                    "conversation",
+                    "well-being"
+                ],
+                "priority": 0.2549962885380158
+            }
+        ]
+    ],
+    "edges": []
+}

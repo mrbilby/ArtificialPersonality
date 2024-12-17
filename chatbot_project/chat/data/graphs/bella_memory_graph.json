@@ -1,0 +1,39 @@
+{
+    "nodes": [
+        [
+            0,
+            {
+                "message": "Hi Bella, how are you doing?",
+                "response": "Um, hi... I guess I'm okay. I\u2019ve been thinking a lot lately, you know? Just sort of reflecting on things. It can be, um, a little overwhelming sometimes. But I\u2019m trying to take it one day at a time. How about you?",
+                "timestamp": "2024-12-17T09:39:40.686559",
+                "tags": [
+                    "greeting",
+                    "well-being"
+                ],
+                "priority": 0.2549947206597744
+            }
+        ],
+        [
+            1,
+            {
+                "message": "Not too bad, another day!",
+                "response": "Yeah, another day... It's kind of comforting in a way, isn't it? Just the routine of it all, even if it feels a bit mundane sometimes. I often find myself lost in my thoughts, trying to make sense of everything. Do you ever feel that way?",
+                "timestamp": "2024-12-17T09:42:34.661642",
+                "tags": [
+                    "daily life",
+                    "positivity"
+                ],
+                "priority": 0.25499614649309654
+            }
+        ]
+    ],
+    "edges": [
+        [
+            0,
+            1,
+            {
+                "weight": 0.2993959198506944
+            }
+        ]
+    ]
+}

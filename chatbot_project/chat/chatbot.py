@@ -638,7 +638,7 @@ class GraphMemoryManager:
             print(f"[Error] Failed to add memory: {e}")
 
 
-    def find_similar_memories(self, query_tags, top_n=5):
+    def find_similar_memories(self, query_tags, top_n=15):
         """Find most similar memories to query tags."""
         similarities = []
         
@@ -738,15 +738,15 @@ class Memory:
                            if i.priority_score > 0.7]
         }
     
-    def retrieve_relevant_interactions(self, query: str, top_n=15) -> List[Interaction]:
+    def retrieve_relevant_interactions(self, query: str, top_n=50) -> List[Interaction]:
         """
-        Returns the last 5 interactions and any additional interactions with matching words
+        Returns the last top_n interactions and any additional interactions with matching words
         """
         # Get the last 5 interactions
-        recent = self.interactions[-5:] if len(self.interactions) >= 5 else self.interactions[:]
+        recent = self.interactions[-top_n:] if len(self.interactions) >= top_n else self.interactions[:]
         
         # Score remaining interactions
-        older_interactions = self.interactions[:-5] if len(self.interactions) > 5 else []
+        older_interactions = self.interactions[:-top_n] if len(self.interactions) > top_n else []
         scores = [
             (interaction, sum(word.lower() in interaction.user_message.lower() for word in query.split()))
             for interaction in older_interactions
@@ -1384,8 +1384,8 @@ class PersonalityManager:
             print(f"[Info] Created new personality: {name}")
         
         # Initialize memories
-        short_memory = ShortTermMemory(max_interactions=25)
-        long_memory = LongTermMemory(max_interactions=1000, personality_name=name)
+        short_memory = ShortTermMemory(max_interactions=50)
+        long_memory = LongTermMemory(max_interactions=10000, personality_name=name)
         
         # Load short-term and long-term memories
         try:

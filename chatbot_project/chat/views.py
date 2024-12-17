@@ -19,6 +19,10 @@ from contextlib import redirect_stdout
 from io import StringIO
 import asyncio
 from datetime import datetime
+from .character_extracter_personality import CharacterPersonalityExtractor
+import tempfile
+import os
+
 
 class OutputCapture:
     def __init__(self):
@@ -289,5 +293,102 @@ async def process_thinking(message, file_contents, minutes, personality_name, cl
 
 
         
-def create_from_epub(request):
-    return render(request, 'chat/create_from_epub.html')
+def create_personality_epub(request):
+    if request.method == 'POST':
+        try:
+            # Get form data
+            character_name = request.POST.get('characterName')
+            epub_file = request.FILES.get('epubFile')
+            
+            if not character_name or not epub_file:
+                return JsonResponse({
+                    'error': 'Both character name and EPUB file are required'
+                }, status=400)
+
+            # Get API key from environment
+            api_key = os.getenv("API_KEY")
+            if not api_key:
+                return JsonResponse({
+                    'error': 'API key not configured'
+                }, status=500)
+
+            # Set up paths relative to views.py location
+            base_path = os.path.dirname(os.path.abspath(__file__))
+            data_path = os.path.join(base_path, 'data')
+            personalities_path = os.path.join(data_path, 'personalities')
+            memories_path = os.path.join(data_path, 'memories')
+            
+            # Create directories if they don't exist
+            os.makedirs(personalities_path, exist_ok=True)
+            os.makedirs(memories_path, exist_ok=True)
+
+            # Initialize the extractor
+            extractor = CharacterPersonalityExtractor(api_key)
+
+            # Create a temporary file to store the uploaded EPUB
+            with tempfile.NamedTemporaryFile(delete=False, suffix='.epub') as temp_epub:
+                for chunk in epub_file.chunks():
+                    temp_epub.write(chunk)
+                temp_epub_path = temp_epub.name
+
+            try:
+                # Process the EPUB file
+                print(f"Processing EPUB for character: {character_name}")
+                personality = extractor.process_epub(temp_epub_path, character_name)
+
+                # Create personality profile
+                profile = PersonalityProfile(
+                    tone=personality.get("tone", "neutral"),
+                    response_style=personality.get("response_style", "detailed"),
+                    behavior=personality.get("behavior", "reactive"),
+                    user_preferences=personality.get("user_preferences", {}),
+                    name=character_name.lower()
+                )
+
+                # Add do/don't rules
+                for do_rule in personality.get("do_dont", {}).get("do", []):
+                    profile.add_do_rule(do_rule)
+                for dont_rule in personality.get("do_dont", {}).get("dont", []):
+                    profile.add_dont_rule(dont_rule)
+
+                # Initialize memory components
+                short_memory = ShortTermMemory(max_interactions=25)
+                long_memory = LongTermMemory(max_interactions=1000, personality_name=character_name.lower())
+
+                # Define file paths
+                personality_file = os.path.join(personalities_path, f"{character_name.lower()}_personality.json")
+                short_memory_file = os.path.join(memories_path, f"{character_name.lower()}_short_term_memory.json")
+                long_memory_file = os.path.join(memories_path, f"{character_name.lower()}_long_term_memory.json")
+                consolidated_memory_file = os.path.join(memories_path, f"{character_name.lower()}_consolidated_memory.json")
+
+                # Save files
+                profile.save_to_file(personality_file)
+                print(f"Saved personality file to: {personality_file}")
+
+                with open(short_memory_file, "w") as f:
+                    json.dump([], f)
+                print(f"Saved short-term memory to: {short_memory_file}")
+
+                with open(long_memory_file, "w") as f:
+                    json.dump([], f)
+                print(f"Saved long-term memory to: {long_memory_file}")
+
+                # Initialize and save consolidated memory
+                memory_consolidator = MemoryConsolidator(short_memory, long_memory, character_name.lower())
+                memory_consolidator.save_consolidated_memory(file_path=consolidated_memory_file)
+                print(f"Saved consolidated memory to: {consolidated_memory_file}")
+
+                return JsonResponse({'success': True})
+
+            finally:
+                # Clean up the temporary file
+                if os.path.exists(temp_epub_path):
+                    os.unlink(temp_epub_path)
+
+        except Exception as e:
+            print(f"Error processing EPUB: {str(e)}")
+            return JsonResponse({
+                'error': f'Failed to process EPUB: {str(e)}'
+            }, status=500)
+
+    return render(request, 'chat/create_personality_epub.html')

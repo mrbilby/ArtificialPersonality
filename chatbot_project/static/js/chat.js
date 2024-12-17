@@ -79,7 +79,6 @@ document.getElementById('thinkingMode').addEventListener('change', function(e) {
     const timeContainer = document.getElementById('thinkingTimeContainer');
     timeContainer.style.display = e.target.checked ? 'block' : 'none';
 });
-
 async function sendMessage(isBye = false) {
     const message = isBye ? 'bye' : messageInput.value.trim();
     if (!message && !isBye) return;
@@ -93,21 +92,18 @@ async function sendMessage(isBye = false) {
         return;
     }
 
-    // Add the user's message to the chat
-    addMessage(message, true);
+    addMessage(message, true); // Add the user's message to the chat
     messageInput.value = ''; // Clear the input field
 
-    let progressInterval; // Declare the interval variable
+    let progressInterval;
 
     if (thinkingMode) {
-        // Show the thinking overlay and disable input
         const overlay = document.getElementById('thinkingOverlay');
         overlay.style.display = 'block';
         const progressDiv = document.getElementById('thinkingProgress');
         let currentIteration = 0;
-        let remainingTime = thinkingTime * 60; // Convert minutes to seconds
+        let remainingTime = thinkingTime * 60;
 
-        // Update the progress every second
         progressInterval = setInterval(() => {
             if (remainingTime <= 0) {
                 clearInterval(progressInterval);
@@ -123,11 +119,10 @@ async function sendMessage(isBye = false) {
             }
 
             remainingTime--;
-        }, 1000); // Update every second
+        }, 1000);
     }
 
     try {
-        // Make the POST request to the server
         const response = await fetch('/chat/', {
             method: 'POST',
             headers: {
@@ -147,22 +142,25 @@ async function sendMessage(isBye = false) {
         const data = await response.json();
 
         if (data.error) {
-            addMessage(`Error: ${data.error}`); // Display the error message in the chat
-            addDiagnosticOutput(`Error: ${data.error}`); // Log it in the diagnostics panel
+            addMessage(`Error: ${data.error}`);
+            addDiagnosticOutput(`Error: ${data.error}`); // Ensure diagnostic output is handled
         } else {
             addMessage(data.response);
 
-            // Handle termination (bye command)
+            if (data.diagnostic_output) {
+                console.log('Diagnostic Output:', data.diagnostic_output); // Debugging log
+                addDiagnosticOutput(data.diagnostic_output); // Dynamically add output
+            }
+
             if (data.terminated) {
                 addMessage('Chat has ended. Returning to main menu...');
                 setTimeout(() => {
                     window.location.href = '/';
-                }, 2000); // Redirect to the main menu after 2 seconds
-                return; // Stop further execution
+                }, 2000);
+                return;
             }
 
             if (data.thinking_complete) {
-                // Display the final thinking output
                 if (data.diagnostic_output) {
                     addDiagnosticOutput(data.diagnostic_output);
                 }
@@ -173,18 +171,13 @@ async function sendMessage(isBye = false) {
         addDiagnosticOutput(`Error: ${error.message}`);
     } finally {
         if (thinkingMode) {
-            // Stop the progress counter and hide the overlay
             clearInterval(progressInterval);
             const overlay = document.getElementById('thinkingOverlay');
             overlay.style.display = 'none';
-
-            // Uncheck the checkbox after completion and hide the input container
             thinkingModeCheckbox.checked = false;
             document.getElementById('thinkingTimeContainer').style.display = 'none';
         }
 
-        // Re-enable input
-        document.querySelector('.chat-input').classList.remove('thinking');
         messageInput.disabled = false;
     }
 }
