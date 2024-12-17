@@ -3,3 +3,16 @@ venv/
 .venv/
 myenv/
 .myenv/
+*.epub
+
+# Ignore all .json files
+*.json
+
+# But do not ignore personality.json
+!personality.json
+
+# Ignore all .txt files
+*.txt
+
+# But do not ignore personality.json
+!requirements.txt
