@@ -27,14 +27,16 @@ Be able to create the initial personality. Be able to define how memories are sa
 [x] Create a structure for multiple personalities and memories to be stored for different artificial identities
 [x] Allow for files to be read by the model
 [x] Add file summarisation for memory storage
+[x] Create a thinking ability where model can be selected to think and create memories every set amount of time about whatever the mdoel wants
+[x] Create a delete personality function
+[x] Create an edit personality function
+[x] Added a manage personality page
 
 # Features to be built
 
-[ ] Create a thinking ability where model can be selected to think and create memories every set amount of time about whatever the mdoel wants
+[ ] Add ability for personalities to talk between themselves
 [ ] Use chunking functions for large files
 [ ] Web interface for additional functionality like graph fixing
-[ ] Create a delete personality function
-[ ] Create an edit personality function
 [ ] Personality creator from a given text file
 [ ] Integrate tiktoken to better token count
 [ ] Allow for engagement between different APs

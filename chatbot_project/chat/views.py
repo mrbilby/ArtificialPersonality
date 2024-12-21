@@ -536,3 +536,88 @@ def personality_manager(request):
     print(f"[Debug] Available personalities: {personalities}")  # Add this debug line
     print(f"[Debug] Looking for personalities in: {chatbot_manager.personality_manager.personality_path}")  # Add this
     return render(request, 'chat/personality_manager.html', {'personalities': personalities})
+
+from django.shortcuts import render
+from django.http import JsonResponse
+import json
+from .chatbot import ChatbotManager
+import os
+from openai import OpenAI
+
+def chat_between_personalities(request):
+    """View for handling chat between personalities, without memory storage."""
+    if request.method == 'GET':
+        chatbot_manager = ChatbotManager.get_instance()
+        personalities = chatbot_manager.personality_manager.list_available_personalities()
+        return render(request, 'chat/chat_between_personalities.html', {
+            'personalities': personalities
+        })
+    
+    elif request.method == 'POST':
+        try:
+            data = json.loads(request.body)
+            topic = data.get('topic', '')
+            speaking_personality = data.get('speaking_personality', '')
+            listening_personality = data.get('listening_personality', '')
+            conversation_history = data.get('conversation', [])
+
+            if not all([topic, speaking_personality, listening_personality]):
+                return JsonResponse({
+                    'error': 'Missing required parameters'
+                }, status=400)
+
+            # Load personality profiles without initializing memory systems
+            chatbot_manager = ChatbotManager.get_instance()
+            speaking_profile = chatbot_manager.personality_manager.load_or_create_personality(speaking_personality)[0]
+            listening_profile = chatbot_manager.personality_manager.load_or_create_personality(listening_personality)[0]
+
+            # Build conversation context
+            system_prompt = f"""You are {speaking_personality} having a conversation with {listening_personality} about {topic}.
+
+Your personality:
+- {speaking_profile.tone}
+- {speaking_profile.response_style}
+- {speaking_profile.behavior}
+
+{listening_personality}'s personality:
+- {listening_profile.tone}
+- {listening_profile.response_style}
+- {listening_profile.behavior}
+
+Previous conversation:"""
+
+            # Add conversation history
+            for entry in conversation_history:
+                system_prompt += f"\n{entry['personality']}: {entry['message']}"
+
+            # Initialize OpenAI client
+            client = OpenAI(api_key=os.getenv("API_KEY"))
+
+            # Generate response
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {"role": "system", "content": system_prompt},
+                    {"role": "user", "content": "Generate your next response in the conversation:"}
+                ],
+                max_tokens=500,
+                temperature=0.7
+            )
+
+            response_text = response.choices[0].message.content.strip()
+
+            return JsonResponse({
+                'response': response_text,
+                'speaking_personality': speaking_personality,
+                'listening_personality': listening_personality
+            })
+
+        except Exception as e:
+            print(f"[Error] Failed to generate chat response: {e}")
+            return JsonResponse({
+                'error': str(e)
+            }, status=500)
+
+    return JsonResponse({
+        'error': 'Method not allowed'
+    }, status=405)

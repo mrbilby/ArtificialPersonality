@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Between Personalities</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    <style>
+        .chat-between-container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .setup-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .conversation-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            min-height: 400px;
+            display: none;
+        }
+
+        .conversation-messages {
+            max-height: 500px;
+            overflow-y: auto;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+        }
+
+        .personality-message {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .personality-1 {
+            background: #e3f2fd;
+            margin-right: 20%;
+        }
+
+        .personality-2 {
+            background: #f3e5f5;
+            margin-left: 20%;
+        }
+
+        .control-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .control-button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+
+        .start-button {
+            background: #4caf50;
+            color: white;
+        }
+
+        .response-button {
+            background: #2196f3;
+            color: white;
+        }
+
+        .start-button:hover,
+        .response-button:hover {
+            opacity: 0.9;
+        }
+
+        .personality-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .back-section {
+            margin-bottom: 20px;
+        }
+
+        .disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .system-message {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            color: #666;
+            font-style: italic;
+            margin: 10px auto !important;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    {% csrf_token %}
+    <div class="chat-between-container">
+        <div class="back-section">
+            <a href="/" class="back-button">← Back to Personalities</a>
+        </div>
+
+        <div class="setup-section">
+            <h2>Setup Conversation</h2>
+            <div class="form-group">
+                <label for="topic">Conversation Topic</label>
+                <input type="text" id="topic" placeholder="Enter the topic for discussion">
+            </div>
+
+            <div class="form-group">
+                <label for="personality1">Starting Personality</label>
+                <select id="personality1">
+                    {% for personality in personalities %}
+                    <option value="{{ personality }}">{{ personality|title }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="personality2">Second Personality</label>
+                <select id="personality2">
+                    {% for personality in personalities %}
+                    <option value="{{ personality }}">{{ personality|title }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="control-buttons">
+                <button onclick="startConversation()" class="control-button start-button">Start Conversation</button>
+            </div>
+        </div>
+
+        <div id="conversationSection" class="conversation-section">
+            <div id="conversationMessages" class="conversation-messages"></div>
+            <div class="control-buttons">
+                <button id="personality1Button" onclick="generateResponse(1)" class="control-button response-button" disabled>
+                    Get <span class="personality1-name"></span>'s Response
+                </button>
+                <button id="personality2Button" onclick="generateResponse(2)" class="control-button response-button" disabled>
+                    Get <span class="personality2-name"></span>'s Response
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSpeaker = 1;
+        let conversation = [];
+
+        function startConversation() {
+            const topic = document.getElementById('topic').value.trim();
+            const personality1 = document.getElementById('personality1').value;
+            const personality2 = document.getElementById('personality2').value;
+
+            if (!topic) {
+                alert('Please enter a topic for discussion');
+                return;
+            }
+
+            if (personality1 === personality2) {
+                alert('Please select different personalities');
+                return;
+            }
+
+            // Update button labels
+            document.querySelectorAll('.personality1-name').forEach(el => el.textContent = personality1);
+            document.querySelectorAll('.personality2-name').forEach(el => el.textContent = personality2);
+
+            // Show conversation section and enable first personality's button
+            document.getElementById('conversationSection').style.display = 'block';
+            document.getElementById('personality1Button').disabled = false;
+            document.getElementById('personality2Button').disabled = true;
+
+            // Clear previous conversation
+            conversation = [];
+            document.getElementById('conversationMessages').innerHTML = '';
+
+            // Add initial prompt
+            addMessage('System', `Topic: ${topic}`);
+        }
+
+        async function generateResponse(personality) {
+            const topic = document.getElementById('topic').value;
+            const personality1 = document.getElementById('personality1').value;
+            const personality2 = document.getElementById('personality2').value;
+            const currentPersonality = personality === 1 ? personality1 : personality2;
+            const otherPersonality = personality === 1 ? personality2 : personality1;
+
+            try {
+                // Get CSRF token from cookie if it exists
+                function getCookie(name) {
+                    let cookieValue = null;
+                    if (document.cookie && document.cookie !== '') {
+                        const cookies = document.cookie.split(';');
+                        for (let i = 0; i < cookies.length; i++) {
+                            const cookie = cookies[i].trim();
+                            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                                break;
+                            }
+                        }
+                    }
+                    return cookieValue;
+                }
+                
+                const csrftoken = getCookie('csrftoken');
+                const headers = {
+                    'Content-Type': 'application/json'
+                };
+                
+                if (csrftoken) {
+                    headers['X-CSRFToken'] = csrftoken;
+                }
+
+                const response = await fetch('/chat_between_personalities/', {
+                    method: 'POST',
+                    headers: headers,
+                    body: JSON.stringify({
+                        topic: topic,
+                        speaking_personality: currentPersonality,
+                        listening_personality: otherPersonality,
+                        conversation: conversation
+                    })
+                });
+
+                const data = await response.json();
+                if (data.error) {
+                    addMessage('System', `Error: ${data.error}`);
+                } else {
+                    addMessage(currentPersonality, data.response);
+                    conversation.push({
+                        personality: currentPersonality,
+                        message: data.response
+                    });
+
+                    // Toggle buttons
+                    document.getElementById(`personality${personality}Button`).disabled = true;
+                    document.getElementById(`personality${personality === 1 ? 2 : 1}Button`).disabled = false;
+                }
+            } catch (error) {
+                addMessage('System', `Error: ${error.message}`);
+            }
+        }
+
+        function addMessage(sender, message) {
+            const messagesDiv = document.getElementById('conversationMessages');
+            const messageDiv = document.createElement('div');
+            
+            // Special styling for system messages
+            if (sender === 'System') {
+                messageDiv.className = 'personality-message system-message';
+            } else {
+                messageDiv.className = `personality-message ${sender === document.getElementById('personality1').value ? 'personality-1' : 'personality-2'}`;
+            }
+            
+            const nameDiv = document.createElement('div');
+            nameDiv.className = 'personality-name';
+            nameDiv.textContent = sender;
+            
+            const contentDiv = document.createElement('div');
+            contentDiv.textContent = message;
+            
+            messageDiv.appendChild(nameDiv);
+            messageDiv.appendChild(contentDiv);
+            messagesDiv.appendChild(messageDiv);
+            
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+    </script>
+</body>
+</html>
