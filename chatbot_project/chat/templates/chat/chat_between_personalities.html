@@ -101,6 +101,44 @@
             opacity: 0.9;
         }
 
+        .control-section {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .user-interjection {
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .interjection-input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .interjection-button {
+            background: #9c27b0;
+            color: white;
+        }
+
+        .interjection-button:hover {
+            opacity: 0.9;
+        }
+
+        .user-message {
+            background: #f5f5f5;
+            margin: 10px auto;
+            width: 80%;
+            border-left: 4px solid #9c27b0;
+        }
+
         .personality-name {
             font-weight: bold;
             margin-bottom: 5px;
@@ -164,13 +202,22 @@
 
         <div id="conversationSection" class="conversation-section">
             <div id="conversationMessages" class="conversation-messages"></div>
-            <div class="control-buttons">
-                <button id="personality1Button" onclick="generateResponse(1)" class="control-button response-button" disabled>
-                    Get <span class="personality1-name"></span>'s Response
-                </button>
-                <button id="personality2Button" onclick="generateResponse(2)" class="control-button response-button" disabled>
-                    Get <span class="personality2-name"></span>'s Response
-                </button>
+            <div class="control-section">
+                <div class="control-buttons">
+                    <button id="personality1Button" onclick="generateResponse(1)" class="control-button response-button" disabled>
+                        Get <span class="personality1-name"></span>'s Response
+                    </button>
+                    <button id="personality2Button" onclick="generateResponse(2)" class="control-button response-button" disabled>
+                        Get <span class="personality2-name"></span>'s Response
+                    </button>
+                </div>
+                
+                <div class="user-interjection">
+                    <input type="text" id="userInput" placeholder="Type your message to join the conversation..." class="interjection-input">
+                    <button onclick="injectUserMessage()" class="control-button interjection-button">
+                        Add Your Message
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -178,6 +225,21 @@
     <script>
         let currentSpeaker = 1;
         let conversation = [];
+
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
 
         function startConversation() {
             const topic = document.getElementById('topic').value.trim();
@@ -274,13 +336,78 @@
             }
         }
 
-        function addMessage(sender, message) {
+        async function injectUserMessage() {
+            const userInput = document.getElementById('userInput');
+            const message = userInput.value.trim();
+            
+            if (!message) return;
+            
+            const personality1 = document.getElementById('personality1').value;
+            const personality2 = document.getElementById('personality2').value;
+            const topic = document.getElementById('topic').value;
+
+            // Add user's message
+            addMessage('User', message, true);
+            userInput.value = '';
+
+            // Get responses from both personalities
+            try {
+                const headers = {
+                    'Content-Type': 'application/json'
+                };
+                
+                const csrftoken = getCookie('csrftoken');
+                if (csrftoken) {
+                    headers['X-CSRFToken'] = csrftoken;
+                }
+
+                // Get responses from both personalities
+                for (let personality of [personality1, personality2]) {
+                    const response = await fetch('/chat_between_personalities/', {
+                        method: 'POST',
+                        headers: headers,
+                        body: JSON.stringify({
+                            topic: topic,
+                            speaking_personality: personality,
+                            listening_personality: 'user',
+                            conversation: [...conversation, {
+                                personality: 'User',
+                                message: message
+                            }],
+                            is_user_interjection: true
+                        })
+                    });
+
+                    const data = await response.json();
+                    if (data.error) {
+                        addMessage('System', `Error: ${data.error}`);
+                    } else {
+                        addMessage(personality, data.response);
+                        conversation.push({
+                            personality: personality,
+                            message: data.response
+                        });
+                    }
+                }
+
+                // Re-enable both response buttons after processing
+                document.getElementById('personality1Button').disabled = false;
+                document.getElementById('personality2Button').disabled = false;
+
+            } catch (error) {
+                addMessage('System', `Error: ${error.message}`);
+            }
+        }
+
+        function addMessage(sender, message, isUser = false) {
             const messagesDiv = document.getElementById('conversationMessages');
             const messageDiv = document.createElement('div');
             
-            // Special styling for system messages
+            // Special styling for system messages and user messages
             if (sender === 'System') {
                 messageDiv.className = 'personality-message system-message';
+            } else if (sender === 'User' || isUser) {
+                messageDiv.className = 'personality-message user-message';
             } else {
                 messageDiv.className = `personality-message ${sender === document.getElementById('personality1').value ? 'personality-1' : 'personality-2'}`;
             }
@@ -290,6 +417,7 @@
             nameDiv.textContent = sender;
             
             const contentDiv = document.createElement('div');
+            contentDiv.className = 'message-content';
             contentDiv.textContent = message;
             
             messageDiv.appendChild(nameDiv);

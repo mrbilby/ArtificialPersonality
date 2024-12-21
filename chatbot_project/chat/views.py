@@ -537,12 +537,6 @@ def personality_manager(request):
     print(f"[Debug] Looking for personalities in: {chatbot_manager.personality_manager.personality_path}")  # Add this
     return render(request, 'chat/personality_manager.html', {'personalities': personalities})
 
-from django.shortcuts import render
-from django.http import JsonResponse
-import json
-from .chatbot import ChatbotManager
-import os
-from openai import OpenAI
 
 def chat_between_personalities(request):
     """View for handling chat between personalities, without memory storage."""
@@ -560,29 +554,33 @@ def chat_between_personalities(request):
             speaking_personality = data.get('speaking_personality', '')
             listening_personality = data.get('listening_personality', '')
             conversation_history = data.get('conversation', [])
+            is_user_interjection = data.get('is_user_interjection', False)
 
             if not all([topic, speaking_personality, listening_personality]):
-                return JsonResponse({
-                    'error': 'Missing required parameters'
-                }, status=400)
+                return JsonResponse({'error': 'Missing required parameters'}, status=400)
 
-            # Load personality profiles without initializing memory systems
+            # Get chatbot instances
             chatbot_manager = ChatbotManager.get_instance()
-            speaking_profile = chatbot_manager.personality_manager.load_or_create_personality(speaking_personality)[0]
-            listening_profile = chatbot_manager.personality_manager.load_or_create_personality(listening_personality)[0]
+            speaking_chatbot = chatbot_manager.get_or_create_chatbot(speaking_personality)
 
-            # Build conversation context
-            system_prompt = f"""You are {speaking_personality} having a conversation with {listening_personality} about {topic}.
+            # Build context prompt
+            if is_user_interjection:
+                system_prompt = f"""You are {speaking_personality} participating in a group conversation about {topic}. 
+A user has just joined the conversation and addressed you. Stay in character while acknowledging their input.
 
 Your personality:
-- {speaking_profile.tone}
-- {speaking_profile.response_style}
-- {speaking_profile.behavior}
+{speaking_chatbot.personality.tone}
+{speaking_chatbot.personality.response_style}
+{speaking_chatbot.personality.behavior}
 
-{listening_personality}'s personality:
-- {listening_profile.tone}
-- {listening_profile.response_style}
-- {listening_profile.behavior}
+Previous conversation:"""
+            else:
+                system_prompt = f"""You are {speaking_personality} having a conversation with {listening_personality} about {topic}.
+
+Your personality:
+{speaking_chatbot.personality.tone}
+{speaking_chatbot.personality.response_style}
+{speaking_chatbot.personality.behavior}
 
 Previous conversation:"""
 
@@ -590,11 +588,8 @@ Previous conversation:"""
             for entry in conversation_history:
                 system_prompt += f"\n{entry['personality']}: {entry['message']}"
 
-            # Initialize OpenAI client
-            client = OpenAI(api_key=os.getenv("API_KEY"))
-
-            # Generate response
-            response = client.chat.completions.create(
+            # Generate response using the chatbot's client
+            response = speaking_chatbot.client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
                     {"role": "system", "content": system_prompt},
@@ -614,10 +609,6 @@ Previous conversation:"""
 
         except Exception as e:
             print(f"[Error] Failed to generate chat response: {e}")
-            return JsonResponse({
-                'error': str(e)
-            }, status=500)
+            return JsonResponse({'error': str(e)}, status=500)
 
-    return JsonResponse({
-        'error': 'Method not allowed'
-    }, status=405)
+    return JsonResponse({'error': 'Method not allowed'}, status=405)
