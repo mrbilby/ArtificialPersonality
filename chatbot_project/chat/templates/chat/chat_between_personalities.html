@@ -8,6 +8,8 @@
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
+            display: flex;
+            gap: 20px;
         }
 
         .setup-section {
@@ -96,9 +98,36 @@
             color: white;
         }
 
-        .start-button:hover,
-        .response-button:hover {
+        .interjection-button {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .control-button:hover {
             opacity: 0.9;
+        }
+
+        .personality-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .back-section {
+            margin-bottom: 20px;
+        }
+
+        .user-message {
+            background: #f5f5f5;
+            margin: 10px auto !important;
+            width: 80%;
+            border-left: 4px solid #4CAF50;
+            color: #2E7D32;
+            align-self: center !important;
+        }
+
+        .user-message .message-content {
+            color: #2E7D32;
+            background: #f9f9f9;
         }
 
         .control-section {
@@ -113,7 +142,6 @@
             padding: 10px;
             background: #f5f5f5;
             border-radius: 8px;
-            margin-top: 10px;
         }
 
         .interjection-input {
@@ -123,106 +151,156 @@
             border-radius: 4px;
         }
 
-        .interjection-button {
-            background: #9c27b0;
-            color: white;
+        .file-drop-zone {
+            width: 180px;
+            height: 200px;
+            background: white;
+            border: 2px dashed #ccc;
+            margin-bottom: 10px;
         }
 
-        .interjection-button:hover {
-            opacity: 0.9;
+        .drop-zone-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+            padding: 20px;
         }
 
-        .user-message {
-            background: #f5f5f5;
-            margin: 10px auto;
-            width: 80%;
-            border-left: 4px solid #9c27b0;
+        .file-list {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            min-height: 100px;
         }
 
-        .personality-name {
-            font-weight: bold;
+        .file-entry {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px;
+            background: #f8f9fa;
+            border-radius: 4px;
             margin-bottom: 5px;
         }
 
-        .back-section {
-            margin-bottom: 20px;
+        .remove-file {
+            background: none;
+            border: none;
+            color: #dc3545;
+            font-size: 18px;
+            cursor: pointer;
+            padding: 0 5px;
         }
 
-        .disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
+        .chat-container {
+            flex: 1;
+            min-width: 0;
+            display: flex;
+            flex-direction: column;
         }
 
-        .system-message {
-            background: #f5f5f5;
-            border: 1px solid #ddd;
-            color: #666;
-            font-style: italic;
-            margin: 10px auto !important;
-            width: 80%;
+        .left-panel {
+            width: 200px;
+            min-width: 200px;
         }
     </style>
 </head>
 <body>
     {% csrf_token %}
     <div class="chat-between-container">
-        <div class="back-section">
-            <a href="/" class="back-button">← Back to Personalities</a>
-        </div>
-
-        <div class="setup-section">
-            <h2>Setup Conversation</h2>
-            <div class="form-group">
-                <label for="topic">Conversation Topic</label>
-                <input type="text" id="topic" placeholder="Enter the topic for discussion">
-            </div>
-
-            <div class="form-group">
-                <label for="personality1">Starting Personality</label>
-                <select id="personality1">
-                    {% for personality in personalities %}
-                    <option value="{{ personality }}">{{ personality|title }}</option>
-                    {% endfor %}
-                </select>
-            </div>
-
-            <div class="form-group">
-                <label for="personality2">Second Personality</label>
-                <select id="personality2">
-                    {% for personality in personalities %}
-                    <option value="{{ personality }}">{{ personality|title }}</option>
-                    {% endfor %}
-                </select>
-            </div>
-
-            <div class="control-buttons">
-                <button onclick="startConversation()" class="control-button start-button">Start Conversation</button>
-            </div>
-        </div>
-
-        <div id="conversationSection" class="conversation-section">
-            <div id="conversationMessages" class="conversation-messages"></div>
-            <div class="control-section">
-                <div class="control-buttons">
-                    <button id="personality1Button" onclick="generateResponse(1)" class="control-button response-button" disabled>
-                        Get <span class="personality1-name"></span>'s Response
-                    </button>
-                    <button id="personality2Button" onclick="generateResponse(2)" class="control-button response-button" disabled>
-                        Get <span class="personality2-name"></span>'s Response
-                    </button>
+        <div class="left-panel">
+            <div class="file-section">
+                <div id="fileDropZone" class="file-drop-zone">
+                    <div class="drop-zone-content">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <p>Drag and drop files here</p>
+                        <p class="file-limit">(Max file size: 100KB)</p>
+                    </div>
                 </div>
-                
-                <div class="user-interjection">
-                    <input type="text" id="userInput" placeholder="Type your message to join the conversation..." class="interjection-input">
-                    <button onclick="injectUserMessage()" class="control-button interjection-button">
-                        Add Your Message
-                    </button>
+                <div id="fileList" class="file-list"></div>
+            </div>
+        </div>
+
+        <div class="chat-container">
+            <div class="back-section">
+                <a href="/" class="back-button">← Back to Personalities</a>
+            </div>
+
+            <div class="setup-section">
+                <h2>Setup Conversation</h2>
+                <div class="form-group">
+                    <label for="topic">Conversation Topic</label>
+                    <input type="text" id="topic" placeholder="Enter the topic for discussion">
+                </div>
+
+                <div class="form-group">
+                    <label for="personality1">Starting Personality</label>
+                    <select id="personality1">
+                        {% for personality in personalities %}
+                        <option value="{{ personality }}">{{ personality|title }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="personality2">Second Personality</label>
+                    <select id="personality2">
+                        {% for personality in personalities %}
+                        <option value="{{ personality }}">{{ personality|title }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="control-buttons">
+                    <button onclick="startConversation()" class="control-button start-button">Start Conversation</button>
+                </div>
+            </div>
+
+            <div id="conversationSection" class="conversation-section">
+                <div id="conversationMessages" class="conversation-messages"></div>
+                <div class="control-section">
+                    <div class="control-buttons">
+                        <button id="personality1Button" onclick="generateResponse(1)" class="control-button response-button" disabled>
+                            Get <span class="personality1-name"></span>'s Response
+                        </button>
+                        <button id="personality2Button" onclick="generateResponse(2)" class="control-button response-button" disabled>
+                            Get <span class="personality2-name"></span>'s Response
+                        </button>
+                    </div>
+                    
+                    <div class="user-interjection">
+                        <input type="text" id="userInput" placeholder="Type your message to join the conversation..." class="interjection-input">
+                        <button onclick="injectUserMessage()" class="control-button interjection-button">
+                            Add Your Message
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
+        // Global prevention of default drag/drop behavior
+        window.addEventListener('dragover', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }, false);
+
+        window.addEventListener('drop', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }, false);
+
+        // Store uploaded files content in memory
+        const uploadedFiles = {};
         let currentSpeaker = 1;
         let conversation = [];
 
@@ -239,6 +317,43 @@
                 }
             }
             return cookieValue;
+        }
+
+        async function readFileContent(file) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = (event) => resolve(event.target.result);
+                reader.onerror = (error) => reject(error);
+                reader.readAsText(file);
+            });
+        }
+
+        async function handleFiles(files) {
+            const fileList = document.getElementById('fileList');
+            const MAX_FILE_SIZE = 100 * 1024; // 100KB
+
+            for (const file of files) {
+                if (file.size > MAX_FILE_SIZE) {
+                    addMessage(`Error: File ${file.name} exceeds the 100KB size limit.`);
+                    continue;
+                }
+
+                try {
+                    const content = await readFileContent(file);
+                    uploadedFiles[file.name] = content;
+
+                    const fileEntry = document.createElement('div');
+                    fileEntry.className = 'file-entry';
+                    fileEntry.innerHTML = `
+                        <span class="file-name" title="${file.name}">${file.name}</span>
+                        <button class="remove-file" onclick="this.parentElement.remove(); delete uploadedFiles['${file.name}'];">×</button>
+                    `;
+                    fileList.appendChild(fileEntry);
+                } catch (error) {
+                    console.error('Error processing file:', error);
+                    addMessage(`Error processing file ${file.name}: ${error.message}`);
+                }
+            }
         }
 
         function startConversation() {
@@ -270,6 +385,10 @@
             document.getElementById('conversationMessages').innerHTML = '';
 
             // Add initial prompt
+            if (Object.keys(uploadedFiles).length > 0) {
+                const fileNames = Object.keys(uploadedFiles).join(', ');
+                addMessage('System', `Files included for discussion: ${fileNames}`);
+            }
             addMessage('System', `Topic: ${topic}`);
         }
 
@@ -281,27 +400,11 @@
             const otherPersonality = personality === 1 ? personality2 : personality1;
 
             try {
-                // Get CSRF token from cookie if it exists
-                function getCookie(name) {
-                    let cookieValue = null;
-                    if (document.cookie && document.cookie !== '') {
-                        const cookies = document.cookie.split(';');
-                        for (let i = 0; i < cookies.length; i++) {
-                            const cookie = cookies[i].trim();
-                            if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                                break;
-                            }
-                        }
-                    }
-                    return cookieValue;
-                }
-                
-                const csrftoken = getCookie('csrftoken');
                 const headers = {
                     'Content-Type': 'application/json'
                 };
                 
+                const csrftoken = getCookie('csrftoken');
                 if (csrftoken) {
                     headers['X-CSRFToken'] = csrftoken;
                 }
@@ -313,7 +416,8 @@
                         topic: topic,
                         speaking_personality: currentPersonality,
                         listening_personality: otherPersonality,
-                        conversation: conversation
+                        conversation: conversation,
+                        file_contents: uploadedFiles
                     })
                 });
 
@@ -374,7 +478,8 @@
                                 personality: 'User',
                                 message: message
                             }],
-                            is_user_interjection: true
+                            is_user_interjection: true,
+                            file_contents: uploadedFiles
                         })
                     });
 
@@ -426,6 +531,47 @@
             
             messagesDiv.scrollTop = messagesDiv.scrollHeight;
         }
+
+        // Set up the drop zone when the DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const dropZone = document.getElementById('fileDropZone');
+            const fileList = document.getElementById('fileList');
+
+            if (!dropZone || !fileList) {
+                console.error('fileDropZone or fileList not found in the DOM');
+                return;
+            }
+
+            dropZone.addEventListener('dragenter', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                dropZone.classList.add('drag-active');
+            });
+
+            dropZone.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                e.dataTransfer.dropEffect = 'copy';
+                dropZone.classList.add('drag-active');
+            });
+
+            dropZone.addEventListener('dragleave', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                dropZone.classList.remove('drag-active');
+            });
+
+            dropZone.addEventListener('drop', async (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                dropZone.classList.remove('drag-active');
+
+                const files = e.dataTransfer.files;
+                if (files && files.length > 0) {
+                    await handleFiles(files);
+                }
+            });
+        });
     </script>
 </body>
 </html>
