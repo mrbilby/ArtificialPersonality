@@ -23,6 +23,7 @@ from .character_extracter_personality import CharacterPersonalityExtractor
 import tempfile
 import os
 import shutil
+import google.generativeai as genai
 
 
 class OutputCapture:
@@ -208,7 +209,23 @@ def summarize_files(file_contents: dict, client) -> str:
         f"File: {fname}\nContents:\n{content}"
         for fname, content in file_contents.items()
     ])
-    
+    api_key = os.getenv("GEMINI_KEY")
+    genai.configure(api_key=api_key)
+    try:
+        model = genai.GenerativeModel("gemini-1.5-flash")
+        
+        prompt = f"""Provide a concise synopsis of the following file(s). Focus on key points and main content. 
+            Start with 'Files Synopsis:' followed by your summary. {files_text}
+            """
+
+        response = model.generate_content(prompt)  # Generate content based on the prompt
+        return response.text.strip() 
+
+    except Exception as e:
+        print(f"[Error] Failed to summarize files: {e}")
+        return "Error: Could not generate file summary."
+
+"""
     try:
         response = client.chat.completions.create(
             model="gpt-4o-mini",
@@ -230,6 +247,7 @@ def summarize_files(file_contents: dict, client) -> str:
     except Exception as e:
         print(f"[Error] Failed to summarize files: {e}")
         return "Error: Could not generate file summary."
+"""
 
 async def process_thinking(message, file_contents, minutes, personality_name, client):
     """Process thinking iterations with proper delays and context building."""
@@ -563,6 +581,28 @@ def chat_between_personalities(request):
             chatbot_manager = ChatbotManager.get_instance()
             speaking_chatbot = chatbot_manager.get_or_create_chatbot(speaking_personality)
 
+            # Get file contents if provided
+            file_contents = data.get('file_contents', {})
+            file_context = ""
+            if file_contents:
+                # Generate a summary of the files' contents
+                files_text = "\n\n".join([
+                    f"File: {fname}\nContents:\n{content}"
+                    for fname, content in file_contents.items()
+                ])
+                
+                # Get a summary using the speaking chatbot's client
+                summary_response = speaking_chatbot.client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=[
+                        {"role": "system", "content": "Provide a concise synopsis of the following file(s). Focus on key points and main content."},
+                        {"role": "user", "content": files_text}
+                    ],
+                    max_tokens=500,
+                    temperature=0.3
+                )
+                file_context = "\n\nFile Content Summary:\n" + summary_response.choices[0].message.content.strip()
+
             # Build context prompt
             if is_user_interjection:
                 system_prompt = f"""You are {speaking_personality} participating in a group conversation about {topic}. 
@@ -587,6 +627,10 @@ Previous conversation:"""
             # Add conversation history
             for entry in conversation_history:
                 system_prompt += f"\n{entry['personality']}: {entry['message']}"
+            
+            # Add file context if it exists
+            if file_context:
+                system_prompt += f"\n{file_context}"
 
             # Generate response using the chatbot's client
             response = speaking_chatbot.client.chat.completions.create(

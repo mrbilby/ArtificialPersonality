@@ -12,7 +12,7 @@
                     <div class="drop-zone-content">
                         <svg xmlns="http://www.w3.org/2000/svg" ...></svg>
                         <p>Drag and drop files here</p>
-                        <p class="file-limit">(Max file size: 100KB)</p>
+                        <p class="file-limit">(Max file size: 5MB)</p>
                     </div>
                 </div>
                 <div id="fileList" class="file-list"></div>
@@ -34,6 +34,11 @@
                         <label>Minutes to think (1-60):</label>
                         <input type="number" id="thinkingTime" min="1" max="60" value="5">
                     </div>
+                </div>
+                <div class="voice-toggle">
+                    <label>
+                        <input type="checkbox" id="voiceMode"> Voice Mode
+                    </label>
                 </div>
                 <div class="diagnostic-toggle">
                     <label>
