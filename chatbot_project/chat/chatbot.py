@@ -7,6 +7,7 @@ import statistics
 from typing import List, Dict, Optional, Tuple, Any
 from collections import defaultdict
 import networkx as nx
+import google.generativeai as genai
 
 # Load environment variables from .env file
 load_dotenv()
@@ -1484,6 +1485,14 @@ class ChatBot:
         if not self.api_key:
             raise ValueError("API_KEY not found in environment variables.")
         self.client = OpenAI(api_key=self.api_key)
+        self.gemini_api_key = os.getenv("GEMINI_KEY")
+        if self.gemini_api_key:
+            genai.configure(api_key=self.gemini_api_key)
+            self.gemini_client = genai
+            print("[Debug] Gemini client configured.")
+        else:
+            self.gemini_client = None
+            print("[Debug] Gemini API key not found.")
         print("[Debug] OpenAI client initialized.")
 
     def print_memory_status(self):
@@ -1645,9 +1654,19 @@ class ChatBot:
         return messages
     
     def _generate_response(self, messages: List[dict]) -> dict:
+        
+        #Gemini call but it sucks at memory
         """
-        Generate a response using OpenAI's ChatCompletion API.
+        model = genai.GenerativeModel("gemini-1.5-flash")
+        combined_text = "\n".join([msg["content"] for msg in messages])
+
+        response = model.generate_content(combined_text)  # Generate content based on the prompt
+        return response.text.strip() 
+        
         """
+        
+        #Generate a response using OpenAI's ChatCompletion API.
+        
         response = self.client.chat.completions.create(
             model="gpt-4o-mini",  # Use your desired model
             messages=messages,
@@ -1657,7 +1676,7 @@ class ChatBot:
             stop=None,
         )
         return response
-    
+        
 
     def _generate_tags(self, user_message: str) -> List[str]:
         """
@@ -1721,7 +1740,7 @@ class ChatBot:
 
 def main():
     print("Initializing ChatBot...")
-    
+
     # Initialize personality manager
     personality_manager = PersonalityManager()
     
