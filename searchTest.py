@@ -31,8 +31,8 @@ def google_custom_search(query, api_key, cx):
 # Example usage
 if __name__ == "__main__":
     search_query = "Python tutorials"
-    api_key = 'AIzaSyCnzh-vxW31eYf43BoSTY9viOY-bTfvDpw' # Replace with your actual API key
-    cx = "c1d5e6c731911430d"  # Replace with your actual cx ID
+    api_key = '' # Replace with your actual API key
+    cx = ""  # Replace with your actual cx ID
     
     results = google_custom_search(search_query, api_key, cx)
     if results:
