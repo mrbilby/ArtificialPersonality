@@ -20,6 +20,7 @@ from io import StringIO
 import asyncio
 from datetime import datetime
 from .character_extracter_personality import CharacterPersonalityExtractor
+from .youtube_ai import get_video_id, generate_video_summary, check_transcript
 import tempfile
 import os
 import shutil
@@ -678,39 +679,68 @@ def search_message(request):
         data = json.loads(request.body)
         print(f"[Debug] Received search request: {data}")
         
-        query = data.get('message', '')
+        message = data.get('message', '').strip()
         personality_name = data.get('personality', 'default')
         
-        api_key = os.getenv("GOOGLE_API_KEY")
-        cx = os.getenv("GOOGLE_CX")
+        # Check if the message is a YouTube URL
+        video_id = get_video_id(message)
         
-        if not api_key or not cx:
-            print("[Error] Missing API key or CX")
-            return JsonResponse({'error': 'Search configuration missing'}, status=500)
+        if video_id:
+            print(f"[Debug] Detected YouTube URL with video ID: {video_id}")
+            # Process YouTube summary
+            captions, language = check_transcript(video_id)
             
-        print(f"[Debug] Executing search for: {query}")
-        search_results = google_custom_search(query, api_key, cx)
+            if captions:
+                print(f"[Debug] Retrieved transcript in language: {language}")
+                api_key = os.getenv("GEMINI_KEY")  # Assuming you have a separate API key for GenAI
+                if not api_key:
+                    print("[Error] Missing GenAI API key")
+                    return JsonResponse({'error': 'GenAI configuration missing'}, status=500)
+                
+                summary = generate_video_summary(captions, api_key)
+                if summary:
+                    return JsonResponse({
+                        'response': summary,
+                        'diagnostic_output': None
+                    })
+                else:
+                    return JsonResponse({'error': 'Failed to generate summary'}, status=500)
+            else:
+                return JsonResponse({'error': 'Transcript not available for this video.'}, status=404)
         
-        if not search_results:
-            return JsonResponse({'error': 'Search failed'}, status=500)
+        else:
+            # Perform regular Google search
+            api_key = os.getenv("GOOGLE_API_KEY")
+            cx = os.getenv("GOOGLE_CX")
             
-        print(f"[Debug] Got search results: {len(search_results.get('items', []))}")
-        
-        chatbot_manager = ChatbotManager.get_instance()
-        chatbot = chatbot_manager.get_or_create_chatbot(personality_name)
-        
-        results_text = "\n".join([
-            f"Title: {item.get('title')}\nLink: {item.get('link')}\nSnippet: {item.get('snippet')}\n"
-            for item in search_results.get("items", [])[:5]
-        ])
-        
-        prompt = f"Search query: {query}\n\nSearch results:\n{results_text}\n\nPlease analyze these search results."
-        response = chatbot.process_query(prompt)
-        
-        return JsonResponse({
-            'response': response,
-            'diagnostic_output': None
-        })
+            if not api_key or not cx:
+                print("[Error] Missing Google API key or CX")
+                return JsonResponse({'error': 'Search configuration missing'}, status=500)
+                
+            print(f"[Debug] Executing search for: {message}")
+            search_results = google_custom_search(message, api_key, cx)
+            
+            if not search_results:
+                return JsonResponse({'error': 'Search failed'}, status=500)
+                
+            print(f"[Debug] Got search results: {len(search_results.get('items', []))}")
+            
+            chatbot_manager = ChatbotManager.get_instance()
+            chatbot = chatbot_manager.get_or_create_chatbot(personality_name)
+            
+            results_text = "\n".join([
+                f"Title: {item.get('title')}\nLink: {item.get('link')}\nSnippet: {item.get('snippet')}\n"
+                for item in search_results.get("items", [])[:5]
+            ])
+            
+            prompt = f"Search query: {message}\n\nSearch results:\n{results_text}\n\nPlease analyze these search results."
+            response = chatbot.process_query(prompt)
+            
+            return JsonResponse({
+                'response': response,
+                'diagnostic_output': None
+            })
+    
     except Exception as e:
         print(f"[Error] Search failed: {str(e)}")
         return JsonResponse({'error': str(e)}, status=500)

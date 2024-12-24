@@ -7,3 +7,5 @@ beautifulsoup4
 tiktoken
 django
 google-generativeai
+youtube_transcript_api==0.6.1
+pytube==15.0.0

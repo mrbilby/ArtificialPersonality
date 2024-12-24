@@ -33,11 +33,12 @@ Be able to create the initial personality. Be able to define how memories are sa
 [x] Added a manage personality page
 [x] Add ability for personalities to talk between themselves
 [x] Add ability to search using the chatbot through google custom search
+[x] Switch summarize files in views.py to a Gemini model
+[x] Add YouTube link recognition and summarisation
 
 # Features to be built
 
-[ ] Add YouTube link recognition
-[ ] Switch summarize files in views.py to a Gemini model
+[ ] Add a voice mode
 [ ] Use chunking functions for large files
 [ ] Web interface for additional functionality like graph fixing
 [ ] Personality creator from a given text file
