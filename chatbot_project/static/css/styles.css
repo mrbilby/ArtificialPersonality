@@ -445,3 +445,13 @@ body {
     border-radius: 4px;
     text-align: center;
 }
+
+.chat-link {
+    color: #007bff;
+    text-decoration: underline;
+    word-break: break-word;
+}
+.chat-link:hover {
+    color: #0056b3;
+    text-decoration: none;
+}

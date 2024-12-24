@@ -23,18 +23,22 @@ let messageInput = document.getElementById('messageInput');
 // Store uploaded files content in memory
 const uploadedFiles = {}; // { filename: "file content", ... }
 
-function addMessage(message, isUser = false) {
+window.addMessage = function(message, isUser = false) {
     const messageDiv = document.createElement('div');
     messageDiv.className = `message ${isUser ? 'user-message' : 'bot-message'}`;
     
     const content = document.createElement('div');
     content.className = 'message-content';
-    
+
+    // Updated URL regex to exclude trailing punctuation like ), ., ,, !, ?
+    const urlRegex = /(https?:\/\/[^\s<>()]+[^\s<>().,!?])/g;
+
     const formattedMessage = message
         .replace(/###\s*(.*)/g, '<h3>$1</h3>')
         .replace(/(\d+\.\s+[^\n]+)/g, '<div class="list-item">$1</div>')
         .replace(/([\u{1F300}-\u{1F6FF}])/gu, '<span class="emoji">$1</span>')
         .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+        .replace(urlRegex, '<a href="$1" target="_blank" rel="noopener noreferrer" class="chat-link">$1</a>')
         .replace(/\n/g, '<br>');
 
     content.innerHTML = formattedMessage;
@@ -42,6 +46,21 @@ function addMessage(message, isUser = false) {
     messageContainer.appendChild(messageDiv);
     messageContainer.scrollTop = messageContainer.scrollHeight;
 }
+
+
+const style = document.createElement('style');
+style.textContent = `
+    .chat-link {
+        color: #007bff;
+        text-decoration: underline;
+        word-break: break-word;
+    }
+    .chat-link:hover {
+        color: #0056b3;
+        text-decoration: none;
+    }
+`;
+document.head.appendChild(style);
 
 function toggleDiagnosticPanel() {
     const panel = document.getElementById('diagnosticPanel');
@@ -202,6 +221,23 @@ messageInput.addEventListener('keypress', function(e) {
 });
 
 
+
+// Add CSRF token helper
+window.getCookie = function(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+            const cookie = cookies[i].trim();
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+
 /****************************************************
  * File handling functions
  ****************************************************/
@@ -290,4 +326,9 @@ document.addEventListener('DOMContentLoaded', () => {
             await handleFiles(files);
         }
     });
+    const searchButton = document.getElementById('searchButton');
+    if (searchButton) {
+        searchButton.addEventListener('click', searchMessage);
+    }
 });
+

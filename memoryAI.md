@@ -31,15 +31,16 @@ Be able to create the initial personality. Be able to define how memories are sa
 [x] Create a delete personality function
 [x] Create an edit personality function
 [x] Added a manage personality page
+[x] Add ability for personalities to talk between themselves
+[x] Add ability to search using the chatbot through google custom search
 
 # Features to be built
 
-[ ] Add ability for personalities to talk between themselves
+[ ] Add YouTube link recognition
+[ ] Switch summarize files in views.py to a Gemini model
 [ ] Use chunking functions for large files
 [ ] Web interface for additional functionality like graph fixing
 [ ] Personality creator from a given text file
-[ ] Integrate tiktoken to better token count
-[ ] Allow for engagement between different APs
 [ ] Add an art creation function
 [ ] Long term memory condenser
 [ ] Long term memory pruner

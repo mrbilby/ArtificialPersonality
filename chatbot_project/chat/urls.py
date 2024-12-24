@@ -10,5 +10,6 @@ urlpatterns = [
     path('adjust_personality/', views.adjust_personality, name='adjust_personality'),
     path('delete_personality/', views.delete_personality, name='delete_personality'),
     path('personality_manager/', views.personality_manager, name='personality_manager'),
-    path('chat_between_personalities/', views.chat_between_personalities, name='chat_between_personalities'),  
+    path('chat_between_personalities/', views.chat_between_personalities, name='chat_between_personalities'),
+    path('search/', views.search_message, name='search_message'),
 ]

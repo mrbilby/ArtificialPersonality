@@ -24,7 +24,7 @@ import tempfile
 import os
 import shutil
 import google.generativeai as genai
-
+import requests
 
 class OutputCapture:
     def __init__(self):
@@ -656,3 +656,61 @@ Previous conversation:"""
             return JsonResponse({'error': str(e)}, status=500)
 
     return JsonResponse({'error': 'Method not allowed'}, status=405)
+
+def google_custom_search(query, api_key, cx):
+    base_url = "https://www.googleapis.com/customsearch/v1"
+    params = {
+        "q": query,
+        "key": api_key,
+        "cx": cx
+    }
+    try:
+        response = requests.get(base_url, params=params)
+        response.raise_for_status()
+        return response.json()
+    except requests.exceptions.RequestException as e:
+        print(f"Error during Google Search API call: {e}")
+        return None
+
+@csrf_exempt 
+def search_message(request):
+    try:
+        data = json.loads(request.body)
+        print(f"[Debug] Received search request: {data}")
+        
+        query = data.get('message', '')
+        personality_name = data.get('personality', 'default')
+        
+        api_key = os.getenv("GOOGLE_API_KEY")
+        cx = os.getenv("GOOGLE_CX")
+        
+        if not api_key or not cx:
+            print("[Error] Missing API key or CX")
+            return JsonResponse({'error': 'Search configuration missing'}, status=500)
+            
+        print(f"[Debug] Executing search for: {query}")
+        search_results = google_custom_search(query, api_key, cx)
+        
+        if not search_results:
+            return JsonResponse({'error': 'Search failed'}, status=500)
+            
+        print(f"[Debug] Got search results: {len(search_results.get('items', []))}")
+        
+        chatbot_manager = ChatbotManager.get_instance()
+        chatbot = chatbot_manager.get_or_create_chatbot(personality_name)
+        
+        results_text = "\n".join([
+            f"Title: {item.get('title')}\nLink: {item.get('link')}\nSnippet: {item.get('snippet')}\n"
+            for item in search_results.get("items", [])[:5]
+        ])
+        
+        prompt = f"Search query: {query}\n\nSearch results:\n{results_text}\n\nPlease analyze these search results."
+        response = chatbot.process_query(prompt)
+        
+        return JsonResponse({
+            'response': response,
+            'diagnostic_output': None
+        })
+    except Exception as e:
+        print(f"[Error] Search failed: {str(e)}")
+        return JsonResponse({'error': str(e)}, status=500)

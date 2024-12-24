@@ -54,7 +54,8 @@
             </div>
             <div class="chat-input">
                 <input type="text" id="messageInput" placeholder="Type your message...">
-                <button onclick="searchMessage()" style="background-color: green; color: white; border: none; padding: 5px 10px; border-radius: 5px;">Search</button>
+                <button onclick="window.searchMessage()" style="background-color: green; color: white; border: none; padding: 5px 10px; border-radius: 5px;">Search</button>
+                
                 <button onclick="sendMessage()">Send</button>
             </div>
         </div>
@@ -70,6 +71,60 @@
     
     <script>
         const personalityName = "{{ personality_name }}";
+        
+        // Define getCookie first
+        window.getCookie = function(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+        
+        // Then define searchMessage
+        window.searchMessage = async function() {
+            const message = document.getElementById('messageInput').value.trim();
+            if (!message) return;
+            
+            window.addMessage(message, true);
+            document.getElementById('messageInput').value = '';
+            
+            try {
+                const response = await fetch('/search/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': window.getCookie('csrftoken')
+                    },
+                    body: JSON.stringify({
+                        message: message,
+                        personality: personalityName,
+                        diagnostic_mode: localStorage.getItem('diagnosticMode') === 'true'
+                    })
+                });
+                
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                
+                const data = await response.json();
+                if (data.error) {
+                    window.addMessage('Error: ' + data.error);
+                } else {
+                    window.addMessage(data.response);
+                }
+            } catch (error) {
+                console.error('Search error:', error);
+                window.addMessage('Error: ' + error.message);
+            }
+        }
     </script>
     <script src="/static/js/chat.js"></script>
 </body>
